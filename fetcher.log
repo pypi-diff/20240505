@@ -604,3 +604,18 @@
 [2024-05-05 01:06:59] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_commission-14.0.1.2.1-py3-none-any.whl.zip]
 [2024-05-05 01:06:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-commission]: success
 [2024-05-05 01:06:59] INFO root fetch - main [MainThread]: Store serial: [23061695]
+[2024-05-05 01:09:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061695]
+[2024-05-05 01:09:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 01:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jubtools
+[2024-05-05 01:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ligmarun
+[2024-05-05 01:09:08] INFO root fetch - processPackages [jubtools]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-05 01:09:08] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/01/f0/3b64f785f6f7139168161fdc18cf5ac4ae84e187400690edcf3011f51660/jubtools-0.5.3.tar.gz
+[2024-05-05 01:09:08] WARNING root fetch - processPackages [ligmarun]: Skipping, unable to determine old version
+[2024-05-05 01:09:08] INFO root fetch - main [MainThread]: End processing [ligmarun] error
+[2024-05-05 01:09:08] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/3f/ac/cd7738b66e21eccc86a102c51c22ad4e493a2d0455a8f0afe2077d9ef51c/jubtools-0.5.4.tar.gz
+[2024-05-05 01:09:08] INFO root fetch - processPackages [jubtools]: executing diffoscope
+[2024-05-05 01:09:08] INFO root fetch - processPackages [jubtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jubtools-0.5.3.tar.gz tmp/jubtools-0.5.4.tar.gz --markdown 20240505/j/jubtools/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-05 01:09:09] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.3.tar.gz]
+[2024-05-05 01:09:09] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.4.tar.gz]
+[2024-05-05 01:09:09] INFO root fetch - main [MainThread]: End processing [jubtools]: success
+[2024-05-05 01:09:09] INFO root fetch - main [MainThread]: Store serial: [23061703]
