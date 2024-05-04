@@ -581,3 +581,26 @@
 [2024-05-05 01:02:44] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
 [2024-05-05 01:02:44] INFO root fetch - main [MainThread]: End processing [lytils]: success
 [2024-05-05 01:02:44] INFO root fetch - main [MainThread]: Store serial: [23061690]
+[2024-05-05 01:04:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061690]
+[2024-05-05 01:04:52] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 01:06:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061690]
+[2024-05-05 01:06:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 01:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-05-05 01:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-ssi-commission
+[2024-05-05 01:06:58] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240503] Old Version: [0.7.52b20240502]
+[2024-05-05 01:06:58] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: New version: [14.0.1.2.1] Old Version: [14.0.1.2.0]
+[2024-05-05 01:06:58] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/c9/a3/5cab375360ac009865537e3631bb8bf6ddb15a6fbfedf75ba25820543be9/tmnt-0.7.52b20240502.tar.gz
+[2024-05-05 01:06:58] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: Downloading https://files.pythonhosted.org/packages/de/d7/02473df03733862fe56a7cd19497dcb0910c9e444bd64461e696e853a738/odoo14_addon_ssi_commission-14.0.1.2.0-py3-none-any.whl
+[2024-05-05 01:06:58] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/57/1d/07fefa93135ff5d19b9b0d1957d2e5c879c67ef082eec91c2525a3c82d38/tmnt-0.7.52b20240503.tar.gz
+[2024-05-05 01:06:58] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-05 01:06:58] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240502.tar.gz tmp/tmnt-0.7.52b20240503.tar.gz --markdown 20240505/t/tmnt/0.7.52b20240502-0.7.52b20240503/README.md --exclude *.pyd
+[2024-05-05 01:06:58] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: Downloading https://files.pythonhosted.org/packages/dd/94/e68ae3304db95b3131cd456fc380e9f0cb53f5f927bfea1f4e2d532f43e0/odoo14_addon_ssi_commission-14.0.1.2.1-py3-none-any.whl
+[2024-05-05 01:06:58] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: executing diffoscope
+[2024-05-05 01:06:58] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_commission-14.0.1.2.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_commission-14.0.1.2.1-py3-none-any.whl.zip --markdown 20240505/o/odoo14-addon-ssi-commission/14.0.1.2.0-14.0.1.2.1/README.md --exclude *.pyd
+[2024-05-05 01:06:59] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240502.tar.gz]
+[2024-05-05 01:06:59] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240503.tar.gz]
+[2024-05-05 01:06:59] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-05 01:06:59] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_commission-14.0.1.2.0-py3-none-any.whl.zip]
+[2024-05-05 01:06:59] INFO root fetch - processPackages [odoo14-addon-ssi-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_commission-14.0.1.2.1-py3-none-any.whl.zip]
+[2024-05-05 01:06:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-commission]: success
+[2024-05-05 01:06:59] INFO root fetch - main [MainThread]: Store serial: [23061695]
