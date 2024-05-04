@@ -221,3 +221,18 @@
 [2024-05-05 00:23:53] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.9.tar.gz]
 [2024-05-05 00:23:53] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
 [2024-05-05 00:23:53] INFO root fetch - main [MainThread]: Store serial: [23061467]
+[2024-05-05 00:25:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061467]
+[2024-05-05 00:26:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 00:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CrypTGram
+[2024-05-05 00:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notolog
+[2024-05-05 00:26:01] WARNING root fetch - processPackages [CrypTGram]: Skipping, unable to determine old version
+[2024-05-05 00:26:01] INFO root fetch - main [MainThread]: End processing [CrypTGram] error
+[2024-05-05 00:26:01] INFO root fetch - processPackages [notolog]: New version: [0.9.0b12] Old Version: [0.9.0b10]
+[2024-05-05 00:26:02] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/24/c9/bb2157b7fde9973c29216b7120928da34164ed23db12cc7c7fac4454cc3b/notolog-0.9.0b10.tar.gz
+[2024-05-05 00:26:02] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/95/5e/2c063125f59dc93bb253d36a3a9c1bed827806948752fdd67627b02ff628/notolog-0.9.0b12.tar.gz
+[2024-05-05 00:26:02] INFO root fetch - processPackages [notolog]: executing diffoscope
+[2024-05-05 00:26:02] INFO root fetch - processPackages [notolog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notolog-0.9.0b10.tar.gz tmp/notolog-0.9.0b12.tar.gz --markdown 20240505/n/notolog/0.9.0b10-0.9.0b12/README.md --exclude *.pyd
+[2024-05-05 00:26:04] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b10.tar.gz]
+[2024-05-05 00:26:04] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b12.tar.gz]
+[2024-05-05 00:26:04] INFO root fetch - main [MainThread]: End processing [notolog]: success
+[2024-05-05 00:26:04] INFO root fetch - main [MainThread]: Store serial: [23061486]
