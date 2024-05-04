@@ -807,3 +807,18 @@
 [2024-05-05 01:28:37] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Remove: archive file [/home/abi/fetcher/tmp/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz]
 [2024-05-05 01:28:37] INFO root fetch - main [MainThread]: End processing [cloudsnorkel.cdk-github-runners]: success
 [2024-05-05 01:28:37] INFO root fetch - main [MainThread]: Store serial: [23061785]
+[2024-05-05 01:30:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061785]
+[2024-05-05 01:30:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 01:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: womb
+[2024-05-05 01:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbrlabs-pulumi-eks
+[2024-05-05 01:30:45] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: New version: [0.9.1a1707243566] Old Version: [0.9.0]
+[2024-05-05 01:30:45] WARNING root fetch - processPackages [womb]: Skipping, unable to determine old version
+[2024-05-05 01:30:45] INFO root fetch - main [MainThread]: End processing [womb] error
+[2024-05-05 01:30:45] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Downloading https://files.pythonhosted.org/packages/21/d7/aef8d104afe3ce2ea7de7a0d57a6fe58ed7d3eda4674da284fbeaea82f93/lbrlabs_pulumi_eks-0.9.0.tar.gz
+[2024-05-05 01:30:45] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Downloading https://files.pythonhosted.org/packages/f3/44/61d0eab4adc9a0cce0c9886829dc5f49c1c49864fc2a85eb3d49ce88bb30/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz
+[2024-05-05 01:30:45] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: executing diffoscope
+[2024-05-05 01:30:45] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_eks-0.9.0.tar.gz tmp/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz --markdown 20240505/l/lbrlabs-pulumi-eks/0.9.0-0.9.1a1707243566/README.md --exclude *.pyd
+[2024-05-05 01:30:46] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/lbrlabs_pulumi_eks-0.9.0.tar.gz]
+[2024-05-05 01:30:46] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz]
+[2024-05-05 01:30:46] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-eks]: success
+[2024-05-05 01:30:46] INFO root fetch - main [MainThread]: Store serial: [23061792]
