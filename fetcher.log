@@ -1,0 +1,21 @@
+[2024-05-05 00:01:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061293]
+[2024-05-05 00:01:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 00:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fhempy
+[2024-05-05 00:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlglot
+[2024-05-05 00:01:30] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-05 00:01:30] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-05 00:01:30] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-05 00:01:30] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-05 00:01:30] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-05-05 00:01:30] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-05 00:01:30] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240505/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-05 00:01:31] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-05 00:01:31] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-05 00:01:31] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-05 00:01:33] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-05-05 00:01:35] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-05-05 00:01:35] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240505/f/fhempy/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-05 00:01:36] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-05-05 00:01:36] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-05-05 00:01:36] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-05-05 00:01:36] INFO root fetch - main [MainThread]: Store serial: [23061298]
