@@ -263,3 +263,12 @@
 [2024-05-05 00:30:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.9.tar.gz]
 [2024-05-05 00:30:22] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2024-05-05 00:30:22] INFO root fetch - main [MainThread]: Store serial: [23061496]
+[2024-05-05 00:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061496]
+[2024-05-05 00:32:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 00:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vital-ai-haley-taxonomy
+[2024-05-05 00:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpy-cross-multi
+[2024-05-05 00:32:31] WARNING root fetch - processPackages [vital-ai-haley-taxonomy]: Skipping, unable to determine old version
+[2024-05-05 00:32:31] INFO root fetch - main [MainThread]: End processing [vital-ai-haley-taxonomy] error
+[2024-05-05 00:32:31] ERROR root fetch - processPackages [mpy-cross-multi]: Unable to get metadata: No such project 'mpy-cross-multi'
+[2024-05-05 00:32:31] INFO root fetch - main [MainThread]: End processing [mpy-cross-multi] error
+[2024-05-05 00:32:31] INFO root fetch - main [MainThread]: Store serial: [23061506]
