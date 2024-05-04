@@ -924,3 +924,18 @@
 [2024-05-05 01:41:45] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-05 01:41:45] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-05 01:41:45] INFO root fetch - main [MainThread]: Store serial: [23061882]
+[2024-05-05 01:43:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061882]
+[2024-05-05 01:43:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 01:43:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fancy-cli
+[2024-05-05 01:43:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: travertine
+[2024-05-05 01:43:54] WARNING root fetch - processPackages [fancy-cli]: Skipping, unable to determine old version
+[2024-05-05 01:43:54] INFO root fetch - main [MainThread]: End processing [fancy-cli] error
+[2024-05-05 01:43:54] INFO root fetch - processPackages [travertine]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 01:43:54] INFO root fetch - processPackages [travertine]: Downloading https://files.pythonhosted.org/packages/a4/36/413b425cab8cfe2766d18bb01d441e5bc0d6eb4297d30e9cbe0e4039deb6/travertine-0.8.0-cp38-cp38-manylinux2010_x86_64.whl
+[2024-05-05 01:43:55] INFO root fetch - processPackages [travertine]: Downloading https://files.pythonhosted.org/packages/ed/c3/f5f757cd6ce8c0a38ca0ff07753e5d1d8798b2efe7c43e19596fbba3c7d7/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl
+[2024-05-05 01:43:56] INFO root fetch - processPackages [travertine]: executing diffoscope
+[2024-05-05 01:43:56] INFO root fetch - processPackages [travertine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/travertine-0.8.0-cp38-cp38-manylinux2010_x86_64.whl.zip tmp/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl.zip --markdown 20240505/t/travertine/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-05 01:43:56] INFO root fetch - processPackages [travertine]: Remove: archive file [/home/abi/fetcher/tmp/travertine-0.8.0-cp38-cp38-manylinux2010_x86_64.whl.zip]
+[2024-05-05 01:43:56] INFO root fetch - processPackages [travertine]: Remove: archive file [/home/abi/fetcher/tmp/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl.zip]
+[2024-05-05 01:43:56] INFO root fetch - main [MainThread]: End processing [travertine]: success
+[2024-05-05 01:43:56] INFO root fetch - main [MainThread]: Store serial: [23061897]
