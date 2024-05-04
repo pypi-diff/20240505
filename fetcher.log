@@ -822,3 +822,27 @@
 [2024-05-05 01:30:46] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz]
 [2024-05-05 01:30:46] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-eks]: success
 [2024-05-05 01:30:46] INFO root fetch - main [MainThread]: Store serial: [23061792]
+[2024-05-05 01:32:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061792]
+[2024-05-05 01:32:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 01:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: womb
+[2024-05-05 01:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepeline
+[2024-05-05 01:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-05 01:32:55] WARNING root fetch - processPackages [womb]: Skipping, unable to determine old version
+[2024-05-05 01:32:55] INFO root fetch - main [MainThread]: End processing [womb] error
+[2024-05-05 01:32:55] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 01:32:55] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 01:32:55] INFO root fetch - processPackages [pepeline]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 01:32:55] INFO root fetch - processPackages [pepeline]: Downloading https://files.pythonhosted.org/packages/ab/cd/8ae3c24092da4eb0b2e004a29d5a3c0f5645221700bcc67d92564531a967/pepeline-0.2.8.tar.gz
+[2024-05-05 01:32:55] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 01:32:55] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 01:32:55] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 01:32:55] INFO root fetch - processPackages [pepeline]: Downloading https://files.pythonhosted.org/packages/26/8d/cf567103d53f9f032a26e297928db44a6cec9cc51e06b9df2f8abc0512ff/pepeline-0.2.9-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-05-05 01:32:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 01:32:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 01:32:56] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 01:32:58] INFO root fetch - processPackages [pepeline]: executing diffoscope
+[2024-05-05 01:32:58] INFO root fetch - processPackages [pepeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepeline-0.2.8.tar.gz tmp/pepeline-0.2.9-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240505/p/pepeline/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-05 01:32:59] INFO root fetch - processPackages [pepeline]: Remove: archive file [/home/abi/fetcher/tmp/pepeline-0.2.8.tar.gz]
+[2024-05-05 01:32:59] INFO root fetch - processPackages [pepeline]: Remove: archive file [/home/abi/fetcher/tmp/pepeline-0.2.9-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-05-05 01:32:59] INFO root fetch - main [MainThread]: End processing [pepeline]: success
+[2024-05-05 01:32:59] INFO root fetch - main [MainThread]: Store serial: [23061822]
