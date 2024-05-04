@@ -159,3 +159,38 @@
 [2024-05-05 00:17:00] INFO root fetch - processPackages [astropy]: Remove: archive file [/home/abi/fetcher/tmp/astropy-6.1.0rc1.tar.gz]
 [2024-05-05 00:17:00] INFO root fetch - main [MainThread]: End processing [astropy]: success
 [2024-05-05 00:17:00] INFO root fetch - main [MainThread]: Store serial: [23061438]
+[2024-05-05 00:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061438]
+[2024-05-05 00:19:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 00:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lytils
+[2024-05-05 00:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: midi-abstraction
+[2024-05-05 00:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-core
+[2024-05-05 00:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyroblack
+[2024-05-05 00:19:30] INFO root fetch - processPackages [midi-abstraction]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-05 00:19:30] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 00:19:30] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a94] Old Version: [0.0.8a93]
+[2024-05-05 00:19:31] INFO root fetch - processPackages [pyroblack]: New version: [2.3.68] Old Version: [2.3.67]
+[2024-05-05 00:19:31] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-05 00:19:31] INFO root fetch - processPackages [midi-abstraction]: Downloading https://files.pythonhosted.org/packages/ec/13/33450c956c21c7e458bc9fde99fd4b67333d8f836acf892c2818b9a3f592/midi-abstraction-2.0.0.tar.gz
+[2024-05-05 00:19:31] INFO root fetch - processPackages [ovos-core]: Downloading https://files.pythonhosted.org/packages/1b/88/6478dc4bd16c9c9bffcb382f2b6e326a6cb51b19af9e09c813f5deabf48f/ovos_core-0.0.8a93-py3-none-any.whl
+[2024-05-05 00:19:31] WARNING root fetch - processPackages [ovos-core]: Skipping package: exceeds size limit 18553617>=10485760
+[2024-05-05 00:19:31] INFO root fetch - main [MainThread]: End processing [ovos-core] error
+[2024-05-05 00:19:31] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/35/3f/99d5392e22b512cc7760a4e8a38890e8548753a548eef055cfb4ebae139d/pyroblack-2.3.67.tar.gz
+[2024-05-05 00:19:31] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-05 00:19:31] INFO root fetch - processPackages [midi-abstraction]: Downloading https://files.pythonhosted.org/packages/15/e8/043a726fe62e550a62ac2e9e45cd272e426915f1dd48f760087fc79931cc/midi-abstraction-2.0.1.tar.gz
+[2024-05-05 00:19:31] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-05 00:19:31] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240505/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 00:19:31] INFO root fetch - processPackages [midi-abstraction]: executing diffoscope
+[2024-05-05 00:19:31] INFO root fetch - processPackages [midi-abstraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midi-abstraction-2.0.0.tar.gz tmp/midi-abstraction-2.0.1.tar.gz --markdown 20240505/m/midi-abstraction/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-05 00:19:31] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/df/c0/e622cab6044a1ff48c90249ffb0f47d2cc5b1d19f0b00bfca30c35d0acd0/pyroblack-2.3.68.tar.gz
+[2024-05-05 00:19:31] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-05-05 00:19:31] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.67.tar.gz tmp/pyroblack-2.3.68.tar.gz --markdown 20240505/p/pyroblack/2.3.67-2.3.68/README.md --exclude *.pyd
+[2024-05-05 00:19:31] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-2.0.0.tar.gz]
+[2024-05-05 00:19:31] INFO root fetch - processPackages [midi-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/midi-abstraction-2.0.1.tar.gz]
+[2024-05-05 00:19:31] INFO root fetch - main [MainThread]: End processing [midi-abstraction]: success
+[2024-05-05 00:19:32] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-05 00:19:32] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-05 00:19:32] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-05 00:19:34] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.67.tar.gz]
+[2024-05-05 00:19:34] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.68.tar.gz]
+[2024-05-05 00:19:34] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-05-05 00:19:34] INFO root fetch - main [MainThread]: Store serial: [23061461]
