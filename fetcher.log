@@ -867,3 +867,24 @@
 [2024-05-05 01:35:16] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.4.232706.dev0.tar.gz]
 [2024-05-05 01:35:16] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-05-05 01:35:16] INFO root fetch - main [MainThread]: Store serial: [23061856]
+[2024-05-05 01:37:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061856]
+[2024-05-05 01:37:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 01:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xotless
+[2024-05-05 01:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxel
+[2024-05-05 01:37:25] INFO root fetch - processPackages [xotless]: New version: [4.1.0] Old Version: [4.0.0a4]
+[2024-05-05 01:37:25] INFO root fetch - processPackages [pyxel]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-05 01:37:25] INFO root fetch - processPackages [xotless]: Downloading https://files.pythonhosted.org/packages/92/f7/0ff284539a11597ce6014736041ffd17610b0b0632212030236bbf579351/xotless-4.0.0a4.tar.gz
+[2024-05-05 01:37:25] INFO root fetch - processPackages [pyxel]: Downloading https://files.pythonhosted.org/packages/b7/65/f5508dc7e379c46447acabc03f7e9b1142133dbfc02b335bd9316d65e9c0/pyxel-2.0.8-cp37-abi3-win_amd64.whl
+[2024-05-05 01:37:25] INFO root fetch - processPackages [xotless]: Downloading https://files.pythonhosted.org/packages/f7/fa/6a620ab93a7c43d795e0bfcf7a2b099a30af25a80f38d0e4fe5f195a92bb/xotless-4.1.0.tar.gz
+[2024-05-05 01:37:26] INFO root fetch - processPackages [xotless]: executing diffoscope
+[2024-05-05 01:37:26] INFO root fetch - processPackages [xotless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xotless-4.0.0a4.tar.gz tmp/xotless-4.1.0.tar.gz --markdown 20240505/x/xotless/4.0.0a4-4.1.0/README.md --exclude *.pyd
+[2024-05-05 01:37:26] INFO root fetch - processPackages [pyxel]: Downloading https://files.pythonhosted.org/packages/1a/c3/5faae21b3f85c3252e5682b5fcdf749c839454addec09027c2e15e4f82df/pyxel-2.0.9-cp37-abi3-win_amd64.whl
+[2024-05-05 01:37:26] INFO root fetch - processPackages [pyxel]: executing diffoscope
+[2024-05-05 01:37:26] INFO root fetch - processPackages [pyxel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxel-2.0.8-cp37-abi3-win_amd64.whl.zip tmp/pyxel-2.0.9-cp37-abi3-win_amd64.whl.zip --markdown 20240505/p/pyxel/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-05 01:37:26] INFO root fetch - processPackages [xotless]: Remove: archive file [/home/abi/fetcher/tmp/xotless-4.0.0a4.tar.gz]
+[2024-05-05 01:37:26] INFO root fetch - processPackages [xotless]: Remove: archive file [/home/abi/fetcher/tmp/xotless-4.1.0.tar.gz]
+[2024-05-05 01:37:26] INFO root fetch - main [MainThread]: End processing [xotless]: success
+[2024-05-05 01:37:26] INFO root fetch - processPackages [pyxel]: Remove: archive file [/home/abi/fetcher/tmp/pyxel-2.0.8-cp37-abi3-win_amd64.whl.zip]
+[2024-05-05 01:37:26] INFO root fetch - processPackages [pyxel]: Remove: archive file [/home/abi/fetcher/tmp/pyxel-2.0.9-cp37-abi3-win_amd64.whl.zip]
+[2024-05-05 01:37:26] INFO root fetch - main [MainThread]: End processing [pyxel]: success
+[2024-05-05 01:37:26] INFO root fetch - main [MainThread]: Store serial: [23061868]
