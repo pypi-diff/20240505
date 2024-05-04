@@ -43,3 +43,21 @@
 [2024-05-05 00:03:47] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-05 00:03:47] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-05 00:03:47] INFO root fetch - main [MainThread]: Store serial: [23061309]
+[2024-05-05 00:05:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061309]
+[2024-05-05 00:05:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 00:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyfi-chain
+[2024-05-05 00:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enthalpy_estimator
+[2024-05-05 00:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-formset
+[2024-05-05 00:05:55] WARNING root fetch - processPackages [hyfi-chain]: Skipping, unable to determine old version
+[2024-05-05 00:05:55] INFO root fetch - main [MainThread]: End processing [hyfi-chain] error
+[2024-05-05 00:05:55] INFO root fetch - processPackages [django-formset]: New version: [1.4.1] Old Version: [1.4]
+[2024-05-05 00:05:55] WARNING root fetch - processPackages [enthalpy_estimator]: Skipping, unable to determine old version
+[2024-05-05 00:05:55] INFO root fetch - main [MainThread]: End processing [enthalpy_estimator] error
+[2024-05-05 00:05:55] INFO root fetch - processPackages [django-formset]: Downloading https://files.pythonhosted.org/packages/3d/c9/bb7bb5748e28dc3424dad8c75ce9ff2cf4b13bcc25c11ba369f85c197eb4/django_formset-1.4.tar.gz
+[2024-05-05 00:05:56] INFO root fetch - processPackages [django-formset]: Downloading https://files.pythonhosted.org/packages/ce/ae/3f6709c267539ea5fd7498c15883b5cd28a74059e2b410afaab5dc456131/django_formset-1.4.1.tar.gz
+[2024-05-05 00:05:56] INFO root fetch - processPackages [django-formset]: executing diffoscope
+[2024-05-05 00:05:56] INFO root fetch - processPackages [django-formset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_formset-1.4.tar.gz tmp/django_formset-1.4.1.tar.gz --markdown 20240505/d/django-formset/1.4-1.4.1/README.md --exclude *.pyd
+[2024-05-05 00:06:03] INFO root fetch - processPackages [django-formset]: Remove: archive file [/home/abi/fetcher/tmp/django_formset-1.4.tar.gz]
+[2024-05-05 00:06:03] INFO root fetch - processPackages [django-formset]: Remove: archive file [/home/abi/fetcher/tmp/django_formset-1.4.1.tar.gz]
+[2024-05-05 00:06:03] INFO root fetch - main [MainThread]: End processing [django-formset]: success
+[2024-05-05 00:06:03] INFO root fetch - main [MainThread]: Store serial: [23061322]
