@@ -972,3 +972,24 @@
 [2024-05-05 01:46:06] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-05 01:46:06] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-05 01:46:06] INFO root fetch - main [MainThread]: Store serial: [23061911]
+[2024-05-05 01:48:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061911]
+[2024-05-05 01:48:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 01:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strif
+[2024-05-05 01:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-05 01:48:15] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 01:48:15] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 01:48:15] INFO root fetch - processPackages [strif]: New version: [1.0.0rc1] Old Version: [0.2.3]
+[2024-05-05 01:48:15] INFO root fetch - processPackages [strif]: Downloading https://files.pythonhosted.org/packages/68/f6/7208ee6486ab85cc27dddd2d65da683cfe6b64c539fd53b878371756a97a/strif-0.2.3.tar.gz
+[2024-05-05 01:48:15] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 01:48:15] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 01:48:15] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 01:48:15] INFO root fetch - processPackages [strif]: Downloading https://files.pythonhosted.org/packages/3b/b6/3462fe934549e118feec6e0de7bef41c68031098db094ff559081d1fb782/strif-1.0.0rc1.tar.gz
+[2024-05-05 01:48:15] INFO root fetch - processPackages [strif]: executing diffoscope
+[2024-05-05 01:48:15] INFO root fetch - processPackages [strif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strif-0.2.3.tar.gz tmp/strif-1.0.0rc1.tar.gz --markdown 20240505/s/strif/0.2.3-1.0.0rc1/README.md --exclude *.pyd
+[2024-05-05 01:48:16] INFO root fetch - processPackages [strif]: Remove: archive file [/home/abi/fetcher/tmp/strif-0.2.3.tar.gz]
+[2024-05-05 01:48:16] INFO root fetch - processPackages [strif]: Remove: archive file [/home/abi/fetcher/tmp/strif-1.0.0rc1.tar.gz]
+[2024-05-05 01:48:16] INFO root fetch - main [MainThread]: End processing [strif]: success
+[2024-05-05 01:48:16] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 01:48:16] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 01:48:16] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 01:48:16] INFO root fetch - main [MainThread]: Store serial: [23061917]
