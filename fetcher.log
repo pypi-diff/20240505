@@ -894,3 +894,33 @@
 [2024-05-05 01:39:35] WARNING root fetch - processPackages [edterm]: Skipping, unable to determine old version
 [2024-05-05 01:39:35] INFO root fetch - main [MainThread]: End processing [edterm] error
 [2024-05-05 01:39:35] INFO root fetch - main [MainThread]: Store serial: [23061873]
+[2024-05-05 01:41:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061873]
+[2024-05-05 01:41:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 01:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sysrev
+[2024-05-05 01:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-05-05 01:41:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-05 01:41:44] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 01:41:44] INFO root fetch - processPackages [dektools]: New version: [0.1.95] Old Version: [0.1.94]
+[2024-05-05 01:41:44] INFO root fetch - processPackages [sysrev]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-05-05 01:41:44] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/99/51/ec4d170455c43d2b9c1e3a5395480e4eaff8fdcd9b4131ecc2297a95c7dd/dektools-0.1.94.tar.gz
+[2024-05-05 01:41:44] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 01:41:44] INFO root fetch - processPackages [sysrev]: Downloading https://files.pythonhosted.org/packages/77/52/0d280174882705c20081f1022529c5f679dc1986f23ccb31c9a7e14ee2e1/sysrev-1.3.5.tar.gz
+[2024-05-05 01:41:44] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/a9/60/81848f8fef823ef7bc9f49038c68b2c7720805c32c233045d1188d758d8b/dektools-0.1.95.tar.gz
+[2024-05-05 01:41:44] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 01:41:44] INFO root fetch - processPackages [sysrev]: Downloading https://files.pythonhosted.org/packages/82/f1/03862682f5059f7a5a80a0868c16d029d1dcfa67273a305dbc1b74837aaa/sysrev-1.3.6.tar.gz
+[2024-05-05 01:41:44] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-05 01:41:44] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.94.tar.gz tmp/dektools-0.1.95.tar.gz --markdown 20240505/d/dektools/0.1.94-0.1.95/README.md --exclude *.pyd
+[2024-05-05 01:41:44] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 01:41:44] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 01:41:45] INFO root fetch - processPackages [sysrev]: executing diffoscope
+[2024-05-05 01:41:45] INFO root fetch - processPackages [sysrev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysrev-1.3.5.tar.gz tmp/sysrev-1.3.6.tar.gz --markdown 20240505/s/sysrev/1.3.5-1.3.6/README.md --exclude *.pyd
+[2024-05-05 01:41:45] INFO root fetch - processPackages [sysrev]: Remove: archive file [/home/abi/fetcher/tmp/sysrev-1.3.5.tar.gz]
+[2024-05-05 01:41:45] INFO root fetch - processPackages [sysrev]: Remove: archive file [/home/abi/fetcher/tmp/sysrev-1.3.6.tar.gz]
+[2024-05-05 01:41:45] INFO root fetch - main [MainThread]: End processing [sysrev]: success
+[2024-05-05 01:41:45] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.94.tar.gz]
+[2024-05-05 01:41:45] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.95.tar.gz]
+[2024-05-05 01:41:45] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-05 01:41:45] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 01:41:45] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 01:41:45] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 01:41:45] INFO root fetch - main [MainThread]: Store serial: [23061882]
