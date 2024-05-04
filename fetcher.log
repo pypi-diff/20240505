@@ -939,3 +939,36 @@
 [2024-05-05 01:43:56] INFO root fetch - processPackages [travertine]: Remove: archive file [/home/abi/fetcher/tmp/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl.zip]
 [2024-05-05 01:43:56] INFO root fetch - main [MainThread]: End processing [travertine]: success
 [2024-05-05 01:43:56] INFO root fetch - main [MainThread]: Store serial: [23061897]
+[2024-05-05 01:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061897]
+[2024-05-05 01:46:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 01:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edterm
+[2024-05-05 01:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yowasp-runtime
+[2024-05-05 01:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-05 01:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coherent.build
+[2024-05-05 01:46:05] WARNING root fetch - processPackages [edterm]: Skipping, unable to determine old version
+[2024-05-05 01:46:05] INFO root fetch - main [MainThread]: End processing [edterm] error
+[2024-05-05 01:46:05] INFO root fetch - processPackages [yowasp-runtime]: New version: [1.7] Old Version: [1.6]
+[2024-05-05 01:46:05] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 01:46:05] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 01:46:05] INFO root fetch - processPackages [coherent.build]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-05 01:46:05] INFO root fetch - processPackages [yowasp-runtime]: Downloading https://files.pythonhosted.org/packages/e7/a1/907e6e8a79a56a85a8042c852e6071070625366072275b2f016b73f070ad/yowasp_runtime-1.6-py3-none-any.whl
+[2024-05-05 01:46:05] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/3e/75/ac023dd06e4efa8bf68269b3834f7a64199527dd9b3fb743bf066f75eb5c/coherent_build-0.1.1.tar.gz
+[2024-05-05 01:46:05] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 01:46:05] INFO root fetch - processPackages [yowasp-runtime]: Downloading https://files.pythonhosted.org/packages/3f/e9/90cb3e0e2773737c930d8192b0232e03eee71f9ae918620a47be7815f379/yowasp_runtime-1.7-py3-none-any.whl
+[2024-05-05 01:46:05] INFO root fetch - processPackages [yowasp-runtime]: executing diffoscope
+[2024-05-05 01:46:05] INFO root fetch - processPackages [yowasp-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yowasp_runtime-1.6-py3-none-any.whl.zip tmp/yowasp_runtime-1.7-py3-none-any.whl.zip --markdown 20240505/y/yowasp-runtime/1.6-1.7/README.md --exclude *.pyd
+[2024-05-05 01:46:05] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/80/ed/edcf2c508ae19019006ee852fb5dfa62f1d095a5bba8f3e6a04905aaf2a1/coherent_build-0.2.0.tar.gz
+[2024-05-05 01:46:05] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 01:46:05] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 01:46:05] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-05 01:46:05] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.1.1.tar.gz tmp/coherent_build-0.2.0.tar.gz --markdown 20240505/c/coherent.build/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-05 01:46:06] INFO root fetch - processPackages [yowasp-runtime]: Remove: archive file [/home/abi/fetcher/tmp/yowasp_runtime-1.6-py3-none-any.whl.zip]
+[2024-05-05 01:46:06] INFO root fetch - processPackages [yowasp-runtime]: Remove: archive file [/home/abi/fetcher/tmp/yowasp_runtime-1.7-py3-none-any.whl.zip]
+[2024-05-05 01:46:06] INFO root fetch - main [MainThread]: End processing [yowasp-runtime]: success
+[2024-05-05 01:46:06] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.1.1.tar.gz]
+[2024-05-05 01:46:06] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.0.tar.gz]
+[2024-05-05 01:46:06] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-05 01:46:06] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 01:46:06] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 01:46:06] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 01:46:06] INFO root fetch - main [MainThread]: Store serial: [23061911]
