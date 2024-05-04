@@ -777,3 +777,33 @@
 [2024-05-05 01:26:24] INFO root fetch - processPackages [newrawpy]: Remove: archive file [/home/abi/fetcher/tmp/newrawpy-1.0.0b0.tar.gz]
 [2024-05-05 01:26:24] INFO root fetch - main [MainThread]: End processing [newrawpy]: success
 [2024-05-05 01:26:24] INFO root fetch - main [MainThread]: Store serial: [23061776]
+[2024-05-05 01:28:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061776]
+[2024-05-05 01:28:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 01:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lytils
+[2024-05-05 01:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudsnorkel.cdk-github-runners
+[2024-05-05 01:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: liveflask
+[2024-05-05 01:28:34] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 01:28:34] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-05 01:28:34] INFO root fetch - processPackages [liveflask]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-05 01:28:34] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-05 01:28:34] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/80/56/4f51280284e11f573b489b71d92645464dd554dea80166c8f879c26f4f97/liveflask-1.0.6.tar.gz
+[2024-05-05 01:28:34] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/c9/a7/d5d332a50c08e84cd53ee3b2bb6af229b8769177551ded5e1852873e2628/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz
+[2024-05-05 01:28:34] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-05 01:28:34] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-05 01:28:34] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240505/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 01:28:34] INFO root fetch - processPackages [liveflask]: Downloading https://files.pythonhosted.org/packages/d5/27/a0645265c94bcd379d53799b4b69067389e5e17778700378d3472b98f0ed/liveflask-1.0.7.tar.gz
+[2024-05-05 01:28:34] INFO root fetch - processPackages [liveflask]: executing diffoscope
+[2024-05-05 01:28:34] INFO root fetch - processPackages [liveflask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveflask-1.0.6.tar.gz tmp/liveflask-1.0.7.tar.gz --markdown 20240505/l/liveflask/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-05 01:28:35] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-05 01:28:35] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-05 01:28:35] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-05 01:28:35] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/66/2b/f64323e7bec084fa1ddeddda4bfd6760f662cfc653b73e70a04f8ff6b51d/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz
+[2024-05-05 01:28:35] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.6.tar.gz]
+[2024-05-05 01:28:35] INFO root fetch - processPackages [liveflask]: Remove: archive file [/home/abi/fetcher/tmp/liveflask-1.0.7.tar.gz]
+[2024-05-05 01:28:35] INFO root fetch - main [MainThread]: End processing [liveflask]: success
+[2024-05-05 01:28:36] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: executing diffoscope
+[2024-05-05 01:28:36] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz tmp/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz --markdown 20240505/c/cloudsnorkel.cdk-github-runners/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-05 01:28:37] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Remove: archive file [/home/abi/fetcher/tmp/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz]
+[2024-05-05 01:28:37] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Remove: archive file [/home/abi/fetcher/tmp/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz]
+[2024-05-05 01:28:37] INFO root fetch - main [MainThread]: End processing [cloudsnorkel.cdk-github-runners]: success
+[2024-05-05 01:28:37] INFO root fetch - main [MainThread]: Store serial: [23061785]
