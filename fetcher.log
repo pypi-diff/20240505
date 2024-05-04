@@ -660,3 +660,36 @@
 [2024-05-05 01:13:29] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.84.tar.gz]
 [2024-05-05 01:13:29] INFO root fetch - main [MainThread]: End processing [fintekkers-ledger-models]: success
 [2024-05-05 01:13:29] INFO root fetch - main [MainThread]: Store serial: [23061718]
+[2024-05-05 01:15:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061718]
+[2024-05-05 01:15:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 01:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybricksdev
+[2024-05-05 01:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ryutils
+[2024-05-05 01:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: linear-regression-model
+[2024-05-05 01:15:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lytils
+[2024-05-05 01:15:37] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 01:15:37] INFO root fetch - processPackages [pybricksdev]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-05-05 01:15:37] WARNING root fetch - processPackages [linear-regression-model]: Skipping, unable to determine old version
+[2024-05-05 01:15:37] INFO root fetch - main [MainThread]: End processing [linear-regression-model] error
+[2024-05-05 01:15:37] INFO root fetch - processPackages [ryutils]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-05-05 01:15:37] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-05 01:15:37] INFO root fetch - processPackages [pybricksdev]: Downloading https://files.pythonhosted.org/packages/d8/1e/c421edf2d4e3e78875f086225f3f2c71e3d1cf1c15ce112c9572c5a08c75/pybricksdev-1.0.0a8.tar.gz
+[2024-05-05 01:15:38] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/ed/eb/22ddeebd2140e46ce42ac2cb439b71321181a85e76eead49096f8e9c2dbf/ryutils-4.1.1.tar.gz
+[2024-05-05 01:15:38] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-05 01:15:38] INFO root fetch - processPackages [pybricksdev]: Downloading https://files.pythonhosted.org/packages/b2/c2/4693366e378d5b1836a7720f8cabd4cfd2957d17aad28c11dda505034edc/pybricksdev-1.0.0a9.tar.gz
+[2024-05-05 01:15:38] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-05 01:15:38] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240505/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 01:15:38] INFO root fetch - processPackages [pybricksdev]: executing diffoscope
+[2024-05-05 01:15:38] INFO root fetch - processPackages [pybricksdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybricksdev-1.0.0a8.tar.gz tmp/pybricksdev-1.0.0a9.tar.gz --markdown 20240505/p/pybricksdev/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-05-05 01:15:38] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/2f/70/a46c208a5a0ee17ab31d129b43fbf3544de48ecf18afaab9675f7fa9b94a/ryutils-4.1.2.tar.gz
+[2024-05-05 01:15:38] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-05-05 01:15:38] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.1.1.tar.gz tmp/ryutils-4.1.2.tar.gz --markdown 20240505/r/ryutils/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-05-05 01:15:38] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-05 01:15:38] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-05 01:15:38] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-05 01:15:38] INFO root fetch - processPackages [pybricksdev]: Remove: archive file [/home/abi/fetcher/tmp/pybricksdev-1.0.0a8.tar.gz]
+[2024-05-05 01:15:38] INFO root fetch - processPackages [pybricksdev]: Remove: archive file [/home/abi/fetcher/tmp/pybricksdev-1.0.0a9.tar.gz]
+[2024-05-05 01:15:38] INFO root fetch - main [MainThread]: End processing [pybricksdev]: success
+[2024-05-05 01:15:39] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.1.tar.gz]
+[2024-05-05 01:15:39] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.2.tar.gz]
+[2024-05-05 01:15:39] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-05-05 01:15:39] INFO root fetch - main [MainThread]: Store serial: [23061731]
