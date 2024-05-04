@@ -458,3 +458,33 @@
 [2024-05-05 00:51:52] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.9.tar.gz]
 [2024-05-05 00:51:52] INFO root fetch - main [MainThread]: End processing [appier]: success
 [2024-05-05 00:51:52] INFO root fetch - main [MainThread]: Store serial: [23061626]
+[2024-05-05 00:53:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061626]
+[2024-05-05 00:54:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 00:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygments-crbasic
+[2024-05-05 00:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbrlabs-pulumi-eks
+[2024-05-05 00:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CrypTGram
+[2024-05-05 00:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mtprotocrypt
+[2024-05-05 00:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mimllearning
+[2024-05-05 00:54:01] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: New version: [0.9.1a1707243566] Old Version: [0.9.0]
+[2024-05-05 00:54:01] WARNING root fetch - processPackages [mtprotocrypt]: Skipping, unable to determine old version
+[2024-05-05 00:54:01] INFO root fetch - main [MainThread]: End processing [mtprotocrypt] error
+[2024-05-05 00:54:01] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 00:54:01] WARNING root fetch - processPackages [CrypTGram]: Skipping, unable to determine old version
+[2024-05-05 00:54:01] INFO root fetch - main [MainThread]: End processing [CrypTGram] error
+[2024-05-05 00:54:01] WARNING root fetch - processPackages [pygments-crbasic]: Skipping, unable to determine old version
+[2024-05-05 00:54:01] INFO root fetch - main [MainThread]: End processing [pygments-crbasic] error
+[2024-05-05 00:54:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 00:54:01] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Downloading https://files.pythonhosted.org/packages/21/d7/aef8d104afe3ce2ea7de7a0d57a6fe58ed7d3eda4674da284fbeaea82f93/lbrlabs_pulumi_eks-0.9.0.tar.gz
+[2024-05-05 00:54:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 00:54:02] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Downloading https://files.pythonhosted.org/packages/f3/44/61d0eab4adc9a0cce0c9886829dc5f49c1c49864fc2a85eb3d49ce88bb30/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz
+[2024-05-05 00:54:02] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 00:54:02] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 00:54:02] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: executing diffoscope
+[2024-05-05 00:54:02] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_eks-0.9.0.tar.gz tmp/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz --markdown 20240505/l/lbrlabs-pulumi-eks/0.9.0-0.9.1a1707243566/README.md --exclude *.pyd
+[2024-05-05 00:54:02] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/lbrlabs_pulumi_eks-0.9.0.tar.gz]
+[2024-05-05 00:54:02] INFO root fetch - processPackages [lbrlabs-pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/lbrlabs_pulumi_eks-0.9.1a1707243566.tar.gz]
+[2024-05-05 00:54:02] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-eks]: success
+[2024-05-05 00:54:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 00:54:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 00:54:02] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 00:54:02] INFO root fetch - main [MainThread]: Store serial: [23061660]
