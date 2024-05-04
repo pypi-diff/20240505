@@ -1032,3 +1032,15 @@
 [2024-05-05 01:52:36] INFO root fetch - processPackages [cspdk]: Remove: archive file [/home/abi/fetcher/tmp/cspdk-0.8.0.tar.gz]
 [2024-05-05 01:52:36] INFO root fetch - main [MainThread]: End processing [cspdk]: success
 [2024-05-05 01:52:36] INFO root fetch - main [MainThread]: Store serial: [23061933]
+[2024-05-05 01:54:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061933]
+[2024-05-05 01:54:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 01:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cccodes
+[2024-05-05 01:54:44] INFO root fetch - processPackages [cccodes]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 01:54:44] INFO root fetch - processPackages [cccodes]: Downloading https://files.pythonhosted.org/packages/5e/63/1b34369269fe12d11d743bc512b2d3be54a45174a3fb42cf2a593a74449a/cccodes-0.1.0.tar.gz
+[2024-05-05 01:54:45] INFO root fetch - processPackages [cccodes]: Downloading https://files.pythonhosted.org/packages/68/9f/450038ec53e513ef80321ac1a45b41add5ef1c22ae71b5d195b6e3f3adc5/cccodes-0.1.1.tar.gz
+[2024-05-05 01:54:45] INFO root fetch - processPackages [cccodes]: executing diffoscope
+[2024-05-05 01:54:45] INFO root fetch - processPackages [cccodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cccodes-0.1.0.tar.gz tmp/cccodes-0.1.1.tar.gz --markdown 20240505/c/cccodes/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 01:54:45] INFO root fetch - processPackages [cccodes]: Remove: archive file [/home/abi/fetcher/tmp/cccodes-0.1.0.tar.gz]
+[2024-05-05 01:54:45] INFO root fetch - processPackages [cccodes]: Remove: archive file [/home/abi/fetcher/tmp/cccodes-0.1.1.tar.gz]
+[2024-05-05 01:54:45] INFO root fetch - main [MainThread]: End processing [cccodes]: success
+[2024-05-05 01:54:45] INFO root fetch - main [MainThread]: Store serial: [23061936]
