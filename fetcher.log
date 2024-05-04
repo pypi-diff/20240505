@@ -488,3 +488,36 @@
 [2024-05-05 00:54:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-05 00:54:02] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-05 00:54:02] INFO root fetch - main [MainThread]: Store serial: [23061660]
+[2024-05-05 00:56:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061660]
+[2024-05-05 00:56:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 00:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aind-data-transfer-models
+[2024-05-05 00:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybricksdev
+[2024-05-05 00:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lytils
+[2024-05-05 00:56:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finetuning-scheduler
+[2024-05-05 00:56:11] WARNING root fetch - processPackages [aind-data-transfer-models]: Skipping, unable to determine old version
+[2024-05-05 00:56:11] INFO root fetch - main [MainThread]: End processing [aind-data-transfer-models] error
+[2024-05-05 00:56:11] INFO root fetch - processPackages [lytils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 00:56:11] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/e5/63/947a765769a040af108780166ef416734281e055d3577ce6f8ecd6dcff7b/lytils-0.1.8.tar.gz
+[2024-05-05 00:56:11] INFO root fetch - processPackages [pybricksdev]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-05-05 00:56:11] INFO root fetch - processPackages [finetuning-scheduler]: New version: [2.2.4] Old Version: [2.2.1]
+[2024-05-05 00:56:11] INFO root fetch - processPackages [pybricksdev]: Downloading https://files.pythonhosted.org/packages/d8/1e/c421edf2d4e3e78875f086225f3f2c71e3d1cf1c15ce112c9572c5a08c75/pybricksdev-1.0.0a8.tar.gz
+[2024-05-05 00:56:11] INFO root fetch - processPackages [lytils]: Downloading https://files.pythonhosted.org/packages/47/f2/15accaaf8b3ff3e0f0f877cb445d79db9dcd4614b25c36859a4bfd9c5c75/lytils-0.1.9.tar.gz
+[2024-05-05 00:56:11] INFO root fetch - processPackages [finetuning-scheduler]: Downloading https://files.pythonhosted.org/packages/ed/a7/fb92ce00dcafbaf9814fb28b3ab4fc62727f9db4f5346c2a325270df8327/finetuning-scheduler-2.2.1.tar.gz
+[2024-05-05 00:56:12] INFO root fetch - processPackages [lytils]: executing diffoscope
+[2024-05-05 00:56:12] INFO root fetch - processPackages [lytils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytils-0.1.8.tar.gz tmp/lytils-0.1.9.tar.gz --markdown 20240505/l/lytils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 00:56:12] INFO root fetch - processPackages [pybricksdev]: Downloading https://files.pythonhosted.org/packages/b2/c2/4693366e378d5b1836a7720f8cabd4cfd2957d17aad28c11dda505034edc/pybricksdev-1.0.0a9.tar.gz
+[2024-05-05 00:56:12] INFO root fetch - processPackages [finetuning-scheduler]: Downloading https://files.pythonhosted.org/packages/5c/0b/9aad6c47e668a7ede2d64737c46af7e8e1ee53d3fb6bfb59f0cf7f84f3cb/finetuning_scheduler-2.2.4.tar.gz
+[2024-05-05 00:56:12] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.8.tar.gz]
+[2024-05-05 00:56:12] INFO root fetch - processPackages [lytils]: Remove: archive file [/home/abi/fetcher/tmp/lytils-0.1.9.tar.gz]
+[2024-05-05 00:56:12] INFO root fetch - main [MainThread]: End processing [lytils]: success
+[2024-05-05 00:56:12] INFO root fetch - processPackages [pybricksdev]: executing diffoscope
+[2024-05-05 00:56:12] INFO root fetch - processPackages [pybricksdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybricksdev-1.0.0a8.tar.gz tmp/pybricksdev-1.0.0a9.tar.gz --markdown 20240505/p/pybricksdev/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-05-05 00:56:13] INFO root fetch - processPackages [finetuning-scheduler]: executing diffoscope
+[2024-05-05 00:56:13] INFO root fetch - processPackages [finetuning-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuning-scheduler-2.2.1.tar.gz tmp/finetuning_scheduler-2.2.4.tar.gz --markdown 20240505/f/finetuning-scheduler/2.2.1-2.2.4/README.md --exclude *.pyd
+[2024-05-05 00:56:13] INFO root fetch - processPackages [pybricksdev]: Remove: archive file [/home/abi/fetcher/tmp/pybricksdev-1.0.0a8.tar.gz]
+[2024-05-05 00:56:13] INFO root fetch - processPackages [pybricksdev]: Remove: archive file [/home/abi/fetcher/tmp/pybricksdev-1.0.0a9.tar.gz]
+[2024-05-05 00:56:13] INFO root fetch - main [MainThread]: End processing [pybricksdev]: success
+[2024-05-05 00:56:13] INFO root fetch - processPackages [finetuning-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/finetuning-scheduler-2.2.1.tar.gz]
+[2024-05-05 00:56:13] INFO root fetch - processPackages [finetuning-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/finetuning_scheduler-2.2.4.tar.gz]
+[2024-05-05 00:56:13] INFO root fetch - main [MainThread]: End processing [finetuning-scheduler]: success
+[2024-05-05 00:56:13] INFO root fetch - main [MainThread]: Store serial: [23061671]
