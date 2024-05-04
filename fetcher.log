@@ -344,3 +344,39 @@
 [2024-05-05 00:36:52] INFO root fetch - processPackages [hypothesis]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis-6.99.9.tar.gz]
 [2024-05-05 00:36:52] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
 [2024-05-05 00:36:52] INFO root fetch - main [MainThread]: Store serial: [23061530]
+[2024-05-05 00:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061530]
+[2024-05-05 00:39:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 00:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FastSnake
+[2024-05-05 00:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nsb-toolbox
+[2024-05-05 00:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vital-ai-haley-ml
+[2024-05-05 00:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchoptics
+[2024-05-05 00:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oasysdb
+[2024-05-05 00:39:01] INFO root fetch - processPackages [FastSnake]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-05 00:39:01] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/4e/39/3975e123076085cab12818bfdb5453f139c02ec8e1ab8b44b6aa19b34e48/fastsnake-1.4.8.tar.gz
+[2024-05-05 00:39:01] INFO root fetch - processPackages [nsb-toolbox]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-05-05 00:39:01] WARNING root fetch - processPackages [vital-ai-haley-ml]: Skipping, unable to determine old version
+[2024-05-05 00:39:01] INFO root fetch - main [MainThread]: End processing [vital-ai-haley-ml] error
+[2024-05-05 00:39:01] WARNING root fetch - processPackages [torchoptics]: Skipping, unable to determine old version
+[2024-05-05 00:39:01] INFO root fetch - main [MainThread]: End processing [torchoptics] error
+[2024-05-05 00:39:01] INFO root fetch - processPackages [oasysdb]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-05 00:39:01] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/ba/f6/2239174616fa357132ef7f9a94eb64ac1b356e4f1d96dd885ccf70181298/fastsnake-1.4.9.tar.gz
+[2024-05-05 00:39:01] INFO root fetch - processPackages [nsb-toolbox]: Downloading https://files.pythonhosted.org/packages/58/a8/323d177646d6449674372ff35cfe1a8a14dfb2c9a46156bd561153423d43/nsb_toolbox-0.5.4.tar.gz
+[2024-05-05 00:39:01] INFO root fetch - processPackages [oasysdb]: Downloading https://files.pythonhosted.org/packages/28/b4/c4b3f398d20dafa5003c7a95c0244f663fa37c9bcb83cfaa642fa83824c8/oasysdb-0.4.4.tar.gz
+[2024-05-05 00:39:01] INFO root fetch - processPackages [FastSnake]: executing diffoscope
+[2024-05-05 00:39:01] INFO root fetch - processPackages [FastSnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsnake-1.4.8.tar.gz tmp/fastsnake-1.4.9.tar.gz --markdown 20240505/F/FastSnake/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-05 00:39:02] INFO root fetch - processPackages [nsb-toolbox]: Downloading https://files.pythonhosted.org/packages/d1/40/e6f56f0b40b77a3c61a59a05a9f671f16317e1af74b36902a265f5ae10cb/nsb_toolbox-0.5.5.tar.gz
+[2024-05-05 00:39:02] INFO root fetch - processPackages [nsb-toolbox]: executing diffoscope
+[2024-05-05 00:39:02] INFO root fetch - processPackages [nsb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsb_toolbox-0.5.4.tar.gz tmp/nsb_toolbox-0.5.5.tar.gz --markdown 20240505/n/nsb-toolbox/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-05-05 00:39:02] INFO root fetch - processPackages [oasysdb]: Downloading https://files.pythonhosted.org/packages/07/5b/ab25277530fbc44ea75fc9003a57058732529080bae32f1885e2108268aa/oasysdb-0.4.5-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-05-05 00:39:02] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.8.tar.gz]
+[2024-05-05 00:39:02] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.9.tar.gz]
+[2024-05-05 00:39:02] INFO root fetch - main [MainThread]: End processing [FastSnake]: success
+[2024-05-05 00:39:02] INFO root fetch - processPackages [nsb-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/nsb_toolbox-0.5.4.tar.gz]
+[2024-05-05 00:39:02] INFO root fetch - processPackages [nsb-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/nsb_toolbox-0.5.5.tar.gz]
+[2024-05-05 00:39:02] INFO root fetch - main [MainThread]: End processing [nsb-toolbox]: success
+[2024-05-05 00:39:02] INFO root fetch - processPackages [oasysdb]: executing diffoscope
+[2024-05-05 00:39:02] INFO root fetch - processPackages [oasysdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oasysdb-0.4.4.tar.gz tmp/oasysdb-0.4.5-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240505/o/oasysdb/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-05 00:39:03] INFO root fetch - processPackages [oasysdb]: Remove: archive file [/home/abi/fetcher/tmp/oasysdb-0.4.4.tar.gz]
+[2024-05-05 00:39:03] INFO root fetch - processPackages [oasysdb]: Remove: archive file [/home/abi/fetcher/tmp/oasysdb-0.4.5-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-05-05 00:39:03] INFO root fetch - main [MainThread]: End processing [oasysdb]: success
+[2024-05-05 00:39:03] INFO root fetch - main [MainThread]: Store serial: [23061573]
