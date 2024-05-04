@@ -631,3 +631,32 @@
 [2024-05-05 01:11:18] INFO root fetch - processPackages [league-tools]: Remove: archive file [/home/abi/fetcher/tmp/league_tools-0.2.0.dev1.tar.gz]
 [2024-05-05 01:11:18] INFO root fetch - main [MainThread]: End processing [league-tools]: success
 [2024-05-05 01:11:18] INFO root fetch - main [MainThread]: Store serial: [23061706]
+[2024-05-05 01:13:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061706]
+[2024-05-05 01:13:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 01:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ligma-run
+[2024-05-05 01:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fintekkers-ledger-models
+[2024-05-05 01:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Anchor-annotator
+[2024-05-05 01:13:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybricksdev
+[2024-05-05 01:13:27] INFO root fetch - processPackages [pybricksdev]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-05-05 01:13:27] INFO root fetch - processPackages [Anchor-annotator]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-05 01:13:27] INFO root fetch - processPackages [pybricksdev]: Downloading https://files.pythonhosted.org/packages/d8/1e/c421edf2d4e3e78875f086225f3f2c71e3d1cf1c15ce112c9572c5a08c75/pybricksdev-1.0.0a8.tar.gz
+[2024-05-05 01:13:27] WARNING root fetch - processPackages [ligma-run]: Skipping, unable to determine old version
+[2024-05-05 01:13:27] INFO root fetch - main [MainThread]: End processing [ligma-run] error
+[2024-05-05 01:13:27] INFO root fetch - processPackages [fintekkers-ledger-models]: New version: [0.1.84] Old Version: [0.1.83]
+[2024-05-05 01:13:27] INFO root fetch - processPackages [fintekkers-ledger-models]: Downloading https://files.pythonhosted.org/packages/d3/b6/a72c1849b3b8ad470fcc83c1b0312c6a81ddbcf00d872f0670a3ff12d890/fintekkers-ledger-models-0.1.83.tar.gz
+[2024-05-05 01:13:27] INFO root fetch - processPackages [Anchor-annotator]: Downloading https://files.pythonhosted.org/packages/2c/c8/691c03a034e79d4766347646b6be3092f769a597ca3de96751197d7fa02d/anchor_annotator-0.4.0.tar.gz
+[2024-05-05 01:13:27] INFO root fetch - processPackages [pybricksdev]: Downloading https://files.pythonhosted.org/packages/b2/c2/4693366e378d5b1836a7720f8cabd4cfd2957d17aad28c11dda505034edc/pybricksdev-1.0.0a9.tar.gz
+[2024-05-05 01:13:27] INFO root fetch - processPackages [pybricksdev]: executing diffoscope
+[2024-05-05 01:13:27] INFO root fetch - processPackages [pybricksdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybricksdev-1.0.0a8.tar.gz tmp/pybricksdev-1.0.0a9.tar.gz --markdown 20240505/p/pybricksdev/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-05-05 01:13:28] WARNING root fetch - processPackages [Anchor-annotator]: Skipping package: exceeds size limit 14885732>=10485760
+[2024-05-05 01:13:28] INFO root fetch - main [MainThread]: End processing [Anchor-annotator] error
+[2024-05-05 01:13:28] INFO root fetch - processPackages [fintekkers-ledger-models]: Downloading https://files.pythonhosted.org/packages/82/20/40c01e4dcb64aa8e73cd9d432874cb1f6e69ae3b523edb98f79f92db686c/fintekkers-ledger-models-0.1.84.tar.gz
+[2024-05-05 01:13:28] INFO root fetch - processPackages [fintekkers-ledger-models]: executing diffoscope
+[2024-05-05 01:13:28] INFO root fetch - processPackages [fintekkers-ledger-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fintekkers-ledger-models-0.1.83.tar.gz tmp/fintekkers-ledger-models-0.1.84.tar.gz --markdown 20240505/f/fintekkers-ledger-models/0.1.83-0.1.84/README.md --exclude *.pyd
+[2024-05-05 01:13:28] INFO root fetch - processPackages [pybricksdev]: Remove: archive file [/home/abi/fetcher/tmp/pybricksdev-1.0.0a8.tar.gz]
+[2024-05-05 01:13:28] INFO root fetch - processPackages [pybricksdev]: Remove: archive file [/home/abi/fetcher/tmp/pybricksdev-1.0.0a9.tar.gz]
+[2024-05-05 01:13:28] INFO root fetch - main [MainThread]: End processing [pybricksdev]: success
+[2024-05-05 01:13:29] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.83.tar.gz]
+[2024-05-05 01:13:29] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.84.tar.gz]
+[2024-05-05 01:13:29] INFO root fetch - main [MainThread]: End processing [fintekkers-ledger-models]: success
+[2024-05-05 01:13:29] INFO root fetch - main [MainThread]: Store serial: [23061718]
