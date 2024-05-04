@@ -993,3 +993,27 @@
 [2024-05-05 01:48:16] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
 [2024-05-05 01:48:16] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-05 01:48:16] INFO root fetch - main [MainThread]: Store serial: [23061917]
+[2024-05-05 01:50:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061917]
+[2024-05-05 01:50:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 01:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clear-skies-aws
+[2024-05-05 01:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: re-ircbot
+[2024-05-05 01:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fancy-cli
+[2024-05-05 01:50:24] WARNING root fetch - processPackages [fancy-cli]: Skipping, unable to determine old version
+[2024-05-05 01:50:24] INFO root fetch - main [MainThread]: End processing [fancy-cli] error
+[2024-05-05 01:50:24] INFO root fetch - processPackages [re-ircbot]: New version: [2.0.2.dev0] Old Version: [2.0.1.dev0]
+[2024-05-05 01:50:24] INFO root fetch - processPackages [re-ircbot]: Downloading https://files.pythonhosted.org/packages/c1/f1/804325e7c692c058f93899657f508930f7788b2c439f94ee5731cc26de85/re_ircbot-2.0.1.dev0.tar.gz
+[2024-05-05 01:50:24] INFO root fetch - processPackages [clear-skies-aws]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-05 01:50:25] INFO root fetch - processPackages [clear-skies-aws]: Downloading https://files.pythonhosted.org/packages/ac/d1/55733723e83e76a4e2c9a6b82d12bda98c10172e161d10ef1bc4ceba215b/clear_skies_aws-1.9.0.tar.gz
+[2024-05-05 01:50:25] INFO root fetch - processPackages [re-ircbot]: Downloading https://files.pythonhosted.org/packages/c3/15/b5790afbc06ad808f072eb7a944d049b35f68a552f9f7bbe4ea47090e6ca/re_ircbot-2.0.2.dev0.tar.gz
+[2024-05-05 01:50:25] INFO root fetch - processPackages [re-ircbot]: executing diffoscope
+[2024-05-05 01:50:25] INFO root fetch - processPackages [re-ircbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/re_ircbot-2.0.1.dev0.tar.gz tmp/re_ircbot-2.0.2.dev0.tar.gz --markdown 20240505/r/re-ircbot/2.0.1.dev0-2.0.2.dev0/README.md --exclude *.pyd
+[2024-05-05 01:50:25] INFO root fetch - processPackages [clear-skies-aws]: Downloading https://files.pythonhosted.org/packages/46/d9/c1521b6471e0de705bbd5db3a714156622c0fd7703932be7d42fe2b17877/clear_skies_aws-1.9.1.tar.gz
+[2024-05-05 01:50:25] INFO root fetch - processPackages [clear-skies-aws]: executing diffoscope
+[2024-05-05 01:50:25] INFO root fetch - processPackages [clear-skies-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear_skies_aws-1.9.0.tar.gz tmp/clear_skies_aws-1.9.1.tar.gz --markdown 20240505/c/clear-skies-aws/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-05 01:50:25] INFO root fetch - processPackages [re-ircbot]: Remove: archive file [/home/abi/fetcher/tmp/re_ircbot-2.0.1.dev0.tar.gz]
+[2024-05-05 01:50:25] INFO root fetch - processPackages [re-ircbot]: Remove: archive file [/home/abi/fetcher/tmp/re_ircbot-2.0.2.dev0.tar.gz]
+[2024-05-05 01:50:25] INFO root fetch - main [MainThread]: End processing [re-ircbot]: success
+[2024-05-05 01:50:26] INFO root fetch - processPackages [clear-skies-aws]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_aws-1.9.0.tar.gz]
+[2024-05-05 01:50:26] INFO root fetch - processPackages [clear-skies-aws]: Remove: archive file [/home/abi/fetcher/tmp/clear_skies_aws-1.9.1.tar.gz]
+[2024-05-05 01:50:26] INFO root fetch - main [MainThread]: End processing [clear-skies-aws]: success
+[2024-05-05 01:50:26] INFO root fetch - main [MainThread]: Store serial: [23061926]
