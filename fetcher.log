@@ -138,3 +138,24 @@
 [2024-05-05 00:14:39] INFO root fetch - processPackages [sophie-lang]: Remove: archive file [/home/abi/fetcher/tmp/sophie-lang-0.0.7.tar.gz]
 [2024-05-05 00:14:39] INFO root fetch - main [MainThread]: End processing [sophie-lang]: success
 [2024-05-05 00:14:39] INFO root fetch - main [MainThread]: Store serial: [23061394]
+[2024-05-05 00:16:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061394]
+[2024-05-05 00:16:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 00:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astropy
+[2024-05-05 00:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meds-etl-cpp
+[2024-05-05 00:16:48] INFO root fetch - processPackages [meds-etl-cpp]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-05 00:16:48] INFO root fetch - processPackages [astropy]: New version: [6.1.0rc1] Old Version: [6.1.0]
+[2024-05-05 00:16:48] INFO root fetch - processPackages [meds-etl-cpp]: Downloading https://files.pythonhosted.org/packages/0f/85/69467066adeea962830701fe91d06e6564c0938daad42bc9044355b6eb52/meds_etl_cpp-0.1.2.tar.gz
+[2024-05-05 00:16:48] INFO root fetch - processPackages [astropy]: Downloading https://files.pythonhosted.org/packages/b3/6c/0a7cf00367ca0310aeb7e9a4124f35c9dbf446a33a925452d384da31feb1/astropy-6.1.0-cp312-cp312-macosx_10_9_x86_64.whl
+[2024-05-05 00:16:48] INFO root fetch - processPackages [meds-etl-cpp]: Downloading https://files.pythonhosted.org/packages/fd/45/7428abda61c0e3bc22762468ba19539f439fb72b6b1dfdc8bb6ab626b7a5/meds_etl_cpp-0.2.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 00:16:51] INFO root fetch - processPackages [astropy]: Downloading https://files.pythonhosted.org/packages/65/e8/ba578468580f3580576d228263d060b59a3eb91d2d34d55de612bb9c5898/astropy-6.1.0rc1.tar.gz
+[2024-05-05 00:16:51] INFO root fetch - processPackages [astropy]: executing diffoscope
+[2024-05-05 00:16:51] INFO root fetch - processPackages [astropy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astropy-6.1.0-cp312-cp312-macosx_10_9_x86_64.whl.zip tmp/astropy-6.1.0rc1.tar.gz --markdown 20240505/a/astropy/6.1.0-6.1.0rc1/README.md --exclude *.pyd
+[2024-05-05 00:16:52] INFO root fetch - processPackages [meds-etl-cpp]: executing diffoscope
+[2024-05-05 00:16:52] INFO root fetch - processPackages [meds-etl-cpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meds_etl_cpp-0.1.2.tar.gz tmp/meds_etl_cpp-0.2.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/m/meds-etl-cpp/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-05 00:16:53] INFO root fetch - processPackages [meds-etl-cpp]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl_cpp-0.1.2.tar.gz]
+[2024-05-05 00:16:53] INFO root fetch - processPackages [meds-etl-cpp]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl_cpp-0.2.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 00:16:53] INFO root fetch - main [MainThread]: End processing [meds-etl-cpp]: success
+[2024-05-05 00:17:00] INFO root fetch - processPackages [astropy]: Remove: archive file [/home/abi/fetcher/tmp/astropy-6.1.0-cp312-cp312-macosx_10_9_x86_64.whl.zip]
+[2024-05-05 00:17:00] INFO root fetch - processPackages [astropy]: Remove: archive file [/home/abi/fetcher/tmp/astropy-6.1.0rc1.tar.gz]
+[2024-05-05 00:17:00] INFO root fetch - main [MainThread]: End processing [astropy]: success
+[2024-05-05 00:17:00] INFO root fetch - main [MainThread]: Store serial: [23061438]
