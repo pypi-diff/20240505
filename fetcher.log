@@ -693,3 +693,15 @@
 [2024-05-05 01:15:39] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.2.tar.gz]
 [2024-05-05 01:15:39] INFO root fetch - main [MainThread]: End processing [ryutils]: success
 [2024-05-05 01:15:39] INFO root fetch - main [MainThread]: Store serial: [23061731]
+[2024-05-05 01:17:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061731]
+[2024-05-05 01:17:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 01:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiomql
+[2024-05-05 01:17:47] INFO root fetch - processPackages [aiomql]: New version: [3.21] Old Version: [3.20]
+[2024-05-05 01:17:47] INFO root fetch - processPackages [aiomql]: Downloading https://files.pythonhosted.org/packages/d0/d2/23f03b9a9de620acb8e61e1fdabbb150d6f923ab247802bc6ffa453a13ca/aiomql-3.20.tar.gz
+[2024-05-05 01:17:48] INFO root fetch - processPackages [aiomql]: Downloading https://files.pythonhosted.org/packages/73/67/7371c51f3c42fc0ca581ba581b8f45f34544b7fd5b77b16082692755f2ab/aiomql-3.21.tar.gz
+[2024-05-05 01:17:48] INFO root fetch - processPackages [aiomql]: executing diffoscope
+[2024-05-05 01:17:48] INFO root fetch - processPackages [aiomql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomql-3.20.tar.gz tmp/aiomql-3.21.tar.gz --markdown 20240505/a/aiomql/3.20-3.21/README.md --exclude *.pyd
+[2024-05-05 01:17:49] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.20.tar.gz]
+[2024-05-05 01:17:49] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.21.tar.gz]
+[2024-05-05 01:17:49] INFO root fetch - main [MainThread]: End processing [aiomql]: success
+[2024-05-05 01:17:49] INFO root fetch - main [MainThread]: Store serial: [23061734]
