@@ -19,3 +19,27 @@
 [2024-05-05 00:01:36] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
 [2024-05-05 00:01:36] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2024-05-05 00:01:36] INFO root fetch - main [MainThread]: Store serial: [23061298]
+[2024-05-05 00:03:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061298]
+[2024-05-05 00:03:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 00:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discohooks
+[2024-05-05 00:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-05 00:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jubtools
+[2024-05-05 00:03:45] INFO root fetch - processPackages [jubtools]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-05 00:03:45] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 00:03:45] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 00:03:45] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/ec/95/30588ea8821a749204210eac2c85aaee050b2b58df5c99be27ad840c44f4/jubtools-0.5.1.tar.gz
+[2024-05-05 00:03:45] WARNING root fetch - processPackages [discohooks]: Skipping, unable to determine old version
+[2024-05-05 00:03:45] INFO root fetch - main [MainThread]: End processing [discohooks] error
+[2024-05-05 00:03:45] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 00:03:45] INFO root fetch - processPackages [jubtools]: Downloading https://files.pythonhosted.org/packages/58/d0/1a3c4238a178718d421048fb2e6ea53e10b72de69bafd962c48d7cdaa9cb/jubtools-0.5.2.tar.gz
+[2024-05-05 00:03:46] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 00:03:46] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 00:03:46] INFO root fetch - processPackages [jubtools]: executing diffoscope
+[2024-05-05 00:03:46] INFO root fetch - processPackages [jubtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jubtools-0.5.1.tar.gz tmp/jubtools-0.5.2.tar.gz --markdown 20240505/j/jubtools/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-05 00:03:46] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.1.tar.gz]
+[2024-05-05 00:03:46] INFO root fetch - processPackages [jubtools]: Remove: archive file [/home/abi/fetcher/tmp/jubtools-0.5.2.tar.gz]
+[2024-05-05 00:03:46] INFO root fetch - main [MainThread]: End processing [jubtools]: success
+[2024-05-05 00:03:47] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 00:03:47] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 00:03:47] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 00:03:47] INFO root fetch - main [MainThread]: Store serial: [23061309]
