@@ -888,3 +888,9 @@
 [2024-05-05 01:37:26] INFO root fetch - processPackages [pyxel]: Remove: archive file [/home/abi/fetcher/tmp/pyxel-2.0.9-cp37-abi3-win_amd64.whl.zip]
 [2024-05-05 01:37:26] INFO root fetch - main [MainThread]: End processing [pyxel]: success
 [2024-05-05 01:37:26] INFO root fetch - main [MainThread]: Store serial: [23061868]
+[2024-05-05 01:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061868]
+[2024-05-05 01:39:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edterm
+[2024-05-05 01:39:35] WARNING root fetch - processPackages [edterm]: Skipping, unable to determine old version
+[2024-05-05 01:39:35] INFO root fetch - main [MainThread]: End processing [edterm] error
+[2024-05-05 01:39:35] INFO root fetch - main [MainThread]: Store serial: [23061873]
