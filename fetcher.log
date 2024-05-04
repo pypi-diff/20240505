@@ -236,3 +236,9 @@
 [2024-05-05 00:26:04] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.0b12.tar.gz]
 [2024-05-05 00:26:04] INFO root fetch - main [MainThread]: End processing [notolog]: success
 [2024-05-05 00:26:04] INFO root fetch - main [MainThread]: Store serial: [23061486]
+[2024-05-05 00:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061486]
+[2024-05-05 00:28:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 00:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vital-ai-haley
+[2024-05-05 00:28:13] WARNING root fetch - processPackages [vital-ai-haley]: Skipping, unable to determine old version
+[2024-05-05 00:28:13] INFO root fetch - main [MainThread]: End processing [vital-ai-haley] error
+[2024-05-05 00:28:13] INFO root fetch - main [MainThread]: Store serial: [23061491]
