@@ -242,3 +242,24 @@
 [2024-05-05 00:28:13] WARNING root fetch - processPackages [vital-ai-haley]: Skipping, unable to determine old version
 [2024-05-05 00:28:13] INFO root fetch - main [MainThread]: End processing [vital-ai-haley] error
 [2024-05-05 00:28:13] INFO root fetch - main [MainThread]: Store serial: [23061491]
+[2024-05-05 00:30:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061491]
+[2024-05-05 00:30:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 00:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ReverseBox
+[2024-05-05 00:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-ssi-hr-reimbursement
+[2024-05-05 00:30:21] INFO root fetch - processPackages [ReverseBox]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-05 00:30:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/74/cc/11091d3e16e8c16abc1b9c3eb04cb718cd0488d56153855d5f5e79e25846/ReverseBox-0.8.8.tar.gz
+[2024-05-05 00:30:21] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: New version: [14.0.1.9.0] Old Version: [14.0.1.7.0]
+[2024-05-05 00:30:21] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Downloading https://files.pythonhosted.org/packages/47/6f/8a032de8ebb925ab02875ff73f93f5792f2f0dfc694de86c2a8641ed3f83/odoo14_addon_ssi_hr_reimbursement-14.0.1.7.0-py3-none-any.whl
+[2024-05-05 00:30:21] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/d1/c3/6bc63d99438ad058c6caf3cd05d52bd03200ec6ceda9b935dc71447ab750/ReverseBox-0.8.9.tar.gz
+[2024-05-05 00:30:22] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2024-05-05 00:30:22] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.8.8.tar.gz tmp/ReverseBox-0.8.9.tar.gz --markdown 20240505/R/ReverseBox/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-05 00:30:22] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Downloading https://files.pythonhosted.org/packages/e7/37/a12e618edf412f6a40f78980e841f2b468db6310a5cfcef73a824385946d/odoo14_addon_ssi_hr_reimbursement-14.0.1.9.0-py3-none-any.whl
+[2024-05-05 00:30:22] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: executing diffoscope
+[2024-05-05 00:30:22] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.7.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.9.0-py3-none-any.whl.zip --markdown 20240505/o/odoo14-addon-ssi-hr-reimbursement/14.0.1.7.0-14.0.1.9.0/README.md --exclude *.pyd
+[2024-05-05 00:30:22] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.7.0-py3-none-any.whl.zip]
+[2024-05-05 00:30:22] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.9.0-py3-none-any.whl.zip]
+[2024-05-05 00:30:22] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-hr-reimbursement]: success
+[2024-05-05 00:30:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.8.tar.gz]
+[2024-05-05 00:30:22] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.8.9.tar.gz]
+[2024-05-05 00:30:22] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2024-05-05 00:30:22] INFO root fetch - main [MainThread]: Store serial: [23061496]
