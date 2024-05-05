@@ -8079,3 +8079,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 13:05:12] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.2.0.tar.gz]
 [2024-05-05 13:05:12] INFO root fetch - main [MainThread]: End processing [qs-codec]: success
 [2024-05-05 13:05:12] INFO root fetch - main [MainThread]: Store serial: [23064968]
+[2024-05-05 13:07:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064968]
+[2024-05-05 13:07:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 13:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swh.objstorage
+[2024-05-05 13:07:21] INFO root fetch - processPackages [swh.objstorage]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-05 13:07:21] INFO root fetch - processPackages [swh.objstorage]: Downloading https://files.pythonhosted.org/packages/00/f7/c6a607aa6d668b92d91a9b564120b1534acdee45a0c34f5c34fd81e82b39/swh_objstorage-3.0.0.tar.gz
+[2024-05-05 13:07:21] INFO root fetch - processPackages [swh.objstorage]: Downloading https://files.pythonhosted.org/packages/97/35/40e850b3bdee524e3dec0b0340f5ac8348a9780356163cdf9e19641d3e4e/swh_objstorage-3.0.1.tar.gz
+[2024-05-05 13:07:21] INFO root fetch - processPackages [swh.objstorage]: executing diffoscope
+[2024-05-05 13:07:21] INFO root fetch - processPackages [swh.objstorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swh_objstorage-3.0.0.tar.gz tmp/swh_objstorage-3.0.1.tar.gz --markdown 20240505/s/swh.objstorage/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-05 13:07:22] INFO root fetch - processPackages [swh.objstorage]: Remove: archive file [/home/abi/fetcher/tmp/swh_objstorage-3.0.0.tar.gz]
+[2024-05-05 13:07:22] INFO root fetch - processPackages [swh.objstorage]: Remove: archive file [/home/abi/fetcher/tmp/swh_objstorage-3.0.1.tar.gz]
+[2024-05-05 13:07:22] INFO root fetch - main [MainThread]: End processing [swh.objstorage]: success
+[2024-05-05 13:07:22] INFO root fetch - main [MainThread]: Store serial: [23064972]
