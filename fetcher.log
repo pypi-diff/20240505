@@ -4725,3 +4725,24 @@
 [2024-05-05 08:22:29] WARNING root fetch - processPackages [dartrs]: Skipping, unable to determine old version
 [2024-05-05 08:22:29] INFO root fetch - main [MainThread]: End processing [dartrs] error
 [2024-05-05 08:22:29] INFO root fetch - main [MainThread]: Store serial: [23063498]
+[2024-05-05 08:24:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063498]
+[2024-05-05 08:24:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ynab-split-budget
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-AGS4
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ynab-split-budget]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ynab-split-budget]: Downloading https://files.pythonhosted.org/packages/e8/9e/7e3ea61c6b9832635e167fbab642d391b129aa998ca27e4730a6043b9bac/ynab_split_budget-1.0.0.tar.gz
+[2024-05-05 08:24:39] INFO root fetch - processPackages [python-AGS4]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-05 08:24:39] INFO root fetch - processPackages [python-AGS4]: Downloading https://files.pythonhosted.org/packages/09/cb/dfeaf5e80a2f2fcde256e573016d52dc29c3e4666eaccdee022234094ddf/python_ags4-0.5.0.tar.gz
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ynab-split-budget]: Downloading https://files.pythonhosted.org/packages/ec/62/2d75ea57698b5dbf540336043bd89b1db831b4fae420751f5b45ac5d5282/ynab_split_budget-1.0.1.tar.gz
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ynab-split-budget]: executing diffoscope
+[2024-05-05 08:24:39] INFO root fetch - processPackages [ynab-split-budget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynab_split_budget-1.0.0.tar.gz tmp/ynab_split_budget-1.0.1.tar.gz --markdown 20240505/y/ynab-split-budget/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 08:24:39] INFO root fetch - processPackages [python-AGS4]: Downloading https://files.pythonhosted.org/packages/c4/3b/ac7a7e46dda182123bf5794e5faefac242858eff995d860364545c5d893d/python_ags4-0.6.0.tar.gz
+[2024-05-05 08:24:40] INFO root fetch - processPackages [python-AGS4]: executing diffoscope
+[2024-05-05 08:24:40] INFO root fetch - processPackages [python-AGS4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ags4-0.5.0.tar.gz tmp/python_ags4-0.6.0.tar.gz --markdown 20240505/p/python-AGS4/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-05 08:24:40] INFO root fetch - processPackages [ynab-split-budget]: Remove: archive file [/home/abi/fetcher/tmp/ynab_split_budget-1.0.0.tar.gz]
+[2024-05-05 08:24:40] INFO root fetch - processPackages [ynab-split-budget]: Remove: archive file [/home/abi/fetcher/tmp/ynab_split_budget-1.0.1.tar.gz]
+[2024-05-05 08:24:40] INFO root fetch - main [MainThread]: End processing [ynab-split-budget]: success
+[2024-05-05 08:24:40] INFO root fetch - processPackages [python-AGS4]: Remove: archive file [/home/abi/fetcher/tmp/python_ags4-0.5.0.tar.gz]
+[2024-05-05 08:24:40] INFO root fetch - processPackages [python-AGS4]: Remove: archive file [/home/abi/fetcher/tmp/python_ags4-0.6.0.tar.gz]
+[2024-05-05 08:24:40] INFO root fetch - main [MainThread]: End processing [python-AGS4]: success
+[2024-05-05 08:24:40] INFO root fetch - main [MainThread]: Store serial: [23063504]
