@@ -14651,3 +14651,51 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:27:04] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.4.0.tar.gz]
 [2024-05-05 20:27:04] INFO root fetch - main [MainThread]: End processing [picodi]: success
 [2024-05-05 20:27:04] INFO root fetch - main [MainThread]: Store serial: [23067911]
+[2024-05-05 20:29:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067911]
+[2024-05-05 20:29:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 20:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpservice
+[2024-05-05 20:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybangla
+[2024-05-05 20:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glook
+[2024-05-05 20:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: provisioner-runtime
+[2024-05-05 20:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: litestar-granian
+[2024-05-05 20:29:13] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2024-05-05 20:29:13] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2024-05-05 20:29:13] INFO root fetch - processPackages [provisioner-runtime]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 20:29:13] INFO root fetch - processPackages [litestar-granian]: New version: [0.3.0] Old Version: [0.2.6]
+[2024-05-05 20:29:13] INFO root fetch - processPackages [pybangla]: New version: [1.0.4] Old Version: [1.0.2]
+[2024-05-05 20:29:14] INFO root fetch - processPackages [glook]: New version: [1.1.8b1] Old Version: [1.1.7b1]
+[2024-05-05 20:29:14] INFO root fetch - processPackages [litestar-granian]: Downloading https://files.pythonhosted.org/packages/ba/a3/85f719d5855d8094104582cf53d71a91c453d452ba624479aed947658c16/litestar_granian-0.2.6.tar.gz
+[2024-05-05 20:29:14] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/61/55/f919634a5708ad680eee727d755ca8acddc57351f859de492284a44ce71b/provisioner_runtime-0.1.8-py3-none-any.whl
+[2024-05-05 20:29:14] INFO root fetch - processPackages [pybangla]: Downloading https://files.pythonhosted.org/packages/4c/76/cab44b7a7ec300633a32dca9c3d85499b43ab496a182368e132e9e6b809d/pybangla-1.0.2.tar.gz
+[2024-05-05 20:29:14] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2024-05-05 20:29:14] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/93/4f/05a8741d76edfadbb1edb0b0a5fc5e134f056c70bb40688f047d50df2823/glook-1.1.7b1-py3-none-any.whl
+[2024-05-05 20:29:14] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2024-05-05 20:29:14] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20240505/m/mpservice/0.9.9-0.9.9.post1/README.md --exclude *.pyd
+[2024-05-05 20:29:14] INFO root fetch - processPackages [pybangla]: Downloading https://files.pythonhosted.org/packages/c8/21/f4a8fdb7858c4c64fae82b294b2e5d602ed1b28a64938cea2b7766b159d9/pybangla-1.0.4.tar.gz
+[2024-05-05 20:29:14] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/72/6e/42bd20af97ea3b3c814d52d91a2b0d3a138898b7fe294d390475d740bf38/provisioner_runtime-0.1.9-py3-none-any.whl
+[2024-05-05 20:29:14] INFO root fetch - processPackages [litestar-granian]: Downloading https://files.pythonhosted.org/packages/78/73/b1406494d8fa09b69fa1bdc7147efbb43377e735dd668054c69045f6340a/litestar_granian-0.3.0.tar.gz
+[2024-05-05 20:29:14] INFO root fetch - processPackages [pybangla]: executing diffoscope
+[2024-05-05 20:29:14] INFO root fetch - processPackages [pybangla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybangla-1.0.2.tar.gz tmp/pybangla-1.0.4.tar.gz --markdown 20240505/p/pybangla/1.0.2-1.0.4/README.md --exclude *.pyd
+[2024-05-05 20:29:14] INFO root fetch - processPackages [provisioner-runtime]: executing diffoscope
+[2024-05-05 20:29:14] INFO root fetch - processPackages [provisioner-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provisioner_runtime-0.1.8-py3-none-any.whl.zip tmp/provisioner_runtime-0.1.9-py3-none-any.whl.zip --markdown 20240505/p/provisioner-runtime/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 20:29:14] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/c6/4e/08502f90aa028dc15841efdfa47e327ae41fc6e0b4594fa4b0873fd7a28a/glook-1.1.8b1.tar.gz
+[2024-05-05 20:29:14] INFO root fetch - processPackages [litestar-granian]: executing diffoscope
+[2024-05-05 20:29:14] INFO root fetch - processPackages [litestar-granian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litestar_granian-0.2.6.tar.gz tmp/litestar_granian-0.3.0.tar.gz --markdown 20240505/l/litestar-granian/0.2.6-0.3.0/README.md --exclude *.pyd
+[2024-05-05 20:29:14] INFO root fetch - processPackages [glook]: executing diffoscope
+[2024-05-05 20:29:14] INFO root fetch - processPackages [glook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glook-1.1.7b1-py3-none-any.whl.zip tmp/glook-1.1.8b1.tar.gz --markdown 20240505/g/glook/1.1.7b1-1.1.8b1/README.md --exclude *.pyd
+[2024-05-05 20:29:14] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.tar.gz]
+[2024-05-05 20:29:14] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.post1.tar.gz]
+[2024-05-05 20:29:14] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2024-05-05 20:29:15] INFO root fetch - processPackages [pybangla]: Remove: archive file [/home/abi/fetcher/tmp/pybangla-1.0.2.tar.gz]
+[2024-05-05 20:29:15] INFO root fetch - processPackages [pybangla]: Remove: archive file [/home/abi/fetcher/tmp/pybangla-1.0.4.tar.gz]
+[2024-05-05 20:29:15] INFO root fetch - main [MainThread]: End processing [pybangla]: success
+[2024-05-05 20:29:15] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-1.1.7b1-py3-none-any.whl.zip]
+[2024-05-05 20:29:15] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-1.1.8b1.tar.gz]
+[2024-05-05 20:29:15] INFO root fetch - main [MainThread]: End processing [glook]: success
+[2024-05-05 20:29:15] INFO root fetch - processPackages [litestar-granian]: Remove: archive file [/home/abi/fetcher/tmp/litestar_granian-0.2.6.tar.gz]
+[2024-05-05 20:29:15] INFO root fetch - processPackages [litestar-granian]: Remove: archive file [/home/abi/fetcher/tmp/litestar_granian-0.3.0.tar.gz]
+[2024-05-05 20:29:15] INFO root fetch - main [MainThread]: End processing [litestar-granian]: success
+[2024-05-05 20:29:15] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.8-py3-none-any.whl.zip]
+[2024-05-05 20:29:15] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.9-py3-none-any.whl.zip]
+[2024-05-05 20:29:15] INFO root fetch - main [MainThread]: End processing [provisioner-runtime]: success
+[2024-05-05 20:29:15] INFO root fetch - main [MainThread]: Store serial: [23067932]
