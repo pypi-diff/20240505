@@ -2410,3 +2410,15 @@
 [2024-05-05 03:49:35] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-05 03:49:35] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-05 03:49:35] INFO root fetch - main [MainThread]: Store serial: [23062573]
+[2024-05-05 03:51:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062573]
+[2024-05-05 03:51:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 03:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypreql
+[2024-05-05 03:51:44] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc80]
+[2024-05-05 03:51:44] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/6e/74/921f0db0d03982707ce0cc4e88c0673e378bde7b3c6d4a3405c00ceb9117/pypreql-0.0.1rc80.tar.gz
+[2024-05-05 03:51:44] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2024-05-05 03:51:44] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2024-05-05 03:51:44] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc80.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20240505/p/pypreql/0.0.1rc80-0.0.1rc9/README.md --exclude *.pyd
+[2024-05-05 03:51:45] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc80.tar.gz]
+[2024-05-05 03:51:45] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc9.tar.gz]
+[2024-05-05 03:51:45] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2024-05-05 03:51:45] INFO root fetch - main [MainThread]: Store serial: [23062576]
