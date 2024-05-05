@@ -10210,3 +10210,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:28:44] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-05-05 15:28:44] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-05-05 15:28:44] INFO root fetch - main [MainThread]: Store serial: [23065958]
+[2024-05-05 15:30:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065958]
+[2024-05-05 15:30:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 15:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-richmin
+[2024-05-05 15:30:53] INFO root fetch - processPackages [django-richmin]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 15:30:53] INFO root fetch - processPackages [django-richmin]: Downloading https://files.pythonhosted.org/packages/87/43/428dbf50e4c36b3134e643b31af20a3a90c4acb681284e3e5e37c47f51df/django-richmin-0.1.8.tar.gz
+[2024-05-05 15:30:53] INFO root fetch - processPackages [django-richmin]: Downloading https://files.pythonhosted.org/packages/e8/d3/e2d3050e5b7fed2bd5ac3dbaedc9077a005508010f094dd0d686ee2a1a4e/django-richmin-0.1.9.tar.gz
+[2024-05-05 15:30:53] INFO root fetch - processPackages [django-richmin]: executing diffoscope
+[2024-05-05 15:30:53] INFO root fetch - processPackages [django-richmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-richmin-0.1.8.tar.gz tmp/django-richmin-0.1.9.tar.gz --markdown 20240505/d/django-richmin/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 15:30:55] INFO root fetch - processPackages [django-richmin]: Remove: archive file [/home/abi/fetcher/tmp/django-richmin-0.1.8.tar.gz]
+[2024-05-05 15:30:55] INFO root fetch - processPackages [django-richmin]: Remove: archive file [/home/abi/fetcher/tmp/django-richmin-0.1.9.tar.gz]
+[2024-05-05 15:30:55] INFO root fetch - main [MainThread]: End processing [django-richmin]: success
+[2024-05-05 15:30:55] INFO root fetch - main [MainThread]: Store serial: [23065964]
