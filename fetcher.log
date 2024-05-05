@@ -7801,3 +7801,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:36:57] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.7.1.tar.gz]
 [2024-05-05 12:36:57] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
 [2024-05-05 12:36:57] INFO root fetch - main [MainThread]: Store serial: [23064791]
+[2024-05-05 12:39:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064791]
+[2024-05-05 12:39:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 12:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skypilot-nightly
+[2024-05-05 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240504] Old Version: [1.0.0.dev20240503]
+[2024-05-05 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/c9/a9/2c851025335b9c38b37b6b7cb3d9ca50aa0efb325e5441bbb257f52655a3/skypilot_nightly-1.0.0.dev20240503.tar.gz
+[2024-05-05 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/9a/7e/768cdf6175ba7ff9619f565fe29e4b1e896c2bfc9860ebc57b22f8ac7859/skypilot_nightly-1.0.0.dev20240504.tar.gz
+[2024-05-05 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-05-05 12:39:07] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240503.tar.gz tmp/skypilot_nightly-1.0.0.dev20240504.tar.gz --markdown 20240505/s/skypilot-nightly/1.0.0.dev20240503-1.0.0.dev20240504/README.md --exclude *.pyd
+[2024-05-05 12:39:09] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240503.tar.gz]
+[2024-05-05 12:39:09] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240504.tar.gz]
+[2024-05-05 12:39:09] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-05-05 12:39:09] INFO root fetch - main [MainThread]: Store serial: [23064794]
