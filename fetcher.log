@@ -11032,3 +11032,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:24:28] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_arkgacha-0.7.0.tar.gz]
 [2024-05-05 16:24:28] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arkgacha]: success
 [2024-05-05 16:24:28] INFO root fetch - main [MainThread]: Store serial: [23066356]
+[2024-05-05 16:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066356]
+[2024-05-05 16:26:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alsacommonutils
+[2024-05-05 16:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corvic-engine
+[2024-05-05 16:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: horde-engine
+[2024-05-05 16:26:37] INFO root fetch - processPackages [corvic-engine]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 16:26:37] WARNING root fetch - processPackages [alsacommonutils]: Skipping, unable to determine old version
+[2024-05-05 16:26:37] INFO root fetch - main [MainThread]: End processing [alsacommonutils] error
+[2024-05-05 16:26:37] WARNING root fetch - processPackages [horde-engine]: Skipping, unable to determine old version
+[2024-05-05 16:26:37] INFO root fetch - main [MainThread]: End processing [horde-engine] error
+[2024-05-05 16:26:37] INFO root fetch - processPackages [corvic-engine]: Downloading https://files.pythonhosted.org/packages/28/81/73d66a8b87408209ecb35a7c2bc6678eed7152cd47281836f38fe9d103aa/corvic_engine-0.1.8.tar.gz
+[2024-05-05 16:26:37] INFO root fetch - processPackages [corvic-engine]: Downloading https://files.pythonhosted.org/packages/09/86/d913022f7e6621ce441c8b834aa1f7c0a01a99f249b2e74671b9da6c2acc/corvic_engine-0.1.9.tar.gz
+[2024-05-05 16:26:37] INFO root fetch - processPackages [corvic-engine]: executing diffoscope
+[2024-05-05 16:26:37] INFO root fetch - processPackages [corvic-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corvic_engine-0.1.8.tar.gz tmp/corvic_engine-0.1.9.tar.gz --markdown 20240505/c/corvic-engine/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 16:26:38] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.8.tar.gz]
+[2024-05-05 16:26:38] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.9.tar.gz]
+[2024-05-05 16:26:38] INFO root fetch - main [MainThread]: End processing [corvic-engine]: success
+[2024-05-05 16:26:38] INFO root fetch - main [MainThread]: Store serial: [23066375]
