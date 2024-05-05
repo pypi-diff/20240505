@@ -13826,3 +13826,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:25:04] INFO root fetch - processPackages [beancount-black]: Remove: archive file [/home/abi/fetcher/tmp/beancount_black-1.0.2.tar.gz]
 [2024-05-05 19:25:04] INFO root fetch - main [MainThread]: End processing [beancount-black]: success
 [2024-05-05 19:25:04] INFO root fetch - main [MainThread]: Store serial: [23067576]
+[2024-05-05 19:27:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067576]
+[2024-05-05 19:27:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 19:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 19:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ComradeAI
+[2024-05-05 19:27:12] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.4.2] Old Version: [4.4.1]
+[2024-05-05 19:27:12] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/2e/c1/301f1ce40373acb2cc13e792e48f08f82481ea3201cec134dfc7000470f6/Buke_autoTrade_Pypi-4.4.1.tar.gz
+[2024-05-05 19:27:12] INFO root fetch - processPackages [ComradeAI]: New version: [0.18.9] Old Version: [0.18.8]
+[2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: Downloading https://files.pythonhosted.org/packages/0f/6b/cbb210cdd66fba57a3515ccd9678ed6dab7911788e798fd28cdebb179f95/ComradeAI-0.18.8.tar.gz
+[2024-05-05 19:27:13] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/d5/b3/25a756dd8a8097f3913b92e93349b5f9f6f6fe0032c8c2d1d67ffc8ebe72/Buke_autoTrade_Pypi-4.4.2.tar.gz
+[2024-05-05 19:27:13] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 19:27:13] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.4.1.tar.gz tmp/Buke_autoTrade_Pypi-4.4.2.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.4.1-4.4.2/README.md --exclude *.pyd
+[2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: Downloading https://files.pythonhosted.org/packages/57/22/e4aa2177ece664931452ca87630a7ac2a64722c0050b63a0d48c56009de8/ComradeAI-0.18.9.tar.gz
+[2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: executing diffoscope
+[2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ComradeAI-0.18.8.tar.gz tmp/ComradeAI-0.18.9.tar.gz --markdown 20240505/C/ComradeAI/0.18.8-0.18.9/README.md --exclude *.pyd
+[2024-05-05 19:27:13] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.1.tar.gz]
+[2024-05-05 19:27:13] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.2.tar.gz]
+[2024-05-05 19:27:13] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.8.tar.gz]
+[2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.9.tar.gz]
+[2024-05-05 19:27:13] INFO root fetch - main [MainThread]: End processing [ComradeAI]: success
+[2024-05-05 19:27:13] INFO root fetch - main [MainThread]: Store serial: [23067582]
