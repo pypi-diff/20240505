@@ -5908,3 +5908,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:05:24] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta-cli-0.9.9.tar.gz]
 [2024-05-05 10:05:24] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
 [2024-05-05 10:05:24] INFO root fetch - main [MainThread]: Store serial: [23064010]
+[2024-05-05 10:07:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064010]
+[2024-05-05 10:07:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 10:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: query-test-pkg
+[2024-05-05 10:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-05-05 10:07:33] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240504] Old Version: [0.4.5.dev20240503]
+[2024-05-05 10:07:33] WARNING root fetch - processPackages [query-test-pkg]: Skipping, unable to determine old version
+[2024-05-05 10:07:33] INFO root fetch - main [MainThread]: End processing [query-test-pkg] error
+[2024-05-05 10:07:33] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/80/d2/b441e6410cc7282ce0786530d3233331bd1ce2a8d07bc4dc973aa0414876/pyglove-0.4.5.dev20240503.tar.gz
+[2024-05-05 10:07:34] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/a3/de/a874b986ed10b4ed1d63ef652b110776ad6b5c05a4591cae428a1c4c6830/pyglove-0.4.5.dev20240504.tar.gz
+[2024-05-05 10:07:34] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-05 10:07:34] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240503.tar.gz tmp/pyglove-0.4.5.dev20240504.tar.gz --markdown 20240505/p/pyglove/0.4.5.dev20240503-0.4.5.dev20240504/README.md --exclude *.pyd
+[2024-05-05 10:07:35] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240503.tar.gz]
+[2024-05-05 10:07:35] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240504.tar.gz]
+[2024-05-05 10:07:35] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-05 10:07:35] INFO root fetch - main [MainThread]: Store serial: [23064019]
