@@ -15220,3 +15220,54 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:06:30] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-05-05 21:06:30] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-05 21:06:30] INFO root fetch - main [MainThread]: Store serial: [23068201]
+[2024-05-05 21:08:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068201]
+[2024-05-05 21:08:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 21:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2024-05-05 21:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cae-cli
+[2024-05-05 21:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-nets-core
+[2024-05-05 21:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmticket
+[2024-05-05 21:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synology-abfb-log-parser
+[2024-05-05 21:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pincode-generator-validator
+[2024-05-05 21:08:38] INFO root fetch - processPackages [tmticket]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-05 21:08:38] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.72] Old Version: [0.1.71]
+[2024-05-05 21:08:38] INFO root fetch - processPackages [cae-cli]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 21:08:38] INFO root fetch - processPackages [synology-abfb-log-parser]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-05 21:08:38] WARNING root fetch - processPackages [pincode-generator-validator]: Skipping, unable to determine old version
+[2024-05-05 21:08:38] INFO root fetch - main [MainThread]: End processing [pincode-generator-validator] error
+[2024-05-05 21:08:38] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/e5/55/25df781c8fa88a3e9a5bc23fccbe07bf36e5a47bb07c1081c1da24e5a19c/tmticket-0.1.5.tar.gz
+[2024-05-05 21:08:38] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/07/0c/511b34c00e66f2cd15a03aa8cd1b8ce379b6004728ed6263e8b55339cb9c/django_nets_core-0.1.71.tar.gz
+[2024-05-05 21:08:38] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/19/f3/37970bf848b1b47cd5071384206056e0594586f399e02a788990a061d4b7/cae_cli-0.0.3.tar.gz
+[2024-05-05 21:08:38] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-05 21:08:39] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [synology-abfb-log-parser]: Downloading https://files.pythonhosted.org/packages/db/84/396c61ea985280ab2e62aa3cab3b3d751b3594940f3b408c23a17676c725/synology_abfb_log_parser-0.2.1.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/9f/37/140ba0519cc100afbd24f941cbc1b35aa9f3f7ec186c9706110c93e4b6c8/tmticket-0.1.6.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/87/8a/ee91fcf96bc489a6db45dd92487d088e1e913f08fdaeaf8dbfd44d918753/django_nets_core-0.1.72.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/e1/85/bf596edfc14befd4084b30a366fe1a6a8b45dfc9a011a1875b7844be432a/cae_cli-0.0.4.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [tmticket]: executing diffoscope
+[2024-05-05 21:08:39] INFO root fetch - processPackages [tmticket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmticket-0.1.5.tar.gz tmp/tmticket-0.1.6.tar.gz --markdown 20240505/t/tmticket/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-05 21:08:39] INFO root fetch - processPackages [synology-abfb-log-parser]: Downloading https://files.pythonhosted.org/packages/69/d6/fdc3f8b15e21f4952034b5d53e9f1235c8bb3e8ca34c9d57bcacc836937c/synology_abfb_log_parser-0.3.0.tar.gz
+[2024-05-05 21:08:39] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-05 21:08:39] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.0.3.tar.gz tmp/cae_cli-0.0.4.tar.gz --markdown 20240505/c/cae-cli/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 21:08:39] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-05 21:08:39] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.71.tar.gz tmp/django_nets_core-0.1.72.tar.gz --markdown 20240505/d/django-nets-core/0.1.71-0.1.72/README.md --exclude *.pyd
+[2024-05-05 21:08:39] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-05 21:08:39] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240505/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-05 21:08:39] INFO root fetch - processPackages [synology-abfb-log-parser]: executing diffoscope
+[2024-05-05 21:08:39] INFO root fetch - processPackages [synology-abfb-log-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synology_abfb_log_parser-0.2.1.tar.gz tmp/synology_abfb_log_parser-0.3.0.tar.gz --markdown 20240505/s/synology-abfb-log-parser/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-05 21:08:40] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.5.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.6.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - main [MainThread]: End processing [tmticket]: success
+[2024-05-05 21:08:40] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.71.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.72.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-05 21:08:40] INFO root fetch - processPackages [synology-abfb-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/synology_abfb_log_parser-0.2.1.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - processPackages [synology-abfb-log-parser]: Remove: archive file [/home/abi/fetcher/tmp/synology_abfb_log_parser-0.3.0.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - main [MainThread]: End processing [synology-abfb-log-parser]: success
+[2024-05-05 21:08:40] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.3.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.4.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-05 21:08:40] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-05 21:08:40] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-05 21:08:40] INFO root fetch - main [MainThread]: Store serial: [23068220]
