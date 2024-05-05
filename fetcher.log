@@ -4078,3 +4078,11 @@
 [2024-05-05 07:08:25] INFO root fetch - processPackages [swarmauri]: Remove: archive file [/home/abi/fetcher/tmp/swarmauri-0.1.98.tar.gz]
 [2024-05-05 07:08:25] INFO root fetch - main [MainThread]: End processing [swarmauri]: success
 [2024-05-05 07:08:25] INFO root fetch - main [MainThread]: Store serial: [23063234]
+[2024-05-05 07:10:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063234]
+[2024-05-05 07:10:33] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 07:12:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063234]
+[2024-05-05 07:12:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 07:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shift-forex-tester-data
+[2024-05-05 07:12:39] WARNING root fetch - processPackages [shift-forex-tester-data]: Skipping, unable to determine old version
+[2024-05-05 07:12:39] INFO root fetch - main [MainThread]: End processing [shift-forex-tester-data] error
+[2024-05-05 07:12:39] INFO root fetch - main [MainThread]: Store serial: [23063238]
