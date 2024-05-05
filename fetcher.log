@@ -4227,3 +4227,35 @@
 [2024-05-05 07:29:56] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_anime_downloader-0.2.0.tar.gz]
 [2024-05-05 07:29:56] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-anime-downloader]: success
 [2024-05-05 07:29:56] INFO root fetch - main [MainThread]: Store serial: [23063286]
+[2024-05-05 07:31:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063286]
+[2024-05-05 07:32:04] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 07:34:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063286]
+[2024-05-05 07:34:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 07:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FFEM
+[2024-05-05 07:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tflite-runtime-nightly
+[2024-05-05 07:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-db
+[2024-05-05 07:34:09] INFO root fetch - processPackages [FFEM]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-05 07:34:09] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-05 07:34:09] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240503] Old Version: [2.17.0.dev20240502]
+[2024-05-05 07:34:09] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/1c/6c/5726c4981a1bed0bbe17f8a9291b7982457137b69882fcb5f9d0726344f4/FFEM-0.4.2.tar.gz
+[2024-05-05 07:34:09] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/ba/bb/25e5748984b480aaea0e033437c2ddb11dc4c548c55f439d9754e8b8d84d/pypomes_db-0.4.4.tar.gz
+[2024-05-05 07:34:09] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/c1/77/210ea6ed5cb70ae5e320a39629aea9cbb0e10c016efc103c8d54b467827c/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-05 07:34:10] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/79/1b/0f21bf499fb37e969d82a46c32362f5115ed8062d3bcee6f5266830d93ab/FFEM-0.4.3.tar.gz
+[2024-05-05 07:34:10] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/70/50/f56cb95f510ec0b4149f34bc315c609f9877f89b1488122fe8b0822ad901/pypomes_db-0.4.5.tar.gz
+[2024-05-05 07:34:10] INFO root fetch - processPackages [FFEM]: executing diffoscope
+[2024-05-05 07:34:10] INFO root fetch - processPackages [FFEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFEM-0.4.2.tar.gz tmp/FFEM-0.4.3.tar.gz --markdown 20240505/F/FFEM/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-05 07:34:10] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 07:34:10] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.4.tar.gz tmp/pypomes_db-0.4.5.tar.gz --markdown 20240505/p/pypomes-db/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-05 07:34:10] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/7e/39/723ef41119e7ea4e0d0a2a0f0031ec1c03dec776b3f4a8f091a4a4e80c40/tflite_runtime_nightly-2.17.0.dev20240503-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-05 07:34:10] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-05-05 07:34:10] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240503-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240505/t/tflite-runtime-nightly/2.17.0.dev20240502-2.17.0.dev20240503/README.md --exclude *.pyd
+[2024-05-05 07:34:10] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.4.2.tar.gz]
+[2024-05-05 07:34:10] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.4.3.tar.gz]
+[2024-05-05 07:34:10] INFO root fetch - main [MainThread]: End processing [FFEM]: success
+[2024-05-05 07:34:10] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.4.tar.gz]
+[2024-05-05 07:34:10] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.5.tar.gz]
+[2024-05-05 07:34:10] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 07:34:11] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240502-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-05 07:34:11] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240503-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-05 07:34:11] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-05-05 07:34:11] INFO root fetch - main [MainThread]: Store serial: [23063297]
