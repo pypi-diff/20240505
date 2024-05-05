@@ -16089,3 +16089,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:56:55] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.77.tar.gz]
 [2024-05-05 21:56:55] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
 [2024-05-05 21:56:55] INFO root fetch - main [MainThread]: Store serial: [23068621]
+[2024-05-05 21:58:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068621]
+[2024-05-05 21:59:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 21:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: energysandbox
+[2024-05-05 21:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-05-05 21:59:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyams-skin
+[2024-05-05 21:59:03] INFO root fetch - processPackages [energysandbox]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 21:59:03] INFO root fetch - processPackages [dektools]: New version: [0.1.96] Old Version: [0.1.95]
+[2024-05-05 21:59:04] INFO root fetch - processPackages [pyams-skin]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-05-05 21:59:04] INFO root fetch - processPackages [energysandbox]: Downloading https://files.pythonhosted.org/packages/7d/70/27d07656501a337e5234e593f3abfc2995ca9cfd678397271498dd5e8eee/energysandbox-0.0.1.tar.gz
+[2024-05-05 21:59:04] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/a9/60/81848f8fef823ef7bc9f49038c68b2c7720805c32c233045d1188d758d8b/dektools-0.1.95.tar.gz
+[2024-05-05 21:59:04] INFO root fetch - processPackages [pyams-skin]: Downloading https://files.pythonhosted.org/packages/0c/b9/54abb41a3c6d5118fdb537c915840ab11b43a0e52b68796473eafa2aeffa/pyams_skin-2.1.1.tar.gz
+[2024-05-05 21:59:04] INFO root fetch - processPackages [energysandbox]: Downloading https://files.pythonhosted.org/packages/ef/00/188f2cdddddab1dbe078feda98d50eac4a59947fa79c2d248f300a6eeaee/energysandbox-0.0.2.tar.gz
+[2024-05-05 21:59:04] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/90/92/deedf0c030a854b6d3f7e24c5b86f6eac276264f1a4854f8efb2138465be/dektools-0.1.96.tar.gz
+[2024-05-05 21:59:04] INFO root fetch - processPackages [energysandbox]: executing diffoscope
+[2024-05-05 21:59:04] INFO root fetch - processPackages [energysandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energysandbox-0.0.1.tar.gz tmp/energysandbox-0.0.2.tar.gz --markdown 20240505/e/energysandbox/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 21:59:04] INFO root fetch - processPackages [pyams-skin]: Downloading https://files.pythonhosted.org/packages/2e/2b/66c5f334edd02d8c1aaa8b0e61e687f628d67d0a2cca7e7da4779a426b73/pyams_skin-2.2.0.tar.gz
+[2024-05-05 21:59:04] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-05 21:59:04] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.95.tar.gz tmp/dektools-0.1.96.tar.gz --markdown 20240505/d/dektools/0.1.95-0.1.96/README.md --exclude *.pyd
+[2024-05-05 21:59:04] INFO root fetch - processPackages [pyams-skin]: executing diffoscope
+[2024-05-05 21:59:04] INFO root fetch - processPackages [pyams-skin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_skin-2.1.1.tar.gz tmp/pyams_skin-2.2.0.tar.gz --markdown 20240505/p/pyams-skin/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-05-05 21:59:04] INFO root fetch - processPackages [energysandbox]: Remove: archive file [/home/abi/fetcher/tmp/energysandbox-0.0.1.tar.gz]
+[2024-05-05 21:59:04] INFO root fetch - processPackages [energysandbox]: Remove: archive file [/home/abi/fetcher/tmp/energysandbox-0.0.2.tar.gz]
+[2024-05-05 21:59:04] INFO root fetch - main [MainThread]: End processing [energysandbox]: success
+[2024-05-05 21:59:05] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.95.tar.gz]
+[2024-05-05 21:59:05] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.96.tar.gz]
+[2024-05-05 21:59:05] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-05 21:59:05] INFO root fetch - processPackages [pyams-skin]: Remove: archive file [/home/abi/fetcher/tmp/pyams_skin-2.1.1.tar.gz]
+[2024-05-05 21:59:05] INFO root fetch - processPackages [pyams-skin]: Remove: archive file [/home/abi/fetcher/tmp/pyams_skin-2.2.0.tar.gz]
+[2024-05-05 21:59:05] INFO root fetch - main [MainThread]: End processing [pyams-skin]: success
+[2024-05-05 21:59:05] INFO root fetch - main [MainThread]: Store serial: [23068634]
