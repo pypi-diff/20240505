@@ -13847,3 +13847,30 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:27:13] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.9.tar.gz]
 [2024-05-05 19:27:13] INFO root fetch - main [MainThread]: End processing [ComradeAI]: success
 [2024-05-05 19:27:13] INFO root fetch - main [MainThread]: Store serial: [23067582]
+[2024-05-05 19:29:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067582]
+[2024-05-05 19:29:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 19:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-05-05 19:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: satisfactory-save-reader
+[2024-05-05 19:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdm-python-project-template
+[2024-05-05 19:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: byol-pytorch
+[2024-05-05 19:29:22] WARNING root fetch - processPackages [satisfactory-save-reader]: Skipping, unable to determine old version
+[2024-05-05 19:29:22] INFO root fetch - main [MainThread]: End processing [satisfactory-save-reader] error
+[2024-05-05 19:29:22] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.5.1] Old Version: [2024.5.5.0]
+[2024-05-05 19:29:22] WARNING root fetch - processPackages [pdm-python-project-template]: Skipping, unable to determine old version
+[2024-05-05 19:29:22] INFO root fetch - main [MainThread]: End processing [pdm-python-project-template] error
+[2024-05-05 19:29:22] INFO root fetch - processPackages [byol-pytorch]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-05 19:29:22] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/68/12/f64ebee0816b1c2752057bc4f0b2e52aea7275ba85b851206a36ec7b5634/crazy_thursday-2024.5.5.0.tar.gz
+[2024-05-05 19:29:22] INFO root fetch - processPackages [byol-pytorch]: Downloading https://files.pythonhosted.org/packages/f7/7d/a6f7f3844ec8dd05fbee8a8acecca28b3a8d484cfb797f2f7230065e7967/byol-pytorch-0.8.0.tar.gz
+[2024-05-05 19:29:22] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/a9/4b/f6d5ffe04e9cea0a5638148031379dba6191181959a28f35a87c9c0cb079/crazy_thursday-2024.5.5.1.tar.gz
+[2024-05-05 19:29:22] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-05 19:29:22] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.5.0.tar.gz tmp/crazy_thursday-2024.5.5.1.tar.gz --markdown 20240505/c/crazy-thursday/2024.5.5.0-2024.5.5.1/README.md --exclude *.pyd
+[2024-05-05 19:29:23] INFO root fetch - processPackages [byol-pytorch]: Downloading https://files.pythonhosted.org/packages/00/16/f9bf2da499ef1f0cbf1a19918f91c7022de743ab8d84cdcaf57276775151/byol_pytorch-0.8.1.tar.gz
+[2024-05-05 19:29:23] INFO root fetch - processPackages [byol-pytorch]: executing diffoscope
+[2024-05-05 19:29:23] INFO root fetch - processPackages [byol-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byol-pytorch-0.8.0.tar.gz tmp/byol_pytorch-0.8.1.tar.gz --markdown 20240505/b/byol-pytorch/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-05 19:29:23] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.5.0.tar.gz]
+[2024-05-05 19:29:23] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.5.1.tar.gz]
+[2024-05-05 19:29:23] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-05 19:29:23] INFO root fetch - processPackages [byol-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/byol-pytorch-0.8.0.tar.gz]
+[2024-05-05 19:29:23] INFO root fetch - processPackages [byol-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/byol_pytorch-0.8.1.tar.gz]
+[2024-05-05 19:29:23] INFO root fetch - main [MainThread]: End processing [byol-pytorch]: success
+[2024-05-05 19:29:23] INFO root fetch - main [MainThread]: Store serial: [23067595]
