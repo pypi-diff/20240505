@@ -7646,3 +7646,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:20:51] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.0.dev0.tar.gz]
 [2024-05-05 12:20:51] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-05 12:20:51] INFO root fetch - main [MainThread]: Store serial: [23064734]
+[2024-05-05 12:22:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064734]
+[2024-05-05 12:23:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 12:25:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064734]
+[2024-05-05 12:25:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 12:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assisted-service-client
+[2024-05-05 12:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyranges1
+[2024-05-05 12:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: url-remote
+[2024-05-05 12:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: innertube-de
+[2024-05-05 12:25:06] INFO root fetch - processPackages [innertube-de]: New version: [1.0.0.post4] Old Version: [1.0.0.post3]
+[2024-05-05 12:25:06] INFO root fetch - processPackages [innertube-de]: Downloading https://files.pythonhosted.org/packages/db/13/61c9e35c38ce4671ceb83c08a42801adc9c07dd0f885e46db59d3160e528/innertube-de-1.0.0.post3.tar.gz
+[2024-05-05 12:25:06] INFO root fetch - processPackages [pyranges1]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-05 12:25:06] INFO root fetch - processPackages [url-remote]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-05-05 12:25:06] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2024-05-05 12:25:06] INFO root fetch - processPackages [innertube-de]: Downloading https://files.pythonhosted.org/packages/0d/c8/d96b779f71cf24d4cba37748703a02bcb074100e58c98e21df811b1f7942/innertube-de-1.0.0.post4.tar.gz
+[2024-05-05 12:25:06] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/4d/d4/21d3b56320e2b8a51071d09babeddb3578274301d5adb114b4ee6a300da1/pyranges1-0.1.1.tar.gz
+[2024-05-05 12:25:06] INFO root fetch - processPackages [url-remote]: Downloading https://files.pythonhosted.org/packages/2d/a3/ec05dd63ee98bce178c5eebeb3e209675a5e68b5af97c0529afa91fab3c9/url_remote-0.0.85.tar.gz
+[2024-05-05 12:25:06] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/a5/ee/a5837c5427b0689f863021f5d65c42ff9d4ae267905a751492653198b2dc/assisted_service_client-2.9.0.post8-py3-none-any.whl
+[2024-05-05 12:25:07] INFO root fetch - processPackages [innertube-de]: executing diffoscope
+[2024-05-05 12:25:07] INFO root fetch - processPackages [innertube-de]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innertube-de-1.0.0.post3.tar.gz tmp/innertube-de-1.0.0.post4.tar.gz --markdown 20240505/i/innertube-de/1.0.0.post3-1.0.0.post4/README.md --exclude *.pyd
+[2024-05-05 12:25:07] INFO root fetch - processPackages [url-remote]: Downloading https://files.pythonhosted.org/packages/98/03/de3b6d14429afc4c8aba8da685c2edd94611b3a04c06f4938277f37dc435/url_remote-0.0.86.tar.gz
+[2024-05-05 12:25:07] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/5e/fd/ea97ca7443fa6baf6a232850a8baeadf59fcea9f68900bfbcdfc9846c4e2/pyranges1-0.1.2.tar.gz
+[2024-05-05 12:25:07] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/f6/90/2599b3c134ea21c06d22f83dd1dfac6801d974b9aa0958f008fb332e5b4d/assisted_service_client-2.9.0.post9-py3-none-any.whl
+[2024-05-05 12:25:07] INFO root fetch - processPackages [url-remote]: executing diffoscope
+[2024-05-05 12:25:07] INFO root fetch - processPackages [url-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/url_remote-0.0.85.tar.gz tmp/url_remote-0.0.86.tar.gz --markdown 20240505/u/url-remote/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-05-05 12:25:07] INFO root fetch - processPackages [pyranges1]: executing diffoscope
+[2024-05-05 12:25:07] INFO root fetch - processPackages [pyranges1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranges1-0.1.1.tar.gz tmp/pyranges1-0.1.2.tar.gz --markdown 20240505/p/pyranges1/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-05 12:25:07] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2024-05-05 12:25:07] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20240505/a/assisted-service-client/2.9.0.post8-2.9.0.post9/README.md --exclude *.pyd
+[2024-05-05 12:25:07] INFO root fetch - processPackages [innertube-de]: Remove: archive file [/home/abi/fetcher/tmp/innertube-de-1.0.0.post3.tar.gz]
+[2024-05-05 12:25:07] INFO root fetch - processPackages [innertube-de]: Remove: archive file [/home/abi/fetcher/tmp/innertube-de-1.0.0.post4.tar.gz]
+[2024-05-05 12:25:07] INFO root fetch - main [MainThread]: End processing [innertube-de]: success
+[2024-05-05 12:25:07] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.85.tar.gz]
+[2024-05-05 12:25:07] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.86.tar.gz]
+[2024-05-05 12:25:07] INFO root fetch - main [MainThread]: End processing [url-remote]: success
+[2024-05-05 12:25:08] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-0.1.1.tar.gz]
+[2024-05-05 12:25:08] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-0.1.2.tar.gz]
+[2024-05-05 12:25:08] INFO root fetch - main [MainThread]: End processing [pyranges1]: success
+[2024-05-05 12:25:08] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip]
+[2024-05-05 12:25:08] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip]
+[2024-05-05 12:25:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2024-05-05 12:25:08] INFO root fetch - main [MainThread]: Store serial: [23064744]
