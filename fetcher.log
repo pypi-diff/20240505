@@ -12490,3 +12490,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:06:32] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.4.0.tar.gz]
 [2024-05-05 18:06:32] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
 [2024-05-05 18:06:32] INFO root fetch - main [MainThread]: Store serial: [23066959]
+[2024-05-05 18:08:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066959]
+[2024-05-05 18:08:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GofileIOUploader
+[2024-05-05 18:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mqt-core
+[2024-05-05 18:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygpt-net
+[2024-05-05 18:08:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-kg
+[2024-05-05 18:08:41] INFO root fetch - processPackages [GofileIOUploader]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 18:08:41] INFO root fetch - processPackages [llama-kg]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-05 18:08:41] INFO root fetch - processPackages [pygpt-net]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-05-05 18:08:41] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/48/42/09fc7a1087eeb9edb010a498fd55ac800854c1adab9c25d8448daef6f284/llama-kg-0.0.4.tar.gz
+[2024-05-05 18:08:41] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a2/51/eab8c08ccf8061d3c9a0a64e34850f09c2f311fb768c293d3683b097b0a1/pygpt_net-2.2.8.tar.gz
+[2024-05-05 18:08:41] INFO root fetch - processPackages [GofileIOUploader]: Downloading https://files.pythonhosted.org/packages/fb/d1/ec176f7766a149d8fa7730e6327c1aa2857577ca0281cb42482f0a77cedc/GofileIOUploader-0.9.8.tar.gz
+[2024-05-05 18:08:41] INFO root fetch - processPackages [GofileIOUploader]: Downloading https://files.pythonhosted.org/packages/7d/9c/3e49756dade43968c36dae4932d816bfdd801248318c650b1ac631eb15d8/GofileIOUploader-0.9.9.tar.gz
+[2024-05-05 18:08:41] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/a1/3e/a383d878434df9b9affb4036ebd919d1cb83025ffe9621f65b99b2dc63a3/llama-kg-0.0.5.tar.gz
+[2024-05-05 18:08:41] INFO root fetch - processPackages [mqt-core]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-05-05 18:08:41] INFO root fetch - processPackages [GofileIOUploader]: executing diffoscope
+[2024-05-05 18:08:41] INFO root fetch - processPackages [GofileIOUploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GofileIOUploader-0.9.8.tar.gz tmp/GofileIOUploader-0.9.9.tar.gz --markdown 20240505/G/GofileIOUploader/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 18:08:41] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/9a/6b/ef19dace2478125566a1c01459255b7c5ee6d85a70cc2501323506c14e6a/pygpt_net-2.2.9.tar.gz
+[2024-05-05 18:08:41] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 18:08:41] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.4.tar.gz tmp/llama-kg-0.0.5.tar.gz --markdown 20240505/l/llama-kg/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-05 18:08:42] INFO root fetch - processPackages [mqt-core]: Downloading https://files.pythonhosted.org/packages/7d/c2/ad003e176dcb213b7691bffaf8b165b855c639d50e85566495aac7dd4c43/mqt_core-2.4.1.tar.gz
+[2024-05-05 18:08:42] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-05-05 18:08:42] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.2.8.tar.gz tmp/pygpt_net-2.2.9.tar.gz --markdown 20240505/p/pygpt-net/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-05-05 18:08:42] INFO root fetch - processPackages [mqt-core]: Downloading https://files.pythonhosted.org/packages/df/be/826eeb6d9a8d2fef7bef0ea9e68add3e89a40eff65e337a4eb6643b887ad/mqt_core-2.4.2-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-05-05 18:08:42] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.4.tar.gz]
+[2024-05-05 18:08:42] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.5.tar.gz]
+[2024-05-05 18:08:42] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 18:08:42] INFO root fetch - processPackages [GofileIOUploader]: Remove: archive file [/home/abi/fetcher/tmp/GofileIOUploader-0.9.8.tar.gz]
+[2024-05-05 18:08:42] INFO root fetch - processPackages [GofileIOUploader]: Remove: archive file [/home/abi/fetcher/tmp/GofileIOUploader-0.9.9.tar.gz]
+[2024-05-05 18:08:42] INFO root fetch - main [MainThread]: End processing [GofileIOUploader]: success
+[2024-05-05 18:08:42] WARNING root fetch - processPackages [mqt-core]: Skipping package: exceeds size limit 44054890>=10485760
+[2024-05-05 18:08:42] INFO root fetch - main [MainThread]: End processing [mqt-core] error
+[2024-05-05 18:08:45] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.8.tar.gz]
+[2024-05-05 18:08:45] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
+[2024-05-05 18:08:45] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-05-05 18:08:45] INFO root fetch - main [MainThread]: Store serial: [23066999]
