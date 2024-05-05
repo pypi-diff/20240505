@@ -10278,3 +10278,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:37:20] INFO root fetch - processPackages [inspyre-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/inspyre_toolbox-1.5.0.tar.gz]
 [2024-05-05 15:37:20] INFO root fetch - main [MainThread]: End processing [inspyre-toolbox]: success
 [2024-05-05 15:37:20] INFO root fetch - main [MainThread]: Store serial: [23065996]
+[2024-05-05 15:39:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065996]
+[2024-05-05 15:39:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 15:39:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nqrduck
+[2024-05-05 15:39:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiavatar
+[2024-05-05 15:39:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-all-star
+[2024-05-05 15:39:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FlowAnalyzer
+[2024-05-05 15:39:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly
+[2024-05-05 15:39:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hydra4
+[2024-05-05 15:39:29] INFO root fetch - processPackages [aiavatar]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-05 15:39:29] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-05 15:39:29] INFO root fetch - processPackages [gpt-all-star]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 15:39:29] INFO root fetch - processPackages [FlowAnalyzer]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 15:39:29] INFO root fetch - processPackages [nqrduck]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 15:39:29] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/33/5a/9e185c04d80f3bf0f42d25dc61c714bbfcd4b64cdc411ea25ebb0d8680b8/fbgemm_gpu_nightly-2024.5.3-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 15:39:29] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/d3/10/f2aee96841dc7ee759bc7eb19f6c91ce99b65f893186ee444d18b01d73a2/aiavatar-0.5.0-py3-none-any.whl
+[2024-05-05 15:39:29] WARNING root fetch - processPackages [hydra4]: Skipping, unable to determine old version
+[2024-05-05 15:39:29] INFO root fetch - main [MainThread]: End processing [hydra4] error
+[2024-05-05 15:39:29] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 222216968>=10485760
+[2024-05-05 15:39:29] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-05-05 15:39:29] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/95/00/47f2780dce549d1ce8aad7cb17a7c758209c4539c6f75dcdbe0e9322ce0e/gpt_all_star-0.0.7.tar.gz
+[2024-05-05 15:39:29] INFO root fetch - processPackages [nqrduck]: Downloading https://files.pythonhosted.org/packages/01/90/6d67e83852222440e96a56b12ec9b753c1aade8e960005fec82a99222d5f/nqrduck-0.0.8.tar.gz
+[2024-05-05 15:39:29] INFO root fetch - processPackages [FlowAnalyzer]: Downloading https://files.pythonhosted.org/packages/88/a9/3682709f6e2c728fbf386c999f5196d23b58ff655f2428a83cd35851df79/FlowAnalyzer-0.2.8.tar.gz
+[2024-05-05 15:39:29] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/64/c9/2e726e35a83aaddc315cdddf445df514601b8abc5ecba2716cb183f62604/aiavatar-0.5.1-py3-none-any.whl
+[2024-05-05 15:39:29] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-05-05 15:39:29] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.5.0-py3-none-any.whl.zip tmp/aiavatar-0.5.1-py3-none-any.whl.zip --markdown 20240505/a/aiavatar/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-05 15:39:29] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/96/40/c6f6b9dc146ffbf8c97d68b1ad200a51bb0f5a239c5e4d11725f1fff5f45/gpt_all_star-0.0.9.tar.gz
+[2024-05-05 15:39:29] INFO root fetch - processPackages [gpt-all-star]: executing diffoscope
+[2024-05-05 15:39:29] INFO root fetch - processPackages [gpt-all-star]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_all_star-0.0.7.tar.gz tmp/gpt_all_star-0.0.9.tar.gz --markdown 20240505/g/gpt-all-star/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 15:39:29] INFO root fetch - processPackages [nqrduck]: Downloading https://files.pythonhosted.org/packages/76/82/466ce7f56607c2b837af35d7fa5fde02713003f1e3dae700835d86444973/nqrduck-0.0.9.tar.gz
+[2024-05-05 15:39:29] INFO root fetch - processPackages [FlowAnalyzer]: Downloading https://files.pythonhosted.org/packages/74/af/5a740b1c7803bf0826251b5140be1d11c8da13969365bda0b62f27816ba7/FlowAnalyzer-0.2.9-py3-none-any.whl
+[2024-05-05 15:39:29] INFO root fetch - processPackages [nqrduck]: executing diffoscope
+[2024-05-05 15:39:29] INFO root fetch - processPackages [nqrduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqrduck-0.0.8.tar.gz tmp/nqrduck-0.0.9.tar.gz --markdown 20240505/n/nqrduck/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 15:39:29] INFO root fetch - processPackages [FlowAnalyzer]: executing diffoscope
+[2024-05-05 15:39:29] INFO root fetch - processPackages [FlowAnalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlowAnalyzer-0.2.8.tar.gz tmp/FlowAnalyzer-0.2.9-py3-none-any.whl.zip --markdown 20240505/F/FlowAnalyzer/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-05 15:39:30] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.0-py3-none-any.whl.zip]
+[2024-05-05 15:39:30] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.1-py3-none-any.whl.zip]
+[2024-05-05 15:39:30] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-05-05 15:39:30] INFO root fetch - processPackages [FlowAnalyzer]: Remove: archive file [/home/abi/fetcher/tmp/FlowAnalyzer-0.2.8.tar.gz]
+[2024-05-05 15:39:30] INFO root fetch - processPackages [FlowAnalyzer]: Remove: archive file [/home/abi/fetcher/tmp/FlowAnalyzer-0.2.9-py3-none-any.whl.zip]
+[2024-05-05 15:39:30] INFO root fetch - main [MainThread]: End processing [FlowAnalyzer]: success
+[2024-05-05 15:39:30] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.7.tar.gz]
+[2024-05-05 15:39:30] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
+[2024-05-05 15:39:30] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
+[2024-05-05 15:39:30] INFO root fetch - processPackages [nqrduck]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck-0.0.8.tar.gz]
+[2024-05-05 15:39:30] INFO root fetch - processPackages [nqrduck]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck-0.0.9.tar.gz]
+[2024-05-05 15:39:30] INFO root fetch - main [MainThread]: End processing [nqrduck]: success
+[2024-05-05 15:39:30] INFO root fetch - main [MainThread]: Store serial: [23066012]
