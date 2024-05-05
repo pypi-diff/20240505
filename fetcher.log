@@ -15104,3 +15104,12 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:57:49] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
 [2024-05-05 20:57:49] INFO root fetch - main [MainThread]: End processing [petrosa]: success
 [2024-05-05 20:57:49] INFO root fetch - main [MainThread]: Store serial: [23068138]
+[2024-05-05 20:59:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068138]
+[2024-05-05 20:59:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 20:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyOMRON
+[2024-05-05 20:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyGascard
+[2024-05-05 20:59:58] WARNING root fetch - processPackages [pyGascard]: Skipping, unable to determine old version
+[2024-05-05 20:59:58] INFO root fetch - main [MainThread]: End processing [pyGascard] error
+[2024-05-05 20:59:58] WARNING root fetch - processPackages [pyOMRON]: Skipping, unable to determine old version
+[2024-05-05 20:59:58] INFO root fetch - main [MainThread]: End processing [pyOMRON] error
+[2024-05-05 20:59:58] INFO root fetch - main [MainThread]: Store serial: [23068152]
