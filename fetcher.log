@@ -5394,3 +5394,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:24:12] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.9.tar.gz]
 [2024-05-05 09:24:12] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2024-05-05 09:24:12] INFO root fetch - main [MainThread]: Store serial: [23063793]
+[2024-05-05 09:26:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063793]
+[2024-05-05 09:26:21] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elevenlabslib
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: half-orm
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: morphdb-utils
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tree-sitter-haskell
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-surveyplus
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: data-watchtower
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: STAIR-tools
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: archivefile
+[2024-05-05 09:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: droid-metapatch
+[2024-05-05 09:26:22] INFO root fetch - processPackages [STAIR-tools]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-05 09:26:22] WARNING root fetch - processPackages [tree-sitter-haskell]: Skipping, unable to determine old version
+[2024-05-05 09:26:22] INFO root fetch - main [MainThread]: End processing [tree-sitter-haskell] error
+[2024-05-05 09:26:22] INFO root fetch - processPackages [half-orm]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 09:26:22] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/07/bc/636e8c4bd5a166a54a619106950dde0c30e7db34965fa312334a6bf731ce/STAIR-tools-1.2.1.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [data-watchtower]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 09:26:22] INFO root fetch - processPackages [elevenlabslib]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-05 09:26:22] INFO root fetch - processPackages [morphdb-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 09:26:22] WARNING root fetch - processPackages [django-surveyplus]: Skipping, unable to determine old version
+[2024-05-05 09:26:22] INFO root fetch - main [MainThread]: End processing [django-surveyplus] error
+[2024-05-05 09:26:22] INFO root fetch - processPackages [archivefile]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-05 09:26:22] INFO root fetch - processPackages [droid-metapatch]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-05 09:26:22] INFO root fetch - processPackages [half-orm]: Downloading https://files.pythonhosted.org/packages/03/5b/7ad7adf499f569d057fff1e0e6bc40a51103c154388596eab2c850d378f4/half_orm-0.9.8.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [data-watchtower]: Downloading https://files.pythonhosted.org/packages/7a/1f/a6ecc1b30fabbbaf02a2ef29a1146ebddd2d7a934cc0d475bb5a65b30d90/data_watchtower-0.0.1.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [archivefile]: Downloading https://files.pythonhosted.org/packages/d3/b6/bb7e4172a6da6a8843eec26d0e185df0389026771f2bb59ac3ecd7d9b4f7/archivefile-0.2.0.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/71/9f/a2e14f1b42cd79c3c6a8ad806c3cbd5335dc4d86ac4ae97b1ac88424cd9c/elevenlabslib-0.9.3.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/cd/4f/c6949258d5647c0aa4d14e61014c6e3a7c9f08086b8ff176bee34576864d/morphdb_utils-0.1.8.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [droid-metapatch]: Downloading https://files.pythonhosted.org/packages/f2/b8/16ce5d5a120479845d8617eab0ccad82bed25596e97c9348a1e88513cb17/droid_metapatch-2.0.1.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/28/3b/5abfdb8bb181b41279f26e453d7e50b09f52a22430c23428dc6782a5e125/STAIR-tools-1.2.2.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [archivefile]: Downloading https://files.pythonhosted.org/packages/2b/2e/43e47d8cecf7c492df2e1dd1628c3a95fa97acacaa7ff7a39ea288c95dcf/archivefile-0.3.0.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [data-watchtower]: Downloading https://files.pythonhosted.org/packages/0e/14/5baad307f5933d65d5f61b8ee75a048e74814fe05a7679ce3ab083252b3d/data_watchtower-0.0.2.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-05-05 09:26:22] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.2.1.tar.gz tmp/STAIR-tools-1.2.2.tar.gz --markdown 20240505/S/STAIR-tools/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-05 09:26:22] INFO root fetch - processPackages [half-orm]: Downloading https://files.pythonhosted.org/packages/9b/56/df1f5dae72d6953a2f5458c12c0689212adb79ad73442b5934bc404993bd/half_orm-0.9.9.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/f4/69/729494d22abe49b72c25e4b1efa215d54cab59388bae925f40777fce21f3/morphdb_utils-0.1.9.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [droid-metapatch]: Downloading https://files.pythonhosted.org/packages/85/98/ae4fbd27dbc8de42e6c468a6d2c9b38e09b03eec7eb291cb0461ec338b55/droid_metapatch-2.0.2.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/d3/f3/f52bb2a224b7802bb07d8ea42b16b5b9ff82c41270e726e4334a5666d573/elevenlabslib-0.9.4.tar.gz
+[2024-05-05 09:26:22] INFO root fetch - processPackages [data-watchtower]: executing diffoscope
+[2024-05-05 09:26:22] INFO root fetch - processPackages [data-watchtower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_watchtower-0.0.1.tar.gz tmp/data_watchtower-0.0.2.tar.gz --markdown 20240505/d/data-watchtower/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 09:26:22] INFO root fetch - processPackages [archivefile]: executing diffoscope
+[2024-05-05 09:26:22] INFO root fetch - processPackages [archivefile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archivefile-0.2.0.tar.gz tmp/archivefile-0.3.0.tar.gz --markdown 20240505/a/archivefile/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-05 09:26:22] INFO root fetch - processPackages [half-orm]: executing diffoscope
+[2024-05-05 09:26:22] INFO root fetch - processPackages [half-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/half_orm-0.9.8.tar.gz tmp/half_orm-0.9.9.tar.gz --markdown 20240505/h/half-orm/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 09:26:22] INFO root fetch - processPackages [morphdb-utils]: executing diffoscope
+[2024-05-05 09:26:22] INFO root fetch - processPackages [morphdb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphdb_utils-0.1.8.tar.gz tmp/morphdb_utils-0.1.9.tar.gz --markdown 20240505/m/morphdb-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 09:26:22] INFO root fetch - processPackages [elevenlabslib]: executing diffoscope
+[2024-05-05 09:26:22] INFO root fetch - processPackages [elevenlabslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabslib-0.9.3.tar.gz tmp/elevenlabslib-0.9.4.tar.gz --markdown 20240505/e/elevenlabslib/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-05 09:26:23] INFO root fetch - processPackages [droid-metapatch]: executing diffoscope
+[2024-05-05 09:26:23] INFO root fetch - processPackages [droid-metapatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/droid_metapatch-2.0.1.tar.gz tmp/droid_metapatch-2.0.2.tar.gz --markdown 20240505/d/droid-metapatch/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-05 09:26:23] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.2.1.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.2.2.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-05-05 09:26:23] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.1.8.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.1.9.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [morphdb-utils]: success
+[2024-05-05 09:26:23] INFO root fetch - processPackages [archivefile]: Remove: archive file [/home/abi/fetcher/tmp/archivefile-0.2.0.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [archivefile]: Remove: archive file [/home/abi/fetcher/tmp/archivefile-0.3.0.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [archivefile]: success
+[2024-05-05 09:26:23] INFO root fetch - processPackages [data-watchtower]: Remove: archive file [/home/abi/fetcher/tmp/data_watchtower-0.0.1.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [data-watchtower]: Remove: archive file [/home/abi/fetcher/tmp/data_watchtower-0.0.2.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [data-watchtower]: success
+[2024-05-05 09:26:23] INFO root fetch - processPackages [elevenlabslib]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabslib-0.9.3.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [elevenlabslib]: Remove: archive file [/home/abi/fetcher/tmp/elevenlabslib-0.9.4.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [elevenlabslib]: success
+[2024-05-05 09:26:23] INFO root fetch - processPackages [droid-metapatch]: Remove: archive file [/home/abi/fetcher/tmp/droid_metapatch-2.0.1.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [droid-metapatch]: Remove: archive file [/home/abi/fetcher/tmp/droid_metapatch-2.0.2.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [droid-metapatch]: success
+[2024-05-05 09:26:23] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.8.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.9.tar.gz]
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [half-orm]: success
+[2024-05-05 09:26:23] INFO root fetch - main [MainThread]: Store serial: [23063830]
