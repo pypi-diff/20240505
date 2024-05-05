@@ -10676,3 +10676,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:57:15] INFO root fetch - processPackages [nqrduck-pulseprogrammer]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_pulseprogrammer-0.0.4.tar.gz]
 [2024-05-05 15:57:15] INFO root fetch - main [MainThread]: End processing [nqrduck-pulseprogrammer]: success
 [2024-05-05 15:57:15] INFO root fetch - main [MainThread]: Store serial: [23066169]
+[2024-05-05 15:59:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066169]
+[2024-05-05 15:59:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yuag
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nqrduck-spectrometer-simulator
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: varname
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TDhelper
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastatomstruct
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kingorm
+[2024-05-05 15:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oda-reader
+[2024-05-05 15:59:23] INFO root fetch - processPackages [oda-reader]: New version: [0.2.0] Old Version: [0.0.9]
+[2024-05-05 15:59:24] INFO root fetch - processPackages [TDhelper]: New version: [2.7.9] Old Version: [2.7.8]
+[2024-05-05 15:59:24] INFO root fetch - processPackages [oda-reader]: Downloading https://files.pythonhosted.org/packages/a2/e6/c08c734234e8c600a3e6b51010fb8f591f29639712b2315ab0da66bff578/oda_reader-0.0.9.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [fastatomstruct]: New version: [0.7.0] Old Version: [0.6.6]
+[2024-05-05 15:59:24] WARNING root fetch - processPackages [kingorm]: Skipping, unable to determine old version
+[2024-05-05 15:59:24] INFO root fetch - main [MainThread]: End processing [kingorm] error
+[2024-05-05 15:59:24] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 15:59:24] INFO root fetch - processPackages [yuag]: New version: [0.0.67] Old Version: [0.0.66]
+[2024-05-05 15:59:24] INFO root fetch - processPackages [varname]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-05 15:59:24] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/62/41/8bb1c5a0ec63db74f740859fd80bd5fb3f78d0d66bd1804cca0fa5c4bf9d/TDhelper-2.7.8.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/02/5a/6e37e04d5745d68ed7efc3a9b54c50deafc00da2ad05f8d5b99b1c58cbd8/yuag-0.0.66.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [fastatomstruct]: Downloading https://files.pythonhosted.org/packages/ae/af/bd022876a3286f851ebeaa66b16eaeacb6f27371f820a9ff0a2990d7ba18/fastatomstruct-0.6.6-cp39-none-win_amd64.whl
+[2024-05-05 15:59:24] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: Downloading https://files.pythonhosted.org/packages/8e/bf/731a935bd19eaa0c8d3f257888575df5d46f142548c19577e6becb83deb2/nqrduck_spectrometer_simulator-0.0.3.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [oda-reader]: Downloading https://files.pythonhosted.org/packages/90/92/202d5eded288c7f4f3c79f98d711f17c088a9951ffd302ea46827c8878b6/oda_reader-0.2.0.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [varname]: Downloading https://files.pythonhosted.org/packages/51/88/9831b07eec652a4bdea95461de525aa83dfa3cff1979807fb534ddb813da/varname-0.9.0.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/ee/02/51fff29adb6203952ba1f972f64db9912a78e902c240e5c24f7fa47ba5ff/TDhelper-2.7.9.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [oda-reader]: executing diffoscope
+[2024-05-05 15:59:24] INFO root fetch - processPackages [oda-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oda_reader-0.0.9.tar.gz tmp/oda_reader-0.2.0.tar.gz --markdown 20240505/o/oda-reader/0.0.9-0.2.0/README.md --exclude *.pyd
+[2024-05-05 15:59:24] INFO root fetch - processPackages [TDhelper]: executing diffoscope
+[2024-05-05 15:59:24] INFO root fetch - processPackages [TDhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TDhelper-2.7.8.tar.gz tmp/TDhelper-2.7.9.tar.gz --markdown 20240505/T/TDhelper/2.7.8-2.7.9/README.md --exclude *.pyd
+[2024-05-05 15:59:24] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: Downloading https://files.pythonhosted.org/packages/68/9d/52c02702db7c6a6846845a3af17acf2dcf38f6db48b08ee9424bf453d59e/nqrduck_spectrometer_simulator-0.0.4.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/ad/94/873d4e2863e99751f8482a50151a8f6f73011077080aaf583a86c472a374/yuag-0.0.67.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [varname]: Downloading https://files.pythonhosted.org/packages/d6/d2/5a9dd0c7f233d09eee238282347ef613c98e9071db4da168392a1746339f/varname-0.9.1.tar.gz
+[2024-05-05 15:59:24] INFO root fetch - processPackages [yuag]: executing diffoscope
+[2024-05-05 15:59:24] INFO root fetch - processPackages [yuag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuag-0.0.66.tar.gz tmp/yuag-0.0.67.tar.gz --markdown 20240505/y/yuag/0.0.66-0.0.67/README.md --exclude *.pyd
+[2024-05-05 15:59:24] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: executing diffoscope
+[2024-05-05 15:59:24] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqrduck_spectrometer_simulator-0.0.3.tar.gz tmp/nqrduck_spectrometer_simulator-0.0.4.tar.gz --markdown 20240505/n/nqrduck-spectrometer-simulator/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 15:59:24] INFO root fetch - processPackages [fastatomstruct]: Downloading https://files.pythonhosted.org/packages/f6/b8/e6c0465019c99880648b1800fdb2af4b7d3b9ba76d9b18e8b80a49dece40/fastatomstruct-0.7.0-cp39-cp39-manylinux_2_34_x86_64.whl
+[2024-05-05 15:59:24] INFO root fetch - processPackages [varname]: executing diffoscope
+[2024-05-05 15:59:24] INFO root fetch - processPackages [varname]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varname-0.9.0.tar.gz tmp/varname-0.9.1.tar.gz --markdown 20240505/v/varname/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-05 15:59:25] INFO root fetch - processPackages [oda-reader]: Remove: archive file [/home/abi/fetcher/tmp/oda_reader-0.0.9.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - processPackages [oda-reader]: Remove: archive file [/home/abi/fetcher/tmp/oda_reader-0.2.0.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [oda-reader]: success
+[2024-05-05 15:59:25] INFO root fetch - processPackages [fastatomstruct]: executing diffoscope
+[2024-05-05 15:59:25] INFO root fetch - processPackages [fastatomstruct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastatomstruct-0.6.6-cp39-none-win_amd64.whl.zip tmp/fastatomstruct-0.7.0-cp39-cp39-manylinux_2_34_x86_64.whl.zip --markdown 20240505/f/fastatomstruct/0.6.6-0.7.0/README.md --exclude *.pyd
+[2024-05-05 15:59:25] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.66.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.67.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [yuag]: success
+[2024-05-05 15:59:25] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_spectrometer_simulator-0.0.3.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - processPackages [nqrduck-spectrometer-simulator]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_spectrometer_simulator-0.0.4.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [nqrduck-spectrometer-simulator]: success
+[2024-05-05 15:59:25] INFO root fetch - processPackages [varname]: Remove: archive file [/home/abi/fetcher/tmp/varname-0.9.0.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - processPackages [varname]: Remove: archive file [/home/abi/fetcher/tmp/varname-0.9.1.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [varname]: success
+[2024-05-05 15:59:25] INFO root fetch - processPackages [TDhelper]: Remove: archive file [/home/abi/fetcher/tmp/TDhelper-2.7.8.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - processPackages [TDhelper]: Remove: archive file [/home/abi/fetcher/tmp/TDhelper-2.7.9.tar.gz]
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
+[2024-05-05 15:59:25] INFO root fetch - processPackages [fastatomstruct]: Remove: archive file [/home/abi/fetcher/tmp/fastatomstruct-0.6.6-cp39-none-win_amd64.whl.zip]
+[2024-05-05 15:59:25] INFO root fetch - processPackages [fastatomstruct]: Remove: archive file [/home/abi/fetcher/tmp/fastatomstruct-0.7.0-cp39-cp39-manylinux_2_34_x86_64.whl.zip]
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [fastatomstruct]: success
+[2024-05-05 15:59:25] INFO root fetch - main [MainThread]: Store serial: [23066206]
