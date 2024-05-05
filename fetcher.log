@@ -11552,3 +11552,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:04:04] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b0.tar.gz]
 [2024-05-05 17:04:04] INFO root fetch - main [MainThread]: End processing [notolog]: success
 [2024-05-05 17:04:04] INFO root fetch - main [MainThread]: Store serial: [23066623]
+[2024-05-05 17:06:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066623]
+[2024-05-05 17:06:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 17:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kappamodules
+[2024-05-05 17:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqllineage
+[2024-05-05 17:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bootstrap-email
+[2024-05-05 17:06:13] INFO root fetch - processPackages [bootstrap-email]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-05 17:06:13] INFO root fetch - processPackages [sqllineage]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-05-05 17:06:13] INFO root fetch - processPackages [kappamodules]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-05 17:06:13] INFO root fetch - processPackages [sqllineage]: Downloading https://files.pythonhosted.org/packages/b5/86/491e97ce4eb3aca31cb6a2e4bef503fc1c3bac463b048298e9693a80828f/sqllineage-1.5.2.tar.gz
+[2024-05-05 17:06:13] INFO root fetch - processPackages [bootstrap-email]: Downloading https://files.pythonhosted.org/packages/9d/6f/caa109ee59a81d70ca16b6e84d857f11508af4cb7b23799e6aac79364db1/bootstrap_email-0.3.0.tar.gz
+[2024-05-05 17:06:13] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/3b/e2/1ae9387d8409532bc4bf07acb0b2668b501b1cde2d63e40733fb972b1f4c/kappamodules-0.1.7.tar.gz
+[2024-05-05 17:06:13] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/81/fc/bada4aae7de7149188e11f5ee6f6bb78d0725367f860197922b557fbd65b/kappamodules-0.1.8.tar.gz
+[2024-05-05 17:06:13] INFO root fetch - processPackages [bootstrap-email]: Downloading https://files.pythonhosted.org/packages/38/d7/1304c8bf1b037845efad4368e1437de61e6b365aa3e6a04823992681ca64/bootstrap_email-0.4.0.tar.gz
+[2024-05-05 17:06:13] INFO root fetch - processPackages [kappamodules]: executing diffoscope
+[2024-05-05 17:06:13] INFO root fetch - processPackages [kappamodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappamodules-0.1.7.tar.gz tmp/kappamodules-0.1.8.tar.gz --markdown 20240505/k/kappamodules/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-05 17:06:13] INFO root fetch - processPackages [bootstrap-email]: executing diffoscope
+[2024-05-05 17:06:13] INFO root fetch - processPackages [bootstrap-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bootstrap_email-0.3.0.tar.gz tmp/bootstrap_email-0.4.0.tar.gz --markdown 20240505/b/bootstrap-email/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-05 17:06:14] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.7.tar.gz]
+[2024-05-05 17:06:14] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.8.tar.gz]
+[2024-05-05 17:06:14] INFO root fetch - main [MainThread]: End processing [kappamodules]: success
+[2024-05-05 17:06:14] INFO root fetch - processPackages [bootstrap-email]: Remove: archive file [/home/abi/fetcher/tmp/bootstrap_email-0.3.0.tar.gz]
+[2024-05-05 17:06:14] INFO root fetch - processPackages [bootstrap-email]: Remove: archive file [/home/abi/fetcher/tmp/bootstrap_email-0.4.0.tar.gz]
+[2024-05-05 17:06:14] INFO root fetch - main [MainThread]: End processing [bootstrap-email]: success
+[2024-05-05 17:06:14] INFO root fetch - processPackages [sqllineage]: Downloading https://files.pythonhosted.org/packages/78/96/b8c588a16739d688247029dfc8ffdf299aff654e948a5b905c2204cf7d8a/sqllineage-1.5.3.tar.gz
+[2024-05-05 17:06:15] INFO root fetch - processPackages [sqllineage]: executing diffoscope
+[2024-05-05 17:06:15] INFO root fetch - processPackages [sqllineage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqllineage-1.5.2.tar.gz tmp/sqllineage-1.5.3.tar.gz --markdown 20240505/s/sqllineage/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-05-05 17:06:56] INFO root fetch - processPackages [sqllineage]: Remove: archive file [/home/abi/fetcher/tmp/sqllineage-1.5.2.tar.gz]
+[2024-05-05 17:06:56] INFO root fetch - processPackages [sqllineage]: Remove: archive file [/home/abi/fetcher/tmp/sqllineage-1.5.3.tar.gz]
+[2024-05-05 17:06:56] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
+[2024-05-05 17:06:56] INFO root fetch - main [MainThread]: Store serial: [23066632]
