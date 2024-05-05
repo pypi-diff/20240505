@@ -4773,3 +4773,26 @@
 [2024-05-05 08:29:04] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.4.2.tar.gz]
 [2024-05-05 08:29:04] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
 [2024-05-05 08:29:04] INFO root fetch - main [MainThread]: Store serial: [23063515]
+[2024-05-05 08:31:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063515]
+[2024-05-05 08:31:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 08:33:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063515]
+[2024-05-05 08:33:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:33:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parseq
+[2024-05-05 08:33:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SkeKraft
+[2024-05-05 08:33:20] INFO root fetch - processPackages [parseq]: New version: [2024.5.0] Old Version: [2023.5.0]
+[2024-05-05 08:33:20] INFO root fetch - processPackages [SkeKraft]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 08:33:21] INFO root fetch - processPackages [parseq]: Downloading https://files.pythonhosted.org/packages/54/a0/4231abb08fa80f1d756811803f744764e47addb8126ef5dd9c758d82ab37/parseq-2023.5.0.zip
+[2024-05-05 08:33:21] INFO root fetch - processPackages [SkeKraft]: Downloading https://files.pythonhosted.org/packages/fd/0d/01d1e61d7744b26430375155f78faefae6603330100f63a495a10f8ef75b/skekraft-0.0.1.tar.gz
+[2024-05-05 08:33:21] INFO root fetch - processPackages [SkeKraft]: Downloading https://files.pythonhosted.org/packages/64/da/605974f5ee259d9c4f9b61dc296b3f9394b208f01a33b5de22247ff04b53/skekraft-0.0.2.tar.gz
+[2024-05-05 08:33:21] INFO root fetch - processPackages [SkeKraft]: executing diffoscope
+[2024-05-05 08:33:21] INFO root fetch - processPackages [SkeKraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skekraft-0.0.1.tar.gz tmp/skekraft-0.0.2.tar.gz --markdown 20240505/S/SkeKraft/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 08:33:21] INFO root fetch - processPackages [parseq]: Downloading https://files.pythonhosted.org/packages/7b/19/fc583a371114eec5c9edff472eb3122d0fb0e241f65b12fd5e6e21e6fe7d/parseq-2024.5.0.zip
+[2024-05-05 08:33:22] INFO root fetch - processPackages [parseq]: executing diffoscope
+[2024-05-05 08:33:22] INFO root fetch - processPackages [parseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parseq-2023.5.0.zip tmp/parseq-2024.5.0.zip --markdown 20240505/p/parseq/2023.5.0-2024.5.0/README.md --exclude *.pyd
+[2024-05-05 08:33:22] INFO root fetch - processPackages [SkeKraft]: Remove: archive file [/home/abi/fetcher/tmp/skekraft-0.0.1.tar.gz]
+[2024-05-05 08:33:22] INFO root fetch - processPackages [SkeKraft]: Remove: archive file [/home/abi/fetcher/tmp/skekraft-0.0.2.tar.gz]
+[2024-05-05 08:33:22] INFO root fetch - main [MainThread]: End processing [SkeKraft]: success
+[2024-05-05 08:33:23] INFO root fetch - processPackages [parseq]: Remove: archive file [/home/abi/fetcher/tmp/parseq-2023.5.0.zip]
+[2024-05-05 08:33:23] INFO root fetch - processPackages [parseq]: Remove: archive file [/home/abi/fetcher/tmp/parseq-2024.5.0.zip]
+[2024-05-05 08:33:23] INFO root fetch - main [MainThread]: End processing [parseq]: success
+[2024-05-05 08:33:23] INFO root fetch - main [MainThread]: Store serial: [23063520]
