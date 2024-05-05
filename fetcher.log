@@ -15807,3 +15807,36 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:39:15] INFO root fetch - processPackages [ableton-control-surface-scripts]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-scripts-0.0.3.tar.gz]
 [2024-05-05 21:39:15] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-scripts]: success
 [2024-05-05 21:39:15] INFO root fetch - main [MainThread]: Store serial: [23068519]
+[2024-05-05 21:41:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068519]
+[2024-05-05 21:41:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 21:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pincode-generator-or-validator
+[2024-05-05 21:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skrutable
+[2024-05-05 21:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pluck-graphql
+[2024-05-05 21:41:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostkit
+[2024-05-05 21:41:24] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 21:41:25] WARNING root fetch - processPackages [pincode-generator-or-validator]: Skipping, unable to determine old version
+[2024-05-05 21:41:25] INFO root fetch - main [MainThread]: End processing [pincode-generator-or-validator] error
+[2024-05-05 21:41:25] INFO root fetch - processPackages [pluck-graphql]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-05-05 21:41:25] INFO root fetch - processPackages [skrutable]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 21:41:25] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-05 21:41:25] INFO root fetch - processPackages [skrutable]: Downloading https://files.pythonhosted.org/packages/ea/08/f6c145dbf366bd9e78d871809852f73155731c5d189b17a0ff70ae2f165b/skrutable-1.2.0.tar.gz
+[2024-05-05 21:41:25] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-05 21:41:25] INFO root fetch - processPackages [pluck-graphql]: Downloading https://files.pythonhosted.org/packages/5c/4a/bdace2ce66bb5a3658d58c4e14608c9c12227bf71aee8ea59701c5bf4033/pluck_graphql-0.3.5.tar.gz
+[2024-05-05 21:41:25] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-05 21:41:25] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240505/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 21:41:25] INFO root fetch - processPackages [skrutable]: Downloading https://files.pythonhosted.org/packages/dd/fb/dc034e503eee3c93966d7d817f0ac3d705149009ae4ad6b2e349f91ba5c0/skrutable-1.2.1.tar.gz
+[2024-05-05 21:41:25] INFO root fetch - processPackages [pluck-graphql]: Downloading https://files.pythonhosted.org/packages/43/ce/2a3e4287b136f64cdf8f8e81f5bc8619a26f21a39f02dbe54d09957be361/pluck_graphql-0.4.0.tar.gz
+[2024-05-05 21:41:25] INFO root fetch - processPackages [skrutable]: executing diffoscope
+[2024-05-05 21:41:25] INFO root fetch - processPackages [skrutable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skrutable-1.2.0.tar.gz tmp/skrutable-1.2.1.tar.gz --markdown 20240505/s/skrutable/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 21:41:25] INFO root fetch - processPackages [pluck-graphql]: executing diffoscope
+[2024-05-05 21:41:25] INFO root fetch - processPackages [pluck-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluck_graphql-0.3.5.tar.gz tmp/pluck_graphql-0.4.0.tar.gz --markdown 20240505/p/pluck-graphql/0.3.5-0.4.0/README.md --exclude *.pyd
+[2024-05-05 21:41:26] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-05 21:41:26] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-05 21:41:26] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-05 21:41:26] INFO root fetch - processPackages [pluck-graphql]: Remove: archive file [/home/abi/fetcher/tmp/pluck_graphql-0.3.5.tar.gz]
+[2024-05-05 21:41:26] INFO root fetch - processPackages [pluck-graphql]: Remove: archive file [/home/abi/fetcher/tmp/pluck_graphql-0.4.0.tar.gz]
+[2024-05-05 21:41:26] INFO root fetch - main [MainThread]: End processing [pluck-graphql]: success
+[2024-05-05 21:41:26] INFO root fetch - processPackages [skrutable]: Remove: archive file [/home/abi/fetcher/tmp/skrutable-1.2.0.tar.gz]
+[2024-05-05 21:41:26] INFO root fetch - processPackages [skrutable]: Remove: archive file [/home/abi/fetcher/tmp/skrutable-1.2.1.tar.gz]
+[2024-05-05 21:41:26] INFO root fetch - main [MainThread]: End processing [skrutable]: success
+[2024-05-05 21:41:26] INFO root fetch - main [MainThread]: Store serial: [23068530]
