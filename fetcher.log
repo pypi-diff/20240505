@@ -11050,3 +11050,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:26:38] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.9.tar.gz]
 [2024-05-05 16:26:38] INFO root fetch - main [MainThread]: End processing [corvic-engine]: success
 [2024-05-05 16:26:38] INFO root fetch - main [MainThread]: Store serial: [23066375]
+[2024-05-05 16:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066375]
+[2024-05-05 16:28:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydbconnect
+[2024-05-05 16:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyterdart
+[2024-05-05 16:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fewerai
+[2024-05-05 16:28:47] WARNING root fetch - processPackages [pydbconnect]: Skipping, unable to determine old version
+[2024-05-05 16:28:47] INFO root fetch - processPackages [fewerai]: New version: [3.0.0] Old Version: [2.0.0]
+[2024-05-05 16:28:47] INFO root fetch - main [MainThread]: End processing [pydbconnect] error
+[2024-05-05 16:28:47] WARNING root fetch - processPackages [jupyterdart]: Skipping, unable to determine old version
+[2024-05-05 16:28:47] INFO root fetch - main [MainThread]: End processing [jupyterdart] error
+[2024-05-05 16:28:47] INFO root fetch - processPackages [fewerai]: Downloading https://files.pythonhosted.org/packages/f4/72/9c337554cfc313788b04cc1044577487e100b12c3e6b92c11175416400d3/fewerai-2.0.0.tar.gz
+[2024-05-05 16:28:48] INFO root fetch - processPackages [fewerai]: Downloading https://files.pythonhosted.org/packages/13/f2/18ce0a7c1b9a1904ab68ab75e38d75ef5bc478837acfd40073e38473fe36/fewerai-3.0.0.tar.gz
+[2024-05-05 16:28:48] INFO root fetch - processPackages [fewerai]: executing diffoscope
+[2024-05-05 16:28:48] INFO root fetch - processPackages [fewerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fewerai-2.0.0.tar.gz tmp/fewerai-3.0.0.tar.gz --markdown 20240505/f/fewerai/2.0.0-3.0.0/README.md --exclude *.pyd
+[2024-05-05 16:28:48] INFO root fetch - processPackages [fewerai]: Remove: archive file [/home/abi/fetcher/tmp/fewerai-2.0.0.tar.gz]
+[2024-05-05 16:28:48] INFO root fetch - processPackages [fewerai]: Remove: archive file [/home/abi/fetcher/tmp/fewerai-3.0.0.tar.gz]
+[2024-05-05 16:28:48] INFO root fetch - main [MainThread]: End processing [fewerai]: success
+[2024-05-05 16:28:48] INFO root fetch - main [MainThread]: Store serial: [23066388]
