@@ -15670,3 +15670,41 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:32:40] INFO root fetch - processPackages [pyvelop]: Remove: archive file [/home/abi/fetcher/tmp/pyvelop-2024.5.1.tar.gz]
 [2024-05-05 21:32:40] INFO root fetch - main [MainThread]: End processing [pyvelop]: success
 [2024-05-05 21:32:40] INFO root fetch - main [MainThread]: Store serial: [23068460]
+[2024-05-05 21:34:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068460]
+[2024-05-05 21:34:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 21:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ariane-lib
+[2024-05-05 21:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cae-cli
+[2024-05-05 21:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastosc
+[2024-05-05 21:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glassesValidator
+[2024-05-05 21:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myams-js
+[2024-05-05 21:34:48] INFO root fetch - processPackages [fastosc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 21:34:48] INFO root fetch - processPackages [cae-cli]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 21:34:49] INFO root fetch - processPackages [fastosc]: Downloading https://files.pythonhosted.org/packages/59/c9/a07ed4be4da310ad82738b7fa2eddfbe30546154f4bb91763406544be1ff/fastosc-0.0.2.tar.gz
+[2024-05-05 21:34:49] WARNING root fetch - processPackages [ariane-lib]: Skipping, unable to determine old version
+[2024-05-05 21:34:49] INFO root fetch - main [MainThread]: End processing [ariane-lib] error
+[2024-05-05 21:34:49] INFO root fetch - processPackages [myams-js]: New version: [2.4.7] Old Version: [2.4.6]
+[2024-05-05 21:34:49] INFO root fetch - processPackages [glassesValidator]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-05 21:34:49] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/79/d1/dd622638e707ab608762dacb4800907324355da7d9cf7c23c69eaaa316d8/cae_cli-0.0.6.tar.gz
+[2024-05-05 21:34:49] INFO root fetch - processPackages [glassesValidator]: Downloading https://files.pythonhosted.org/packages/2b/e3/2151c69bfc5721092a3190f850c1769c592b24fdc4accacc6b7529cda898/glassesValidator-1.2.4.tar.gz
+[2024-05-05 21:34:49] INFO root fetch - processPackages [myams-js]: Downloading https://files.pythonhosted.org/packages/69/93/e1991fa325dd18380b4e750b2569ab5611c56f3dcd360bd12e88ff54b0f5/myams_js-2.4.6.tar.gz
+[2024-05-05 21:34:49] WARNING root fetch - processPackages [myams-js]: Skipping package: exceeds size limit 19399669>=10485760
+[2024-05-05 21:34:49] INFO root fetch - main [MainThread]: End processing [myams-js] error
+[2024-05-05 21:34:49] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/1f/b2/a66f5d29ead0b38b587044b14045d45263af8975962efd277a59b1755675/cae_cli-0.0.7.tar.gz
+[2024-05-05 21:34:50] INFO root fetch - processPackages [fastosc]: Downloading https://files.pythonhosted.org/packages/57/71/c506f9aaf77c9e7dbbcdd2e31921f1c3c0a33674ce216f88bfde50227fb2/fastosc-0.0.3.tar.gz
+[2024-05-05 21:34:50] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-05 21:34:50] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.0.6.tar.gz tmp/cae_cli-0.0.7.tar.gz --markdown 20240505/c/cae-cli/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-05 21:34:50] INFO root fetch - processPackages [fastosc]: executing diffoscope
+[2024-05-05 21:34:50] INFO root fetch - processPackages [fastosc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastosc-0.0.2.tar.gz tmp/fastosc-0.0.3.tar.gz --markdown 20240505/f/fastosc/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 21:34:50] INFO root fetch - processPackages [glassesValidator]: Downloading https://files.pythonhosted.org/packages/1d/92/253aec713302ee304ca1f73be71f4450266fb74397d78cc13bb26055c025/glassesvalidator-1.2.5.tar.gz
+[2024-05-05 21:34:50] INFO root fetch - processPackages [glassesValidator]: executing diffoscope
+[2024-05-05 21:34:50] INFO root fetch - processPackages [glassesValidator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glassesValidator-1.2.4.tar.gz tmp/glassesvalidator-1.2.5.tar.gz --markdown 20240505/g/glassesValidator/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-05 21:34:50] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.6.tar.gz]
+[2024-05-05 21:34:50] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.7.tar.gz]
+[2024-05-05 21:34:50] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-05 21:34:50] INFO root fetch - processPackages [fastosc]: Remove: archive file [/home/abi/fetcher/tmp/fastosc-0.0.2.tar.gz]
+[2024-05-05 21:34:50] INFO root fetch - processPackages [fastosc]: Remove: archive file [/home/abi/fetcher/tmp/fastosc-0.0.3.tar.gz]
+[2024-05-05 21:34:50] INFO root fetch - main [MainThread]: End processing [fastosc]: success
+[2024-05-05 21:34:51] INFO root fetch - processPackages [glassesValidator]: Remove: archive file [/home/abi/fetcher/tmp/glassesValidator-1.2.4.tar.gz]
+[2024-05-05 21:34:51] INFO root fetch - processPackages [glassesValidator]: Remove: archive file [/home/abi/fetcher/tmp/glassesvalidator-1.2.5.tar.gz]
+[2024-05-05 21:34:51] INFO root fetch - main [MainThread]: End processing [glassesValidator]: success
+[2024-05-05 21:34:51] INFO root fetch - main [MainThread]: Store serial: [23068477]
