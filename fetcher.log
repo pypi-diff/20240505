@@ -17509,3 +17509,15 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:50:19] INFO root fetch - processPackages [markdown-checker]: Remove: archive file [/home/abi/fetcher/tmp/markdown_checker-0.1.4.tar.gz]
 [2024-05-05 23:50:19] INFO root fetch - main [MainThread]: End processing [markdown-checker]: success
 [2024-05-05 23:50:19] INFO root fetch - main [MainThread]: Store serial: [23069267]
+[2024-05-05 23:52:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069267]
+[2024-05-05 23:52:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 23:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: a5
+[2024-05-05 23:52:29] INFO root fetch - processPackages [a5]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 23:52:29] INFO root fetch - processPackages [a5]: Downloading https://files.pythonhosted.org/packages/bb/1d/341881132244838cbb249db61d83640314721dffce03a175bc5f5bbda00b/a5-0.0.3.tar.gz
+[2024-05-05 23:52:29] INFO root fetch - processPackages [a5]: Downloading https://files.pythonhosted.org/packages/c7/85/21a04ed9145ea672e12399512f5b7c7584d60609b4d23115582ba34e606c/a5-0.0.4.tar.gz
+[2024-05-05 23:52:30] INFO root fetch - processPackages [a5]: executing diffoscope
+[2024-05-05 23:52:30] INFO root fetch - processPackages [a5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a5-0.0.3.tar.gz tmp/a5-0.0.4.tar.gz --markdown 20240505/a/a5/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 23:52:30] INFO root fetch - processPackages [a5]: Remove: archive file [/home/abi/fetcher/tmp/a5-0.0.3.tar.gz]
+[2024-05-05 23:52:30] INFO root fetch - processPackages [a5]: Remove: archive file [/home/abi/fetcher/tmp/a5-0.0.4.tar.gz]
+[2024-05-05 23:52:30] INFO root fetch - main [MainThread]: End processing [a5]: success
+[2024-05-05 23:52:30] INFO root fetch - main [MainThread]: Store serial: [23069270]
