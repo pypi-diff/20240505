@@ -11138,3 +11138,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:33:09] INFO root fetch - processPackages [jupyterdartkernel]: Remove: archive file [/home/abi/fetcher/tmp/jupyterdartkernel-0.1.1.tar.gz]
 [2024-05-05 16:33:09] INFO root fetch - main [MainThread]: End processing [jupyterdartkernel]: success
 [2024-05-05 16:33:09] INFO root fetch - main [MainThread]: Store serial: [23066414]
+[2024-05-05 16:35:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066414]
+[2024-05-05 16:35:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 16:35:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: topologic-core
+[2024-05-05 16:35:17] WARNING root fetch - processPackages [topologic-core]: Skipping, unable to determine old version
+[2024-05-05 16:35:17] INFO root fetch - main [MainThread]: End processing [topologic-core] error
+[2024-05-05 16:35:17] INFO root fetch - main [MainThread]: Store serial: [23066427]
