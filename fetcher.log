@@ -5057,3 +5057,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 08:51:01] WARNING root fetch - processPackages [eazydocs]: Skipping, unable to determine old version
 [2024-05-05 08:51:01] INFO root fetch - main [MainThread]: End processing [eazydocs] error
 [2024-05-05 08:51:01] INFO root fetch - main [MainThread]: Store serial: [23063677]
+[2024-05-05 08:53:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063677]
+[2024-05-05 08:53:09] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 08:55:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063677]
+[2024-05-05 08:55:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-nightly
+[2024-05-05 08:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hahomematic
+[2024-05-05 08:55:15] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.34.1.dev20240503] Old Version: [1.34.1.dev20240502]
+[2024-05-05 08:55:15] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/9a/3a/fb0347b17a72cd8d47850db95771b7835885b92a6df0e9575f506d29ed8f/streamlit_nightly-1.34.1.dev20240502.tar.gz
+[2024-05-05 08:55:15] INFO root fetch - processPackages [hahomematic]: New version: [2024.5.0] Old Version: [2024.4.9b2]
+[2024-05-05 08:55:15] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/73/77/08a504d8e21c3618788a1df0dcbcdc32d48ae1fbeb07845b788563829933/hahomematic-2024.4.9b2.tar.gz
+[2024-05-05 08:55:15] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/cc/62/124892ffc7283a5573f3dcbf7e92a705c9c3d613fc9f827078d5f83faab6/hahomematic-2024.5.0.tar.gz
+[2024-05-05 08:55:15] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/74/c2/6f6a4c596f9fb5d800125bd4127559d7432e73e97b16a21ce167d4ed39f5/streamlit_nightly-1.34.1.dev20240503.tar.gz
+[2024-05-05 08:55:15] INFO root fetch - processPackages [hahomematic]: executing diffoscope
+[2024-05-05 08:55:15] INFO root fetch - processPackages [hahomematic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hahomematic-2024.4.9b2.tar.gz tmp/hahomematic-2024.5.0.tar.gz --markdown 20240505/h/hahomematic/2024.4.9b2-2024.5.0/README.md --exclude *.pyd
+[2024-05-05 08:55:16] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-05-05 08:55:16] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.34.1.dev20240502.tar.gz tmp/streamlit_nightly-1.34.1.dev20240503.tar.gz --markdown 20240505/s/streamlit-nightly/1.34.1.dev20240502-1.34.1.dev20240503/README.md --exclude *.pyd
+[2024-05-05 08:55:17] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b2.tar.gz]
+[2024-05-05 08:55:17] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.5.0.tar.gz]
+[2024-05-05 08:55:17] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
+[2024-05-05 08:55:53] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240502.tar.gz]
+[2024-05-05 08:55:53] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240503.tar.gz]
+[2024-05-05 08:55:53] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-05-05 08:55:53] INFO root fetch - main [MainThread]: Store serial: [23063684]
