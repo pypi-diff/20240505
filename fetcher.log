@@ -5875,3 +5875,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:03:13] INFO root fetch - processPackages [fastapi-key-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_key_auth-0.9.0.tar.gz]
 [2024-05-05 10:03:13] INFO root fetch - main [MainThread]: End processing [fastapi-key-auth]: success
 [2024-05-05 10:03:13] INFO root fetch - main [MainThread]: Store serial: [23063993]
+[2024-05-05 10:05:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063993]
+[2024-05-05 10:05:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robusta-cli
+[2024-05-05 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: treenode-py
+[2024-05-05 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langfun
+[2024-05-05 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zfx
+[2024-05-05 10:05:22] INFO root fetch - processPackages [zfx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 10:05:22] WARNING root fetch - processPackages [treenode-py]: Skipping, unable to determine old version
+[2024-05-05 10:05:22] INFO root fetch - main [MainThread]: End processing [treenode-py] error
+[2024-05-05 10:05:22] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240504] Old Version: [0.0.2.dev20240503]
+[2024-05-05 10:05:22] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/59/eb/f257e3407edfa0e36bd6d262b25e02023066e104ba26d20cee83a63198f0/zfx-1.0.8.tar.gz
+[2024-05-05 10:05:22] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/c6/85/8be9bccf0691b2feac6fcf62d8c9b49d537606c7d2eedaf41307a3454d18/langfun-0.0.2.dev20240503.tar.gz
+[2024-05-05 10:05:22] INFO root fetch - processPackages [robusta-cli]: New version: [0.9.9] Old Version: [0.9.7]
+[2024-05-05 10:05:22] INFO root fetch - processPackages [robusta-cli]: Downloading https://files.pythonhosted.org/packages/39/60/df780a4cd33fb6c25e7e6b0c86022d93aaa4490b1a758140e3d98a02996e/robusta-cli-0.9.7.tar.gz
+[2024-05-05 10:05:22] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/79/72/81e8c9f95e9effa80a25b20d494a3c3b21ed5cbbd53440c562d52fe8fe8a/zfx-1.0.9.tar.gz
+[2024-05-05 10:05:22] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/23/0c/8f69bbf03a6d91a6718dd0e71d898d1b3d184f026f5019355ee5cbef1ed4/langfun-0.0.2.dev20240504.tar.gz
+[2024-05-05 10:05:23] INFO root fetch - processPackages [zfx]: executing diffoscope
+[2024-05-05 10:05:23] INFO root fetch - processPackages [zfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfx-1.0.8.tar.gz tmp/zfx-1.0.9.tar.gz --markdown 20240505/z/zfx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 10:05:23] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-05 10:05:23] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240503.tar.gz tmp/langfun-0.0.2.dev20240504.tar.gz --markdown 20240505/l/langfun/0.0.2.dev20240503-0.0.2.dev20240504/README.md --exclude *.pyd
+[2024-05-05 10:05:23] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.8.tar.gz]
+[2024-05-05 10:05:23] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
+[2024-05-05 10:05:23] INFO root fetch - main [MainThread]: End processing [zfx]: success
+[2024-05-05 10:05:23] INFO root fetch - processPackages [robusta-cli]: Downloading https://files.pythonhosted.org/packages/9f/ff/a70074935ded21551e9900241be83e06dcddd697498c8fa3eeab30d0105c/robusta-cli-0.9.9.tar.gz
+[2024-05-05 10:05:23] INFO root fetch - processPackages [robusta-cli]: executing diffoscope
+[2024-05-05 10:05:23] INFO root fetch - processPackages [robusta-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robusta-cli-0.9.7.tar.gz tmp/robusta-cli-0.9.9.tar.gz --markdown 20240505/r/robusta-cli/0.9.7-0.9.9/README.md --exclude *.pyd
+[2024-05-05 10:05:23] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240503.tar.gz]
+[2024-05-05 10:05:23] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240504.tar.gz]
+[2024-05-05 10:05:23] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-05 10:05:24] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta-cli-0.9.7.tar.gz]
+[2024-05-05 10:05:24] INFO root fetch - processPackages [robusta-cli]: Remove: archive file [/home/abi/fetcher/tmp/robusta-cli-0.9.9.tar.gz]
+[2024-05-05 10:05:24] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
+[2024-05-05 10:05:24] INFO root fetch - main [MainThread]: Store serial: [23064010]
