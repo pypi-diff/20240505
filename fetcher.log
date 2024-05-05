@@ -16803,3 +16803,38 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:45:25] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.3.0.tar.gz]
 [2024-05-05 22:45:25] INFO root fetch - main [MainThread]: End processing [lolcatt]: success
 [2024-05-05 22:45:25] INFO root fetch - main [MainThread]: Store serial: [23068941]
+[2024-05-05 22:47:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068941]
+[2024-05-05 22:47:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaserver-files-aws-s3
+[2024-05-05 22:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embed-anything
+[2024-05-05 22:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zettel-org
+[2024-05-05 22:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyams-zmi
+[2024-05-05 22:47:34] INFO root fetch - processPackages [embed-anything]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 22:47:34] INFO root fetch - processPackages [zettel-org]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-05 22:47:34] INFO root fetch - processPackages [heaserver-files-aws-s3]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-05 22:47:34] INFO root fetch - processPackages [pyams-zmi]: New version: [2.3.0] Old Version: [2.2.5]
+[2024-05-05 22:47:34] INFO root fetch - processPackages [embed-anything]: Downloading https://files.pythonhosted.org/packages/0b/de/6833a6f52a083aed0a6903049ddd3a59775dea6d8d49be143fd8e767e2b5/embed_anything-0.1.8.tar.gz
+[2024-05-05 22:47:34] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/6c/a5/f3696c65fbab06ee3f71336ecc5e3f899e9593a62f5435f30b431ddcc122/zettel_org-0.7.1.tar.gz
+[2024-05-05 22:47:34] INFO root fetch - processPackages [heaserver-files-aws-s3]: Downloading https://files.pythonhosted.org/packages/ee/98/a9d83c424cb7929edbff810375b5d16f4d5362f6792b57674a2471feefc5/heaserver-files-aws-s3-1.1.1.tar.gz
+[2024-05-05 22:47:34] INFO root fetch - processPackages [pyams-zmi]: Downloading https://files.pythonhosted.org/packages/f3/48/be1d1d81329ca7d53a12f05f04a88c7726f466736d13ed04f51fedfdd7fc/pyams_zmi-2.2.5.tar.gz
+[2024-05-05 22:47:34] WARNING root fetch - processPackages [heaserver-files-aws-s3]: Skipping package: exceeds size limit 18410589>=10485760
+[2024-05-05 22:47:34] INFO root fetch - main [MainThread]: End processing [heaserver-files-aws-s3] error
+[2024-05-05 22:47:35] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/27/1b/73647e02cdca712b9195ee05b82b8bc363621e3658bf3dcfa3f390106a7f/zettel_org-0.7.2.tar.gz
+[2024-05-05 22:47:35] INFO root fetch - processPackages [pyams-zmi]: Downloading https://files.pythonhosted.org/packages/48/e1/085cb5315ee96ef4295755c77c75f51c6bf84f5465334565e50785914e67/pyams_zmi-2.3.0.tar.gz
+[2024-05-05 22:47:35] INFO root fetch - processPackages [zettel-org]: executing diffoscope
+[2024-05-05 22:47:35] INFO root fetch - processPackages [zettel-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zettel_org-0.7.1.tar.gz tmp/zettel_org-0.7.2.tar.gz --markdown 20240505/z/zettel-org/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-05 22:47:35] INFO root fetch - processPackages [embed-anything]: Downloading https://files.pythonhosted.org/packages/fd/9b/e485e2b774254c26b7fb0ad0b5b4660008adfdb07ec0c23eee84e42cfda9/embed_anything-0.1.9.tar.gz
+[2024-05-05 22:47:35] INFO root fetch - processPackages [pyams-zmi]: executing diffoscope
+[2024-05-05 22:47:35] INFO root fetch - processPackages [pyams-zmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_zmi-2.2.5.tar.gz tmp/pyams_zmi-2.3.0.tar.gz --markdown 20240505/p/pyams-zmi/2.2.5-2.3.0/README.md --exclude *.pyd
+[2024-05-05 22:47:35] INFO root fetch - processPackages [embed-anything]: executing diffoscope
+[2024-05-05 22:47:35] INFO root fetch - processPackages [embed-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embed_anything-0.1.8.tar.gz tmp/embed_anything-0.1.9.tar.gz --markdown 20240505/e/embed-anything/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 22:47:36] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.1.tar.gz]
+[2024-05-05 22:47:36] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.2.tar.gz]
+[2024-05-05 22:47:36] INFO root fetch - main [MainThread]: End processing [zettel-org]: success
+[2024-05-05 22:47:36] INFO root fetch - processPackages [embed-anything]: Remove: archive file [/home/abi/fetcher/tmp/embed_anything-0.1.8.tar.gz]
+[2024-05-05 22:47:36] INFO root fetch - processPackages [embed-anything]: Remove: archive file [/home/abi/fetcher/tmp/embed_anything-0.1.9.tar.gz]
+[2024-05-05 22:47:36] INFO root fetch - main [MainThread]: End processing [embed-anything]: success
+[2024-05-05 22:47:36] INFO root fetch - processPackages [pyams-zmi]: Remove: archive file [/home/abi/fetcher/tmp/pyams_zmi-2.2.5.tar.gz]
+[2024-05-05 22:47:36] INFO root fetch - processPackages [pyams-zmi]: Remove: archive file [/home/abi/fetcher/tmp/pyams_zmi-2.3.0.tar.gz]
+[2024-05-05 22:47:36] INFO root fetch - main [MainThread]: End processing [pyams-zmi]: success
+[2024-05-05 22:47:36] INFO root fetch - main [MainThread]: Store serial: [23068957]
