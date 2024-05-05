@@ -8603,3 +8603,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:48:49] INFO root fetch - processPackages [djdantic]: Remove: archive file [/home/abi/fetcher/tmp/djdantic-0.0.9.tar.gz]
 [2024-05-05 13:48:49] INFO root fetch - main [MainThread]: End processing [djdantic]: success
 [2024-05-05 13:48:49] INFO root fetch - main [MainThread]: Store serial: [23065123]
+[2024-05-05 13:50:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065123]
+[2024-05-05 13:50:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytigon-lib
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-project-tracker
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lamda
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tgctoolbox
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytigon
+[2024-05-05 13:50:58] INFO root fetch - processPackages [pytigon]: New version: [0.240505] Old Version: [0.240428]
+[2024-05-05 13:50:58] INFO root fetch - processPackages [pytigon-lib]: New version: [0.240505] Old Version: [0.240428]
+[2024-05-05 13:50:58] INFO root fetch - processPackages [lamda]: New version: [7.67] Old Version: [7.65]
+[2024-05-05 13:50:58] WARNING root fetch - processPackages [tgctoolbox]: Skipping, unable to determine old version
+[2024-05-05 13:50:58] INFO root fetch - main [MainThread]: End processing [tgctoolbox] error
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ml-project-tracker]: New version: [0.0.3.dev9] Old Version: [0.0.3.dev8]
+[2024-05-05 13:50:58] INFO root fetch - processPackages [pytigon-lib]: Downloading https://files.pythonhosted.org/packages/a4/d7/84c645bb4c4c23020b525df916382a77ad1ce21b64bb577402a2d089bd9b/pytigon-lib-0.240428.tar.gz
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ml-project-tracker]: Downloading https://files.pythonhosted.org/packages/13/26/a5b9a6b4bcb04a2c400aacd5ec9a82c1f19e9deeddec458b16a3214c0d43/ml_project_tracker-0.0.3.dev8.tar.gz
+[2024-05-05 13:50:58] INFO root fetch - processPackages [pytigon]: Downloading https://files.pythonhosted.org/packages/26/3d/9a4f5ee346349205c6650a4801b537551dc25c954a8ede80c6a899c332b1/pytigon-0.240428.tar.gz
+[2024-05-05 13:50:58] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/7a/e9/1e38e7b7a43ba46547d8510f08b57b52b84c7addf33ca27ca10f5a49ddd0/lamda-7.65.tar.gz
+[2024-05-05 13:50:58] WARNING root fetch - processPackages [pytigon]: Skipping package: exceeds size limit 58051810>=10485760
+[2024-05-05 13:50:58] INFO root fetch - main [MainThread]: End processing [pytigon] error
+[2024-05-05 13:50:58] INFO root fetch - processPackages [ml-project-tracker]: Downloading https://files.pythonhosted.org/packages/3d/93/3fc636a58e164ddb5e1ec90928722e61b62248afeebf67163c16d1ca67cc/ml_project_tracker-0.0.3.dev9.tar.gz
+[2024-05-05 13:50:58] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/28/55/63bbb11015827b40951b90e496c54cd686882c2b7f908cdb244a1043c72c/lamda-7.67.tar.gz
+[2024-05-05 13:50:58] INFO root fetch - processPackages [pytigon-lib]: Downloading https://files.pythonhosted.org/packages/e4/5d/764bc8a69a13ee64bda07b66e5d4b0fbb13e7097f861216071c5ebfecab6/pytigon-lib-0.240505.tar.gz
+[2024-05-05 13:50:59] INFO root fetch - processPackages [ml-project-tracker]: executing diffoscope
+[2024-05-05 13:50:59] INFO root fetch - processPackages [ml-project-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_project_tracker-0.0.3.dev8.tar.gz tmp/ml_project_tracker-0.0.3.dev9.tar.gz --markdown 20240505/m/ml-project-tracker/0.0.3.dev8-0.0.3.dev9/README.md --exclude *.pyd
+[2024-05-05 13:50:59] INFO root fetch - processPackages [lamda]: executing diffoscope
+[2024-05-05 13:50:59] INFO root fetch - processPackages [lamda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamda-7.65.tar.gz tmp/lamda-7.67.tar.gz --markdown 20240505/l/lamda/7.65-7.67/README.md --exclude *.pyd
+[2024-05-05 13:50:59] INFO root fetch - processPackages [pytigon-lib]: executing diffoscope
+[2024-05-05 13:50:59] INFO root fetch - processPackages [pytigon-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytigon-lib-0.240428.tar.gz tmp/pytigon-lib-0.240505.tar.gz --markdown 20240505/p/pytigon-lib/0.240428-0.240505/README.md --exclude *.pyd
+[2024-05-05 13:50:59] INFO root fetch - processPackages [ml-project-tracker]: Remove: archive file [/home/abi/fetcher/tmp/ml_project_tracker-0.0.3.dev8.tar.gz]
+[2024-05-05 13:50:59] INFO root fetch - processPackages [ml-project-tracker]: Remove: archive file [/home/abi/fetcher/tmp/ml_project_tracker-0.0.3.dev9.tar.gz]
+[2024-05-05 13:50:59] INFO root fetch - main [MainThread]: End processing [ml-project-tracker]: success
+[2024-05-05 13:50:59] INFO root fetch - processPackages [lamda]: Remove: archive file [/home/abi/fetcher/tmp/lamda-7.65.tar.gz]
+[2024-05-05 13:50:59] INFO root fetch - processPackages [lamda]: Remove: archive file [/home/abi/fetcher/tmp/lamda-7.67.tar.gz]
+[2024-05-05 13:50:59] INFO root fetch - main [MainThread]: End processing [lamda]: success
+[2024-05-05 13:50:59] INFO root fetch - processPackages [pytigon-lib]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-lib-0.240428.tar.gz]
+[2024-05-05 13:50:59] INFO root fetch - processPackages [pytigon-lib]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-lib-0.240505.tar.gz]
+[2024-05-05 13:50:59] INFO root fetch - main [MainThread]: End processing [pytigon-lib]: success
+[2024-05-05 13:50:59] INFO root fetch - main [MainThread]: Store serial: [23065140]
