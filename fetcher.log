@@ -15984,3 +15984,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:50:12] INFO root fetch - processPackages [ableton-control-surface-scripts]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-scripts-0.0.4.tar.gz]
 [2024-05-05 21:50:12] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-scripts]: success
 [2024-05-05 21:50:12] INFO root fetch - main [MainThread]: Store serial: [23068589]
+[2024-05-05 21:52:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068589]
+[2024-05-05 21:52:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 21:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-kg
+[2024-05-05 21:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2024-05-05 21:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: energysandbox
+[2024-05-05 21:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wwpdb.apps.releasemodule
+[2024-05-05 21:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notion-api-client
+[2024-05-05 21:52:21] INFO root fetch - processPackages [llama-kg]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-05 21:52:21] WARNING root fetch - processPackages [notion-api-client]: Skipping, unable to determine old version
+[2024-05-05 21:52:21] INFO root fetch - main [MainThread]: End processing [notion-api-client] error
+[2024-05-05 21:52:21] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/a1/3e/a383d878434df9b9affb4036ebd919d1cb83025ffe9621f65b99b2dc63a3/llama-kg-0.0.5.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: New version: [0.31.4] Old Version: [0.31.3]
+[2024-05-05 21:52:21] INFO root fetch - processPackages [energysandbox]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 21:52:21] INFO root fetch - processPackages [moto]: New version: [5.0.7.dev9] Old Version: [5.0.7.dev8]
+[2024-05-05 21:52:21] INFO root fetch - processPackages [energysandbox]: Downloading https://files.pythonhosted.org/packages/7d/70/27d07656501a337e5234e593f3abfc2995ca9cfd678397271498dd5e8eee/energysandbox-0.0.1.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Downloading https://files.pythonhosted.org/packages/dd/3c/049fd887858526b5f9809be3637fe68e2f791c53214f7cfce24cbb0cb03c/wwpdb.apps.releasemodule-0.31.3.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/91/d6/6faf251c731db13619210fd71fe41ad43985f2754d26108f1011d234680e/moto-5.0.7.dev8.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/f9/5c/0cb4b69726849e7975ef0ce4b5f447295fb7c341daf68fc10883eb9eea98/llama-kg-0.0.6.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 21:52:21] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.5.tar.gz tmp/llama-kg-0.0.6.tar.gz --markdown 20240505/l/llama-kg/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-05 21:52:21] INFO root fetch - processPackages [energysandbox]: Downloading https://files.pythonhosted.org/packages/ef/00/188f2cdddddab1dbe078feda98d50eac4a59947fa79c2d248f300a6eeaee/energysandbox-0.0.2.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Downloading https://files.pythonhosted.org/packages/f3/a9/89ad6fac2e4bbe90e1802ff97e111ee328114f7fce77087c7fec135cfa8e/wwpdb_apps_releasemodule-0.31.4.tar.gz
+[2024-05-05 21:52:21] INFO root fetch - processPackages [energysandbox]: executing diffoscope
+[2024-05-05 21:52:21] INFO root fetch - processPackages [energysandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energysandbox-0.0.1.tar.gz tmp/energysandbox-0.0.2.tar.gz --markdown 20240505/e/energysandbox/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 21:52:21] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: executing diffoscope
+[2024-05-05 21:52:21] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.releasemodule-0.31.3.tar.gz tmp/wwpdb_apps_releasemodule-0.31.4.tar.gz --markdown 20240505/w/wwpdb.apps.releasemodule/0.31.3-0.31.4/README.md --exclude *.pyd
+[2024-05-05 21:52:22] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.5.tar.gz]
+[2024-05-05 21:52:22] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.6.tar.gz]
+[2024-05-05 21:52:22] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 21:52:22] INFO root fetch - processPackages [energysandbox]: Remove: archive file [/home/abi/fetcher/tmp/energysandbox-0.0.1.tar.gz]
+[2024-05-05 21:52:22] INFO root fetch - processPackages [energysandbox]: Remove: archive file [/home/abi/fetcher/tmp/energysandbox-0.0.2.tar.gz]
+[2024-05-05 21:52:22] INFO root fetch - main [MainThread]: End processing [energysandbox]: success
+[2024-05-05 21:52:22] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/50/64/cafb1dd7f7151ece615191e8b7df798c093a4905ff18ffdcc0f5ec6c6e76/moto-5.0.7.dev9.tar.gz
+[2024-05-05 21:52:22] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.releasemodule-0.31.3.tar.gz]
+[2024-05-05 21:52:22] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_releasemodule-0.31.4.tar.gz]
+[2024-05-05 21:52:22] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.releasemodule]: success
+[2024-05-05 21:52:23] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-05 21:52:23] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.7.dev8.tar.gz tmp/moto-5.0.7.dev9.tar.gz --markdown 20240505/m/moto/5.0.7.dev8-5.0.7.dev9/README.md --exclude *.pyd
+[2024-05-05 21:52:34] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev8.tar.gz]
+[2024-05-05 21:52:34] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
+[2024-05-05 21:52:34] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-05 21:52:34] INFO root fetch - main [MainThread]: Store serial: [23068600]
