@@ -3952,3 +3952,30 @@
 [2024-05-05 06:51:16] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-05 06:51:16] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-05 06:51:16] INFO root fetch - main [MainThread]: Store serial: [23063176]
+[2024-05-05 06:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063176]
+[2024-05-05 06:53:25] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 06:55:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063176]
+[2024-05-05 06:55:30] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 06:57:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063176]
+[2024-05-05 06:57:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 06:59:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063177]
+[2024-05-05 06:59:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 06:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiavatar
+[2024-05-05 06:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libvsmbr-python
+[2024-05-05 06:59:40] INFO root fetch - processPackages [aiavatar]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-05 06:59:40] INFO root fetch - processPackages [libvsmbr-python]: New version: [20240505] Old Version: [20240302]
+[2024-05-05 06:59:40] INFO root fetch - processPackages [libvsmbr-python]: Downloading https://files.pythonhosted.org/packages/b2/d4/40f71671b21d0a3335d4e6a509cb7948898a25746df78d57c4e2ecee75a4/libvsmbr-python-20240302.tar.gz
+[2024-05-05 06:59:40] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/d3/10/f2aee96841dc7ee759bc7eb19f6c91ce99b65f893186ee444d18b01d73a2/aiavatar-0.5.0-py3-none-any.whl
+[2024-05-05 06:59:41] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/64/c9/2e726e35a83aaddc315cdddf445df514601b8abc5ecba2716cb183f62604/aiavatar-0.5.1-py3-none-any.whl
+[2024-05-05 06:59:41] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-05-05 06:59:41] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.5.0-py3-none-any.whl.zip tmp/aiavatar-0.5.1-py3-none-any.whl.zip --markdown 20240505/a/aiavatar/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-05 06:59:41] INFO root fetch - processPackages [libvsmbr-python]: Downloading https://files.pythonhosted.org/packages/47/7a/c8faadbf6ee30d677b9fa24094adf51cec95acaddd2dfa80bec176ec5e18/libvsmbr-python-20240505.tar.gz
+[2024-05-05 06:59:41] INFO root fetch - processPackages [libvsmbr-python]: executing diffoscope
+[2024-05-05 06:59:41] INFO root fetch - processPackages [libvsmbr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvsmbr-python-20240302.tar.gz tmp/libvsmbr-python-20240505.tar.gz --markdown 20240505/l/libvsmbr-python/20240302-20240505/README.md --exclude *.pyd
+[2024-05-05 06:59:41] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.0-py3-none-any.whl.zip]
+[2024-05-05 06:59:41] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.1-py3-none-any.whl.zip]
+[2024-05-05 06:59:41] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-05-05 06:59:46] INFO root fetch - processPackages [libvsmbr-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsmbr-python-20240302.tar.gz]
+[2024-05-05 06:59:46] INFO root fetch - processPackages [libvsmbr-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsmbr-python-20240505.tar.gz]
+[2024-05-05 06:59:46] INFO root fetch - main [MainThread]: End processing [libvsmbr-python]: success
+[2024-05-05 06:59:46] INFO root fetch - main [MainThread]: Store serial: [23063181]
