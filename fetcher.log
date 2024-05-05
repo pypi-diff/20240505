@@ -12709,3 +12709,111 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:23:58] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.0.tar.gz]
 [2024-05-05 18:23:58] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
 [2024-05-05 18:23:58] INFO root fetch - main [MainThread]: Store serial: [23067104]
+[2024-05-05 18:26:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067104]
+[2024-05-05 18:26:06] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atpbar
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ojax
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mixdq-extension
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stream-gears
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tiny-dag
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpt-batch
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: argtoml
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: got-cli
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: replace-accents
+[2024-05-05 18:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cassoulet
+[2024-05-05 18:26:07] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [replace-accents]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [atpbar]: New version: [2.0.0] Old Version: [1.1.4]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [ojax]: New version: [2.0.0] Old Version: [1.0.0]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [mixdq-extension]: New version: [0.3] Old Version: [0.2]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [tiny-dag]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 18:26:07] WARNING root fetch - processPackages [cassoulet]: Skipping, unable to determine old version
+[2024-05-05 18:26:07] INFO root fetch - processPackages [cassoulet]: Start processing: utillc
+[2024-05-05 18:26:07] INFO root fetch - main [MainThread]: End processing [cassoulet] error
+[2024-05-05 18:26:07] INFO root fetch - processPackages [gpt-batch]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [argtoml]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [stream-gears]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [replace-accents]: Downloading https://files.pythonhosted.org/packages/b7/89/479e923a571fd9e569733c1436500709f0d5c57b793e59844b1ddd9c4773/replace_accents-0.0.3-py3-none-any.whl
+[2024-05-05 18:26:07] INFO root fetch - processPackages [atpbar]: Downloading https://files.pythonhosted.org/packages/87/02/eb4b4aa383ed48c67c6025a0c77f9c882927442633dd0eee36d37eb30873/atpbar-1.1.4.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [utillc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 18:26:07] INFO root fetch - processPackages [ojax]: Downloading https://files.pythonhosted.org/packages/2e/28/507388f35ae90a377b082d005842e0c325504e4b099b85da4aa9d4a61cdb/ojax-1.0.0.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [stream-gears]: Downloading https://files.pythonhosted.org/packages/13/81/79efb8e292403dc0e02ea78b266635644e038eac384fbfe481a2a8a68074/stream_gears-0.1.8.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [mixdq-extension]: Downloading https://files.pythonhosted.org/packages/93/3f/390645df0f4d1f0caafac380fb562058fd1057b46cad6addb687d2ff7520/mixdq_extension-0.2-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 18:26:07] INFO root fetch - processPackages [replace-accents]: Downloading https://files.pythonhosted.org/packages/7a/fc/502f95fc978a47fa1f52af55ad8240286fca5f38a7de85b8a8719dee6748/replace_accents-0.0.4.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [argtoml]: Downloading https://files.pythonhosted.org/packages/bf/0f/4133a6196a8b911e3776a24a477b9620480b156cf8306fd29224acc40389/argtoml-0.5.0.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/0b/8f/7ed4579b2871c6e935763bae678d4e60f2a47897c8193b85a132772b15d9/tiny_dag-0.0.8.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/cc/f6/8602a3365c5bdae211c3ac294519f44f09a48d78f82481686f04441605d1/utillc-0.9.8-py2.py3-none-any.whl
+[2024-05-05 18:26:07] INFO root fetch - processPackages [gpt-batch]: Downloading https://files.pythonhosted.org/packages/c2/17/d2f4cfa7b733ad4f1e4d27750002ef7ad5f282d32934bfdeea8c7519b9aa/gpt_batch-0.1.2.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [replace-accents]: executing diffoscope
+[2024-05-05 18:26:07] INFO root fetch - processPackages [replace-accents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replace_accents-0.0.3-py3-none-any.whl.zip tmp/replace_accents-0.0.4.tar.gz --markdown 20240505/r/replace-accents/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 18:26:07] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-05 18:26:07] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240505/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 18:26:07] INFO root fetch - processPackages [atpbar]: Downloading https://files.pythonhosted.org/packages/83/1f/0d5991650fd751906f2638e1926b8231dfd28b02f27d643368c8e9a4011e/atpbar-2.0.0.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [ojax]: Downloading https://files.pythonhosted.org/packages/90/a7/1eab209cd01ec0b5ee785ab8d7567fefec2868cd8f8c0ea86dc75258bf3a/ojax-2.0.0.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [stream-gears]: Downloading https://files.pythonhosted.org/packages/8c/e7/74a603e774f52cb59d3b1b07ce874ef8180426c14aa6f1316a255772b5c7/stream_gears-0.1.9.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/d8/3c/db840ab098014cd53956ab58f90e832f7dc4cd45fba1ebcbb74463d04f94/utillc-0.9.9-py2.py3-none-any.whl
+[2024-05-05 18:26:07] INFO root fetch - processPackages [argtoml]: Downloading https://files.pythonhosted.org/packages/84/d6/c1898c8494b34e58b832a7502e2ad677cff83532369cccd5a3ad7508a180/argtoml-0.5.1.tar.gz
+[2024-05-05 18:26:07] INFO root fetch - processPackages [atpbar]: executing diffoscope
+[2024-05-05 18:26:07] INFO root fetch - processPackages [atpbar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atpbar-1.1.4.tar.gz tmp/atpbar-2.0.0.tar.gz --markdown 20240505/a/atpbar/1.1.4-2.0.0/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [mixdq-extension]: Downloading https://files.pythonhosted.org/packages/fe/9e/82c5ab6e26bb406c6a4c379174cbc9400db81a479f8ce14fc5269d282242/mixdq_extension-0.3-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 18:26:08] INFO root fetch - processPackages [ojax]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [ojax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ojax-1.0.0.tar.gz tmp/ojax-2.0.0.tar.gz --markdown 20240505/o/ojax/1.0.0-2.0.0/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/b6/d8/d44ad3be9eece0a03a7fa09328f5544307f770a41c704197e9e2cfbe8c20/tiny_dag-0.0.9.tar.gz
+[2024-05-05 18:26:08] INFO root fetch - processPackages [gpt-batch]: Downloading https://files.pythonhosted.org/packages/c5/8e/46e0b67f487ff5df2ba61f5d839fa349586e8d8af43e311ed67043d54877/gpt_batch-0.1.3.tar.gz
+[2024-05-05 18:26:08] INFO root fetch - processPackages [utillc]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [utillc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utillc-0.9.8-py2.py3-none-any.whl.zip tmp/utillc-0.9.9-py2.py3-none-any.whl.zip --markdown 20240505/u/utillc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [stream-gears]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [stream-gears]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream_gears-0.1.8.tar.gz tmp/stream_gears-0.1.9.tar.gz --markdown 20240505/s/stream-gears/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [argtoml]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [argtoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argtoml-0.5.0.tar.gz tmp/argtoml-0.5.1.tar.gz --markdown 20240505/a/argtoml/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [gpt-batch]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [gpt-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_batch-0.1.2.tar.gz tmp/gpt_batch-0.1.3.tar.gz --markdown 20240505/g/gpt-batch/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [tiny-dag]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [tiny-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny_dag-0.0.8.tar.gz tmp/tiny_dag-0.0.9.tar.gz --markdown 20240505/t/tiny-dag/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [mixdq-extension]: executing diffoscope
+[2024-05-05 18:26:08] INFO root fetch - processPackages [mixdq-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixdq_extension-0.2-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/mixdq_extension-0.3-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240505/m/mixdq-extension/0.2-0.3/README.md --exclude *.pyd
+[2024-05-05 18:26:08] INFO root fetch - processPackages [replace-accents]: Remove: archive file [/home/abi/fetcher/tmp/replace_accents-0.0.3-py3-none-any.whl.zip]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [replace-accents]: Remove: archive file [/home/abi/fetcher/tmp/replace_accents-0.0.4.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [replace-accents]: Start processing: satisfactory-save-reader
+[2024-05-05 18:26:08] INFO root fetch - main [MainThread]: End processing [replace-accents]: success
+[2024-05-05 18:26:08] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [got-cli]: Start processing: pyBiocFileCache
+[2024-05-05 18:26:08] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-05 18:26:08] WARNING root fetch - processPackages [satisfactory-save-reader]: Skipping, unable to determine old version
+[2024-05-05 18:26:08] INFO root fetch - main [MainThread]: End processing [satisfactory-save-reader] error
+[2024-05-05 18:26:08] INFO root fetch - processPackages [pyBiocFileCache]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [atpbar]: Remove: archive file [/home/abi/fetcher/tmp/atpbar-1.1.4.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [atpbar]: Remove: archive file [/home/abi/fetcher/tmp/atpbar-2.0.0.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - main [MainThread]: End processing [atpbar]: success
+[2024-05-05 18:26:08] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.8-py2.py3-none-any.whl.zip]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.9-py2.py3-none-any.whl.zip]
+[2024-05-05 18:26:08] INFO root fetch - main [MainThread]: End processing [utillc]: success
+[2024-05-05 18:26:08] INFO root fetch - processPackages [pyBiocFileCache]: Downloading https://files.pythonhosted.org/packages/29/24/2cb03c38e8caec07660258bcc3c7d235187df804486f85f18c5b63ac25a6/pyBiocFileCache-0.2.2.tar.gz
+[2024-05-05 18:26:08] INFO root fetch - processPackages [argtoml]: Remove: archive file [/home/abi/fetcher/tmp/argtoml-0.5.0.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - processPackages [argtoml]: Remove: archive file [/home/abi/fetcher/tmp/argtoml-0.5.1.tar.gz]
+[2024-05-05 18:26:08] INFO root fetch - main [MainThread]: End processing [argtoml]: success
+[2024-05-05 18:26:09] INFO root fetch - processPackages [stream-gears]: Remove: archive file [/home/abi/fetcher/tmp/stream_gears-0.1.8.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - processPackages [stream-gears]: Remove: archive file [/home/abi/fetcher/tmp/stream_gears-0.1.9.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - main [MainThread]: End processing [stream-gears]: success
+[2024-05-05 18:26:09] INFO root fetch - processPackages [gpt-batch]: Remove: archive file [/home/abi/fetcher/tmp/gpt_batch-0.1.2.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - processPackages [gpt-batch]: Remove: archive file [/home/abi/fetcher/tmp/gpt_batch-0.1.3.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - main [MainThread]: End processing [gpt-batch]: success
+[2024-05-05 18:26:09] INFO root fetch - processPackages [ojax]: Remove: archive file [/home/abi/fetcher/tmp/ojax-1.0.0.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - processPackages [ojax]: Remove: archive file [/home/abi/fetcher/tmp/ojax-2.0.0.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - main [MainThread]: End processing [ojax]: success
+[2024-05-05 18:26:09] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.8.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.9.tar.gz]
+[2024-05-05 18:26:09] INFO root fetch - main [MainThread]: End processing [tiny-dag]: success
+[2024-05-05 18:26:09] INFO root fetch - processPackages [pyBiocFileCache]: Downloading https://files.pythonhosted.org/packages/18/a6/9c6b9558638e4ec636b8d39fe57eca3a3eec7b416362f94467090079557c/pybiocfilecache-0.3.0.tar.gz
+[2024-05-05 18:26:09] INFO root fetch - processPackages [pyBiocFileCache]: executing diffoscope
+[2024-05-05 18:26:09] INFO root fetch - processPackages [pyBiocFileCache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyBiocFileCache-0.2.2.tar.gz tmp/pybiocfilecache-0.3.0.tar.gz --markdown 20240505/p/pyBiocFileCache/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-05 18:26:10] INFO root fetch - processPackages [pyBiocFileCache]: Remove: archive file [/home/abi/fetcher/tmp/pyBiocFileCache-0.2.2.tar.gz]
+[2024-05-05 18:26:10] INFO root fetch - processPackages [pyBiocFileCache]: Remove: archive file [/home/abi/fetcher/tmp/pybiocfilecache-0.3.0.tar.gz]
+[2024-05-05 18:26:10] INFO root fetch - main [MainThread]: End processing [pyBiocFileCache]: success
+[2024-05-05 18:26:24] INFO root fetch - processPackages [mixdq-extension]: Remove: archive file [/home/abi/fetcher/tmp/mixdq_extension-0.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-05 18:26:24] INFO root fetch - processPackages [mixdq-extension]: Remove: archive file [/home/abi/fetcher/tmp/mixdq_extension-0.3-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-05 18:26:24] INFO root fetch - main [MainThread]: End processing [mixdq-extension]: success
+[2024-05-05 18:26:24] INFO root fetch - main [MainThread]: Store serial: [23067155]
