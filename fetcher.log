@@ -8842,3 +8842,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:59:45] INFO root fetch - processPackages [vaultrun]: Remove: archive file [/home/abi/fetcher/tmp/vaultrun-1.0.9.tar.gz]
 [2024-05-05 13:59:45] INFO root fetch - main [MainThread]: End processing [vaultrun]: success
 [2024-05-05 13:59:45] INFO root fetch - main [MainThread]: Store serial: [23065286]
+[2024-05-05 14:01:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065286]
+[2024-05-05 14:01:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 14:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-05-05 14:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naverplaceapi
+[2024-05-05 14:01:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Akatosh
+[2024-05-05 14:01:53] INFO root fetch - processPackages [naverplaceapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 14:01:53] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/76/d9/4dd5ff78d7edda8549c2197c4bf8e22fb61282799812c8a99d6229923df0/naverplaceapi-0.1.8.tar.gz
+[2024-05-05 14:01:53] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-05-05 14:01:54] INFO root fetch - processPackages [Akatosh]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-05-05 14:01:54] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/d6/49/6fd82197b70cc3b07a714c6728efc2da9518496de2c2a7d893b2283afbce/naverplaceapi-0.1.9.tar.gz
+[2024-05-05 14:01:54] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-05-05 14:01:54] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-05-05 14:01:54] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-05-05 14:01:54] INFO root fetch - processPackages [naverplaceapi]: executing diffoscope
+[2024-05-05 14:01:54] INFO root fetch - processPackages [naverplaceapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naverplaceapi-0.1.8.tar.gz tmp/naverplaceapi-0.1.9.tar.gz --markdown 20240505/n/naverplaceapi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 14:01:54] INFO root fetch - processPackages [Akatosh]: Downloading https://files.pythonhosted.org/packages/65/54/bd457b06daab98293290bfff15706dc8f671859e6126697227d20864eca9/akatosh-3.0.4.tar.gz
+[2024-05-05 14:01:54] INFO root fetch - processPackages [Akatosh]: Downloading https://files.pythonhosted.org/packages/88/9e/08d11818d5332e1abbaf2cf3221cd33bf6e27faa1dcbe98e1f68d398f87d/akatosh-3.0.5.tar.gz
+[2024-05-05 14:01:54] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.8.tar.gz]
+[2024-05-05 14:01:54] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.9.tar.gz]
+[2024-05-05 14:01:54] INFO root fetch - main [MainThread]: End processing [naverplaceapi]: success
+[2024-05-05 14:01:55] INFO root fetch - processPackages [Akatosh]: executing diffoscope
+[2024-05-05 14:01:55] INFO root fetch - processPackages [Akatosh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akatosh-3.0.4.tar.gz tmp/akatosh-3.0.5.tar.gz --markdown 20240505/A/Akatosh/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-05-05 14:01:55] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/akatosh-3.0.4.tar.gz]
+[2024-05-05 14:01:55] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/akatosh-3.0.5.tar.gz]
+[2024-05-05 14:01:55] INFO root fetch - main [MainThread]: End processing [Akatosh]: success
+[2024-05-05 14:01:55] INFO root fetch - main [MainThread]: Store serial: [23065292]
