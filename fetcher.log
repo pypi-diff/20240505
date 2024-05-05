@@ -15271,3 +15271,84 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:08:40] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
 [2024-05-05 21:08:40] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2024-05-05 21:08:40] INFO root fetch - main [MainThread]: Store serial: [23068220]
+[2024-05-05 21:10:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068220]
+[2024-05-05 21:10:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: html-sanitizer
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-allauth-themes
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weba
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trame-vtklocal
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replaytables-andnp
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rosu-pp-py
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: beanhub-extract
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: outpostkit
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: threadxpools
+[2024-05-05 21:10:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: seqlogic
+[2024-05-05 21:10:48] INFO root fetch - processPackages [trame-vtklocal]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-05 21:10:48] WARNING root fetch - processPackages [threadxpools]: Skipping, unable to determine old version
+[2024-05-05 21:10:48] INFO root fetch - main [MainThread]: End processing [threadxpools] error
+[2024-05-05 21:10:48] INFO root fetch - processPackages [beanhub-extract]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 21:10:48] INFO root fetch - processPackages [replaytables-andnp]: New version: [6.3.0] Old Version: [6.2.16]
+[2024-05-05 21:10:48] WARNING root fetch - processPackages [django-allauth-themes]: Skipping, unable to determine old version
+[2024-05-05 21:10:48] INFO root fetch - main [MainThread]: End processing [django-allauth-themes] error
+[2024-05-05 21:10:48] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 21:10:49] INFO root fetch - processPackages [html-sanitizer]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-05-05 21:10:49] INFO root fetch - processPackages [weba]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 21:10:49] INFO root fetch - processPackages [trame-vtklocal]: Downloading https://files.pythonhosted.org/packages/16/b0/fabcef58b093f0ad6a755a6433a33bb7a6ab3500b8c33a66f187d4b32e8e/trame-vtklocal-0.2.0.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [beanhub-extract]: Downloading https://files.pythonhosted.org/packages/5e/ee/77c6d26ec6a7a477a5d2968e5ae96490d1e15803f39f64db1c4ac9c85989/beanhub_extract-0.0.2.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [replaytables-andnp]: Downloading https://files.pythonhosted.org/packages/29/65/12b74ec613a063c890f294ff0d7818ba8cfc481a640e966db954c632c4c5/ReplayTables_andnp-6.2.16.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [seqlogic]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 21:10:49] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [html-sanitizer]: Downloading https://files.pythonhosted.org/packages/be/21/8697267e7e3c4558e24361b49313473b09367362965c4f0abccbd495432d/html_sanitizer-2.4.1.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [weba]: Downloading https://files.pythonhosted.org/packages/ae/24/e1aa2777a04f5f4f0dd14e494fd6eef05934d7c4f4da63844760afa3afb4/weba-0.0.8.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [trame-vtklocal]: Downloading https://files.pythonhosted.org/packages/b2/c3/006bee62abfb093b37323e9fe935b00bd303d169b8215fa14602bceb7826/trame-vtklocal-0.3.0.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [replaytables-andnp]: Downloading https://files.pythonhosted.org/packages/4a/46/2f751936d6d258a90f19aa31231db45c0a58258efc524b9fb8c79680e5ea/ReplayTables_andnp-6.3.0.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [seqlogic]: Downloading https://files.pythonhosted.org/packages/d1/54/26b010a875e3e76a7b393d39e80e8c31f7cb0cb0579a38eeb2b95e1465dc/seqlogic-0.0.8.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [rosu-pp-py]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 21:10:49] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [beanhub-extract]: Downloading https://files.pythonhosted.org/packages/a1/d6/a13d28b32f49c5e144663e706196e5f6b24216a3fe836754d18b9618c948/beanhub_extract-0.0.3.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [trame-vtklocal]: executing diffoscope
+[2024-05-05 21:10:49] INFO root fetch - processPackages [trame-vtklocal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-vtklocal-0.2.0.tar.gz tmp/trame-vtklocal-0.3.0.tar.gz --markdown 20240505/t/trame-vtklocal/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-05 21:10:49] INFO root fetch - processPackages [replaytables-andnp]: executing diffoscope
+[2024-05-05 21:10:49] INFO root fetch - processPackages [replaytables-andnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReplayTables_andnp-6.2.16.tar.gz tmp/ReplayTables_andnp-6.3.0.tar.gz --markdown 20240505/r/replaytables-andnp/6.2.16-6.3.0/README.md --exclude *.pyd
+[2024-05-05 21:10:49] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-05 21:10:49] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240505/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 21:10:49] INFO root fetch - processPackages [beanhub-extract]: executing diffoscope
+[2024-05-05 21:10:49] INFO root fetch - processPackages [beanhub-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanhub_extract-0.0.2.tar.gz tmp/beanhub_extract-0.0.3.tar.gz --markdown 20240505/b/beanhub-extract/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 21:10:49] INFO root fetch - processPackages [weba]: Downloading https://files.pythonhosted.org/packages/1d/f8/07d2de1cb43b86bc39abfea5527c766888ce0adb2b79600ff4a1a84b1720/weba-0.0.9.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [html-sanitizer]: Downloading https://files.pythonhosted.org/packages/7a/76/2ebe2bb50ba438014a97b972c6e57c54653e71bfad5a4a28b36590ee22a0/html_sanitizer-2.4.2.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [rosu-pp-py]: Downloading https://files.pythonhosted.org/packages/74/8f/f759467e85d4859f307042c7d8bf6e1e8b3e762dbcc0d3ab450992db625f/rosu_pp_py-1.0.0.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [seqlogic]: Downloading https://files.pythonhosted.org/packages/2b/d6/912132c46cf4e20125228fd882ae6ae1db692b95b3152aa94a5830d41c27/seqlogic-0.0.9.tar.gz
+[2024-05-05 21:10:49] INFO root fetch - processPackages [weba]: executing diffoscope
+[2024-05-05 21:10:49] INFO root fetch - processPackages [weba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weba-0.0.8.tar.gz tmp/weba-0.0.9.tar.gz --markdown 20240505/w/weba/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 21:10:49] INFO root fetch - processPackages [html-sanitizer]: executing diffoscope
+[2024-05-05 21:10:49] INFO root fetch - processPackages [html-sanitizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html_sanitizer-2.4.1.tar.gz tmp/html_sanitizer-2.4.2.tar.gz --markdown 20240505/h/html-sanitizer/2.4.1-2.4.2/README.md --exclude *.pyd
+[2024-05-05 21:10:50] INFO root fetch - processPackages [seqlogic]: executing diffoscope
+[2024-05-05 21:10:50] INFO root fetch - processPackages [seqlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqlogic-0.0.8.tar.gz tmp/seqlogic-0.0.9.tar.gz --markdown 20240505/s/seqlogic/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 21:10:50] INFO root fetch - processPackages [trame-vtklocal]: Remove: archive file [/home/abi/fetcher/tmp/trame-vtklocal-0.2.0.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [trame-vtklocal]: Remove: archive file [/home/abi/fetcher/tmp/trame-vtklocal-0.3.0.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [trame-vtklocal]: success
+[2024-05-05 21:10:50] INFO root fetch - processPackages [rosu-pp-py]: Downloading https://files.pythonhosted.org/packages/26/eb/aa93a5958f5e63d859bdd5260cb7bec0a12518c45aeaa534240f67304c1b/rosu_pp_py-1.0.1-cp38-cp38-macosx_10_12_x86_64.whl
+[2024-05-05 21:10:50] INFO root fetch - processPackages [replaytables-andnp]: Remove: archive file [/home/abi/fetcher/tmp/ReplayTables_andnp-6.2.16.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [replaytables-andnp]: Remove: archive file [/home/abi/fetcher/tmp/ReplayTables_andnp-6.3.0.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [replaytables-andnp]: success
+[2024-05-05 21:10:50] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-05 21:10:50] INFO root fetch - processPackages [beanhub-extract]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_extract-0.0.2.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [beanhub-extract]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_extract-0.0.3.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [beanhub-extract]: success
+[2024-05-05 21:10:50] INFO root fetch - processPackages [weba]: Remove: archive file [/home/abi/fetcher/tmp/weba-0.0.8.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [weba]: Remove: archive file [/home/abi/fetcher/tmp/weba-0.0.9.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [weba]: success
+[2024-05-05 21:10:50] INFO root fetch - processPackages [html-sanitizer]: Remove: archive file [/home/abi/fetcher/tmp/html_sanitizer-2.4.1.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [html-sanitizer]: Remove: archive file [/home/abi/fetcher/tmp/html_sanitizer-2.4.2.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [html-sanitizer]: success
+[2024-05-05 21:10:50] INFO root fetch - processPackages [seqlogic]: Remove: archive file [/home/abi/fetcher/tmp/seqlogic-0.0.8.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - processPackages [seqlogic]: Remove: archive file [/home/abi/fetcher/tmp/seqlogic-0.0.9.tar.gz]
+[2024-05-05 21:10:50] INFO root fetch - main [MainThread]: End processing [seqlogic]: success
+[2024-05-05 21:10:51] INFO root fetch - processPackages [rosu-pp-py]: executing diffoscope
+[2024-05-05 21:10:51] INFO root fetch - processPackages [rosu-pp-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosu_pp_py-1.0.0.tar.gz tmp/rosu_pp_py-1.0.1-cp38-cp38-macosx_10_12_x86_64.whl.zip --markdown 20240505/r/rosu-pp-py/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 21:10:51] INFO root fetch - processPackages [rosu-pp-py]: Remove: archive file [/home/abi/fetcher/tmp/rosu_pp_py-1.0.0.tar.gz]
+[2024-05-05 21:10:51] INFO root fetch - processPackages [rosu-pp-py]: Remove: archive file [/home/abi/fetcher/tmp/rosu_pp_py-1.0.1-cp38-cp38-macosx_10_12_x86_64.whl.zip]
+[2024-05-05 21:10:51] INFO root fetch - main [MainThread]: End processing [rosu-pp-py]: success
+[2024-05-05 21:10:51] INFO root fetch - main [MainThread]: Store serial: [23068282]
