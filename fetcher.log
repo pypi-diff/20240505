@@ -17301,3 +17301,54 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:24:23] INFO root fetch - processPackages [pytrivialsql]: Remove: archive file [/home/abi/fetcher/tmp/pytrivialsql-0.1.5.tar.gz]
 [2024-05-05 23:24:23] INFO root fetch - main [MainThread]: End processing [pytrivialsql]: success
 [2024-05-05 23:24:23] INFO root fetch - main [MainThread]: Store serial: [23069161]
+[2024-05-05 23:26:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069161]
+[2024-05-05 23:26:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 23:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEDAA.Reports
+[2024-05-05 23:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bdffont
+[2024-05-05 23:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jfk-django-core
+[2024-05-05 23:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snowflake-dbml-generator
+[2024-05-05 23:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: biobit
+[2024-05-05 23:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: molsystem
+[2024-05-05 23:26:32] INFO root fetch - processPackages [pyEDAA.Reports]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-05 23:26:32] INFO root fetch - processPackages [snowflake-dbml-generator]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 23:26:32] INFO root fetch - processPackages [bdffont]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 23:26:32] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/c7/e6/70f7cf7cdb955706158408a3bd8cf3d8b1867fa0196e79eae1582c893c8a/pyedaa_reports-0.6.0.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [snowflake-dbml-generator]: Downloading https://files.pythonhosted.org/packages/68/32/a015c4977c3c70e8d8872baa9e9bbc1434a673bb0965c6ee96ec1a801356/snowflake-dbml-generator-0.1.0.tar.gz
+[2024-05-05 23:26:32] WARNING root fetch - processPackages [jfk-django-core]: Skipping, unable to determine old version
+[2024-05-05 23:26:32] INFO root fetch - main [MainThread]: End processing [jfk-django-core] error
+[2024-05-05 23:26:32] INFO root fetch - processPackages [molsystem]: New version: [2024.5.5] Old Version: [2024.4.5]
+[2024-05-05 23:26:32] INFO root fetch - processPackages [biobit]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 23:26:32] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/9f/78/c824af9f0c4c22da3a7b211d6acf4fcf5cc3738dae57d6eb3d860af0f5e6/bdffont-0.0.8.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [molsystem]: Downloading https://files.pythonhosted.org/packages/ea/77/202f4f7520214300f1c2891bc2663a0e4d01f0dd4e2a13e93092666b427b/molsystem-2024.4.5.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [snowflake-dbml-generator]: Downloading https://files.pythonhosted.org/packages/ca/5d/81b5ce35ffa1b5cebffa1e2f43e9b3813410c04b05236a6620d58b4343e8/snowflake-dbml-generator-0.1.1.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [biobit]: Downloading https://files.pythonhosted.org/packages/d4/a0/83648f58bc1a7d620350e34e22529741a1cdf3e201b72d80132de0b3b01b/biobit-0.0.1.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/3e/f2/a98cb6a4c6c575d4269f7b79059eba1a3e2b08c805f59cd90b84b6c9cf88/pyedaa_reports-0.7.0.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [snowflake-dbml-generator]: executing diffoscope
+[2024-05-05 23:26:32] INFO root fetch - processPackages [snowflake-dbml-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-dbml-generator-0.1.0.tar.gz tmp/snowflake-dbml-generator-0.1.1.tar.gz --markdown 20240505/s/snowflake-dbml-generator/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 23:26:32] INFO root fetch - processPackages [pyEDAA.Reports]: executing diffoscope
+[2024-05-05 23:26:32] INFO root fetch - processPackages [pyEDAA.Reports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyedaa_reports-0.6.0.tar.gz tmp/pyedaa_reports-0.7.0.tar.gz --markdown 20240505/p/pyEDAA.Reports/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-05 23:26:32] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/cb/1d/a43b84db5c4d3d9bdecfbaa4cbf25995eedcd5543266587876372fb4e338/bdffont-0.0.9.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [bdffont]: executing diffoscope
+[2024-05-05 23:26:32] INFO root fetch - processPackages [bdffont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdffont-0.0.8.tar.gz tmp/bdffont-0.0.9.tar.gz --markdown 20240505/b/bdffont/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 23:26:32] INFO root fetch - processPackages [biobit]: Downloading https://files.pythonhosted.org/packages/79/e5/9160b4b5eb9cf6ba8cad8e58b449a9a792e1f93d08165bb03fbe5b3c1a8a/biobit-0.0.2.tar.gz
+[2024-05-05 23:26:32] INFO root fetch - processPackages [molsystem]: Downloading https://files.pythonhosted.org/packages/79/40/ba6368ef7921f0ff9c7752cb2ef456dc77f735ef30904911af0760302f74/molsystem-2024.5.5.tar.gz
+[2024-05-05 23:26:33] INFO root fetch - processPackages [molsystem]: executing diffoscope
+[2024-05-05 23:26:33] INFO root fetch - processPackages [molsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molsystem-2024.4.5.tar.gz tmp/molsystem-2024.5.5.tar.gz --markdown 20240505/m/molsystem/2024.4.5-2024.5.5/README.md --exclude *.pyd
+[2024-05-05 23:26:33] INFO root fetch - processPackages [biobit]: executing diffoscope
+[2024-05-05 23:26:33] INFO root fetch - processPackages [biobit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobit-0.0.1.tar.gz tmp/biobit-0.0.2.tar.gz --markdown 20240505/b/biobit/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 23:26:33] INFO root fetch - processPackages [snowflake-dbml-generator]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-dbml-generator-0.1.0.tar.gz]
+[2024-05-05 23:26:33] INFO root fetch - processPackages [snowflake-dbml-generator]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-dbml-generator-0.1.1.tar.gz]
+[2024-05-05 23:26:33] INFO root fetch - main [MainThread]: End processing [snowflake-dbml-generator]: success
+[2024-05-05 23:26:33] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.6.0.tar.gz]
+[2024-05-05 23:26:33] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.7.0.tar.gz]
+[2024-05-05 23:26:33] INFO root fetch - main [MainThread]: End processing [pyEDAA.Reports]: success
+[2024-05-05 23:26:33] INFO root fetch - processPackages [bdffont]: Remove: archive file [/home/abi/fetcher/tmp/bdffont-0.0.8.tar.gz]
+[2024-05-05 23:26:33] INFO root fetch - processPackages [bdffont]: Remove: archive file [/home/abi/fetcher/tmp/bdffont-0.0.9.tar.gz]
+[2024-05-05 23:26:33] INFO root fetch - main [MainThread]: End processing [bdffont]: success
+[2024-05-05 23:26:34] INFO root fetch - processPackages [biobit]: Remove: archive file [/home/abi/fetcher/tmp/biobit-0.0.1.tar.gz]
+[2024-05-05 23:26:34] INFO root fetch - processPackages [biobit]: Remove: archive file [/home/abi/fetcher/tmp/biobit-0.0.2.tar.gz]
+[2024-05-05 23:26:34] INFO root fetch - main [MainThread]: End processing [biobit]: success
+[2024-05-05 23:26:34] INFO root fetch - processPackages [molsystem]: Remove: archive file [/home/abi/fetcher/tmp/molsystem-2024.4.5.tar.gz]
+[2024-05-05 23:26:34] INFO root fetch - processPackages [molsystem]: Remove: archive file [/home/abi/fetcher/tmp/molsystem-2024.5.5.tar.gz]
+[2024-05-05 23:26:34] INFO root fetch - main [MainThread]: End processing [molsystem]: success
+[2024-05-05 23:26:34] INFO root fetch - main [MainThread]: Store serial: [23069207]
