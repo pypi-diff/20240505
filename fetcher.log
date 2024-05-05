@@ -9383,3 +9383,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:39:01] INFO root fetch - processPackages [pylablib-lightweight]: Remove: archive file [/home/abi/fetcher/tmp/pylablib_lightweight-1.4.3-cp312-cp312-win32.whl.zip]
 [2024-05-05 14:39:01] INFO root fetch - main [MainThread]: End processing [pylablib-lightweight]: success
 [2024-05-05 14:39:01] INFO root fetch - main [MainThread]: Store serial: [23065524]
+[2024-05-05 14:41:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065524]
+[2024-05-05 14:41:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 14:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-llm
+[2024-05-05 14:41:09] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240505] Old Version: [2.5.0b20240504]
+[2024-05-05 14:41:09] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/2a/e7/9c7ea5ca8441290afc4a06d34815ca2cf95198f29e80e6fa2265014a5f4e/bigdl_llm-2.5.0b20240504-py3-none-win_amd64.whl
+[2024-05-05 14:41:10] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/90/f1/b0b73da4c50c042f604dc7b7b53f5b3cae89f5e2a530854bfb1632eca600/bigdl_llm-2.5.0b20240505-py3-none-win_amd64.whl
+[2024-05-05 14:41:10] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-05 14:41:10] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240504-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240505-py3-none-win_amd64.whl.zip --markdown 20240505/b/bigdl-llm/2.5.0b20240504-2.5.0b20240505/README.md --exclude *.pyd
+[2024-05-05 14:41:11] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240504-py3-none-win_amd64.whl.zip]
+[2024-05-05 14:41:11] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240505-py3-none-win_amd64.whl.zip]
+[2024-05-05 14:41:11] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-05 14:41:11] INFO root fetch - main [MainThread]: Store serial: [23065560]
