@@ -2582,3 +2582,15 @@
 [2024-05-05 04:12:24] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.5.tar.gz]
 [2024-05-05 04:12:24] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-05-05 04:12:24] INFO root fetch - main [MainThread]: Store serial: [23062669]
+[2024-05-05 04:14:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062669]
+[2024-05-05 04:14:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 04:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram3-form
+[2024-05-05 04:14:33] INFO root fetch - processPackages [aiogram3-form]: New version: [2.0.0] Old Version: [1.0.2]
+[2024-05-05 04:14:33] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/87/cc/1ab2b0ecfcbc2e0fd3750e7c64cda87eee8eae76cf7b1dfc77953e59ad1e/aiogram3_form-1.0.2.tar.gz
+[2024-05-05 04:14:33] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/94/2d/5bfb6b0aca10b50748473ed3f60a82eb4fb2fee1075ad9e0d3bf38e51f61/aiogram3_form-2.0.0.tar.gz
+[2024-05-05 04:14:33] INFO root fetch - processPackages [aiogram3-form]: executing diffoscope
+[2024-05-05 04:14:33] INFO root fetch - processPackages [aiogram3-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram3_form-1.0.2.tar.gz tmp/aiogram3_form-2.0.0.tar.gz --markdown 20240505/a/aiogram3-form/1.0.2-2.0.0/README.md --exclude *.pyd
+[2024-05-05 04:14:34] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-1.0.2.tar.gz]
+[2024-05-05 04:14:34] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-2.0.0.tar.gz]
+[2024-05-05 04:14:34] INFO root fetch - main [MainThread]: End processing [aiogram3-form]: success
+[2024-05-05 04:14:34] INFO root fetch - main [MainThread]: Store serial: [23062672]
