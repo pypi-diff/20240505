@@ -2803,3 +2803,15 @@
 [2024-05-05 04:32:04] INFO root fetch - processPackages [megadetector]: Remove: archive file [/home/abi/fetcher/tmp/megadetector-5.0.9.tar.gz]
 [2024-05-05 04:32:04] INFO root fetch - main [MainThread]: End processing [megadetector]: success
 [2024-05-05 04:32:04] INFO root fetch - main [MainThread]: Store serial: [23062743]
+[2024-05-05 04:34:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062743]
+[2024-05-05 04:34:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 04:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: megadetector
+[2024-05-05 04:34:13] INFO root fetch - processPackages [megadetector]: New version: [5.0.9] Old Version: [5.0.8]
+[2024-05-05 04:34:13] INFO root fetch - processPackages [megadetector]: Downloading https://files.pythonhosted.org/packages/5e/de/9bde6bcb4ea0d4ed12776912e30cbb21cdb2506d498f1d6813e95b224120/megadetector-5.0.8.tar.gz
+[2024-05-05 04:34:13] INFO root fetch - processPackages [megadetector]: Downloading https://files.pythonhosted.org/packages/82/57/85d6f03e7d73bf2cb6608c7f4e55306c89a9b03a0074bd1d00baf8b038ba/megadetector-5.0.9.tar.gz
+[2024-05-05 04:34:13] INFO root fetch - processPackages [megadetector]: executing diffoscope
+[2024-05-05 04:34:13] INFO root fetch - processPackages [megadetector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadetector-5.0.8.tar.gz tmp/megadetector-5.0.9.tar.gz --markdown 20240505/m/megadetector/5.0.8-5.0.9/README.md --exclude *.pyd
+[2024-05-05 04:34:16] INFO root fetch - processPackages [megadetector]: Remove: archive file [/home/abi/fetcher/tmp/megadetector-5.0.8.tar.gz]
+[2024-05-05 04:34:16] INFO root fetch - processPackages [megadetector]: Remove: archive file [/home/abi/fetcher/tmp/megadetector-5.0.9.tar.gz]
+[2024-05-05 04:34:16] INFO root fetch - main [MainThread]: End processing [megadetector]: success
+[2024-05-05 04:34:16] INFO root fetch - main [MainThread]: Store serial: [23062747]
