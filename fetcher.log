@@ -13726,3 +13726,41 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:16:27] INFO root fetch - processPackages [aioslsk]: Remove: archive file [/home/abi/fetcher/tmp/aioslsk-1.3.1.tar.gz]
 [2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [aioslsk]: success
 [2024-05-05 19:16:27] INFO root fetch - main [MainThread]: Store serial: [23067486]
+[2024-05-05 19:18:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067486]
+[2024-05-05 19:18:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kaiju-app
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dailies
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezkl-gpu
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastbencode
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 19:18:36] WARNING root fetch - processPackages [dailies]: Skipping, unable to determine old version
+[2024-05-05 19:18:36] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.4.0] Old Version: [4.3.4]
+[2024-05-05 19:18:36] INFO root fetch - main [MainThread]: End processing [dailies] error
+[2024-05-05 19:18:36] INFO root fetch - processPackages [kaiju-app]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ezkl-gpu]: New version: [9.5.0] Old Version: [9.4.4]
+[2024-05-05 19:18:36] INFO root fetch - processPackages [fastbencode]: New version: [0.3.1] Old Version: [0.2]
+[2024-05-05 19:18:36] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/4f/04/5ef9e8c207c72c5dd5ac2440db5167150c2809e46da99c0afd67514306eb/Buke_autoTrade_Pypi-4.3.4.tar.gz
+[2024-05-05 19:18:36] INFO root fetch - processPackages [kaiju-app]: Downloading https://files.pythonhosted.org/packages/56/53/9a27f63e4a0621e8caf5e79181e802a4ccbce74fcb8bf7958432932e291d/kaiju_app-0.1.4-py3-none-any.whl
+[2024-05-05 19:18:36] INFO root fetch - processPackages [ezkl-gpu]: Downloading https://files.pythonhosted.org/packages/0a/7a/6ba1898c5763102473f591d6c6deb50cc26c158d75e30ca3759eca1e6b05/ezkl_gpu-9.4.4-cp37-abi3-manylinux_2_35_x86_64.whl
+[2024-05-05 19:18:37] WARNING root fetch - processPackages [ezkl-gpu]: Skipping package: exceeds size limit 60535856>=10485760
+[2024-05-05 19:18:37] INFO root fetch - main [MainThread]: End processing [ezkl-gpu] error
+[2024-05-05 19:18:37] INFO root fetch - processPackages [fastbencode]: Downloading https://files.pythonhosted.org/packages/20/ab/33ca3005953d689f1be9c1e0662f5359b7365479f7a8fbd66cb05e9a840d/fastbencode-0.2.tar.gz
+[2024-05-05 19:18:37] INFO root fetch - processPackages [kaiju-app]: Downloading https://files.pythonhosted.org/packages/92/d7/36d2dda3b5a289f815d014936c2a5b11ec12e6b794e9551d1ed8fce0fb1d/kaiju_app-0.1.5-py3-none-any.whl
+[2024-05-05 19:18:37] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/81/0a/7e54cac88d7701bbdb64f3a2afd328b4d07f9e924af3b5722e6488a7e959/Buke_autoTrade_Pypi-4.4.0.tar.gz
+[2024-05-05 19:18:37] INFO root fetch - processPackages [kaiju-app]: executing diffoscope
+[2024-05-05 19:18:37] INFO root fetch - processPackages [kaiju-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_app-0.1.4-py3-none-any.whl.zip tmp/kaiju_app-0.1.5-py3-none-any.whl.zip --markdown 20240505/k/kaiju-app/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-05 19:18:37] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 19:18:37] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.3.4.tar.gz tmp/Buke_autoTrade_Pypi-4.4.0.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.3.4-4.4.0/README.md --exclude *.pyd
+[2024-05-05 19:18:37] INFO root fetch - processPackages [fastbencode]: Downloading https://files.pythonhosted.org/packages/67/e5/04dbe64fb75f0c0fed68efb976a5981899cd0c8e602563e5785b83aab508/fastbencode-0.3.1-pp310-pypy310_pp73-macosx_11_0_arm64.whl
+[2024-05-05 19:18:38] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.4.tar.gz]
+[2024-05-05 19:18:38] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.0.tar.gz]
+[2024-05-05 19:18:38] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 19:18:38] INFO root fetch - processPackages [kaiju-app]: Remove: archive file [/home/abi/fetcher/tmp/kaiju_app-0.1.4-py3-none-any.whl.zip]
+[2024-05-05 19:18:38] INFO root fetch - processPackages [kaiju-app]: Remove: archive file [/home/abi/fetcher/tmp/kaiju_app-0.1.5-py3-none-any.whl.zip]
+[2024-05-05 19:18:38] INFO root fetch - main [MainThread]: End processing [kaiju-app]: success
+[2024-05-05 19:18:38] INFO root fetch - processPackages [fastbencode]: executing diffoscope
+[2024-05-05 19:18:38] INFO root fetch - processPackages [fastbencode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastbencode-0.2.tar.gz tmp/fastbencode-0.3.1-pp310-pypy310_pp73-macosx_11_0_arm64.whl.zip --markdown 20240505/f/fastbencode/0.2-0.3.1/README.md --exclude *.pyd
+[2024-05-05 19:18:38] INFO root fetch - processPackages [fastbencode]: Remove: archive file [/home/abi/fetcher/tmp/fastbencode-0.2.tar.gz]
+[2024-05-05 19:18:38] INFO root fetch - processPackages [fastbencode]: Remove: archive file [/home/abi/fetcher/tmp/fastbencode-0.3.1-pp310-pypy310_pp73-macosx_11_0_arm64.whl.zip]
+[2024-05-05 19:18:38] INFO root fetch - main [MainThread]: End processing [fastbencode]: success
+[2024-05-05 19:18:38] INFO root fetch - main [MainThread]: Store serial: [23067531]
