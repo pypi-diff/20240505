@@ -4259,3 +4259,15 @@
 [2024-05-05 07:34:11] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240503-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-05-05 07:34:11] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-05-05 07:34:11] INFO root fetch - main [MainThread]: Store serial: [23063297]
+[2024-05-05 07:36:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063297]
+[2024-05-05 07:36:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 07:36:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-fts
+[2024-05-05 07:36:20] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 07:36:20] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/a4/72/e5ed8aed67daafdeeaee77ce84706e7b284c03900bebc8b4c9a5418c9100/yt-fts-0.1.8.tar.gz
+[2024-05-05 07:36:20] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/07/27/81af49bf3228838a5be25585fd9eafb45419bd52a1bd7d47660f8fd3f1e6/yt-fts-0.1.9.tar.gz
+[2024-05-05 07:36:20] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2024-05-05 07:36:20] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20240505/y/yt-fts/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 07:36:21] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.8.tar.gz]
+[2024-05-05 07:36:21] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.9.tar.gz]
+[2024-05-05 07:36:21] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2024-05-05 07:36:21] INFO root fetch - main [MainThread]: Store serial: [23063305]
