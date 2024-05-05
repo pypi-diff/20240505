@@ -4437,3 +4437,24 @@
 [2024-05-05 07:53:38] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.9.tar.gz]
 [2024-05-05 07:53:38] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2024-05-05 07:53:38] INFO root fetch - main [MainThread]: Store serial: [23063406]
+[2024-05-05 07:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063406]
+[2024-05-05 07:55:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 07:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuantyLF
+[2024-05-05 07:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: taguchi
+[2024-05-05 07:55:48] INFO root fetch - processPackages [QuantyLF]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-05 07:55:48] INFO root fetch - processPackages [taguchi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 07:55:48] INFO root fetch - processPackages [QuantyLF]: Downloading https://files.pythonhosted.org/packages/72/5a/c43c445f24b275ade0c6439ae6a40a8df89ca2af3f6fae6aefd1a5acb594/quantylf-0.0.4.tar.gz
+[2024-05-05 07:55:48] INFO root fetch - processPackages [taguchi]: Downloading https://files.pythonhosted.org/packages/c5/52/efb83fc1b9bef6b4a8b201b717de988475473c2a77d08a8bc1aa8dd7f31e/taguchi-0.0.1.tar.gz
+[2024-05-05 07:55:49] INFO root fetch - processPackages [QuantyLF]: Downloading https://files.pythonhosted.org/packages/c9/44/03ba785780f88cf444a41424c038c74841dc29a9e61c86bf78cbbd676756/quantylf-0.0.5.tar.gz
+[2024-05-05 07:55:49] INFO root fetch - processPackages [taguchi]: Downloading https://files.pythonhosted.org/packages/ea/81/a0caee195f8c569f57dd993251fcbc16b96ad6828a1ca96f0af2ecac0fb3/taguchi-0.0.2.tar.gz
+[2024-05-05 07:55:49] INFO root fetch - processPackages [QuantyLF]: executing diffoscope
+[2024-05-05 07:55:49] INFO root fetch - processPackages [QuantyLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantylf-0.0.4.tar.gz tmp/quantylf-0.0.5.tar.gz --markdown 20240505/Q/QuantyLF/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-05 07:55:49] INFO root fetch - processPackages [taguchi]: executing diffoscope
+[2024-05-05 07:55:49] INFO root fetch - processPackages [taguchi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taguchi-0.0.1.tar.gz tmp/taguchi-0.0.2.tar.gz --markdown 20240505/t/taguchi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 07:55:50] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.4.tar.gz]
+[2024-05-05 07:55:50] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.5.tar.gz]
+[2024-05-05 07:55:50] INFO root fetch - main [MainThread]: End processing [QuantyLF]: success
+[2024-05-05 07:55:50] INFO root fetch - processPackages [taguchi]: Remove: archive file [/home/abi/fetcher/tmp/taguchi-0.0.1.tar.gz]
+[2024-05-05 07:55:50] INFO root fetch - processPackages [taguchi]: Remove: archive file [/home/abi/fetcher/tmp/taguchi-0.0.2.tar.gz]
+[2024-05-05 07:55:50] INFO root fetch - main [MainThread]: End processing [taguchi]: success
+[2024-05-05 07:55:50] INFO root fetch - main [MainThread]: Store serial: [23063409]
