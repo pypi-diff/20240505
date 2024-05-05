@@ -9873,3 +9873,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:07:54] ERROR root fetch - processPackages [plutobook]: Unable to get metadata: No such project 'plutobook'
 [2024-05-05 15:07:54] INFO root fetch - main [MainThread]: End processing [plutobook] error
 [2024-05-05 15:07:54] INFO root fetch - main [MainThread]: Store serial: [23065773]
+[2024-05-05 15:09:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065773]
+[2024-05-05 15:10:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 15:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmtccmd
+[2024-05-05 15:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot_plugin_mc_server_status
+[2024-05-05 15:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ado_wrapper
+[2024-05-05 15:10:03] INFO root fetch - processPackages [ado_wrapper]: New version: [1.6.1] Old Version: [1.5.0]
+[2024-05-05 15:10:03] INFO root fetch - processPackages [tmtccmd]: New version: [8.0.0rc2] Old Version: [8.0.0rc1]
+[2024-05-05 15:10:03] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-05-05 15:10:03] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/27/56/6f974cad47c013c9d585188e02a863c68b2c6d8d776b202a06a60ae4b5bd/ado_wrapper-1.5.0.tar.gz
+[2024-05-05 15:10:03] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: Downloading https://files.pythonhosted.org/packages/3e/92/0bc110cdb79d05232d3b9cb48a3acc8b94113a73897117bf311ce7ae6680/nonebot_plugin_mc_server_status-0.2.7.tar.gz
+[2024-05-05 15:10:03] INFO root fetch - processPackages [tmtccmd]: Downloading https://files.pythonhosted.org/packages/3d/43/b750703719cf8c61c2aca2537a01a3f02a25d11954d968776c68d75fe447/tmtccmd-8.0.0rc1.tar.gz
+[2024-05-05 15:10:04] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: Downloading https://files.pythonhosted.org/packages/8c/62/e91f82103912ed94a688cd974f4e2f86defc49c3062fdb2fc2856c2f317b/nonebot_plugin_mc_server_status-0.2.9.tar.gz
+[2024-05-05 15:10:04] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/5a/4e/5446bc9281bd9ba584421a78463e3d7eab79b6f357865c34abe73dbeb48e/ado_wrapper-1.6.1.tar.gz
+[2024-05-05 15:10:04] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: executing diffoscope
+[2024-05-05 15:10:04] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mc_server_status-0.2.7.tar.gz tmp/nonebot_plugin_mc_server_status-0.2.9.tar.gz --markdown 20240505/n/nonebot_plugin_mc_server_status/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-05-05 15:10:04] INFO root fetch - processPackages [tmtccmd]: Downloading https://files.pythonhosted.org/packages/11/96/26729f4ccb23d112493d99fe5dfbd4f100242b03e3b509e42f5ed09c990a/tmtccmd-8.0.0rc2.tar.gz
+[2024-05-05 15:10:04] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-05-05 15:10:04] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-1.5.0.tar.gz tmp/ado_wrapper-1.6.1.tar.gz --markdown 20240505/a/ado_wrapper/1.5.0-1.6.1/README.md --exclude *.pyd
+[2024-05-05 15:10:04] INFO root fetch - processPackages [tmtccmd]: executing diffoscope
+[2024-05-05 15:10:04] INFO root fetch - processPackages [tmtccmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmtccmd-8.0.0rc1.tar.gz tmp/tmtccmd-8.0.0rc2.tar.gz --markdown 20240505/t/tmtccmd/8.0.0rc1-8.0.0rc2/README.md --exclude *.pyd
+[2024-05-05 15:10:05] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mc_server_status-0.2.7.tar.gz]
+[2024-05-05 15:10:05] INFO root fetch - processPackages [nonebot_plugin_mc_server_status]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_mc_server_status-0.2.9.tar.gz]
+[2024-05-05 15:10:05] INFO root fetch - main [MainThread]: End processing [nonebot_plugin_mc_server_status]: success
+[2024-05-05 15:10:05] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-1.5.0.tar.gz]
+[2024-05-05 15:10:05] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-1.6.1.tar.gz]
+[2024-05-05 15:10:05] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-05-05 15:10:05] INFO root fetch - processPackages [tmtccmd]: Remove: archive file [/home/abi/fetcher/tmp/tmtccmd-8.0.0rc1.tar.gz]
+[2024-05-05 15:10:05] INFO root fetch - processPackages [tmtccmd]: Remove: archive file [/home/abi/fetcher/tmp/tmtccmd-8.0.0rc2.tar.gz]
+[2024-05-05 15:10:05] INFO root fetch - main [MainThread]: End processing [tmtccmd]: success
+[2024-05-05 15:10:05] INFO root fetch - main [MainThread]: Store serial: [23065783]
