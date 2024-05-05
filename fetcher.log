@@ -4314,3 +4314,42 @@
 [2024-05-05 07:42:45] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 10640161>=10485760
 [2024-05-05 07:42:45] INFO root fetch - main [MainThread]: End processing [duckdb] error
 [2024-05-05 07:42:45] INFO root fetch - main [MainThread]: Store serial: [23063352]
+[2024-05-05 07:44:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063352]
+[2024-05-05 07:44:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 07:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-product-pricelist-direct-print
+[2024-05-05 07:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quickstart-vdk
+[2024-05-05 07:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuantyLF
+[2024-05-05 07:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glue-utils
+[2024-05-05 07:44:54] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: New version: [16.0.1.0.3] Old Version: [16.0.1.0.2.3]
+[2024-05-05 07:44:54] INFO root fetch - processPackages [glue-utils]: New version: [0.2.2b1] Old Version: [0.2.2b0]
+[2024-05-05 07:44:54] INFO root fetch - processPackages [QuantyLF]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 07:44:54] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-05 07:44:54] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Downloading https://files.pythonhosted.org/packages/00/60/e5aef905ec746a54971fda02050a18a26b80ecad6cb9de8d2aff7bd90621/odoo_addon_product_pricelist_direct_print-16.0.1.0.2.3-py3-none-any.whl
+[2024-05-05 07:44:54] INFO root fetch - processPackages [glue-utils]: Downloading https://files.pythonhosted.org/packages/d6/02/c0a7a6224df281602bb7c7b9c56a11d91b5ac941a11ab9abb01eabc6dd9f/glue_utils-0.2.2b0.tar.gz
+[2024-05-05 07:44:54] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-05 07:44:54] INFO root fetch - processPackages [QuantyLF]: Downloading https://files.pythonhosted.org/packages/60/45/0e64a5386e29260b68eac2ee99ce597b75b69ea6c4986c65d67bdeafea0e/quantylf-0.0.1.tar.gz
+[2024-05-05 07:44:55] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-05 07:44:55] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Downloading https://files.pythonhosted.org/packages/43/10/cd09a802a66d4da01f5e78384488963d308e0f6e41b29af50a9e30855980/odoo_addon_product_pricelist_direct_print-16.0.1.0.3-py3-none-any.whl
+[2024-05-05 07:44:55] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-05 07:44:55] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240505/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-05 07:44:55] INFO root fetch - processPackages [glue-utils]: Downloading https://files.pythonhosted.org/packages/f0/51/2f5d33f82066a1217268765d4d6717735886418b77f7b4a8a8034b35e7e4/glue_utils-0.2.2b1.tar.gz
+[2024-05-05 07:44:55] INFO root fetch - processPackages [QuantyLF]: Downloading https://files.pythonhosted.org/packages/ca/29/dc83100c8ab1d7cbfadeb36c0575c9ec6dde6131ba3808b768c60ad26bb3/quantylf-0.0.2.tar.gz
+[2024-05-05 07:44:55] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: executing diffoscope
+[2024-05-05 07:44:55] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.2.3-py3-none-any.whl.zip tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.3-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-product-pricelist-direct-print/16.0.1.0.2.3-16.0.1.0.3/README.md --exclude *.pyd
+[2024-05-05 07:44:55] INFO root fetch - processPackages [glue-utils]: executing diffoscope
+[2024-05-05 07:44:55] INFO root fetch - processPackages [glue-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glue_utils-0.2.2b0.tar.gz tmp/glue_utils-0.2.2b1.tar.gz --markdown 20240505/g/glue-utils/0.2.2b0-0.2.2b1/README.md --exclude *.pyd
+[2024-05-05 07:44:55] INFO root fetch - processPackages [QuantyLF]: executing diffoscope
+[2024-05-05 07:44:55] INFO root fetch - processPackages [QuantyLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantylf-0.0.1.tar.gz tmp/quantylf-0.0.2.tar.gz --markdown 20240505/Q/QuantyLF/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 07:44:55] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-05 07:44:55] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-05 07:44:55] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-05 07:44:55] INFO root fetch - processPackages [glue-utils]: Remove: archive file [/home/abi/fetcher/tmp/glue_utils-0.2.2b0.tar.gz]
+[2024-05-05 07:44:55] INFO root fetch - processPackages [glue-utils]: Remove: archive file [/home/abi/fetcher/tmp/glue_utils-0.2.2b1.tar.gz]
+[2024-05-05 07:44:55] INFO root fetch - main [MainThread]: End processing [glue-utils]: success
+[2024-05-05 07:44:55] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.2.3-py3-none-any.whl.zip]
+[2024-05-05 07:44:55] INFO root fetch - processPackages [odoo-addon-product-pricelist-direct-print]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_pricelist_direct_print-16.0.1.0.3-py3-none-any.whl.zip]
+[2024-05-05 07:44:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-pricelist-direct-print]: success
+[2024-05-05 07:44:55] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.1.tar.gz]
+[2024-05-05 07:44:55] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.2.tar.gz]
+[2024-05-05 07:44:55] INFO root fetch - main [MainThread]: End processing [QuantyLF]: success
+[2024-05-05 07:44:55] INFO root fetch - main [MainThread]: Store serial: [23063375]
