@@ -16476,3 +16476,58 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:20:58] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-1.4.1.tar.gz]
 [2024-05-05 22:20:58] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
 [2024-05-05 22:20:58] INFO root fetch - main [MainThread]: Store serial: [23068823]
+[2024-05-05 22:23:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068823]
+[2024-05-05 22:23:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 22:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yerba
+[2024-05-05 22:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-trading212
+[2024-05-05 22:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: offat
+[2024-05-05 22:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cae-cli
+[2024-05-05 22:23:06] INFO root fetch - processPackages [sqlalchemy-multilingual]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 22:23:06] INFO root fetch - processPackages [sqlalchemy-multilingual]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 22:23:06] INFO root fetch - processPackages [yerba]: New version: [0.0.2a0.dev1] Old Version: [0.0.2a0.dev0]
+[2024-05-05 22:23:06] INFO root fetch - processPackages [cae-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 22:23:07] INFO root fetch - processPackages [python-trading212]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-05 22:23:07] INFO root fetch - processPackages [offat]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-05 22:23:07] INFO root fetch - processPackages [yerba]: Downloading https://files.pythonhosted.org/packages/0e/6f/fdf93638071e0ec82aa4bc2b77411fcb151467474f2ebfb118296f542d5f/yerba-0.0.2a0.dev0.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/b8/8a/00a94f78b3f2e515fd3ea0bfed5d3cdec7541cc8a185fb30eaf72674cf78/sqlalchemy-multilingual-0.0.2.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/b8/8a/00a94f78b3f2e515fd3ea0bfed5d3cdec7541cc8a185fb30eaf72674cf78/sqlalchemy-multilingual-0.0.2.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/bc/7c/ee971e0b7ec648b3e2cbf2d39225f12d42e505306f2bdd201064019689c7/cae_cli-0.0.8.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/9a/fa/ae9717b53caeed8c959d0628061ab184f04ff22c28e8ad0e87556df8ebca/python_trading212-2.0.0.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [offat]: Downloading https://files.pythonhosted.org/packages/7a/8a/186d4303fe4ed80a39c94cd995979b6af16d3226ae8a9b40c897067d21ca/offat-0.8.1.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [yerba]: Downloading https://files.pythonhosted.org/packages/4a/3c/154ee53b549cdd7d250c24f1bfdc166f30d6b69e0ca8a159e5eef2a1048d/yerba-0.0.2a0.dev1.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/17/78/1c3e6fd871e3a02252e357dcf059e8737cce68a33e6bdbe39d1f31dfe987/cae_cli-0.0.9.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/a7/46/ac5a6349648681b7151b4519797bb595cc49108204bb8aff6cba1eb12f0b/sqlalchemy-multilingual-0.0.3.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/a7/46/ac5a6349648681b7151b4519797bb595cc49108204bb8aff6cba1eb12f0b/sqlalchemy-multilingual-0.0.3.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/79/a7/12681ff6e955c06a1301d4a8138b5fafaed151a2a6f74ebe45709cbb824a/python_trading212-2.0.1.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [yerba]: executing diffoscope
+[2024-05-05 22:23:07] INFO root fetch - processPackages [yerba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yerba-0.0.2a0.dev0.tar.gz tmp/yerba-0.0.2a0.dev1.tar.gz --markdown 20240505/y/yerba/0.0.2a0.dev0-0.0.2a0.dev1/README.md --exclude *.pyd
+[2024-05-05 22:23:07] INFO root fetch - processPackages [offat]: Downloading https://files.pythonhosted.org/packages/5d/29/13d2a960511451e0087e1c60aef1e2847bfdd400fac4e4e1e188669bfe2e/offat-0.9.0.tar.gz
+[2024-05-05 22:23:07] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-05 22:23:07] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.0.8.tar.gz tmp/cae_cli-0.0.9.tar.gz --markdown 20240505/c/cae-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: executing diffoscope
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-multilingual-0.0.2.tar.gz tmp/sqlalchemy-multilingual-0.0.3.tar.gz --markdown 20240505/s/sqlalchemy-multilingual/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: executing diffoscope
+[2024-05-05 22:23:07] INFO root fetch - processPackages [sqlalchemy-multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-multilingual-0.0.2.tar.gz tmp/sqlalchemy-multilingual-0.0.3.tar.gz --markdown 20240505/s/sqlalchemy-multilingual/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 22:23:07] INFO root fetch - processPackages [python-trading212]: executing diffoscope
+[2024-05-05 22:23:07] INFO root fetch - processPackages [python-trading212]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_trading212-2.0.0.tar.gz tmp/python_trading212-2.0.1.tar.gz --markdown 20240505/p/python-trading212/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-05 22:23:07] INFO root fetch - processPackages [offat]: executing diffoscope
+[2024-05-05 22:23:07] INFO root fetch - processPackages [offat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offat-0.8.1.tar.gz tmp/offat-0.9.0.tar.gz --markdown 20240505/o/offat/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-05 22:23:08] INFO root fetch - processPackages [yerba]: Remove: archive file [/home/abi/fetcher/tmp/yerba-0.0.2a0.dev0.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - processPackages [yerba]: Remove: archive file [/home/abi/fetcher/tmp/yerba-0.0.2a0.dev1.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: End processing [yerba]: success
+[2024-05-05 22:23:08] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.2.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.3.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
+[2024-05-05 22:23:08] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-2.0.0.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-2.0.1.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: End processing [python-trading212]: success
+[2024-05-05 22:23:08] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.8.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.9.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-05 22:23:08] INFO root fetch - processPackages [offat]: Remove: archive file [/home/abi/fetcher/tmp/offat-0.8.1.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - processPackages [offat]: Remove: archive file [/home/abi/fetcher/tmp/offat-0.9.0.tar.gz]
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: End processing [offat]: success
+[2024-05-05 22:23:08] INFO root fetch - main [MainThread]: Store serial: [23068840]
