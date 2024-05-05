@@ -13003,3 +13003,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:41:41] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202405051635.tar.gz]
 [2024-05-05 18:41:41] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-05-05 18:41:41] INFO root fetch - main [MainThread]: Store serial: [23067224]
+[2024-05-05 18:43:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067224]
+[2024-05-05 18:43:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AICelltype
+[2024-05-05 18:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-money
+[2024-05-05 18:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kfish
+[2024-05-05 18:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onnx2tf
+[2024-05-05 18:43:50] WARNING root fetch - processPackages [AICelltype]: Skipping, unable to determine old version
+[2024-05-05 18:43:50] INFO root fetch - main [MainThread]: End processing [AICelltype] error
+[2024-05-05 18:43:50] INFO root fetch - processPackages [kfish]: New version: [99.0.202405051638] Old Version: [99.0.202404271916]
+[2024-05-05 18:43:50] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-05 18:43:50] INFO root fetch - processPackages [django-money]: New version: [3.5.1] Old Version: [3.5]
+[2024-05-05 18:43:50] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/75/da/1249ae8e0daa8dd10fdb36a059ba9d69a561da107258282eaf49d7b676fd/kfish-99.0.202404271916-py3-none-any.whl
+[2024-05-05 18:43:50] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/6f/b3/519ee148592d2531639c5f3c1434df000ecf2c24a5b55b61cba8fd4767f9/onnx2tf-1.9.8.tar.gz
+[2024-05-05 18:43:50] INFO root fetch - processPackages [django-money]: Downloading https://files.pythonhosted.org/packages/a2/2a/6cc0f7272b83a46fd9d3d66e0ec8764a724e3060250c98bbabce013e0e14/django_money-3.5.tar.gz
+[2024-05-05 18:43:50] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/9e/c3/8561261c61328b8a84f888ff4397d88ac49cbeeeb2648fa6d5cddd59b242/kfish-99.0.202405051638-py3-none-any.whl
+[2024-05-05 18:43:50] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/0e/df/e0c6978b06db6c5c04de100ecbe0bbb281caed31c4dd88663e61e36ca571/onnx2tf-1.9.9.tar.gz
+[2024-05-05 18:43:51] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2024-05-05 18:43:51] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202404271916-py3-none-any.whl.zip tmp/kfish-99.0.202405051638-py3-none-any.whl.zip --markdown 20240505/k/kfish/99.0.202404271916-99.0.202405051638/README.md --exclude *.pyd
+[2024-05-05 18:43:51] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2024-05-05 18:43:51] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20240505/o/onnx2tf/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-05 18:43:51] INFO root fetch - processPackages [django-money]: Downloading https://files.pythonhosted.org/packages/8b/66/b7c29637cc75992f4db2525483c225999a4d713b72b1268d5092ac6af6d3/django_money-3.5.1.tar.gz
+[2024-05-05 18:43:51] INFO root fetch - processPackages [django-money]: executing diffoscope
+[2024-05-05 18:43:51] INFO root fetch - processPackages [django-money]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_money-3.5.tar.gz tmp/django_money-3.5.1.tar.gz --markdown 20240505/d/django-money/3.5-3.5.1/README.md --exclude *.pyd
+[2024-05-05 18:43:51] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404271916-py3-none-any.whl.zip]
+[2024-05-05 18:43:51] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202405051638-py3-none-any.whl.zip]
+[2024-05-05 18:43:51] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2024-05-05 18:43:51] INFO root fetch - processPackages [django-money]: Remove: archive file [/home/abi/fetcher/tmp/django_money-3.5.tar.gz]
+[2024-05-05 18:43:51] INFO root fetch - processPackages [django-money]: Remove: archive file [/home/abi/fetcher/tmp/django_money-3.5.1.tar.gz]
+[2024-05-05 18:43:51] INFO root fetch - main [MainThread]: End processing [django-money]: success
+[2024-05-05 18:43:52] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.8.tar.gz]
+[2024-05-05 18:43:52] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.9.tar.gz]
+[2024-05-05 18:43:52] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2024-05-05 18:43:52] INFO root fetch - main [MainThread]: Store serial: [23067235]
