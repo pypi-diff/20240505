@@ -7556,3 +7556,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:14:16] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
 [2024-05-05 12:14:16] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
 [2024-05-05 12:14:16] INFO root fetch - main [MainThread]: Store serial: [23064703]
+[2024-05-05 12:16:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064703]
+[2024-05-05 12:16:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 12:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: linktools
+[2024-05-05 12:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymusiclooper
+[2024-05-05 12:16:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opteryx
+[2024-05-05 12:16:25] INFO root fetch - processPackages [linktools]: New version: [0.8.5rc1] Old Version: [0.8.5rc0]
+[2024-05-05 12:16:25] INFO root fetch - processPackages [pymusiclooper]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-05-05 12:16:25] INFO root fetch - processPackages [opteryx]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-05 12:16:25] INFO root fetch - processPackages [linktools]: Downloading https://files.pythonhosted.org/packages/7f/9c/846b236d27fedf1793667f5bdd5f984b4ede9b2f7d8cc9c0120bb3b50b02/linktools-0.8.5rc0.tar.gz
+[2024-05-05 12:16:25] INFO root fetch - processPackages [pymusiclooper]: Downloading https://files.pythonhosted.org/packages/83/f1/cd0aebf2c4b6531269886284df897093cde9c957f12648789d3bc1ea2247/pymusiclooper-3.4.0.tar.gz
+[2024-05-05 12:16:25] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/5e/91/765e2a472f1ca3feaa2526a4bbec45d770e3d67f120965da4092459d8d99/opteryx-0.9.2.tar.gz
+[2024-05-05 12:16:25] INFO root fetch - processPackages [pymusiclooper]: Downloading https://files.pythonhosted.org/packages/0a/a1/f96f77fc5c2dee5c91c99d461fd0a9a15442f60e5cd14b9a2c03a1220c4f/pymusiclooper-3.4.1.tar.gz
+[2024-05-05 12:16:25] INFO root fetch - processPackages [linktools]: Downloading https://files.pythonhosted.org/packages/fa/8a/057a7fd36f98a19dcd48ae03327751f2c47d6983744c97c77440cd026586/linktools-0.8.5rc1.tar.gz
+[2024-05-05 12:16:25] INFO root fetch - processPackages [pymusiclooper]: executing diffoscope
+[2024-05-05 12:16:25] INFO root fetch - processPackages [pymusiclooper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymusiclooper-3.4.0.tar.gz tmp/pymusiclooper-3.4.1.tar.gz --markdown 20240505/p/pymusiclooper/3.4.0-3.4.1/README.md --exclude *.pyd
+[2024-05-05 12:16:25] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/64/71/44793ad728906cb5f308a98ffac1dea36c22000fac4080dd51bc5c9a0ef4/opteryx-0.9.3.tar.gz
+[2024-05-05 12:16:25] INFO root fetch - processPackages [linktools]: executing diffoscope
+[2024-05-05 12:16:25] INFO root fetch - processPackages [linktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktools-0.8.5rc0.tar.gz tmp/linktools-0.8.5rc1.tar.gz --markdown 20240505/l/linktools/0.8.5rc0-0.8.5rc1/README.md --exclude *.pyd
+[2024-05-05 12:16:26] INFO root fetch - processPackages [opteryx]: executing diffoscope
+[2024-05-05 12:16:26] INFO root fetch - processPackages [opteryx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opteryx-0.9.2.tar.gz tmp/opteryx-0.9.3.tar.gz --markdown 20240505/o/opteryx/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-05 12:16:26] INFO root fetch - processPackages [pymusiclooper]: Remove: archive file [/home/abi/fetcher/tmp/pymusiclooper-3.4.0.tar.gz]
+[2024-05-05 12:16:26] INFO root fetch - processPackages [pymusiclooper]: Remove: archive file [/home/abi/fetcher/tmp/pymusiclooper-3.4.1.tar.gz]
+[2024-05-05 12:16:26] INFO root fetch - main [MainThread]: End processing [pymusiclooper]: success
+[2024-05-05 12:16:26] INFO root fetch - processPackages [linktools]: Remove: archive file [/home/abi/fetcher/tmp/linktools-0.8.5rc0.tar.gz]
+[2024-05-05 12:16:26] INFO root fetch - processPackages [linktools]: Remove: archive file [/home/abi/fetcher/tmp/linktools-0.8.5rc1.tar.gz]
+[2024-05-05 12:16:26] INFO root fetch - main [MainThread]: End processing [linktools]: success
+[2024-05-05 12:16:27] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.2.tar.gz]
+[2024-05-05 12:16:27] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.3.tar.gz]
+[2024-05-05 12:16:27] INFO root fetch - main [MainThread]: End processing [opteryx]: success
+[2024-05-05 12:16:27] INFO root fetch - main [MainThread]: Store serial: [23064719]
