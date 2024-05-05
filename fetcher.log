@@ -16249,3 +16249,25 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:05:36] INFO root fetch - processPackages [ofiber]: Remove: archive file [/home/abi/fetcher/tmp/ofiber-0.8.1.tar.gz]
 [2024-05-05 22:05:37] INFO root fetch - main [MainThread]: End processing [ofiber]: success
 [2024-05-05 22:05:37] INFO root fetch - main [MainThread]: Store serial: [23068680]
+[2024-05-05 22:07:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068680]
+[2024-05-05 22:07:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 22:07:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2024-05-05 22:07:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AnimatedWordCloud
+[2024-05-05 22:07:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wwpdb.apps.entity-transform
+[2024-05-05 22:07:45] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-05-05 22:07:46] INFO root fetch - processPackages [AnimatedWordCloud]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-05 22:07:46] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: New version: [0.19] Old Version: [0.18]
+[2024-05-05 22:07:46] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-05-05 22:07:46] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-05-05 22:07:46] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-05-05 22:07:46] INFO root fetch - processPackages [AnimatedWordCloud]: Downloading https://files.pythonhosted.org/packages/2d/c1/f304503d42eb025a47f69be60b6fad13fdd55ee24e78aa102b4fa06879fc/AnimatedWordCloud-1.0.7.tar.gz
+[2024-05-05 22:07:46] WARNING root fetch - processPackages [AnimatedWordCloud]: Skipping package: exceeds size limit 35072764>=10485760
+[2024-05-05 22:07:46] INFO root fetch - main [MainThread]: End processing [AnimatedWordCloud] error
+[2024-05-05 22:07:46] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: Downloading https://files.pythonhosted.org/packages/fb/05/54e023a7ad01fde309b73889d1d6cb3d5f7f8f2ad5741b5382d88de895c2/wwpdb.apps.entity_transform-0.18.tar.gz
+[2024-05-05 22:07:46] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: Downloading https://files.pythonhosted.org/packages/d9/b3/104b284f157cd0baeb2b819262fc399867a8667f65d4b55c33c93ef65b21/wwpdb_apps_entity_transform-0.19.tar.gz
+[2024-05-05 22:07:46] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: executing diffoscope
+[2024-05-05 22:07:46] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.entity_transform-0.18.tar.gz tmp/wwpdb_apps_entity_transform-0.19.tar.gz --markdown 20240505/w/wwpdb.apps.entity-transform/0.18-0.19/README.md --exclude *.pyd
+[2024-05-05 22:07:47] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.entity_transform-0.18.tar.gz]
+[2024-05-05 22:07:47] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_entity_transform-0.19.tar.gz]
+[2024-05-05 22:07:47] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.entity-transform]: success
+[2024-05-05 22:07:47] INFO root fetch - main [MainThread]: Store serial: [23068687]
