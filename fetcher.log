@@ -13669,3 +13669,60 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:14:16] INFO root fetch - processPackages [Dash-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/Dash_tooltip-0.4.0.tar.gz]
 [2024-05-05 19:14:16] INFO root fetch - main [MainThread]: End processing [Dash-tooltip]: success
 [2024-05-05 19:14:16] INFO root fetch - main [MainThread]: Store serial: [23067468]
+[2024-05-05 19:16:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067468]
+[2024-05-05 19:16:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 19:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-05 19:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gammarers.aws-secure-bucket
+[2024-05-05 19:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mptradelib
+[2024-05-05 19:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioslsk
+[2024-05-05 19:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyastroweatherio
+[2024-05-05 19:16:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blankslate-python
+[2024-05-05 19:16:26] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-05 19:16:26] INFO root fetch - processPackages [aioslsk]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-05 19:16:26] INFO root fetch - processPackages [blankslate-python]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-05 19:16:26] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-05-05 19:16:26] INFO root fetch - processPackages [mptradelib]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-05 19:16:26] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.50.0.dev9] Old Version: [0.50.0.dev8]
+[2024-05-05 19:16:26] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/62/15/c2c1bb660953860db0365aaaab8ca2d14bc0cc7b84600e7bfcd237e3621a/blankslate_python-1.3.0.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/37/55/0cb27249e5e9f0c9c6452ffc4e619caf1632fa550960bad273dbb2f082ab/mptradelib-0.3.8.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/0f/55/af97c5391d8344ed95963a4a3a22d24ebca9eed71b97caaa9624a20b19b7/pyastroweatherio-0.50.0.dev8.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [aioslsk]: Downloading https://files.pythonhosted.org/packages/f0/fc/e96bd2fff6dfc4b32d0c27514bdde82c45d54122145f3882d0c4cf198f0b/aioslsk-1.3.0.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/8e/6a/8d1597707aa1cb885bc297f013e431b13413a51194b5d200d3230394023c/gammarers.aws-secure-bucket-1.3.3.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/48/61/87adcc82d9314cee7a91091563ec25662b17dcd57eee9114f77bb7b8bbbd/blankslate_python-1.3.1.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-05 19:16:26] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240505/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-05 19:16:26] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-05 19:16:26] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.3.0.tar.gz tmp/blankslate_python-1.3.1.tar.gz --markdown 20240505/b/blankslate-python/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-05 19:16:26] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/da/69/3594d7db0bf3d7a94ef33b67bc8d85af3676671cb507430a3ef88c30214f/mptradelib-0.3.9.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/5f/ea/c9879d66f18a7207d7b996556d4fd2d00e95d9c96b4a713c2c318dd5443f/gammarers.aws-secure-bucket-1.3.4.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [aioslsk]: Downloading https://files.pythonhosted.org/packages/bd/6c/e8384ff18231d309ae326b1ddf0272fc02b9e417ca4c0488b56b829dc752/aioslsk-1.3.1.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/b9/a5/6a468b364d1181771e8cad5f5c0a081da4451d5fe6c91549bd88c35ca972/pyastroweatherio-0.50.0.dev9.tar.gz
+[2024-05-05 19:16:26] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-05 19:16:26] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.3.8.tar.gz tmp/mptradelib-0.3.9.tar.gz --markdown 20240505/m/mptradelib/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-05 19:16:26] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: executing diffoscope
+[2024-05-05 19:16:26] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-bucket-1.3.3.tar.gz tmp/gammarers.aws-secure-bucket-1.3.4.tar.gz --markdown 20240505/g/gammarers.aws-secure-bucket/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-05-05 19:16:26] INFO root fetch - processPackages [aioslsk]: executing diffoscope
+[2024-05-05 19:16:26] INFO root fetch - processPackages [aioslsk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioslsk-1.3.0.tar.gz tmp/aioslsk-1.3.1.tar.gz --markdown 20240505/a/aioslsk/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-05 19:16:26] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-05-05 19:16:26] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.50.0.dev8.tar.gz tmp/pyastroweatherio-0.50.0.dev9.tar.gz --markdown 20240505/p/pyastroweatherio/0.50.0.dev8-0.50.0.dev9/README.md --exclude *.pyd
+[2024-05-05 19:16:27] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-05 19:16:27] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.3.0.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.3.1.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-05 19:16:27] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.8.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.3.9.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-05 19:16:27] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev8.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev9.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-05-05 19:16:27] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.3.3.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.3.4.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-bucket]: success
+[2024-05-05 19:16:27] INFO root fetch - processPackages [aioslsk]: Remove: archive file [/home/abi/fetcher/tmp/aioslsk-1.3.0.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - processPackages [aioslsk]: Remove: archive file [/home/abi/fetcher/tmp/aioslsk-1.3.1.tar.gz]
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: End processing [aioslsk]: success
+[2024-05-05 19:16:27] INFO root fetch - main [MainThread]: Store serial: [23067486]
