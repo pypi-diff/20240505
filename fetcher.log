@@ -11338,3 +11338,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:50:30] INFO root fetch - processPackages [zint-bindings]: Remove: archive file [/home/abi/fetcher/tmp/zint_bindings-1.1.0-pp38-pypy38_pp73-macosx_11_0_arm64.whl.zip]
 [2024-05-05 16:50:30] INFO root fetch - main [MainThread]: End processing [zint-bindings]: success
 [2024-05-05 16:50:30] INFO root fetch - main [MainThread]: Store serial: [23066534]
+[2024-05-05 16:52:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066534]
+[2024-05-05 16:52:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 16:52:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-05 16:52:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hondana
+[2024-05-05 16:52:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lapa-file-store
+[2024-05-05 16:52:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datacontract-cli
+[2024-05-05 16:52:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: KUtil-jakubaugustyn
+[2024-05-05 16:52:39] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 16:52:39] INFO root fetch - processPackages [lapa-file-store]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 16:52:39] INFO root fetch - processPackages [datacontract-cli]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 16:52:39] INFO root fetch - processPackages [KUtil-jakubaugustyn]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 16:52:39] INFO root fetch - processPackages [hondana]: New version: [4.0.0a0] Old Version: [3.5.1]
+[2024-05-05 16:52:39] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 16:52:39] INFO root fetch - processPackages [lapa-file-store]: Downloading https://files.pythonhosted.org/packages/66/40/059cd8a53ee83a040abb5cb411dd01e024eb25bc2c8d9686a4a7c2c5ad70/lapa_file_store-0.0.8.tar.gz
+[2024-05-05 16:52:39] INFO root fetch - processPackages [hondana]: Downloading https://files.pythonhosted.org/packages/87/2f/f73dfd67453a27677e199db23c7e03d6aaf7149fd77d5716fb0891dbc0ca/hondana-3.5.1-py3-none-any.whl
+[2024-05-05 16:52:39] INFO root fetch - processPackages [datacontract-cli]: Downloading https://files.pythonhosted.org/packages/ab/f5/43447d660c794b33f3272f06c646a80b61a35f5c371f573f0960b18b3dc3/datacontract-cli-0.9.8.tar.gz
+[2024-05-05 16:52:39] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Downloading https://files.pythonhosted.org/packages/12/7c/13ac013f08e7b33caded32eb8a2a0d160909f3c528ab5f2acdbb0ad1543b/kutil_jakubaugustyn-0.0.7.tar.gz
+[2024-05-05 16:52:39] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 16:52:40] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 16:52:40] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 16:52:40] INFO root fetch - processPackages [lapa-file-store]: Downloading https://files.pythonhosted.org/packages/7e/c9/aa2294b4bf940339d41d4a860cdf92f0f495aaf71d9fccc81a5df4c858c6/lapa_file_store-0.0.9.tar.gz
+[2024-05-05 16:52:40] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Downloading https://files.pythonhosted.org/packages/0e/35/a6ffad4ca6dbdd82d752a99c32afb01393c346a6e419672bc25b35d236d7/KUtil_jakubaugustyn-0.0.9-py3-none-any.whl
+[2024-05-05 16:52:40] INFO root fetch - processPackages [hondana]: Downloading https://files.pythonhosted.org/packages/49/51/949bfd1d6c36d9d67a3e2c31e075424eb965ac090a70356a92349f1c08eb/hondana-4.0.0a0-py3-none-any.whl
+[2024-05-05 16:52:40] INFO root fetch - processPackages [datacontract-cli]: Downloading https://files.pythonhosted.org/packages/43/c7/55b0ed1dc5bdf4323cff429130d8fc45d0234b45ac011c170ea716245961/datacontract_cli-0.9.9.tar.gz
+[2024-05-05 16:52:40] INFO root fetch - processPackages [lapa-file-store]: executing diffoscope
+[2024-05-05 16:52:40] INFO root fetch - processPackages [lapa-file-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_file_store-0.0.8.tar.gz tmp/lapa_file_store-0.0.9.tar.gz --markdown 20240505/l/lapa-file-store/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 16:52:40] INFO root fetch - processPackages [hondana]: executing diffoscope
+[2024-05-05 16:52:40] INFO root fetch - processPackages [hondana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hondana-3.5.1-py3-none-any.whl.zip tmp/hondana-4.0.0a0-py3-none-any.whl.zip --markdown 20240505/h/hondana/3.5.1-4.0.0a0/README.md --exclude *.pyd
+[2024-05-05 16:52:40] INFO root fetch - processPackages [datacontract-cli]: executing diffoscope
+[2024-05-05 16:52:40] INFO root fetch - processPackages [datacontract-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datacontract-cli-0.9.8.tar.gz tmp/datacontract_cli-0.9.9.tar.gz --markdown 20240505/d/datacontract-cli/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 16:52:40] INFO root fetch - processPackages [KUtil-jakubaugustyn]: executing diffoscope
+[2024-05-05 16:52:40] INFO root fetch - processPackages [KUtil-jakubaugustyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kutil_jakubaugustyn-0.0.7.tar.gz tmp/KUtil_jakubaugustyn-0.0.9-py3-none-any.whl.zip --markdown 20240505/K/KUtil-jakubaugustyn/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 16:52:40] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 16:52:40] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 16:52:40] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 16:52:40] INFO root fetch - processPackages [lapa-file-store]: Remove: archive file [/home/abi/fetcher/tmp/lapa_file_store-0.0.8.tar.gz]
+[2024-05-05 16:52:40] INFO root fetch - processPackages [lapa-file-store]: Remove: archive file [/home/abi/fetcher/tmp/lapa_file_store-0.0.9.tar.gz]
+[2024-05-05 16:52:40] INFO root fetch - main [MainThread]: End processing [lapa-file-store]: success
+[2024-05-05 16:52:41] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/kutil_jakubaugustyn-0.0.7.tar.gz]
+[2024-05-05 16:52:41] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/KUtil_jakubaugustyn-0.0.9-py3-none-any.whl.zip]
+[2024-05-05 16:52:41] INFO root fetch - main [MainThread]: End processing [KUtil-jakubaugustyn]: success
+[2024-05-05 16:52:41] INFO root fetch - processPackages [hondana]: Remove: archive file [/home/abi/fetcher/tmp/hondana-3.5.1-py3-none-any.whl.zip]
+[2024-05-05 16:52:41] INFO root fetch - processPackages [hondana]: Remove: archive file [/home/abi/fetcher/tmp/hondana-4.0.0a0-py3-none-any.whl.zip]
+[2024-05-05 16:52:41] INFO root fetch - main [MainThread]: End processing [hondana]: success
+[2024-05-05 16:52:41] INFO root fetch - processPackages [datacontract-cli]: Remove: archive file [/home/abi/fetcher/tmp/datacontract-cli-0.9.8.tar.gz]
+[2024-05-05 16:52:41] INFO root fetch - processPackages [datacontract-cli]: Remove: archive file [/home/abi/fetcher/tmp/datacontract_cli-0.9.9.tar.gz]
+[2024-05-05 16:52:41] INFO root fetch - main [MainThread]: End processing [datacontract-cli]: success
+[2024-05-05 16:52:41] INFO root fetch - main [MainThread]: Store serial: [23066565]
