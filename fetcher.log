@@ -9986,3 +9986,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:15:40] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.5-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-05-05 15:15:40] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-05-05 15:15:40] INFO root fetch - main [MainThread]: Store serial: [23065820]
+[2024-05-05 15:17:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065820]
+[2024-05-05 15:17:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyinim
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shuangchentools
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ado_wrapper
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dalle-gen-save
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphinxcontrib.sqltable
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ODLabeler
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipez
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sphinxcontrib.sqltable
+[2024-05-05 15:17:48] WARNING root fetch - processPackages [ODLabeler]: Skipping, unable to determine old version
+[2024-05-05 15:17:48] INFO root fetch - main [MainThread]: End processing [ODLabeler] error
+[2024-05-05 15:17:48] INFO root fetch - processPackages [pipez]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 15:17:48] WARNING root fetch - processPackages [pyinim]: Skipping, unable to determine old version
+[2024-05-05 15:17:48] INFO root fetch - main [MainThread]: End processing [pyinim] error
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ado_wrapper]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-05-05 15:17:48] INFO root fetch - processPackages [shuangchentools]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 15:17:48] WARNING root fetch - processPackages [dalle-gen-save]: Skipping, unable to determine old version
+[2024-05-05 15:17:48] INFO root fetch - main [MainThread]: End processing [dalle-gen-save] error
+[2024-05-05 15:17:48] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/c8/62/5b717f40c0fa19b721b0c32e9704e07e3efc6ef66d9e9235e125637ee655/pipez-0.0.98.tar.gz
+[2024-05-05 15:17:48] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/5a/4e/5446bc9281bd9ba584421a78463e3d7eab79b6f357865c34abe73dbeb48e/ado_wrapper-1.6.1.tar.gz
+[2024-05-05 15:17:48] INFO root fetch - processPackages [shuangchentools]: Downloading https://files.pythonhosted.org/packages/82/c8/627b40da07d132e944ba73969e562c8173aaa6065e8bc956a83f959c2181/shuangchentools-0.0.3.tar.gz
+[2024-05-05 15:17:48] INFO root fetch - processPackages [sphinxcontrib.sqltable]: New version: [2.1.0.0a2] Old Version: [2.1.0]
+[2024-05-05 15:17:48] INFO root fetch - processPackages [sphinxcontrib.sqltable]: New version: [2.1.0.0a2] Old Version: [2.1.0]
+[2024-05-05 15:17:49] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/e6/6e/340bc500f971bf2861a377a6dd615982ddeeb6ee3175f01910d829d31484/pipez-0.0.99.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/36/f0/c0ceaf0ad18865eeb4d25559d73e2a88069d12c2777e50bc279da084152b/ado_wrapper-1.6.2.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: Downloading https://files.pythonhosted.org/packages/04/12/d71106448418a9914a3c9d981277cf1b98b32df7d814d0ce1acccec977e2/sphinxcontrib_sqltable-2.1.0.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: Downloading https://files.pythonhosted.org/packages/04/12/d71106448418a9914a3c9d981277cf1b98b32df7d814d0ce1acccec977e2/sphinxcontrib_sqltable-2.1.0.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [shuangchentools]: Downloading https://files.pythonhosted.org/packages/22/6e/440c10833cd08b8f043a767f624457e63dc9bbfcf732189f83c0ea2498f6/shuangchentools-0.0.4.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-05-05 15:17:49] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.98.tar.gz tmp/pipez-0.0.99.tar.gz --markdown 20240505/p/pipez/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 15:17:49] INFO root fetch - processPackages [shuangchentools]: executing diffoscope
+[2024-05-05 15:17:49] INFO root fetch - processPackages [shuangchentools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuangchentools-0.0.3.tar.gz tmp/shuangchentools-0.0.4.tar.gz --markdown 20240505/s/shuangchentools/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 15:17:49] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-05-05 15:17:49] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-1.6.1.tar.gz tmp/ado_wrapper-1.6.2.tar.gz --markdown 20240505/a/ado_wrapper/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: Downloading https://files.pythonhosted.org/packages/e3/14/8dc64ccf9b11d349df51e5083c886013619d433620d999181c8ae2fec110/sphinxcontrib_sqltable-2.1.0.0a2.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: Downloading https://files.pythonhosted.org/packages/e3/14/8dc64ccf9b11d349df51e5083c886013619d433620d999181c8ae2fec110/sphinxcontrib_sqltable-2.1.0.0a2.tar.gz
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: executing diffoscope
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_sqltable-2.1.0.tar.gz tmp/sphinxcontrib_sqltable-2.1.0.0a2.tar.gz --markdown 20240505/s/sphinxcontrib.sqltable/2.1.0-2.1.0.0a2/README.md --exclude *.pyd
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: executing diffoscope
+[2024-05-05 15:17:49] INFO root fetch - processPackages [sphinxcontrib.sqltable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_sqltable-2.1.0.tar.gz tmp/sphinxcontrib_sqltable-2.1.0.0a2.tar.gz --markdown 20240505/s/sphinxcontrib.sqltable/2.1.0-2.1.0.0a2/README.md --exclude *.pyd
+[2024-05-05 15:17:50] INFO root fetch - processPackages [shuangchentools]: Remove: archive file [/home/abi/fetcher/tmp/shuangchentools-0.0.3.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - processPackages [shuangchentools]: Remove: archive file [/home/abi/fetcher/tmp/shuangchentools-0.0.4.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - main [MainThread]: End processing [shuangchentools]: success
+[2024-05-05 15:17:50] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-1.6.1.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-1.6.2.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-05-05 15:17:50] INFO root fetch - processPackages [sphinxcontrib.sqltable]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_sqltable-2.1.0.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - processPackages [sphinxcontrib.sqltable]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_sqltable-2.1.0.0a2.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - main [MainThread]: End processing [sphinxcontrib.sqltable]: success
+[2024-05-05 15:17:50] INFO root fetch - main [MainThread]: End processing [sphinxcontrib.sqltable]: success
+[2024-05-05 15:17:50] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.98.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.99.tar.gz]
+[2024-05-05 15:17:50] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-05-05 15:17:50] INFO root fetch - main [MainThread]: Store serial: [23065854]
