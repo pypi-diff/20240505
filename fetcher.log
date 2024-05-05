@@ -16838,3 +16838,17 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:47:36] INFO root fetch - processPackages [pyams-zmi]: Remove: archive file [/home/abi/fetcher/tmp/pyams_zmi-2.3.0.tar.gz]
 [2024-05-05 22:47:36] INFO root fetch - main [MainThread]: End processing [pyams-zmi]: success
 [2024-05-05 22:47:36] INFO root fetch - main [MainThread]: Store serial: [23068957]
+[2024-05-05 22:49:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068957]
+[2024-05-05 22:49:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 22:51:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068961]
+[2024-05-05 22:51:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 22:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cpop
+[2024-05-05 22:51:50] INFO root fetch - processPackages [cpop]: New version: [35.5.2] Old Version: [35.5.1]
+[2024-05-05 22:51:50] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/85/0a/ef5bea35cb04517d1772a5ce9aea1b6d7e7aa944ee39e35bf070e221f9b8/cpop-35.5.1.tar.gz
+[2024-05-05 22:51:50] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/f8/29/c7a7932b27c4a89fb2a4a434f0bb0fcc05f6ff537bd474e6152cf6a5be48/cpop-35.5.2.tar.gz
+[2024-05-05 22:51:50] INFO root fetch - processPackages [cpop]: executing diffoscope
+[2024-05-05 22:51:50] INFO root fetch - processPackages [cpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpop-35.5.1.tar.gz tmp/cpop-35.5.2.tar.gz --markdown 20240505/c/cpop/35.5.1-35.5.2/README.md --exclude *.pyd
+[2024-05-05 22:51:51] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-35.5.1.tar.gz]
+[2024-05-05 22:51:51] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-35.5.2.tar.gz]
+[2024-05-05 22:51:51] INFO root fetch - main [MainThread]: End processing [cpop]: success
+[2024-05-05 22:51:51] INFO root fetch - main [MainThread]: Store serial: [23068965]
