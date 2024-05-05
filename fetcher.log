@@ -6105,3 +6105,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:18:30] INFO root fetch - processPackages [tietoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tietoolbox-0.2.1.tar.gz]
 [2024-05-05 10:18:30] INFO root fetch - main [MainThread]: End processing [tietoolbox]: success
 [2024-05-05 10:18:30] INFO root fetch - main [MainThread]: Store serial: [23064096]
+[2024-05-05 10:20:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064096]
+[2024-05-05 10:20:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 10:20:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-sdk-remote
+[2024-05-05 10:20:38] INFO root fetch - processPackages [python-sdk-remote]: New version: [0.0.92] Old Version: [0.0.91]
+[2024-05-05 10:20:38] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/16/e1/dd47288c75bc1a68f05283e727d6994eea5b19d163cf24ef3a85ede5d539/python_sdk_remote-0.0.91.tar.gz
+[2024-05-05 10:20:39] INFO root fetch - processPackages [python-sdk-remote]: Downloading https://files.pythonhosted.org/packages/10/35/c481b89f4e194c1d74f6f7b8f10628380f49a09bca087f0a6c7ea59419f9/python_sdk_remote-0.0.92.tar.gz
+[2024-05-05 10:20:39] INFO root fetch - processPackages [python-sdk-remote]: executing diffoscope
+[2024-05-05 10:20:39] INFO root fetch - processPackages [python-sdk-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_sdk_remote-0.0.91.tar.gz tmp/python_sdk_remote-0.0.92.tar.gz --markdown 20240505/p/python-sdk-remote/0.0.91-0.0.92/README.md --exclude *.pyd
+[2024-05-05 10:20:39] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.91.tar.gz]
+[2024-05-05 10:20:39] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.92.tar.gz]
+[2024-05-05 10:20:39] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
+[2024-05-05 10:20:39] INFO root fetch - main [MainThread]: Store serial: [23064101]
