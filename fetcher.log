@@ -17005,3 +17005,69 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:02:20] INFO root fetch - processPackages [heaserver-trash-aws-s3]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_trash_aws_s3-1.1.1.tar.gz]
 [2024-05-05 23:02:20] INFO root fetch - main [MainThread]: End processing [heaserver-trash-aws-s3]: success
 [2024-05-05 23:02:20] INFO root fetch - main [MainThread]: Store serial: [23069050]
+[2024-05-05 23:04:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069050]
+[2024-05-05 23:04:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rfproto
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyams-content
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: artemis-hunter
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-trading212
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deep-river
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pydantic-aioredis
+[2024-05-05 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aind-metadata-mapper
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pydantic-aioredis]: New version: [1.3.0] Old Version: [1.2.3]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [artemis-hunter]: New version: [0.112] Old Version: [0.111]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [python-trading212]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pydantic-aioredis]: Downloading https://files.pythonhosted.org/packages/c7/8b/3a0f4af52d969967fd7cccbc67579eaf69faecdc6d6a4a76dcba2cf3a923/pydantic_aioredis-1.2.3.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [deep-river]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pyams-content]: New version: [1.99.3] Old Version: [1.99.2]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [artemis-hunter]: Downloading https://files.pythonhosted.org/packages/cc/c5/6a3c70e2eb320cbbbfbefef7b2a62c8855e3440794e84234d4f373c04ad9/artemis_hunter-0.111-py3-none-any.whl
+[2024-05-05 23:04:30] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/79/a7/12681ff6e955c06a1301d4a8138b5fafaed151a2a6f74ebe45709cbb824a/python_trading212-2.0.1.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [rfproto]: New version: [0.0.6] Old Version: [0.0.2]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [aind-metadata-mapper]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pyams-content]: Downloading https://files.pythonhosted.org/packages/9e/79/45d7a7642935f53c3fbf0390dba194068a44d99e97040841d81182646c0e/pyams_content-1.99.2.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [rfproto]: Downloading https://files.pythonhosted.org/packages/37/a5/1bc8a9965f2a6113a55c7e38fef08f6e59133c23c97b35229fedf2353f9f/rfproto-0.0.2.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [deep-river]: Downloading https://files.pythonhosted.org/packages/c8/ae/d912e9ff6ada5ad9101d7283105faa0d258075bfbc2211b3741e00102995/deep_river-0.2.5.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [aind-metadata-mapper]: Downloading https://files.pythonhosted.org/packages/d6/5a/a75fb40cefdebe326a4238c2db2b411530327e7f874e13d28bd7143fda43/aind_metadata_mapper-0.6.5.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pydantic-aioredis]: Downloading https://files.pythonhosted.org/packages/4f/24/ef64641f23fbf4bb8f11db7830e48859c1adfbd2828bddc5fdc2fb06af80/pydantic_aioredis-1.3.0.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [artemis-hunter]: Downloading https://files.pythonhosted.org/packages/2b/48/5f669b8b0beca5206fc7a37d1674c99fb5942646b6b58b19d604dbe963e3/artemis_hunter-0.112-py3-none-any.whl
+[2024-05-05 23:04:30] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/60/63/74bb3f006199eb534348a6ac7d4e835d02b3ea1038e56efb4cf28f8ee0cb/python_trading212-2.0.2.tar.gz
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pydantic-aioredis]: executing diffoscope
+[2024-05-05 23:04:30] INFO root fetch - processPackages [pydantic-aioredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_aioredis-1.2.3.tar.gz tmp/pydantic_aioredis-1.3.0.tar.gz --markdown 20240505/p/pydantic-aioredis/1.2.3-1.3.0/README.md --exclude *.pyd
+[2024-05-05 23:04:30] INFO root fetch - processPackages [artemis-hunter]: executing diffoscope
+[2024-05-05 23:04:30] INFO root fetch - processPackages [artemis-hunter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis_hunter-0.111-py3-none-any.whl.zip tmp/artemis_hunter-0.112-py3-none-any.whl.zip --markdown 20240505/a/artemis-hunter/0.111-0.112/README.md --exclude *.pyd
+[2024-05-05 23:04:31] INFO root fetch - processPackages [python-trading212]: executing diffoscope
+[2024-05-05 23:04:31] INFO root fetch - processPackages [python-trading212]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_trading212-2.0.1.tar.gz tmp/python_trading212-2.0.2.tar.gz --markdown 20240505/p/python-trading212/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-05 23:04:31] INFO root fetch - processPackages [rfproto]: Downloading https://files.pythonhosted.org/packages/97/1f/496158a1eabddb3cf5ad8bed82d4e55bc921176489faf3634da66ed89317/rfproto-0.0.6.tar.gz
+[2024-05-05 23:04:31] INFO root fetch - processPackages [deep-river]: Downloading https://files.pythonhosted.org/packages/93/27/219a4b2ebd16b5e8ddfb033ed6cee534e806a9d70e34976b75b8e84d53d4/deep_river-0.2.6.tar.gz
+[2024-05-05 23:04:31] INFO root fetch - processPackages [pyams-content]: Downloading https://files.pythonhosted.org/packages/fa/24/7b589b469b013730fadbffbab7a81709aca6f93f06a5370b8139ba678b30/pyams_content-1.99.3.tar.gz
+[2024-05-05 23:04:31] INFO root fetch - processPackages [rfproto]: executing diffoscope
+[2024-05-05 23:04:31] INFO root fetch - processPackages [rfproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rfproto-0.0.2.tar.gz tmp/rfproto-0.0.6.tar.gz --markdown 20240505/r/rfproto/0.0.2-0.0.6/README.md --exclude *.pyd
+[2024-05-05 23:04:31] INFO root fetch - processPackages [aind-metadata-mapper]: Downloading https://files.pythonhosted.org/packages/e6/3f/11e8407f07cdbba164c759ba95cab657319cf60c5bbb8596ad8ff34c7e7f/aind_metadata_mapper-0.7.0.tar.gz
+[2024-05-05 23:04:31] INFO root fetch - processPackages [pyams-content]: executing diffoscope
+[2024-05-05 23:04:31] INFO root fetch - processPackages [pyams-content]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_content-1.99.2.tar.gz tmp/pyams_content-1.99.3.tar.gz --markdown 20240505/p/pyams-content/1.99.2-1.99.3/README.md --exclude *.pyd
+[2024-05-05 23:04:31] INFO root fetch - processPackages [deep-river]: executing diffoscope
+[2024-05-05 23:04:31] INFO root fetch - processPackages [deep-river]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_river-0.2.5.tar.gz tmp/deep_river-0.2.6.tar.gz --markdown 20240505/d/deep-river/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-05 23:04:31] INFO root fetch - processPackages [aind-metadata-mapper]: executing diffoscope
+[2024-05-05 23:04:31] INFO root fetch - processPackages [aind-metadata-mapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_metadata_mapper-0.6.5.tar.gz tmp/aind_metadata_mapper-0.7.0.tar.gz --markdown 20240505/a/aind-metadata-mapper/0.6.5-0.7.0/README.md --exclude *.pyd
+[2024-05-05 23:04:31] INFO root fetch - processPackages [artemis-hunter]: Remove: archive file [/home/abi/fetcher/tmp/artemis_hunter-0.111-py3-none-any.whl.zip]
+[2024-05-05 23:04:31] INFO root fetch - processPackages [artemis-hunter]: Remove: archive file [/home/abi/fetcher/tmp/artemis_hunter-0.112-py3-none-any.whl.zip]
+[2024-05-05 23:04:31] INFO root fetch - main [MainThread]: End processing [artemis-hunter]: success
+[2024-05-05 23:04:31] INFO root fetch - processPackages [pydantic-aioredis]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_aioredis-1.2.3.tar.gz]
+[2024-05-05 23:04:31] INFO root fetch - processPackages [pydantic-aioredis]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_aioredis-1.3.0.tar.gz]
+[2024-05-05 23:04:31] INFO root fetch - main [MainThread]: End processing [pydantic-aioredis]: success
+[2024-05-05 23:04:31] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-2.0.1.tar.gz]
+[2024-05-05 23:04:31] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-2.0.2.tar.gz]
+[2024-05-05 23:04:31] INFO root fetch - main [MainThread]: End processing [python-trading212]: success
+[2024-05-05 23:04:31] INFO root fetch - processPackages [rfproto]: Remove: archive file [/home/abi/fetcher/tmp/rfproto-0.0.2.tar.gz]
+[2024-05-05 23:04:31] INFO root fetch - processPackages [rfproto]: Remove: archive file [/home/abi/fetcher/tmp/rfproto-0.0.6.tar.gz]
+[2024-05-05 23:04:31] INFO root fetch - main [MainThread]: End processing [rfproto]: success
+[2024-05-05 23:04:32] INFO root fetch - processPackages [deep-river]: Remove: archive file [/home/abi/fetcher/tmp/deep_river-0.2.5.tar.gz]
+[2024-05-05 23:04:32] INFO root fetch - processPackages [deep-river]: Remove: archive file [/home/abi/fetcher/tmp/deep_river-0.2.6.tar.gz]
+[2024-05-05 23:04:32] INFO root fetch - main [MainThread]: End processing [deep-river]: success
+[2024-05-05 23:04:32] INFO root fetch - processPackages [aind-metadata-mapper]: Remove: archive file [/home/abi/fetcher/tmp/aind_metadata_mapper-0.6.5.tar.gz]
+[2024-05-05 23:04:32] INFO root fetch - processPackages [aind-metadata-mapper]: Remove: archive file [/home/abi/fetcher/tmp/aind_metadata_mapper-0.7.0.tar.gz]
+[2024-05-05 23:04:32] INFO root fetch - main [MainThread]: End processing [aind-metadata-mapper]: success
+[2024-05-05 23:04:33] INFO root fetch - processPackages [pyams-content]: Remove: archive file [/home/abi/fetcher/tmp/pyams_content-1.99.2.tar.gz]
+[2024-05-05 23:04:33] INFO root fetch - processPackages [pyams-content]: Remove: archive file [/home/abi/fetcher/tmp/pyams_content-1.99.3.tar.gz]
+[2024-05-05 23:04:33] INFO root fetch - main [MainThread]: End processing [pyams-content]: success
+[2024-05-05 23:04:33] INFO root fetch - main [MainThread]: Store serial: [23069075]
