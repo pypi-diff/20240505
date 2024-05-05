@@ -3467,3 +3467,11 @@
 [2024-05-05 05:52:16] INFO root fetch - processPackages [pytest-ditto]: Remove: archive file [/home/abi/fetcher/tmp/pytest_ditto-0.0.2.tar.gz]
 [2024-05-05 05:52:16] INFO root fetch - main [MainThread]: End processing [pytest-ditto]: success
 [2024-05-05 05:52:16] INFO root fetch - main [MainThread]: Store serial: [23062986]
+[2024-05-05 05:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062986]
+[2024-05-05 05:54:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 05:54:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: juxtapose
+[2024-05-05 05:54:24] INFO root fetch - processPackages [juxtapose]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 05:54:25] INFO root fetch - processPackages [juxtapose]: Downloading https://files.pythonhosted.org/packages/61/ef/b8b96f6ca1edc65e2f9e7470c51e5294b5cbbabb55ca13a82f4456e37edc/juxtapose-0.0.8.tar.gz
+[2024-05-05 05:54:25] WARNING root fetch - processPackages [juxtapose]: Skipping package: exceeds size limit 19361597>=10485760
+[2024-05-05 05:54:25] INFO root fetch - main [MainThread]: End processing [juxtapose] error
+[2024-05-05 05:54:25] INFO root fetch - main [MainThread]: Store serial: [23062989]
