@@ -10041,3 +10041,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:17:50] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.99.tar.gz]
 [2024-05-05 15:17:50] INFO root fetch - main [MainThread]: End processing [pipez]: success
 [2024-05-05 15:17:50] INFO root fetch - main [MainThread]: Store serial: [23065854]
+[2024-05-05 15:19:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065854]
+[2024-05-05 15:19:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plutobook
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyCourrier
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datamodel-code-generator-michael2to3
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hugo
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ebdamame
+[2024-05-05 15:19:59] WARNING root fetch - processPackages [datamodel-code-generator-michael2to3]: Skipping, unable to determine old version
+[2024-05-05 15:19:59] INFO root fetch - main [MainThread]: End processing [datamodel-code-generator-michael2to3] error
+[2024-05-05 15:19:59] WARNING root fetch - processPackages [plutobook]: Skipping, unable to determine old version
+[2024-05-05 15:19:59] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-05 15:19:59] INFO root fetch - processPackages [PyCourrier]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ebdamame]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-05 15:19:59] INFO root fetch - processPackages [hugo]: New version: [0.125.6] Old Version: [0.125.5]
+[2024-05-05 15:19:59] INFO root fetch - processPackages [PyCourrier]: Downloading https://files.pythonhosted.org/packages/85/06/6739bfc19cf858c2d9da2a7fc1efb94dec027d3af198e630214b39a5171a/PyCourrier-0.1.6.tar.gz
+[2024-05-05 15:19:59] INFO root fetch - processPackages [ebdamame]: Downloading https://files.pythonhosted.org/packages/2e/52/907b2f669d890cee62dd5df54f8d6fae7bc13f4ca2d800ccdccd4c8c1af3/ebdamame-0.1.2.tar.gz
+[2024-05-05 15:19:59] INFO root fetch - processPackages [hugo]: Downloading https://files.pythonhosted.org/packages/fa/de/332645e44bcf2dbee440a80f14938b5c159d3e785449aee7e19d6fe0a11d/hugo-0.125.5.tar.gz
+[2024-05-05 15:20:00] INFO root fetch - processPackages [hugo]: Downloading https://files.pythonhosted.org/packages/86/8f/9c66a0554d1fd803763ba7e51cabba481d2c4c0a5c2441813c5a773d28ee/hugo-0.125.6.tar.gz
+[2024-05-05 15:20:00] INFO root fetch - processPackages [PyCourrier]: Downloading https://files.pythonhosted.org/packages/55/e8/02316408c8ec3fa812144e6e835b1f39cab5b66ad58919e4ed21ee498797/PyCourrier-0.1.7.tar.gz
+[2024-05-05 15:20:00] INFO root fetch - processPackages [ebdamame]: Downloading https://files.pythonhosted.org/packages/36/eb/fbbc12daddb53285b6b8ff3cbc79246152dfe2b2c8acd158a532113fac60/ebdamame-0.1.3.tar.gz
+[2024-05-05 15:20:00] INFO root fetch - processPackages [PyCourrier]: executing diffoscope
+[2024-05-05 15:20:00] INFO root fetch - processPackages [PyCourrier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCourrier-0.1.6.tar.gz tmp/PyCourrier-0.1.7.tar.gz --markdown 20240505/P/PyCourrier/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-05 15:20:00] INFO root fetch - processPackages [hugo]: executing diffoscope
+[2024-05-05 15:20:00] INFO root fetch - processPackages [hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugo-0.125.5.tar.gz tmp/hugo-0.125.6.tar.gz --markdown 20240505/h/hugo/0.125.5-0.125.6/README.md --exclude *.pyd
+[2024-05-05 15:20:00] INFO root fetch - processPackages [ebdamame]: executing diffoscope
+[2024-05-05 15:20:00] INFO root fetch - processPackages [ebdamame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebdamame-0.1.2.tar.gz tmp/ebdamame-0.1.3.tar.gz --markdown 20240505/e/ebdamame/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-05 15:20:00] INFO root fetch - processPackages [PyCourrier]: Remove: archive file [/home/abi/fetcher/tmp/PyCourrier-0.1.6.tar.gz]
+[2024-05-05 15:20:00] INFO root fetch - processPackages [PyCourrier]: Remove: archive file [/home/abi/fetcher/tmp/PyCourrier-0.1.7.tar.gz]
+[2024-05-05 15:20:00] INFO root fetch - main [MainThread]: End processing [PyCourrier]: success
+[2024-05-05 15:20:00] INFO root fetch - processPackages [hugo]: Remove: archive file [/home/abi/fetcher/tmp/hugo-0.125.5.tar.gz]
+[2024-05-05 15:20:00] INFO root fetch - processPackages [hugo]: Remove: archive file [/home/abi/fetcher/tmp/hugo-0.125.6.tar.gz]
+[2024-05-05 15:20:00] INFO root fetch - main [MainThread]: End processing [hugo]: success
+[2024-05-05 15:20:01] INFO root fetch - processPackages [ebdamame]: Remove: archive file [/home/abi/fetcher/tmp/ebdamame-0.1.2.tar.gz]
+[2024-05-05 15:20:01] INFO root fetch - processPackages [ebdamame]: Remove: archive file [/home/abi/fetcher/tmp/ebdamame-0.1.3.tar.gz]
+[2024-05-05 15:20:01] INFO root fetch - main [MainThread]: End processing [ebdamame]: success
+[2024-05-05 15:20:01] INFO root fetch - main [MainThread]: Store serial: [23065891]
