@@ -14027,3 +14027,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:38:04] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.4.1.tar.gz]
 [2024-05-05 19:38:04] INFO root fetch - main [MainThread]: End processing [maya-umbrella]: success
 [2024-05-05 19:38:04] INFO root fetch - main [MainThread]: Store serial: [23067651]
+[2024-05-05 19:40:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067651]
+[2024-05-05 19:40:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 19:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MePyTools
+[2024-05-05 19:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leads
+[2024-05-05 19:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: got-cli
+[2024-05-05 19:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hydra-ui
+[2024-05-05 19:40:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphinxcontrib-lightbox2
+[2024-05-05 19:40:13] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-05 19:40:13] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 19:40:13] INFO root fetch - processPackages [hydra-ui]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-05 19:40:13] WARNING root fetch - processPackages [MePyTools]: Skipping, unable to determine old version
+[2024-05-05 19:40:13] INFO root fetch - main [MainThread]: End processing [MePyTools] error
+[2024-05-05 19:40:13] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Downloading https://files.pythonhosted.org/packages/0c/99/fb53b568834aa5e0f4dfacd43313a8c35f2af350b699b58d0fe14bf5aaca/sphinxcontrib_lightbox2-0.1.1.tar.gz
+[2024-05-05 19:40:13] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-05 19:40:13] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-05 19:40:13] INFO root fetch - processPackages [hydra-ui]: Downloading https://files.pythonhosted.org/packages/fd/50/c390a56ed6f9358086d7292412afd433427644d60ef1cfd88c29f5dcd5c2/hydra-ui-1.0.0.tar.gz
+[2024-05-05 19:40:13] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-05-05 19:40:13] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-05 19:40:13] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Downloading https://files.pythonhosted.org/packages/34/af/5b03384ce52f24a18c7ac5358d96de368e86cf70b5297b591e2903b06b26/sphinxcontrib_lightbox2-0.2.0.tar.gz
+[2024-05-05 19:40:13] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-05 19:40:13] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240505/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 19:40:14] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: executing diffoscope
+[2024-05-05 19:40:14] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz tmp/sphinxcontrib_lightbox2-0.2.0.tar.gz --markdown 20240505/s/sphinxcontrib-lightbox2/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-05 19:40:14] INFO root fetch - processPackages [hydra-ui]: Downloading https://files.pythonhosted.org/packages/f7/b8/a98e8aad0d5955a3f3261cc2d15b3b304f7054446fd30752475947839939/hydra-ui-1.1.0.tar.gz
+[2024-05-05 19:40:14] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-05-05 19:40:14] INFO root fetch - processPackages [hydra-ui]: executing diffoscope
+[2024-05-05 19:40:14] INFO root fetch - processPackages [hydra-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydra-ui-1.0.0.tar.gz tmp/hydra-ui-1.1.0.tar.gz --markdown 20240505/h/hydra-ui/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-05 19:40:14] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-05-05 19:40:14] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240505/l/leads/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-05 19:40:14] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-05 19:40:14] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-05 19:40:14] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-05 19:40:14] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.1.1.tar.gz]
+[2024-05-05 19:40:14] INFO root fetch - processPackages [sphinxcontrib-lightbox2]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_lightbox2-0.2.0.tar.gz]
+[2024-05-05 19:40:14] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-lightbox2]: success
+[2024-05-05 19:40:14] INFO root fetch - processPackages [hydra-ui]: Remove: archive file [/home/abi/fetcher/tmp/hydra-ui-1.0.0.tar.gz]
+[2024-05-05 19:40:14] INFO root fetch - processPackages [hydra-ui]: Remove: archive file [/home/abi/fetcher/tmp/hydra-ui-1.1.0.tar.gz]
+[2024-05-05 19:40:14] INFO root fetch - main [MainThread]: End processing [hydra-ui]: success
+[2024-05-05 19:40:15] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-05-05 19:40:15] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-05-05 19:40:15] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-05-05 19:40:15] INFO root fetch - main [MainThread]: Store serial: [23067668]
