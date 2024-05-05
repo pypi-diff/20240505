@@ -3849,3 +3849,20 @@
 [2024-05-05 06:35:50] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
 [2024-05-05 06:35:50] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
 [2024-05-05 06:35:50] INFO root fetch - main [MainThread]: Store serial: [23063121]
+[2024-05-05 06:37:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063121]
+[2024-05-05 06:37:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 06:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SpeechRecognition
+[2024-05-05 06:37:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OZI
+[2024-05-05 06:37:58] INFO root fetch - processPackages [SpeechRecognition]: New version: [3.9.0] Old Version: [3.8.1]
+[2024-05-05 06:37:58] INFO root fetch - processPackages [OZI]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-05-05 06:37:59] INFO root fetch - processPackages [SpeechRecognition]: Downloading https://files.pythonhosted.org/packages/26/e1/7f5678cd94ec1234269d23756dbdaa4c8cfaed973412f88ae8adf7893a50/SpeechRecognition-3.8.1-py2.py3-none-any.whl
+[2024-05-05 06:37:59] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/3a/73/4934bb3300739b0f0debbdd3960aaf45bfafc0ebff9552814cc878c8c2ca/OZI-1.4.1.tar.gz
+[2024-05-05 06:37:59] WARNING root fetch - processPackages [SpeechRecognition]: Skipping package: exceeds size limit 32833456>=10485760
+[2024-05-05 06:37:59] INFO root fetch - main [MainThread]: End processing [SpeechRecognition] error
+[2024-05-05 06:37:59] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/cf/64/ca4babd7a706dc1c38e9075d806c1cc37fe93574189c4967440310727824/OZI-1.4.2.tar.gz
+[2024-05-05 06:37:59] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-05 06:37:59] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.4.1.tar.gz tmp/OZI-1.4.2.tar.gz --markdown 20240505/O/OZI/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-05-05 06:38:00] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.4.1.tar.gz]
+[2024-05-05 06:38:00] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.4.2.tar.gz]
+[2024-05-05 06:38:00] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-05 06:38:00] INFO root fetch - main [MainThread]: Store serial: [23063129]
