@@ -5478,3 +5478,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:28:35] INFO root fetch - processPackages [ccxt-unmerged]: Remove: archive file [/home/abi/fetcher/tmp/ccxt_unmerged-4.0.tar.gz]
 [2024-05-05 09:28:35] INFO root fetch - main [MainThread]: End processing [ccxt-unmerged]: success
 [2024-05-05 09:28:35] INFO root fetch - main [MainThread]: Store serial: [23063834]
+[2024-05-05 09:30:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063834]
+[2024-05-05 09:30:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dtPyAppFramework
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-surveyplus
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lumigo-tracer
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: morphdb-utils
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-l10n-ro-stock-account-date-wizard
+[2024-05-05 09:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-l10n-ro-stock
+[2024-05-05 09:30:43] INFO root fetch - processPackages [morphdb-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 09:30:43] WARNING root fetch - processPackages [django-surveyplus]: Skipping, unable to determine old version
+[2024-05-05 09:30:43] INFO root fetch - main [MainThread]: End processing [django-surveyplus] error
+[2024-05-05 09:30:43] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 09:30:43] INFO root fetch - processPackages [dtPyAppFramework]: New version: [1.2] Old Version: [1.1]
+[2024-05-05 09:30:43] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/cd/4f/c6949258d5647c0aa4d14e61014c6e3a7c9f08086b8ff176bee34576864d/morphdb_utils-0.1.8.tar.gz
+[2024-05-05 09:30:43] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 09:30:43] INFO root fetch - processPackages [dtPyAppFramework]: Downloading https://files.pythonhosted.org/packages/9c/95/9cf34928e4873c94d1aeba9136e1574b596c43fcf57d7a634ac17a6c285a/dtPyAppFramework-1.1.tar.gz
+[2024-05-05 09:30:43] INFO root fetch - processPackages [lumigo-tracer]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-05-05 09:30:43] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: New version: [17.0.1.2.0] Old Version: [16.0.1.1.0.1]
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: New version: [17.0.0.6.0] Old Version: [17.0.0.5.0]
+[2024-05-05 09:30:44] INFO root fetch - processPackages [morphdb-utils]: Downloading https://files.pythonhosted.org/packages/f4/69/729494d22abe49b72c25e4b1efa215d54cab59388bae925f40777fce21f3/morphdb_utils-0.1.9.tar.gz
+[2024-05-05 09:30:44] INFO root fetch - processPackages [dtPyAppFramework]: Downloading https://files.pythonhosted.org/packages/35/52/da3c46984b2d9ff98dfaf04303da78bd8aa4b493ea17c0a515c990119c64/dtpyappframework-1.2.tar.gz
+[2024-05-05 09:30:44] INFO root fetch - processPackages [lumigo-tracer]: Downloading https://files.pythonhosted.org/packages/dd/ef/fbba7a946946680f2f99ab0d2aa9d13aa14919c5e1cb645488afbb0767b8/lumigo_tracer-1.1.98-py3-none-any.whl
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: Downloading https://files.pythonhosted.org/packages/64/53/43e65c88aaf334caa24bcd13b18eab50edd383bdb54f145a4047d653a9d1/odoo_addon_l10n_ro_stock_account_date_wizard-16.0.1.1.0.1-py3-none-any.whl
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Downloading https://files.pythonhosted.org/packages/89/b6/4bf6a5f97acca4adbba130abb641451de425a217a378c4064e79d223bfbb/odoo_addon_l10n_ro_stock-17.0.0.5.0-py3-none-any.whl
+[2024-05-05 09:30:44] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 09:30:44] INFO root fetch - processPackages [morphdb-utils]: executing diffoscope
+[2024-05-05 09:30:44] INFO root fetch - processPackages [morphdb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphdb_utils-0.1.8.tar.gz tmp/morphdb_utils-0.1.9.tar.gz --markdown 20240505/m/morphdb-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 09:30:44] INFO root fetch - processPackages [dtPyAppFramework]: executing diffoscope
+[2024-05-05 09:30:44] INFO root fetch - processPackages [dtPyAppFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtPyAppFramework-1.1.tar.gz tmp/dtpyappframework-1.2.tar.gz --markdown 20240505/d/dtPyAppFramework/1.1-1.2/README.md --exclude *.pyd
+[2024-05-05 09:30:44] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 09:30:44] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Downloading https://files.pythonhosted.org/packages/22/3a/7a0334ecd49c05e5a309fc2e1c73ecc8adbb3ccac2cafebab099e7145f69/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl
+[2024-05-05 09:30:44] INFO root fetch - processPackages [lumigo-tracer]: Downloading https://files.pythonhosted.org/packages/45/61/9eb6225f0ca75858f699d8748b94dc6354527f49d9d9b609f70404bf5b44/lumigo_tracer-1.1.99-py3-none-any.whl
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: Downloading https://files.pythonhosted.org/packages/dd/7f/d8654050062f5a94dfede0d1d86c60c0f3cfdbdeb75073a6ed030bf49a60/odoo_addon_l10n_ro_stock_account_date_wizard-17.0.1.2.0-py3-none-any.whl
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: executing diffoscope
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock-17.0.0.5.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-ro-stock/17.0.0.5.0-17.0.0.6.0/README.md --exclude *.pyd
+[2024-05-05 09:30:44] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.1.8.tar.gz]
+[2024-05-05 09:30:44] INFO root fetch - processPackages [morphdb-utils]: Remove: archive file [/home/abi/fetcher/tmp/morphdb_utils-0.1.9.tar.gz]
+[2024-05-05 09:30:44] INFO root fetch - main [MainThread]: End processing [morphdb-utils]: success
+[2024-05-05 09:30:44] INFO root fetch - processPackages [lumigo-tracer]: executing diffoscope
+[2024-05-05 09:30:44] INFO root fetch - processPackages [lumigo-tracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumigo_tracer-1.1.98-py3-none-any.whl.zip tmp/lumigo_tracer-1.1.99-py3-none-any.whl.zip --markdown 20240505/l/lumigo-tracer/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: executing diffoscope
+[2024-05-05 09:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_account_date_wizard-16.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_account_date_wizard-17.0.1.2.0-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-ro-stock-account-date-wizard/16.0.1.1.0.1-17.0.1.2.0/README.md --exclude *.pyd
+[2024-05-05 09:30:45] INFO root fetch - processPackages [dtPyAppFramework]: Remove: archive file [/home/abi/fetcher/tmp/dtPyAppFramework-1.1.tar.gz]
+[2024-05-05 09:30:45] INFO root fetch - processPackages [dtPyAppFramework]: Remove: archive file [/home/abi/fetcher/tmp/dtpyappframework-1.2.tar.gz]
+[2024-05-05 09:30:45] INFO root fetch - main [MainThread]: End processing [dtPyAppFramework]: success
+[2024-05-05 09:30:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 09:30:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 09:30:45] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 09:30:45] INFO root fetch - processPackages [lumigo-tracer]: Remove: archive file [/home/abi/fetcher/tmp/lumigo_tracer-1.1.98-py3-none-any.whl.zip]
+[2024-05-05 09:30:45] INFO root fetch - processPackages [lumigo-tracer]: Remove: archive file [/home/abi/fetcher/tmp/lumigo_tracer-1.1.99-py3-none-any.whl.zip]
+[2024-05-05 09:30:45] INFO root fetch - main [MainThread]: End processing [lumigo-tracer]: success
+[2024-05-05 09:30:45] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_date_wizard-16.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-05-05 09:30:45] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date-wizard]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_date_wizard-17.0.1.2.0-py3-none-any.whl.zip]
+[2024-05-05 09:30:45] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-account-date-wizard]: success
+[2024-05-05 09:30:45] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock-17.0.0.5.0-py3-none-any.whl.zip]
+[2024-05-05 09:30:45] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl.zip]
+[2024-05-05 09:30:45] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock]: success
+[2024-05-05 09:30:45] INFO root fetch - main [MainThread]: Store serial: [23063850]
