@@ -3677,3 +3677,24 @@
 [2024-05-05 06:12:14] INFO root fetch - processPackages [ngwidgets]: Remove: archive file [/home/abi/fetcher/tmp/ngwidgets-0.9.3.tar.gz]
 [2024-05-05 06:12:14] INFO root fetch - main [MainThread]: End processing [ngwidgets]: success
 [2024-05-05 06:12:14] INFO root fetch - main [MainThread]: Store serial: [23063049]
+[2024-05-05 06:14:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063049]
+[2024-05-05 06:14:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 06:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiconnects
+[2024-05-05 06:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: delaunay-triangulation-and-its-dual-2d
+[2024-05-05 06:14:22] INFO root fetch - processPackages [multiconnects]: New version: [2.34.9] Old Version: [2.34.8]
+[2024-05-05 06:14:22] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 06:14:23] INFO root fetch - processPackages [multiconnects]: Downloading https://files.pythonhosted.org/packages/ea/68/69ab32d5de939c5c369becb16ab181b05f4fbb61d809af9d6a14036fce73/multiconnects-2.34.8.tar.gz
+[2024-05-05 06:14:23] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Downloading https://files.pythonhosted.org/packages/6d/53/a062a9cfe417397de310ef9bfd610aec656b1da61b30cf782b5a54cedfce/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz
+[2024-05-05 06:14:23] INFO root fetch - processPackages [multiconnects]: Downloading https://files.pythonhosted.org/packages/37/82/ba23e0ae6b83e6282c5646fdd704d0f8570c9a13af554c21b57a6e598708/multiconnects-2.34.9.tar.gz
+[2024-05-05 06:14:23] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Downloading https://files.pythonhosted.org/packages/30/d8/6889de672a8743975a15985273d18fd1ce6b8a2539a91d364a3aac02fa9a/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz
+[2024-05-05 06:14:23] INFO root fetch - processPackages [multiconnects]: executing diffoscope
+[2024-05-05 06:14:23] INFO root fetch - processPackages [multiconnects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiconnects-2.34.8.tar.gz tmp/multiconnects-2.34.9.tar.gz --markdown 20240505/m/multiconnects/2.34.8-2.34.9/README.md --exclude *.pyd
+[2024-05-05 06:14:23] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: executing diffoscope
+[2024-05-05 06:14:23] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz tmp/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz --markdown 20240505/d/delaunay-triangulation-and-its-dual-2d/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 06:14:24] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Remove: archive file [/home/abi/fetcher/tmp/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz]
+[2024-05-05 06:14:24] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Remove: archive file [/home/abi/fetcher/tmp/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz]
+[2024-05-05 06:14:24] INFO root fetch - main [MainThread]: End processing [delaunay-triangulation-and-its-dual-2d]: success
+[2024-05-05 06:14:24] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.8.tar.gz]
+[2024-05-05 06:14:24] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.9.tar.gz]
+[2024-05-05 06:14:24] INFO root fetch - main [MainThread]: End processing [multiconnects]: success
+[2024-05-05 06:14:24] INFO root fetch - main [MainThread]: Store serial: [23063055]
