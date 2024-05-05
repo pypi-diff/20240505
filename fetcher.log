@@ -4140,3 +4140,24 @@
 [2024-05-05 07:21:17] INFO root fetch - processPackages [enconnect]: Remove: archive file [/home/abi/fetcher/tmp/enconnect-0.4.0.tar.gz]
 [2024-05-05 07:21:17] INFO root fetch - main [MainThread]: End processing [enconnect]: success
 [2024-05-05 07:21:17] INFO root fetch - main [MainThread]: Store serial: [23063256]
+[2024-05-05 07:23:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063256]
+[2024-05-05 07:23:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 07:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FFEM
+[2024-05-05 07:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zxkane.cdk-construct-simple-nat
+[2024-05-05 07:23:26] INFO root fetch - processPackages [FFEM]: New version: [0.4.1] Old Version: [0.3.2]
+[2024-05-05 07:23:26] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-05-05 07:23:26] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/b1/38/5968557b2505831d3419ab9d38b84cb77e0a77d87e10da12774a98a0fb2a/FFEM-0.3.2.tar.gz
+[2024-05-05 07:23:26] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: Downloading https://files.pythonhosted.org/packages/8e/42/0a609d15782dbbbc9ed11adae4b6947cb95d90050b2993420f854023f40d/zxkane.cdk-construct-simple-nat-0.2.98.tar.gz
+[2024-05-05 07:23:26] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/52/99/e41a3b2923347de23fe04dae19c17191bbab92c4f41d0b421b459e964a08/FFEM-0.4.1.tar.gz
+[2024-05-05 07:23:26] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: Downloading https://files.pythonhosted.org/packages/b9/f8/6046aa2afc88718422d134f2f5818c383b5e88aa849c8a4d74a3c1bf370e/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz
+[2024-05-05 07:23:26] INFO root fetch - processPackages [FFEM]: executing diffoscope
+[2024-05-05 07:23:26] INFO root fetch - processPackages [FFEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFEM-0.3.2.tar.gz tmp/FFEM-0.4.1.tar.gz --markdown 20240505/F/FFEM/0.3.2-0.4.1/README.md --exclude *.pyd
+[2024-05-05 07:23:26] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: executing diffoscope
+[2024-05-05 07:23:26] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zxkane.cdk-construct-simple-nat-0.2.98.tar.gz tmp/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz --markdown 20240505/z/zxkane.cdk-construct-simple-nat/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-05-05 07:23:27] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.3.2.tar.gz]
+[2024-05-05 07:23:27] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.4.1.tar.gz]
+[2024-05-05 07:23:27] INFO root fetch - main [MainThread]: End processing [FFEM]: success
+[2024-05-05 07:23:27] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: Remove: archive file [/home/abi/fetcher/tmp/zxkane.cdk-construct-simple-nat-0.2.98.tar.gz]
+[2024-05-05 07:23:27] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: Remove: archive file [/home/abi/fetcher/tmp/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz]
+[2024-05-05 07:23:27] INFO root fetch - main [MainThread]: End processing [zxkane.cdk-construct-simple-nat]: success
+[2024-05-05 07:23:27] INFO root fetch - main [MainThread]: Store serial: [23063262]
