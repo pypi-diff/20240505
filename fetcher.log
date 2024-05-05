@@ -1259,3 +1259,84 @@
 [2024-05-05 02:14:11] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl.zip]
 [2024-05-05 02:14:11] INFO root fetch - main [MainThread]: End processing [hypersync]: success
 [2024-05-05 02:14:11] INFO root fetch - main [MainThread]: Store serial: [23062004]
+[2024-05-05 02:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062004]
+[2024-05-05 02:16:19] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypersync
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-events-notify
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytorch-ignite
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-common
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mimllearning
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: agentql
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-skylight
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyaarlo
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: noodla
+[2024-05-05 02:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pizzaria
+[2024-05-05 02:16:19] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.6.0.dev20240504] Old Version: [0.6.0.dev20240503]
+[2024-05-05 02:16:19] INFO root fetch - processPackages [hypersync]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-05 02:16:19] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-05-05 02:16:19] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-05 02:16:19] INFO root fetch - processPackages [agentql]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-05 02:16:19] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-05 02:16:19] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/db/27/4cfdb72f7de5c77ed105b87b00be1a079da871884e593a4e1fda32b27062/pytorch-ignite-0.6.0.dev20240503.tar.gz
+[2024-05-05 02:16:19] INFO root fetch - processPackages [mimllearning]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 02:16:19] WARNING root fetch - processPackages [noodla]: Skipping, unable to determine old version
+[2024-05-05 02:16:19] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-05 02:16:19] INFO root fetch - main [MainThread]: End processing [noodla] error
+[2024-05-05 02:16:19] INFO root fetch - processPackages [pyaarlo]: New version: [0.8.0b9] Old Version: [0.8.0b8]
+[2024-05-05 02:16:19] WARNING root fetch - processPackages [pizzaria]: Skipping, unable to determine old version
+[2024-05-05 02:16:19] INFO root fetch - main [MainThread]: End processing [pizzaria] error
+[2024-05-05 02:16:19] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/86/f2/01b58f6183b48ce1105016a7f5045925a49464b8c20408459bd101fe5f25/cdk-skylight-1.1.98.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [hypersync]: Downloading https://files.pythonhosted.org/packages/70/50/fe310681332ec77e8e103a538ab65ae3dd5e0d19cc0cf794d120441fa4c8/hypersync-0.6.1.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/13/b9/8bb20d442048ff0f02ace28fa1714fba7126b12be0fd8f2a9cb25c223e06/mimllearning-0.2.7.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [agentql]: Downloading https://files.pythonhosted.org/packages/09/84/ad77e22dd34d1d5e993f2fb91e7d28d544e0e7fe22d520669969be72285a/agentql-0.4.2.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pyaarlo]: Downloading https://files.pythonhosted.org/packages/ad/f8/0078c87421b7a3bf4958cb497033cca473ed2a1bf197ce6c3f2da6ac0675/pyaarlo-0.8.0b8.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/59/49/3e035cb98d5f97f79c174e211129a2dbe596df70c5df50ac701242fabea2/cdk-skylight-1.1.99.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [hypersync]: Downloading https://files.pythonhosted.org/packages/a3/fb/f3ab0d13ddd7ad3a48474856a7992e9e1aba760a09a3eec3e041b3d22907/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/07/3c/7a5798882f75f7eea1f32e6765060a343b8d72c42edca7305d8510a0a627/pytorch-ignite-0.6.0.dev20240504.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240505/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20240505/c/cdk-skylight/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/36/1c/993a41e739f8874ea307c16f8f57c4e8d6f00573d4939419a1d160b6d424/mimllearning-0.2.8.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.6.0.dev20240503.tar.gz tmp/pytorch-ignite-0.6.0.dev20240504.tar.gz --markdown 20240505/p/pytorch-ignite/0.6.0.dev20240503-0.6.0.dev20240504/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [agentql]: Downloading https://files.pythonhosted.org/packages/91/61/a0c836eb8df4eae1792cae9163e9b02044cf1a571e29c46fc54633fb227c/agentql-0.4.3.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pyaarlo]: Downloading https://files.pythonhosted.org/packages/ac/5c/af5555a3bb1fcdde057bcaec37241b24fa59b79aaa5f5e868a05dd18f476/pyaarlo-0.8.0b9.tar.gz
+[2024-05-05 02:16:20] INFO root fetch - processPackages [hypersync]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [hypersync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypersync-0.6.1.tar.gz tmp/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240505/h/hypersync/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.7.tar.gz tmp/mimllearning-0.2.8.tar.gz --markdown 20240505/m/mimllearning/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [agentql]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [agentql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentql-0.4.2.tar.gz tmp/agentql-0.4.3.tar.gz --markdown 20240505/a/agentql/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pyaarlo]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [pyaarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaarlo-0.8.0b8.tar.gz tmp/pyaarlo-0.8.0b9.tar.gz --markdown 20240505/p/pyaarlo/0.8.0b8-0.8.0b9/README.md --exclude *.pyd
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-05 02:16:20] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240505/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-05 02:16:21] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.98.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.99.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240503.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240504.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [agentql]: Remove: archive file [/home/abi/fetcher/tmp/agentql-0.4.2.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [agentql]: Remove: archive file [/home/abi/fetcher/tmp/agentql-0.4.3.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [agentql]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.6.1.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [hypersync]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b8.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [pyaarlo]: Remove: archive file [/home/abi/fetcher/tmp/pyaarlo-0.8.0b9.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [pyaarlo]: success
+[2024-05-05 02:16:21] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.7.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.8.tar.gz]
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-05 02:16:21] INFO root fetch - main [MainThread]: Store serial: [23062046]
