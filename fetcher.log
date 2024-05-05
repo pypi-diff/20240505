@@ -10222,3 +10222,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:30:55] INFO root fetch - processPackages [django-richmin]: Remove: archive file [/home/abi/fetcher/tmp/django-richmin-0.1.9.tar.gz]
 [2024-05-05 15:30:55] INFO root fetch - main [MainThread]: End processing [django-richmin]: success
 [2024-05-05 15:30:55] INFO root fetch - main [MainThread]: Store serial: [23065964]
+[2024-05-05 15:32:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065964]
+[2024-05-05 15:33:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 15:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-allauth-themes
+[2024-05-05 15:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hdsr-pygithub
+[2024-05-05 15:33:04] WARNING root fetch - processPackages [django-allauth-themes]: Skipping, unable to determine old version
+[2024-05-05 15:33:04] INFO root fetch - main [MainThread]: End processing [django-allauth-themes] error
+[2024-05-05 15:33:04] INFO root fetch - processPackages [hdsr-pygithub]: New version: [1.9] Old Version: [1.8]
+[2024-05-05 15:33:04] INFO root fetch - processPackages [hdsr-pygithub]: Downloading https://files.pythonhosted.org/packages/41/f9/141e6b650cc5d419f4d1b0a37b76c17fc249842093c99e830ffe39515b3e/hdsr_pygithub-1.8.tar.gz
+[2024-05-05 15:33:04] INFO root fetch - processPackages [hdsr-pygithub]: Downloading https://files.pythonhosted.org/packages/5d/42/aaeb22fc67e6d652872597b97abfc7cca20a0bf555240cce92c5858309f2/hdsr_pygithub-1.9.tar.gz
+[2024-05-05 15:33:04] INFO root fetch - processPackages [hdsr-pygithub]: executing diffoscope
+[2024-05-05 15:33:04] INFO root fetch - processPackages [hdsr-pygithub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdsr_pygithub-1.8.tar.gz tmp/hdsr_pygithub-1.9.tar.gz --markdown 20240505/h/hdsr-pygithub/1.8-1.9/README.md --exclude *.pyd
+[2024-05-05 15:33:05] INFO root fetch - processPackages [hdsr-pygithub]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_pygithub-1.8.tar.gz]
+[2024-05-05 15:33:05] INFO root fetch - processPackages [hdsr-pygithub]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_pygithub-1.9.tar.gz]
+[2024-05-05 15:33:05] INFO root fetch - main [MainThread]: End processing [hdsr-pygithub]: success
+[2024-05-05 15:33:05] INFO root fetch - main [MainThread]: Store serial: [23065971]
