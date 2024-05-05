@@ -9830,3 +9830,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:03:31] INFO root fetch - processPackages [setuptools-protobuf]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-protobuf-0.1.9.tar.gz]
 [2024-05-05 15:03:31] INFO root fetch - main [MainThread]: End processing [setuptools-protobuf]: success
 [2024-05-05 15:03:31] INFO root fetch - main [MainThread]: Store serial: [23065742]
+[2024-05-05 15:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065742]
+[2024-05-05 15:05:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 15:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dalle3-gen-save
+[2024-05-05 15:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exudyn
+[2024-05-05 15:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: histcite-python
+[2024-05-05 15:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dalle3-gen-save
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: New version: [4.5.53] Old Version: [4.5.52]
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: New version: [4.5.53] Old Version: [4.5.52]
+[2024-05-05 15:05:40] INFO root fetch - processPackages [histcite-python]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/8f/59/c18bb321f1824ad5b398d8cb60c85e650871d4ca742df418b0774b0219d2/dalle3_gen_save-4.5.52.tar.gz
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/8f/59/c18bb321f1824ad5b398d8cb60c85e650871d4ca742df418b0774b0219d2/dalle3_gen_save-4.5.52.tar.gz
+[2024-05-05 15:05:40] INFO root fetch - processPackages [histcite-python]: Downloading https://files.pythonhosted.org/packages/c7/c1/324ebc3c50f67a2e386c7179d34b2b483c31030b7b78d40a61c1fbf9ec4b/histcite-python-1.1.0.tar.gz
+[2024-05-05 15:05:40] INFO root fetch - processPackages [exudyn]: New version: [1.8.28.dev1] Old Version: [1.8.0]
+[2024-05-05 15:05:40] INFO root fetch - processPackages [histcite-python]: Downloading https://files.pythonhosted.org/packages/e7/30/e012870079923d8d7999e9142e7416536816e6a405c0a0b5904e2e2f136c/histcite_python-2.0.0.tar.gz
+[2024-05-05 15:05:40] INFO root fetch - processPackages [exudyn]: Downloading https://files.pythonhosted.org/packages/e8/9e/5f9ae77d863ad2508a1f500889b0f172b15452b94845cf55f8f0e817fb29/exudyn-1.8.0-cp39-cp39-win_amd64.whl
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/ef/29/d0f68d02400c55b139f171a3a6d743fe28e1350dd3f30b6083f0f793a077/dalle3_gen_save-4.5.53.tar.gz
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/ef/29/d0f68d02400c55b139f171a3a6d743fe28e1350dd3f30b6083f0f793a077/dalle3_gen_save-4.5.53.tar.gz
+[2024-05-05 15:05:40] INFO root fetch - processPackages [histcite-python]: executing diffoscope
+[2024-05-05 15:05:40] INFO root fetch - processPackages [histcite-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/histcite-python-1.1.0.tar.gz tmp/histcite_python-2.0.0.tar.gz --markdown 20240505/h/histcite-python/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: executing diffoscope
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: executing diffoscope
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalle3_gen_save-4.5.52.tar.gz tmp/dalle3_gen_save-4.5.53.tar.gz --markdown 20240505/d/dalle3-gen-save/4.5.52-4.5.53/README.md --exclude *.pyd
+[2024-05-05 15:05:40] INFO root fetch - processPackages [dalle3-gen-save]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalle3_gen_save-4.5.52.tar.gz tmp/dalle3_gen_save-4.5.53.tar.gz --markdown 20240505/d/dalle3-gen-save/4.5.52-4.5.53/README.md --exclude *.pyd
+[2024-05-05 15:05:41] INFO root fetch - processPackages [dalle3-gen-save]: Remove: archive file [/home/abi/fetcher/tmp/dalle3_gen_save-4.5.52.tar.gz]
+[2024-05-05 15:05:41] INFO root fetch - processPackages [dalle3-gen-save]: Remove: archive file [/home/abi/fetcher/tmp/dalle3_gen_save-4.5.53.tar.gz]
+[2024-05-05 15:05:41] INFO root fetch - main [MainThread]: End processing [dalle3-gen-save]: success
+[2024-05-05 15:05:41] INFO root fetch - processPackages [histcite-python]: Remove: archive file [/home/abi/fetcher/tmp/histcite-python-1.1.0.tar.gz]
+[2024-05-05 15:05:41] INFO root fetch - processPackages [histcite-python]: Remove: archive file [/home/abi/fetcher/tmp/histcite_python-2.0.0.tar.gz]
+[2024-05-05 15:05:41] INFO root fetch - main [MainThread]: End processing [histcite-python]: success
+[2024-05-05 15:05:41] INFO root fetch - main [MainThread]: End processing [dalle3-gen-save]: success
+[2024-05-05 15:05:41] INFO root fetch - processPackages [exudyn]: Downloading https://files.pythonhosted.org/packages/92/17/32ab2eeb687a96782dc123f4790abc6ea006deffefeb3b83e222251a82ce/exudyn-1.8.28.dev1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 15:05:43] INFO root fetch - processPackages [exudyn]: executing diffoscope
+[2024-05-05 15:05:43] INFO root fetch - processPackages [exudyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exudyn-1.8.0-cp39-cp39-win_amd64.whl.zip tmp/exudyn-1.8.28.dev1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/e/exudyn/1.8.0-1.8.28.dev1/README.md --exclude *.pyd
+[2024-05-05 15:05:45] INFO root fetch - processPackages [exudyn]: Remove: archive file [/home/abi/fetcher/tmp/exudyn-1.8.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 15:05:45] INFO root fetch - processPackages [exudyn]: Remove: archive file [/home/abi/fetcher/tmp/exudyn-1.8.28.dev1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 15:05:45] INFO root fetch - main [MainThread]: End processing [exudyn]: success
+[2024-05-05 15:05:45] INFO root fetch - main [MainThread]: Store serial: [23065765]
