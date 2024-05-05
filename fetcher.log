@@ -8510,3 +8510,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:42:16] INFO root fetch - processPackages [fredapi]: Remove: archive file [/home/abi/fetcher/tmp/fredapi-0.5.2.tar.gz]
 [2024-05-05 13:42:16] INFO root fetch - main [MainThread]: End processing [fredapi]: success
 [2024-05-05 13:42:16] INFO root fetch - main [MainThread]: Store serial: [23065083]
+[2024-05-05 13:44:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065083]
+[2024-05-05 13:44:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 13:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argrelay
+[2024-05-05 13:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gene-trajectory
+[2024-05-05 13:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-ts
+[2024-05-05 13:44:26] INFO root fetch - processPackages [argrelay]: New version: [0.7.0.dev0] Old Version: [0.6.9]
+[2024-05-05 13:44:26] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/9f/b9/c98fecee4bc15a91526ef7afb17fbc6699846017179c9d846a2e0fa58f93/argrelay-0.6.9.tar.gz
+[2024-05-05 13:44:26] INFO root fetch - processPackages [gene-trajectory]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 13:44:26] INFO root fetch - processPackages [auto-ts]: New version: [0.0.91] Old Version: [0.0.90]
+[2024-05-05 13:44:27] INFO root fetch - processPackages [gene-trajectory]: Downloading https://files.pythonhosted.org/packages/00/c7/b4d5d96e6d3b85508781301f844ed6d0172cf61de285012f347d17278e4d/gene_trajectory-1.0.0.tar.gz
+[2024-05-05 13:44:27] INFO root fetch - processPackages [auto-ts]: Downloading https://files.pythonhosted.org/packages/e7/4e/30f9ea4fe7e8fbdf387fa1efa7dc45e1bec98390084cbd17f479503e813f/auto_ts-0.0.90.tar.gz
+[2024-05-05 13:44:27] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/62/ba/d19e694150761e14a1210c7b2e28cdb20b3b5a28dad9febb09354c21f2c9/argrelay-0.7.0.dev0.tar.gz
+[2024-05-05 13:44:27] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-05 13:44:27] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.6.9.tar.gz tmp/argrelay-0.7.0.dev0.tar.gz --markdown 20240505/a/argrelay/0.6.9-0.7.0.dev0/README.md --exclude *.pyd
+[2024-05-05 13:44:27] INFO root fetch - processPackages [gene-trajectory]: Downloading https://files.pythonhosted.org/packages/f5/80/3749c08c801fd547ad8ecba93c662c65a3eca4b9cadf17cbe49ec6e950da/gene_trajectory-1.0.1.tar.gz
+[2024-05-05 13:44:27] INFO root fetch - processPackages [auto-ts]: Downloading https://files.pythonhosted.org/packages/26/98/cf049666cdf6d0bf00301fc955acf15ac6a3bc9a1f501b31c6bd992a2aa6/auto_ts-0.0.91.tar.gz
+[2024-05-05 13:44:27] INFO root fetch - processPackages [gene-trajectory]: executing diffoscope
+[2024-05-05 13:44:27] INFO root fetch - processPackages [gene-trajectory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gene_trajectory-1.0.0.tar.gz tmp/gene_trajectory-1.0.1.tar.gz --markdown 20240505/g/gene-trajectory/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 13:44:27] INFO root fetch - processPackages [auto-ts]: executing diffoscope
+[2024-05-05 13:44:27] INFO root fetch - processPackages [auto-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_ts-0.0.90.tar.gz tmp/auto_ts-0.0.91.tar.gz --markdown 20240505/a/auto-ts/0.0.90-0.0.91/README.md --exclude *.pyd
+[2024-05-05 13:44:28] INFO root fetch - processPackages [gene-trajectory]: Remove: archive file [/home/abi/fetcher/tmp/gene_trajectory-1.0.0.tar.gz]
+[2024-05-05 13:44:28] INFO root fetch - processPackages [gene-trajectory]: Remove: archive file [/home/abi/fetcher/tmp/gene_trajectory-1.0.1.tar.gz]
+[2024-05-05 13:44:28] INFO root fetch - main [MainThread]: End processing [gene-trajectory]: success
+[2024-05-05 13:44:28] INFO root fetch - processPackages [auto-ts]: Remove: archive file [/home/abi/fetcher/tmp/auto_ts-0.0.90.tar.gz]
+[2024-05-05 13:44:28] INFO root fetch - processPackages [auto-ts]: Remove: archive file [/home/abi/fetcher/tmp/auto_ts-0.0.91.tar.gz]
+[2024-05-05 13:44:28] INFO root fetch - main [MainThread]: End processing [auto-ts]: success
+[2024-05-05 13:44:29] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.9.tar.gz]
+[2024-05-05 13:44:29] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.0.dev0.tar.gz]
+[2024-05-05 13:44:29] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-05 13:44:29] INFO root fetch - main [MainThread]: Store serial: [23065091]
