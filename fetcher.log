@@ -7350,3 +7350,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:01:11] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
 [2024-05-05 12:01:11] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
 [2024-05-05 12:01:11] INFO root fetch - main [MainThread]: Store serial: [23064627]
+[2024-05-05 12:03:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064627]
+[2024-05-05 12:03:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 12:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FasterAPI
+[2024-05-05 12:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-pandas
+[2024-05-05 12:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: potatoscript
+[2024-05-05 12:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ddeutil-io
+[2024-05-05 12:03:20] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 12:03:20] INFO root fetch - processPackages [FasterAPI]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-05 12:03:20] WARNING root fetch - processPackages [potatoscript]: Skipping, unable to determine old version
+[2024-05-05 12:03:20] INFO root fetch - main [MainThread]: End processing [potatoscript] error
+[2024-05-05 12:03:20] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 12:03:20] INFO root fetch - processPackages [ddeutil-io]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-05-05 12:03:20] INFO root fetch - processPackages [FasterAPI]: Downloading https://files.pythonhosted.org/packages/9f/07/db6b0d893be309ec1a97210cad58ef3b7f7e617d64fc3f4758d5e8ed8444/fasterapi-1.0.1.tar.gz
+[2024-05-05 12:03:20] INFO root fetch - processPackages [ddeutil-io]: Downloading https://files.pythonhosted.org/packages/0d/b0/ad08202cf7fc12a8cef4578412eab33e46bdac3273cac9f6e3240ec6ab1a/ddeutil-io-0.0.3.tar.gz
+[2024-05-05 12:03:20] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 12:03:21] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 12:03:21] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 12:03:21] INFO root fetch - processPackages [FasterAPI]: Downloading https://files.pythonhosted.org/packages/73/16/37b4ca4aa74d7d03c56b4ae0ac928cead3b893c8db1842c933190f994eea/fasterapi-1.0.2.tar.gz
+[2024-05-05 12:03:21] INFO root fetch - processPackages [ddeutil-io]: Downloading https://files.pythonhosted.org/packages/26/87/cba0eb748c3e0838ace508d32413e53c2f6cb76a8f18e85c542953f554c8/ddeutil_io-0.1.0.tar.gz
+[2024-05-05 12:03:21] INFO root fetch - processPackages [FasterAPI]: executing diffoscope
+[2024-05-05 12:03:21] INFO root fetch - processPackages [FasterAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fasterapi-1.0.1.tar.gz tmp/fasterapi-1.0.2.tar.gz --markdown 20240505/F/FasterAPI/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-05 12:03:21] INFO root fetch - processPackages [ddeutil-io]: executing diffoscope
+[2024-05-05 12:03:21] INFO root fetch - processPackages [ddeutil-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddeutil-io-0.0.3.tar.gz tmp/ddeutil_io-0.1.0.tar.gz --markdown 20240505/d/ddeutil-io/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-05-05 12:03:21] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 12:03:21] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 12:03:21] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 12:03:21] INFO root fetch - processPackages [FasterAPI]: Remove: archive file [/home/abi/fetcher/tmp/fasterapi-1.0.1.tar.gz]
+[2024-05-05 12:03:21] INFO root fetch - processPackages [FasterAPI]: Remove: archive file [/home/abi/fetcher/tmp/fasterapi-1.0.2.tar.gz]
+[2024-05-05 12:03:21] INFO root fetch - main [MainThread]: End processing [FasterAPI]: success
+[2024-05-05 12:03:21] INFO root fetch - processPackages [ddeutil-io]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil-io-0.0.3.tar.gz]
+[2024-05-05 12:03:21] INFO root fetch - processPackages [ddeutil-io]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil_io-0.1.0.tar.gz]
+[2024-05-05 12:03:21] INFO root fetch - main [MainThread]: End processing [ddeutil-io]: success
+[2024-05-05 12:03:21] INFO root fetch - main [MainThread]: Store serial: [23064641]
