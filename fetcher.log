@@ -11386,3 +11386,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:52:41] INFO root fetch - processPackages [datacontract-cli]: Remove: archive file [/home/abi/fetcher/tmp/datacontract_cli-0.9.9.tar.gz]
 [2024-05-05 16:52:41] INFO root fetch - main [MainThread]: End processing [datacontract-cli]: success
 [2024-05-05 16:52:41] INFO root fetch - main [MainThread]: Store serial: [23066565]
+[2024-05-05 16:54:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066565]
+[2024-05-05 16:54:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KUtil-jakubaugustyn
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: horde-engine
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: miniagents
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unitxt
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yeref
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lino-react
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SimpleWorkTime
+[2024-05-05 16:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yeref
+[2024-05-05 16:54:50] INFO root fetch - processPackages [KUtil-jakubaugustyn]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 16:54:50] INFO root fetch - processPackages [unitxt]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-05 16:54:50] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 16:54:50] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 16:54:50] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Downloading https://files.pythonhosted.org/packages/12/7c/13ac013f08e7b33caded32eb8a2a0d160909f3c528ab5f2acdbb0ad1543b/kutil_jakubaugustyn-0.0.7.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [horde-engine]: New version: [2.9.2] Old Version: [2.8.2]
+[2024-05-05 16:54:50] INFO root fetch - processPackages [miniagents]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-05 16:54:50] ERROR root fetch - processPackages [SimpleWorkTime]: Unable to get metadata: No such project 'SimpleWorkTime'
+[2024-05-05 16:54:50] INFO root fetch - main [MainThread]: End processing [SimpleWorkTime] error
+[2024-05-05 16:54:50] INFO root fetch - processPackages [lino-react]: New version: [24.5.0] Old Version: [24.4.1]
+[2024-05-05 16:54:50] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [unitxt]: Downloading https://files.pythonhosted.org/packages/2a/65/c423c9142c37ca5e6c04b07856aa4403cc8e7cd1ac082986c349bbba8d11/unitxt-1.7.8.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [horde-engine]: Downloading https://files.pythonhosted.org/packages/7c/33/441563cc2f287f63993b459dc10f98b5d0b4a9df8e4a9f561ceb6ed64f32/horde_engine-2.8.2.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [miniagents]: Downloading https://files.pythonhosted.org/packages/db/ec/b64f5e8ae925df8bbe1b19886f4e4dee2d158196e4be03dcf2def3ebd4a4/miniagents-0.0.7.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Downloading https://files.pythonhosted.org/packages/0e/35/a6ffad4ca6dbdd82d752a99c32afb01393c346a6e419672bc25b35d236d7/KUtil_jakubaugustyn-0.0.9-py3-none-any.whl
+[2024-05-05 16:54:50] INFO root fetch - processPackages [lino-react]: Downloading https://files.pythonhosted.org/packages/eb/6e/5c45be9eea13f93c0be9506b9fdd2f58c19037e8c75ab02085f1136df11f/lino_react-24.4.1.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [unitxt]: Downloading https://files.pythonhosted.org/packages/2c/74/aeb29b7ea4c2c5164d7ad2db78380dc0dafff3fb110e55f40990b7dfeb5f/unitxt-1.7.9.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 16:54:50] INFO root fetch - processPackages [KUtil-jakubaugustyn]: executing diffoscope
+[2024-05-05 16:54:50] INFO root fetch - processPackages [KUtil-jakubaugustyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kutil_jakubaugustyn-0.0.7.tar.gz tmp/KUtil_jakubaugustyn-0.0.9-py3-none-any.whl.zip --markdown 20240505/K/KUtil-jakubaugustyn/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 16:54:51] INFO root fetch - processPackages [unitxt]: executing diffoscope
+[2024-05-05 16:54:51] INFO root fetch - processPackages [unitxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitxt-1.7.8.tar.gz tmp/unitxt-1.7.9.tar.gz --markdown 20240505/u/unitxt/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-05 16:54:51] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 16:54:51] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 16:54:51] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 16:54:51] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 16:54:51] INFO root fetch - processPackages [miniagents]: Downloading https://files.pythonhosted.org/packages/b2/4b/b3ea38d88346e7574d059e0d9bed40aedbfed12c30b3f8508f515a18bc26/miniagents-0.0.8.tar.gz
+[2024-05-05 16:54:51] INFO root fetch - processPackages [horde-engine]: Downloading https://files.pythonhosted.org/packages/d8/f5/663e3a278321b2d79f83cf7bf91963a8ecdb0006ec9465bfc4504c741652/horde_engine-2.9.2.tar.gz
+[2024-05-05 16:54:51] INFO root fetch - processPackages [miniagents]: executing diffoscope
+[2024-05-05 16:54:51] INFO root fetch - processPackages [miniagents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniagents-0.0.7.tar.gz tmp/miniagents-0.0.8.tar.gz --markdown 20240505/m/miniagents/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-05 16:54:51] INFO root fetch - processPackages [lino-react]: Downloading https://files.pythonhosted.org/packages/6e/dd/4de0a57a63ef76ab5154d0cefc658b8be56d3aa55a6c3db07e7025bf45c4/lino_react-24.5.0.tar.gz
+[2024-05-05 16:54:51] INFO root fetch - processPackages [lino-react]: executing diffoscope
+[2024-05-05 16:54:51] INFO root fetch - processPackages [lino-react]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino_react-24.4.1.tar.gz tmp/lino_react-24.5.0.tar.gz --markdown 20240505/l/lino-react/24.4.1-24.5.0/README.md --exclude *.pyd
+[2024-05-05 16:54:51] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/kutil_jakubaugustyn-0.0.7.tar.gz]
+[2024-05-05 16:54:51] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/KUtil_jakubaugustyn-0.0.9-py3-none-any.whl.zip]
+[2024-05-05 16:54:51] INFO root fetch - main [MainThread]: End processing [KUtil-jakubaugustyn]: success
+[2024-05-05 16:54:51] INFO root fetch - processPackages [horde-engine]: executing diffoscope
+[2024-05-05 16:54:51] INFO root fetch - processPackages [horde-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horde_engine-2.8.2.tar.gz tmp/horde_engine-2.9.2.tar.gz --markdown 20240505/h/horde-engine/2.8.2-2.9.2/README.md --exclude *.pyd
+[2024-05-05 16:54:52] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 16:54:52] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 16:54:52] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 16:54:52] INFO root fetch - processPackages [miniagents]: Remove: archive file [/home/abi/fetcher/tmp/miniagents-0.0.7.tar.gz]
+[2024-05-05 16:54:52] INFO root fetch - processPackages [miniagents]: Remove: archive file [/home/abi/fetcher/tmp/miniagents-0.0.8.tar.gz]
+[2024-05-05 16:54:52] INFO root fetch - main [MainThread]: End processing [miniagents]: success
+[2024-05-05 16:54:52] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 16:54:52] INFO root fetch - processPackages [unitxt]: Remove: archive file [/home/abi/fetcher/tmp/unitxt-1.7.8.tar.gz]
+[2024-05-05 16:54:52] INFO root fetch - processPackages [unitxt]: Remove: archive file [/home/abi/fetcher/tmp/unitxt-1.7.9.tar.gz]
+[2024-05-05 16:54:52] INFO root fetch - main [MainThread]: End processing [unitxt]: success
+[2024-05-05 16:54:58] INFO root fetch - processPackages [lino-react]: Remove: archive file [/home/abi/fetcher/tmp/lino_react-24.4.1.tar.gz]
+[2024-05-05 16:54:58] INFO root fetch - processPackages [lino-react]: Remove: archive file [/home/abi/fetcher/tmp/lino_react-24.5.0.tar.gz]
+[2024-05-05 16:54:58] INFO root fetch - main [MainThread]: End processing [lino-react]: success
+[2024-05-05 16:55:06] INFO root fetch - processPackages [horde-engine]: Remove: archive file [/home/abi/fetcher/tmp/horde_engine-2.8.2.tar.gz]
+[2024-05-05 16:55:06] INFO root fetch - processPackages [horde-engine]: Remove: archive file [/home/abi/fetcher/tmp/horde_engine-2.9.2.tar.gz]
+[2024-05-05 16:55:06] INFO root fetch - main [MainThread]: End processing [horde-engine]: success
+[2024-05-05 16:55:06] INFO root fetch - main [MainThread]: Store serial: [23066590]
