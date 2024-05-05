@@ -15181,3 +15181,42 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:04:19] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a5.tar.gz]
 [2024-05-05 21:04:19] INFO root fetch - main [MainThread]: End processing [RocketSim]: success
 [2024-05-05 21:04:19] INFO root fetch - main [MainThread]: Store serial: [23068171]
+[2024-05-05 21:06:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068171]
+[2024-05-05 21:06:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: a5
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypular
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: a5
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unusual-whales-api-client
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: a5
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: threadxpools
+[2024-05-05 21:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: catframes
+[2024-05-05 21:06:28] WARNING root fetch - processPackages [a5]: Skipping, unable to determine old version
+[2024-05-05 21:06:28] INFO root fetch - main [MainThread]: End processing [a5] error
+[2024-05-05 21:06:28] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-05 21:06:28] WARNING root fetch - processPackages [a5]: Skipping, unable to determine old version
+[2024-05-05 21:06:28] WARNING root fetch - processPackages [unusual-whales-api-client]: Skipping, unable to determine old version
+[2024-05-05 21:06:28] INFO root fetch - main [MainThread]: End processing [a5] error
+[2024-05-05 21:06:28] INFO root fetch - main [MainThread]: End processing [unusual-whales-api-client] error
+[2024-05-05 21:06:28] WARNING root fetch - processPackages [a5]: Skipping, unable to determine old version
+[2024-05-05 21:06:28] INFO root fetch - main [MainThread]: End processing [a5] error
+[2024-05-05 21:06:28] WARNING root fetch - processPackages [threadxpools]: Skipping, unable to determine old version
+[2024-05-05 21:06:28] INFO root fetch - main [MainThread]: End processing [threadxpools] error
+[2024-05-05 21:06:28] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-05-05 21:06:28] WARNING root fetch - processPackages [pypular]: Skipping, unable to determine old version
+[2024-05-05 21:06:28] INFO root fetch - main [MainThread]: End processing [pypular] error
+[2024-05-05 21:06:28] INFO root fetch - processPackages [catframes]: New version: [2024.4.0] Old Version: [2024.3.1]
+[2024-05-05 21:06:28] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-05-05 21:06:28] INFO root fetch - processPackages [catframes]: Downloading https://files.pythonhosted.org/packages/df/2c/c2b2de42c1c914289bd8d7e10ae74942e83a93fccbacc728a1248c30ba6b/catframes-2024.3.1.tar.gz
+[2024-05-05 21:06:28] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-05 21:06:28] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240505/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-05 21:06:28] INFO root fetch - processPackages [catframes]: Downloading https://files.pythonhosted.org/packages/dc/b0/d665fb394420afbe4e951842ca8056c977151c4e8ba7084f75c4b545b4d8/catframes-2024.4.0.tar.gz
+[2024-05-05 21:06:29] INFO root fetch - processPackages [catframes]: executing diffoscope
+[2024-05-05 21:06:29] INFO root fetch - processPackages [catframes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catframes-2024.3.1.tar.gz tmp/catframes-2024.4.0.tar.gz --markdown 20240505/c/catframes/2024.3.1-2024.4.0/README.md --exclude *.pyd
+[2024-05-05 21:06:29] INFO root fetch - processPackages [catframes]: Remove: archive file [/home/abi/fetcher/tmp/catframes-2024.3.1.tar.gz]
+[2024-05-05 21:06:29] INFO root fetch - processPackages [catframes]: Remove: archive file [/home/abi/fetcher/tmp/catframes-2024.4.0.tar.gz]
+[2024-05-05 21:06:29] INFO root fetch - main [MainThread]: End processing [catframes]: success
+[2024-05-05 21:06:30] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-05-05 21:06:30] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-05-05 21:06:30] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-05 21:06:30] INFO root fetch - main [MainThread]: Store serial: [23068201]
