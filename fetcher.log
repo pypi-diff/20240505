@@ -3771,3 +3771,45 @@
 [2024-05-05 06:27:14] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.3.tar.gz]
 [2024-05-05 06:27:14] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
 [2024-05-05 06:27:14] INFO root fetch - main [MainThread]: Store serial: [23063079]
+[2024-05-05 06:29:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063079]
+[2024-05-05 06:29:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 06:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aimesh
+[2024-05-05 06:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-05-05 06:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dmk-packages
+[2024-05-05 06:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strictjson
+[2024-05-05 06:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: snps
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 06:29:23] WARNING root fetch - processPackages [aimesh]: Skipping, unable to determine old version
+[2024-05-05 06:29:23] INFO root fetch - main [MainThread]: End processing [aimesh] error
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dmk-packages]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-05 06:29:23] INFO root fetch - processPackages [snps]: New version: [2.8.1] Old Version: [2.8.0]
+[2024-05-05 06:29:23] INFO root fetch - processPackages [strictjson]: New version: [4.1.0] Old Version: [4.0.1]
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dmk-packages]: Downloading https://files.pythonhosted.org/packages/97/aa/856ff3763fb718b1d27cd18d69be64f21efbf1fb996a7a6bd241a04f4a22/dmk_packages-0.6.8.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [snps]: Downloading https://files.pythonhosted.org/packages/9f/4b/4b5350f6e1786fa3f980fed465f3f7446d8b9b81600baa53cae64ae9cef9/snps-2.8.0.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [strictjson]: Downloading https://files.pythonhosted.org/packages/ac/81/937955924bdf88c2b773f388ec94466b02a905d1a1c8363494f44d0001e9/strictjson-4.0.1.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240505/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dmk-packages]: Downloading https://files.pythonhosted.org/packages/83/5b/a9f9cebf700ab8e77a2f70ed826e6d24491b7aa71893fd2be5983c50ebda/dmk_packages-0.6.9.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [strictjson]: Downloading https://files.pythonhosted.org/packages/ca/0f/b93226f912186670bc13411230e82eedd4d0046d91f0c4e38dcd10ca94c0/strictjson-4.1.0.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [snps]: Downloading https://files.pythonhosted.org/packages/56/98/9725765e46482028b4312b8f21bc9d52c370c02cb12a6e3ff526444f0a3c/snps-2.8.1.tar.gz
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dmk-packages]: executing diffoscope
+[2024-05-05 06:29:23] INFO root fetch - processPackages [dmk-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmk_packages-0.6.8.tar.gz tmp/dmk_packages-0.6.9.tar.gz --markdown 20240505/d/dmk-packages/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-05 06:29:23] INFO root fetch - processPackages [strictjson]: executing diffoscope
+[2024-05-05 06:29:23] INFO root fetch - processPackages [strictjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictjson-4.0.1.tar.gz tmp/strictjson-4.1.0.tar.gz --markdown 20240505/s/strictjson/4.0.1-4.1.0/README.md --exclude *.pyd
+[2024-05-05 06:29:23] INFO root fetch - processPackages [snps]: executing diffoscope
+[2024-05-05 06:29:23] INFO root fetch - processPackages [snps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snps-2.8.0.tar.gz tmp/snps-2.8.1.tar.gz --markdown 20240505/s/snps/2.8.0-2.8.1/README.md --exclude *.pyd
+[2024-05-05 06:29:24] INFO root fetch - processPackages [dmk-packages]: Remove: archive file [/home/abi/fetcher/tmp/dmk_packages-0.6.8.tar.gz]
+[2024-05-05 06:29:24] INFO root fetch - processPackages [dmk-packages]: Remove: archive file [/home/abi/fetcher/tmp/dmk_packages-0.6.9.tar.gz]
+[2024-05-05 06:29:24] INFO root fetch - main [MainThread]: End processing [dmk-packages]: success
+[2024-05-05 06:29:24] INFO root fetch - processPackages [strictjson]: Remove: archive file [/home/abi/fetcher/tmp/strictjson-4.0.1.tar.gz]
+[2024-05-05 06:29:24] INFO root fetch - processPackages [strictjson]: Remove: archive file [/home/abi/fetcher/tmp/strictjson-4.1.0.tar.gz]
+[2024-05-05 06:29:24] INFO root fetch - main [MainThread]: End processing [strictjson]: success
+[2024-05-05 06:29:24] INFO root fetch - processPackages [snps]: Remove: archive file [/home/abi/fetcher/tmp/snps-2.8.0.tar.gz]
+[2024-05-05 06:29:24] INFO root fetch - processPackages [snps]: Remove: archive file [/home/abi/fetcher/tmp/snps-2.8.1.tar.gz]
+[2024-05-05 06:29:24] INFO root fetch - main [MainThread]: End processing [snps]: success
+[2024-05-05 06:29:25] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-05-05 06:29:25] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-05-05 06:29:25] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-05-05 06:29:25] INFO root fetch - main [MainThread]: Store serial: [23063097]
