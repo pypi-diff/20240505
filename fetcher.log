@@ -8091,3 +8091,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 13:07:22] INFO root fetch - processPackages [swh.objstorage]: Remove: archive file [/home/abi/fetcher/tmp/swh_objstorage-3.0.1.tar.gz]
 [2024-05-05 13:07:22] INFO root fetch - main [MainThread]: End processing [swh.objstorage]: success
 [2024-05-05 13:07:22] INFO root fetch - main [MainThread]: Store serial: [23064972]
+[2024-05-05 13:09:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064972]
+[2024-05-05 13:09:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 13:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ujenkins
+[2024-05-05 13:09:32] INFO root fetch - processPackages [ujenkins]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-05 13:09:32] INFO root fetch - processPackages [ujenkins]: Downloading https://files.pythonhosted.org/packages/62/4e/81751e8f3b0724b03d232c350d8db21c081c457becd38b773447d40bf3d7/ujenkins-0.8.1.tar.gz
+[2024-05-05 13:09:32] INFO root fetch - processPackages [ujenkins]: Downloading https://files.pythonhosted.org/packages/2b/6b/6047e8702234367e0007706e3c4c9742bae1e8506ef3c734ee9bd5ddd8c1/ujenkins-0.9.0.tar.gz
+[2024-05-05 13:09:33] INFO root fetch - processPackages [ujenkins]: executing diffoscope
+[2024-05-05 13:09:33] INFO root fetch - processPackages [ujenkins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ujenkins-0.8.1.tar.gz tmp/ujenkins-0.9.0.tar.gz --markdown 20240505/u/ujenkins/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-05 13:09:33] INFO root fetch - processPackages [ujenkins]: Remove: archive file [/home/abi/fetcher/tmp/ujenkins-0.8.1.tar.gz]
+[2024-05-05 13:09:33] INFO root fetch - processPackages [ujenkins]: Remove: archive file [/home/abi/fetcher/tmp/ujenkins-0.9.0.tar.gz]
+[2024-05-05 13:09:33] INFO root fetch - main [MainThread]: End processing [ujenkins]: success
+[2024-05-05 13:09:33] INFO root fetch - main [MainThread]: Store serial: [23064975]
