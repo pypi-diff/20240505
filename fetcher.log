@@ -15840,3 +15840,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:41:26] INFO root fetch - processPackages [skrutable]: Remove: archive file [/home/abi/fetcher/tmp/skrutable-1.2.1.tar.gz]
 [2024-05-05 21:41:26] INFO root fetch - main [MainThread]: End processing [skrutable]: success
 [2024-05-05 21:41:26] INFO root fetch - main [MainThread]: Store serial: [23068530]
+[2024-05-05 21:43:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068530]
+[2024-05-05 21:43:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 21:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostkit
+[2024-05-05 21:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rLKK
+[2024-05-05 21:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notion-api-client
+[2024-05-05 21:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: noiseestimator
+[2024-05-05 21:43:35] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 21:43:35] WARNING root fetch - processPackages [rLKK]: Skipping, unable to determine old version
+[2024-05-05 21:43:35] INFO root fetch - main [MainThread]: End processing [rLKK] error
+[2024-05-05 21:43:35] WARNING root fetch - processPackages [notion-api-client]: Skipping, unable to determine old version
+[2024-05-05 21:43:35] INFO root fetch - main [MainThread]: End processing [notion-api-client] error
+[2024-05-05 21:43:35] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-05 21:43:35] WARNING root fetch - processPackages [noiseestimator]: Skipping, unable to determine old version
+[2024-05-05 21:43:35] INFO root fetch - main [MainThread]: End processing [noiseestimator] error
+[2024-05-05 21:43:35] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-05 21:43:35] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-05 21:43:35] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240505/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 21:43:36] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-05 21:43:36] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-05 21:43:36] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-05 21:43:36] INFO root fetch - main [MainThread]: Store serial: [23068543]
