@@ -6601,3 +6601,97 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:04:17] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.9.tar.gz]
 [2024-05-05 11:04:17] INFO root fetch - main [MainThread]: End processing [rclip]: success
 [2024-05-05 11:04:17] INFO root fetch - main [MainThread]: Store serial: [23064281]
+[2024-05-05 11:06:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064281]
+[2024-05-05 11:06:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.common
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-distances
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.core
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.features
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wxhook
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autogluon.tabular
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mtprotocrypt
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.multimodal
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autogluon.timeseries
+[2024-05-05 11:06:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: eurelis-langchain-solr-vectorstore
+[2024-05-05 11:06:26] INFO root fetch - processPackages [abstract-distances]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [wxhook]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 11:06:26] WARNING root fetch - processPackages [mtprotocrypt]: Skipping, unable to determine old version
+[2024-05-05 11:06:26] INFO root fetch - processPackages [mtprotocrypt]: Start processing: abstract-distances
+[2024-05-05 11:06:26] INFO root fetch - main [MainThread]: End processing [mtprotocrypt] error
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240504] Old Version: [1.1.1b20240503]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240504] Old Version: [1.1.1b20240503]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.multimodal]: New version: [1.1.1b20240504] Old Version: [1.1.1b20240503]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [abstract-distances]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.tabular]: New version: [1.1.1b20240504] Old Version: [1.1.1b20240503]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.features]: New version: [1.1.1b20240504] Old Version: [1.1.1b20240503]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/6a/ea/52cafb55b0c81633aaa63231ff37619ff45c87d44d1a1e963c50114b76f4/abstract_distances-0.0.0.4.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/d3/1f/a0ba8eaa8a0e7a1bfa04d039d00cde7541114f2bfa6756f1676d1455652e/autogluon.multimodal-1.1.1b20240503.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/59/bc/93e0a5a307dc5386e4a51ff4802f88a9ae2083eec790ab017f2313da78bf/autogluon.common-1.1.1b20240503.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/13/c1/9cdcaa5277331680d178d9ccc09f266f544cf0d08d06582f6c28e88e5500/autogluon.core-1.1.1b20240503.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/54/f4/c5dceb449e4a893a76ba7ecfe9168344619f1d6eddd0a3e57a508bf7b58e/autogluon.tabular-1.1.1b20240503.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [wxhook]: Downloading https://files.pythonhosted.org/packages/b9/37/a8e3381ffbcccd6b6f43fcfd27cb86b00c8388eca4a925ed1a61a04921e8/wxhook-0.0.1.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/2e/c8/ff79af1e2bacd6753acf7c65f778dfeaefe3b389198d65bb56861b3a43ca/autogluon.features-1.1.1b20240503.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/6a/ea/52cafb55b0c81633aaa63231ff37619ff45c87d44d1a1e963c50114b76f4/abstract_distances-0.0.0.4.tar.gz
+[2024-05-05 11:06:26] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240505] Old Version: [1.1.1b20240504]
+[2024-05-05 11:06:26] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: Downloading https://files.pythonhosted.org/packages/be/1c/2fd53fd518cbe8aa04f2838d8cbd1b9820085afbb2ec1ff224df469a6476/eurelis_langchain_solr_vectorstore-0.0.1.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/29/bd/9e7a38727cba6699327ed24a87dd59dacb257eb6438f3003253a6b013533/abstract_distances-0.0.0.5.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/29/bd/9e7a38727cba6699327ed24a87dd59dacb257eb6438f3003253a6b013533/abstract_distances-0.0.0.5.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_distances-0.0.0.4.tar.gz tmp/abstract_distances-0.0.0.5.tar.gz --markdown 20240505/a/abstract-distances/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/dc/fc/ddc807a6f388200c7c1549f24dd7476e3b825c1cc2945e340326c3507645/autogluon.common-1.1.1b20240504.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/26/b0/33631d5277bd312b98ff2d0802625e33c85fb8f67f074f1762f96853c518/autogluon.core-1.1.1b20240504.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_distances-0.0.0.4.tar.gz tmp/abstract_distances-0.0.0.5.tar.gz --markdown 20240505/a/abstract-distances/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/98/58/1b894afa7a90d20251638622d835d366c3760b651bae1b557e17beb8405a/autogluon.timeseries-1.1.1b20240504.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/cf/05/b1dc90bea5da2f239b43adab38e863ee700aba212aeda2b21904587bb618/autogluon.multimodal-1.1.1b20240504.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240503.tar.gz tmp/autogluon.common-1.1.1b20240504.tar.gz --markdown 20240505/a/autogluon.common/1.1.1b20240503-1.1.1b20240504/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/74/4f/1ad738ff766e08b96bbb04786b6a2cb2c70c009836e0b43d2b16c4f352a7/autogluon.features-1.1.1b20240504.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/fe/35/5b444fbc037f45647e5b45a702c98e51ab5252ac0970e958489af8920016/autogluon.tabular-1.1.1b20240504.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: Downloading https://files.pythonhosted.org/packages/d7/ec/9b6256ef747109ac7f2a543ef6f983cc77269fb2236fa274cc653017d03d/eurelis_langchain_solr_vectorstore-0.0.2.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [wxhook]: Downloading https://files.pythonhosted.org/packages/b6/8d/cbc4ffda8845345e3c919600729650be7ea8df3f468d3616a1ff41718042/wxhook-0.0.2.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240503.tar.gz tmp/autogluon.core-1.1.1b20240504.tar.gz --markdown 20240505/a/autogluon.core/1.1.1b20240503-1.1.1b20240504/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-1.1.1b20240503.tar.gz tmp/autogluon.features-1.1.1b20240504.tar.gz --markdown 20240505/a/autogluon.features/1.1.1b20240503-1.1.1b20240504/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-1.1.1b20240503.tar.gz tmp/autogluon.multimodal-1.1.1b20240504.tar.gz --markdown 20240505/a/autogluon.multimodal/1.1.1b20240503-1.1.1b20240504/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-1.1.1b20240503.tar.gz tmp/autogluon.tabular-1.1.1b20240504.tar.gz --markdown 20240505/a/autogluon.tabular/1.1.1b20240503-1.1.1b20240504/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [wxhook]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [wxhook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxhook-0.0.1.tar.gz tmp/wxhook-0.0.2.tar.gz --markdown 20240505/w/wxhook/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eurelis_langchain_solr_vectorstore-0.0.1.tar.gz tmp/eurelis_langchain_solr_vectorstore-0.0.2.tar.gz --markdown 20240505/e/eurelis-langchain-solr-vectorstore/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/c1/af/3a81349d46e3c0d27717d73902afa09605912c039c446c67c9fa44500e89/autogluon.timeseries-1.1.1b20240505.tar.gz
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: Remove: archive file [/home/abi/fetcher/tmp/abstract_distances-0.0.0.4.tar.gz]
+[2024-05-05 11:06:27] INFO root fetch - processPackages [abstract-distances]: Remove: archive file [/home/abi/fetcher/tmp/abstract_distances-0.0.0.5.tar.gz]
+[2024-05-05 11:06:27] INFO root fetch - main [MainThread]: End processing [abstract-distances]: success
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-05-05 11:06:27] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240504.tar.gz tmp/autogluon.timeseries-1.1.1b20240505.tar.gz --markdown 20240505/a/autogluon.timeseries/1.1.1b20240504-1.1.1b20240505/README.md --exclude *.pyd
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [abstract-distances]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240503.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240504.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240503.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240504.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: Remove: archive file [/home/abi/fetcher/tmp/eurelis_langchain_solr_vectorstore-0.0.1.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [eurelis-langchain-solr-vectorstore]: Remove: archive file [/home/abi/fetcher/tmp/eurelis_langchain_solr_vectorstore-0.0.2.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [eurelis-langchain-solr-vectorstore]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240503.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240504.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [wxhook]: Remove: archive file [/home/abi/fetcher/tmp/wxhook-0.0.1.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [wxhook]: Remove: archive file [/home/abi/fetcher/tmp/wxhook-0.0.2.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [wxhook]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240503.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240504.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240503.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240504.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240504.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240505.tar.gz]
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-05-05 11:06:28] INFO root fetch - main [MainThread]: Store serial: [23064325]
