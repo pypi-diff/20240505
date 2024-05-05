@@ -2324,3 +2324,9 @@
 [2024-05-05 03:36:40] INFO root fetch - processPackages [python-gdcm]: Remove: archive file [/home/abi/fetcher/tmp/python-gdcm-3.0.9.1.tar.gz]
 [2024-05-05 03:36:40] INFO root fetch - main [MainThread]: End processing [python-gdcm]: success
 [2024-05-05 03:36:40] INFO root fetch - main [MainThread]: Store serial: [23062494]
+[2024-05-05 03:38:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062494]
+[2024-05-05 03:38:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 03:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Mbtiler
+[2024-05-05 03:38:49] WARNING root fetch - processPackages [Mbtiler]: Skipping, unable to determine old version
+[2024-05-05 03:38:49] INFO root fetch - main [MainThread]: End processing [Mbtiler] error
+[2024-05-05 03:38:49] INFO root fetch - main [MainThread]: Store serial: [23062525]
