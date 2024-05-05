@@ -3896,3 +3896,15 @@
 [2024-05-05 06:40:11] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.1.tar.gz]
 [2024-05-05 06:40:11] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
 [2024-05-05 06:40:11] INFO root fetch - main [MainThread]: Store serial: [23063139]
+[2024-05-05 06:42:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063139]
+[2024-05-05 06:42:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 06:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: locustdb
+[2024-05-05 06:42:19] INFO root fetch - processPackages [locustdb]: New version: [0.5.0] Old Version: [0.4.7]
+[2024-05-05 06:42:19] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/d9/6d/e728ed27e76caa0bd81a219801976a1947eb13829ddfd455c478d37f59af/locustdb-0.4.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 06:42:20] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/5d/a5/18f79bcd9d588f351b06c623f71a64e40a39d99c6979ca45ae782fdbc529/locustdb-0.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 06:42:21] INFO root fetch - processPackages [locustdb]: executing diffoscope
+[2024-05-05 06:42:21] INFO root fetch - processPackages [locustdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locustdb-0.4.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/locustdb-0.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/l/locustdb/0.4.7-0.5.0/README.md --exclude *.pyd
+[2024-05-05 06:42:38] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.4.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 06:42:38] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 06:42:38] INFO root fetch - main [MainThread]: End processing [locustdb]: success
+[2024-05-05 06:42:38] INFO root fetch - main [MainThread]: Store serial: [23063156]
