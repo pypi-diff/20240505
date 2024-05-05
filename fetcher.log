@@ -11582,3 +11582,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:06:56] INFO root fetch - processPackages [sqllineage]: Remove: archive file [/home/abi/fetcher/tmp/sqllineage-1.5.3.tar.gz]
 [2024-05-05 17:06:56] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
 [2024-05-05 17:06:56] INFO root fetch - main [MainThread]: Store serial: [23066632]
+[2024-05-05 17:09:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066632]
+[2024-05-05 17:09:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 17:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipex-llm
+[2024-05-05 17:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleWorkTime
+[2024-05-05 17:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vsg
+[2024-05-05 17:09:17] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240504] Old Version: [2.1.0b20240503]
+[2024-05-05 17:09:18] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/5c/56/ba3604688c4afa5e99db6478ce8f544e8004f5f02ef5c39a972319c2724f/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl
+[2024-05-05 17:09:18] INFO root fetch - processPackages [SimpleWorkTime]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-05 17:09:18] INFO root fetch - processPackages [vsg]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-05-05 17:09:18] INFO root fetch - processPackages [vsg]: Downloading https://files.pythonhosted.org/packages/6a/e1/32f0923a9b582ca1c2687e6b699ab29e3ef0ca38d7fb35303867bd5c782a/vsg-3.8.0.tar.gz
+[2024-05-05 17:09:18] INFO root fetch - processPackages [SimpleWorkTime]: Downloading https://files.pythonhosted.org/packages/39/d2/fa65917b330a1cc81d587d3b4960cfae17abd4e506b04211552051920b40/simpleworktime-0.1.0.tar.gz
+[2024-05-05 17:09:18] INFO root fetch - processPackages [SimpleWorkTime]: Downloading https://files.pythonhosted.org/packages/27/61/8f3ef4cfbb6505954ea981d6376c1a2f3c9f2e7711b622d7cfe33f8ac8d0/simpleworktime-0.2.0.tar.gz
+[2024-05-05 17:09:18] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/ae/47/ac53a9e48f4493373039be01dba31ce6743022033a94c1a5127a8d1f9b26/ipex_llm-2.1.0b20240504-py3-none-win_amd64.whl
+[2024-05-05 17:09:18] INFO root fetch - processPackages [SimpleWorkTime]: executing diffoscope
+[2024-05-05 17:09:18] INFO root fetch - processPackages [SimpleWorkTime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleworktime-0.1.0.tar.gz tmp/simpleworktime-0.2.0.tar.gz --markdown 20240505/S/SimpleWorkTime/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-05 17:09:18] INFO root fetch - processPackages [vsg]: Downloading https://files.pythonhosted.org/packages/30/69/67bd520c470f1dd577288b40d8ec196da3f8bf5f5f2aec3c2d0317146e3d/vsg-3.9.0.tar.gz
+[2024-05-05 17:09:18] INFO root fetch - processPackages [vsg]: executing diffoscope
+[2024-05-05 17:09:18] INFO root fetch - processPackages [vsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsg-3.8.0.tar.gz tmp/vsg-3.9.0.tar.gz --markdown 20240505/v/vsg/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-05-05 17:09:19] INFO root fetch - processPackages [SimpleWorkTime]: Remove: archive file [/home/abi/fetcher/tmp/simpleworktime-0.1.0.tar.gz]
+[2024-05-05 17:09:19] INFO root fetch - processPackages [SimpleWorkTime]: Remove: archive file [/home/abi/fetcher/tmp/simpleworktime-0.2.0.tar.gz]
+[2024-05-05 17:09:19] INFO root fetch - main [MainThread]: End processing [SimpleWorkTime]: success
+[2024-05-05 17:09:19] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-05 17:09:19] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240504-py3-none-win_amd64.whl.zip --markdown 20240505/i/ipex-llm/2.1.0b20240503-2.1.0b20240504/README.md --exclude *.pyd
+[2024-05-05 17:09:22] INFO root fetch - processPackages [vsg]: Remove: archive file [/home/abi/fetcher/tmp/vsg-3.8.0.tar.gz]
+[2024-05-05 17:09:22] INFO root fetch - processPackages [vsg]: Remove: archive file [/home/abi/fetcher/tmp/vsg-3.9.0.tar.gz]
+[2024-05-05 17:09:22] INFO root fetch - main [MainThread]: End processing [vsg]: success
+[2024-05-05 17:09:47] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240503-py3-none-win_amd64.whl.zip]
+[2024-05-05 17:09:47] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240504-py3-none-win_amd64.whl.zip]
+[2024-05-05 17:09:47] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-05 17:09:47] INFO root fetch - main [MainThread]: Store serial: [23066640]
