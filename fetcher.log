@@ -14104,3 +14104,15 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:44:30] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.0.tar.gz]
 [2024-05-05 19:44:30] INFO root fetch - main [MainThread]: End processing [terminaltexteffects]: success
 [2024-05-05 19:44:30] INFO root fetch - main [MainThread]: Store serial: [23067682]
+[2024-05-05 19:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067682]
+[2024-05-05 19:46:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 19:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: policyengine-us
+[2024-05-05 19:46:39] INFO root fetch - processPackages [policyengine-us]: New version: [0.757.1] Old Version: [0.757.0]
+[2024-05-05 19:46:39] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/1f/8d/240780eb280cadc1df4cefdb6464b2279d4645a6e3516449ec35edfb01c3/policyengine-us-0.757.0.tar.gz
+[2024-05-05 19:46:40] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/9e/ff/48658187f390228ac9094f7e8c2ba8e407567ffd67fb0063578a27812b4e/policyengine-us-0.757.1.tar.gz
+[2024-05-05 19:46:40] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-05-05 19:46:40] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.757.0.tar.gz tmp/policyengine-us-0.757.1.tar.gz --markdown 20240505/p/policyengine-us/0.757.0-0.757.1/README.md --exclude *.pyd
+[2024-05-05 19:47:12] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.757.0.tar.gz]
+[2024-05-05 19:47:12] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.757.1.tar.gz]
+[2024-05-05 19:47:12] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-05-05 19:47:12] INFO root fetch - main [MainThread]: Store serial: [23067685]
