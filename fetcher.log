@@ -13036,3 +13036,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:43:52] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.9.tar.gz]
 [2024-05-05 18:43:52] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2024-05-05 18:43:52] INFO root fetch - main [MainThread]: Store serial: [23067235]
+[2024-05-05 18:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067235]
+[2024-05-05 18:46:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 18:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyLauncherMPI
+[2024-05-05 18:46:00] INFO root fetch - processPackages [PyLauncherMPI]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-05 18:46:00] INFO root fetch - processPackages [PyLauncherMPI]: Downloading https://files.pythonhosted.org/packages/6e/cc/966bfc20cc87c09cf7a2a695928eb9e78effd196f15f5cd160637e8a55f5/pylaunchermpi-0.1.6.tar.gz
+[2024-05-05 18:46:01] INFO root fetch - processPackages [PyLauncherMPI]: Downloading https://files.pythonhosted.org/packages/48/4e/33c784ded17b0e14fce4e400f2e608e4434bd0dc30fed7609a829319b625/pylaunchermpi-0.1.7.tar.gz
+[2024-05-05 18:46:01] INFO root fetch - processPackages [PyLauncherMPI]: executing diffoscope
+[2024-05-05 18:46:01] INFO root fetch - processPackages [PyLauncherMPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylaunchermpi-0.1.6.tar.gz tmp/pylaunchermpi-0.1.7.tar.gz --markdown 20240505/P/PyLauncherMPI/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-05 18:46:01] INFO root fetch - processPackages [PyLauncherMPI]: Remove: archive file [/home/abi/fetcher/tmp/pylaunchermpi-0.1.6.tar.gz]
+[2024-05-05 18:46:01] INFO root fetch - processPackages [PyLauncherMPI]: Remove: archive file [/home/abi/fetcher/tmp/pylaunchermpi-0.1.7.tar.gz]
+[2024-05-05 18:46:01] INFO root fetch - main [MainThread]: End processing [PyLauncherMPI]: success
+[2024-05-05 18:46:01] INFO root fetch - main [MainThread]: Store serial: [23067238]
