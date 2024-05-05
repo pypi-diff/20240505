@@ -3095,3 +3095,20 @@
 [2024-05-05 05:02:26] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: Remove: archive file [/home/abi/fetcher/tmp/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz]
 [2024-05-05 05:02:26] INFO root fetch - main [MainThread]: End processing [zxkane.cdk-construct-simple-nat]: success
 [2024-05-05 05:02:26] INFO root fetch - main [MainThread]: Store serial: [23062846]
+[2024-05-05 05:04:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062846]
+[2024-05-05 05:04:34] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 05:06:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062846]
+[2024-05-05 05:06:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 05:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duwi-smart-sdk
+[2024-05-05 05:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fs-attestation-safe-cli
+[2024-05-05 05:06:40] INFO root fetch - processPackages [fs-attestation-safe-cli]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-05 05:06:40] INFO root fetch - processPackages [fs-attestation-safe-cli]: Downloading https://files.pythonhosted.org/packages/f7/47/9487ed5f7dfca332f16b7a13fc79e993171b786b89a40ec66e6494a89231/fs_attestation_safe_cli-1.0.4.tar.gz
+[2024-05-05 05:06:40] WARNING root fetch - processPackages [duwi-smart-sdk]: Skipping, unable to determine old version
+[2024-05-05 05:06:40] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk] error
+[2024-05-05 05:06:40] INFO root fetch - processPackages [fs-attestation-safe-cli]: Downloading https://files.pythonhosted.org/packages/1c/d9/ee321d7b0d9ca0232ab85149c15416ae0a17d8ee14cebf85c69bc215adc2/fs_attestation_safe_cli-1.0.5.tar.gz
+[2024-05-05 05:06:40] INFO root fetch - processPackages [fs-attestation-safe-cli]: executing diffoscope
+[2024-05-05 05:06:40] INFO root fetch - processPackages [fs-attestation-safe-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fs_attestation_safe_cli-1.0.4.tar.gz tmp/fs_attestation_safe_cli-1.0.5.tar.gz --markdown 20240505/f/fs-attestation-safe-cli/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-05 05:06:41] INFO root fetch - processPackages [fs-attestation-safe-cli]: Remove: archive file [/home/abi/fetcher/tmp/fs_attestation_safe_cli-1.0.4.tar.gz]
+[2024-05-05 05:06:41] INFO root fetch - processPackages [fs-attestation-safe-cli]: Remove: archive file [/home/abi/fetcher/tmp/fs_attestation_safe_cli-1.0.5.tar.gz]
+[2024-05-05 05:06:41] INFO root fetch - main [MainThread]: End processing [fs-attestation-safe-cli]: success
+[2024-05-05 05:06:41] INFO root fetch - main [MainThread]: Store serial: [23062852]
