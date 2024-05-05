@@ -3255,3 +3255,18 @@
 [2024-05-05 05:21:47] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024050403.tar.gz]
 [2024-05-05 05:21:47] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-05-05 05:21:47] INFO root fetch - main [MainThread]: Store serial: [23062910]
+[2024-05-05 05:23:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062910]
+[2024-05-05 05:23:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 05:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AST-Stubgen
+[2024-05-05 05:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peak-finder-app
+[2024-05-05 05:23:56] WARNING root fetch - processPackages [AST-Stubgen]: Skipping, unable to determine old version
+[2024-05-05 05:23:56] INFO root fetch - main [MainThread]: End processing [AST-Stubgen] error
+[2024-05-05 05:23:56] INFO root fetch - processPackages [peak-finder-app]: New version: [0.1.0b3] Old Version: [0.1.0b2]
+[2024-05-05 05:23:56] INFO root fetch - processPackages [peak-finder-app]: Downloading https://files.pythonhosted.org/packages/f2/7f/07b2491a4c08ebc495a26739de2f06ea34b7ab37f5eea3a5028c15f09eaf/peak_finder_app-0.1.0b2.tar.gz
+[2024-05-05 05:23:56] INFO root fetch - processPackages [peak-finder-app]: Downloading https://files.pythonhosted.org/packages/39/d7/a5c2ae698499b35176fa944c6b265e9f86970e7aa493779bd61a9c919b4b/peak_finder_app-0.1.0b3.tar.gz
+[2024-05-05 05:23:57] INFO root fetch - processPackages [peak-finder-app]: executing diffoscope
+[2024-05-05 05:23:57] INFO root fetch - processPackages [peak-finder-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peak_finder_app-0.1.0b2.tar.gz tmp/peak_finder_app-0.1.0b3.tar.gz --markdown 20240505/p/peak-finder-app/0.1.0b2-0.1.0b3/README.md --exclude *.pyd
+[2024-05-05 05:23:57] INFO root fetch - processPackages [peak-finder-app]: Remove: archive file [/home/abi/fetcher/tmp/peak_finder_app-0.1.0b2.tar.gz]
+[2024-05-05 05:23:57] INFO root fetch - processPackages [peak-finder-app]: Remove: archive file [/home/abi/fetcher/tmp/peak_finder_app-0.1.0b3.tar.gz]
+[2024-05-05 05:23:57] INFO root fetch - main [MainThread]: End processing [peak-finder-app]: success
+[2024-05-05 05:23:57] INFO root fetch - main [MainThread]: Store serial: [23062916]
