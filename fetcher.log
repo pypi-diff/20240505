@@ -4849,3 +4849,27 @@
 [2024-05-05 08:39:50] INFO root fetch - processPackages [collective.volto.formsupport]: Remove: archive file [/home/abi/fetcher/tmp/collective.volto.formsupport-3.0.2.tar.gz]
 [2024-05-05 08:39:50] INFO root fetch - main [MainThread]: End processing [collective.volto.formsupport]: success
 [2024-05-05 08:39:50] INFO root fetch - main [MainThread]: Store serial: [23063535]
+[2024-05-05 08:41:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063535]
+[2024-05-05 08:41:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 08:41:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inspy-logger
+[2024-05-05 08:41:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ghostbase
+[2024-05-05 08:41:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snappi
+[2024-05-05 08:41:59] WARNING root fetch - processPackages [ghostbase]: Skipping, unable to determine old version
+[2024-05-05 08:41:59] INFO root fetch - main [MainThread]: End processing [ghostbase] error
+[2024-05-05 08:41:59] INFO root fetch - processPackages [inspy-logger]: New version: [3.1.0.dev4] Old Version: [3.1.0.dev3]
+[2024-05-05 08:41:59] INFO root fetch - processPackages [snappi]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-05 08:41:59] INFO root fetch - processPackages [inspy-logger]: Downloading https://files.pythonhosted.org/packages/87/26/3b2e10da2e50e5af591cbc052c4dc407fb6c7494a75b457a86c2b9d36c2d/inspy_logger-3.1.0.dev3.tar.gz
+[2024-05-05 08:41:59] INFO root fetch - processPackages [snappi]: Downloading https://files.pythonhosted.org/packages/28/ad/dd89dc68872cabcd5050f881b9c10bb11d29172ad022899896e7324fb0ef/snappi-1.3.0.tar.gz
+[2024-05-05 08:42:00] INFO root fetch - processPackages [inspy-logger]: Downloading https://files.pythonhosted.org/packages/67/22/246e536fd0c146d692d2ab8e3643f017da2305cd4d411dcfb3d3222b7fb1/inspy_logger-3.1.0.dev4.tar.gz
+[2024-05-05 08:42:00] INFO root fetch - processPackages [snappi]: Downloading https://files.pythonhosted.org/packages/1b/c6/33fde32fb3ea4cc3cf53d32d00362fc14ef48dae05c993b52498dcff7b37/snappi-1.4.0.tar.gz
+[2024-05-05 08:42:00] INFO root fetch - processPackages [inspy-logger]: executing diffoscope
+[2024-05-05 08:42:00] INFO root fetch - processPackages [inspy-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspy_logger-3.1.0.dev3.tar.gz tmp/inspy_logger-3.1.0.dev4.tar.gz --markdown 20240505/i/inspy-logger/3.1.0.dev3-3.1.0.dev4/README.md --exclude *.pyd
+[2024-05-05 08:42:00] INFO root fetch - processPackages [snappi]: executing diffoscope
+[2024-05-05 08:42:00] INFO root fetch - processPackages [snappi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snappi-1.3.0.tar.gz tmp/snappi-1.4.0.tar.gz --markdown 20240505/s/snappi/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-05 08:42:00] INFO root fetch - processPackages [inspy-logger]: Remove: archive file [/home/abi/fetcher/tmp/inspy_logger-3.1.0.dev3.tar.gz]
+[2024-05-05 08:42:00] INFO root fetch - processPackages [inspy-logger]: Remove: archive file [/home/abi/fetcher/tmp/inspy_logger-3.1.0.dev4.tar.gz]
+[2024-05-05 08:42:00] INFO root fetch - main [MainThread]: End processing [inspy-logger]: success
+[2024-05-05 08:42:02] INFO root fetch - processPackages [snappi]: Remove: archive file [/home/abi/fetcher/tmp/snappi-1.3.0.tar.gz]
+[2024-05-05 08:42:02] INFO root fetch - processPackages [snappi]: Remove: archive file [/home/abi/fetcher/tmp/snappi-1.4.0.tar.gz]
+[2024-05-05 08:42:02] INFO root fetch - main [MainThread]: End processing [snappi]: success
+[2024-05-05 08:42:02] INFO root fetch - main [MainThread]: Store serial: [23063545]
