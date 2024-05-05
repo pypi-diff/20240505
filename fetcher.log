@@ -11879,3 +11879,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:25:03] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-05-05 17:25:03] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-05-05 17:25:03] INFO root fetch - main [MainThread]: Store serial: [23066743]
+[2024-05-05 17:27:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066743]
+[2024-05-05 17:27:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 17:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drafter
+[2024-05-05 17:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpt-net
+[2024-05-05 17:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: staging-cacao-accounting
+[2024-05-05 17:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlalchemy-tx-context
+[2024-05-05 17:27:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RTS-WebUIBuilder
+[2024-05-05 17:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: New version: [0.6] Old Version: [0.5]
+[2024-05-05 17:27:12] INFO root fetch - processPackages [pygpt-net]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-05-05 17:27:12] INFO root fetch - processPackages [sqlalchemy-tx-context]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-05 17:27:12] WARNING root fetch - processPackages [staging-cacao-accounting]: Skipping, unable to determine old version
+[2024-05-05 17:27:12] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting] error
+[2024-05-05 17:27:12] INFO root fetch - processPackages [drafter]: New version: [1.2.0] Old Version: [1.1.4]
+[2024-05-05 17:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/00/31/c7b825f8dc6f06455cc46a0a955735286e025550593f68b3274dead81b3c/RTS-WebUIBuilder-0.5.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a2/51/eab8c08ccf8061d3c9a0a64e34850f09c2f311fb768c293d3683b097b0a1/pygpt_net-2.2.8.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [drafter]: Downloading https://files.pythonhosted.org/packages/ec/35/154d5dcdaf42e32342c16374738e797e25d50e6a109ff5e48a4d64c3322f/drafter-1.1.4.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [sqlalchemy-tx-context]: Downloading https://files.pythonhosted.org/packages/4a/02/b781a95234446dfbedb9f2cc01bdab1165cf278610617e638b7c3912a097/sqlalchemy_tx_context-0.2.1.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: Downloading https://files.pythonhosted.org/packages/33/38/4f97f452a89380f7b161c3a75ba913790e12d2ca115c18fc9000c0396098/RTS-WebUIBuilder-0.6.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/9a/6b/ef19dace2478125566a1c01459255b7c5ee6d85a70cc2501323506c14e6a/pygpt_net-2.2.9.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: executing diffoscope
+[2024-05-05 17:27:12] INFO root fetch - processPackages [RTS-WebUIBuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RTS-WebUIBuilder-0.5.tar.gz tmp/RTS-WebUIBuilder-0.6.tar.gz --markdown 20240505/R/RTS-WebUIBuilder/0.5-0.6/README.md --exclude *.pyd
+[2024-05-05 17:27:12] INFO root fetch - processPackages [drafter]: Downloading https://files.pythonhosted.org/packages/9f/c7/83a3dec199f0d011e383939c6106b342134f0dbfee83ee43724c71489846/drafter-1.2.0.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [sqlalchemy-tx-context]: Downloading https://files.pythonhosted.org/packages/58/2b/4206e07b3a6afe25bbc602387a31bd84ed4487688bedf88e7ccf6b22a4b5/sqlalchemy_tx_context-0.2.2.tar.gz
+[2024-05-05 17:27:12] INFO root fetch - processPackages [drafter]: executing diffoscope
+[2024-05-05 17:27:12] INFO root fetch - processPackages [drafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drafter-1.1.4.tar.gz tmp/drafter-1.2.0.tar.gz --markdown 20240505/d/drafter/1.1.4-1.2.0/README.md --exclude *.pyd
+[2024-05-05 17:27:12] INFO root fetch - processPackages [sqlalchemy-tx-context]: executing diffoscope
+[2024-05-05 17:27:12] INFO root fetch - processPackages [sqlalchemy-tx-context]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_tx_context-0.2.1.tar.gz tmp/sqlalchemy_tx_context-0.2.2.tar.gz --markdown 20240505/s/sqlalchemy-tx-context/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-05 17:27:13] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-05-05 17:27:13] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.2.8.tar.gz tmp/pygpt_net-2.2.9.tar.gz --markdown 20240505/p/pygpt-net/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-05-05 17:27:13] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.5.tar.gz]
+[2024-05-05 17:27:13] INFO root fetch - processPackages [RTS-WebUIBuilder]: Remove: archive file [/home/abi/fetcher/tmp/RTS-WebUIBuilder-0.6.tar.gz]
+[2024-05-05 17:27:13] INFO root fetch - main [MainThread]: End processing [RTS-WebUIBuilder]: success
+[2024-05-05 17:27:13] INFO root fetch - processPackages [drafter]: Remove: archive file [/home/abi/fetcher/tmp/drafter-1.1.4.tar.gz]
+[2024-05-05 17:27:13] INFO root fetch - processPackages [drafter]: Remove: archive file [/home/abi/fetcher/tmp/drafter-1.2.0.tar.gz]
+[2024-05-05 17:27:13] INFO root fetch - main [MainThread]: End processing [drafter]: success
+[2024-05-05 17:27:13] INFO root fetch - processPackages [sqlalchemy-tx-context]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_tx_context-0.2.1.tar.gz]
+[2024-05-05 17:27:13] INFO root fetch - processPackages [sqlalchemy-tx-context]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_tx_context-0.2.2.tar.gz]
+[2024-05-05 17:27:13] INFO root fetch - main [MainThread]: End processing [sqlalchemy-tx-context]: success
+[2024-05-05 17:27:16] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.8.tar.gz]
+[2024-05-05 17:27:16] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
+[2024-05-05 17:27:16] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-05-05 17:27:16] INFO root fetch - main [MainThread]: Store serial: [23066760]
