@@ -13173,3 +13173,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:54:42] INFO root fetch - processPackages [flake8-commas]: Remove: archive file [/home/abi/fetcher/tmp/flake8-commas-2.1.0.tar.gz]
 [2024-05-05 18:54:42] INFO root fetch - main [MainThread]: End processing [flake8-commas]: success
 [2024-05-05 18:54:42] INFO root fetch - main [MainThread]: Store serial: [23067304]
+[2024-05-05 18:56:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067304]
+[2024-05-05 18:56:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hdsr-fewspy
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdfnaut
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Pokemon-t2-tap
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bypass-url-parser
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: drop-needle
+[2024-05-05 18:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: livekit-plugins-elevenlabs
+[2024-05-05 18:56:51] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.3.4] Old Version: [4.3.3]
+[2024-05-05 18:56:51] WARNING root fetch - processPackages [drop-needle]: Skipping, unable to determine old version
+[2024-05-05 18:56:51] INFO root fetch - main [MainThread]: End processing [drop-needle] error
+[2024-05-05 18:56:51] INFO root fetch - processPackages [bypass-url-parser]: New version: [0.4.2a0] Old Version: [0.4.1]
+[2024-05-05 18:56:51] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/65/23/ccc6aea4ff334c85666e3051ddfc658817a37683df6d757013c9c4e3db16/Buke_autoTrade_Pypi-4.3.3.tar.gz
+[2024-05-05 18:56:51] WARNING root fetch - processPackages [Pokemon-t2-tap]: Skipping, unable to determine old version
+[2024-05-05 18:56:51] INFO root fetch - main [MainThread]: End processing [Pokemon-t2-tap] error
+[2024-05-05 18:56:51] INFO root fetch - processPackages [bypass-url-parser]: Downloading https://files.pythonhosted.org/packages/07/b5/c83a25196f6391d85ab002bf06573c35b12c368b2dd346703304d43a79b3/bypass_url_parser-0.4.1.tar.gz
+[2024-05-05 18:56:51] INFO root fetch - processPackages [hdsr-fewspy]: New version: [1.9] Old Version: [1.8]
+[2024-05-05 18:56:51] INFO root fetch - processPackages [pdfnaut]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-05 18:56:51] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: New version: [0.4.dev2] Old Version: [0.4.dev1]
+[2024-05-05 18:56:52] INFO root fetch - processPackages [pdfnaut]: Downloading https://files.pythonhosted.org/packages/a1/a8/2df39cb1f16b06bf2bab5952f68b200661d2ad64285f314ef4909885a9c6/pdfnaut-0.1.1.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [hdsr-fewspy]: Downloading https://files.pythonhosted.org/packages/c4/95/1c2c806a03f052432c1910649c954abab72660f0ad87d159e406a891de2a/hdsr_fewspy-1.8.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [bypass-url-parser]: Downloading https://files.pythonhosted.org/packages/a1/4f/0ed8c872d9e784f4fab932e7fe17032d5eb5db0ed68fc88d141462585257/bypass_url_parser-0.4.2a0.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: Downloading https://files.pythonhosted.org/packages/c9/ec/26493fcb20856f96c7523a8d9cc46ed16972cf792ba88b2ec16eb683fbdf/livekit_plugins_elevenlabs-0.4.dev1.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/4f/04/5ef9e8c207c72c5dd5ac2440db5167150c2809e46da99c0afd67514306eb/Buke_autoTrade_Pypi-4.3.4.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [bypass-url-parser]: executing diffoscope
+[2024-05-05 18:56:52] INFO root fetch - processPackages [bypass-url-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bypass_url_parser-0.4.1.tar.gz tmp/bypass_url_parser-0.4.2a0.tar.gz --markdown 20240505/b/bypass-url-parser/0.4.1-0.4.2a0/README.md --exclude *.pyd
+[2024-05-05 18:56:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 18:56:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.3.3.tar.gz tmp/Buke_autoTrade_Pypi-4.3.4.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.3.3-4.3.4/README.md --exclude *.pyd
+[2024-05-05 18:56:52] INFO root fetch - processPackages [pdfnaut]: Downloading https://files.pythonhosted.org/packages/8c/d4/ccfde1b79ca7f126263704b3fa3ea3d7e9a64024110f5fc520654456096f/pdfnaut-0.2.0.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [hdsr-fewspy]: Downloading https://files.pythonhosted.org/packages/b2/ab/3f3a5ba942f22ac9e16c3e27d396cf57b66f80f8229c4719ddfa3c520aa4/hdsr_fewspy-1.9.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: Downloading https://files.pythonhosted.org/packages/88/6d/1906b05ace8de741b3ff670d1730eceffbe9a0fabdc65a792ea8e42f7eb2/livekit_plugins_elevenlabs-0.4.dev2.tar.gz
+[2024-05-05 18:56:52] INFO root fetch - processPackages [pdfnaut]: executing diffoscope
+[2024-05-05 18:56:52] INFO root fetch - processPackages [pdfnaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfnaut-0.1.1.tar.gz tmp/pdfnaut-0.2.0.tar.gz --markdown 20240505/p/pdfnaut/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-05 18:56:52] INFO root fetch - processPackages [hdsr-fewspy]: executing diffoscope
+[2024-05-05 18:56:52] INFO root fetch - processPackages [hdsr-fewspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdsr_fewspy-1.8.tar.gz tmp/hdsr_fewspy-1.9.tar.gz --markdown 20240505/h/hdsr-fewspy/1.8-1.9/README.md --exclude *.pyd
+[2024-05-05 18:56:52] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: executing diffoscope
+[2024-05-05 18:56:52] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livekit_plugins_elevenlabs-0.4.dev1.tar.gz tmp/livekit_plugins_elevenlabs-0.4.dev2.tar.gz --markdown 20240505/l/livekit-plugins-elevenlabs/0.4.dev1-0.4.dev2/README.md --exclude *.pyd
+[2024-05-05 18:56:53] INFO root fetch - processPackages [bypass-url-parser]: Remove: archive file [/home/abi/fetcher/tmp/bypass_url_parser-0.4.1.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - processPackages [bypass-url-parser]: Remove: archive file [/home/abi/fetcher/tmp/bypass_url_parser-0.4.2a0.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - main [MainThread]: End processing [bypass-url-parser]: success
+[2024-05-05 18:56:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.3.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.4.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 18:56:53] INFO root fetch - processPackages [pdfnaut]: Remove: archive file [/home/abi/fetcher/tmp/pdfnaut-0.1.1.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - processPackages [pdfnaut]: Remove: archive file [/home/abi/fetcher/tmp/pdfnaut-0.2.0.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - main [MainThread]: End processing [pdfnaut]: success
+[2024-05-05 18:56:53] INFO root fetch - processPackages [hdsr-fewspy]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_fewspy-1.8.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/livekit_plugins_elevenlabs-0.4.dev1.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - processPackages [livekit-plugins-elevenlabs]: Remove: archive file [/home/abi/fetcher/tmp/livekit_plugins_elevenlabs-0.4.dev2.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - processPackages [hdsr-fewspy]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_fewspy-1.9.tar.gz]
+[2024-05-05 18:56:53] INFO root fetch - main [MainThread]: End processing [livekit-plugins-elevenlabs]: success
+[2024-05-05 18:56:53] INFO root fetch - main [MainThread]: End processing [hdsr-fewspy]: success
+[2024-05-05 18:56:53] INFO root fetch - main [MainThread]: Store serial: [23067325]
