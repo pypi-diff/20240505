@@ -4683,3 +4683,24 @@
 [2024-05-05 08:15:38] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240504.tar.gz]
 [2024-05-05 08:15:38] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2024-05-05 08:15:38] INFO root fetch - main [MainThread]: Store serial: [23063482]
+[2024-05-05 08:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063482]
+[2024-05-05 08:17:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fake-bpy-module-latest
+[2024-05-05 08:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module
+[2024-05-05 08:17:53] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240504] Old Version: [20240503]
+[2024-05-05 08:17:53] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240505] Old Version: [20240504]
+[2024-05-05 08:17:53] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/a1/18/d065db9c4eb88e0f1246475a52235c0f0664f2afd7a4f3ff3fb98049398c/fake_bpy_module-20240503.tar.gz
+[2024-05-05 08:17:53] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/4a/00/3e3781aae7e203a839571278308c21970e613a5a122d5eba3e93b4f03a3b/fake_bpy_module_latest-20240504.tar.gz
+[2024-05-05 08:17:54] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/0a/fc/b39680cda3af4f2fe96890c90f764364a564ca82838627384c675ab346e4/fake_bpy_module_latest-20240505.tar.gz
+[2024-05-05 08:17:54] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/35/75/58a3110438396aed46962def2c4f68759a4ef61ac68eb7e8359004db2e6d/fake_bpy_module-20240504.tar.gz
+[2024-05-05 08:17:54] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-05-05 08:17:54] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240503.tar.gz tmp/fake_bpy_module-20240504.tar.gz --markdown 20240505/f/fake-bpy-module/20240503-20240504/README.md --exclude *.pyd
+[2024-05-05 08:17:54] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-05-05 08:17:54] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240504.tar.gz tmp/fake_bpy_module_latest-20240505.tar.gz --markdown 20240505/f/fake-bpy-module-latest/20240504-20240505/README.md --exclude *.pyd
+[2024-05-05 08:18:02] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240504.tar.gz]
+[2024-05-05 08:18:02] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240505.tar.gz]
+[2024-05-05 08:18:02] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-05-05 08:18:02] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240503.tar.gz]
+[2024-05-05 08:18:02] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240504.tar.gz]
+[2024-05-05 08:18:02] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-05-05 08:18:02] INFO root fetch - main [MainThread]: Store serial: [23063488]
