@@ -1681,3 +1681,24 @@
 [2024-05-05 02:35:16] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.3.3b1.tar.gz]
 [2024-05-05 02:35:16] INFO root fetch - main [MainThread]: End processing [lute3]: success
 [2024-05-05 02:35:16] INFO root fetch - main [MainThread]: Store serial: [23062203]
+[2024-05-05 02:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062203]
+[2024-05-05 02:37:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 02:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyAthena
+[2024-05-05 02:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: recommender-agent
+[2024-05-05 02:37:24] INFO root fetch - processPackages [recommender-agent]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-05 02:37:25] INFO root fetch - processPackages [PyAthena]: New version: [3.8.1] Old Version: [3.8.0]
+[2024-05-05 02:37:25] INFO root fetch - processPackages [recommender-agent]: Downloading https://files.pythonhosted.org/packages/03/3e/600429fec2773542d0f65632618d2a340a446b2c79b5713fc63f57b4b91d/recommender-agent-0.2.1.tar.gz
+[2024-05-05 02:37:25] INFO root fetch - processPackages [PyAthena]: Downloading https://files.pythonhosted.org/packages/5f/4f/a076075f21be7f701a6ff038c39d77b21a4837734ae652bb441ae2310fe6/pyathena-3.8.0.tar.gz
+[2024-05-05 02:37:25] INFO root fetch - processPackages [recommender-agent]: Downloading https://files.pythonhosted.org/packages/0c/74/8a0c0e3b72d678573c63668cfcf0a4e7e7b688e15c5f3932ebf0a7eede9f/recommender-agent-0.3.0.tar.gz
+[2024-05-05 02:37:25] INFO root fetch - processPackages [PyAthena]: Downloading https://files.pythonhosted.org/packages/33/f8/c0c421665f075b33f673aee62a92f65e6dc59c7be34c2cbfb9e32d2c98ed/pyathena-3.8.1.tar.gz
+[2024-05-05 02:37:25] INFO root fetch - processPackages [recommender-agent]: executing diffoscope
+[2024-05-05 02:37:25] INFO root fetch - processPackages [recommender-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recommender-agent-0.2.1.tar.gz tmp/recommender-agent-0.3.0.tar.gz --markdown 20240505/r/recommender-agent/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-05 02:37:25] INFO root fetch - processPackages [PyAthena]: executing diffoscope
+[2024-05-05 02:37:25] INFO root fetch - processPackages [PyAthena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyathena-3.8.0.tar.gz tmp/pyathena-3.8.1.tar.gz --markdown 20240505/P/PyAthena/3.8.0-3.8.1/README.md --exclude *.pyd
+[2024-05-05 02:37:26] INFO root fetch - processPackages [recommender-agent]: Remove: archive file [/home/abi/fetcher/tmp/recommender-agent-0.2.1.tar.gz]
+[2024-05-05 02:37:26] INFO root fetch - processPackages [recommender-agent]: Remove: archive file [/home/abi/fetcher/tmp/recommender-agent-0.3.0.tar.gz]
+[2024-05-05 02:37:26] INFO root fetch - main [MainThread]: End processing [recommender-agent]: success
+[2024-05-05 02:37:26] INFO root fetch - processPackages [PyAthena]: Remove: archive file [/home/abi/fetcher/tmp/pyathena-3.8.0.tar.gz]
+[2024-05-05 02:37:26] INFO root fetch - processPackages [PyAthena]: Remove: archive file [/home/abi/fetcher/tmp/pyathena-3.8.1.tar.gz]
+[2024-05-05 02:37:26] INFO root fetch - main [MainThread]: End processing [PyAthena]: success
+[2024-05-05 02:37:26] INFO root fetch - main [MainThread]: Store serial: [23062210]
