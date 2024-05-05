@@ -3367,3 +3367,33 @@
 [2024-05-05 05:41:21] INFO root fetch - processPackages [reskyblock]: Remove: archive file [/home/abi/fetcher/tmp/reskyblock-0.2.4.tar.gz]
 [2024-05-05 05:41:21] INFO root fetch - main [MainThread]: End processing [reskyblock]: success
 [2024-05-05 05:41:21] INFO root fetch - main [MainThread]: Store serial: [23062949]
+[2024-05-05 05:43:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062949]
+[2024-05-05 05:43:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 05:43:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmticket
+[2024-05-05 05:43:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utilmy
+[2024-05-05 05:43:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-privacy
+[2024-05-05 05:43:30] INFO root fetch - processPackages [tmticket]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-05 05:43:30] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/22/f4/9e46bc0379b927571089b83b1ccd1eed18b26a515c412cc6c2852383d8b2/tmticket-0.1.1-py3-none-any.whl
+[2024-05-05 05:43:30] INFO root fetch - processPackages [odoo-addon-privacy]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2024-05-05 05:43:30] INFO root fetch - processPackages [utilmy]: New version: [0.1.17148804] Old Version: [0.1.17141395]
+[2024-05-05 05:43:30] INFO root fetch - processPackages [odoo-addon-privacy]: Downloading https://files.pythonhosted.org/packages/93/00/cd79d227dfb95c30c88df71123e073ea82c63424bd18556b250181fda8f0/odoo_addon_privacy-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-05 05:43:30] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/03/d2/ce1b320c98595170d2fb370d8833ff78533793c50e4be80e51624d2a88e8/utilmy-0.1.17141395.tar.gz
+[2024-05-05 05:43:30] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/68/0d/d9d06bdb83162c0612723eaa0ddb4c8768120e43b0beda500be523891e68/tmticket-0.1.2.tar.gz
+[2024-05-05 05:43:30] INFO root fetch - processPackages [tmticket]: executing diffoscope
+[2024-05-05 05:43:30] INFO root fetch - processPackages [tmticket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmticket-0.1.1-py3-none-any.whl.zip tmp/tmticket-0.1.2.tar.gz --markdown 20240505/t/tmticket/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-05 05:43:30] INFO root fetch - processPackages [odoo-addon-privacy]: Downloading https://files.pythonhosted.org/packages/0b/0d/8a900eff11424526af3788e841ab113533648ad5d859e73db1b024295eb3/odoo_addon_privacy-16.0.1.0.0.9-py3-none-any.whl
+[2024-05-05 05:43:31] INFO root fetch - processPackages [odoo-addon-privacy]: executing diffoscope
+[2024-05-05 05:43:31] INFO root fetch - processPackages [odoo-addon-privacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_privacy-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_privacy-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-privacy/16.0.1.0.0.8-16.0.1.0.0.9/README.md --exclude *.pyd
+[2024-05-05 05:43:31] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.1-py3-none-any.whl.zip]
+[2024-05-05 05:43:31] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.2.tar.gz]
+[2024-05-05 05:43:31] INFO root fetch - main [MainThread]: End processing [tmticket]: success
+[2024-05-05 05:43:31] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/3a/09/07b9cb23c8b3aa7eba6d4504ad83b916a3982df4e639adc2ac43cddae71f/utilmy-0.1.17148804.tar.gz
+[2024-05-05 05:43:31] INFO root fetch - processPackages [odoo-addon-privacy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_privacy-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-05 05:43:31] INFO root fetch - processPackages [odoo-addon-privacy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_privacy-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-05-05 05:43:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-privacy]: success
+[2024-05-05 05:43:31] INFO root fetch - processPackages [utilmy]: executing diffoscope
+[2024-05-05 05:43:31] INFO root fetch - processPackages [utilmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilmy-0.1.17141395.tar.gz tmp/utilmy-0.1.17148804.tar.gz --markdown 20240505/u/utilmy/0.1.17141395-0.1.17148804/README.md --exclude *.pyd
+[2024-05-05 05:43:39] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17141395.tar.gz]
+[2024-05-05 05:43:39] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17148804.tar.gz]
+[2024-05-05 05:43:39] INFO root fetch - main [MainThread]: End processing [utilmy]: success
+[2024-05-05 05:43:39] INFO root fetch - main [MainThread]: Store serial: [23062957]
