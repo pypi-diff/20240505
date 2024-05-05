@@ -7687,3 +7687,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:25:08] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip]
 [2024-05-05 12:25:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2024-05-05 12:25:08] INFO root fetch - main [MainThread]: Store serial: [23064744]
+[2024-05-05 12:27:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064744]
+[2024-05-05 12:27:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 12:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: normal-position-combination
+[2024-05-05 12:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkt-retv
+[2024-05-05 12:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: momonga
+[2024-05-05 12:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runit-cli
+[2024-05-05 12:27:17] INFO root fetch - processPackages [normal-position-combination]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 12:27:17] INFO root fetch - processPackages [runit-cli]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-05 12:27:17] INFO root fetch - processPackages [momonga]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 12:27:17] INFO root fetch - processPackages [mkt-retv]: New version: [1.410] Old Version: [1.409]
+[2024-05-05 12:27:17] INFO root fetch - processPackages [normal-position-combination]: Downloading https://files.pythonhosted.org/packages/a0/4a/0527c144bf615b0f3fd55285b3ccbacb2979108d5948c43f45739cf10947/normal-position-combination-0.0.2.tar.gz
+[2024-05-05 12:27:17] INFO root fetch - processPackages [momonga]: Downloading https://files.pythonhosted.org/packages/96/e0/1b857700f0360130540e8398d6be47868523553466ab255bdf71d65a5ccc/momonga-0.1.0-py3-none-any.whl
+[2024-05-05 12:27:17] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ee/f5/c2eb1f606463db29f040b1ce09acb64e4f1f2c4a10dc7d16367010f663d2/mkt-retv-1.409.tar.gz
+[2024-05-05 12:27:17] INFO root fetch - processPackages [runit-cli]: Downloading https://files.pythonhosted.org/packages/2d/c0/9ee979da171f1c074336f0ddf04aea6974f2c749bc01935e2a9712eae0bc/runit_cli-0.4.1.tar.gz
+[2024-05-05 12:27:18] INFO root fetch - processPackages [momonga]: Downloading https://files.pythonhosted.org/packages/89/73/644397a6923ea66828e0ebe878411b1bad3161a663542bda62470ba45912/momonga-0.1.1-py3-none-any.whl
+[2024-05-05 12:27:18] INFO root fetch - processPackages [runit-cli]: Downloading https://files.pythonhosted.org/packages/aa/26/c595871b0ebaf957d8d169df67d91a12c987fd66e46f1ed1eb8945359dbd/runit_cli-0.4.2.tar.gz
+[2024-05-05 12:27:18] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ed/e9/5c3d2996012d5877c6ae8c172ee18c2a798a4413756d721671fce3764fba/mkt-retv-1.410.tar.gz
+[2024-05-05 12:27:18] INFO root fetch - processPackages [momonga]: executing diffoscope
+[2024-05-05 12:27:18] INFO root fetch - processPackages [momonga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/momonga-0.1.0-py3-none-any.whl.zip tmp/momonga-0.1.1-py3-none-any.whl.zip --markdown 20240505/m/momonga/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 12:27:18] INFO root fetch - processPackages [runit-cli]: executing diffoscope
+[2024-05-05 12:27:18] INFO root fetch - processPackages [runit-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runit_cli-0.4.1.tar.gz tmp/runit_cli-0.4.2.tar.gz --markdown 20240505/r/runit-cli/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-05 12:27:18] INFO root fetch - processPackages [mkt-retv]: executing diffoscope
+[2024-05-05 12:27:18] INFO root fetch - processPackages [mkt-retv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkt-retv-1.409.tar.gz tmp/mkt-retv-1.410.tar.gz --markdown 20240505/m/mkt-retv/1.409-1.410/README.md --exclude *.pyd
+[2024-05-05 12:27:18] INFO root fetch - processPackages [normal-position-combination]: Downloading https://files.pythonhosted.org/packages/50/48/b3fcb225c243571482e7773a5da68786bd88717c2382bf2627b346e5e558/normal-position-combination-0.0.3.tar.gz
+[2024-05-05 12:27:18] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.409.tar.gz]
+[2024-05-05 12:27:18] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.410.tar.gz]
+[2024-05-05 12:27:18] INFO root fetch - main [MainThread]: End processing [mkt-retv]: success
+[2024-05-05 12:27:18] INFO root fetch - processPackages [normal-position-combination]: executing diffoscope
+[2024-05-05 12:27:18] INFO root fetch - processPackages [normal-position-combination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/normal-position-combination-0.0.2.tar.gz tmp/normal-position-combination-0.0.3.tar.gz --markdown 20240505/n/normal-position-combination/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 12:27:18] INFO root fetch - processPackages [momonga]: Remove: archive file [/home/abi/fetcher/tmp/momonga-0.1.0-py3-none-any.whl.zip]
+[2024-05-05 12:27:18] INFO root fetch - processPackages [momonga]: Remove: archive file [/home/abi/fetcher/tmp/momonga-0.1.1-py3-none-any.whl.zip]
+[2024-05-05 12:27:18] INFO root fetch - main [MainThread]: End processing [momonga]: success
+[2024-05-05 12:27:19] INFO root fetch - processPackages [runit-cli]: Remove: archive file [/home/abi/fetcher/tmp/runit_cli-0.4.1.tar.gz]
+[2024-05-05 12:27:19] INFO root fetch - processPackages [runit-cli]: Remove: archive file [/home/abi/fetcher/tmp/runit_cli-0.4.2.tar.gz]
+[2024-05-05 12:27:19] INFO root fetch - main [MainThread]: End processing [runit-cli]: success
+[2024-05-05 12:28:13] INFO root fetch - processPackages [normal-position-combination]: Remove: archive file [/home/abi/fetcher/tmp/normal-position-combination-0.0.2.tar.gz]
+[2024-05-05 12:28:13] INFO root fetch - processPackages [normal-position-combination]: Remove: archive file [/home/abi/fetcher/tmp/normal-position-combination-0.0.3.tar.gz]
+[2024-05-05 12:28:13] INFO root fetch - main [MainThread]: End processing [normal-position-combination]: success
+[2024-05-05 12:28:13] INFO root fetch - main [MainThread]: Store serial: [23064759]
