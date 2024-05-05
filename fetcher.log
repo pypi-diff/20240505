@@ -17453,3 +17453,17 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:43:53] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.3.1.tar.gz]
 [2024-05-05 23:43:53] INFO root fetch - main [MainThread]: End processing [whisperplus]: success
 [2024-05-05 23:43:53] INFO root fetch - main [MainThread]: Store serial: [23069247]
+[2024-05-05 23:45:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069247]
+[2024-05-05 23:46:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 23:48:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069247]
+[2024-05-05 23:48:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 23:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: generic-exporters
+[2024-05-05 23:48:08] INFO root fetch - processPackages [generic-exporters]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 23:48:08] INFO root fetch - processPackages [generic-exporters]: Downloading https://files.pythonhosted.org/packages/bd/19/1f8c17f429c446f3b0db26d6fd4951e956be16ee417d61819678a52fe47a/generic_exporters-0.0.8.tar.gz
+[2024-05-05 23:48:08] INFO root fetch - processPackages [generic-exporters]: Downloading https://files.pythonhosted.org/packages/b3/80/ff71b5d46319bde258f656bea46eb1b4866487aefe381edcb82f32e6f35a/generic_exporters-0.0.9.tar.gz
+[2024-05-05 23:48:08] INFO root fetch - processPackages [generic-exporters]: executing diffoscope
+[2024-05-05 23:48:08] INFO root fetch - processPackages [generic-exporters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generic_exporters-0.0.8.tar.gz tmp/generic_exporters-0.0.9.tar.gz --markdown 20240505/g/generic-exporters/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 23:48:09] INFO root fetch - processPackages [generic-exporters]: Remove: archive file [/home/abi/fetcher/tmp/generic_exporters-0.0.8.tar.gz]
+[2024-05-05 23:48:09] INFO root fetch - processPackages [generic-exporters]: Remove: archive file [/home/abi/fetcher/tmp/generic_exporters-0.0.9.tar.gz]
+[2024-05-05 23:48:09] INFO root fetch - main [MainThread]: End processing [generic-exporters]: success
+[2024-05-05 23:48:09] INFO root fetch - main [MainThread]: Store serial: [23069250]
