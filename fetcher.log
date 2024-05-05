@@ -3409,3 +3409,15 @@
 [2024-05-05 05:45:50] INFO root fetch - processPackages [cassiopeia]: Remove: archive file [/home/abi/fetcher/tmp/cassiopeia-5.1.0.tar.gz]
 [2024-05-05 05:45:50] INFO root fetch - main [MainThread]: End processing [cassiopeia]: success
 [2024-05-05 05:45:50] INFO root fetch - main [MainThread]: Store serial: [23062963]
+[2024-05-05 05:47:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062963]
+[2024-05-05 05:47:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 05:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: petrosa
+[2024-05-05 05:47:59] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 05:47:59] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-05 05:47:59] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-05 05:47:59] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-05 05:47:59] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240505/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 05:48:01] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-05 05:48:01] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-05 05:48:01] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-05 05:48:01] INFO root fetch - main [MainThread]: Store serial: [23062966]
