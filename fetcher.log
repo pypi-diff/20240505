@@ -14197,3 +14197,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:51:46] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-05-05 19:51:46] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-05-05 19:51:46] INFO root fetch - main [MainThread]: Store serial: [23067727]
+[2024-05-05 19:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067727]
+[2024-05-05 19:53:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 19:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web-ui-helper
+[2024-05-05 19:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cleese-stim
+[2024-05-05 19:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jb-news
+[2024-05-05 19:53:55] INFO root fetch - processPackages [web-ui-helper]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 19:53:55] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/dc/74/af1774f066eb67e82b4ebfd5c6bb6bca06cea032e7f908da163023c2d94c/web-ui-helper-0.0.2.tar.gz
+[2024-05-05 19:53:55] INFO root fetch - processPackages [jb-news]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-05-05 19:53:55] INFO root fetch - processPackages [cleese-stim]: New version: [2.3.0] Old Version: [2.1.0]
+[2024-05-05 19:53:55] INFO root fetch - processPackages [jb-news]: Downloading https://files.pythonhosted.org/packages/9e/af/7f5d5810d464813799e4f337b7983ff8caefd632fdbef08e3da770da8485/jb_news-2.1.1-py3-none-any.whl
+[2024-05-05 19:53:55] INFO root fetch - processPackages [cleese-stim]: Downloading https://files.pythonhosted.org/packages/e2/3e/7c5df974e65535bfb169456c21f8d1ae172db53d4c6957c8cd2a820afeed/cleese_stim-2.1.0.tar.gz
+[2024-05-05 19:53:55] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/b7/83/2e2498566111b861d485cfd0221349b20400d383ac652f76f315a559af3d/web-ui-helper-0.0.3.tar.gz
+[2024-05-05 19:53:56] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-05 19:53:56] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-0.0.2.tar.gz tmp/web-ui-helper-0.0.3.tar.gz --markdown 20240505/w/web-ui-helper/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 19:53:56] INFO root fetch - processPackages [jb-news]: Downloading https://files.pythonhosted.org/packages/aa/9b/990525dbe33bca1ad6cb51e4b44fe6edb476b14cb41e8928a5d115e8e9fc/jb_news-2.2.0-py3-none-any.whl
+[2024-05-05 19:53:56] INFO root fetch - processPackages [cleese-stim]: Downloading https://files.pythonhosted.org/packages/48/d5/c03df27eff6abd07eb4e037e41d3547dd8cf31d2141ce01f6aebc59eaeb9/cleese_stim-2.3.0.tar.gz
+[2024-05-05 19:53:56] INFO root fetch - processPackages [jb-news]: executing diffoscope
+[2024-05-05 19:53:56] INFO root fetch - processPackages [jb-news]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jb_news-2.1.1-py3-none-any.whl.zip tmp/jb_news-2.2.0-py3-none-any.whl.zip --markdown 20240505/j/jb-news/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-05-05 19:53:56] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.2.tar.gz]
+[2024-05-05 19:53:56] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.3.tar.gz]
+[2024-05-05 19:53:56] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-05 19:53:56] INFO root fetch - processPackages [jb-news]: Remove: archive file [/home/abi/fetcher/tmp/jb_news-2.1.1-py3-none-any.whl.zip]
+[2024-05-05 19:53:56] INFO root fetch - processPackages [jb-news]: Remove: archive file [/home/abi/fetcher/tmp/jb_news-2.2.0-py3-none-any.whl.zip]
+[2024-05-05 19:53:56] INFO root fetch - main [MainThread]: End processing [jb-news]: success
+[2024-05-05 19:53:56] INFO root fetch - processPackages [cleese-stim]: executing diffoscope
+[2024-05-05 19:53:56] INFO root fetch - processPackages [cleese-stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleese_stim-2.1.0.tar.gz tmp/cleese_stim-2.3.0.tar.gz --markdown 20240505/c/cleese-stim/2.1.0-2.3.0/README.md --exclude *.pyd
+[2024-05-05 19:53:57] INFO root fetch - processPackages [cleese-stim]: Remove: archive file [/home/abi/fetcher/tmp/cleese_stim-2.1.0.tar.gz]
+[2024-05-05 19:53:57] INFO root fetch - processPackages [cleese-stim]: Remove: archive file [/home/abi/fetcher/tmp/cleese_stim-2.3.0.tar.gz]
+[2024-05-05 19:53:57] INFO root fetch - main [MainThread]: End processing [cleese-stim]: success
+[2024-05-05 19:53:57] INFO root fetch - main [MainThread]: Store serial: [23067740]
