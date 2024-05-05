@@ -3979,3 +3979,51 @@
 [2024-05-05 06:59:46] INFO root fetch - processPackages [libvsmbr-python]: Remove: archive file [/home/abi/fetcher/tmp/libvsmbr-python-20240505.tar.gz]
 [2024-05-05 06:59:46] INFO root fetch - main [MainThread]: End processing [libvsmbr-python]: success
 [2024-05-05 06:59:46] INFO root fetch - main [MainThread]: Store serial: [23063181]
+[2024-05-05 07:01:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063181]
+[2024-05-05 07:01:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 07:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opendp
+[2024-05-05 07:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-es-aeat
+[2024-05-05 07:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-es-aeat-mod303
+[2024-05-05 07:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: syworkflow
+[2024-05-05 07:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-l10n-es-vat-book
+[2024-05-05 07:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cocorum
+[2024-05-05 07:01:54] WARNING root fetch - processPackages [syworkflow]: Skipping, unable to determine old version
+[2024-05-05 07:01:54] INFO root fetch - main [MainThread]: End processing [syworkflow] error
+[2024-05-05 07:01:54] INFO root fetch - processPackages [cocorum]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-05 07:01:54] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.4.0.2]
+[2024-05-05 07:01:54] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/ae/c0/035298b4f4f5b650dbd24b1ab0c52e606b1a83a63eba55e92b1dbd7ef9a0/cocorum-1.0.0.tar.gz
+[2024-05-05 07:01:54] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Downloading https://files.pythonhosted.org/packages/e9/22/66f3645bd80a3f54a0d295327685b5aef4690997018d61c4d66ddc51f0c9/odoo_addon_l10n_es_vat_book-16.0.1.4.0.2-py3-none-any.whl
+[2024-05-05 07:01:54] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: New version: [17.0.1.2.0.2] Old Version: [17.0.1.2.0.1]
+[2024-05-05 07:01:54] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: New version: [17.0.1.0.1.4] Old Version: [17.0.1.0.1.2]
+[2024-05-05 07:01:54] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240504001]
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: Downloading https://files.pythonhosted.org/packages/8a/25/5cfb22a985132c5dc73806aa6363acbf6100806ac098c745c7e8b8861d47/odoo_addon_l10n_es_aeat_mod303-17.0.1.2.0.1-py3-none-any.whl
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: Downloading https://files.pythonhosted.org/packages/a1/2c/8d6c1df5a1558f2e73b3dbd7fc6c9e541109f0e5ede01ec7ff48753860ba/odoo_addon_l10n_es_aeat-17.0.1.0.1.2-py3-none-any.whl
+[2024-05-05 07:01:55] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/9e/55/b6cdf70ea4d171c4a03376d0aef4fc51950992e4bfe2d270d7b8a9a9925d/opendp-0.9.2a20240504001.tar.gz
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Downloading https://files.pythonhosted.org/packages/3c/0f/60d3b6dff05fdb98da0aec4f359e49f2aa3b4be731885ca4b40603600c39/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-05 07:01:55] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/e4/9d/f8bac8758f2fcd04db650a280d0ff43d130bcde7453732c04160d6e4ffd3/cocorum-1.1.0.tar.gz
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: executing diffoscope
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_vat_book-16.0.1.4.0.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-es-vat-book/16.0.1.4.0.2-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: Downloading https://files.pythonhosted.org/packages/2a/4c/4090c5820bf400aa617948690d62d05f32c30c78ff4315e46b7f7a5caedf/odoo_addon_l10n_es_aeat-17.0.1.0.1.4-py3-none-any.whl
+[2024-05-05 07:01:55] INFO root fetch - processPackages [cocorum]: executing diffoscope
+[2024-05-05 07:01:55] INFO root fetch - processPackages [cocorum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocorum-1.0.0.tar.gz tmp/cocorum-1.1.0.tar.gz --markdown 20240505/c/cocorum/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: Downloading https://files.pythonhosted.org/packages/72/ff/58a00a8b57238a8be919ec1ad787cb92db78da1bfdf917c6fa7c2f1ab07c/odoo_addon_l10n_es_aeat_mod303-17.0.1.2.0.2-py3-none-any.whl
+[2024-05-05 07:01:55] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/85/6c/b343f02569a02102fd61d7a89f66fb699dbdbf7903119928f4cc3ce8516d/opendp-0.9.2b20240207001-py3-none-any.whl
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: executing diffoscope
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat-17.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat-17.0.1.0.1.4-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-es-aeat/17.0.1.0.1.2-17.0.1.0.1.4/README.md --exclude *.pyd
+[2024-05-05 07:01:55] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36048210>=10485760
+[2024-05-05 07:01:55] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: executing diffoscope
+[2024-05-05 07:01:55] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_mod303-17.0.1.2.0.1-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_mod303-17.0.1.2.0.2-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-es-aeat-mod303/17.0.1.2.0.1-17.0.1.2.0.2/README.md --exclude *.pyd
+[2024-05-05 07:01:56] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-1.0.0.tar.gz]
+[2024-05-05 07:01:56] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-1.1.0.tar.gz]
+[2024-05-05 07:01:56] INFO root fetch - main [MainThread]: End processing [cocorum]: success
+[2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_vat_book-16.0.1.4.0.2-py3-none-any.whl.zip]
+[2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-vat-book]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_vat_book-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-05 07:01:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-vat-book]: success
+[2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod303-17.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod303-17.0.1.2.0.2-py3-none-any.whl.zip]
+[2024-05-05 07:01:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod303]: success
+[2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat-17.0.1.0.1.4-py3-none-any.whl.zip]
+[2024-05-05 07:01:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat]: success
+[2024-05-05 07:01:56] INFO root fetch - main [MainThread]: Store serial: [23063210]
