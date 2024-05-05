@@ -4704,3 +4704,18 @@
 [2024-05-05 08:18:02] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240504.tar.gz]
 [2024-05-05 08:18:02] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
 [2024-05-05 08:18:02] INFO root fetch - main [MainThread]: Store serial: [23063488]
+[2024-05-05 08:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063488]
+[2024-05-05 08:20:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: query-test-lib
+[2024-05-05 08:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PKNSETools
+[2024-05-05 08:20:19] WARNING root fetch - processPackages [query-test-lib]: Skipping, unable to determine old version
+[2024-05-05 08:20:19] INFO root fetch - main [MainThread]: End processing [query-test-lib] error
+[2024-05-05 08:20:19] INFO root fetch - processPackages [PKNSETools]: New version: [0.1.20240505.96] Old Version: [0.1.20240421.94]
+[2024-05-05 08:20:19] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/ce/25/b7031ac2b93f50a61ab9ac56ef8c63a00d008561805e24721c09b105b979/PKNSETools-0.1.20240421.94.tar.gz
+[2024-05-05 08:20:20] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/2b/d4/3f1a68abb0e44e00112fb8e73cd1bd41a681270870e85a301169ec67ed4c/PKNSETools-0.1.20240505.96.tar.gz
+[2024-05-05 08:20:20] INFO root fetch - processPackages [PKNSETools]: executing diffoscope
+[2024-05-05 08:20:20] INFO root fetch - processPackages [PKNSETools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKNSETools-0.1.20240421.94.tar.gz tmp/PKNSETools-0.1.20240505.96.tar.gz --markdown 20240505/P/PKNSETools/0.1.20240421.94-0.1.20240505.96/README.md --exclude *.pyd
+[2024-05-05 08:20:21] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240421.94.tar.gz]
+[2024-05-05 08:20:21] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240505.96.tar.gz]
+[2024-05-05 08:20:21] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
+[2024-05-05 08:20:21] INFO root fetch - main [MainThread]: Store serial: [23063494]
