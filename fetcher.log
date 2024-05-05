@@ -14857,3 +14857,30 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:40:18] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b18.tar.gz]
 [2024-05-05 20:40:18] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
 [2024-05-05 20:40:18] INFO root fetch - main [MainThread]: Store serial: [23068057]
+[2024-05-05 20:42:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068057]
+[2024-05-05 20:42:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysparkify
+[2024-05-05 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shocker
+[2024-05-05 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-asterisk-click2dial
+[2024-05-05 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: WPP-Whatsapp
+[2024-05-05 20:42:27] INFO root fetch - processPackages [pysparkify]: New version: [0.26.7] Old Version: [0.26.6]
+[2024-05-05 20:42:27] WARNING root fetch - processPackages [shocker]: Skipping, unable to determine old version
+[2024-05-05 20:42:27] INFO root fetch - main [MainThread]: End processing [shocker] error
+[2024-05-05 20:42:27] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/5b/1f/6b9b2bd9565c73ea517d2b83bf00c1f6cbfbd771783fbc363febeb36c8d2/pysparkify-0.26.6.tar.gz
+[2024-05-05 20:42:27] WARNING root fetch - processPackages [odoo-addon-asterisk-click2dial]: Skipping, unable to determine old version
+[2024-05-05 20:42:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-asterisk-click2dial] error
+[2024-05-05 20:42:27] INFO root fetch - processPackages [WPP-Whatsapp]: New version: [0.2.2.3] Old Version: [0.2.2.2]
+[2024-05-05 20:42:28] INFO root fetch - processPackages [WPP-Whatsapp]: Downloading https://files.pythonhosted.org/packages/6e/3a/5aadf358c11fd88925b04123dd13e3373e00180b08b8dc924092afe7e6b5/wpp_whatsapp-0.2.2.2.tar.gz
+[2024-05-05 20:42:28] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/af/3c/bd6e6392d5ac9ae9f102018f50cc6f5c050c520d7d975b9b47ace00c6765/pysparkify-0.26.7.tar.gz
+[2024-05-05 20:42:28] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-05-05 20:42:28] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.26.6.tar.gz tmp/pysparkify-0.26.7.tar.gz --markdown 20240505/p/pysparkify/0.26.6-0.26.7/README.md --exclude *.pyd
+[2024-05-05 20:42:28] INFO root fetch - processPackages [WPP-Whatsapp]: Downloading https://files.pythonhosted.org/packages/e5/7d/4f213e0adb54ea148255e8b508b393402e670d99e5d158afa58978253993/wpp_whatsapp-0.2.2.3.tar.gz
+[2024-05-05 20:42:28] INFO root fetch - processPackages [WPP-Whatsapp]: executing diffoscope
+[2024-05-05 20:42:28] INFO root fetch - processPackages [WPP-Whatsapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpp_whatsapp-0.2.2.2.tar.gz tmp/wpp_whatsapp-0.2.2.3.tar.gz --markdown 20240505/W/WPP-Whatsapp/0.2.2.2-0.2.2.3/README.md --exclude *.pyd
+[2024-05-05 20:42:28] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.6.tar.gz]
+[2024-05-05 20:42:28] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.7.tar.gz]
+[2024-05-05 20:42:28] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-05-05 20:42:29] INFO root fetch - processPackages [WPP-Whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/wpp_whatsapp-0.2.2.2.tar.gz]
+[2024-05-05 20:42:29] INFO root fetch - processPackages [WPP-Whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/wpp_whatsapp-0.2.2.3.tar.gz]
+[2024-05-05 20:42:29] INFO root fetch - main [MainThread]: End processing [WPP-Whatsapp]: success
+[2024-05-05 20:42:29] INFO root fetch - main [MainThread]: Store serial: [23068072]
