@@ -9903,3 +9903,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:10:05] INFO root fetch - processPackages [tmtccmd]: Remove: archive file [/home/abi/fetcher/tmp/tmtccmd-8.0.0rc2.tar.gz]
 [2024-05-05 15:10:05] INFO root fetch - main [MainThread]: End processing [tmtccmd]: success
 [2024-05-05 15:10:05] INFO root fetch - main [MainThread]: Store serial: [23065783]
+[2024-05-05 15:12:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065783]
+[2024-05-05 15:12:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 15:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tgctoolbox
+[2024-05-05 15:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plutobook
+[2024-05-05 15:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datamodel-code-generator-michael2to3
+[2024-05-05 15:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ODLabeler
+[2024-05-05 15:12:14] INFO root fetch - processPackages [tgctoolbox]: New version: [0.5] Old Version: [0.4]
+[2024-05-05 15:12:14] WARNING root fetch - processPackages [ODLabeler]: Skipping, unable to determine old version
+[2024-05-05 15:12:14] INFO root fetch - main [MainThread]: End processing [ODLabeler] error
+[2024-05-05 15:12:14] ERROR root fetch - processPackages [plutobook]: Unable to get metadata: No such project 'plutobook'
+[2024-05-05 15:12:14] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-05 15:12:14] WARNING root fetch - processPackages [datamodel-code-generator-michael2to3]: Skipping, unable to determine old version
+[2024-05-05 15:12:14] INFO root fetch - main [MainThread]: End processing [datamodel-code-generator-michael2to3] error
+[2024-05-05 15:12:15] INFO root fetch - processPackages [tgctoolbox]: Downloading https://files.pythonhosted.org/packages/86/38/df12b5520c1569f27732d5067b1f7630c05a72ecc896b04b999f46735042/tgctoolbox-0.4.tar.gz
+[2024-05-05 15:12:15] INFO root fetch - processPackages [tgctoolbox]: Downloading https://files.pythonhosted.org/packages/02/34/d6aa3ea30b7ea02ff706f7ca3868c7c39e9073b89b6907a557b7a049eece/tgctoolbox-0.5.tar.gz
+[2024-05-05 15:12:15] INFO root fetch - processPackages [tgctoolbox]: executing diffoscope
+[2024-05-05 15:12:15] INFO root fetch - processPackages [tgctoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgctoolbox-0.4.tar.gz tmp/tgctoolbox-0.5.tar.gz --markdown 20240505/t/tgctoolbox/0.4-0.5/README.md --exclude *.pyd
+[2024-05-05 15:12:16] INFO root fetch - processPackages [tgctoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tgctoolbox-0.4.tar.gz]
+[2024-05-05 15:12:16] INFO root fetch - processPackages [tgctoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tgctoolbox-0.5.tar.gz]
+[2024-05-05 15:12:16] INFO root fetch - main [MainThread]: End processing [tgctoolbox]: success
+[2024-05-05 15:12:16] INFO root fetch - main [MainThread]: Store serial: [23065799]
