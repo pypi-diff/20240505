@@ -9065,3 +9065,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:17:15] INFO root fetch - processPackages [appthreat-chen]: Remove: archive file [/home/abi/fetcher/tmp/appthreat_chen-2.1.0.tar.gz]
 [2024-05-05 14:17:15] INFO root fetch - main [MainThread]: End processing [appthreat-chen]: success
 [2024-05-05 14:17:15] INFO root fetch - main [MainThread]: Store serial: [23065386]
+[2024-05-05 14:19:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065386]
+[2024-05-05 14:19:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 14:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naverplaceapi
+[2024-05-05 14:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gene-trajectory
+[2024-05-05 14:19:23] INFO root fetch - processPackages [gene-trajectory]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 14:19:23] INFO root fetch - processPackages [naverplaceapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 14:19:23] INFO root fetch - processPackages [gene-trajectory]: Downloading https://files.pythonhosted.org/packages/00/c7/b4d5d96e6d3b85508781301f844ed6d0172cf61de285012f347d17278e4d/gene_trajectory-1.0.0.tar.gz
+[2024-05-05 14:19:23] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/76/d9/4dd5ff78d7edda8549c2197c4bf8e22fb61282799812c8a99d6229923df0/naverplaceapi-0.1.8.tar.gz
+[2024-05-05 14:19:23] INFO root fetch - processPackages [gene-trajectory]: Downloading https://files.pythonhosted.org/packages/f5/80/3749c08c801fd547ad8ecba93c662c65a3eca4b9cadf17cbe49ec6e950da/gene_trajectory-1.0.1.tar.gz
+[2024-05-05 14:19:23] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/d6/49/6fd82197b70cc3b07a714c6728efc2da9518496de2c2a7d893b2283afbce/naverplaceapi-0.1.9.tar.gz
+[2024-05-05 14:19:23] INFO root fetch - processPackages [gene-trajectory]: executing diffoscope
+[2024-05-05 14:19:23] INFO root fetch - processPackages [gene-trajectory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gene_trajectory-1.0.0.tar.gz tmp/gene_trajectory-1.0.1.tar.gz --markdown 20240505/g/gene-trajectory/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 14:19:23] INFO root fetch - processPackages [naverplaceapi]: executing diffoscope
+[2024-05-05 14:19:23] INFO root fetch - processPackages [naverplaceapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naverplaceapi-0.1.8.tar.gz tmp/naverplaceapi-0.1.9.tar.gz --markdown 20240505/n/naverplaceapi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 14:19:24] INFO root fetch - processPackages [gene-trajectory]: Remove: archive file [/home/abi/fetcher/tmp/gene_trajectory-1.0.0.tar.gz]
+[2024-05-05 14:19:24] INFO root fetch - processPackages [gene-trajectory]: Remove: archive file [/home/abi/fetcher/tmp/gene_trajectory-1.0.1.tar.gz]
+[2024-05-05 14:19:24] INFO root fetch - main [MainThread]: End processing [gene-trajectory]: success
+[2024-05-05 14:19:24] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.8.tar.gz]
+[2024-05-05 14:19:24] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.9.tar.gz]
+[2024-05-05 14:19:24] INFO root fetch - main [MainThread]: End processing [naverplaceapi]: success
+[2024-05-05 14:19:24] INFO root fetch - main [MainThread]: Store serial: [23065393]
