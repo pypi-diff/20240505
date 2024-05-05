@@ -16772,3 +16772,9 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:41:06] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-05-05 22:41:06] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-05 22:41:06] INFO root fetch - main [MainThread]: Store serial: [23068924]
+[2024-05-05 22:43:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068924]
+[2024-05-05 22:43:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 22:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytruco
+[2024-05-05 22:43:15] WARNING root fetch - processPackages [pytruco]: Skipping, unable to determine old version
+[2024-05-05 22:43:15] INFO root fetch - main [MainThread]: End processing [pytruco] error
+[2024-05-05 22:43:15] INFO root fetch - main [MainThread]: Store serial: [23068924]
