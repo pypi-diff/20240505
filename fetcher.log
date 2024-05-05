@@ -5370,3 +5370,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:19:51] INFO root fetch - processPackages [dtPyAppFramework]: Remove: archive file [/home/abi/fetcher/tmp/dtpyappframework-1.2.tar.gz]
 [2024-05-05 09:19:51] INFO root fetch - main [MainThread]: End processing [dtPyAppFramework]: success
 [2024-05-05 09:19:51] INFO root fetch - main [MainThread]: Store serial: [23063787]
+[2024-05-05 09:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063787]
+[2024-05-05 09:21:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 09:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: offlinesec-client
+[2024-05-05 09:21:59] INFO root fetch - processPackages [offlinesec-client]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-05 09:21:59] INFO root fetch - processPackages [offlinesec-client]: Downloading https://files.pythonhosted.org/packages/ce/cb/9a1f33d38b4cb8ce1e83f55f3acae4f14be200e4140c1151545d3519adf2/offlinesec_client-1.1.1.tar.gz
+[2024-05-05 09:22:00] INFO root fetch - processPackages [offlinesec-client]: Downloading https://files.pythonhosted.org/packages/80/7f/c1eea707fd2bcd29a52d7f529e9eada31ee5799abd5eb9e91e764dbf66de/offlinesec_client-1.1.2.tar.gz
+[2024-05-05 09:22:00] INFO root fetch - processPackages [offlinesec-client]: executing diffoscope
+[2024-05-05 09:22:00] INFO root fetch - processPackages [offlinesec-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offlinesec_client-1.1.1.tar.gz tmp/offlinesec_client-1.1.2.tar.gz --markdown 20240505/o/offlinesec-client/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-05 09:22:00] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.1.tar.gz]
+[2024-05-05 09:22:00] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.2.tar.gz]
+[2024-05-05 09:22:00] INFO root fetch - main [MainThread]: End processing [offlinesec-client]: success
+[2024-05-05 09:22:00] INFO root fetch - main [MainThread]: Store serial: [23063790]
