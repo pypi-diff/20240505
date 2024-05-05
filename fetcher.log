@@ -3352,3 +3352,18 @@
 [2024-05-05 05:39:10] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.8.tar.gz]
 [2024-05-05 05:39:10] INFO root fetch - main [MainThread]: End processing [sponge]: success
 [2024-05-05 05:39:10] INFO root fetch - main [MainThread]: Store serial: [23062940]
+[2024-05-05 05:41:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062940]
+[2024-05-05 05:41:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 05:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rj2y
+[2024-05-05 05:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reskyblock
+[2024-05-05 05:41:18] WARNING root fetch - processPackages [rj2y]: Skipping, unable to determine old version
+[2024-05-05 05:41:18] INFO root fetch - main [MainThread]: End processing [rj2y] error
+[2024-05-05 05:41:19] INFO root fetch - processPackages [reskyblock]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-05 05:41:19] INFO root fetch - processPackages [reskyblock]: Downloading https://files.pythonhosted.org/packages/f0/35/8d559fe5c10ceee4361ed804ac99d7f0accc757abe6d3c00a02f0fe0e99e/reskyblock-0.2.3.tar.gz
+[2024-05-05 05:41:20] INFO root fetch - processPackages [reskyblock]: Downloading https://files.pythonhosted.org/packages/5c/ed/bd692b45115af495ef3c23f81acf893fee4df56fb5b9f5f871064b5ccffd/reskyblock-0.2.4.tar.gz
+[2024-05-05 05:41:20] INFO root fetch - processPackages [reskyblock]: executing diffoscope
+[2024-05-05 05:41:20] INFO root fetch - processPackages [reskyblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reskyblock-0.2.3.tar.gz tmp/reskyblock-0.2.4.tar.gz --markdown 20240505/r/reskyblock/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-05 05:41:21] INFO root fetch - processPackages [reskyblock]: Remove: archive file [/home/abi/fetcher/tmp/reskyblock-0.2.3.tar.gz]
+[2024-05-05 05:41:21] INFO root fetch - processPackages [reskyblock]: Remove: archive file [/home/abi/fetcher/tmp/reskyblock-0.2.4.tar.gz]
+[2024-05-05 05:41:21] INFO root fetch - main [MainThread]: End processing [reskyblock]: success
+[2024-05-05 05:41:21] INFO root fetch - main [MainThread]: Store serial: [23062949]
