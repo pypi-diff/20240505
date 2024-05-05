@@ -10077,3 +10077,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:20:01] INFO root fetch - processPackages [ebdamame]: Remove: archive file [/home/abi/fetcher/tmp/ebdamame-0.1.3.tar.gz]
 [2024-05-05 15:20:01] INFO root fetch - main [MainThread]: End processing [ebdamame]: success
 [2024-05-05 15:20:01] INFO root fetch - main [MainThread]: Store serial: [23065891]
+[2024-05-05 15:22:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065891]
+[2024-05-05 15:22:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 15:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataidea
+[2024-05-05 15:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mutwo.common
+[2024-05-05 15:22:09] INFO root fetch - processPackages [dataidea]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-05 15:22:09] INFO root fetch - processPackages [mutwo.common]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-05 15:22:09] INFO root fetch - processPackages [dataidea]: Downloading https://files.pythonhosted.org/packages/39/2d/3976ce3827d9fae1158cb5ea8c1616b4eba15573aed321436cffe43b4389/dataidea-0.2.6.tar.gz
+[2024-05-05 15:22:09] INFO root fetch - processPackages [mutwo.common]: Downloading https://files.pythonhosted.org/packages/09/2a/d600425c47ba947dbaaec042ee83d05700efbc2bf9b45509e8676ea4d423/mutwo.common-0.9.0.tar.gz
+[2024-05-05 15:22:10] INFO root fetch - processPackages [dataidea]: Downloading https://files.pythonhosted.org/packages/af/fb/3e02cf14f9643a0c2966030226e2e6f054d5c06e109ecdb01f9193c439b5/dataidea-0.2.7.tar.gz
+[2024-05-05 15:22:10] INFO root fetch - processPackages [mutwo.common]: Downloading https://files.pythonhosted.org/packages/9a/08/e7ffc8824cf49254e5c1929555442b60751bab0a21463cfa9c022edfba6d/mutwo.common-0.9.1.tar.gz
+[2024-05-05 15:22:10] INFO root fetch - processPackages [dataidea]: executing diffoscope
+[2024-05-05 15:22:10] INFO root fetch - processPackages [dataidea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataidea-0.2.6.tar.gz tmp/dataidea-0.2.7.tar.gz --markdown 20240505/d/dataidea/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-05 15:22:10] INFO root fetch - processPackages [mutwo.common]: executing diffoscope
+[2024-05-05 15:22:10] INFO root fetch - processPackages [mutwo.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutwo.common-0.9.0.tar.gz tmp/mutwo.common-0.9.1.tar.gz --markdown 20240505/m/mutwo.common/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-05 15:22:10] INFO root fetch - processPackages [mutwo.common]: Remove: archive file [/home/abi/fetcher/tmp/mutwo.common-0.9.0.tar.gz]
+[2024-05-05 15:22:10] INFO root fetch - processPackages [mutwo.common]: Remove: archive file [/home/abi/fetcher/tmp/mutwo.common-0.9.1.tar.gz]
+[2024-05-05 15:22:10] INFO root fetch - main [MainThread]: End processing [mutwo.common]: success
+[2024-05-05 15:22:10] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.6.tar.gz]
+[2024-05-05 15:22:10] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.7.tar.gz]
+[2024-05-05 15:22:10] INFO root fetch - main [MainThread]: End processing [dataidea]: success
+[2024-05-05 15:22:10] INFO root fetch - main [MainThread]: Store serial: [23065901]
