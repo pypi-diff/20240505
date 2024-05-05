@@ -6695,3 +6695,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:06:28] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240505.tar.gz]
 [2024-05-05 11:06:28] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
 [2024-05-05 11:06:28] INFO root fetch - main [MainThread]: Store serial: [23064325]
+[2024-05-05 11:08:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064325]
+[2024-05-05 11:08:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 11:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon
+[2024-05-05 11:08:37] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240504] Old Version: [1.1.1b20240503]
+[2024-05-05 11:08:37] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/b8/95/5cdf12c15c1cdd5f993325ba28130d082fab7512ce979253b93eefa5193b/autogluon-1.1.1b20240503.tar.gz
+[2024-05-05 11:08:37] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/cf/32/1321e8a8d5404129a32b2c133cc76dadeb46514a034d4a1ee58ccd91aa84/autogluon-1.1.1b20240504.tar.gz
+[2024-05-05 11:08:37] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-05-05 11:08:37] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240503.tar.gz tmp/autogluon-1.1.1b20240504.tar.gz --markdown 20240505/a/autogluon/1.1.1b20240503-1.1.1b20240504/README.md --exclude *.pyd
+[2024-05-05 11:08:38] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240503.tar.gz]
+[2024-05-05 11:08:38] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240504.tar.gz]
+[2024-05-05 11:08:38] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-05-05 11:08:38] INFO root fetch - main [MainThread]: Store serial: [23064362]
