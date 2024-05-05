@@ -4425,3 +4425,15 @@
 [2024-05-05 07:51:27] INFO root fetch - processPackages [django-richmin]: Remove: archive file [/home/abi/fetcher/tmp/django-richmin-0.1.9.tar.gz]
 [2024-05-05 07:51:27] INFO root fetch - main [MainThread]: End processing [django-richmin]: success
 [2024-05-05 07:51:27] INFO root fetch - main [MainThread]: Store serial: [23063403]
+[2024-05-05 07:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063403]
+[2024-05-05 07:53:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 07:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx2tf
+[2024-05-05 07:53:36] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-05 07:53:36] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/6f/b3/519ee148592d2531639c5f3c1434df000ecf2c24a5b55b61cba8fd4767f9/onnx2tf-1.9.8.tar.gz
+[2024-05-05 07:53:37] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/0e/df/e0c6978b06db6c5c04de100ecbe0bbb281caed31c4dd88663e61e36ca571/onnx2tf-1.9.9.tar.gz
+[2024-05-05 07:53:37] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2024-05-05 07:53:37] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20240505/o/onnx2tf/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-05 07:53:38] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.8.tar.gz]
+[2024-05-05 07:53:38] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.9.tar.gz]
+[2024-05-05 07:53:38] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2024-05-05 07:53:38] INFO root fetch - main [MainThread]: Store serial: [23063406]
