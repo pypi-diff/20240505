@@ -14933,3 +14933,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:46:57] INFO root fetch - processPackages [l4v1]: Remove: archive file [/home/abi/fetcher/tmp/l4v1-0.1.0.tar.gz]
 [2024-05-05 20:46:57] INFO root fetch - main [MainThread]: End processing [l4v1]: success
 [2024-05-05 20:46:57] INFO root fetch - main [MainThread]: Store serial: [23068086]
+[2024-05-05 20:49:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068086]
+[2024-05-05 20:49:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 20:49:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lapa-file-store-helper
+[2024-05-05 20:49:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tira
+[2024-05-05 20:49:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmrl
+[2024-05-05 20:49:05] INFO root fetch - processPackages [lapa-file-store-helper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 20:49:05] INFO root fetch - processPackages [tmrl]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-05 20:49:05] INFO root fetch - processPackages [tira]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 20:49:06] INFO root fetch - processPackages [lapa-file-store-helper]: Downloading https://files.pythonhosted.org/packages/2e/8f/4f5d6f0d38d1ea5f3121ab1ed1d45a402882e64c5c2ed1fa2ad0087be6c3/lapa_file_store_helper-0.0.3.tar.gz
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/4b/d0/2e61e71a65015785af087e247c1a0fb86643b1a1315e058857f4c30e93d1/tira-0.0.98.tar.gz
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tmrl]: Downloading https://files.pythonhosted.org/packages/4d/45/4795763350a8a83e26fe093cfb6959fcc68d1497bd800d9bd1f2b6d807d3/tmrl-0.6.3.tar.gz
+[2024-05-05 20:49:06] INFO root fetch - processPackages [lapa-file-store-helper]: Downloading https://files.pythonhosted.org/packages/be/a4/72300354092e7d2cddd7e6c3aa55e2236f199011e26e3a7ce238c7e3ddc7/lapa_file_store_helper-0.0.4.tar.gz
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/2d/31/b9af5a5b67ff777b2c9209808c8e4e18c7fd17c6348a13651170d8884d62/tira-0.0.99.tar.gz
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tmrl]: Downloading https://files.pythonhosted.org/packages/22/c6/f5a2be17768ef5fb5a5b6cd89a1bb8407c390f77015824a27c1e02ff5572/tmrl-0.6.4.tar.gz
+[2024-05-05 20:49:06] INFO root fetch - processPackages [lapa-file-store-helper]: executing diffoscope
+[2024-05-05 20:49:06] INFO root fetch - processPackages [lapa-file-store-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_file_store_helper-0.0.3.tar.gz tmp/lapa_file_store_helper-0.0.4.tar.gz --markdown 20240505/l/lapa-file-store-helper/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tira]: executing diffoscope
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.98.tar.gz tmp/tira-0.0.99.tar.gz --markdown 20240505/t/tira/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tmrl]: executing diffoscope
+[2024-05-05 20:49:06] INFO root fetch - processPackages [tmrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmrl-0.6.3.tar.gz tmp/tmrl-0.6.4.tar.gz --markdown 20240505/t/tmrl/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-05 20:49:07] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.98.tar.gz]
+[2024-05-05 20:49:07] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.99.tar.gz]
+[2024-05-05 20:49:07] INFO root fetch - main [MainThread]: End processing [tira]: success
+[2024-05-05 20:49:07] INFO root fetch - processPackages [lapa-file-store-helper]: Remove: archive file [/home/abi/fetcher/tmp/lapa_file_store_helper-0.0.3.tar.gz]
+[2024-05-05 20:49:07] INFO root fetch - processPackages [lapa-file-store-helper]: Remove: archive file [/home/abi/fetcher/tmp/lapa_file_store_helper-0.0.4.tar.gz]
+[2024-05-05 20:49:07] INFO root fetch - main [MainThread]: End processing [lapa-file-store-helper]: success
+[2024-05-05 20:49:07] INFO root fetch - processPackages [tmrl]: Remove: archive file [/home/abi/fetcher/tmp/tmrl-0.6.3.tar.gz]
+[2024-05-05 20:49:07] INFO root fetch - processPackages [tmrl]: Remove: archive file [/home/abi/fetcher/tmp/tmrl-0.6.4.tar.gz]
+[2024-05-05 20:49:07] INFO root fetch - main [MainThread]: End processing [tmrl]: success
+[2024-05-05 20:49:07] INFO root fetch - main [MainThread]: Store serial: [23068094]
