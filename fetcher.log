@@ -4027,3 +4027,9 @@
 [2024-05-05 07:01:56] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat-17.0.1.0.1.4-py3-none-any.whl.zip]
 [2024-05-05 07:01:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat]: success
 [2024-05-05 07:01:56] INFO root fetch - main [MainThread]: Store serial: [23063210]
+[2024-05-05 07:04:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063210]
+[2024-05-05 07:04:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 07:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: justcard
+[2024-05-05 07:04:05] WARNING root fetch - processPackages [justcard]: Skipping, unable to determine old version
+[2024-05-05 07:04:05] INFO root fetch - main [MainThread]: End processing [justcard] error
+[2024-05-05 07:04:05] INFO root fetch - main [MainThread]: Store serial: [23063216]
