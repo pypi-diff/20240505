@@ -13940,3 +13940,42 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:33:43] INFO root fetch - processPackages [pyvguicom]: Remove: archive file [/home/abi/fetcher/tmp/pyvguicom-1.1.1.tar.gz]
 [2024-05-05 19:33:43] INFO root fetch - main [MainThread]: End processing [pyvguicom]: success
 [2024-05-05 19:33:43] INFO root fetch - main [MainThread]: Store serial: [23067625]
+[2024-05-05 19:35:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067625]
+[2024-05-05 19:35:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 19:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devicebay
+[2024-05-05 19:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: me-toolbox
+[2024-05-05 19:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kaiju-jsonrpc
+[2024-05-05 19:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taskara
+[2024-05-05 19:35:52] INFO root fetch - processPackages [devicebay]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 19:35:52] INFO root fetch - processPackages [taskara]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-05 19:35:52] INFO root fetch - processPackages [devicebay]: Downloading https://files.pythonhosted.org/packages/5d/35/9e41c1d2bd15e88729fdcd5b62b4a7de5dbc1c8a97674c8e26f2bbb51cc2/devicebay-0.1.8.tar.gz
+[2024-05-05 19:35:52] INFO root fetch - processPackages [kaiju-jsonrpc]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 19:35:52] INFO root fetch - processPackages [me-toolbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 19:35:52] INFO root fetch - processPackages [taskara]: Downloading https://files.pythonhosted.org/packages/d6/1e/172ae85d48722a1e28b9526c0bb34465bd7920d0c8e6858e25a3f8c528a9/taskara-0.1.7.tar.gz
+[2024-05-05 19:35:53] INFO root fetch - processPackages [me-toolbox]: Downloading https://files.pythonhosted.org/packages/7a/37/fa39d971e22733456797af998cec41ff2ef3afa5860c477decf4a10db746/me_toolbox-0.0.8.tar.gz
+[2024-05-05 19:35:53] INFO root fetch - processPackages [devicebay]: Downloading https://files.pythonhosted.org/packages/e5/96/b13c67b11af0747066e9d93a63ece2bb5f80d597ff1909a2e3178ec12a2c/devicebay-0.1.9.tar.gz
+[2024-05-05 19:35:53] INFO root fetch - processPackages [kaiju-jsonrpc]: Downloading https://files.pythonhosted.org/packages/73/99/ddd45a0d9efc858122a744c249ad4b11ed2caef53ce30415c2e055a4f2f7/kaiju_jsonrpc-0.1.0-py3-none-any.whl
+[2024-05-05 19:35:53] INFO root fetch - processPackages [taskara]: Downloading https://files.pythonhosted.org/packages/c0/4f/e9467a6dd755091e2fe2294b58569b289c5252fd70463791829fd99fbfd7/taskara-0.1.8.tar.gz
+[2024-05-05 19:35:53] INFO root fetch - processPackages [taskara]: executing diffoscope
+[2024-05-05 19:35:53] INFO root fetch - processPackages [taskara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskara-0.1.7.tar.gz tmp/taskara-0.1.8.tar.gz --markdown 20240505/t/taskara/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-05 19:35:53] INFO root fetch - processPackages [devicebay]: executing diffoscope
+[2024-05-05 19:35:53] INFO root fetch - processPackages [devicebay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devicebay-0.1.8.tar.gz tmp/devicebay-0.1.9.tar.gz --markdown 20240505/d/devicebay/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 19:35:53] INFO root fetch - processPackages [me-toolbox]: Downloading https://files.pythonhosted.org/packages/e7/81/09362c69dc8b5600961979131d511f559f386495e23bf36e63d59421dc4d/me_toolbox-0.0.9.tar.gz
+[2024-05-05 19:35:53] INFO root fetch - processPackages [kaiju-jsonrpc]: Downloading https://files.pythonhosted.org/packages/1e/7b/bc1993464918211b56737cd62f36e51098c7772b4d0795c9e23b85aae9a9/kaiju_jsonrpc-0.1.1-py3-none-any.whl
+[2024-05-05 19:35:53] INFO root fetch - processPackages [kaiju-jsonrpc]: executing diffoscope
+[2024-05-05 19:35:53] INFO root fetch - processPackages [kaiju-jsonrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_jsonrpc-0.1.0-py3-none-any.whl.zip tmp/kaiju_jsonrpc-0.1.1-py3-none-any.whl.zip --markdown 20240505/k/kaiju-jsonrpc/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 19:35:53] INFO root fetch - processPackages [me-toolbox]: executing diffoscope
+[2024-05-05 19:35:53] INFO root fetch - processPackages [me-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/me_toolbox-0.0.8.tar.gz tmp/me_toolbox-0.0.9.tar.gz --markdown 20240505/m/me-toolbox/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 19:35:53] INFO root fetch - processPackages [devicebay]: Remove: archive file [/home/abi/fetcher/tmp/devicebay-0.1.8.tar.gz]
+[2024-05-05 19:35:53] INFO root fetch - processPackages [devicebay]: Remove: archive file [/home/abi/fetcher/tmp/devicebay-0.1.9.tar.gz]
+[2024-05-05 19:35:53] INFO root fetch - main [MainThread]: End processing [devicebay]: success
+[2024-05-05 19:35:54] INFO root fetch - processPackages [taskara]: Remove: archive file [/home/abi/fetcher/tmp/taskara-0.1.7.tar.gz]
+[2024-05-05 19:35:54] INFO root fetch - processPackages [taskara]: Remove: archive file [/home/abi/fetcher/tmp/taskara-0.1.8.tar.gz]
+[2024-05-05 19:35:54] INFO root fetch - main [MainThread]: End processing [taskara]: success
+[2024-05-05 19:35:54] INFO root fetch - processPackages [kaiju-jsonrpc]: Remove: archive file [/home/abi/fetcher/tmp/kaiju_jsonrpc-0.1.0-py3-none-any.whl.zip]
+[2024-05-05 19:35:54] INFO root fetch - processPackages [kaiju-jsonrpc]: Remove: archive file [/home/abi/fetcher/tmp/kaiju_jsonrpc-0.1.1-py3-none-any.whl.zip]
+[2024-05-05 19:35:54] INFO root fetch - main [MainThread]: End processing [kaiju-jsonrpc]: success
+[2024-05-05 19:35:54] INFO root fetch - processPackages [me-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/me_toolbox-0.0.8.tar.gz]
+[2024-05-05 19:35:54] INFO root fetch - processPackages [me-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/me_toolbox-0.0.9.tar.gz]
+[2024-05-05 19:35:54] INFO root fetch - main [MainThread]: End processing [me-toolbox]: success
+[2024-05-05 19:35:54] INFO root fetch - main [MainThread]: Store serial: [23067636]
