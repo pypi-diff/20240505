@@ -10798,3 +10798,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:05:56] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-05-05 16:05:56] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-05 16:05:56] INFO root fetch - main [MainThread]: Store serial: [23066233]
+[2024-05-05 16:08:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066233]
+[2024-05-05 16:08:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 16:08:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thingking-machine
+[2024-05-05 16:08:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ragrank
+[2024-05-05 16:08:05] INFO root fetch - processPackages [thingking-machine]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 16:08:05] INFO root fetch - processPackages [ragrank]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 16:08:05] INFO root fetch - processPackages [thingking-machine]: Downloading https://files.pythonhosted.org/packages/f7/4f/a8afaeba093de7a835cfc95f0ed210633e2c04debef00a5ccf37ae5a2e6b/thingking_machine-0.0.1.tar.gz
+[2024-05-05 16:08:05] INFO root fetch - processPackages [ragrank]: Downloading https://files.pythonhosted.org/packages/5e/cc/8f2d6c850534b4605b95089e4d05b919998bb2a0debb4392e57f04f881ae/ragrank-0.0.6.tar.gz
+[2024-05-05 16:08:05] INFO root fetch - processPackages [thingking-machine]: Downloading https://files.pythonhosted.org/packages/d8/bd/3d5d69984cc058b157c05d664d25ee3146b9c08731edfba928dc82243ea9/thingking_machine-0.0.2.tar.gz
+[2024-05-05 16:08:06] INFO root fetch - processPackages [thingking-machine]: executing diffoscope
+[2024-05-05 16:08:06] INFO root fetch - processPackages [thingking-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thingking_machine-0.0.1.tar.gz tmp/thingking_machine-0.0.2.tar.gz --markdown 20240505/t/thingking-machine/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 16:08:06] INFO root fetch - processPackages [ragrank]: Downloading https://files.pythonhosted.org/packages/0a/64/e67d61dd4d84fb85468b35334048f89dc014ce32e6656137a94f3aaddb4b/ragrank-0.0.7.tar.gz
+[2024-05-05 16:08:06] INFO root fetch - processPackages [ragrank]: executing diffoscope
+[2024-05-05 16:08:06] INFO root fetch - processPackages [ragrank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragrank-0.0.6.tar.gz tmp/ragrank-0.0.7.tar.gz --markdown 20240505/r/ragrank/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-05 16:08:06] INFO root fetch - processPackages [thingking-machine]: Remove: archive file [/home/abi/fetcher/tmp/thingking_machine-0.0.1.tar.gz]
+[2024-05-05 16:08:06] INFO root fetch - processPackages [thingking-machine]: Remove: archive file [/home/abi/fetcher/tmp/thingking_machine-0.0.2.tar.gz]
+[2024-05-05 16:08:06] INFO root fetch - main [MainThread]: End processing [thingking-machine]: success
+[2024-05-05 16:08:06] INFO root fetch - processPackages [ragrank]: Remove: archive file [/home/abi/fetcher/tmp/ragrank-0.0.6.tar.gz]
+[2024-05-05 16:08:06] INFO root fetch - processPackages [ragrank]: Remove: archive file [/home/abi/fetcher/tmp/ragrank-0.0.7.tar.gz]
+[2024-05-05 16:08:06] INFO root fetch - main [MainThread]: End processing [ragrank]: success
+[2024-05-05 16:08:06] INFO root fetch - main [MainThread]: Store serial: [23066240]
