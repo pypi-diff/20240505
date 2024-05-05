@@ -11477,3 +11477,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:57:32] INFO root fetch - processPackages [horde-engine]: Remove: archive file [/home/abi/fetcher/tmp/horde_engine-2.9.2.tar.gz]
 [2024-05-05 16:57:32] INFO root fetch - main [MainThread]: End processing [horde-engine]: success
 [2024-05-05 16:57:32] INFO root fetch - main [MainThread]: Store serial: [23066599]
+[2024-05-05 16:59:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066599]
+[2024-05-05 16:59:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 16:59:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cycling-nestedls
+[2024-05-05 16:59:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sts-lib
+[2024-05-05 16:59:41] INFO root fetch - processPackages [cycling-nestedls]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 16:59:41] INFO root fetch - processPackages [sts-lib]: New version: [0.31.0] Old Version: [0.30.3]
+[2024-05-05 16:59:41] INFO root fetch - processPackages [cycling-nestedls]: Downloading https://files.pythonhosted.org/packages/99/69/8584070786b59ca258ad7f439682a7a062cb0fafd8046c35f42cc74ebdd4/cycling_nestedls-1.2.0.tar.gz
+[2024-05-05 16:59:41] INFO root fetch - processPackages [sts-lib]: Downloading https://files.pythonhosted.org/packages/27/f0/d513e15f07129ff16a4393d91b96e74a792199b3f803177cda18b62f2ef1/sts_lib-0.30.3.tar.gz
+[2024-05-05 16:59:41] INFO root fetch - processPackages [cycling-nestedls]: Downloading https://files.pythonhosted.org/packages/d0/c7/51d4d3a065f0a20a62af1f5b56f4a5c57c42d23c87613d9bfeb7d4f09af2/cycling_nestedls-1.2.1.tar.gz
+[2024-05-05 16:59:41] INFO root fetch - processPackages [cycling-nestedls]: executing diffoscope
+[2024-05-05 16:59:41] INFO root fetch - processPackages [cycling-nestedls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_nestedls-1.2.0.tar.gz tmp/cycling_nestedls-1.2.1.tar.gz --markdown 20240505/c/cycling-nestedls/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 16:59:42] INFO root fetch - processPackages [sts-lib]: Downloading https://files.pythonhosted.org/packages/e4/ca/a7bdbebea3bb6fd5263d35000502b29db2cbd373e27bb45d3db0934bb32c/sts_lib-0.31.0.tar.gz
+[2024-05-05 16:59:42] INFO root fetch - processPackages [sts-lib]: executing diffoscope
+[2024-05-05 16:59:42] INFO root fetch - processPackages [sts-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sts_lib-0.30.3.tar.gz tmp/sts_lib-0.31.0.tar.gz --markdown 20240505/s/sts-lib/0.30.3-0.31.0/README.md --exclude *.pyd
+[2024-05-05 16:59:42] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.2.0.tar.gz]
+[2024-05-05 16:59:42] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.2.1.tar.gz]
+[2024-05-05 16:59:42] INFO root fetch - main [MainThread]: End processing [cycling-nestedls]: success
+[2024-05-05 16:59:43] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.30.3.tar.gz]
+[2024-05-05 16:59:43] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.31.0.tar.gz]
+[2024-05-05 16:59:43] INFO root fetch - main [MainThread]: End processing [sts-lib]: success
+[2024-05-05 16:59:43] INFO root fetch - main [MainThread]: Store serial: [23066604]
