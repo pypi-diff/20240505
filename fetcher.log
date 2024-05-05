@@ -9867,3 +9867,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:05:45] INFO root fetch - processPackages [exudyn]: Remove: archive file [/home/abi/fetcher/tmp/exudyn-1.8.28.dev1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-05 15:05:45] INFO root fetch - main [MainThread]: End processing [exudyn]: success
 [2024-05-05 15:05:45] INFO root fetch - main [MainThread]: Store serial: [23065765]
+[2024-05-05 15:07:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065765]
+[2024-05-05 15:07:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 15:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plutobook
+[2024-05-05 15:07:54] ERROR root fetch - processPackages [plutobook]: Unable to get metadata: No such project 'plutobook'
+[2024-05-05 15:07:54] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-05 15:07:54] INFO root fetch - main [MainThread]: Store serial: [23065773]
