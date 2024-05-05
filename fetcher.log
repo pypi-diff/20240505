@@ -8788,3 +8788,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:57:35] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.9.12.tar.gz]
 [2024-05-05 13:57:35] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
 [2024-05-05 13:57:35] INFO root fetch - main [MainThread]: Store serial: [23065263]
+[2024-05-05 13:59:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065263]
+[2024-05-05 13:59:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rosa-python-client
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-immutable
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tgctoolbox
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vaultrun
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: diffilqrax
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: memory-machine
+[2024-05-05 13:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zelas
+[2024-05-05 13:59:43] INFO root fetch - processPackages [tgctoolbox]: New version: [0.2] Old Version: [0.1]
+[2024-05-05 13:59:43] INFO root fetch - processPackages [vaultrun]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 13:59:43] INFO root fetch - processPackages [rosa-python-client]: New version: [1.0.9] Old Version: [1.0.88]
+[2024-05-05 13:59:43] INFO root fetch - processPackages [python-immutable]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-05 13:59:43] WARNING root fetch - processPackages [diffilqrax]: Skipping, unable to determine old version
+[2024-05-05 13:59:43] INFO root fetch - main [MainThread]: End processing [diffilqrax] error
+[2024-05-05 13:59:43] WARNING root fetch - processPackages [zelas]: Skipping, unable to determine old version
+[2024-05-05 13:59:43] INFO root fetch - main [MainThread]: End processing [zelas] error
+[2024-05-05 13:59:43] INFO root fetch - processPackages [memory-machine]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-05-05 13:59:44] INFO root fetch - processPackages [tgctoolbox]: Downloading https://files.pythonhosted.org/packages/ec/33/4d59fc4ec87c621c220bbe2cfd2f00ab4e816e04462986bc392d10838fc4/tgctoolbox-0.1.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [vaultrun]: Downloading https://files.pythonhosted.org/packages/78/bd/22e8d7fd2172fddb70b09fde2454531d9c407c294bf1c5d82cd54db87bce/vaultrun-1.0.8.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/76/73/ee746ecc7cd131e55ef724d4b43864772f25ade0bb68c1d76deaf8dc6249/rosa_python_client-1.0.88.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [python-immutable]: Downloading https://files.pythonhosted.org/packages/07/91/d1de6b228de8299105b7c7380df64e2e4fdd25d0ec36e2b1932214954c43/python_immutable-1.0.5.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [memory-machine]: Downloading https://files.pythonhosted.org/packages/25/ae/cf0d5563651ca5924e9fe575197abecdc740102ab80132b24884cd2c3ffd/memory_machine-0.0.1.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [tgctoolbox]: Downloading https://files.pythonhosted.org/packages/e8/5b/7c1749eab7cc1e214f25360ed152df4c010fe3f29c3e735bcff894b8cf5f/tgctoolbox-0.2.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [vaultrun]: Downloading https://files.pythonhosted.org/packages/41/88/e59aa29ebb4df6da4fa087dab365d5900125fc537a78a10bc3a8323b11d7/vaultrun-1.0.9.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [rosa-python-client]: Downloading https://files.pythonhosted.org/packages/57/71/77aa94783e126449ad00cda27a853d3161809a6117e0e34f7ab67ade9050/rosa_python_client-1.0.9.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [tgctoolbox]: executing diffoscope
+[2024-05-05 13:59:44] INFO root fetch - processPackages [tgctoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgctoolbox-0.1.tar.gz tmp/tgctoolbox-0.2.tar.gz --markdown 20240505/t/tgctoolbox/0.1-0.2/README.md --exclude *.pyd
+[2024-05-05 13:59:44] INFO root fetch - processPackages [python-immutable]: Downloading https://files.pythonhosted.org/packages/e5/36/bf47cf23c88b88bcb0b828a8ce346ed3f46307602979f428105b512e0242/python_immutable-1.0.6.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [memory-machine]: Downloading https://files.pythonhosted.org/packages/44/22/61c71e69576eb3bcd8f73131580297ef6c8eaf22b1dcd56a1e213d97c029/memory_machine-0.0.3.tar.gz
+[2024-05-05 13:59:44] INFO root fetch - processPackages [rosa-python-client]: executing diffoscope
+[2024-05-05 13:59:44] INFO root fetch - processPackages [rosa-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rosa_python_client-1.0.88.tar.gz tmp/rosa_python_client-1.0.9.tar.gz --markdown 20240505/r/rosa-python-client/1.0.88-1.0.9/README.md --exclude *.pyd
+[2024-05-05 13:59:44] INFO root fetch - processPackages [python-immutable]: executing diffoscope
+[2024-05-05 13:59:44] INFO root fetch - processPackages [python-immutable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_immutable-1.0.5.tar.gz tmp/python_immutable-1.0.6.tar.gz --markdown 20240505/p/python-immutable/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-05 13:59:44] INFO root fetch - processPackages [vaultrun]: executing diffoscope
+[2024-05-05 13:59:44] INFO root fetch - processPackages [vaultrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaultrun-1.0.8.tar.gz tmp/vaultrun-1.0.9.tar.gz --markdown 20240505/v/vaultrun/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 13:59:44] INFO root fetch - processPackages [memory-machine]: executing diffoscope
+[2024-05-05 13:59:44] INFO root fetch - processPackages [memory-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_machine-0.0.1.tar.gz tmp/memory_machine-0.0.3.tar.gz --markdown 20240505/m/memory-machine/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-05-05 13:59:45] INFO root fetch - processPackages [rosa-python-client]: Remove: archive file [/home/abi/fetcher/tmp/rosa_python_client-1.0.88.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - processPackages [rosa-python-client]: Remove: archive file [/home/abi/fetcher/tmp/rosa_python_client-1.0.9.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - main [MainThread]: End processing [rosa-python-client]: success
+[2024-05-05 13:59:45] INFO root fetch - processPackages [python-immutable]: Remove: archive file [/home/abi/fetcher/tmp/python_immutable-1.0.5.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - processPackages [python-immutable]: Remove: archive file [/home/abi/fetcher/tmp/python_immutable-1.0.6.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - main [MainThread]: End processing [python-immutable]: success
+[2024-05-05 13:59:45] INFO root fetch - processPackages [memory-machine]: Remove: archive file [/home/abi/fetcher/tmp/memory_machine-0.0.1.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - processPackages [memory-machine]: Remove: archive file [/home/abi/fetcher/tmp/memory_machine-0.0.3.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - main [MainThread]: End processing [memory-machine]: success
+[2024-05-05 13:59:45] INFO root fetch - processPackages [tgctoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tgctoolbox-0.1.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - processPackages [tgctoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tgctoolbox-0.2.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - main [MainThread]: End processing [tgctoolbox]: success
+[2024-05-05 13:59:45] INFO root fetch - processPackages [vaultrun]: Remove: archive file [/home/abi/fetcher/tmp/vaultrun-1.0.8.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - processPackages [vaultrun]: Remove: archive file [/home/abi/fetcher/tmp/vaultrun-1.0.9.tar.gz]
+[2024-05-05 13:59:45] INFO root fetch - main [MainThread]: End processing [vaultrun]: success
+[2024-05-05 13:59:45] INFO root fetch - main [MainThread]: Store serial: [23065286]
