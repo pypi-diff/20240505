@@ -9021,3 +9021,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:10:41] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.5.4.tar.gz]
 [2024-05-05 14:10:41] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
 [2024-05-05 14:10:41] INFO root fetch - main [MainThread]: Store serial: [23065362]
+[2024-05-05 14:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065362]
+[2024-05-05 14:12:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 14:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whatshap
+[2024-05-05 14:12:51] INFO root fetch - processPackages [whatshap]: New version: [2.3] Old Version: [2.2]
+[2024-05-05 14:12:51] INFO root fetch - processPackages [whatshap]: Downloading https://files.pythonhosted.org/packages/00/f3/2e2c850755629a151c2027b636f253745bbbfeee052870f03e99f94a4996/whatshap-2.2.tar.gz
+[2024-05-05 14:12:52] INFO root fetch - processPackages [whatshap]: Downloading https://files.pythonhosted.org/packages/37/99/7f156642064fe65aabbe6fa044a485e2aae6437dd545a9d539c06c1535dd/whatshap-2.3.tar.gz
+[2024-05-05 14:12:53] INFO root fetch - processPackages [whatshap]: executing diffoscope
+[2024-05-05 14:12:53] INFO root fetch - processPackages [whatshap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshap-2.2.tar.gz tmp/whatshap-2.3.tar.gz --markdown 20240505/w/whatshap/2.2-2.3/README.md --exclude *.pyd
+[2024-05-05 14:12:56] INFO root fetch - processPackages [whatshap]: Remove: archive file [/home/abi/fetcher/tmp/whatshap-2.2.tar.gz]
+[2024-05-05 14:12:56] INFO root fetch - processPackages [whatshap]: Remove: archive file [/home/abi/fetcher/tmp/whatshap-2.3.tar.gz]
+[2024-05-05 14:12:56] INFO root fetch - main [MainThread]: End processing [whatshap]: success
+[2024-05-05 14:12:56] INFO root fetch - main [MainThread]: Store serial: [23065370]
