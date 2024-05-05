@@ -14397,3 +14397,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:11:50] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
 [2024-05-05 20:11:50] INFO root fetch - main [MainThread]: End processing [communex]: success
 [2024-05-05 20:11:50] INFO root fetch - main [MainThread]: Store serial: [23067805]
+[2024-05-05 20:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067805]
+[2024-05-05 20:13:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 20:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hhd
+[2024-05-05 20:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-db
+[2024-05-05 20:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PlexTraktSync
+[2024-05-05 20:13:59] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-05 20:13:59] INFO root fetch - processPackages [PlexTraktSync]: New version: [0.30.3] Old Version: [0.30.2]
+[2024-05-05 20:13:59] INFO root fetch - processPackages [hhd]: New version: [2.7.2] Old Version: [2.7.1]
+[2024-05-05 20:13:59] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/12/12/dcb9b6c7276c33726c3575861b6a35f7e1968382cb9f34349e81e3232255/pypomes_db-0.4.7.tar.gz
+[2024-05-05 20:13:59] INFO root fetch - processPackages [PlexTraktSync]: Downloading https://files.pythonhosted.org/packages/ae/42/801341d39f27cbbf68b60c0bc3288ffaa27a86f0a1467a4aefbadfbd0edb/plextraktsync-0.30.2.tar.gz
+[2024-05-05 20:13:59] INFO root fetch - processPackages [hhd]: Downloading https://files.pythonhosted.org/packages/07/c3/38858bd269075f55e8daa060c21934e305e7244577aaaa05441d7c4ad124/hhd-2.7.1.tar.gz
+[2024-05-05 20:13:59] INFO root fetch - processPackages [PlexTraktSync]: Downloading https://files.pythonhosted.org/packages/ef/2b/f5a4b658fc90ae9cda59ef9538ae4ae9ac8674f3e3f5563038f95addaf98/plextraktsync-0.30.3.tar.gz
+[2024-05-05 20:13:59] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/c0/d7/18831c697e3cdaae79b5d8cc8693d7087d75758e6f5456a5c352903b230a/pypomes_db-0.4.8.tar.gz
+[2024-05-05 20:13:59] INFO root fetch - processPackages [PlexTraktSync]: executing diffoscope
+[2024-05-05 20:13:59] INFO root fetch - processPackages [PlexTraktSync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plextraktsync-0.30.2.tar.gz tmp/plextraktsync-0.30.3.tar.gz --markdown 20240505/P/PlexTraktSync/0.30.2-0.30.3/README.md --exclude *.pyd
+[2024-05-05 20:13:59] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 20:13:59] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.7.tar.gz tmp/pypomes_db-0.4.8.tar.gz --markdown 20240505/p/pypomes-db/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-05 20:14:00] INFO root fetch - processPackages [hhd]: Downloading https://files.pythonhosted.org/packages/8a/25/55da2e3fb6dc6aa106e33ced3604da05d8c2d7c947b1585e94daf59b6a1b/hhd-2.7.2.tar.gz
+[2024-05-05 20:14:00] INFO root fetch - processPackages [hhd]: executing diffoscope
+[2024-05-05 20:14:00] INFO root fetch - processPackages [hhd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hhd-2.7.1.tar.gz tmp/hhd-2.7.2.tar.gz --markdown 20240505/h/hhd/2.7.1-2.7.2/README.md --exclude *.pyd
+[2024-05-05 20:14:00] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.7.tar.gz]
+[2024-05-05 20:14:00] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.8.tar.gz]
+[2024-05-05 20:14:00] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 20:14:00] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.2.tar.gz]
+[2024-05-05 20:14:00] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.3.tar.gz]
+[2024-05-05 20:14:00] INFO root fetch - main [MainThread]: End processing [PlexTraktSync]: success
+[2024-05-05 20:14:01] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.7.1.tar.gz]
+[2024-05-05 20:14:01] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.7.2.tar.gz]
+[2024-05-05 20:14:01] INFO root fetch - main [MainThread]: End processing [hhd]: success
+[2024-05-05 20:14:01] INFO root fetch - main [MainThread]: Store serial: [23067813]
