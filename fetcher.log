@@ -6350,3 +6350,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:44:37] INFO root fetch - processPackages [djangocms-versioning]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_versioning-2.0.2.tar.gz]
 [2024-05-05 10:44:37] INFO root fetch - main [MainThread]: End processing [djangocms-versioning]: success
 [2024-05-05 10:44:37] INFO root fetch - main [MainThread]: Store serial: [23064200]
+[2024-05-05 10:46:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064200]
+[2024-05-05 10:46:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 10:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dve-lumipy-testing
+[2024-05-05 10:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: goodwe
+[2024-05-05 10:46:46] INFO root fetch - processPackages [dve-lumipy-testing]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 10:46:46] INFO root fetch - processPackages [dve-lumipy-testing]: Downloading https://files.pythonhosted.org/packages/2f/35/aa91d923787edb9bf5bcbfa8461c60465a9e55f7513c06e4f16d5221c3c3/dve_lumipy_testing-1.0.8-py3-none-any.whl
+[2024-05-05 10:46:46] INFO root fetch - processPackages [goodwe]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-05 10:46:46] INFO root fetch - processPackages [goodwe]: Downloading https://files.pythonhosted.org/packages/fe/7a/d289b8680980bd746e0ae002260b8b48764f9df2bcce855a878c3d4bd30f/goodwe-0.3.3.tar.gz
+[2024-05-05 10:46:46] INFO root fetch - processPackages [dve-lumipy-testing]: Downloading https://files.pythonhosted.org/packages/1e/7c/e37b3c84846734e2feb285aa04bd1d2381e9cd7415aeb1a75f2cfd40fd79/dve_lumipy_testing-1.0.9-py3-none-any.whl
+[2024-05-05 10:46:46] INFO root fetch - processPackages [goodwe]: Downloading https://files.pythonhosted.org/packages/e8/fc/97f6eaab90a15252d4c2bf1b200a6dfd7520d1ef1dd7b4142948b75cc7e9/goodwe-0.3.4.tar.gz
+[2024-05-05 10:46:46] INFO root fetch - processPackages [dve-lumipy-testing]: executing diffoscope
+[2024-05-05 10:46:46] INFO root fetch - processPackages [dve-lumipy-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dve_lumipy_testing-1.0.8-py3-none-any.whl.zip tmp/dve_lumipy_testing-1.0.9-py3-none-any.whl.zip --markdown 20240505/d/dve-lumipy-testing/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 10:46:47] INFO root fetch - processPackages [goodwe]: executing diffoscope
+[2024-05-05 10:46:47] INFO root fetch - processPackages [goodwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodwe-0.3.3.tar.gz tmp/goodwe-0.3.4.tar.gz --markdown 20240505/g/goodwe/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-05 10:46:47] INFO root fetch - processPackages [goodwe]: Remove: archive file [/home/abi/fetcher/tmp/goodwe-0.3.3.tar.gz]
+[2024-05-05 10:46:47] INFO root fetch - processPackages [goodwe]: Remove: archive file [/home/abi/fetcher/tmp/goodwe-0.3.4.tar.gz]
+[2024-05-05 10:46:47] INFO root fetch - main [MainThread]: End processing [goodwe]: success
+[2024-05-05 10:46:48] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.8-py3-none-any.whl.zip]
+[2024-05-05 10:46:48] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.9-py3-none-any.whl.zip]
+[2024-05-05 10:46:48] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
+[2024-05-05 10:46:48] INFO root fetch - main [MainThread]: Store serial: [23064206]
