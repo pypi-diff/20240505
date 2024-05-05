@@ -6371,3 +6371,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:46:48] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.9-py3-none-any.whl.zip]
 [2024-05-05 10:46:48] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
 [2024-05-05 10:46:48] INFO root fetch - main [MainThread]: Store serial: [23064206]
+[2024-05-05 10:48:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064206]
+[2024-05-05 10:48:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 10:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-cpu
+[2024-05-05 10:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyshared
+[2024-05-05 10:48:56] INFO root fetch - processPackages [pyshared]: New version: [1.5.8] Old Version: [1.5.7]
+[2024-05-05 10:48:56] INFO root fetch - processPackages [pyshared]: Downloading https://files.pythonhosted.org/packages/d2/b0/22c30e75bae9e34ab6c98fe87b9da086b2ca4ec9e53fc1485f5269ab7386/pyshared-1.5.7-py3-none-any.whl
+[2024-05-05 10:48:56] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240505] Old Version: [2.17.0.dev20240504]
+[2024-05-05 10:48:57] INFO root fetch - processPackages [pyshared]: Downloading https://files.pythonhosted.org/packages/2c/65/3cf92f203d82bb4ab3330ee0c24faeb0036e41a10136bde14616cc3b8ab0/pyshared-1.5.8-py3-none-any.whl
+[2024-05-05 10:48:57] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/93/a6/60c7ff2c89510657ed1af480a8eed66112bc37dc6a80d9c544cc84d5f792/tf_nightly_cpu-2.17.0.dev20240504-cp39-cp39-win_amd64.whl
+[2024-05-05 10:48:57] INFO root fetch - processPackages [pyshared]: executing diffoscope
+[2024-05-05 10:48:57] INFO root fetch - processPackages [pyshared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyshared-1.5.7-py3-none-any.whl.zip tmp/pyshared-1.5.8-py3-none-any.whl.zip --markdown 20240505/p/pyshared/1.5.7-1.5.8/README.md --exclude *.pyd
+[2024-05-05 10:48:57] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4a/60/8b25bd1a4d18855c2accbd6b7b616844ad224d0dc7f3422befe12a7d2b21/tf_nightly_cpu-2.17.0.dev20240505-cp39-cp39-win_amd64.whl
+[2024-05-05 10:48:57] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-05-05 10:48:57] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240504-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240505-cp39-cp39-win_amd64.whl.zip --markdown 20240505/t/tf-nightly-cpu/2.17.0.dev20240504-2.17.0.dev20240505/README.md --exclude *.pyd
+[2024-05-05 10:48:57] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.7-py3-none-any.whl.zip]
+[2024-05-05 10:48:57] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.8-py3-none-any.whl.zip]
+[2024-05-05 10:48:57] INFO root fetch - main [MainThread]: End processing [pyshared]: success
+[2024-05-05 10:48:58] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240504-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 10:48:58] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240505-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 10:48:58] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-05-05 10:48:58] INFO root fetch - main [MainThread]: Store serial: [23064213]
