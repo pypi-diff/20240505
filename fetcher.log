@@ -3656,3 +3656,24 @@
 [2024-05-05 06:10:04] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
 [2024-05-05 06:10:04] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-05-05 06:10:04] INFO root fetch - main [MainThread]: Store serial: [23063043]
+[2024-05-05 06:12:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063043]
+[2024-05-05 06:12:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 06:12:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ngwidgets
+[2024-05-05 06:12:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: r2e_test_server
+[2024-05-05 06:12:13] INFO root fetch - processPackages [r2e_test_server]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 06:12:13] INFO root fetch - processPackages [ngwidgets]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-05 06:12:13] INFO root fetch - processPackages [r2e_test_server]: Downloading https://files.pythonhosted.org/packages/8d/71/f256aa441d3772e2562daaf44e8f54c74d19f426305c7991dca75d1735e0/r2e_test_server-0.1.0.tar.gz
+[2024-05-05 06:12:13] INFO root fetch - processPackages [ngwidgets]: Downloading https://files.pythonhosted.org/packages/d4/8e/94e7397b14a8ad5fc338567a59ed49f096249bd0e6d08a4ac6abd0c3248d/ngwidgets-0.9.2.tar.gz
+[2024-05-05 06:12:14] INFO root fetch - processPackages [r2e_test_server]: Downloading https://files.pythonhosted.org/packages/65/95/b8ea75a31be8fa8dacd3fde7e944043badadce346d00f1a8b08f1676fbc7/r2e_test_server-0.1.1.tar.gz
+[2024-05-05 06:12:14] INFO root fetch - processPackages [ngwidgets]: Downloading https://files.pythonhosted.org/packages/db/fc/674f6bff16f6a097e3312918a926834d31ed5b326def4eabd8f561705e3d/ngwidgets-0.9.3.tar.gz
+[2024-05-05 06:12:14] INFO root fetch - processPackages [r2e_test_server]: executing diffoscope
+[2024-05-05 06:12:14] INFO root fetch - processPackages [r2e_test_server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r2e_test_server-0.1.0.tar.gz tmp/r2e_test_server-0.1.1.tar.gz --markdown 20240505/r/r2e_test_server/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 06:12:14] INFO root fetch - processPackages [ngwidgets]: executing diffoscope
+[2024-05-05 06:12:14] INFO root fetch - processPackages [ngwidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngwidgets-0.9.2.tar.gz tmp/ngwidgets-0.9.3.tar.gz --markdown 20240505/n/ngwidgets/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-05 06:12:14] INFO root fetch - processPackages [r2e_test_server]: Remove: archive file [/home/abi/fetcher/tmp/r2e_test_server-0.1.0.tar.gz]
+[2024-05-05 06:12:14] INFO root fetch - processPackages [r2e_test_server]: Remove: archive file [/home/abi/fetcher/tmp/r2e_test_server-0.1.1.tar.gz]
+[2024-05-05 06:12:14] INFO root fetch - main [MainThread]: End processing [r2e_test_server]: success
+[2024-05-05 06:12:14] INFO root fetch - processPackages [ngwidgets]: Remove: archive file [/home/abi/fetcher/tmp/ngwidgets-0.9.2.tar.gz]
+[2024-05-05 06:12:14] INFO root fetch - processPackages [ngwidgets]: Remove: archive file [/home/abi/fetcher/tmp/ngwidgets-0.9.3.tar.gz]
+[2024-05-05 06:12:14] INFO root fetch - main [MainThread]: End processing [ngwidgets]: success
+[2024-05-05 06:12:14] INFO root fetch - main [MainThread]: Store serial: [23063049]
