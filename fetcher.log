@@ -9154,3 +9154,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:25:54] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.9.tar.gz]
 [2024-05-05 14:25:54] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
 [2024-05-05 14:25:54] INFO root fetch - main [MainThread]: Store serial: [23065417]
+[2024-05-05 14:27:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065417]
+[2024-05-05 14:28:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 14:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-json-patch-rules
+[2024-05-05 14:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyCompGeomAlgorithms
+[2024-05-05 14:28:03] INFO root fetch - processPackages [PyCompGeomAlgorithms]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 14:28:03] INFO root fetch - processPackages [python-json-patch-rules]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-05 14:28:03] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Downloading https://files.pythonhosted.org/packages/30/8b/6e606d2d9e9edf6afe4106b9fc0602f260f70fefce85a767acd72ddd9ce0/PyCompGeomAlgorithms-1.0.8.tar.gz
+[2024-05-05 14:28:03] INFO root fetch - processPackages [python-json-patch-rules]: Downloading https://files.pythonhosted.org/packages/13/64/f98ef9d9c77f4ce715e32a805e07be25c7e5c5d5b2e9273d6021a301b232/python_json_patch_rules-0.2.0.tar.gz
+[2024-05-05 14:28:03] INFO root fetch - processPackages [python-json-patch-rules]: Downloading https://files.pythonhosted.org/packages/f7/d3/eb776fabd757fcd2d9cf04bf767882f485590e4b9ab97160e1f6004c8a0a/python_json_patch_rules-0.3.0.tar.gz
+[2024-05-05 14:28:03] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Downloading https://files.pythonhosted.org/packages/d0/1b/e234c6881824a409fad78e30a10c197a21e5e573aa247b66bbc6153e9ca0/PyCompGeomAlgorithms-1.0.9.tar.gz
+[2024-05-05 14:28:04] INFO root fetch - processPackages [python-json-patch-rules]: executing diffoscope
+[2024-05-05 14:28:04] INFO root fetch - processPackages [python-json-patch-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_json_patch_rules-0.2.0.tar.gz tmp/python_json_patch_rules-0.3.0.tar.gz --markdown 20240505/p/python-json-patch-rules/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-05 14:28:04] INFO root fetch - processPackages [PyCompGeomAlgorithms]: executing diffoscope
+[2024-05-05 14:28:04] INFO root fetch - processPackages [PyCompGeomAlgorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCompGeomAlgorithms-1.0.8.tar.gz tmp/PyCompGeomAlgorithms-1.0.9.tar.gz --markdown 20240505/P/PyCompGeomAlgorithms/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 14:28:04] INFO root fetch - processPackages [python-json-patch-rules]: Remove: archive file [/home/abi/fetcher/tmp/python_json_patch_rules-0.2.0.tar.gz]
+[2024-05-05 14:28:04] INFO root fetch - processPackages [python-json-patch-rules]: Remove: archive file [/home/abi/fetcher/tmp/python_json_patch_rules-0.3.0.tar.gz]
+[2024-05-05 14:28:04] INFO root fetch - main [MainThread]: End processing [python-json-patch-rules]: success
+[2024-05-05 14:28:04] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.8.tar.gz]
+[2024-05-05 14:28:04] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.9.tar.gz]
+[2024-05-05 14:28:04] INFO root fetch - main [MainThread]: End processing [PyCompGeomAlgorithms]: success
+[2024-05-05 14:28:04] INFO root fetch - main [MainThread]: Store serial: [23065426]
