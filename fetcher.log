@@ -2278,3 +2278,49 @@
 [2024-05-05 03:34:19] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.1.9.tar.gz]
 [2024-05-05 03:34:19] INFO root fetch - main [MainThread]: End processing [qrawl]: success
 [2024-05-05 03:34:19] INFO root fetch - main [MainThread]: Store serial: [23062463]
+[2024-05-05 03:36:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062463]
+[2024-05-05 03:36:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 03:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bttc
+[2024-05-05 03:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soundtools
+[2024-05-05 03:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlexecutorx
+[2024-05-05 03:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-gdcm
+[2024-05-05 03:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlexecutorx
+[2024-05-05 03:36:28] INFO root fetch - processPackages [sqlexecutorx]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-05 03:36:28] INFO root fetch - processPackages [sqlexecutorx]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-05-05 03:36:28] INFO root fetch - processPackages [bttc]: New version: [0.0.77.1] Old Version: [0.0.77]
+[2024-05-05 03:36:28] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/77/63/cd03e5bd0ba609980a1325ef016b7eba07dea0f30a2259495ea4f05230aa/sqlexecutorx-0.0.3.tar.gz
+[2024-05-05 03:36:28] INFO root fetch - processPackages [soundtools]: New version: [0.2.2.0] Old Version: [0.2.1.0]
+[2024-05-05 03:36:28] INFO root fetch - processPackages [python-gdcm]: New version: [3.0.9.1] Old Version: [3.0.9.0]
+[2024-05-05 03:36:28] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/e4/75/0e27f752d7f3ba2b4bb2cdb649c0364ce14fc6b9cd4f7a77abefa784ee42/bttc-0.0.77.tar.gz
+[2024-05-05 03:36:28] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/77/63/cd03e5bd0ba609980a1325ef016b7eba07dea0f30a2259495ea4f05230aa/sqlexecutorx-0.0.3.tar.gz
+[2024-05-05 03:36:28] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/4e/14/71a547ffa95c4d7b48f74f37c448ade53383dabfe9b98bd6d6d9b40adb6d/soundtools-0.2.1.0.tar.gz
+[2024-05-05 03:36:29] INFO root fetch - processPackages [python-gdcm]: Downloading https://files.pythonhosted.org/packages/23/34/56e4e91ee48bd96292fe8d460e9cae3878dd8364c590cdb99bb633bd6ac7/python-gdcm-3.0.9.0.tar.gz
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/86/0e/c49bb80a663dafe46c99653c8164bb41c36ede4cfd1c1da3d3357645ae68/sqlexecutorx-0.0.5.tar.gz
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/86/0e/c49bb80a663dafe46c99653c8164bb41c36ede4cfd1c1da3d3357645ae68/sqlexecutorx-0.0.5.tar.gz
+[2024-05-05 03:36:29] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/49/0f/ad685f64e4545b7488570da0cb7851c42f23c487191ab710c7e2d463fcb2/bttc-0.0.77.1.tar.gz
+[2024-05-05 03:36:29] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/f5/7d/e34be17a6d586da3a3cbba4dbfdc020d8fa3f1f14b35f9a5709d29c0b47e/soundtools-0.2.2.0.tar.gz
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: executing diffoscope
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlexecutorx-0.0.3.tar.gz tmp/sqlexecutorx-0.0.5.tar.gz --markdown 20240505/s/sqlexecutorx/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: executing diffoscope
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlexecutorx-0.0.3.tar.gz tmp/sqlexecutorx-0.0.5.tar.gz --markdown 20240505/s/sqlexecutorx/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-05-05 03:36:29] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-05-05 03:36:29] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.77.tar.gz tmp/bttc-0.0.77.1.tar.gz --markdown 20240505/b/bttc/0.0.77-0.0.77.1/README.md --exclude *.pyd
+[2024-05-05 03:36:29] INFO root fetch - processPackages [soundtools]: executing diffoscope
+[2024-05-05 03:36:29] INFO root fetch - processPackages [soundtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundtools-0.2.1.0.tar.gz tmp/soundtools-0.2.2.0.tar.gz --markdown 20240505/s/soundtools/0.2.1.0-0.2.2.0/README.md --exclude *.pyd
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.0.3.tar.gz]
+[2024-05-05 03:36:29] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.0.5.tar.gz]
+[2024-05-05 03:36:29] INFO root fetch - main [MainThread]: End processing [sqlexecutorx]: success
+[2024-05-05 03:36:30] INFO root fetch - main [MainThread]: End processing [sqlexecutorx]: success
+[2024-05-05 03:36:30] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.1.0.tar.gz]
+[2024-05-05 03:36:30] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.2.0.tar.gz]
+[2024-05-05 03:36:30] INFO root fetch - main [MainThread]: End processing [soundtools]: success
+[2024-05-05 03:36:30] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.77.tar.gz]
+[2024-05-05 03:36:30] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.77.1.tar.gz]
+[2024-05-05 03:36:30] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-05-05 03:36:30] INFO root fetch - processPackages [python-gdcm]: Downloading https://files.pythonhosted.org/packages/5b/a4/34d12e408f3928ad1fe2adcadeb00faa67a83a3b9eaceaa40e3ee626403d/python-gdcm-3.0.9.1.tar.gz
+[2024-05-05 03:36:31] INFO root fetch - processPackages [python-gdcm]: executing diffoscope
+[2024-05-05 03:36:31] INFO root fetch - processPackages [python-gdcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-gdcm-3.0.9.0.tar.gz tmp/python-gdcm-3.0.9.1.tar.gz --markdown 20240505/p/python-gdcm/3.0.9.0-3.0.9.1/README.md --exclude *.pyd
+[2024-05-05 03:36:40] INFO root fetch - processPackages [python-gdcm]: Remove: archive file [/home/abi/fetcher/tmp/python-gdcm-3.0.9.0.tar.gz]
+[2024-05-05 03:36:40] INFO root fetch - processPackages [python-gdcm]: Remove: archive file [/home/abi/fetcher/tmp/python-gdcm-3.0.9.1.tar.gz]
+[2024-05-05 03:36:40] INFO root fetch - main [MainThread]: End processing [python-gdcm]: success
+[2024-05-05 03:36:40] INFO root fetch - main [MainThread]: Store serial: [23062494]
