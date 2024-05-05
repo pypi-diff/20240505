@@ -7520,3 +7520,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:09:54] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024050409.tar.gz]
 [2024-05-05 12:09:54] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-05-05 12:09:54] INFO root fetch - main [MainThread]: Store serial: [23064692]
+[2024-05-05 12:11:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064692]
+[2024-05-05 12:12:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 12:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moticreader
+[2024-05-05 12:12:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Subdora
+[2024-05-05 12:12:03] WARNING root fetch - processPackages [moticreader]: Skipping, unable to determine old version
+[2024-05-05 12:12:03] INFO root fetch - main [MainThread]: End processing [moticreader] error
+[2024-05-05 12:12:03] INFO root fetch - processPackages [Subdora]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-05-05 12:12:03] INFO root fetch - processPackages [Subdora]: Downloading https://files.pythonhosted.org/packages/6d/12/cfe5f562d5addbb019535c78c17a7b52ac3eb4dc184a16ee42fb1c190462/Subdora-0.0.2.tar.gz
+[2024-05-05 12:12:04] INFO root fetch - processPackages [Subdora]: Downloading https://files.pythonhosted.org/packages/80/b9/875383d95b0c1673faac129e888bea36425747f377fb1ed4e6edf4ff6a0e/subdora-0.1.0.tar.gz
+[2024-05-05 12:12:04] INFO root fetch - processPackages [Subdora]: executing diffoscope
+[2024-05-05 12:12:04] INFO root fetch - processPackages [Subdora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Subdora-0.0.2.tar.gz tmp/subdora-0.1.0.tar.gz --markdown 20240505/S/Subdora/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-05-05 12:12:05] INFO root fetch - processPackages [Subdora]: Remove: archive file [/home/abi/fetcher/tmp/Subdora-0.0.2.tar.gz]
+[2024-05-05 12:12:05] INFO root fetch - processPackages [Subdora]: Remove: archive file [/home/abi/fetcher/tmp/subdora-0.1.0.tar.gz]
+[2024-05-05 12:12:05] INFO root fetch - main [MainThread]: End processing [Subdora]: success
+[2024-05-05 12:12:05] INFO root fetch - main [MainThread]: Store serial: [23064698]
