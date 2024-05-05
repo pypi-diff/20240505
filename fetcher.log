@@ -14489,3 +14489,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:18:21] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.7-py3-none-any.whl.zip]
 [2024-05-05 20:18:21] INFO root fetch - main [MainThread]: End processing [songfinder]: success
 [2024-05-05 20:18:21] INFO root fetch - main [MainThread]: Store serial: [23067837]
+[2024-05-05 20:20:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067837]
+[2024-05-05 20:20:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zimagi
+[2024-05-05 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver
+[2024-05-05 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LibHus
+[2024-05-05 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ryutils
+[2024-05-05 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: web-ui-helper
+[2024-05-05 20:20:31] INFO root fetch - processPackages [web-ui-helper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 20:20:31] INFO root fetch - processPackages [ryutils]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-05-05 20:20:32] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/b7/83/2e2498566111b861d485cfd0221349b20400d383ac652f76f315a559af3d/web-ui-helper-0.0.3.tar.gz
+[2024-05-05 20:20:32] WARNING root fetch - processPackages [LibHus]: Skipping, unable to determine old version
+[2024-05-05 20:20:32] INFO root fetch - main [MainThread]: End processing [LibHus] error
+[2024-05-05 20:20:32] INFO root fetch - processPackages [zimagi]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-05 20:20:32] INFO root fetch - processPackages [heaserver]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-05-05 20:20:32] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/ed/eb/22ddeebd2140e46ce42ac2cb439b71321181a85e76eead49096f8e9c2dbf/ryutils-4.1.1.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [zimagi]: Downloading https://files.pythonhosted.org/packages/e8/4b/b155e4f0b7606d368c19e3d41df4c6af5d2743ec086d5c519e39a5e8ada7/zimagi-0.9.4.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/ca/28/140df910e225ee82c8b78e744c3afddbb9af8a2bb77908129457c3233f57/heaserver-1.5.2.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/d8/83/b537e25eef953263293fc609e829c4c00d3b45bc10b72602f78d879295bf/web-ui-helper-0.0.4.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/2f/70/a46c208a5a0ee17ab31d129b43fbf3544de48ecf18afaab9675f7fa9b94a/ryutils-4.1.2.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-05 20:20:32] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-0.0.3.tar.gz tmp/web-ui-helper-0.0.4.tar.gz --markdown 20240505/w/web-ui-helper/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 20:20:32] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-05-05 20:20:32] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.1.1.tar.gz tmp/ryutils-4.1.2.tar.gz --markdown 20240505/r/ryutils/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-05-05 20:20:32] INFO root fetch - processPackages [zimagi]: Downloading https://files.pythonhosted.org/packages/98/d2/7e3715c9f3f31766db54027f7e4db00e400d7de314d70b833776ce02930f/zimagi-0.9.5.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/d1/b2/79a9aa90f0c9181f21ac7c95a29b8068333cd48c9256494feb0285016608/heaserver-1.5.3.tar.gz
+[2024-05-05 20:20:32] INFO root fetch - processPackages [zimagi]: executing diffoscope
+[2024-05-05 20:20:32] INFO root fetch - processPackages [zimagi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimagi-0.9.4.tar.gz tmp/zimagi-0.9.5.tar.gz --markdown 20240505/z/zimagi/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-05 20:20:32] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2024-05-05 20:20:32] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.5.2.tar.gz tmp/heaserver-1.5.3.tar.gz --markdown 20240505/h/heaserver/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-05-05 20:20:33] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.1.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.2.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-05-05 20:20:33] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.3.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.4.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-05 20:20:33] INFO root fetch - processPackages [zimagi]: Remove: archive file [/home/abi/fetcher/tmp/zimagi-0.9.4.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - processPackages [zimagi]: Remove: archive file [/home/abi/fetcher/tmp/zimagi-0.9.5.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - main [MainThread]: End processing [zimagi]: success
+[2024-05-05 20:20:33] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.5.2.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.5.3.tar.gz]
+[2024-05-05 20:20:33] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2024-05-05 20:20:33] INFO root fetch - main [MainThread]: Store serial: [23067851]
