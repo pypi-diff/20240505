@@ -9341,3 +9341,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:36:49] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-05-05 14:36:49] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-05-05 14:36:49] INFO root fetch - main [MainThread]: Store serial: [23065487]
+[2024-05-05 14:38:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065487]
+[2024-05-05 14:38:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bio-image-unet
+[2024-05-05 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylablib-lightweight
+[2024-05-05 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-library
+[2024-05-05 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: desktop-notifier
+[2024-05-05 14:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tab-analysis
+[2024-05-05 14:38:57] INFO root fetch - processPackages [desktop-notifier]: New version: [3.5.7.dev0] Old Version: [3.5.6]
+[2024-05-05 14:38:57] INFO root fetch - processPackages [tab-analysis]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-05 14:38:57] WARNING root fetch - processPackages [simple-library]: Skipping, unable to determine old version
+[2024-05-05 14:38:57] INFO root fetch - main [MainThread]: End processing [simple-library] error
+[2024-05-05 14:38:57] INFO root fetch - processPackages [desktop-notifier]: Downloading https://files.pythonhosted.org/packages/a4/45/d04a904f2f33602c89ee9df82f720682468276f1d39ef297a7483e734ce6/desktop-notifier-3.5.6.tar.gz
+[2024-05-05 14:38:57] INFO root fetch - processPackages [pylablib-lightweight]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-05-05 14:38:57] INFO root fetch - processPackages [bio-image-unet]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2024-05-05 14:38:58] INFO root fetch - processPackages [bio-image-unet]: Downloading https://files.pythonhosted.org/packages/97/0f/47d1c6e0c5def590c62949d394d9cf95e50a1f6e7b3372fdb43b629370f1/bio_image_unet-1.0.0a1.tar.gz
+[2024-05-05 14:38:58] INFO root fetch - processPackages [desktop-notifier]: Downloading https://files.pythonhosted.org/packages/0a/a5/0a3bd92afe6a5f4da3667253f495b526152f73139d89463d27ebfc823ecb/desktop_notifier-3.5.7.dev0.tar.gz
+[2024-05-05 14:38:58] INFO root fetch - processPackages [pylablib-lightweight]: Downloading https://files.pythonhosted.org/packages/46/1d/cd07a3898a72edd63c717cb125eb39702cfee28544c60fa3bb0438b410dc/pylablib-lightweight-1.4.2.tar.gz
+[2024-05-05 14:38:58] INFO root fetch - processPackages [desktop-notifier]: executing diffoscope
+[2024-05-05 14:38:58] INFO root fetch - processPackages [desktop-notifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop-notifier-3.5.6.tar.gz tmp/desktop_notifier-3.5.7.dev0.tar.gz --markdown 20240505/d/desktop-notifier/3.5.6-3.5.7.dev0/README.md --exclude *.pyd
+[2024-05-05 14:38:58] INFO root fetch - processPackages [bio-image-unet]: Downloading https://files.pythonhosted.org/packages/87/bc/fcc736c6feda55fa45b606e40c466d2fe7c3ded0edc555b1f64265de20e0/bio-image-unet-1.0.0a2.tar.gz
+[2024-05-05 14:38:58] INFO root fetch - processPackages [bio-image-unet]: executing diffoscope
+[2024-05-05 14:38:58] INFO root fetch - processPackages [bio-image-unet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bio_image_unet-1.0.0a1.tar.gz tmp/bio-image-unet-1.0.0a2.tar.gz --markdown 20240505/b/bio-image-unet/1.0.0a1-1.0.0a2/README.md --exclude *.pyd
+[2024-05-05 14:38:58] INFO root fetch - processPackages [pylablib-lightweight]: Downloading https://files.pythonhosted.org/packages/bc/c5/9c4481f039ac44921a50b5e8c3ed630a9ca624b545ef1b8d291a02a2b2e6/pylablib_lightweight-1.4.3-cp312-cp312-win32.whl
+[2024-05-05 14:38:58] INFO root fetch - processPackages [desktop-notifier]: Remove: archive file [/home/abi/fetcher/tmp/desktop-notifier-3.5.6.tar.gz]
+[2024-05-05 14:38:58] INFO root fetch - processPackages [desktop-notifier]: Remove: archive file [/home/abi/fetcher/tmp/desktop_notifier-3.5.7.dev0.tar.gz]
+[2024-05-05 14:38:58] INFO root fetch - main [MainThread]: End processing [desktop-notifier]: success
+[2024-05-05 14:38:58] INFO root fetch - processPackages [tab-analysis]: Downloading https://files.pythonhosted.org/packages/ae/e8/9627844f416774b72c48630633dcfb563e30c2b6f31c4a25d6e69c971fd5/tab_analysis-0.1.1.tar.gz
+[2024-05-05 14:38:59] INFO root fetch - processPackages [tab-analysis]: Downloading https://files.pythonhosted.org/packages/a5/23/01096b40c52466460d453e4a7c4ba13f37224ffe7225a01e762c23a2a9cb/tab_analysis-0.2.0.tar.gz
+[2024-05-05 14:38:59] INFO root fetch - processPackages [bio-image-unet]: Remove: archive file [/home/abi/fetcher/tmp/bio_image_unet-1.0.0a1.tar.gz]
+[2024-05-05 14:38:59] INFO root fetch - processPackages [bio-image-unet]: Remove: archive file [/home/abi/fetcher/tmp/bio-image-unet-1.0.0a2.tar.gz]
+[2024-05-05 14:38:59] INFO root fetch - main [MainThread]: End processing [bio-image-unet]: success
+[2024-05-05 14:38:59] INFO root fetch - processPackages [tab-analysis]: executing diffoscope
+[2024-05-05 14:38:59] INFO root fetch - processPackages [tab-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tab_analysis-0.1.1.tar.gz tmp/tab_analysis-0.2.0.tar.gz --markdown 20240505/t/tab-analysis/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-05 14:39:00] INFO root fetch - processPackages [tab-analysis]: Remove: archive file [/home/abi/fetcher/tmp/tab_analysis-0.1.1.tar.gz]
+[2024-05-05 14:39:00] INFO root fetch - processPackages [tab-analysis]: Remove: archive file [/home/abi/fetcher/tmp/tab_analysis-0.2.0.tar.gz]
+[2024-05-05 14:39:00] INFO root fetch - main [MainThread]: End processing [tab-analysis]: success
+[2024-05-05 14:39:00] INFO root fetch - processPackages [pylablib-lightweight]: executing diffoscope
+[2024-05-05 14:39:00] INFO root fetch - processPackages [pylablib-lightweight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylablib-lightweight-1.4.2.tar.gz tmp/pylablib_lightweight-1.4.3-cp312-cp312-win32.whl.zip --markdown 20240505/p/pylablib-lightweight/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-05-05 14:39:01] INFO root fetch - processPackages [pylablib-lightweight]: Remove: archive file [/home/abi/fetcher/tmp/pylablib-lightweight-1.4.2.tar.gz]
+[2024-05-05 14:39:01] INFO root fetch - processPackages [pylablib-lightweight]: Remove: archive file [/home/abi/fetcher/tmp/pylablib_lightweight-1.4.3-cp312-cp312-win32.whl.zip]
+[2024-05-05 14:39:01] INFO root fetch - main [MainThread]: End processing [pylablib-lightweight]: success
+[2024-05-05 14:39:01] INFO root fetch - main [MainThread]: Store serial: [23065524]
