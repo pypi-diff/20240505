@@ -14609,3 +14609,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:24:54] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.3.tar.gz]
 [2024-05-05 20:24:54] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
 [2024-05-05 20:24:54] INFO root fetch - main [MainThread]: Store serial: [23067888]
+[2024-05-05 20:26:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067888]
+[2024-05-05 20:27:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 20:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-regex-match
+[2024-05-05 20:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: picodi
+[2024-05-05 20:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trame-vtklocal
+[2024-05-05 20:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gammarers.aws-secure-cloudfront-origin-bucket
+[2024-05-05 20:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odlabel
+[2024-05-05 20:27:03] WARNING root fetch - processPackages [odlabel]: Skipping, unable to determine old version
+[2024-05-05 20:27:03] INFO root fetch - main [MainThread]: End processing [odlabel] error
+[2024-05-05 20:27:03] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-05 20:27:03] INFO root fetch - processPackages [django-regex-match]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-05 20:27:03] INFO root fetch - processPackages [picodi]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-05 20:27:03] INFO root fetch - processPackages [trame-vtklocal]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-05 20:27:03] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/7d/51/b092a28f7ca1fd9fe034411141329b1f66b3f416e9e66a745c8934e6cfe5/gammarers.aws-secure-cloudfront-origin-bucket-1.5.1.tar.gz
+[2024-05-05 20:27:03] INFO root fetch - processPackages [django-regex-match]: Downloading https://files.pythonhosted.org/packages/1a/ab/97cdb0b7c9ebcf67176ca07d5b3b96db147bc77b49d24b22ef856f09afff/django_regex_match-0.2.5.tar.gz
+[2024-05-05 20:27:03] INFO root fetch - processPackages [trame-vtklocal]: Downloading https://files.pythonhosted.org/packages/16/b0/fabcef58b093f0ad6a755a6433a33bb7a6ab3500b8c33a66f187d4b32e8e/trame-vtklocal-0.2.0.tar.gz
+[2024-05-05 20:27:03] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/8b/1e/057274b63588b98107cfa9eaa23cbf069489096eb323bf0d10183e5ef7fb/picodi-0.3.0.tar.gz
+[2024-05-05 20:27:03] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Downloading https://files.pythonhosted.org/packages/78/92/a08f3594ebe61201204516201e3d8cda2c81a1c40408163f4a5aca5464ca/gammarers.aws-secure-cloudfront-origin-bucket-1.5.2.tar.gz
+[2024-05-05 20:27:04] INFO root fetch - processPackages [trame-vtklocal]: Downloading https://files.pythonhosted.org/packages/b2/c3/006bee62abfb093b37323e9fe935b00bd303d169b8215fa14602bceb7826/trame-vtklocal-0.3.0.tar.gz
+[2024-05-05 20:27:04] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/1c/b4/238fe163f39dad2edfe36e82cd4eb854cba48d58931a4b1d44ba148762bb/picodi-0.4.0.tar.gz
+[2024-05-05 20:27:04] INFO root fetch - processPackages [django-regex-match]: Downloading https://files.pythonhosted.org/packages/18/36/9f1d5915b814e1b1a5b2ae6853c2a5ce4a912a766769ce9de8a00566ae8f/django_regex_match-0.2.6.tar.gz
+[2024-05-05 20:27:04] INFO root fetch - processPackages [trame-vtklocal]: executing diffoscope
+[2024-05-05 20:27:04] INFO root fetch - processPackages [trame-vtklocal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-vtklocal-0.2.0.tar.gz tmp/trame-vtklocal-0.3.0.tar.gz --markdown 20240505/t/trame-vtklocal/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-05 20:27:04] INFO root fetch - processPackages [picodi]: executing diffoscope
+[2024-05-05 20:27:04] INFO root fetch - processPackages [picodi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picodi-0.3.0.tar.gz tmp/picodi-0.4.0.tar.gz --markdown 20240505/p/picodi/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-05 20:27:04] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: executing diffoscope
+[2024-05-05 20:27:04] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.1.tar.gz tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.2.tar.gz --markdown 20240505/g/gammarers.aws-secure-cloudfront-origin-bucket/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-05 20:27:04] INFO root fetch - processPackages [django-regex-match]: executing diffoscope
+[2024-05-05 20:27:04] INFO root fetch - processPackages [django-regex-match]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_regex_match-0.2.5.tar.gz tmp/django_regex_match-0.2.6.tar.gz --markdown 20240505/d/django-regex-match/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-05 20:27:04] INFO root fetch - processPackages [trame-vtklocal]: Remove: archive file [/home/abi/fetcher/tmp/trame-vtklocal-0.2.0.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - processPackages [trame-vtklocal]: Remove: archive file [/home/abi/fetcher/tmp/trame-vtklocal-0.3.0.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - main [MainThread]: End processing [trame-vtklocal]: success
+[2024-05-05 20:27:04] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.1.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - processPackages [gammarers.aws-secure-cloudfront-origin-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-cloudfront-origin-bucket-1.5.2.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-cloudfront-origin-bucket]: success
+[2024-05-05 20:27:04] INFO root fetch - processPackages [django-regex-match]: Remove: archive file [/home/abi/fetcher/tmp/django_regex_match-0.2.5.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - processPackages [django-regex-match]: Remove: archive file [/home/abi/fetcher/tmp/django_regex_match-0.2.6.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - main [MainThread]: End processing [django-regex-match]: success
+[2024-05-05 20:27:04] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.3.0.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.4.0.tar.gz]
+[2024-05-05 20:27:04] INFO root fetch - main [MainThread]: End processing [picodi]: success
+[2024-05-05 20:27:04] INFO root fetch - main [MainThread]: Store serial: [23067911]
