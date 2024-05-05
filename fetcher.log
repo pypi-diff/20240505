@@ -2642,3 +2642,31 @@
 [2024-05-05 04:16:49] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2418.tar.gz]
 [2024-05-05 04:16:49] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2024-05-05 04:16:49] INFO root fetch - main [MainThread]: Store serial: [23062688]
+[2024-05-05 04:18:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062688]
+[2024-05-05 04:18:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 04:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram3-form
+[2024-05-05 04:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2024-05-05 04:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-web-core
+[2024-05-05 04:18:57] INFO root fetch - processPackages [aiogram3-form]: New version: [2.0.0] Old Version: [1.0.2]
+[2024-05-05 04:18:57] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 04:18:57] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 04:18:57] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/87/cc/1ab2b0ecfcbc2e0fd3750e7c64cda87eee8eae76cf7b1dfc77953e59ad1e/aiogram3_form-1.0.2.tar.gz
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-05 04:18:58] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/94/2d/5bfb6b0aca10b50748473ed3f60a82eb4fb2fee1075ad9e0d3bf38e51f61/aiogram3_form-2.0.0.tar.gz
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-05 04:18:58] INFO root fetch - processPackages [aiogram3-form]: executing diffoscope
+[2024-05-05 04:18:58] INFO root fetch - processPackages [aiogram3-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram3_form-1.0.2.tar.gz tmp/aiogram3_form-2.0.0.tar.gz --markdown 20240505/a/aiogram3-form/1.0.2-2.0.0/README.md --exclude *.pyd
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240505/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240505/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 04:18:58] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-1.0.2.tar.gz]
+[2024-05-05 04:18:58] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-2.0.0.tar.gz]
+[2024-05-05 04:18:58] INFO root fetch - main [MainThread]: End processing [aiogram3-form]: success
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-05 04:18:58] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-05 04:18:58] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-05 04:18:58] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-05 04:18:58] INFO root fetch - main [MainThread]: Store serial: [23062697]
