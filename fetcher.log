@@ -1627,3 +1627,30 @@
 [2024-05-05 02:29:26] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
 [2024-05-05 02:29:26] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
 [2024-05-05 02:29:26] INFO root fetch - main [MainThread]: Store serial: [23062171]
+[2024-05-05 02:31:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062171]
+[2024-05-05 02:31:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-media-crawler
+[2024-05-05 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-aurora-globaldatabase
+[2024-05-05 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monde
+[2024-05-05 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sourcedefender
+[2024-05-05 02:31:35] WARNING root fetch - processPackages [my-media-crawler]: Skipping, unable to determine old version
+[2024-05-05 02:31:35] INFO root fetch - main [MainThread]: End processing [my-media-crawler] error
+[2024-05-05 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-05 02:31:35] INFO root fetch - processPackages [sourcedefender]: New version: [11.0.21] Old Version: [11.0.20]
+[2024-05-05 02:31:35] WARNING root fetch - processPackages [monde]: Skipping, unable to determine old version
+[2024-05-05 02:31:35] INFO root fetch - main [MainThread]: End processing [monde] error
+[2024-05-05 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-05 02:31:35] INFO root fetch - processPackages [sourcedefender]: Downloading https://files.pythonhosted.org/packages/5b/aa/35e53ee631c19c55cc6efa8306bce597358fad0340307917f3813b413012/sourcedefender-11.0.20.tar.gz
+[2024-05-05 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-05 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-05 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240505/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-05 02:31:36] INFO root fetch - processPackages [sourcedefender]: Downloading https://files.pythonhosted.org/packages/fb/84/48f747d3cd61c71d1ec9d45b8657ee4718ecc3d33185a6fd13b15d5cfdd0/sourcedefender-11.0.21.tar.gz
+[2024-05-05 02:31:36] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-05 02:31:36] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-05 02:31:36] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-05 02:31:38] INFO root fetch - processPackages [sourcedefender]: executing diffoscope
+[2024-05-05 02:31:38] INFO root fetch - processPackages [sourcedefender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcedefender-11.0.20.tar.gz tmp/sourcedefender-11.0.21.tar.gz --markdown 20240505/s/sourcedefender/11.0.20-11.0.21/README.md --exclude *.pyd
+[2024-05-05 02:33:00] INFO root fetch - processPackages [sourcedefender]: Remove: archive file [/home/abi/fetcher/tmp/sourcedefender-11.0.20.tar.gz]
+[2024-05-05 02:33:00] INFO root fetch - processPackages [sourcedefender]: Remove: archive file [/home/abi/fetcher/tmp/sourcedefender-11.0.21.tar.gz]
+[2024-05-05 02:33:00] INFO root fetch - main [MainThread]: End processing [sourcedefender]: success
+[2024-05-05 02:33:00] INFO root fetch - main [MainThread]: Store serial: [23062186]
