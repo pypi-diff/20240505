@@ -6039,3 +6039,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:16:18] INFO root fetch - processPackages [pinjected]: Remove: archive file [/home/abi/fetcher/tmp/pinjected-0.2.50.tar.gz]
 [2024-05-05 10:16:18] INFO root fetch - main [MainThread]: End processing [pinjected]: success
 [2024-05-05 10:16:18] INFO root fetch - main [MainThread]: Store serial: [23064076]
+[2024-05-05 10:18:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064076]
+[2024-05-05 10:18:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tietoolbox
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu121
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strapup
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvfuser-cu118
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wsclient
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sklearn-viz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jax-sysid
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.3.dev20240504] Old Version: [0.2.3.dev20240503]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [strapup]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.3.dev20240504] Old Version: [0.2.3.dev20240503]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/f1/5b/92a8ea74eadf839770086dbd383ab17e0f7cbd51a143ee9ae57e5064ca87/nvfuser_cu118-0.2.3.dev20240503.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [tietoolbox]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/3f/9f/94f151a992583f7cb9ed05146e2afb02d727f9384306435e81b657031810/nvfuser_cu121-0.2.3.dev20240503.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [sklearn-viz]: New version: [0.4.2] Old Version: [0.4.0]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [wsclient]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [jax-sysid]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-05 10:18:28] INFO root fetch - processPackages [strapup]: Downloading https://files.pythonhosted.org/packages/da/d6/e63bc5d0f1904c13c414219ad610715e22626deb71661b97c427ceeff544/strapup-1.0.0.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [wsclient]: Downloading https://files.pythonhosted.org/packages/66/ca/81797f7ba7f5f52c00cc8c6ae1edaf44dce0cd6af5befa8ea497715369ca/wsclient-0.3.0.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/a1/30/a942e4032cf70d5a607874604d930468362395f4f92740004331be7bbcd7/nvfuser_cu118-0.2.3.dev20240504.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [tietoolbox]: Downloading https://files.pythonhosted.org/packages/81/48/25649e7f4aeaa6e232d58fb7cfa04ad05a784a184601514b96aa1c459f43/tietoolbox-0.2.0.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/c6/d4/1db9a2596d86aaf9240b517cb0582a4ec44e906f6e7cfa430adfb1301357/sklearn_viz-0.4.0.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [jax-sysid]: Downloading https://files.pythonhosted.org/packages/37/01/30597dba9d9303db6bacece47cbbaf8243e3d0a2e24efc460123f9f359ae/jax_sysid-0.4.0.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/8f/6c/3bcb12f708eb7265af150728564bd21a5948767f8f62c1604a8616963e0d/nvfuser_cu121-0.2.3.dev20240504.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.3.dev20240503.tar.gz tmp/nvfuser_cu118-0.2.3.dev20240504.tar.gz --markdown 20240505/n/nvfuser-cu118/0.2.3.dev20240503-0.2.3.dev20240504/README.md --exclude *.pyd
+[2024-05-05 10:18:28] INFO root fetch - processPackages [strapup]: Downloading https://files.pythonhosted.org/packages/93/9a/4fc72da629b1efb90fb757aefee5875c615f39dcf09d487586fe647811c6/strapup-1.0.1.tar.gz
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-05 10:18:28] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.3.dev20240503.tar.gz tmp/nvfuser_cu121-0.2.3.dev20240504.tar.gz --markdown 20240505/n/nvfuser-cu121/0.2.3.dev20240503-0.2.3.dev20240504/README.md --exclude *.pyd
+[2024-05-05 10:18:28] INFO root fetch - processPackages [strapup]: executing diffoscope
+[2024-05-05 10:18:28] INFO root fetch - processPackages [strapup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strapup-1.0.0.tar.gz tmp/strapup-1.0.1.tar.gz --markdown 20240505/s/strapup/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 10:18:28] INFO root fetch - processPackages [wsclient]: Downloading https://files.pythonhosted.org/packages/f8/10/5763cb203376f338c13357dbc300b2f179d575a35ddc8eaa426b111d7be5/wsclient-0.4.0.tar.gz
+[2024-05-05 10:18:29] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/67/79/aae5c892b12b55c4dd18cb57f3c28155adba186e05345383132ec2d9cf8b/sklearn_viz-0.4.2.tar.gz
+[2024-05-05 10:18:29] INFO root fetch - processPackages [jax-sysid]: Downloading https://files.pythonhosted.org/packages/f0/80/eaf9d9a3fcdddb9c88cb8497e29398329d23b0f27c496eb2142a03b94c65/jax_sysid-0.4.1.tar.gz
+[2024-05-05 10:18:29] INFO root fetch - processPackages [tietoolbox]: Downloading https://files.pythonhosted.org/packages/12/fc/a95fa8e6772aa28835994a5373273d82e1078ff3012432dc4edf3af7b79b/tietoolbox-0.2.1.tar.gz
+[2024-05-05 10:18:29] INFO root fetch - processPackages [wsclient]: executing diffoscope
+[2024-05-05 10:18:29] INFO root fetch - processPackages [wsclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsclient-0.3.0.tar.gz tmp/wsclient-0.4.0.tar.gz --markdown 20240505/w/wsclient/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-05 10:18:29] INFO root fetch - processPackages [jax-sysid]: executing diffoscope
+[2024-05-05 10:18:29] INFO root fetch - processPackages [jax-sysid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax_sysid-0.4.0.tar.gz tmp/jax_sysid-0.4.1.tar.gz --markdown 20240505/j/jax-sysid/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-05 10:18:29] INFO root fetch - processPackages [sklearn-viz]: executing diffoscope
+[2024-05-05 10:18:29] INFO root fetch - processPackages [sklearn-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_viz-0.4.0.tar.gz tmp/sklearn_viz-0.4.2.tar.gz --markdown 20240505/s/sklearn-viz/0.4.0-0.4.2/README.md --exclude *.pyd
+[2024-05-05 10:18:29] INFO root fetch - processPackages [tietoolbox]: executing diffoscope
+[2024-05-05 10:18:29] INFO root fetch - processPackages [tietoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tietoolbox-0.2.0.tar.gz tmp/tietoolbox-0.2.1.tar.gz --markdown 20240505/t/tietoolbox/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-05 10:18:29] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240503.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240504.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-05 10:18:29] INFO root fetch - processPackages [strapup]: Remove: archive file [/home/abi/fetcher/tmp/strapup-1.0.0.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - processPackages [strapup]: Remove: archive file [/home/abi/fetcher/tmp/strapup-1.0.1.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - main [MainThread]: End processing [strapup]: success
+[2024-05-05 10:18:29] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240503.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240504.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-05 10:18:29] INFO root fetch - processPackages [jax-sysid]: Remove: archive file [/home/abi/fetcher/tmp/jax_sysid-0.4.0.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - processPackages [jax-sysid]: Remove: archive file [/home/abi/fetcher/tmp/jax_sysid-0.4.1.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - main [MainThread]: End processing [jax-sysid]: success
+[2024-05-05 10:18:29] INFO root fetch - processPackages [wsclient]: Remove: archive file [/home/abi/fetcher/tmp/wsclient-0.3.0.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - processPackages [wsclient]: Remove: archive file [/home/abi/fetcher/tmp/wsclient-0.4.0.tar.gz]
+[2024-05-05 10:18:29] INFO root fetch - main [MainThread]: End processing [wsclient]: success
+[2024-05-05 10:18:30] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.4.0.tar.gz]
+[2024-05-05 10:18:30] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.4.2.tar.gz]
+[2024-05-05 10:18:30] INFO root fetch - main [MainThread]: End processing [sklearn-viz]: success
+[2024-05-05 10:18:30] INFO root fetch - processPackages [tietoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tietoolbox-0.2.0.tar.gz]
+[2024-05-05 10:18:30] INFO root fetch - processPackages [tietoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tietoolbox-0.2.1.tar.gz]
+[2024-05-05 10:18:30] INFO root fetch - main [MainThread]: End processing [tietoolbox]: success
+[2024-05-05 10:18:30] INFO root fetch - main [MainThread]: Store serial: [23064096]
