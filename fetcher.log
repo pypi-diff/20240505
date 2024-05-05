@@ -3026,3 +3026,18 @@
 [2024-05-05 04:55:57] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
 [2024-05-05 04:55:57] INFO root fetch - main [MainThread]: End processing [surfkit]: success
 [2024-05-05 04:55:57] INFO root fetch - main [MainThread]: Store serial: [23062821]
+[2024-05-05 04:58:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062821]
+[2024-05-05 04:58:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 04:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-05 04:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolslm
+[2024-05-05 04:58:05] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-05 04:58:05] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/b0/6c/38deb12cde44c8bb457afa6b00bbc33374fd08a99cf5a0d6986b37dfd68d/pypomes_db-0.4.1.tar.gz
+[2024-05-05 04:58:05] WARNING root fetch - processPackages [toolslm]: Skipping, unable to determine old version
+[2024-05-05 04:58:05] INFO root fetch - main [MainThread]: End processing [toolslm] error
+[2024-05-05 04:58:06] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/4f/a6/1b341a971a921733b412c2f713730acbebe717a0f77674e8c353b53e757b/pypomes_db-0.4.2.tar.gz
+[2024-05-05 04:58:06] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 04:58:06] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.1.tar.gz tmp/pypomes_db-0.4.2.tar.gz --markdown 20240505/p/pypomes-db/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-05 04:58:06] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.1.tar.gz]
+[2024-05-05 04:58:06] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.2.tar.gz]
+[2024-05-05 04:58:06] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 04:58:06] INFO root fetch - main [MainThread]: Store serial: [23062829]
