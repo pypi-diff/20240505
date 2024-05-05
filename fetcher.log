@@ -8540,3 +8540,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:44:29] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.0.dev0.tar.gz]
 [2024-05-05 13:44:29] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-05 13:44:29] INFO root fetch - main [MainThread]: Store serial: [23065091]
+[2024-05-05 13:46:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065091]
+[2024-05-05 13:46:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 13:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vastdb
+[2024-05-05 13:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: taskwarrior_flow
+[2024-05-05 13:46:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ableton-controlsurface-core
+[2024-05-05 13:46:37] INFO root fetch - processPackages [taskwarrior_flow]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-05 13:46:37] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/8c/69/0f7e10b6925da231df9d88fbf0c1bf0acf1675a0734c76cfdb1f55440611/taskwarrior_flow-0.1.1.tar.gz
+[2024-05-05 13:46:37] WARNING root fetch - processPackages [ableton-controlsurface-core]: Skipping, unable to determine old version
+[2024-05-05 13:46:37] INFO root fetch - main [MainThread]: End processing [ableton-controlsurface-core] error
+[2024-05-05 13:46:37] INFO root fetch - processPackages [vastdb]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-05 13:46:37] INFO root fetch - processPackages [vastdb]: Downloading https://files.pythonhosted.org/packages/62/72/c7600e6be318ab915f3c8d8be6656cdb51a663daa697b801a52f83adf235/vastdb-0.1.2.tar.gz
+[2024-05-05 13:46:37] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/bb/98/e8f8006b7441f8547e7c85e1263656e18201e60e47ba5260cc927bf16a50/taskwarrior_flow-0.1.2.tar.gz
+[2024-05-05 13:46:38] INFO root fetch - processPackages [taskwarrior_flow]: executing diffoscope
+[2024-05-05 13:46:38] INFO root fetch - processPackages [taskwarrior_flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskwarrior_flow-0.1.1.tar.gz tmp/taskwarrior_flow-0.1.2.tar.gz --markdown 20240505/t/taskwarrior_flow/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-05 13:46:38] INFO root fetch - processPackages [vastdb]: Downloading https://files.pythonhosted.org/packages/bf/1a/54d8047f92afeb23de35d8d4e600361052d6cbdff2f20487e6c7c0fef01d/vastdb-0.1.3.tar.gz
+[2024-05-05 13:46:38] INFO root fetch - processPackages [vastdb]: executing diffoscope
+[2024-05-05 13:46:38] INFO root fetch - processPackages [vastdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vastdb-0.1.2.tar.gz tmp/vastdb-0.1.3.tar.gz --markdown 20240505/v/vastdb/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-05 13:46:38] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.1.1.tar.gz]
+[2024-05-05 13:46:38] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.1.2.tar.gz]
+[2024-05-05 13:46:38] INFO root fetch - main [MainThread]: End processing [taskwarrior_flow]: success
+[2024-05-05 13:46:39] INFO root fetch - processPackages [vastdb]: Remove: archive file [/home/abi/fetcher/tmp/vastdb-0.1.2.tar.gz]
+[2024-05-05 13:46:39] INFO root fetch - processPackages [vastdb]: Remove: archive file [/home/abi/fetcher/tmp/vastdb-0.1.3.tar.gz]
+[2024-05-05 13:46:39] INFO root fetch - main [MainThread]: End processing [vastdb]: success
+[2024-05-05 13:46:39] INFO root fetch - main [MainThread]: Store serial: [23065103]
