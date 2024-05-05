@@ -17083,3 +17083,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:06:45] INFO root fetch - processPackages [mnt.pyfiction]: Remove: archive file [/home/abi/fetcher/tmp/mnt.pyfiction-0.6.0-cp39-cp39-win_amd64.whl.zip]
 [2024-05-05 23:06:45] INFO root fetch - main [MainThread]: End processing [mnt.pyfiction]: success
 [2024-05-05 23:06:45] INFO root fetch - main [MainThread]: Store serial: [23069081]
+[2024-05-05 23:08:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069081]
+[2024-05-05 23:08:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 23:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyviz3d
+[2024-05-05 23:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vlab_prepro
+[2024-05-05 23:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a5
+[2024-05-05 23:08:54] INFO root fetch - processPackages [a5]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 23:08:54] INFO root fetch - processPackages [pyviz3d]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 23:08:54] INFO root fetch - processPackages [vlab_prepro]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-05 23:08:54] INFO root fetch - processPackages [a5]: Downloading https://files.pythonhosted.org/packages/82/f4/31d5719c11bd24497edf52f7921480bc96a02407b4f0c90c1ebbcbc25d14/a5-0.0.2-py3-none-any.whl
+[2024-05-05 23:08:54] INFO root fetch - processPackages [vlab_prepro]: Downloading https://files.pythonhosted.org/packages/ab/30/0ad3d319f70eb5bbf13c0ad8e2864a3e01c70c4fd4387604ac91b5f36062/vlab_prepro-0.4.0.tar.gz
+[2024-05-05 23:08:54] INFO root fetch - processPackages [pyviz3d]: Downloading https://files.pythonhosted.org/packages/52/6f/2381d610b2e7e33850e4577daa9c52047a85bc06e9b1ee8a4f0ade52305e/pyviz3d-0.3.0.tar.gz
+[2024-05-05 23:08:54] INFO root fetch - processPackages [a5]: Downloading https://files.pythonhosted.org/packages/bb/1d/341881132244838cbb249db61d83640314721dffce03a175bc5f5bbda00b/a5-0.0.3.tar.gz
+[2024-05-05 23:08:54] INFO root fetch - processPackages [a5]: executing diffoscope
+[2024-05-05 23:08:54] INFO root fetch - processPackages [a5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a5-0.0.2-py3-none-any.whl.zip tmp/a5-0.0.3.tar.gz --markdown 20240505/a/a5/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 23:08:54] INFO root fetch - processPackages [pyviz3d]: Downloading https://files.pythonhosted.org/packages/00/3e/a547bde5340b4c1a11c6bace3d5007367d48dde1a8574e5972648ae261fd/pyviz3d-0.3.1.tar.gz
+[2024-05-05 23:08:54] INFO root fetch - processPackages [vlab_prepro]: Downloading https://files.pythonhosted.org/packages/4d/db/8105ccf4b7734f3aa773db3abc5e259f765db205652c5633d0933145a291/vlab_prepro-0.4.1.tar.gz
+[2024-05-05 23:08:54] INFO root fetch - processPackages [pyviz3d]: executing diffoscope
+[2024-05-05 23:08:54] INFO root fetch - processPackages [pyviz3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyviz3d-0.3.0.tar.gz tmp/pyviz3d-0.3.1.tar.gz --markdown 20240505/p/pyviz3d/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 23:08:55] INFO root fetch - processPackages [vlab_prepro]: executing diffoscope
+[2024-05-05 23:08:55] INFO root fetch - processPackages [vlab_prepro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vlab_prepro-0.4.0.tar.gz tmp/vlab_prepro-0.4.1.tar.gz --markdown 20240505/v/vlab_prepro/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-05 23:08:55] INFO root fetch - processPackages [a5]: Remove: archive file [/home/abi/fetcher/tmp/a5-0.0.2-py3-none-any.whl.zip]
+[2024-05-05 23:08:55] INFO root fetch - processPackages [a5]: Remove: archive file [/home/abi/fetcher/tmp/a5-0.0.3.tar.gz]
+[2024-05-05 23:08:55] INFO root fetch - main [MainThread]: End processing [a5]: success
+[2024-05-05 23:08:55] INFO root fetch - processPackages [vlab_prepro]: Remove: archive file [/home/abi/fetcher/tmp/vlab_prepro-0.4.0.tar.gz]
+[2024-05-05 23:08:55] INFO root fetch - processPackages [vlab_prepro]: Remove: archive file [/home/abi/fetcher/tmp/vlab_prepro-0.4.1.tar.gz]
+[2024-05-05 23:08:55] INFO root fetch - main [MainThread]: End processing [vlab_prepro]: success
+[2024-05-05 23:08:55] INFO root fetch - processPackages [pyviz3d]: Remove: archive file [/home/abi/fetcher/tmp/pyviz3d-0.3.0.tar.gz]
+[2024-05-05 23:08:55] INFO root fetch - processPackages [pyviz3d]: Remove: archive file [/home/abi/fetcher/tmp/pyviz3d-0.3.1.tar.gz]
+[2024-05-05 23:08:55] INFO root fetch - main [MainThread]: End processing [pyviz3d]: success
+[2024-05-05 23:08:55] INFO root fetch - main [MainThread]: Store serial: [23069090]
