@@ -3866,3 +3866,33 @@
 [2024-05-05 06:38:00] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.4.2.tar.gz]
 [2024-05-05 06:38:00] INFO root fetch - main [MainThread]: End processing [OZI]: success
 [2024-05-05 06:38:00] INFO root fetch - main [MainThread]: Store serial: [23063129]
+[2024-05-05 06:40:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063129]
+[2024-05-05 06:40:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 06:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberdrop-dl
+[2024-05-05 06:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-newrelic
+[2024-05-05 06:40:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maldives
+[2024-05-05 06:40:09] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-05-05 06:40:09] INFO root fetch - processPackages [maldives]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-05-05 06:40:09] INFO root fetch - processPackages [pulumi-newrelic]: New version: [5.9.1] Old Version: [5.9.0a1680282898]
+[2024-05-05 06:40:09] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-05-05 06:40:09] INFO root fetch - processPackages [pulumi-newrelic]: Downloading https://files.pythonhosted.org/packages/1e/4c/b1f7f311d7b241db6b87ee89c05acfcff95b654eae42e5bda9788a66707c/pulumi_newrelic-5.9.0a1680282898.tar.gz
+[2024-05-05 06:40:09] INFO root fetch - processPackages [maldives]: Downloading https://files.pythonhosted.org/packages/4b/35/ca1bbee3433290eb8fa9401ae9631caff2f71f03ba55d4eea64462305b9a/maldives-0.0.26.tar.gz
+[2024-05-05 06:40:09] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-05-05 06:40:09] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-05 06:40:09] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240505/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-05-05 06:40:09] INFO root fetch - processPackages [maldives]: Downloading https://files.pythonhosted.org/packages/67/38/ac2c7b83fc4ba3a38292e88eaadacea6ae18c8802731a103b6f680896678/maldives-0.0.27.tar.gz
+[2024-05-05 06:40:09] INFO root fetch - processPackages [pulumi-newrelic]: Downloading https://files.pythonhosted.org/packages/43/ba/b3c2500610b8b3fabfc1479cb763f9657e73613a00e1e2f96ee26cec9a63/pulumi_newrelic-5.9.1.tar.gz
+[2024-05-05 06:40:09] INFO root fetch - processPackages [maldives]: executing diffoscope
+[2024-05-05 06:40:09] INFO root fetch - processPackages [maldives]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maldives-0.0.26.tar.gz tmp/maldives-0.0.27.tar.gz --markdown 20240505/m/maldives/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-05-05 06:40:10] INFO root fetch - processPackages [pulumi-newrelic]: executing diffoscope
+[2024-05-05 06:40:10] INFO root fetch - processPackages [pulumi-newrelic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz tmp/pulumi_newrelic-5.9.1.tar.gz --markdown 20240505/p/pulumi-newrelic/5.9.0a1680282898-5.9.1/README.md --exclude *.pyd
+[2024-05-05 06:40:10] INFO root fetch - processPackages [maldives]: Remove: archive file [/home/abi/fetcher/tmp/maldives-0.0.26.tar.gz]
+[2024-05-05 06:40:10] INFO root fetch - processPackages [maldives]: Remove: archive file [/home/abi/fetcher/tmp/maldives-0.0.27.tar.gz]
+[2024-05-05 06:40:10] INFO root fetch - main [MainThread]: End processing [maldives]: success
+[2024-05-05 06:40:10] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-05-05 06:40:10] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-05-05 06:40:10] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-05 06:40:11] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz]
+[2024-05-05 06:40:11] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.1.tar.gz]
+[2024-05-05 06:40:11] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
+[2024-05-05 06:40:11] INFO root fetch - main [MainThread]: Store serial: [23063139]
