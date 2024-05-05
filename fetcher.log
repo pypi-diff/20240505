@@ -1944,3 +1944,42 @@
 [2024-05-05 03:01:57] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc9.tar.gz]
 [2024-05-05 03:01:57] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
 [2024-05-05 03:01:57] INFO root fetch - main [MainThread]: Store serial: [23062303]
+[2024-05-05 03:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062303]
+[2024-05-05 03:04:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 03:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-05 03:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mojo-xmodules
+[2024-05-05 03:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: debug-mgr
+[2024-05-05 03:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zuspec-parser
+[2024-05-05 03:04:05] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-05 03:04:05] INFO root fetch - processPackages [debug-mgr]: New version: [0.0.2.8954487042] Old Version: [0.0.2.8422139209]
+[2024-05-05 03:04:06] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/f8/a4/4e24e47cc520c91b1a392b39d4ca52aaec577b5d8bddad7e7fef91379eb9/pypomes_db-0.4.0.tar.gz
+[2024-05-05 03:04:06] INFO root fetch - processPackages [debug-mgr]: Downloading https://files.pythonhosted.org/packages/c9/58/a6d82b97287b7b316b1878f3133fa0c9fc32c6f998b23a425a84adf2fed2/debug_mgr-0.0.2.8422139209-cp39-cp39-win_amd64.whl
+[2024-05-05 03:04:06] INFO root fetch - processPackages [mojo-xmodules]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-05 03:04:06] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.8954491766] Old Version: [0.0.1.8421845781]
+[2024-05-05 03:04:06] INFO root fetch - processPackages [mojo-xmodules]: Downloading https://files.pythonhosted.org/packages/35/fc/19a8128466b8d8419aa99f81e56fae265657c652a7314ed32e6770d708e7/mojo_xmodules-1.3.8.tar.gz
+[2024-05-05 03:04:06] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/33/28/37d629141aa3d4392b7326bf15fcbd873c97a8719b73eb4a5376a128b59b/zuspec_parser-0.0.1.8421845781-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 03:04:06] INFO root fetch - processPackages [debug-mgr]: Downloading https://files.pythonhosted.org/packages/f0/90/c65f7adbc18b0a49f12255d075c05fdbe183bf33fa87968ff98547a8471d/debug_mgr-0.0.2.8954487042-cp39-cp39-win_amd64.whl
+[2024-05-05 03:04:06] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/b0/6c/38deb12cde44c8bb457afa6b00bbc33374fd08a99cf5a0d6986b37dfd68d/pypomes_db-0.4.1.tar.gz
+[2024-05-05 03:04:06] INFO root fetch - processPackages [debug-mgr]: executing diffoscope
+[2024-05-05 03:04:06] INFO root fetch - processPackages [debug-mgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/debug_mgr-0.0.2.8422139209-cp39-cp39-win_amd64.whl.zip tmp/debug_mgr-0.0.2.8954487042-cp39-cp39-win_amd64.whl.zip --markdown 20240505/d/debug-mgr/0.0.2.8422139209-0.0.2.8954487042/README.md --exclude *.pyd
+[2024-05-05 03:04:06] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 03:04:06] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.0.tar.gz tmp/pypomes_db-0.4.1.tar.gz --markdown 20240505/p/pypomes-db/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-05 03:04:06] INFO root fetch - processPackages [mojo-xmodules]: Downloading https://files.pythonhosted.org/packages/96/d0/6cd535c199db02fe9f5d2284c6568b0c368e53e88812598da557212d7a3a/mojo_xmodules-1.3.9.tar.gz
+[2024-05-05 03:04:06] INFO root fetch - processPackages [mojo-xmodules]: executing diffoscope
+[2024-05-05 03:04:06] INFO root fetch - processPackages [mojo-xmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_xmodules-1.3.8.tar.gz tmp/mojo_xmodules-1.3.9.tar.gz --markdown 20240505/m/mojo-xmodules/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-05 03:04:07] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.0.tar.gz]
+[2024-05-05 03:04:07] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.1.tar.gz]
+[2024-05-05 03:04:07] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 03:04:07] INFO root fetch - processPackages [mojo-xmodules]: Remove: archive file [/home/abi/fetcher/tmp/mojo_xmodules-1.3.8.tar.gz]
+[2024-05-05 03:04:07] INFO root fetch - processPackages [mojo-xmodules]: Remove: archive file [/home/abi/fetcher/tmp/mojo_xmodules-1.3.9.tar.gz]
+[2024-05-05 03:04:07] INFO root fetch - main [MainThread]: End processing [mojo-xmodules]: success
+[2024-05-05 03:04:07] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/86/eb/64b7f7c1b122fa5283f29e7ba2a0ea902d7b0e44243c4fc6d661f94c4c05/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 03:04:08] INFO root fetch - processPackages [debug-mgr]: Remove: archive file [/home/abi/fetcher/tmp/debug_mgr-0.0.2.8422139209-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 03:04:08] INFO root fetch - processPackages [debug-mgr]: Remove: archive file [/home/abi/fetcher/tmp/debug_mgr-0.0.2.8954487042-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 03:04:08] INFO root fetch - main [MainThread]: End processing [debug-mgr]: success
+[2024-05-05 03:04:09] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2024-05-05 03:04:09] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.8421845781-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/z/zuspec-parser/0.0.1.8421845781-0.0.1.8954491766/README.md --exclude *.pyd
+[2024-05-05 03:06:09] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8421845781-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 03:06:09] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 03:06:09] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2024-05-05 03:06:09] INFO root fetch - main [MainThread]: Store serial: [23062321]
