@@ -14818,3 +14818,18 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:35:58] INFO root fetch - processPackages [augmolino]: Remove: archive file [/home/abi/fetcher/tmp/augmolino-0.0.4.tar.gz]
 [2024-05-05 20:35:58] INFO root fetch - main [MainThread]: End processing [augmolino]: success
 [2024-05-05 20:35:58] INFO root fetch - main [MainThread]: Store serial: [23068028]
+[2024-05-05 20:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068028]
+[2024-05-05 20:38:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 20:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-05 20:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: extradecorators
+[2024-05-05 20:38:07] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-05 20:38:07] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/c0/d7/18831c697e3cdaae79b5d8cc8693d7087d75758e6f5456a5c352903b230a/pypomes_db-0.4.8.tar.gz
+[2024-05-05 20:38:07] WARNING root fetch - processPackages [extradecorators]: Skipping, unable to determine old version
+[2024-05-05 20:38:07] INFO root fetch - main [MainThread]: End processing [extradecorators] error
+[2024-05-05 20:38:08] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/97/f5/4940c07bb44b0cbbca3bf7a53165fae11973a75372b907aba1edb460454b/pypomes_db-0.4.9.tar.gz
+[2024-05-05 20:38:08] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 20:38:08] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.8.tar.gz tmp/pypomes_db-0.4.9.tar.gz --markdown 20240505/p/pypomes-db/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-05 20:38:08] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.8.tar.gz]
+[2024-05-05 20:38:08] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.9.tar.gz]
+[2024-05-05 20:38:08] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 20:38:08] INFO root fetch - main [MainThread]: Store serial: [23068036]
