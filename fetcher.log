@@ -9395,3 +9395,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:41:11] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240505-py3-none-win_amd64.whl.zip]
 [2024-05-05 14:41:11] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-05-05 14:41:11] INFO root fetch - main [MainThread]: Store serial: [23065560]
+[2024-05-05 14:43:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065560]
+[2024-05-05 14:43:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 14:43:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkt-retv
+[2024-05-05 14:43:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panoptica-genai-protection
+[2024-05-05 14:43:20] INFO root fetch - processPackages [mkt-retv]: New version: [1.413] Old Version: [1.412]
+[2024-05-05 14:43:20] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ff/16/924ae28b5267adcc2f00f28aa8f72ab4c6d6f166b7225751ecef4977f0e5/mkt-retv-1.412.tar.gz
+[2024-05-05 14:43:20] INFO root fetch - processPackages [panoptica-genai-protection]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-05 14:43:20] INFO root fetch - processPackages [panoptica-genai-protection]: Downloading https://files.pythonhosted.org/packages/f4/6e/3921e6dda921e66350e63ae7106923b7bef547fabc9edf1d8c2fd398c7e9/panoptica_genai_protection-0.1.5.tar.gz
+[2024-05-05 14:43:20] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/46/99/a7850fe6d84a06587de75a3b8a147b33cae208fd362bf6425aa5f8a64b4e/mkt-retv-1.413.tar.gz
+[2024-05-05 14:43:21] INFO root fetch - processPackages [mkt-retv]: executing diffoscope
+[2024-05-05 14:43:21] INFO root fetch - processPackages [mkt-retv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkt-retv-1.412.tar.gz tmp/mkt-retv-1.413.tar.gz --markdown 20240505/m/mkt-retv/1.412-1.413/README.md --exclude *.pyd
+[2024-05-05 14:43:21] INFO root fetch - processPackages [panoptica-genai-protection]: Downloading https://files.pythonhosted.org/packages/64/f1/dcb77dd86036d05b24306cc12d408540c78f996ef90cde252de77cd809c1/panoptica_genai_protection-0.1.6.tar.gz
+[2024-05-05 14:43:21] INFO root fetch - processPackages [panoptica-genai-protection]: executing diffoscope
+[2024-05-05 14:43:21] INFO root fetch - processPackages [panoptica-genai-protection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panoptica_genai_protection-0.1.5.tar.gz tmp/panoptica_genai_protection-0.1.6.tar.gz --markdown 20240505/p/panoptica-genai-protection/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-05 14:43:21] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.412.tar.gz]
+[2024-05-05 14:43:21] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.413.tar.gz]
+[2024-05-05 14:43:21] INFO root fetch - main [MainThread]: End processing [mkt-retv]: success
+[2024-05-05 14:43:21] INFO root fetch - processPackages [panoptica-genai-protection]: Remove: archive file [/home/abi/fetcher/tmp/panoptica_genai_protection-0.1.5.tar.gz]
+[2024-05-05 14:43:21] INFO root fetch - processPackages [panoptica-genai-protection]: Remove: archive file [/home/abi/fetcher/tmp/panoptica_genai_protection-0.1.6.tar.gz]
+[2024-05-05 14:43:21] INFO root fetch - main [MainThread]: End processing [panoptica-genai-protection]: success
+[2024-05-05 14:43:21] INFO root fetch - main [MainThread]: Store serial: [23065585]
