@@ -2544,3 +2544,29 @@
 [2024-05-05 04:05:59] INFO root fetch - processPackages [coh2-live-stats]: Remove: archive file [/home/abi/fetcher/tmp/coh2_live_stats-1.2.3.tar.gz]
 [2024-05-05 04:05:59] INFO root fetch - main [MainThread]: End processing [coh2-live-stats]: success
 [2024-05-05 04:05:59] INFO root fetch - main [MainThread]: Store serial: [23062653]
+[2024-05-05 04:08:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062653]
+[2024-05-05 04:08:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 04:10:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062654]
+[2024-05-05 04:10:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 04:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RL-OM
+[2024-05-05 04:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlexecutorx
+[2024-05-05 04:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syworkflow
+[2024-05-05 04:10:13] INFO root fetch - processPackages [sqlexecutorx]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-05 04:10:13] INFO root fetch - processPackages [RL-OM]: New version: [0.7.99] Old Version: [0.7.98]
+[2024-05-05 04:10:13] WARNING root fetch - processPackages [syworkflow]: Skipping, unable to determine old version
+[2024-05-05 04:10:13] INFO root fetch - main [MainThread]: End processing [syworkflow] error
+[2024-05-05 04:10:13] INFO root fetch - processPackages [RL-OM]: Downloading https://files.pythonhosted.org/packages/54/0e/1e251f32e562634fc591242baccb565e0826397773457a2e7efb89e2b31e/RL_OM-0.7.98.tar.gz
+[2024-05-05 04:10:13] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/5b/48/3dd3302ab5623b918923df2237bd9d877f3acbdd978a4f0902506af2d47e/sqlexecutorx-0.5.0.tar.gz
+[2024-05-05 04:10:13] INFO root fetch - processPackages [RL-OM]: Downloading https://files.pythonhosted.org/packages/05/80/e201b178be17998f0db6391696dcf15f0c737015844fe222295cca5fc390/RL_OM-0.7.99.tar.gz
+[2024-05-05 04:10:13] INFO root fetch - processPackages [RL-OM]: executing diffoscope
+[2024-05-05 04:10:13] INFO root fetch - processPackages [RL-OM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RL_OM-0.7.98.tar.gz tmp/RL_OM-0.7.99.tar.gz --markdown 20240505/R/RL-OM/0.7.98-0.7.99/README.md --exclude *.pyd
+[2024-05-05 04:10:13] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/b4/7e/6707bdf8d3b691f048d069219253987b438653bf3c1cbe0bd1c1ec829c69/sqlexecutorx-0.6.0.tar.gz
+[2024-05-05 04:10:13] INFO root fetch - processPackages [sqlexecutorx]: executing diffoscope
+[2024-05-05 04:10:13] INFO root fetch - processPackages [sqlexecutorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlexecutorx-0.5.0.tar.gz tmp/sqlexecutorx-0.6.0.tar.gz --markdown 20240505/s/sqlexecutorx/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-05 04:10:14] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.5.0.tar.gz]
+[2024-05-05 04:10:14] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.6.0.tar.gz]
+[2024-05-05 04:10:14] INFO root fetch - main [MainThread]: End processing [sqlexecutorx]: success
+[2024-05-05 04:10:14] INFO root fetch - processPackages [RL-OM]: Remove: archive file [/home/abi/fetcher/tmp/RL_OM-0.7.98.tar.gz]
+[2024-05-05 04:10:14] INFO root fetch - processPackages [RL-OM]: Remove: archive file [/home/abi/fetcher/tmp/RL_OM-0.7.99.tar.gz]
+[2024-05-05 04:10:14] INFO root fetch - main [MainThread]: End processing [RL-OM]: success
+[2024-05-05 04:10:14] INFO root fetch - main [MainThread]: Store serial: [23062664]
