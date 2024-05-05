@@ -10984,3 +10984,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:20:08] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
 [2024-05-05 16:20:08] INFO root fetch - main [MainThread]: End processing [petrosa]: success
 [2024-05-05 16:20:08] INFO root fetch - main [MainThread]: Store serial: [23066332]
+[2024-05-05 16:22:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066332]
+[2024-05-05 16:22:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddeutil-df
+[2024-05-05 16:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cycling-nestedls
+[2024-05-05 16:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymmdb
+[2024-05-05 16:22:16] INFO root fetch - processPackages [cycling-nestedls]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 16:22:16] WARNING root fetch - processPackages [ddeutil-df]: Skipping, unable to determine old version
+[2024-05-05 16:22:16] INFO root fetch - main [MainThread]: End processing [ddeutil-df] error
+[2024-05-05 16:22:16] INFO root fetch - processPackages [pymmdb]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-05 16:22:17] INFO root fetch - processPackages [cycling-nestedls]: Downloading https://files.pythonhosted.org/packages/99/69/8584070786b59ca258ad7f439682a7a062cb0fafd8046c35f42cc74ebdd4/cycling_nestedls-1.2.0.tar.gz
+[2024-05-05 16:22:17] INFO root fetch - processPackages [pymmdb]: Downloading https://files.pythonhosted.org/packages/f3/1f/5a394beade6cae3c0ff72de6d67cf5b2fc45e10867782c726f48ae7b329a/pymmdb-1.0.4-py3-none-any.whl
+[2024-05-05 16:22:17] INFO root fetch - processPackages [cycling-nestedls]: Downloading https://files.pythonhosted.org/packages/d0/c7/51d4d3a065f0a20a62af1f5b56f4a5c57c42d23c87613d9bfeb7d4f09af2/cycling_nestedls-1.2.1.tar.gz
+[2024-05-05 16:22:17] INFO root fetch - processPackages [pymmdb]: Downloading https://files.pythonhosted.org/packages/11/b8/b7260f53bdaf9388bcecb0cec9b5902e1ebb3b777c43c92380b2a0c068c3/pymmdb-1.0.5-py3-none-any.whl
+[2024-05-05 16:22:17] INFO root fetch - processPackages [cycling-nestedls]: executing diffoscope
+[2024-05-05 16:22:17] INFO root fetch - processPackages [cycling-nestedls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_nestedls-1.2.0.tar.gz tmp/cycling_nestedls-1.2.1.tar.gz --markdown 20240505/c/cycling-nestedls/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 16:22:17] INFO root fetch - processPackages [pymmdb]: executing diffoscope
+[2024-05-05 16:22:17] INFO root fetch - processPackages [pymmdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymmdb-1.0.4-py3-none-any.whl.zip tmp/pymmdb-1.0.5-py3-none-any.whl.zip --markdown 20240505/p/pymmdb/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-05 16:22:18] INFO root fetch - processPackages [pymmdb]: Remove: archive file [/home/abi/fetcher/tmp/pymmdb-1.0.4-py3-none-any.whl.zip]
+[2024-05-05 16:22:18] INFO root fetch - processPackages [pymmdb]: Remove: archive file [/home/abi/fetcher/tmp/pymmdb-1.0.5-py3-none-any.whl.zip]
+[2024-05-05 16:22:18] INFO root fetch - main [MainThread]: End processing [pymmdb]: success
+[2024-05-05 16:22:18] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.2.0.tar.gz]
+[2024-05-05 16:22:18] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.2.1.tar.gz]
+[2024-05-05 16:22:18] INFO root fetch - main [MainThread]: End processing [cycling-nestedls]: success
+[2024-05-05 16:22:18] INFO root fetch - main [MainThread]: Store serial: [23066342]
