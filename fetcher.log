@@ -6117,3 +6117,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:20:39] INFO root fetch - processPackages [python-sdk-remote]: Remove: archive file [/home/abi/fetcher/tmp/python_sdk_remote-0.0.92.tar.gz]
 [2024-05-05 10:20:39] INFO root fetch - main [MainThread]: End processing [python-sdk-remote]: success
 [2024-05-05 10:20:39] INFO root fetch - main [MainThread]: Store serial: [23064101]
+[2024-05-05 10:22:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064101]
+[2024-05-05 10:22:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 10:22:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uastyle
+[2024-05-05 10:22:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-05-05 10:22:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyyaml-include
+[2024-05-05 10:22:48] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240505.335] Old Version: [0.44.20240505.334]
+[2024-05-05 10:22:48] WARNING root fetch - processPackages [uastyle]: Skipping, unable to determine old version
+[2024-05-05 10:22:48] INFO root fetch - main [MainThread]: End processing [uastyle] error
+[2024-05-05 10:22:48] INFO root fetch - processPackages [pyyaml-include]: New version: [2.1] Old Version: [2.0b2]
+[2024-05-05 10:22:48] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/0b/1d/43c8dbdd83025fbb0f0781c0f2181ee361b22d99e637a14a68892f313c4e/pkscreener-0.44.20240505.334.tar.gz
+[2024-05-05 10:22:48] INFO root fetch - processPackages [pyyaml-include]: Downloading https://files.pythonhosted.org/packages/37/f3/56432e920a05a95eeb528fa3d37601406678f0de88d76be64b8600c6de69/pyyaml-include-2.0b2.tar.gz
+[2024-05-05 10:22:49] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/9e/54/d192e6d5c63b98c36b864e4e9a46941be52a269f3432aa4824e7fc894742/pkscreener-0.44.20240505.335.tar.gz
+[2024-05-05 10:22:49] INFO root fetch - processPackages [pyyaml-include]: Downloading https://files.pythonhosted.org/packages/71/43/49c26a73df62bf39244e58ccbdfa0af073e7f86fec262c70a71515a6d4e2/pyyaml_include-2.1.tar.gz
+[2024-05-05 10:22:49] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-05 10:22:49] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240505.334.tar.gz tmp/pkscreener-0.44.20240505.335.tar.gz --markdown 20240505/p/pkscreener/0.44.20240505.334-0.44.20240505.335/README.md --exclude *.pyd
+[2024-05-05 10:22:49] INFO root fetch - processPackages [pyyaml-include]: executing diffoscope
+[2024-05-05 10:22:49] INFO root fetch - processPackages [pyyaml-include]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyyaml-include-2.0b2.tar.gz tmp/pyyaml_include-2.1.tar.gz --markdown 20240505/p/pyyaml-include/2.0b2-2.1/README.md --exclude *.pyd
+[2024-05-05 10:22:50] INFO root fetch - processPackages [pyyaml-include]: Remove: archive file [/home/abi/fetcher/tmp/pyyaml-include-2.0b2.tar.gz]
+[2024-05-05 10:22:50] INFO root fetch - processPackages [pyyaml-include]: Remove: archive file [/home/abi/fetcher/tmp/pyyaml_include-2.1.tar.gz]
+[2024-05-05 10:22:50] INFO root fetch - main [MainThread]: End processing [pyyaml-include]: success
+[2024-05-05 10:22:50] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.334.tar.gz]
+[2024-05-05 10:22:50] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.335.tar.gz]
+[2024-05-05 10:22:50] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-05 10:22:50] INFO root fetch - main [MainThread]: Store serial: [23064112]
