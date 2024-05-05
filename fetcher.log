@@ -12649,3 +12649,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:19:35] INFO root fetch - processPackages [pyopencl]: Remove: archive file [/home/abi/fetcher/tmp/pyopencl-2024.2.tar.gz]
 [2024-05-05 18:19:35] INFO root fetch - main [MainThread]: End processing [pyopencl]: success
 [2024-05-05 18:19:35] INFO root fetch - main [MainThread]: Store serial: [23067080]
+[2024-05-05 18:21:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067080]
+[2024-05-05 18:21:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blankslate-python
+[2024-05-05 18:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: boilergram
+[2024-05-05 18:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freegenius
+[2024-05-05 18:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alchemical-storage
+[2024-05-05 18:21:44] INFO root fetch - processPackages [blankslate-python]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-05 18:21:44] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/41/c0/b7667ba0f735a196d02506e4b0ae09151394c1b2307ef2d2a95f79d30f5f/blankslate_python-1.2.4.tar.gz
+[2024-05-05 18:21:44] INFO root fetch - processPackages [alchemical-storage]: New version: [1.0.0.dev2] Old Version: [1.0.0.dev1]
+[2024-05-05 18:21:44] WARNING root fetch - processPackages [boilergram]: Skipping, unable to determine old version
+[2024-05-05 18:21:44] INFO root fetch - main [MainThread]: End processing [boilergram] error
+[2024-05-05 18:21:44] INFO root fetch - processPackages [freegenius]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 18:21:44] INFO root fetch - processPackages [alchemical-storage]: Downloading https://files.pythonhosted.org/packages/05/66/1ff790ba3673abd95e0a41977119ed829d9814faf72da4ba64e012866743/alchemical_storage-1.0.0.dev1.tar.gz
+[2024-05-05 18:21:44] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/7d/4a/0947411d75266cd1a5b5d474dc6326e64e7478fc278064c24fb16036e265/freegenius-0.2.7.tar.gz
+[2024-05-05 18:21:44] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/27/5e/23df6ee7866d5b230daa3a2dd59edc90b3426551297e06ec0a087799ae50/blankslate_python-1.2.5.tar.gz
+[2024-05-05 18:21:44] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-05 18:21:44] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.2.4.tar.gz tmp/blankslate_python-1.2.5.tar.gz --markdown 20240505/b/blankslate-python/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-05 18:21:45] INFO root fetch - processPackages [alchemical-storage]: Downloading https://files.pythonhosted.org/packages/c4/32/2701a10b8042fa61d7ccdf3fa5db942a56eaedcf097e42b12c4b57b1e4e9/alchemical_storage-1.0.0.dev2.tar.gz
+[2024-05-05 18:21:45] INFO root fetch - processPackages [alchemical-storage]: executing diffoscope
+[2024-05-05 18:21:45] INFO root fetch - processPackages [alchemical-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alchemical_storage-1.0.0.dev1.tar.gz tmp/alchemical_storage-1.0.0.dev2.tar.gz --markdown 20240505/a/alchemical-storage/1.0.0.dev1-1.0.0.dev2/README.md --exclude *.pyd
+[2024-05-05 18:21:45] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-05 18:21:45] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.4.tar.gz]
+[2024-05-05 18:21:45] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.5.tar.gz]
+[2024-05-05 18:21:45] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-05 18:21:45] INFO root fetch - processPackages [alchemical-storage]: Remove: archive file [/home/abi/fetcher/tmp/alchemical_storage-1.0.0.dev1.tar.gz]
+[2024-05-05 18:21:45] INFO root fetch - processPackages [alchemical-storage]: Remove: archive file [/home/abi/fetcher/tmp/alchemical_storage-1.0.0.dev2.tar.gz]
+[2024-05-05 18:21:45] INFO root fetch - main [MainThread]: End processing [alchemical-storage]: success
+[2024-05-05 18:21:46] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-05 18:21:46] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.7.tar.gz tmp/freegenius-0.2.8.tar.gz --markdown 20240505/f/freegenius/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 18:21:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.7.tar.gz]
+[2024-05-05 18:21:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-05 18:21:48] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-05 18:21:48] INFO root fetch - main [MainThread]: Store serial: [23067094]
