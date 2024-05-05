@@ -5854,3 +5854,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:01:03] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240505-cp39-cp39-win_amd64.whl.zip]
 [2024-05-05 10:01:03] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-05-05 10:01:03] INFO root fetch - main [MainThread]: Store serial: [23063987]
+[2024-05-05 10:03:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063987]
+[2024-05-05 10:03:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 10:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-key-auth
+[2024-05-05 10:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ALLMDEV
+[2024-05-05 10:03:12] INFO root fetch - processPackages [ALLMDEV]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-05 10:03:12] INFO root fetch - processPackages [fastapi-key-auth]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 10:03:12] INFO root fetch - processPackages [fastapi-key-auth]: Downloading https://files.pythonhosted.org/packages/da/c3/69ef28181439452661931488adbe33251890621301a302e3dbd385688e26/fastapi-key-auth-0.8.0.tar.gz
+[2024-05-05 10:03:12] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/6a/e1/d07b0e9aa1c61c442bf125d0a61c0883e3c930ac7357d31ebd0cdde54899/ALLMDEV-1.2.8-py3-none-any.whl
+[2024-05-05 10:03:12] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/ca/97/a3b2366f04cabaa832cd54c0eedeb33cf4bc9df415faa438cb48461c50c1/ALLMDEV-1.2.9-py3-none-any.whl
+[2024-05-05 10:03:12] INFO root fetch - processPackages [fastapi-key-auth]: Downloading https://files.pythonhosted.org/packages/c7/6f/cc256c98fec61565a125053e5b1e8c79693d778f5c22732421d2657b6128/fastapi_key_auth-0.9.0.tar.gz
+[2024-05-05 10:03:13] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-05-05 10:03:13] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.2.8-py3-none-any.whl.zip tmp/ALLMDEV-1.2.9-py3-none-any.whl.zip --markdown 20240505/A/ALLMDEV/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-05 10:03:13] INFO root fetch - processPackages [fastapi-key-auth]: executing diffoscope
+[2024-05-05 10:03:13] INFO root fetch - processPackages [fastapi-key-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-key-auth-0.8.0.tar.gz tmp/fastapi_key_auth-0.9.0.tar.gz --markdown 20240505/f/fastapi-key-auth/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-05 10:03:13] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.8-py3-none-any.whl.zip]
+[2024-05-05 10:03:13] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.9-py3-none-any.whl.zip]
+[2024-05-05 10:03:13] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-05-05 10:03:13] INFO root fetch - processPackages [fastapi-key-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-key-auth-0.8.0.tar.gz]
+[2024-05-05 10:03:13] INFO root fetch - processPackages [fastapi-key-auth]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_key_auth-0.9.0.tar.gz]
+[2024-05-05 10:03:13] INFO root fetch - main [MainThread]: End processing [fastapi-key-auth]: success
+[2024-05-05 10:03:13] INFO root fetch - main [MainThread]: Store serial: [23063993]
