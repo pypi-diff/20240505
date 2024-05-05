@@ -10736,3 +10736,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:59:25] INFO root fetch - processPackages [fastatomstruct]: Remove: archive file [/home/abi/fetcher/tmp/fastatomstruct-0.7.0-cp39-cp39-manylinux_2_34_x86_64.whl.zip]
 [2024-05-05 15:59:25] INFO root fetch - main [MainThread]: End processing [fastatomstruct]: success
 [2024-05-05 15:59:25] INFO root fetch - main [MainThread]: Store serial: [23066206]
+[2024-05-05 16:01:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066206]
+[2024-05-05 16:01:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: algo-trading-helper-functions
+[2024-05-05 16:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nqrduck-broadband
+[2024-05-05 16:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkt-retv
+[2024-05-05 16:01:34] INFO root fetch - processPackages [mkt-retv]: New version: [1.415] Old Version: [1.414]
+[2024-05-05 16:01:34] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ab/93/577fab0285799aa7c81127ff3467c1b2e268821e9ff77547e59daf4dd3ac/mkt-retv-1.414.tar.gz
+[2024-05-05 16:01:34] WARNING root fetch - processPackages [algo-trading-helper-functions]: Skipping, unable to determine old version
+[2024-05-05 16:01:34] INFO root fetch - main [MainThread]: End processing [algo-trading-helper-functions] error
+[2024-05-05 16:01:34] INFO root fetch - processPackages [nqrduck-broadband]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-05 16:01:34] INFO root fetch - processPackages [nqrduck-broadband]: Downloading https://files.pythonhosted.org/packages/ae/57/a7105dd7f03a6a231f3e545c7e330ba813af8bed4c5c2e9bccc6124d1598/nqrduck_broadband-0.0.13.tar.gz
+[2024-05-05 16:01:35] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/04/9c/5c9577f03841338a9d25cd155e9a8d24f944ab1eb2c31883e9402ddc54d5/mkt-retv-1.415.tar.gz
+[2024-05-05 16:01:35] INFO root fetch - processPackages [mkt-retv]: executing diffoscope
+[2024-05-05 16:01:35] INFO root fetch - processPackages [mkt-retv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkt-retv-1.414.tar.gz tmp/mkt-retv-1.415.tar.gz --markdown 20240505/m/mkt-retv/1.414-1.415/README.md --exclude *.pyd
+[2024-05-05 16:01:35] INFO root fetch - processPackages [nqrduck-broadband]: Downloading https://files.pythonhosted.org/packages/3b/ba/a188d30b5d7056d63d5c854cd2501fbfdb4c258b6491a77cfe90250ca169/nqrduck_broadband-0.0.14.tar.gz
+[2024-05-05 16:01:35] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.414.tar.gz]
+[2024-05-05 16:01:35] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.415.tar.gz]
+[2024-05-05 16:01:35] INFO root fetch - main [MainThread]: End processing [mkt-retv]: success
+[2024-05-05 16:01:35] INFO root fetch - processPackages [nqrduck-broadband]: executing diffoscope
+[2024-05-05 16:01:35] INFO root fetch - processPackages [nqrduck-broadband]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqrduck_broadband-0.0.13.tar.gz tmp/nqrduck_broadband-0.0.14.tar.gz --markdown 20240505/n/nqrduck-broadband/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-05 16:01:36] INFO root fetch - processPackages [nqrduck-broadband]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_broadband-0.0.13.tar.gz]
+[2024-05-05 16:01:36] INFO root fetch - processPackages [nqrduck-broadband]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_broadband-0.0.14.tar.gz]
+[2024-05-05 16:01:36] INFO root fetch - main [MainThread]: End processing [nqrduck-broadband]: success
+[2024-05-05 16:01:36] INFO root fetch - main [MainThread]: Store serial: [23066222]
