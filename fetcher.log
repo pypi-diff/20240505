@@ -2330,3 +2330,15 @@
 [2024-05-05 03:38:49] WARNING root fetch - processPackages [Mbtiler]: Skipping, unable to determine old version
 [2024-05-05 03:38:49] INFO root fetch - main [MainThread]: End processing [Mbtiler] error
 [2024-05-05 03:38:49] INFO root fetch - main [MainThread]: Store serial: [23062525]
+[2024-05-05 03:40:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062525]
+[2024-05-05 03:40:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 03:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unusual-whales-api-client
+[2024-05-05 03:40:57] INFO root fetch - processPackages [unusual-whales-api-client]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-05 03:40:57] INFO root fetch - processPackages [unusual-whales-api-client]: Downloading https://files.pythonhosted.org/packages/48/4a/8e8d18297090d1acb351bc984fa1a9b74e9d5ea7b9635a71cfd7ee68275e/unusual_whales_api_client-1.0.1.tar.gz
+[2024-05-05 03:40:58] INFO root fetch - processPackages [unusual-whales-api-client]: Downloading https://files.pythonhosted.org/packages/ba/1e/1ba9c21fb6da285ffa5872f889917a818d32e1e55adf940733b3443cc0ff/unusual_whales_api_client-1.0.2.tar.gz
+[2024-05-05 03:40:58] INFO root fetch - processPackages [unusual-whales-api-client]: executing diffoscope
+[2024-05-05 03:40:58] INFO root fetch - processPackages [unusual-whales-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unusual_whales_api_client-1.0.1.tar.gz tmp/unusual_whales_api_client-1.0.2.tar.gz --markdown 20240505/u/unusual-whales-api-client/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-05 03:40:59] INFO root fetch - processPackages [unusual-whales-api-client]: Remove: archive file [/home/abi/fetcher/tmp/unusual_whales_api_client-1.0.1.tar.gz]
+[2024-05-05 03:40:59] INFO root fetch - processPackages [unusual-whales-api-client]: Remove: archive file [/home/abi/fetcher/tmp/unusual_whales_api_client-1.0.2.tar.gz]
+[2024-05-05 03:40:59] INFO root fetch - main [MainThread]: End processing [unusual-whales-api-client]: success
+[2024-05-05 03:40:59] INFO root fetch - main [MainThread]: Store serial: [23062526]
