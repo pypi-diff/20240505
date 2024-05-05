@@ -12319,3 +12319,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:53:26] INFO root fetch - processPackages [wrapyfi]: Remove: archive file [/home/abi/fetcher/tmp/wrapyfi-0.4.44.tar.gz]
 [2024-05-05 17:53:26] INFO root fetch - main [MainThread]: End processing [wrapyfi]: success
 [2024-05-05 17:53:26] INFO root fetch - main [MainThread]: Store serial: [23066895]
+[2024-05-05 17:55:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066895]
+[2024-05-05 17:55:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 17:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otf-addons-vault
+[2024-05-05 17:55:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oakvar
+[2024-05-05 17:55:34] INFO root fetch - processPackages [otf-addons-vault]: New version: [24.18.1] Old Version: [24.18.0]
+[2024-05-05 17:55:34] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-05-05 17:55:35] INFO root fetch - processPackages [otf-addons-vault]: Downloading https://files.pythonhosted.org/packages/ea/4c/921a91e209257e0ced0fad3ddb30550a56512775d225e37cf357edf6b7d1/otf_addons_vault-24.18.0.tar.gz
+[2024-05-05 17:55:35] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-05-05 17:55:35] INFO root fetch - processPackages [otf-addons-vault]: Downloading https://files.pythonhosted.org/packages/2c/45/473d4d87d17de19294d35e72e6ea1bf80702cbce3567997ca07a31d7ab20/otf_addons_vault-24.18.1.tar.gz
+[2024-05-05 17:55:35] INFO root fetch - processPackages [otf-addons-vault]: executing diffoscope
+[2024-05-05 17:55:35] INFO root fetch - processPackages [otf-addons-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otf_addons_vault-24.18.0.tar.gz tmp/otf_addons_vault-24.18.1.tar.gz --markdown 20240505/o/otf-addons-vault/24.18.0-24.18.1/README.md --exclude *.pyd
+[2024-05-05 17:55:36] INFO root fetch - processPackages [otf-addons-vault]: Remove: archive file [/home/abi/fetcher/tmp/otf_addons_vault-24.18.0.tar.gz]
+[2024-05-05 17:55:36] INFO root fetch - processPackages [otf-addons-vault]: Remove: archive file [/home/abi/fetcher/tmp/otf_addons_vault-24.18.1.tar.gz]
+[2024-05-05 17:55:36] INFO root fetch - main [MainThread]: End processing [otf-addons-vault]: success
+[2024-05-05 17:55:37] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-05-05 17:55:40] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-05-05 17:55:40] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240505/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-05-05 17:55:42] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-05-05 17:55:42] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-05-05 17:55:42] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-05-05 17:55:42] INFO root fetch - main [MainThread]: Store serial: [23066899]
