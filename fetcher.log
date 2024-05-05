@@ -11144,3 +11144,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:35:17] WARNING root fetch - processPackages [topologic-core]: Skipping, unable to determine old version
 [2024-05-05 16:35:17] INFO root fetch - main [MainThread]: End processing [topologic-core] error
 [2024-05-05 16:35:17] INFO root fetch - main [MainThread]: Store serial: [23066427]
+[2024-05-05 16:37:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066427]
+[2024-05-05 16:37:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utillc
+[2024-05-05 16:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petrosa
+[2024-05-05 16:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: indipyclient
+[2024-05-05 16:37:26] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 16:37:26] INFO root fetch - processPackages [indipyclient]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 16:37:26] INFO root fetch - processPackages [utillc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 16:37:26] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-05 16:37:26] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/cc/f6/8602a3365c5bdae211c3ac294519f44f09a48d78f82481686f04441605d1/utillc-0.9.8-py2.py3-none-any.whl
+[2024-05-05 16:37:27] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/0d/8b/9bb73c1461e5fb93d6e45e9be5c75c889e765aef0875b8925de35fcbbcc3/indipyclient-0.1.0.tar.gz
+[2024-05-05 16:37:27] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-05 16:37:27] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/d1/0e/6e4d78326a433e7da6370ddd55c3b5f96a1805d799c73e99343d8e1df246/indipyclient-0.1.1.tar.gz
+[2024-05-05 16:37:27] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/d8/3c/db840ab098014cd53956ab58f90e832f7dc4cd45fba1ebcbb74463d04f94/utillc-0.9.9-py2.py3-none-any.whl
+[2024-05-05 16:37:27] INFO root fetch - processPackages [indipyclient]: executing diffoscope
+[2024-05-05 16:37:27] INFO root fetch - processPackages [indipyclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipyclient-0.1.0.tar.gz tmp/indipyclient-0.1.1.tar.gz --markdown 20240505/i/indipyclient/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 16:37:27] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-05 16:37:27] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240505/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 16:37:27] INFO root fetch - processPackages [utillc]: executing diffoscope
+[2024-05-05 16:37:27] INFO root fetch - processPackages [utillc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utillc-0.9.8-py2.py3-none-any.whl.zip tmp/utillc-0.9.9-py2.py3-none-any.whl.zip --markdown 20240505/u/utillc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 16:37:28] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.8-py2.py3-none-any.whl.zip]
+[2024-05-05 16:37:28] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.9-py2.py3-none-any.whl.zip]
+[2024-05-05 16:37:28] INFO root fetch - main [MainThread]: End processing [utillc]: success
+[2024-05-05 16:37:28] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.1.0.tar.gz]
+[2024-05-05 16:37:28] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.1.1.tar.gz]
+[2024-05-05 16:37:28] INFO root fetch - main [MainThread]: End processing [indipyclient]: success
+[2024-05-05 16:37:28] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-05 16:37:28] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-05 16:37:28] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-05 16:37:28] INFO root fetch - main [MainThread]: Store serial: [23066435]
