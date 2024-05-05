@@ -11969,3 +11969,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:29:27] INFO root fetch - processPackages [ciscoconfaudit]: Remove: archive file [/home/abi/fetcher/tmp/ciscoconfaudit-0.2.0.tar.gz]
 [2024-05-05 17:29:27] INFO root fetch - main [MainThread]: End processing [ciscoconfaudit]: success
 [2024-05-05 17:29:27] INFO root fetch - main [MainThread]: Store serial: [23066774]
+[2024-05-05 17:31:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066774]
+[2024-05-05 17:31:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 17:31:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qstd-config
+[2024-05-05 17:31:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: executorlib-core
+[2024-05-05 17:31:35] INFO root fetch - processPackages [qstd-config]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-05 17:31:35] WARNING root fetch - processPackages [executorlib-core]: Skipping, unable to determine old version
+[2024-05-05 17:31:35] INFO root fetch - main [MainThread]: End processing [executorlib-core] error
+[2024-05-05 17:31:36] INFO root fetch - processPackages [qstd-config]: Downloading https://files.pythonhosted.org/packages/98/f4/20318221a3d1d76db214afad7822c968d93028846a136534bf070d1696ae/qstd_config-0.2.0.tar.gz
+[2024-05-05 17:31:36] INFO root fetch - processPackages [qstd-config]: Downloading https://files.pythonhosted.org/packages/32/7b/c8edcb190a393bbe4851d528d8282141207aebcb7160e0afd5c2a5665abf/qstd_config-0.2.1.tar.gz
+[2024-05-05 17:31:36] INFO root fetch - processPackages [qstd-config]: executing diffoscope
+[2024-05-05 17:31:36] INFO root fetch - processPackages [qstd-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qstd_config-0.2.0.tar.gz tmp/qstd_config-0.2.1.tar.gz --markdown 20240505/q/qstd-config/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-05 17:31:37] INFO root fetch - processPackages [qstd-config]: Remove: archive file [/home/abi/fetcher/tmp/qstd_config-0.2.0.tar.gz]
+[2024-05-05 17:31:37] INFO root fetch - processPackages [qstd-config]: Remove: archive file [/home/abi/fetcher/tmp/qstd_config-0.2.1.tar.gz]
+[2024-05-05 17:31:37] INFO root fetch - main [MainThread]: End processing [qstd-config]: success
+[2024-05-05 17:31:37] INFO root fetch - main [MainThread]: Store serial: [23066782]
