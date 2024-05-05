@@ -16271,3 +16271,30 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:07:47] INFO root fetch - processPackages [wwpdb.apps.entity-transform]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_entity_transform-0.19.tar.gz]
 [2024-05-05 22:07:47] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.entity-transform]: success
 [2024-05-05 22:07:47] INFO root fetch - main [MainThread]: Store serial: [23068687]
+[2024-05-05 22:09:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068687]
+[2024-05-05 22:09:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim
+[2024-05-05 22:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: congress-transaction-scraper
+[2024-05-05 22:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xconn
+[2024-05-05 22:09:56] INFO root fetch - processPackages [congress-transaction-scraper]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-05 22:09:56] WARNING root fetch - processPackages [sqlalchemy-multilingual]: Skipping, unable to determine old version
+[2024-05-05 22:09:56] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual] error
+[2024-05-05 22:09:56] WARNING root fetch - processPackages [xconn]: Skipping, unable to determine old version
+[2024-05-05 22:09:56] INFO root fetch - main [MainThread]: End processing [xconn] error
+[2024-05-05 22:09:56] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/a7/3a/62759ea634163a8c682dc1db751705bd3f16185ac674a3858a0c0b87d499/congress_transaction_scraper-0.0.4.tar.gz
+[2024-05-05 22:09:56] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/7b/e3/47203bdd14ae5746b1be5a388fe60b74a39f4242b85ceadd526eb6943787/congress_transaction_scraper-0.0.5.tar.gz
+[2024-05-05 22:09:57] INFO root fetch - processPackages [congress-transaction-scraper]: executing diffoscope
+[2024-05-05 22:09:57] INFO root fetch - processPackages [congress-transaction-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/congress_transaction_scraper-0.0.4.tar.gz tmp/congress_transaction_scraper-0.0.5.tar.gz --markdown 20240505/c/congress-transaction-scraper/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-05 22:09:57] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-05 22:09:57] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-05-05 22:09:57] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.4.tar.gz]
+[2024-05-05 22:09:57] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.5.tar.gz]
+[2024-05-05 22:09:57] INFO root fetch - main [MainThread]: End processing [congress-transaction-scraper]: success
+[2024-05-05 22:09:57] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-05-05 22:09:58] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-05-05 22:09:58] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240505/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-05 22:10:02] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-05-05 22:10:02] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-05-05 22:10:02] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-05-05 22:10:02] INFO root fetch - main [MainThread]: Store serial: [23068702]
