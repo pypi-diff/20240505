@@ -5969,3 +5969,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:09:45] INFO root fetch - processPackages [roktools]: Remove: archive file [/home/abi/fetcher/tmp/roktools-6.3.0.tar.gz]
 [2024-05-05 10:09:45] INFO root fetch - main [MainThread]: End processing [roktools]: success
 [2024-05-05 10:09:45] INFO root fetch - main [MainThread]: Store serial: [23064040]
+[2024-05-05 10:11:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064040]
+[2024-05-05 10:11:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 10:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: windows-curses
+[2024-05-05 10:11:55] INFO root fetch - processPackages [windows-curses]: New version: [2.3.3a1] Old Version: [2.3.2a1]
+[2024-05-05 10:11:55] INFO root fetch - processPackages [windows-curses]: Downloading https://files.pythonhosted.org/packages/28/c7/57cd35c5eb17081bec11db21ec2fc0a72397a63ae5997f34d932fbcc636b/windows_curses-2.3.2a1-cp39-cp39-win_amd64.whl
+[2024-05-05 10:11:56] INFO root fetch - processPackages [windows-curses]: Downloading https://files.pythonhosted.org/packages/b9/1b/bd89d484d04a19a3295b863b111deb5435597509f669e4ebb82d8fdc9f59/windows_curses-2.3.3a1-cp39-cp39-win_amd64.whl
+[2024-05-05 10:11:56] INFO root fetch - processPackages [windows-curses]: executing diffoscope
+[2024-05-05 10:11:56] INFO root fetch - processPackages [windows-curses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windows_curses-2.3.2a1-cp39-cp39-win_amd64.whl.zip tmp/windows_curses-2.3.3a1-cp39-cp39-win_amd64.whl.zip --markdown 20240505/w/windows-curses/2.3.2a1-2.3.3a1/README.md --exclude *.pyd
+[2024-05-05 10:11:56] INFO root fetch - processPackages [windows-curses]: Remove: archive file [/home/abi/fetcher/tmp/windows_curses-2.3.2a1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 10:11:56] INFO root fetch - processPackages [windows-curses]: Remove: archive file [/home/abi/fetcher/tmp/windows_curses-2.3.3a1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 10:11:56] INFO root fetch - main [MainThread]: End processing [windows-curses]: success
+[2024-05-05 10:11:56] INFO root fetch - main [MainThread]: Store serial: [23064055]
