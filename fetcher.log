@@ -14766,3 +14766,55 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:31:27] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-05 20:31:27] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-05 20:31:27] INFO root fetch - main [MainThread]: Store serial: [23068001]
+[2024-05-05 20:33:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068001]
+[2024-05-05 20:33:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 20:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-vision
+[2024-05-05 20:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airthings-ble
+[2024-05-05 20:33:41] INFO root fetch - processPackages [keras-vision]: New version: [0.4.1] Old Version: [0.4]
+[2024-05-05 20:33:41] INFO root fetch - processPackages [airthings-ble]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 20:33:41] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/46/8f/e27facf09df6f22094267fb6da7edaa1625862ea006064efc8c9e6c3a785/keras-vision-0.4.tar.gz
+[2024-05-05 20:33:41] INFO root fetch - processPackages [airthings-ble]: Downloading https://files.pythonhosted.org/packages/cc/49/219dbbf4118e8e2b84cb1d902ff1c6338778316ae85962619b4cb23424de/airthings_ble-0.8.0.tar.gz
+[2024-05-05 20:33:42] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/07/65/92783ecf1a3141be036f7e635fd31af5f75ef7ab1a3144bd1fe6580fb492/keras-vision-0.4.1.tar.gz
+[2024-05-05 20:33:42] INFO root fetch - processPackages [keras-vision]: executing diffoscope
+[2024-05-05 20:33:42] INFO root fetch - processPackages [keras-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-vision-0.4.tar.gz tmp/keras-vision-0.4.1.tar.gz --markdown 20240505/k/keras-vision/0.4-0.4.1/README.md --exclude *.pyd
+[2024-05-05 20:33:42] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.tar.gz]
+[2024-05-05 20:33:42] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.1.tar.gz]
+[2024-05-05 20:33:42] INFO root fetch - main [MainThread]: End processing [keras-vision]: success
+[2024-05-05 20:35:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068001]
+[2024-05-05 20:35:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 20:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-vision
+[2024-05-05 20:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airthings-ble
+[2024-05-05 20:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: augmolino
+[2024-05-05 20:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flash1dkmeans
+[2024-05-05 20:35:57] INFO root fetch - processPackages [keras-vision]: New version: [0.4.1] Old Version: [0.4]
+[2024-05-05 20:35:57] INFO root fetch - processPackages [airthings-ble]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 20:35:57] INFO root fetch - processPackages [flash1dkmeans]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 20:35:57] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/46/8f/e27facf09df6f22094267fb6da7edaa1625862ea006064efc8c9e6c3a785/keras-vision-0.4.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [augmolino]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 20:35:57] INFO root fetch - processPackages [flash1dkmeans]: Downloading https://files.pythonhosted.org/packages/38/7a/c0560e2dd6bd6f29b7a91eebda1f50e1b4ae216d7d6f6d1b8c0909b029ee/flash1dkmeans-0.0.1.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [airthings-ble]: Downloading https://files.pythonhosted.org/packages/8b/ee/d0f9be41d2f1c836d3c84924a2b9c29c534b3b5ea394a291cd580e3b43d9/airthings_ble-0.9.0.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [augmolino]: Downloading https://files.pythonhosted.org/packages/35/51/ec03c2651a5853e745fcce4a2a323c5d80301d5291ed93a6f72f994431d5/augmolino-0.0.3.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/07/65/92783ecf1a3141be036f7e635fd31af5f75ef7ab1a3144bd1fe6580fb492/keras-vision-0.4.1.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [airthings-ble]: executing diffoscope
+[2024-05-05 20:35:57] INFO root fetch - processPackages [airthings-ble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airthings_ble-0.8.0.tar.gz tmp/airthings_ble-0.9.0.tar.gz --markdown 20240505/a/airthings-ble/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-05 20:35:57] INFO root fetch - processPackages [keras-vision]: executing diffoscope
+[2024-05-05 20:35:57] INFO root fetch - processPackages [keras-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-vision-0.4.tar.gz tmp/keras-vision-0.4.1.tar.gz --markdown 20240505/k/keras-vision/0.4-0.4.1/README.md --exclude *.pyd
+[2024-05-05 20:35:57] INFO root fetch - processPackages [flash1dkmeans]: Downloading https://files.pythonhosted.org/packages/3e/c1/9ba641cc50583d4a0bb4b19d9991c29c9d808361ce543fcc8d9e978c068c/flash1dkmeans-0.0.2.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [augmolino]: Downloading https://files.pythonhosted.org/packages/48/0d/6e514117d7b223d1f9204134df3e05437b745515aedd39b7d98cf6410e85/augmolino-0.0.4.tar.gz
+[2024-05-05 20:35:57] INFO root fetch - processPackages [flash1dkmeans]: executing diffoscope
+[2024-05-05 20:35:57] INFO root fetch - processPackages [flash1dkmeans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash1dkmeans-0.0.1.tar.gz tmp/flash1dkmeans-0.0.2.tar.gz --markdown 20240505/f/flash1dkmeans/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 20:35:58] INFO root fetch - processPackages [augmolino]: executing diffoscope
+[2024-05-05 20:35:58] INFO root fetch - processPackages [augmolino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/augmolino-0.0.3.tar.gz tmp/augmolino-0.0.4.tar.gz --markdown 20240505/a/augmolino/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 20:35:58] INFO root fetch - processPackages [airthings-ble]: Remove: archive file [/home/abi/fetcher/tmp/airthings_ble-0.8.0.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - processPackages [airthings-ble]: Remove: archive file [/home/abi/fetcher/tmp/airthings_ble-0.9.0.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - main [MainThread]: End processing [airthings-ble]: success
+[2024-05-05 20:35:58] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.1.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - main [MainThread]: End processing [keras-vision]: success
+[2024-05-05 20:35:58] INFO root fetch - processPackages [flash1dkmeans]: Remove: archive file [/home/abi/fetcher/tmp/flash1dkmeans-0.0.1.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - processPackages [flash1dkmeans]: Remove: archive file [/home/abi/fetcher/tmp/flash1dkmeans-0.0.2.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - main [MainThread]: End processing [flash1dkmeans]: success
+[2024-05-05 20:35:58] INFO root fetch - processPackages [augmolino]: Remove: archive file [/home/abi/fetcher/tmp/augmolino-0.0.3.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - processPackages [augmolino]: Remove: archive file [/home/abi/fetcher/tmp/augmolino-0.0.4.tar.gz]
+[2024-05-05 20:35:58] INFO root fetch - main [MainThread]: End processing [augmolino]: success
+[2024-05-05 20:35:58] INFO root fetch - main [MainThread]: Store serial: [23068028]
