@@ -7759,3 +7759,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:32:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-05 12:32:36] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-05 12:32:36] INFO root fetch - main [MainThread]: Store serial: [23064779]
+[2024-05-05 12:34:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064779]
+[2024-05-05 12:34:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 12:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-05 12:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snapquery
+[2024-05-05 12:34:46] INFO root fetch - processPackages [snapquery]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 12:34:46] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240505.336] Old Version: [0.44.20240505.335]
+[2024-05-05 12:34:46] INFO root fetch - processPackages [snapquery]: Downloading https://files.pythonhosted.org/packages/24/1e/0d3a4e2ccb584ab7a52b3d416c6c7638aaf4d8f491b222ac7d27aa659536/snapquery-0.0.3.tar.gz
+[2024-05-05 12:34:46] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/9e/54/d192e6d5c63b98c36b864e4e9a46941be52a269f3432aa4824e7fc894742/pkscreener-0.44.20240505.335.tar.gz
+[2024-05-05 12:34:46] INFO root fetch - processPackages [snapquery]: Downloading https://files.pythonhosted.org/packages/40/98/023a601a049de85364c2474aa57cb65d380d2a8cf658b93114e8b7191370/snapquery-0.0.4.tar.gz
+[2024-05-05 12:34:46] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/b5/4a/ea04c09f5457923f22e33031439ca29644c448781090712464f81bfd9d7a/pkscreener-0.44.20240505.336.tar.gz
+[2024-05-05 12:34:46] INFO root fetch - processPackages [snapquery]: executing diffoscope
+[2024-05-05 12:34:46] INFO root fetch - processPackages [snapquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapquery-0.0.3.tar.gz tmp/snapquery-0.0.4.tar.gz --markdown 20240505/s/snapquery/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 12:34:46] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-05 12:34:46] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240505.335.tar.gz tmp/pkscreener-0.44.20240505.336.tar.gz --markdown 20240505/p/pkscreener/0.44.20240505.335-0.44.20240505.336/README.md --exclude *.pyd
+[2024-05-05 12:34:47] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.3.tar.gz]
+[2024-05-05 12:34:47] INFO root fetch - processPackages [snapquery]: Remove: archive file [/home/abi/fetcher/tmp/snapquery-0.0.4.tar.gz]
+[2024-05-05 12:34:47] INFO root fetch - main [MainThread]: End processing [snapquery]: success
+[2024-05-05 12:34:47] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.335.tar.gz]
+[2024-05-05 12:34:47] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.336.tar.gz]
+[2024-05-05 12:34:47] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-05 12:34:47] INFO root fetch - main [MainThread]: Store serial: [23064785]
