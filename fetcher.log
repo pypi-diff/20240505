@@ -16337,3 +16337,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:12:14] INFO root fetch - processPackages [asynctnt]: Remove: archive file [/home/abi/fetcher/tmp/asynctnt-2.2.0.tar.gz]
 [2024-05-05 22:12:14] INFO root fetch - main [MainThread]: End processing [asynctnt]: success
 [2024-05-05 22:12:14] INFO root fetch - main [MainThread]: Store serial: [23068760]
+[2024-05-05 22:14:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068760]
+[2024-05-05 22:14:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 22:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omaslib
+[2024-05-05 22:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: checol
+[2024-05-05 22:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-05-05 22:14:23] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-05 22:14:23] INFO root fetch - processPackages [checol]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-05 22:14:23] INFO root fetch - processPackages [omaslib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 22:14:23] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-05 22:14:23] INFO root fetch - processPackages [checol]: Downloading https://files.pythonhosted.org/packages/b2/23/f7823b99429495b2006c7408d78c3f1e092994fda52014871495e86e1869/checol-0.2.2.tar.gz
+[2024-05-05 22:14:23] INFO root fetch - processPackages [omaslib]: Downloading https://files.pythonhosted.org/packages/05/06/738db6fadc8e88517e586a3896c341104d5ce27f780914d11579da69b7a7/omaslib-0.1.8.tar.gz
+[2024-05-05 22:14:24] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-05 22:14:24] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-05 22:14:24] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240505/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-05 22:14:24] INFO root fetch - processPackages [checol]: Downloading https://files.pythonhosted.org/packages/73/88/af50e80da9844a8e4f53f2f4732a66491dc5bbeec11cdeff63b13eb5a6d6/checol-0.3.0.tar.gz
+[2024-05-05 22:14:24] INFO root fetch - processPackages [omaslib]: Downloading https://files.pythonhosted.org/packages/65/06/18313d4c7928d792ab1ad8bcfcc450ca0319a9fd0308af6704047ec9ff82/omaslib-0.1.9.tar.gz
+[2024-05-05 22:14:24] INFO root fetch - processPackages [omaslib]: executing diffoscope
+[2024-05-05 22:14:24] INFO root fetch - processPackages [omaslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omaslib-0.1.8.tar.gz tmp/omaslib-0.1.9.tar.gz --markdown 20240505/o/omaslib/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 22:14:24] INFO root fetch - processPackages [checol]: executing diffoscope
+[2024-05-05 22:14:24] INFO root fetch - processPackages [checol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checol-0.2.2.tar.gz tmp/checol-0.3.0.tar.gz --markdown 20240505/c/checol/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-05 22:14:24] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-05 22:14:24] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-05 22:14:24] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-05 22:14:25] INFO root fetch - processPackages [checol]: Remove: archive file [/home/abi/fetcher/tmp/checol-0.2.2.tar.gz]
+[2024-05-05 22:14:25] INFO root fetch - processPackages [checol]: Remove: archive file [/home/abi/fetcher/tmp/checol-0.3.0.tar.gz]
+[2024-05-05 22:14:25] INFO root fetch - main [MainThread]: End processing [checol]: success
+[2024-05-05 22:14:25] INFO root fetch - processPackages [omaslib]: Remove: archive file [/home/abi/fetcher/tmp/omaslib-0.1.8.tar.gz]
+[2024-05-05 22:14:25] INFO root fetch - processPackages [omaslib]: Remove: archive file [/home/abi/fetcher/tmp/omaslib-0.1.9.tar.gz]
+[2024-05-05 22:14:25] INFO root fetch - main [MainThread]: End processing [omaslib]: success
+[2024-05-05 22:14:25] INFO root fetch - main [MainThread]: Store serial: [23068772]
