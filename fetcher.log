@@ -12119,3 +12119,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:42:27] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202405051541-py3-none-any.whl.zip]
 [2024-05-05 17:42:27] INFO root fetch - main [MainThread]: End processing [aicli]: success
 [2024-05-05 17:42:27] INFO root fetch - main [MainThread]: Store serial: [23066827]
+[2024-05-05 17:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066827]
+[2024-05-05 17:44:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 17:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-kg
+[2024-05-05 17:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: web-ui-helper
+[2024-05-05 17:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uproot
+[2024-05-05 17:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: demystify-digipres
+[2024-05-05 17:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openet-geesebal
+[2024-05-05 17:44:36] WARNING root fetch - processPackages [web-ui-helper]: Skipping, unable to determine old version
+[2024-05-05 17:44:36] INFO root fetch - main [MainThread]: End processing [web-ui-helper] error
+[2024-05-05 17:44:36] INFO root fetch - processPackages [llama-kg]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 17:44:36] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/e6/74/53ebc84ec09d842fdc2b81d705001aa06b6230bd64e685f8701120659351/llama-kg-0.0.2.tar.gz
+[2024-05-05 17:44:36] WARNING root fetch - processPackages [openet-geesebal]: Skipping, unable to determine old version
+[2024-05-05 17:44:36] INFO root fetch - main [MainThread]: End processing [openet-geesebal] error
+[2024-05-05 17:44:36] INFO root fetch - processPackages [demystify-digipres]: New version: [2.0.0rc7] Old Version: [2.0.0rc6]
+[2024-05-05 17:44:36] INFO root fetch - processPackages [uproot]: New version: [5.3.4] Old Version: [5.3.3]
+[2024-05-05 17:44:36] INFO root fetch - processPackages [uproot]: Downloading https://files.pythonhosted.org/packages/42/1d/c9ca10682d2734a12de5743df47267b99333d3594d80b88572834437165b/uproot-5.3.3.tar.gz
+[2024-05-05 17:44:36] INFO root fetch - processPackages [demystify-digipres]: Downloading https://files.pythonhosted.org/packages/7a/97/4c3b2ec2807344536af16e73c0465163cfe3b79f3a6883d5e01ede5f06b4/demystify-digipres-2.0.0rc6.tar.gz
+[2024-05-05 17:44:36] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/08/33/acbffff9267b6ea55cd33c4a1362c98c804cb794b62006d4bf7190594e96/llama-kg-0.0.3.tar.gz
+[2024-05-05 17:44:37] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 17:44:37] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.2.tar.gz tmp/llama-kg-0.0.3.tar.gz --markdown 20240505/l/llama-kg/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 17:44:37] INFO root fetch - processPackages [uproot]: Downloading https://files.pythonhosted.org/packages/4f/1a/4163056f640d9411458f89b8e664e87afc486d6678f5d6d5ed7d446f1f9a/uproot-5.3.4.tar.gz
+[2024-05-05 17:44:37] INFO root fetch - processPackages [uproot]: executing diffoscope
+[2024-05-05 17:44:37] INFO root fetch - processPackages [uproot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uproot-5.3.3.tar.gz tmp/uproot-5.3.4.tar.gz --markdown 20240505/u/uproot/5.3.3-5.3.4/README.md --exclude *.pyd
+[2024-05-05 17:44:37] INFO root fetch - processPackages [demystify-digipres]: Downloading https://files.pythonhosted.org/packages/de/40/2c409a0434d297955a13c64cb82d79ca7a289269b188bf508cb2ae04cacf/demystify_digipres-2.0.0rc7.tar.gz
+[2024-05-05 17:44:37] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.2.tar.gz]
+[2024-05-05 17:44:37] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.3.tar.gz]
+[2024-05-05 17:44:37] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 17:44:37] INFO root fetch - processPackages [demystify-digipres]: executing diffoscope
+[2024-05-05 17:44:37] INFO root fetch - processPackages [demystify-digipres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demystify-digipres-2.0.0rc6.tar.gz tmp/demystify_digipres-2.0.0rc7.tar.gz --markdown 20240505/d/demystify-digipres/2.0.0rc6-2.0.0rc7/README.md --exclude *.pyd
+[2024-05-05 17:44:38] INFO root fetch - processPackages [demystify-digipres]: Remove: archive file [/home/abi/fetcher/tmp/demystify-digipres-2.0.0rc6.tar.gz]
+[2024-05-05 17:44:38] INFO root fetch - processPackages [demystify-digipres]: Remove: archive file [/home/abi/fetcher/tmp/demystify_digipres-2.0.0rc7.tar.gz]
+[2024-05-05 17:44:38] INFO root fetch - main [MainThread]: End processing [demystify-digipres]: success
+[2024-05-05 17:44:38] INFO root fetch - processPackages [uproot]: Remove: archive file [/home/abi/fetcher/tmp/uproot-5.3.3.tar.gz]
+[2024-05-05 17:44:38] INFO root fetch - processPackages [uproot]: Remove: archive file [/home/abi/fetcher/tmp/uproot-5.3.4.tar.gz]
+[2024-05-05 17:44:38] INFO root fetch - main [MainThread]: End processing [uproot]: success
+[2024-05-05 17:44:38] INFO root fetch - main [MainThread]: Store serial: [23066842]
