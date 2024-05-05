@@ -4659,3 +4659,27 @@
 [2024-05-05 08:13:20] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.66.tar.gz]
 [2024-05-05 08:13:20] INFO root fetch - main [MainThread]: End processing [monisha]: success
 [2024-05-05 08:13:20] INFO root fetch - main [MainThread]: Store serial: [23063475]
+[2024-05-05 08:15:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063475]
+[2024-05-05 08:15:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 08:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PKDevTools
+[2024-05-05 08:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Netis
+[2024-05-05 08:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fake-bpy-module-latest
+[2024-05-05 08:15:30] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240504] Old Version: [20240503]
+[2024-05-05 08:15:30] WARNING root fetch - processPackages [Netis]: Skipping, unable to determine old version
+[2024-05-05 08:15:30] INFO root fetch - main [MainThread]: End processing [Netis] error
+[2024-05-05 08:15:30] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240505.110] Old Version: [0.13.20240501.109]
+[2024-05-05 08:15:30] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/20/18/e8c63b9bec400f8ebcceef2f453338217051cb931fd3ea1bdedd15d22841/fake_bpy_module_latest-20240503.tar.gz
+[2024-05-05 08:15:30] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/d8/68/23773e1b0476bf49d70642e1573407147a89b5c9c21eddbc22db3fa70f1f/PKDevTools-0.13.20240501.109.tar.gz
+[2024-05-05 08:15:31] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/4a/00/3e3781aae7e203a839571278308c21970e613a5a122d5eba3e93b4f03a3b/fake_bpy_module_latest-20240504.tar.gz
+[2024-05-05 08:15:31] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/cd/d3/88262cfd30f161c13cd5f72a9bc9d083276afeb2901404b969509dd6fe85/PKDevTools-0.13.20240505.110.tar.gz
+[2024-05-05 08:15:31] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-05 08:15:31] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240501.109.tar.gz tmp/PKDevTools-0.13.20240505.110.tar.gz --markdown 20240505/P/PKDevTools/0.13.20240501.109-0.13.20240505.110/README.md --exclude *.pyd
+[2024-05-05 08:15:31] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-05-05 08:15:31] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240503.tar.gz tmp/fake_bpy_module_latest-20240504.tar.gz --markdown 20240505/f/fake-bpy-module-latest/20240503-20240504/README.md --exclude *.pyd
+[2024-05-05 08:15:31] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240501.109.tar.gz]
+[2024-05-05 08:15:31] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240505.110.tar.gz]
+[2024-05-05 08:15:31] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-05 08:15:38] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240503.tar.gz]
+[2024-05-05 08:15:38] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240504.tar.gz]
+[2024-05-05 08:15:38] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-05-05 08:15:38] INFO root fetch - main [MainThread]: Store serial: [23063482]
