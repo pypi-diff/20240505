@@ -9705,3 +9705,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:56:57] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-05 14:56:57] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-05 14:56:57] INFO root fetch - main [MainThread]: Store serial: [23065689]
+[2024-05-05 14:59:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065689]
+[2024-05-05 14:59:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 14:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flexmin
+[2024-05-05 14:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esb
+[2024-05-05 14:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-navigation-bar
+[2024-05-05 14:59:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bda2020239019
+[2024-05-05 14:59:05] WARNING root fetch - processPackages [bda2020239019]: Skipping, unable to determine old version
+[2024-05-05 14:59:05] INFO root fetch - main [MainThread]: End processing [bda2020239019] error
+[2024-05-05 14:59:05] INFO root fetch - processPackages [streamlit-navigation-bar]: New version: [3.2.0] Old Version: [3.1.2]
+[2024-05-05 14:59:05] INFO root fetch - processPackages [flexmin]: New version: [0.3.9] Old Version: [0.3.7]
+[2024-05-05 14:59:05] INFO root fetch - processPackages [esb]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-05 14:59:06] INFO root fetch - processPackages [flexmin]: Downloading https://files.pythonhosted.org/packages/57/39/04cfcd4ac11894e7e78db8537d6748e0e97452e28d561195275eafe5b9d6/flexmin-0.3.7.tar.gz
+[2024-05-05 14:59:06] INFO root fetch - processPackages [streamlit-navigation-bar]: Downloading https://files.pythonhosted.org/packages/98/03/a62a56b6ff126ada6566249b7f2045204488a8dbc4eee240db576b58004c/streamlit-navigation-bar-3.1.2.tar.gz
+[2024-05-05 14:59:06] INFO root fetch - processPackages [esb]: Downloading https://files.pythonhosted.org/packages/d9/ce/fde8c9596cf6245b6b7c09b73386d6ca8db6d4d648f87953c245a0fbbadb/esb-0.1.1.tar.gz
+[2024-05-05 14:59:06] INFO root fetch - processPackages [streamlit-navigation-bar]: Downloading https://files.pythonhosted.org/packages/41/90/877909ad318123a7fb195ca8a65b2646479c6e4860f2f9ad76b9fdcd3085/streamlit-navigation-bar-3.2.0.tar.gz
+[2024-05-05 14:59:06] INFO root fetch - processPackages [esb]: Downloading https://files.pythonhosted.org/packages/d8/89/bdc68de82558c3a66326c88e9b5a0e71532216060504f340a775e6f04dae/esb-0.1.2.tar.gz
+[2024-05-05 14:59:06] INFO root fetch - processPackages [flexmin]: Downloading https://files.pythonhosted.org/packages/e6/36/e990bf0f5ef76d7351818c6aab5d0b8f619a183a9d920f77eae13891934e/flexmin-0.3.9.tar.gz
+[2024-05-05 14:59:06] INFO root fetch - processPackages [streamlit-navigation-bar]: executing diffoscope
+[2024-05-05 14:59:06] INFO root fetch - processPackages [streamlit-navigation-bar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-navigation-bar-3.1.2.tar.gz tmp/streamlit-navigation-bar-3.2.0.tar.gz --markdown 20240505/s/streamlit-navigation-bar/3.1.2-3.2.0/README.md --exclude *.pyd
+[2024-05-05 14:59:06] INFO root fetch - processPackages [esb]: executing diffoscope
+[2024-05-05 14:59:06] INFO root fetch - processPackages [esb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esb-0.1.1.tar.gz tmp/esb-0.1.2.tar.gz --markdown 20240505/e/esb/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-05 14:59:06] INFO root fetch - processPackages [flexmin]: executing diffoscope
+[2024-05-05 14:59:06] INFO root fetch - processPackages [flexmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexmin-0.3.7.tar.gz tmp/flexmin-0.3.9.tar.gz --markdown 20240505/f/flexmin/0.3.7-0.3.9/README.md --exclude *.pyd
+[2024-05-05 14:59:07] INFO root fetch - processPackages [esb]: Remove: archive file [/home/abi/fetcher/tmp/esb-0.1.1.tar.gz]
+[2024-05-05 14:59:07] INFO root fetch - processPackages [esb]: Remove: archive file [/home/abi/fetcher/tmp/esb-0.1.2.tar.gz]
+[2024-05-05 14:59:07] INFO root fetch - main [MainThread]: End processing [esb]: success
+[2024-05-05 14:59:09] INFO root fetch - processPackages [streamlit-navigation-bar]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-navigation-bar-3.1.2.tar.gz]
+[2024-05-05 14:59:09] INFO root fetch - processPackages [streamlit-navigation-bar]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-navigation-bar-3.2.0.tar.gz]
+[2024-05-05 14:59:09] INFO root fetch - main [MainThread]: End processing [streamlit-navigation-bar]: success
+[2024-05-05 14:59:10] INFO root fetch - processPackages [flexmin]: Remove: archive file [/home/abi/fetcher/tmp/flexmin-0.3.7.tar.gz]
+[2024-05-05 14:59:10] INFO root fetch - processPackages [flexmin]: Remove: archive file [/home/abi/fetcher/tmp/flexmin-0.3.9.tar.gz]
+[2024-05-05 14:59:10] INFO root fetch - main [MainThread]: End processing [flexmin]: success
+[2024-05-05 14:59:10] INFO root fetch - main [MainThread]: Store serial: [23065704]
