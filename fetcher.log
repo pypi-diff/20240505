@@ -6840,3 +6840,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:17:25] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-05-05 11:17:25] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-05-05 11:17:25] INFO root fetch - main [MainThread]: Store serial: [23064405]
+[2024-05-05 11:19:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064405]
+[2024-05-05 11:19:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 11:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyloggermanager
+[2024-05-05 11:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lumipy
+[2024-05-05 11:19:34] INFO root fetch - processPackages [pyloggermanager]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-05 11:19:34] INFO root fetch - processPackages [lumipy]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 11:19:34] INFO root fetch - processPackages [pyloggermanager]: Downloading https://files.pythonhosted.org/packages/1d/8e/43e1bfb515343118789a3a85b44db367454a1b4123cc8dd57538d9aa4e1f/pyloggermanager-0.1.3-py3-none-any.whl
+[2024-05-05 11:19:34] INFO root fetch - processPackages [lumipy]: Downloading https://files.pythonhosted.org/packages/76/cd/25af7895f094ecdce8642b8eefbf5570e3f3251c3ad74ca6781ab765b529/lumipy-1.0.8-py3-none-any.whl
+[2024-05-05 11:19:34] INFO root fetch - processPackages [pyloggermanager]: Downloading https://files.pythonhosted.org/packages/fe/ba/75519e303312c20e16d8d5212716d077789b40e8294c2859589b47b85c9b/pyloggermanager-0.1.4-py3-none-any.whl
+[2024-05-05 11:19:34] INFO root fetch - processPackages [pyloggermanager]: executing diffoscope
+[2024-05-05 11:19:34] INFO root fetch - processPackages [pyloggermanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyloggermanager-0.1.3-py3-none-any.whl.zip tmp/pyloggermanager-0.1.4-py3-none-any.whl.zip --markdown 20240505/p/pyloggermanager/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-05 11:19:34] INFO root fetch - processPackages [lumipy]: Downloading https://files.pythonhosted.org/packages/af/13/4cc42c3e2deec28973c7b4dd4f45a865415a11d4da32c248fd3904f3babb/lumipy-1.0.9-py3-none-any.whl
+[2024-05-05 11:19:35] INFO root fetch - processPackages [lumipy]: executing diffoscope
+[2024-05-05 11:19:35] INFO root fetch - processPackages [lumipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumipy-1.0.8-py3-none-any.whl.zip tmp/lumipy-1.0.9-py3-none-any.whl.zip --markdown 20240505/l/lumipy/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 11:19:35] INFO root fetch - processPackages [pyloggermanager]: Remove: archive file [/home/abi/fetcher/tmp/pyloggermanager-0.1.3-py3-none-any.whl.zip]
+[2024-05-05 11:19:35] INFO root fetch - processPackages [pyloggermanager]: Remove: archive file [/home/abi/fetcher/tmp/pyloggermanager-0.1.4-py3-none-any.whl.zip]
+[2024-05-05 11:19:35] INFO root fetch - main [MainThread]: End processing [pyloggermanager]: success
+[2024-05-05 11:19:36] INFO root fetch - processPackages [lumipy]: Remove: archive file [/home/abi/fetcher/tmp/lumipy-1.0.8-py3-none-any.whl.zip]
+[2024-05-05 11:19:36] INFO root fetch - processPackages [lumipy]: Remove: archive file [/home/abi/fetcher/tmp/lumipy-1.0.9-py3-none-any.whl.zip]
+[2024-05-05 11:19:36] INFO root fetch - main [MainThread]: End processing [lumipy]: success
+[2024-05-05 11:19:36] INFO root fetch - main [MainThread]: Store serial: [23064409]
