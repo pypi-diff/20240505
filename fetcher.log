@@ -6308,3 +6308,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:40:13] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.1.dev2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-05 10:40:13] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-05 10:40:13] INFO root fetch - main [MainThread]: Store serial: [23064183]
+[2024-05-05 10:42:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064183]
+[2024-05-05 10:42:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 10:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dublib
+[2024-05-05 10:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dve-lumipy-testing
+[2024-05-05 10:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nameless-deploy-tools
+[2024-05-05 10:42:22] INFO root fetch - processPackages [dublib]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-05 10:42:22] INFO root fetch - processPackages [dve-lumipy-testing]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 10:42:22] INFO root fetch - processPackages [nameless-deploy-tools]: New version: [1.99] Old Version: [1.98]
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dublib]: Downloading https://files.pythonhosted.org/packages/3f/cd/1173c4a834af208a3d5b2af323e4c1c4fbccd5f1cc608951d4b4e1591311/dublib-0.6.0.tar.gz
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dve-lumipy-testing]: Downloading https://files.pythonhosted.org/packages/2f/35/aa91d923787edb9bf5bcbfa8461c60465a9e55f7513c06e4f16d5221c3c3/dve_lumipy_testing-1.0.8-py3-none-any.whl
+[2024-05-05 10:42:23] INFO root fetch - processPackages [nameless-deploy-tools]: Downloading https://files.pythonhosted.org/packages/0d/c8/8c3c9f7254326f089bfaaf17c4f26d37fda0baf5993e7674c3c324a4ddc8/nameless-deploy-tools-1.98.tar.gz
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dublib]: Downloading https://files.pythonhosted.org/packages/5b/8e/c7f496e01f01f00508783ddce9fa1cd00720ff685413c4a7138e5417d5a4/dublib-0.6.1.tar.gz
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dve-lumipy-testing]: Downloading https://files.pythonhosted.org/packages/1e/7c/e37b3c84846734e2feb285aa04bd1d2381e9cd7415aeb1a75f2cfd40fd79/dve_lumipy_testing-1.0.9-py3-none-any.whl
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dublib]: executing diffoscope
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dublib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dublib-0.6.0.tar.gz tmp/dublib-0.6.1.tar.gz --markdown 20240505/d/dublib/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-05 10:42:23] INFO root fetch - processPackages [nameless-deploy-tools]: Downloading https://files.pythonhosted.org/packages/fe/19/ea262f36b269c4dbb14250dd1ad53e26d137416f57251e88cd4db4227090/nameless-deploy-tools-1.99.tar.gz
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dve-lumipy-testing]: executing diffoscope
+[2024-05-05 10:42:23] INFO root fetch - processPackages [dve-lumipy-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dve_lumipy_testing-1.0.8-py3-none-any.whl.zip tmp/dve_lumipy_testing-1.0.9-py3-none-any.whl.zip --markdown 20240505/d/dve-lumipy-testing/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 10:42:24] INFO root fetch - processPackages [nameless-deploy-tools]: executing diffoscope
+[2024-05-05 10:42:24] INFO root fetch - processPackages [nameless-deploy-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nameless-deploy-tools-1.98.tar.gz tmp/nameless-deploy-tools-1.99.tar.gz --markdown 20240505/n/nameless-deploy-tools/1.98-1.99/README.md --exclude *.pyd
+[2024-05-05 10:42:24] INFO root fetch - processPackages [dublib]: Remove: archive file [/home/abi/fetcher/tmp/dublib-0.6.0.tar.gz]
+[2024-05-05 10:42:24] INFO root fetch - processPackages [dublib]: Remove: archive file [/home/abi/fetcher/tmp/dublib-0.6.1.tar.gz]
+[2024-05-05 10:42:24] INFO root fetch - main [MainThread]: End processing [dublib]: success
+[2024-05-05 10:42:24] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.8-py3-none-any.whl.zip]
+[2024-05-05 10:42:24] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.9-py3-none-any.whl.zip]
+[2024-05-05 10:42:24] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
+[2024-05-05 10:42:24] INFO root fetch - processPackages [nameless-deploy-tools]: Remove: archive file [/home/abi/fetcher/tmp/nameless-deploy-tools-1.98.tar.gz]
+[2024-05-05 10:42:24] INFO root fetch - processPackages [nameless-deploy-tools]: Remove: archive file [/home/abi/fetcher/tmp/nameless-deploy-tools-1.99.tar.gz]
+[2024-05-05 10:42:24] INFO root fetch - main [MainThread]: End processing [nameless-deploy-tools]: success
+[2024-05-05 10:42:24] INFO root fetch - main [MainThread]: Store serial: [23064196]
