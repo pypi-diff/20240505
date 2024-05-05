@@ -3547,3 +3547,67 @@
 [2024-05-05 06:03:23] INFO root fetch - processPackages [womb]: Remove: archive file [/home/abi/fetcher/tmp/womb-1.2.1.tar.gz]
 [2024-05-05 06:03:23] INFO root fetch - main [MainThread]: End processing [womb]: success
 [2024-05-05 06:03:23] INFO root fetch - main [MainThread]: Store serial: [23063008]
+[2024-05-05 06:05:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063008]
+[2024-05-05 06:05:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: womb
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: delaunay-triangulation-and-its-dual-2d
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: delaunay-triangulation-and-its-dual-2d
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-fieldservice-sale
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-fieldservice
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chromedriver-binary
+[2024-05-05 06:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-fieldservice-activity
+[2024-05-05 06:05:32] INFO root fetch - processPackages [womb]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [womb]: Downloading https://files.pythonhosted.org/packages/8b/84/f2b46dedb5bd07676bfa7a2a75cb62b4acd89cab956e9b3ece85a93edddc/womb-1.2.1.tar.gz
+[2024-05-05 06:05:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: New version: [17.0.1.2.0.2] Old Version: [17.0.1.2.0.1]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: New version: [16.0.1.1.1.2] Old Version: [16.0.1.1.1]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.7]
+[2024-05-05 06:05:32] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-05-05 06:05:32] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Downloading https://files.pythonhosted.org/packages/6d/53/a062a9cfe417397de310ef9bfd610aec656b1da61b30cf782b5a54cedfce/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz
+[2024-05-05 06:05:32] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Downloading https://files.pythonhosted.org/packages/6d/53/a062a9cfe417397de310ef9bfd610aec656b1da61b30cf782b5a54cedfce/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz
+[2024-05-05 06:05:32] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: Downloading https://files.pythonhosted.org/packages/09/76/1efe0f1760a59b8bcb376ae649657da6029d66ef12ba561b922dfb26adbc/odoo_addon_fieldservice_sale-16.0.1.1.1-py3-none-any.whl
+[2024-05-05 06:05:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/b2/70/c555944198d28de47ee1dcc0d696de18f900554c2e4af4dcda0b989cbc6c/odoo_addon_fieldservice-17.0.1.2.0.1-py3-none-any.whl
+[2024-05-05 06:05:32] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Downloading https://files.pythonhosted.org/packages/09/84/004d57802b226bee50824cbe481ec91a9904b10921cc512d7d528d32d224/odoo_addon_fieldservice_activity-16.0.1.0.0.7-py3-none-any.whl
+[2024-05-05 06:05:33] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-05-05 06:05:33] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Downloading https://files.pythonhosted.org/packages/30/d8/6889de672a8743975a15985273d18fd1ce6b8a2539a91d364a3aac02fa9a/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz
+[2024-05-05 06:05:33] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Downloading https://files.pythonhosted.org/packages/30/d8/6889de672a8743975a15985273d18fd1ce6b8a2539a91d364a3aac02fa9a/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz
+[2024-05-05 06:05:33] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-05-05 06:05:33] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240505/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Downloading https://files.pythonhosted.org/packages/77/35/01da4e294bd1e93ad4c61e7f75262cbe7260721b7565d8b1d2ec40255cf4/odoo_addon_fieldservice_activity-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: Downloading https://files.pythonhosted.org/packages/06/e0/6ddc3e1853492d59acf979661053c8f78843907b0cfcdcdc9ea6077fad7d/odoo_addon_fieldservice_sale-16.0.1.1.1.2-py3-none-any.whl
+[2024-05-05 06:05:34] INFO root fetch - processPackages [womb]: Downloading https://files.pythonhosted.org/packages/99/53/f2dadf5782fec74c3e38e85cae3b01763da86951dd5b12aa957eaf5d3547/womb-1.2.2.tar.gz
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/04/12/a634d972bd2e72415ae3fabb12d30b7fa50c731d3d3a71da39ab82ca0ee1/odoo_addon_fieldservice-17.0.1.2.0.2-py3-none-any.whl
+[2024-05-05 06:05:34] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: executing diffoscope
+[2024-05-05 06:05:34] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz tmp/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz --markdown 20240505/d/delaunay-triangulation-and-its-dual-2d/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: executing diffoscope
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-fieldservice-activity/16.0.1.0.0.7-16.0.1.0.0.8/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: executing diffoscope
+[2024-05-05 06:05:34] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz tmp/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz --markdown 20240505/d/delaunay-triangulation-and-its-dual-2d/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: executing diffoscope
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_sale-16.0.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_sale-16.0.1.1.1.2-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-fieldservice-sale/16.0.1.1.1-16.0.1.1.1.2/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [womb]: executing diffoscope
+[2024-05-05 06:05:34] INFO root fetch - processPackages [womb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/womb-1.2.1.tar.gz tmp/womb-1.2.2.tar.gz --markdown 20240505/w/womb/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice]: executing diffoscope
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice-17.0.1.2.0.1-py3-none-any.whl.zip tmp/odoo_addon_fieldservice-17.0.1.2.0.2-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-fieldservice/17.0.1.2.0.1-17.0.1.2.0.2/README.md --exclude *.pyd
+[2024-05-05 06:05:34] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-05-05 06:05:34] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-05-05 06:05:34] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-05-05 06:05:34] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Remove: archive file [/home/abi/fetcher/tmp/delaunay_triangulation_and_its_dual_2d-0.1.0.tar.gz]
+[2024-05-05 06:05:34] INFO root fetch - processPackages [delaunay-triangulation-and-its-dual-2d]: Remove: archive file [/home/abi/fetcher/tmp/delaunay_triangulation_and_its_dual_2d-0.1.1.tar.gz]
+[2024-05-05 06:05:34] INFO root fetch - main [MainThread]: End processing [delaunay-triangulation-and-its-dual-2d]: success
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_sale-16.0.1.1.1-py3-none-any.whl.zip]
+[2024-05-05 06:05:34] INFO root fetch - processPackages [odoo-addon-fieldservice-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_sale-16.0.1.1.1.2-py3-none-any.whl.zip]
+[2024-05-05 06:05:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-sale]: success
+[2024-05-05 06:05:35] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-05 06:05:35] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-05 06:05:35] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-activity]: success
+[2024-05-05 06:05:35] INFO root fetch - main [MainThread]: End processing [delaunay-triangulation-and-its-dual-2d]: success
+[2024-05-05 06:05:35] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-05-05 06:05:35] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0.2-py3-none-any.whl.zip]
+[2024-05-05 06:05:35] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice]: success
+[2024-05-05 06:05:42] INFO root fetch - processPackages [womb]: Remove: archive file [/home/abi/fetcher/tmp/womb-1.2.1.tar.gz]
+[2024-05-05 06:05:42] INFO root fetch - processPackages [womb]: Remove: archive file [/home/abi/fetcher/tmp/womb-1.2.2.tar.gz]
+[2024-05-05 06:05:42] INFO root fetch - main [MainThread]: End processing [womb]: success
+[2024-05-05 06:05:42] INFO root fetch - main [MainThread]: Store serial: [23063026]
