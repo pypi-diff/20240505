@@ -7974,3 +7974,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:52:15] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.412.tar.gz]
 [2024-05-05 12:52:15] INFO root fetch - main [MainThread]: End processing [mkt-retv]: success
 [2024-05-05 12:52:15] INFO root fetch - main [MainThread]: Store serial: [23064891]
+[2024-05-05 12:54:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064891]
+[2024-05-05 12:54:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 12:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plutobook
+[2024-05-05 12:54:23] INFO root fetch - processPackages [plutobook]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 12:54:23] INFO root fetch - processPackages [plutobook]: Downloading https://files.pythonhosted.org/packages/bb/df/cf53548ea6bef4f8f56c5bdf340926506cc6385e4e5772ada8c8a3387b79/plutobook-0.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 12:54:23] INFO root fetch - processPackages [plutobook]: Downloading https://files.pythonhosted.org/packages/00/58/8e2e691bce19f1c07b326924d61187aed7918ad5d34b89864ebe9d330caf/plutobook-0.0.2-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 12:54:23] INFO root fetch - processPackages [plutobook]: executing diffoscope
+[2024-05-05 12:54:23] INFO root fetch - processPackages [plutobook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutobook-0.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/plutobook-0.0.2-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/p/plutobook/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 12:54:24] INFO root fetch - processPackages [plutobook]: Remove: archive file [/home/abi/fetcher/tmp/plutobook-0.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 12:54:24] INFO root fetch - processPackages [plutobook]: Remove: archive file [/home/abi/fetcher/tmp/plutobook-0.0.2-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 12:54:24] INFO root fetch - main [MainThread]: End processing [plutobook]: success
+[2024-05-05 12:54:24] INFO root fetch - main [MainThread]: Store serial: [23064915]
