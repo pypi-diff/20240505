@@ -9112,3 +9112,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:21:34] INFO root fetch - processPackages [smb-sync]: Remove: archive file [/home/abi/fetcher/tmp/smb_sync-0.0.2.tar.gz]
 [2024-05-05 14:21:34] INFO root fetch - main [MainThread]: End processing [smb-sync]: success
 [2024-05-05 14:21:34] INFO root fetch - main [MainThread]: Store serial: [23065401]
+[2024-05-05 14:23:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065401]
+[2024-05-05 14:23:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 14:23:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onboardme
+[2024-05-05 14:23:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FixRaidenBoss2
+[2024-05-05 14:23:43] INFO root fetch - processPackages [onboardme]: New version: [1.8.0] Old Version: [1.7.1]
+[2024-05-05 14:23:43] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/30/e4/f0892b234c7b7b22fa8071988a1198166f725dee8f4bec77e89b61349d7f/onboardme-1.7.1.tar.gz
+[2024-05-05 14:23:43] INFO root fetch - processPackages [FixRaidenBoss2]: New version: [3.7.1] Old Version: [3.7.0]
+[2024-05-05 14:23:43] INFO root fetch - processPackages [FixRaidenBoss2]: Downloading https://files.pythonhosted.org/packages/3c/17/26e4fb2d4a366255cac800a910ff560ee8a431bc76457db2712c0a16e5a4/fixraidenboss2-3.7.0.tar.gz
+[2024-05-05 14:23:43] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/82/98/78199c42ade68405dda4bc7352f339d6169a0164bc1cdcff1d1112d8814d/onboardme-1.8.0.tar.gz
+[2024-05-05 14:23:43] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2024-05-05 14:23:43] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.7.1.tar.gz tmp/onboardme-1.8.0.tar.gz --markdown 20240505/o/onboardme/1.7.1-1.8.0/README.md --exclude *.pyd
+[2024-05-05 14:23:44] INFO root fetch - processPackages [FixRaidenBoss2]: Downloading https://files.pythonhosted.org/packages/43/b0/5025da65621398a62825b0b90ef8286ee360d095904bfe4df98b1cf888fb/fixraidenboss2-3.7.1.tar.gz
+[2024-05-05 14:23:44] INFO root fetch - processPackages [FixRaidenBoss2]: executing diffoscope
+[2024-05-05 14:23:44] INFO root fetch - processPackages [FixRaidenBoss2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixraidenboss2-3.7.0.tar.gz tmp/fixraidenboss2-3.7.1.tar.gz --markdown 20240505/F/FixRaidenBoss2/3.7.0-3.7.1/README.md --exclude *.pyd
+[2024-05-05 14:23:44] INFO root fetch - processPackages [onboardme]: Remove: archive file [/home/abi/fetcher/tmp/onboardme-1.7.1.tar.gz]
+[2024-05-05 14:23:44] INFO root fetch - processPackages [onboardme]: Remove: archive file [/home/abi/fetcher/tmp/onboardme-1.8.0.tar.gz]
+[2024-05-05 14:23:44] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2024-05-05 14:23:44] INFO root fetch - processPackages [FixRaidenBoss2]: Remove: archive file [/home/abi/fetcher/tmp/fixraidenboss2-3.7.0.tar.gz]
+[2024-05-05 14:23:44] INFO root fetch - processPackages [FixRaidenBoss2]: Remove: archive file [/home/abi/fetcher/tmp/fixraidenboss2-3.7.1.tar.gz]
+[2024-05-05 14:23:44] INFO root fetch - main [MainThread]: End processing [FixRaidenBoss2]: success
+[2024-05-05 14:23:44] INFO root fetch - main [MainThread]: Store serial: [23065411]
