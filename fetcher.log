@@ -8964,3 +8964,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:06:19] INFO root fetch - processPackages [django-restricted-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_restricted_fields-0.3.2.tar.gz]
 [2024-05-05 14:06:19] INFO root fetch - main [MainThread]: End processing [django-restricted-fields]: success
 [2024-05-05 14:06:19] INFO root fetch - main [MainThread]: Store serial: [23065336]
+[2024-05-05 14:08:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065336]
+[2024-05-05 14:08:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 14:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-restricted-fields
+[2024-05-05 14:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-tado
+[2024-05-05 14:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-allauth-themes
+[2024-05-05 14:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abstract-pandas
+[2024-05-05 14:08:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyscail
+[2024-05-05 14:08:28] INFO root fetch - processPackages [django-restricted-fields]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-05 14:08:28] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 14:08:28] INFO root fetch - processPackages [django-restricted-fields]: Downloading https://files.pythonhosted.org/packages/33/6e/17726ccc50ae855685d1fe3221f0dc0b2b93d463d19a0c3417e14604cd2e/django_restricted_fields-0.3.1.tar.gz
+[2024-05-05 14:08:28] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 14:08:28] INFO root fetch - processPackages [pyscail]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 14:08:28] WARNING root fetch - processPackages [django-allauth-themes]: Skipping, unable to determine old version
+[2024-05-05 14:08:28] INFO root fetch - main [MainThread]: End processing [django-allauth-themes] error
+[2024-05-05 14:08:28] INFO root fetch - processPackages [python-tado]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-05 14:08:29] INFO root fetch - processPackages [python-tado]: Downloading https://files.pythonhosted.org/packages/39/30/edd85748b0a061f3d7157abd06815caf4c5e90bcf7e3a42aa9a3168446a5/python-tado-0.8.0.tar.gz
+[2024-05-05 14:08:29] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 14:08:29] INFO root fetch - processPackages [django-restricted-fields]: Downloading https://files.pythonhosted.org/packages/b8/79/b6cde0592c030981ed34c9e53842f677bcaeed7d9d4c19b5b451700959f2/django_restricted_fields-0.3.2.tar.gz
+[2024-05-05 14:08:29] INFO root fetch - processPackages [pyscail]: Downloading https://files.pythonhosted.org/packages/d7/37/5654551f6c51590f1192a759c06b68bf9c8ffa0b7e25f35f856e919a768d/pyscail-0.0.8.tar.gz
+[2024-05-05 14:08:29] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 14:08:29] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 14:08:29] INFO root fetch - processPackages [django-restricted-fields]: executing diffoscope
+[2024-05-05 14:08:29] INFO root fetch - processPackages [django-restricted-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_restricted_fields-0.3.1.tar.gz tmp/django_restricted_fields-0.3.2.tar.gz --markdown 20240505/d/django-restricted-fields/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-05 14:08:29] INFO root fetch - processPackages [pyscail]: Downloading https://files.pythonhosted.org/packages/74/55/3192ec1d6830a7049d153171fa72eefa0fa27ea0f72f14c651a13c023448/pyscail-0.0.9.tar.gz
+[2024-05-05 14:08:29] INFO root fetch - processPackages [python-tado]: Downloading https://files.pythonhosted.org/packages/3d/5b/3c69bc8776771f1413bd7ade70f01ebc08f67241f0fbe20498de2d7cb055/python-tado-0.8.1.tar.gz
+[2024-05-05 14:08:29] INFO root fetch - processPackages [pyscail]: executing diffoscope
+[2024-05-05 14:08:29] INFO root fetch - processPackages [pyscail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscail-0.0.8.tar.gz tmp/pyscail-0.0.9.tar.gz --markdown 20240505/p/pyscail/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 14:08:29] INFO root fetch - processPackages [python-tado]: executing diffoscope
+[2024-05-05 14:08:29] INFO root fetch - processPackages [python-tado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tado-0.8.0.tar.gz tmp/python-tado-0.8.1.tar.gz --markdown 20240505/p/python-tado/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-05 14:08:29] INFO root fetch - processPackages [django-restricted-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_restricted_fields-0.3.1.tar.gz]
+[2024-05-05 14:08:29] INFO root fetch - processPackages [django-restricted-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_restricted_fields-0.3.2.tar.gz]
+[2024-05-05 14:08:29] INFO root fetch - main [MainThread]: End processing [django-restricted-fields]: success
+[2024-05-05 14:08:29] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 14:08:29] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 14:08:29] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 14:08:30] INFO root fetch - processPackages [python-tado]: Remove: archive file [/home/abi/fetcher/tmp/python-tado-0.8.0.tar.gz]
+[2024-05-05 14:08:30] INFO root fetch - processPackages [python-tado]: Remove: archive file [/home/abi/fetcher/tmp/python-tado-0.8.1.tar.gz]
+[2024-05-05 14:08:30] INFO root fetch - main [MainThread]: End processing [python-tado]: success
+[2024-05-05 14:08:30] INFO root fetch - processPackages [pyscail]: Remove: archive file [/home/abi/fetcher/tmp/pyscail-0.0.8.tar.gz]
+[2024-05-05 14:08:30] INFO root fetch - processPackages [pyscail]: Remove: archive file [/home/abi/fetcher/tmp/pyscail-0.0.9.tar.gz]
+[2024-05-05 14:08:30] INFO root fetch - main [MainThread]: End processing [pyscail]: success
+[2024-05-05 14:08:30] INFO root fetch - main [MainThread]: Store serial: [23065354]
