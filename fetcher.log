@@ -17071,3 +17071,15 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:04:33] INFO root fetch - processPackages [pyams-content]: Remove: archive file [/home/abi/fetcher/tmp/pyams_content-1.99.3.tar.gz]
 [2024-05-05 23:04:33] INFO root fetch - main [MainThread]: End processing [pyams-content]: success
 [2024-05-05 23:04:33] INFO root fetch - main [MainThread]: Store serial: [23069075]
+[2024-05-05 23:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069075]
+[2024-05-05 23:06:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 23:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mnt.pyfiction
+[2024-05-05 23:06:41] INFO root fetch - processPackages [mnt.pyfiction]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-05 23:06:42] INFO root fetch - processPackages [mnt.pyfiction]: Downloading https://files.pythonhosted.org/packages/0f/3f/d4940b99aad4b763a3ec9e245e596b31f1965f8f41d698a8ec24fb35b8aa/mnt.pyfiction-0.5.0.tar.gz
+[2024-05-05 23:06:43] INFO root fetch - processPackages [mnt.pyfiction]: Downloading https://files.pythonhosted.org/packages/44/42/c5651b947ab3538d1f2c92b29868dc92bb005543a5a6b91772c8566bcc54/mnt.pyfiction-0.6.0-cp39-cp39-win_amd64.whl
+[2024-05-05 23:06:44] INFO root fetch - processPackages [mnt.pyfiction]: executing diffoscope
+[2024-05-05 23:06:44] INFO root fetch - processPackages [mnt.pyfiction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnt.pyfiction-0.5.0.tar.gz tmp/mnt.pyfiction-0.6.0-cp39-cp39-win_amd64.whl.zip --markdown 20240505/m/mnt.pyfiction/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-05 23:06:45] INFO root fetch - processPackages [mnt.pyfiction]: Remove: archive file [/home/abi/fetcher/tmp/mnt.pyfiction-0.5.0.tar.gz]
+[2024-05-05 23:06:45] INFO root fetch - processPackages [mnt.pyfiction]: Remove: archive file [/home/abi/fetcher/tmp/mnt.pyfiction-0.6.0-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 23:06:45] INFO root fetch - main [MainThread]: End processing [mnt.pyfiction]: success
+[2024-05-05 23:06:45] INFO root fetch - main [MainThread]: Store serial: [23069081]
