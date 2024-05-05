@@ -8641,3 +8641,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:50:59] INFO root fetch - processPackages [pytigon-lib]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-lib-0.240505.tar.gz]
 [2024-05-05 13:50:59] INFO root fetch - main [MainThread]: End processing [pytigon-lib]: success
 [2024-05-05 13:50:59] INFO root fetch - main [MainThread]: Store serial: [23065140]
+[2024-05-05 13:53:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065140]
+[2024-05-05 13:53:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytigon-batteries
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytigon-gui
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fakesnow
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylablib
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: auto-ts
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: starlite
+[2024-05-05 13:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: smb-sync
+[2024-05-05 13:53:08] INFO root fetch - processPackages [auto-ts]: New version: [0.0.91] Old Version: [0.0.90]
+[2024-05-05 13:53:08] INFO root fetch - processPackages [fakesnow]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pytigon-batteries]: New version: [0.240505] Old Version: [0.240428]
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pytigon-gui]: New version: [0.240505] Old Version: [0.240428]
+[2024-05-05 13:53:08] INFO root fetch - processPackages [starlite]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2024-05-05 13:53:08] WARNING root fetch - processPackages [smb-sync]: Skipping, unable to determine old version
+[2024-05-05 13:53:08] INFO root fetch - main [MainThread]: End processing [smb-sync] error
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pylablib]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-05-05 13:53:08] INFO root fetch - processPackages [fakesnow]: Downloading https://files.pythonhosted.org/packages/6b/2a/f0ce270f9094e390b8d6c6206e1725c88d65989bc2bdb25d259f4e371ed7/fakesnow-0.9.8.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pytigon-batteries]: Downloading https://files.pythonhosted.org/packages/16/17/60bb33f0aa6c8fce030ce7ced392ca35130c63d1acb44ecf740384cd1edd/pytigon-batteries-0.240428.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [auto-ts]: Downloading https://files.pythonhosted.org/packages/e7/4e/30f9ea4fe7e8fbdf387fa1efa7dc45e1bec98390084cbd17f479503e813f/auto_ts-0.0.90.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pytigon-gui]: Downloading https://files.pythonhosted.org/packages/c8/72/2f72e02c994fdf5db3290795358f7c3ef31c6eccf6f6988d3ed46bfe2b32/pytigon-gui-0.240428.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [starlite]: Downloading https://files.pythonhosted.org/packages/44/4e/ca45ad4d9ca7cc1fe1ef4b895da684ad409208c69bbbedcbc4730ac06f47/starlite-2.0.0a1.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pylablib]: Downloading https://files.pythonhosted.org/packages/48/b8/9bd9e70eb64ebd67f5e3e97410c30be44f6386f0acc4293b153d58b87990/pylablib-1.4.2.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [auto-ts]: Downloading https://files.pythonhosted.org/packages/26/98/cf049666cdf6d0bf00301fc955acf15ac6a3bc9a1f501b31c6bd992a2aa6/auto_ts-0.0.91.tar.gz
+[2024-05-05 13:53:08] INFO root fetch - processPackages [pytigon-batteries]: Downloading https://files.pythonhosted.org/packages/cc/c5/abd9e47285fa05f66262f9b02f95c0d7fc07a9ec4233a8cbc7f7341ff702/pytigon-batteries-0.240505.tar.gz
+[2024-05-05 13:53:09] INFO root fetch - processPackages [fakesnow]: Downloading https://files.pythonhosted.org/packages/94/7b/47725738bd7c4bb10ac4759bcf5f0d7f42e6c1c128424c7aaf38ea0524be/fakesnow-0.9.9.tar.gz
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-gui]: Downloading https://files.pythonhosted.org/packages/86/06/e1bb43d7298650e89fa75239f88bc9193ac246cd309383b3eaa7922bf72d/pytigon-gui-0.240505.tar.gz
+[2024-05-05 13:53:09] INFO root fetch - processPackages [auto-ts]: executing diffoscope
+[2024-05-05 13:53:09] INFO root fetch - processPackages [auto-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_ts-0.0.90.tar.gz tmp/auto_ts-0.0.91.tar.gz --markdown 20240505/a/auto-ts/0.0.90-0.0.91/README.md --exclude *.pyd
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-batteries]: executing diffoscope
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-batteries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytigon-batteries-0.240428.tar.gz tmp/pytigon-batteries-0.240505.tar.gz --markdown 20240505/p/pytigon-batteries/0.240428-0.240505/README.md --exclude *.pyd
+[2024-05-05 13:53:09] INFO root fetch - processPackages [fakesnow]: executing diffoscope
+[2024-05-05 13:53:09] INFO root fetch - processPackages [fakesnow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fakesnow-0.9.8.tar.gz tmp/fakesnow-0.9.9.tar.gz --markdown 20240505/f/fakesnow/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-gui]: executing diffoscope
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytigon-gui-0.240428.tar.gz tmp/pytigon-gui-0.240505.tar.gz --markdown 20240505/p/pytigon-gui/0.240428-0.240505/README.md --exclude *.pyd
+[2024-05-05 13:53:09] INFO root fetch - processPackages [starlite]: Downloading https://files.pythonhosted.org/packages/db/01/eae30b612e372f77d4db66f6ba8bc578968ab10ab0e8e198c91bc687c18d/starlite-2.0.0a2.tar.gz
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pylablib]: Downloading https://files.pythonhosted.org/packages/99/dc/dacb3a5642acef6cd8899a4f65ca66a6076ce8fb1137a909fcacfa84a7b1/pylablib-1.4.3-cp312-cp312-musllinux_1_1_x86_64.whl
+[2024-05-05 13:53:09] INFO root fetch - processPackages [starlite]: executing diffoscope
+[2024-05-05 13:53:09] INFO root fetch - processPackages [starlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starlite-2.0.0a1.tar.gz tmp/starlite-2.0.0a2.tar.gz --markdown 20240505/s/starlite/2.0.0a1-2.0.0a2/README.md --exclude *.pyd
+[2024-05-05 13:53:09] INFO root fetch - processPackages [auto-ts]: Remove: archive file [/home/abi/fetcher/tmp/auto_ts-0.0.90.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - processPackages [auto-ts]: Remove: archive file [/home/abi/fetcher/tmp/auto_ts-0.0.91.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - main [MainThread]: End processing [auto-ts]: success
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-batteries]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-batteries-0.240428.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-batteries]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-batteries-0.240505.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - main [MainThread]: End processing [pytigon-batteries]: success
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-gui]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-gui-0.240428.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - processPackages [pytigon-gui]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-gui-0.240505.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - main [MainThread]: End processing [pytigon-gui]: success
+[2024-05-05 13:53:09] INFO root fetch - processPackages [fakesnow]: Remove: archive file [/home/abi/fetcher/tmp/fakesnow-0.9.8.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - processPackages [fakesnow]: Remove: archive file [/home/abi/fetcher/tmp/fakesnow-0.9.9.tar.gz]
+[2024-05-05 13:53:09] INFO root fetch - main [MainThread]: End processing [fakesnow]: success
+[2024-05-05 13:53:11] INFO root fetch - processPackages [starlite]: Remove: archive file [/home/abi/fetcher/tmp/starlite-2.0.0a1.tar.gz]
+[2024-05-05 13:53:11] INFO root fetch - processPackages [starlite]: Remove: archive file [/home/abi/fetcher/tmp/starlite-2.0.0a2.tar.gz]
+[2024-05-05 13:53:11] INFO root fetch - main [MainThread]: End processing [starlite]: success
+[2024-05-05 13:53:11] INFO root fetch - processPackages [pylablib]: executing diffoscope
+[2024-05-05 13:53:11] INFO root fetch - processPackages [pylablib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylablib-1.4.2.tar.gz tmp/pylablib-1.4.3-cp312-cp312-musllinux_1_1_x86_64.whl.zip --markdown 20240505/p/pylablib/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-05-05 13:53:13] INFO root fetch - processPackages [pylablib]: Remove: archive file [/home/abi/fetcher/tmp/pylablib-1.4.2.tar.gz]
+[2024-05-05 13:53:13] INFO root fetch - processPackages [pylablib]: Remove: archive file [/home/abi/fetcher/tmp/pylablib-1.4.3-cp312-cp312-musllinux_1_1_x86_64.whl.zip]
+[2024-05-05 13:53:13] INFO root fetch - main [MainThread]: End processing [pylablib]: success
+[2024-05-05 13:53:13] INFO root fetch - main [MainThread]: Store serial: [23065176]
