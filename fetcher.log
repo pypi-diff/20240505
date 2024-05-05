@@ -12616,3 +12616,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:17:24] WARNING root fetch - processPackages [django-management-command-decorator]: Skipping, unable to determine old version
 [2024-05-05 18:17:24] INFO root fetch - main [MainThread]: End processing [django-management-command-decorator] error
 [2024-05-05 18:17:24] INFO root fetch - main [MainThread]: Store serial: [23067041]
+[2024-05-05 18:19:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067041]
+[2024-05-05 18:19:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moulti
+[2024-05-05 18:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: merge3
+[2024-05-05 18:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyopencl
+[2024-05-05 18:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flash1dkmeans
+[2024-05-05 18:19:33] INFO root fetch - processPackages [moulti]: New version: [1.8.0] Old Version: [1.7.0]
+[2024-05-05 18:19:33] INFO root fetch - processPackages [merge3]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 18:19:33] WARNING root fetch - processPackages [flash1dkmeans]: Skipping, unable to determine old version
+[2024-05-05 18:19:33] INFO root fetch - main [MainThread]: End processing [flash1dkmeans] error
+[2024-05-05 18:19:33] INFO root fetch - processPackages [pyopencl]: New version: [2024.2] Old Version: [2024.1]
+[2024-05-05 18:19:33] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/c8/33/c5dd13b49fcff1dd553c665179f0dd2de893d31d40560065a5c1f264ef32/moulti-1.7.0.tar.gz
+[2024-05-05 18:19:33] INFO root fetch - processPackages [merge3]: Downloading https://files.pythonhosted.org/packages/9e/a0/ebac6ed4b7c174832616731c3466e86768a2b856e03043ac55e1e5d49a5a/merge3-0.0.8.tar.gz
+[2024-05-05 18:19:33] INFO root fetch - processPackages [pyopencl]: Downloading https://files.pythonhosted.org/packages/ab/c5/6c35b54896484c98d0375190fa81448e2a0638fced6680ff8afcc2941065/pyopencl-2024.1.tar.gz
+[2024-05-05 18:19:33] INFO root fetch - processPackages [moulti]: Downloading https://files.pythonhosted.org/packages/97/e9/590f2b32716baa761cca3a52a5dcaa1b0563a83ee679de240c7626b8367d/moulti-1.8.0.tar.gz
+[2024-05-05 18:19:33] INFO root fetch - processPackages [merge3]: Downloading https://files.pythonhosted.org/packages/7b/86/93994c5a6581ab7792ab917e5abfa509f7a1719f865e2f92a22304469176/merge3-0.0.9.tar.gz
+[2024-05-05 18:19:33] INFO root fetch - processPackages [merge3]: executing diffoscope
+[2024-05-05 18:19:33] INFO root fetch - processPackages [merge3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/merge3-0.0.8.tar.gz tmp/merge3-0.0.9.tar.gz --markdown 20240505/m/merge3/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 18:19:33] INFO root fetch - processPackages [pyopencl]: Downloading https://files.pythonhosted.org/packages/5d/96/3003c124c9ed631079f0e262a6567bb7d55e124537711983739c0ef5cf16/pyopencl-2024.2.tar.gz
+[2024-05-05 18:19:33] INFO root fetch - processPackages [moulti]: executing diffoscope
+[2024-05-05 18:19:33] INFO root fetch - processPackages [moulti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moulti-1.7.0.tar.gz tmp/moulti-1.8.0.tar.gz --markdown 20240505/m/moulti/1.7.0-1.8.0/README.md --exclude *.pyd
+[2024-05-05 18:19:33] INFO root fetch - processPackages [pyopencl]: executing diffoscope
+[2024-05-05 18:19:33] INFO root fetch - processPackages [pyopencl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopencl-2024.1.tar.gz tmp/pyopencl-2024.2.tar.gz --markdown 20240505/p/pyopencl/2024.1-2024.2/README.md --exclude *.pyd
+[2024-05-05 18:19:34] INFO root fetch - processPackages [merge3]: Remove: archive file [/home/abi/fetcher/tmp/merge3-0.0.8.tar.gz]
+[2024-05-05 18:19:34] INFO root fetch - processPackages [merge3]: Remove: archive file [/home/abi/fetcher/tmp/merge3-0.0.9.tar.gz]
+[2024-05-05 18:19:34] INFO root fetch - main [MainThread]: End processing [merge3]: success
+[2024-05-05 18:19:34] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.7.0.tar.gz]
+[2024-05-05 18:19:34] INFO root fetch - processPackages [moulti]: Remove: archive file [/home/abi/fetcher/tmp/moulti-1.8.0.tar.gz]
+[2024-05-05 18:19:34] INFO root fetch - main [MainThread]: End processing [moulti]: success
+[2024-05-05 18:19:35] INFO root fetch - processPackages [pyopencl]: Remove: archive file [/home/abi/fetcher/tmp/pyopencl-2024.1.tar.gz]
+[2024-05-05 18:19:35] INFO root fetch - processPackages [pyopencl]: Remove: archive file [/home/abi/fetcher/tmp/pyopencl-2024.2.tar.gz]
+[2024-05-05 18:19:35] INFO root fetch - main [MainThread]: End processing [pyopencl]: success
+[2024-05-05 18:19:35] INFO root fetch - main [MainThread]: Store serial: [23067080]
