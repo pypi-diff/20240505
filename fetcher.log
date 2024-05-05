@@ -1983,3 +1983,34 @@
 [2024-05-05 03:06:09] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-05 03:06:09] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2024-05-05 03:06:09] INFO root fetch - main [MainThread]: Store serial: [23062321]
+[2024-05-05 03:08:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062321]
+[2024-05-05 03:08:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 03:08:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Mbtiler
+[2024-05-05 03:08:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argufy
+[2024-05-05 03:08:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: argufy
+[2024-05-05 03:08:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmticket
+[2024-05-05 03:08:39] INFO root fetch - processPackages [argufy]: New version: [0.1.2b3] Old Version: [0.1.2b2]
+[2024-05-05 03:08:39] INFO root fetch - processPackages [argufy]: New version: [0.1.2b3] Old Version: [0.1.2b2]
+[2024-05-05 03:08:39] WARNING root fetch - processPackages [Mbtiler]: Skipping, unable to determine old version
+[2024-05-05 03:08:39] INFO root fetch - processPackages [tmticket]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 03:08:39] INFO root fetch - main [MainThread]: End processing [Mbtiler] error
+[2024-05-05 03:08:39] INFO root fetch - processPackages [argufy]: Downloading https://files.pythonhosted.org/packages/77/eb/0373b6cba6203b0ec138efd83db8f02ed35254e1861ce41d77db2c5bbb02/argufy-0.1.2b2.tar.gz
+[2024-05-05 03:08:39] INFO root fetch - processPackages [argufy]: Downloading https://files.pythonhosted.org/packages/77/eb/0373b6cba6203b0ec138efd83db8f02ed35254e1861ce41d77db2c5bbb02/argufy-0.1.2b2.tar.gz
+[2024-05-05 03:08:39] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/7a/c9/db36ec3dfe320ba0a45322735b3642202a3ebffb06b8217e4c790b203b52/tmticket-0.1.0.tar.gz
+[2024-05-05 03:08:39] INFO root fetch - processPackages [argufy]: Downloading https://files.pythonhosted.org/packages/ca/90/d47e0dabedb38b464b24dbfcc1d804888f69c0585dcc6b51e3fa6579450a/argufy-0.1.2b3.tar.gz
+[2024-05-05 03:08:39] INFO root fetch - processPackages [argufy]: Downloading https://files.pythonhosted.org/packages/ca/90/d47e0dabedb38b464b24dbfcc1d804888f69c0585dcc6b51e3fa6579450a/argufy-0.1.2b3.tar.gz
+[2024-05-05 03:08:39] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/22/f4/9e46bc0379b927571089b83b1ccd1eed18b26a515c412cc6c2852383d8b2/tmticket-0.1.1-py3-none-any.whl
+[2024-05-05 03:08:40] INFO root fetch - processPackages [argufy]: executing diffoscope
+[2024-05-05 03:08:40] INFO root fetch - processPackages [argufy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argufy-0.1.2b2.tar.gz tmp/argufy-0.1.2b3.tar.gz --markdown 20240505/a/argufy/0.1.2b2-0.1.2b3/README.md --exclude *.pyd
+[2024-05-05 03:08:40] INFO root fetch - processPackages [argufy]: executing diffoscope
+[2024-05-05 03:08:40] INFO root fetch - processPackages [argufy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argufy-0.1.2b2.tar.gz tmp/argufy-0.1.2b3.tar.gz --markdown 20240505/a/argufy/0.1.2b2-0.1.2b3/README.md --exclude *.pyd
+[2024-05-05 03:08:40] INFO root fetch - processPackages [tmticket]: executing diffoscope
+[2024-05-05 03:08:40] INFO root fetch - processPackages [tmticket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmticket-0.1.0.tar.gz tmp/tmticket-0.1.1-py3-none-any.whl.zip --markdown 20240505/t/tmticket/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 03:08:40] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.0.tar.gz]
+[2024-05-05 03:08:40] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.1-py3-none-any.whl.zip]
+[2024-05-05 03:08:40] INFO root fetch - main [MainThread]: End processing [tmticket]: success
+[2024-05-05 03:08:40] INFO root fetch - processPackages [argufy]: Remove: archive file [/home/abi/fetcher/tmp/argufy-0.1.2b2.tar.gz]
+[2024-05-05 03:08:40] INFO root fetch - processPackages [argufy]: Remove: archive file [/home/abi/fetcher/tmp/argufy-0.1.2b3.tar.gz]
+[2024-05-05 03:08:40] INFO root fetch - main [MainThread]: End processing [argufy]: success
+[2024-05-05 03:08:40] INFO root fetch - main [MainThread]: End processing [argufy]: success
+[2024-05-05 03:08:40] INFO root fetch - main [MainThread]: Store serial: [23062342]
