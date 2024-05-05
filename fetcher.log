@@ -6458,3 +6458,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:53:26] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-05-05 10:53:26] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-05-05 10:53:26] INFO root fetch - main [MainThread]: Store serial: [23064238]
+[2024-05-05 10:55:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064238]
+[2024-05-05 10:55:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 10:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: miner-ai-beta
+[2024-05-05 10:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flops-utils
+[2024-05-05 10:55:35] INFO root fetch - processPackages [flops-utils]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-05 10:55:35] INFO root fetch - processPackages [miner-ai-beta]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-05-05 10:55:35] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/73/50/d5ea60b4514bb80c73729ffba598ca4ceea889d50adbde9a22fd04491de2/flops_utils-0.3.3.tar.gz
+[2024-05-05 10:55:35] INFO root fetch - processPackages [miner-ai-beta]: Downloading https://files.pythonhosted.org/packages/9d/d7/31783ce34ab4fdf04f78549abaa4cc72581f869c4a9a6b047fe8334b8755/miner_ai_beta-0.1.3.tar.gz
+[2024-05-05 10:55:35] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/19/3e/abb9304047c1f14e35258c7230434476ab4563f91182fa0991d23c7462f0/flops_utils-0.3.4.tar.gz
+[2024-05-05 10:55:35] INFO root fetch - processPackages [miner-ai-beta]: Downloading https://files.pythonhosted.org/packages/25/48/c6504ca2eefef928226be04e798b11bedc8510eafdfcc569a069dd47a3c4/miner_ai_beta-0.1.5.tar.gz
+[2024-05-05 10:55:35] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-05 10:55:35] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.3.3.tar.gz tmp/flops_utils-0.3.4.tar.gz --markdown 20240505/f/flops-utils/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-05 10:55:35] INFO root fetch - processPackages [miner-ai-beta]: executing diffoscope
+[2024-05-05 10:55:35] INFO root fetch - processPackages [miner-ai-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miner_ai_beta-0.1.3.tar.gz tmp/miner_ai_beta-0.1.5.tar.gz --markdown 20240505/m/miner-ai-beta/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-05-05 10:55:36] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.3.tar.gz]
+[2024-05-05 10:55:36] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.4.tar.gz]
+[2024-05-05 10:55:36] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-05 10:55:36] INFO root fetch - processPackages [miner-ai-beta]: Remove: archive file [/home/abi/fetcher/tmp/miner_ai_beta-0.1.3.tar.gz]
+[2024-05-05 10:55:36] INFO root fetch - processPackages [miner-ai-beta]: Remove: archive file [/home/abi/fetcher/tmp/miner_ai_beta-0.1.5.tar.gz]
+[2024-05-05 10:55:36] INFO root fetch - main [MainThread]: End processing [miner-ai-beta]: success
+[2024-05-05 10:55:36] INFO root fetch - main [MainThread]: Store serial: [23064244]
