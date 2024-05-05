@@ -17268,3 +17268,9 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:20:04] INFO root fetch - processPackages [highctidh]: Remove: archive file [/home/abi/fetcher/tmp/highctidh-1.0.2024050500.tar.gz]
 [2024-05-05 23:20:04] INFO root fetch - main [MainThread]: End processing [highctidh]: success
 [2024-05-05 23:20:04] INFO root fetch - main [MainThread]: Store serial: [23069152]
+[2024-05-05 23:22:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069152]
+[2024-05-05 23:22:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 23:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-html-parser
+[2024-05-05 23:22:13] WARNING root fetch - processPackages [youtube-html-parser]: Skipping, unable to determine old version
+[2024-05-05 23:22:13] INFO root fetch - main [MainThread]: End processing [youtube-html-parser] error
+[2024-05-05 23:22:13] INFO root fetch - main [MainThread]: Store serial: [23069155]
