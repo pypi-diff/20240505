@@ -17411,3 +17411,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:39:30] WARNING root fetch - processPackages [odoo-addon-l10n-mx-catalogs]: Skipping, unable to determine old version
 [2024-05-05 23:39:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-mx-catalogs] error
 [2024-05-05 23:39:30] INFO root fetch - main [MainThread]: Store serial: [23069235]
+[2024-05-05 23:41:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069235]
+[2024-05-05 23:41:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 23:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funky-modifiers
+[2024-05-05 23:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: runseq
+[2024-05-05 23:41:40] INFO root fetch - processPackages [funky-modifiers]: New version: [0.1.7] Old Version: [0.1.1]
+[2024-05-05 23:41:40] INFO root fetch - processPackages [runseq]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-05 23:41:40] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/e8/29/ef5c9dd6b2d4280e4f080f2490b635ea441536a6f7d0b0c034be2cfefc84/funky_modifiers-0.1.1.tar.gz
+[2024-05-05 23:41:40] INFO root fetch - processPackages [runseq]: Downloading https://files.pythonhosted.org/packages/c4/5e/0a87065ed96d0939bed00b36e6b0443216d9916a9d5095bc888e7e71458f/runseq-0.2.2.tar.gz
+[2024-05-05 23:41:40] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/58/16/93c37b6aea83c98297bc769a61cec5108711c014420baa83094c1b6b0b70/funky_modifiers-0.1.7.tar.gz
+[2024-05-05 23:41:41] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-05 23:41:41] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.1.1.tar.gz tmp/funky_modifiers-0.1.7.tar.gz --markdown 20240505/f/funky-modifiers/0.1.1-0.1.7/README.md --exclude *.pyd
+[2024-05-05 23:41:41] INFO root fetch - processPackages [runseq]: Downloading https://files.pythonhosted.org/packages/bb/06/05eca1058622a6cace877f8a3e7683cb3b856d9c7b080a06c7d252016c2e/runseq-0.3.0.tar.gz
+[2024-05-05 23:41:41] INFO root fetch - processPackages [runseq]: executing diffoscope
+[2024-05-05 23:41:41] INFO root fetch - processPackages [runseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runseq-0.2.2.tar.gz tmp/runseq-0.3.0.tar.gz --markdown 20240505/r/runseq/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-05 23:41:41] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.1.tar.gz]
+[2024-05-05 23:41:41] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.7.tar.gz]
+[2024-05-05 23:41:41] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-05 23:41:41] INFO root fetch - processPackages [runseq]: Remove: archive file [/home/abi/fetcher/tmp/runseq-0.2.2.tar.gz]
+[2024-05-05 23:41:41] INFO root fetch - processPackages [runseq]: Remove: archive file [/home/abi/fetcher/tmp/runseq-0.3.0.tar.gz]
+[2024-05-05 23:41:41] INFO root fetch - main [MainThread]: End processing [runseq]: success
+[2024-05-05 23:41:41] INFO root fetch - main [MainThread]: Store serial: [23069242]
