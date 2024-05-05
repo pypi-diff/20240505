@@ -1115,3 +1115,36 @@
 [2024-05-05 02:05:24] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240504.425.tar.gz]
 [2024-05-05 02:05:24] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-05-05 02:05:24] INFO root fetch - main [MainThread]: Store serial: [23061959]
+[2024-05-05 02:07:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061959]
+[2024-05-05 02:07:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 02:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-05-05 02:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlrl-testbed
+[2024-05-05 02:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxutils-nightly
+[2024-05-05 02:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unusual-whales-api-client
+[2024-05-05 02:07:33] WARNING root fetch - processPackages [unusual-whales-api-client]: Skipping, unable to determine old version
+[2024-05-05 02:07:33] INFO root fetch - main [MainThread]: End processing [unusual-whales-api-client] error
+[2024-05-05 02:07:33] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240504] Old Version: [0.0.8.dev20240503]
+[2024-05-05 02:07:33] INFO root fetch - processPackages [mlrl-testbed]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-05 02:07:33] INFO root fetch - processPackages [scrapegraphai]: New version: [0.9.0b2] Old Version: [0.9.0b1]
+[2024-05-05 02:07:33] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/0d/55/e2310787b1583a4fd948e5d9548287983d41cddcca28d88baa7d95c4d65b/jaxutils-nightly-0.0.8.dev20240503.tar.gz
+[2024-05-05 02:07:34] INFO root fetch - processPackages [mlrl-testbed]: Downloading https://files.pythonhosted.org/packages/28/36/5d4c94a3dfbe2705461bebf1fa18057e484f51c6b3f5b0579138bdd4589b/mlrl_testbed-0.8.2-py3-none-any.whl
+[2024-05-05 02:07:34] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/ec/f8/14f73c7c161672cd2e1f33a0a23d973a82074cad13c2e19d7c7a45a847d2/scrapegraphai-0.9.0b1.tar.gz
+[2024-05-05 02:07:34] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/e5/96/8b383ab6933bc18c8929bfd465027534c45a37f6539233d43a43ae0a540f/jaxutils-nightly-0.0.8.dev20240504.tar.gz
+[2024-05-05 02:07:34] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/a2/df/068ec35f22cee27765c5b12db62775840e63023c60a6353b483c065a86be/scrapegraphai-0.9.0b2.tar.gz
+[2024-05-05 02:07:34] INFO root fetch - processPackages [mlrl-testbed]: Downloading https://files.pythonhosted.org/packages/92/eb/97d31016ca954467de35d69d630e6425facb4952fd9655634f9f5f43822d/mlrl_testbed-0.9.0-py3-none-any.whl
+[2024-05-05 02:07:34] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-05-05 02:07:34] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240503.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240504.tar.gz --markdown 20240505/j/jaxutils-nightly/0.0.8.dev20240503-0.0.8.dev20240504/README.md --exclude *.pyd
+[2024-05-05 02:07:34] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-05 02:07:34] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.9.0b1.tar.gz tmp/scrapegraphai-0.9.0b2.tar.gz --markdown 20240505/s/scrapegraphai/0.9.0b1-0.9.0b2/README.md --exclude *.pyd
+[2024-05-05 02:07:34] INFO root fetch - processPackages [mlrl-testbed]: executing diffoscope
+[2024-05-05 02:07:34] INFO root fetch - processPackages [mlrl-testbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrl_testbed-0.8.2-py3-none-any.whl.zip tmp/mlrl_testbed-0.9.0-py3-none-any.whl.zip --markdown 20240505/m/mlrl-testbed/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-05 02:07:35] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240503.tar.gz]
+[2024-05-05 02:07:35] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240504.tar.gz]
+[2024-05-05 02:07:35] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-05-05 02:07:35] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b1.tar.gz]
+[2024-05-05 02:07:35] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b2.tar.gz]
+[2024-05-05 02:07:35] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-05 02:07:35] INFO root fetch - processPackages [mlrl-testbed]: Remove: archive file [/home/abi/fetcher/tmp/mlrl_testbed-0.8.2-py3-none-any.whl.zip]
+[2024-05-05 02:07:35] INFO root fetch - processPackages [mlrl-testbed]: Remove: archive file [/home/abi/fetcher/tmp/mlrl_testbed-0.9.0-py3-none-any.whl.zip]
+[2024-05-05 02:07:35] INFO root fetch - main [MainThread]: End processing [mlrl-testbed]: success
+[2024-05-05 02:07:35] INFO root fetch - main [MainThread]: Store serial: [23061971]
