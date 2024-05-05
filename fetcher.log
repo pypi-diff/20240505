@@ -4906,3 +4906,112 @@
 [2024-05-05 08:44:19] INFO root fetch - processPackages [pylyzer]: Remove: archive file [/home/abi/fetcher/tmp/pylyzer-0.1.0b0.tar.gz]
 [2024-05-05 08:44:19] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
 [2024-05-05 08:44:19] INFO root fetch - main [MainThread]: Store serial: [23063580]
+[2024-05-05 08:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063580]
+[2024-05-05 08:46:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 08:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seffaflik2
+[2024-05-05 08:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parseq-XAS
+[2024-05-05 08:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wtfis
+[2024-05-05 08:46:39] WARNING root fetch - processPackages [seffaflik2]: Skipping, unable to determine old version
+[2024-05-05 08:46:39] INFO root fetch - main [MainThread]: End processing [seffaflik2] error
+[2024-05-05 08:46:39] INFO root fetch - processPackages [parseq-XAS]: New version: [2024.5.0] Old Version: [2023.5.0]
+[2024-05-05 08:46:39] INFO root fetch - processPackages [wtfis]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-05 08:46:40] INFO root fetch - processPackages [parseq-XAS]: Downloading https://files.pythonhosted.org/packages/37/8b/5b72142d685f679e3c87d4315497adefc647387e58a4738c1287e343d25d/parseq_XAS-2023.5.0.zip
+[2024-05-05 08:46:40] INFO root fetch - processPackages [wtfis]: Downloading https://files.pythonhosted.org/packages/7a/5d/b760e533acaec19208191888f181f4ba4fee5165e5c947cb7a0019e9da62/wtfis-0.9.0.tar.gz
+[2024-05-05 08:46:40] INFO root fetch - processPackages [wtfis]: Downloading https://files.pythonhosted.org/packages/c3/7b/95909403d2a2f7049548749d99e352e053af21ce1cdf78166d763c79d7d0/wtfis-0.9.1.tar.gz
+[2024-05-05 08:46:40] INFO root fetch - processPackages [wtfis]: executing diffoscope
+[2024-05-05 08:46:40] INFO root fetch - processPackages [wtfis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtfis-0.9.0.tar.gz tmp/wtfis-0.9.1.tar.gz --markdown 20240505/w/wtfis/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-05 08:46:41] INFO root fetch - processPackages [parseq-XAS]: Downloading https://files.pythonhosted.org/packages/f9/e3/c9b11e73a0b2ad69b80e7d4f5779d1c8bdd7cb1d453278fe3aa140c16aaa/parseq_XAS-2024.5.0.zip
+[2024-05-05 08:46:41] INFO root fetch - processPackages [wtfis]: Remove: archive file [/home/abi/fetcher/tmp/wtfis-0.9.0.tar.gz]
+[2024-05-05 08:46:41] INFO root fetch - processPackages [wtfis]: Remove: archive file [/home/abi/fetcher/tmp/wtfis-0.9.1.tar.gz]
+[2024-05-05 08:46:41] INFO root fetch - main [MainThread]: End processing [wtfis]: success
+[2024-05-05 08:46:41] INFO root fetch - processPackages [parseq-XAS]: executing diffoscope
+[2024-05-05 08:46:41] INFO root fetch - processPackages [parseq-XAS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parseq_XAS-2023.5.0.zip tmp/parseq_XAS-2024.5.0.zip --markdown 20240505/p/parseq-XAS/2023.5.0-2024.5.0/README.md --exclude *.pyd
+[2024-05-05 08:46:42] ERROR root fetch - processPackages [parseq-XAS]: Diffoscope failed: time="2024-05-05T08:46:41+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 99: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invalid start byte
+
+[2024-05-05 08:46:42] INFO root fetch - main [MainThread]: End processing [parseq-XAS] error
+[2024-05-05 08:46:42] INFO root fetch - main [MainThread]: Store serial: [23063613]
