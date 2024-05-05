@@ -12238,3 +12238,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:49:00] INFO root fetch - processPackages [pssapi]: Remove: archive file [/home/abi/fetcher/tmp/pssapi-0.5.0.tar.gz]
 [2024-05-05 17:49:00] INFO root fetch - main [MainThread]: End processing [pssapi]: success
 [2024-05-05 17:49:00] INFO root fetch - main [MainThread]: Store serial: [23066866]
+[2024-05-05 17:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066866]
+[2024-05-05 17:51:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 17:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wolta
+[2024-05-05 17:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GofileIOUploader
+[2024-05-05 17:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: limnoria
+[2024-05-05 17:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dmocker
+[2024-05-05 17:51:09] INFO root fetch - processPackages [GofileIOUploader]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 17:51:09] INFO root fetch - processPackages [GofileIOUploader]: Downloading https://files.pythonhosted.org/packages/fb/d1/ec176f7766a149d8fa7730e6327c1aa2857577ca0281cb42482f0a77cedc/GofileIOUploader-0.9.8.tar.gz
+[2024-05-05 17:51:09] INFO root fetch - processPackages [wolta]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-05 17:51:09] INFO root fetch - processPackages [limnoria]: New version: [2024.4.26] Old Version: [2023.9.24]
+[2024-05-05 17:51:09] INFO root fetch - processPackages [dmocker]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 17:51:09] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/ea/b6/0a3b451c2e59b517a846ff807d836b615f8449ac65bf3e90b7587e2c0ac7/wolta-0.2.1.tar.gz
+[2024-05-05 17:51:09] INFO root fetch - processPackages [GofileIOUploader]: Downloading https://files.pythonhosted.org/packages/7d/9c/3e49756dade43968c36dae4932d816bfdd801248318c650b1ac631eb15d8/GofileIOUploader-0.9.9.tar.gz
+[2024-05-05 17:51:09] INFO root fetch - processPackages [limnoria]: Downloading https://files.pythonhosted.org/packages/f7/6c/ce59f041927e7f0d98c639caba5a827ddd82729022f52745aea535b9e0a3/limnoria-2023.9.24.tar.gz
+[2024-05-05 17:51:10] INFO root fetch - processPackages [dmocker]: Downloading https://files.pythonhosted.org/packages/43/3d/2b4398271e909cc311a7f5abde5527217431bf9e0a308a87b7e08f70e2be/dmocker-0.0.1.tar.gz
+[2024-05-05 17:51:10] INFO root fetch - processPackages [GofileIOUploader]: executing diffoscope
+[2024-05-05 17:51:10] INFO root fetch - processPackages [GofileIOUploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GofileIOUploader-0.9.8.tar.gz tmp/GofileIOUploader-0.9.9.tar.gz --markdown 20240505/G/GofileIOUploader/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 17:51:10] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/dd/bf/46a952eac07964bf520151c50e0bafa04ae82d139b29e44be50be7207e98/wolta-0.2.2.tar.gz
+[2024-05-05 17:51:10] INFO root fetch - processPackages [dmocker]: Downloading https://files.pythonhosted.org/packages/f6/18/ba521978555cb02cae42732a20692d2d64c2865b09e13da8b6d096a53a26/dmocker-0.0.2.tar.gz
+[2024-05-05 17:51:10] INFO root fetch - processPackages [wolta]: executing diffoscope
+[2024-05-05 17:51:10] INFO root fetch - processPackages [wolta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolta-0.2.1.tar.gz tmp/wolta-0.2.2.tar.gz --markdown 20240505/w/wolta/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-05 17:51:10] INFO root fetch - processPackages [limnoria]: Downloading https://files.pythonhosted.org/packages/87/fc/cb7d4d503e9cf6221584b858ba502320457b18ed41d4d0da6472efa7bba9/limnoria-2024.4.26.tar.gz
+[2024-05-05 17:51:10] INFO root fetch - processPackages [dmocker]: executing diffoscope
+[2024-05-05 17:51:10] INFO root fetch - processPackages [dmocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmocker-0.0.1.tar.gz tmp/dmocker-0.0.2.tar.gz --markdown 20240505/d/dmocker/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 17:51:10] INFO root fetch - processPackages [GofileIOUploader]: Remove: archive file [/home/abi/fetcher/tmp/GofileIOUploader-0.9.8.tar.gz]
+[2024-05-05 17:51:10] INFO root fetch - processPackages [GofileIOUploader]: Remove: archive file [/home/abi/fetcher/tmp/GofileIOUploader-0.9.9.tar.gz]
+[2024-05-05 17:51:10] INFO root fetch - main [MainThread]: End processing [GofileIOUploader]: success
+[2024-05-05 17:51:10] INFO root fetch - processPackages [limnoria]: executing diffoscope
+[2024-05-05 17:51:10] INFO root fetch - processPackages [limnoria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limnoria-2023.9.24.tar.gz tmp/limnoria-2024.4.26.tar.gz --markdown 20240505/l/limnoria/2023.9.24-2024.4.26/README.md --exclude *.pyd
+[2024-05-05 17:51:10] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.2.1.tar.gz]
+[2024-05-05 17:51:10] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.2.2.tar.gz]
+[2024-05-05 17:51:10] INFO root fetch - main [MainThread]: End processing [wolta]: success
+[2024-05-05 17:51:11] INFO root fetch - processPackages [dmocker]: Remove: archive file [/home/abi/fetcher/tmp/dmocker-0.0.1.tar.gz]
+[2024-05-05 17:51:11] INFO root fetch - processPackages [dmocker]: Remove: archive file [/home/abi/fetcher/tmp/dmocker-0.0.2.tar.gz]
+[2024-05-05 17:51:11] INFO root fetch - main [MainThread]: End processing [dmocker]: success
+[2024-05-05 17:51:13] INFO root fetch - processPackages [limnoria]: Remove: archive file [/home/abi/fetcher/tmp/limnoria-2023.9.24.tar.gz]
+[2024-05-05 17:51:13] INFO root fetch - processPackages [limnoria]: Remove: archive file [/home/abi/fetcher/tmp/limnoria-2024.4.26.tar.gz]
+[2024-05-05 17:51:13] INFO root fetch - main [MainThread]: End processing [limnoria]: success
+[2024-05-05 17:51:13] INFO root fetch - main [MainThread]: Store serial: [23066878]
