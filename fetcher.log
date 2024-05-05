@@ -10355,3 +10355,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:41:41] INFO root fetch - processPackages [MeMeST]: Remove: archive file [/home/abi/fetcher/tmp/MeMeST-2024.5.419269-py3-none-any.whl.zip]
 [2024-05-05 15:41:41] INFO root fetch - main [MainThread]: End processing [MeMeST]: success
 [2024-05-05 15:41:41] INFO root fetch - main [MainThread]: Store serial: [23066037]
+[2024-05-05 15:43:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066037]
+[2024-05-05 15:43:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 15:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iamlistening
+[2024-05-05 15:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rag-retrieval
+[2024-05-05 15:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nqrduck-spectrometer
+[2024-05-05 15:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ODLabeler
+[2024-05-05 15:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smartschoolapi-tkbstudios
+[2024-05-05 15:43:50] WARNING root fetch - processPackages [ODLabeler]: Skipping, unable to determine old version
+[2024-05-05 15:43:50] INFO root fetch - main [MainThread]: End processing [ODLabeler] error
+[2024-05-05 15:43:50] INFO root fetch - processPackages [rag-retrieval]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-05 15:43:50] INFO root fetch - processPackages [iamlistening]: New version: [5.1.9] Old Version: [5.1.8]
+[2024-05-05 15:43:50] WARNING root fetch - processPackages [smartschoolapi-tkbstudios]: Skipping, unable to determine old version
+[2024-05-05 15:43:50] INFO root fetch - main [MainThread]: End processing [smartschoolapi-tkbstudios] error
+[2024-05-05 15:43:50] INFO root fetch - processPackages [nqrduck-spectrometer]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 15:43:50] INFO root fetch - processPackages [rag-retrieval]: Downloading https://files.pythonhosted.org/packages/a1/88/9e3556711d41fa8f95dafa38ebc41327154cc7d8b5eaf14e079d718d9574/rag_retrieval-0.2.0.tar.gz
+[2024-05-05 15:43:50] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/07/a4/ba0689d7ba373ab01bee30148890982c66aebce125bf4cb4463c1279f1c8/iamlistening-5.1.8.tar.gz
+[2024-05-05 15:43:50] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/1e/81/79876c2de874a7124601107f9019de809d107376866a30720062e102ab24/iamlistening-5.1.9.tar.gz
+[2024-05-05 15:43:50] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2024-05-05 15:43:50] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-5.1.8.tar.gz tmp/iamlistening-5.1.9.tar.gz --markdown 20240505/i/iamlistening/5.1.8-5.1.9/README.md --exclude *.pyd
+[2024-05-05 15:43:50] INFO root fetch - processPackages [rag-retrieval]: Downloading https://files.pythonhosted.org/packages/8c/b2/e71e1e8bc07754b1d2feca6d338c90dba0d7672df357c93ae5960c1429ef/rag_retrieval-0.2.1.tar.gz
+[2024-05-05 15:43:50] INFO root fetch - processPackages [nqrduck-spectrometer]: Downloading https://files.pythonhosted.org/packages/4f/e8/addb9bb4237a9b2de166c3ddeba9d74dd0b0595b2df90f1a635930a3f9b9/nqrduck_spectrometer-0.0.8.tar.gz
+[2024-05-05 15:43:50] INFO root fetch - processPackages [rag-retrieval]: executing diffoscope
+[2024-05-05 15:43:50] INFO root fetch - processPackages [rag-retrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_retrieval-0.2.0.tar.gz tmp/rag_retrieval-0.2.1.tar.gz --markdown 20240505/r/rag-retrieval/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-05 15:43:50] INFO root fetch - processPackages [nqrduck-spectrometer]: Downloading https://files.pythonhosted.org/packages/ef/8d/558871e9da6aa0f6b551741055228121f638a9d3b131c787e84b1ca69d5b/nqrduck_spectrometer-0.0.9.tar.gz
+[2024-05-05 15:43:51] INFO root fetch - processPackages [nqrduck-spectrometer]: executing diffoscope
+[2024-05-05 15:43:51] INFO root fetch - processPackages [nqrduck-spectrometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqrduck_spectrometer-0.0.8.tar.gz tmp/nqrduck_spectrometer-0.0.9.tar.gz --markdown 20240505/n/nqrduck-spectrometer/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 15:43:51] INFO root fetch - processPackages [iamlistening]: Remove: archive file [/home/abi/fetcher/tmp/iamlistening-5.1.8.tar.gz]
+[2024-05-05 15:43:51] INFO root fetch - processPackages [iamlistening]: Remove: archive file [/home/abi/fetcher/tmp/iamlistening-5.1.9.tar.gz]
+[2024-05-05 15:43:51] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2024-05-05 15:43:51] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.2.0.tar.gz]
+[2024-05-05 15:43:51] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.2.1.tar.gz]
+[2024-05-05 15:43:51] INFO root fetch - main [MainThread]: End processing [rag-retrieval]: success
+[2024-05-05 15:43:51] INFO root fetch - processPackages [nqrduck-spectrometer]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_spectrometer-0.0.8.tar.gz]
+[2024-05-05 15:43:51] INFO root fetch - processPackages [nqrduck-spectrometer]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_spectrometer-0.0.9.tar.gz]
+[2024-05-05 15:43:51] INFO root fetch - main [MainThread]: End processing [nqrduck-spectrometer]: success
+[2024-05-05 15:43:51] INFO root fetch - main [MainThread]: Store serial: [23066057]
