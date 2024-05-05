@@ -9133,3 +9133,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:23:44] INFO root fetch - processPackages [FixRaidenBoss2]: Remove: archive file [/home/abi/fetcher/tmp/fixraidenboss2-3.7.1.tar.gz]
 [2024-05-05 14:23:44] INFO root fetch - main [MainThread]: End processing [FixRaidenBoss2]: success
 [2024-05-05 14:23:44] INFO root fetch - main [MainThread]: Store serial: [23065411]
+[2024-05-05 14:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065411]
+[2024-05-05 14:25:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 14:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dartrig
+[2024-05-05 14:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lapa-authentication
+[2024-05-05 14:25:53] INFO root fetch - processPackages [lapa-authentication]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 14:25:53] INFO root fetch - processPackages [dartrig]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-05 14:25:53] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/e4/81/0147afd631665625024e3fd8d46c8583702b5670db8ba001ee02e08e5bdd/lapa_authentication-0.0.8.tar.gz
+[2024-05-05 14:25:53] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/95/93/0003c3e63e809e98d18242999380721f577baec8ccf697071faca8e8b6ec/dartrig-0.1.9.tar.gz
+[2024-05-05 14:25:53] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/da/60/24e82ff97b7ef67fd6c653a9d3d18e4b621ce59064a46f00f9bdcb906a6b/dartrig-0.2.0-py3-none-any.whl
+[2024-05-05 14:25:53] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/93/c0/03721c8dad872ab6d551fde61c36e0304a43fb6afe00c5037f5e7e16a865/lapa_authentication-0.0.9.tar.gz
+[2024-05-05 14:25:53] INFO root fetch - processPackages [dartrig]: executing diffoscope
+[2024-05-05 14:25:53] INFO root fetch - processPackages [dartrig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dartrig-0.1.9.tar.gz tmp/dartrig-0.2.0-py3-none-any.whl.zip --markdown 20240505/d/dartrig/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-05 14:25:54] INFO root fetch - processPackages [lapa-authentication]: executing diffoscope
+[2024-05-05 14:25:54] INFO root fetch - processPackages [lapa-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_authentication-0.0.8.tar.gz tmp/lapa_authentication-0.0.9.tar.gz --markdown 20240505/l/lapa-authentication/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 14:25:54] INFO root fetch - processPackages [dartrig]: Remove: archive file [/home/abi/fetcher/tmp/dartrig-0.1.9.tar.gz]
+[2024-05-05 14:25:54] INFO root fetch - processPackages [dartrig]: Remove: archive file [/home/abi/fetcher/tmp/dartrig-0.2.0-py3-none-any.whl.zip]
+[2024-05-05 14:25:54] INFO root fetch - main [MainThread]: End processing [dartrig]: success
+[2024-05-05 14:25:54] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.8.tar.gz]
+[2024-05-05 14:25:54] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.9.tar.gz]
+[2024-05-05 14:25:54] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
+[2024-05-05 14:25:54] INFO root fetch - main [MainThread]: Store serial: [23065417]
