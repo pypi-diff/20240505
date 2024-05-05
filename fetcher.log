@@ -12397,3 +12397,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:00:02] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.4.0.tar.gz]
 [2024-05-05 18:00:02] INFO root fetch - main [MainThread]: End processing [err-aprs-backend]: success
 [2024-05-05 18:00:02] INFO root fetch - main [MainThread]: Store serial: [23066920]
+[2024-05-05 18:02:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066920]
+[2024-05-05 18:02:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lego-handlers
+[2024-05-05 18:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AICelltype
+[2024-05-05 18:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: altscore
+[2024-05-05 18:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GofileIOUploader
+[2024-05-05 18:02:11] INFO root fetch - processPackages [GofileIOUploader]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 18:02:11] INFO root fetch - processPackages [lego-handlers]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-05 18:02:11] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-05 18:02:11] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c3/98/f4cb763bb728a247c80425c615216fb093d0141630d06fe70e90f169481b/lego_handlers-1.1.1.tar.gz
+[2024-05-05 18:02:11] INFO root fetch - processPackages [GofileIOUploader]: Downloading https://files.pythonhosted.org/packages/fb/d1/ec176f7766a149d8fa7730e6327c1aa2857577ca0281cb42482f0a77cedc/GofileIOUploader-0.9.8.tar.gz
+[2024-05-05 18:02:11] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-05-05 18:02:11] WARNING root fetch - processPackages [AICelltype]: Skipping, unable to determine old version
+[2024-05-05 18:02:11] INFO root fetch - main [MainThread]: End processing [AICelltype] error
+[2024-05-05 18:02:11] INFO root fetch - processPackages [GofileIOUploader]: Downloading https://files.pythonhosted.org/packages/7d/9c/3e49756dade43968c36dae4932d816bfdd801248318c650b1ac631eb15d8/GofileIOUploader-0.9.9.tar.gz
+[2024-05-05 18:02:11] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-05-05 18:02:11] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/1f/5d/1f91f40ed3c93d194d2c55a8274be8d6a5b0314a1211ad19544e3eb3325e/lego_handlers-1.1.2.tar.gz
+[2024-05-05 18:02:11] INFO root fetch - processPackages [GofileIOUploader]: executing diffoscope
+[2024-05-05 18:02:11] INFO root fetch - processPackages [GofileIOUploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GofileIOUploader-0.9.8.tar.gz tmp/GofileIOUploader-0.9.9.tar.gz --markdown 20240505/G/GofileIOUploader/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 18:02:11] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-05-05 18:02:11] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240505/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-05 18:02:12] INFO root fetch - processPackages [lego-handlers]: executing diffoscope
+[2024-05-05 18:02:12] INFO root fetch - processPackages [lego-handlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lego_handlers-1.1.1.tar.gz tmp/lego_handlers-1.1.2.tar.gz --markdown 20240505/l/lego-handlers/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-05 18:02:12] INFO root fetch - processPackages [GofileIOUploader]: Remove: archive file [/home/abi/fetcher/tmp/GofileIOUploader-0.9.8.tar.gz]
+[2024-05-05 18:02:12] INFO root fetch - processPackages [GofileIOUploader]: Remove: archive file [/home/abi/fetcher/tmp/GofileIOUploader-0.9.9.tar.gz]
+[2024-05-05 18:02:12] INFO root fetch - main [MainThread]: End processing [GofileIOUploader]: success
+[2024-05-05 18:02:12] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-05-05 18:02:12] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-05-05 18:02:12] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-05-05 18:02:12] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.1.tar.gz]
+[2024-05-05 18:02:12] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.2.tar.gz]
+[2024-05-05 18:02:12] INFO root fetch - main [MainThread]: End processing [lego-handlers]: success
+[2024-05-05 18:02:12] INFO root fetch - main [MainThread]: Store serial: [23066934]
