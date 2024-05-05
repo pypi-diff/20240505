@@ -6975,3 +6975,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:28:26] INFO root fetch - processPackages [pychoacoustics]: Remove: archive file [/home/abi/fetcher/tmp/pychoacoustics-0.6.8.tar.gz]
 [2024-05-05 11:28:26] INFO root fetch - main [MainThread]: End processing [pychoacoustics]: success
 [2024-05-05 11:28:26] INFO root fetch - main [MainThread]: Store serial: [23064447]
+[2024-05-05 11:30:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064447]
+[2024-05-05 11:30:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ieugwaspy
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ddeutil
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: api6
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ddeutil]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ddeutil]: Downloading https://files.pythonhosted.org/packages/40/9c/7f2240d121024e478961e873474ae5e8c0276eefa6b5a31b24bfd60f30be/ddeutil-0.3.1.tar.gz
+[2024-05-05 11:30:38] INFO root fetch - processPackages [api6]: New version: [3.0.0] Old Version: [2.0.0]
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ieugwaspy]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-05-05 11:30:38] INFO root fetch - processPackages [api6]: Downloading https://files.pythonhosted.org/packages/cc/50/1234721a15243a853983fffb68af51db3fda914d7bdc282035c80b60e2eb/api6-2.0.0.tar.gz
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ieugwaspy]: Downloading https://files.pythonhosted.org/packages/a5/fc/36e866d9aa51bdad5b83d2039ec323635c452b72717537c9a9228502765b/ieugwaspy-1.0.0.tar.gz
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ddeutil]: Downloading https://files.pythonhosted.org/packages/df/fb/bc6c077de95538b82127cde64d81c092efeafb23304b8abdc29aca3f9c8b/ddeutil-0.3.2.tar.gz
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ddeutil]: executing diffoscope
+[2024-05-05 11:30:38] INFO root fetch - processPackages [ddeutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddeutil-0.3.1.tar.gz tmp/ddeutil-0.3.2.tar.gz --markdown 20240505/d/ddeutil/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ieugwaspy]: Downloading https://files.pythonhosted.org/packages/cd/45/e3efc7289c526312f100961ec9167ab55694137de6b72d2cfb5e4c0ef7b0/ieugwaspy-1.0.2.tar.gz
+[2024-05-05 11:30:39] INFO root fetch - processPackages [api6]: Downloading https://files.pythonhosted.org/packages/14/67/86e7422c16ea91c1295a36b38ce17020e7c9a6d58a80fe1de3db1087f440/api6-3.0.0.tar.gz
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ieugwaspy]: executing diffoscope
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ieugwaspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ieugwaspy-1.0.0.tar.gz tmp/ieugwaspy-1.0.2.tar.gz --markdown 20240505/i/ieugwaspy/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-05-05 11:30:39] INFO root fetch - processPackages [api6]: executing diffoscope
+[2024-05-05 11:30:39] INFO root fetch - processPackages [api6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api6-2.0.0.tar.gz tmp/api6-3.0.0.tar.gz --markdown 20240505/a/api6/2.0.0-3.0.0/README.md --exclude *.pyd
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ddeutil]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil-0.3.1.tar.gz]
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ddeutil]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil-0.3.2.tar.gz]
+[2024-05-05 11:30:39] INFO root fetch - main [MainThread]: End processing [ddeutil]: success
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ieugwaspy]: Remove: archive file [/home/abi/fetcher/tmp/ieugwaspy-1.0.0.tar.gz]
+[2024-05-05 11:30:39] INFO root fetch - processPackages [ieugwaspy]: Remove: archive file [/home/abi/fetcher/tmp/ieugwaspy-1.0.2.tar.gz]
+[2024-05-05 11:30:39] INFO root fetch - main [MainThread]: End processing [ieugwaspy]: success
+[2024-05-05 11:30:39] INFO root fetch - processPackages [api6]: Remove: archive file [/home/abi/fetcher/tmp/api6-2.0.0.tar.gz]
+[2024-05-05 11:30:39] INFO root fetch - processPackages [api6]: Remove: archive file [/home/abi/fetcher/tmp/api6-3.0.0.tar.gz]
+[2024-05-05 11:30:39] INFO root fetch - main [MainThread]: End processing [api6]: success
+[2024-05-05 11:30:39] INFO root fetch - main [MainThread]: Store serial: [23064456]
