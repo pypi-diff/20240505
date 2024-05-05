@@ -4033,3 +4033,33 @@
 [2024-05-05 07:04:05] WARNING root fetch - processPackages [justcard]: Skipping, unable to determine old version
 [2024-05-05 07:04:05] INFO root fetch - main [MainThread]: End processing [justcard] error
 [2024-05-05 07:04:05] INFO root fetch - main [MainThread]: Store serial: [23063216]
+[2024-05-05 07:06:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063216]
+[2024-05-05 07:06:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 07:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapid-pe
+[2024-05-05 07:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FFEM
+[2024-05-05 07:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meaningless
+[2024-05-05 07:06:14] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240504] Old Version: [0.1.2.dev20240503]
+[2024-05-05 07:06:14] INFO root fetch - processPackages [FFEM]: New version: [0.4.1] Old Version: [0.3.2]
+[2024-05-05 07:06:14] INFO root fetch - processPackages [meaningless]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-05 07:06:14] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/6d/5d/b4649b94a48df4a5913d3e04e966f3d42117c9f350d5960ca7bc5ba8f2f9/rapid_pe-0.1.2.dev20240503.tar.gz
+[2024-05-05 07:06:14] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/b1/38/5968557b2505831d3419ab9d38b84cb77e0a77d87e10da12774a98a0fb2a/FFEM-0.3.2.tar.gz
+[2024-05-05 07:06:14] INFO root fetch - processPackages [meaningless]: Downloading https://files.pythonhosted.org/packages/39/56/8639c2fd18270b5454034e0116d5e0d62a6d2ddd0b2a75d75ab1558feeaa/meaningless-1.0.0.tar.gz
+[2024-05-05 07:06:14] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/c1/4f/165d2bacf6b6840884592802b1ae2f1c04137de810df1b48447e7bc2f92a/rapid_pe-0.1.2.dev20240504.tar.gz
+[2024-05-05 07:06:14] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-05 07:06:14] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240503.tar.gz tmp/rapid_pe-0.1.2.dev20240504.tar.gz --markdown 20240505/r/rapid-pe/0.1.2.dev20240503-0.1.2.dev20240504/README.md --exclude *.pyd
+[2024-05-05 07:06:14] INFO root fetch - processPackages [meaningless]: Downloading https://files.pythonhosted.org/packages/ab/fb/876eeb84f25118c42e2bd47ac1f9d93792c9d5b7d8a05ff19cedf3ec1cf4/meaningless-1.1.0.tar.gz
+[2024-05-05 07:06:14] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/52/99/e41a3b2923347de23fe04dae19c17191bbab92c4f41d0b421b459e964a08/FFEM-0.4.1.tar.gz
+[2024-05-05 07:06:14] INFO root fetch - processPackages [meaningless]: executing diffoscope
+[2024-05-05 07:06:14] INFO root fetch - processPackages [meaningless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meaningless-1.0.0.tar.gz tmp/meaningless-1.1.0.tar.gz --markdown 20240505/m/meaningless/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-05 07:06:14] INFO root fetch - processPackages [FFEM]: executing diffoscope
+[2024-05-05 07:06:14] INFO root fetch - processPackages [FFEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFEM-0.3.2.tar.gz tmp/FFEM-0.4.1.tar.gz --markdown 20240505/F/FFEM/0.3.2-0.4.1/README.md --exclude *.pyd
+[2024-05-05 07:06:15] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240503.tar.gz]
+[2024-05-05 07:06:15] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240504.tar.gz]
+[2024-05-05 07:06:15] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-05 07:06:15] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.3.2.tar.gz]
+[2024-05-05 07:06:15] INFO root fetch - processPackages [meaningless]: Remove: archive file [/home/abi/fetcher/tmp/meaningless-1.0.0.tar.gz]
+[2024-05-05 07:06:15] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.4.1.tar.gz]
+[2024-05-05 07:06:15] INFO root fetch - processPackages [meaningless]: Remove: archive file [/home/abi/fetcher/tmp/meaningless-1.1.0.tar.gz]
+[2024-05-05 07:06:15] INFO root fetch - main [MainThread]: End processing [FFEM]: success
+[2024-05-05 07:06:15] INFO root fetch - main [MainThread]: End processing [meaningless]: success
+[2024-05-05 07:06:15] INFO root fetch - main [MainThread]: Store serial: [23063225]
