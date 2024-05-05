@@ -6018,3 +6018,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:14:08] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a205-py3-none-any.whl.zip]
 [2024-05-05 10:14:08] INFO root fetch - main [MainThread]: End processing [simplebox]: success
 [2024-05-05 10:14:08] INFO root fetch - main [MainThread]: Store serial: [23064070]
+[2024-05-05 10:16:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064070]
+[2024-05-05 10:16:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 10:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jiwer
+[2024-05-05 10:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pinjected
+[2024-05-05 10:16:17] INFO root fetch - processPackages [jiwer]: New version: [3.0.4] Old Version: [3.0.3]
+[2024-05-05 10:16:17] INFO root fetch - processPackages [pinjected]: New version: [0.2.50] Old Version: [0.2.49]
+[2024-05-05 10:16:17] INFO root fetch - processPackages [jiwer]: Downloading https://files.pythonhosted.org/packages/16/e7/bf582d69e01122c89571f993470519b87f8aaff5e409961293a448b6f051/jiwer-3.0.3.tar.gz
+[2024-05-05 10:16:17] INFO root fetch - processPackages [pinjected]: Downloading https://files.pythonhosted.org/packages/20/d0/58fad249c4cd93ff44b6fbc53c850a27b3afc248cfdca76f057bc7b77db1/pinjected-0.2.49.tar.gz
+[2024-05-05 10:16:18] INFO root fetch - processPackages [jiwer]: Downloading https://files.pythonhosted.org/packages/f3/1e/9db54957d7fa66272de22ec9c82f37089e9b15398273de41854840e6e21c/jiwer-3.0.4.tar.gz
+[2024-05-05 10:16:18] INFO root fetch - processPackages [pinjected]: Downloading https://files.pythonhosted.org/packages/9b/ae/a7f461f83da005f1c97430264506983f31c32b0c54598a65fe59f0f7d3ea/pinjected-0.2.50.tar.gz
+[2024-05-05 10:16:18] INFO root fetch - processPackages [jiwer]: executing diffoscope
+[2024-05-05 10:16:18] INFO root fetch - processPackages [jiwer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiwer-3.0.3.tar.gz tmp/jiwer-3.0.4.tar.gz --markdown 20240505/j/jiwer/3.0.3-3.0.4/README.md --exclude *.pyd
+[2024-05-05 10:16:18] INFO root fetch - processPackages [pinjected]: executing diffoscope
+[2024-05-05 10:16:18] INFO root fetch - processPackages [pinjected]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinjected-0.2.49.tar.gz tmp/pinjected-0.2.50.tar.gz --markdown 20240505/p/pinjected/0.2.49-0.2.50/README.md --exclude *.pyd
+[2024-05-05 10:16:18] INFO root fetch - processPackages [jiwer]: Remove: archive file [/home/abi/fetcher/tmp/jiwer-3.0.3.tar.gz]
+[2024-05-05 10:16:18] INFO root fetch - processPackages [jiwer]: Remove: archive file [/home/abi/fetcher/tmp/jiwer-3.0.4.tar.gz]
+[2024-05-05 10:16:18] INFO root fetch - main [MainThread]: End processing [jiwer]: success
+[2024-05-05 10:16:18] INFO root fetch - processPackages [pinjected]: Remove: archive file [/home/abi/fetcher/tmp/pinjected-0.2.49.tar.gz]
+[2024-05-05 10:16:18] INFO root fetch - processPackages [pinjected]: Remove: archive file [/home/abi/fetcher/tmp/pinjected-0.2.50.tar.gz]
+[2024-05-05 10:16:18] INFO root fetch - main [MainThread]: End processing [pinjected]: success
+[2024-05-05 10:16:18] INFO root fetch - main [MainThread]: Store serial: [23064076]
