@@ -7212,3 +7212,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:52:17] ERROR root fetch - processPackages [ALLMDEV]: Unable to fetch info: No such project/version 'ALLMDEV' 1.3.0
 [2024-05-05 11:52:17] INFO root fetch - main [MainThread]: End processing [ALLMDEV] error
 [2024-05-05 11:52:17] INFO root fetch - main [MainThread]: Store serial: [23064582]
+[2024-05-05 11:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064582]
+[2024-05-05 11:54:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goodwe
+[2024-05-05 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfastexcel
+[2024-05-05 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-pandas
+[2024-05-05 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embed-anything
+[2024-05-05 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NearBeach
+[2024-05-05 11:54:25] INFO root fetch - processPackages [goodwe]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-05 11:54:25] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 11:54:25] INFO root fetch - processPackages [goodwe]: Downloading https://files.pythonhosted.org/packages/fe/7a/d289b8680980bd746e0ae002260b8b48764f9df2bcce855a878c3d4bd30f/goodwe-0.3.3.tar.gz
+[2024-05-05 11:54:25] INFO root fetch - processPackages [pyfastexcel]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-05 11:54:25] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 11:54:25] INFO root fetch - processPackages [embed-anything]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 11:54:25] INFO root fetch - processPackages [NearBeach]: New version: [0.31.9] Old Version: [0.31.8]
+[2024-05-05 11:54:26] INFO root fetch - processPackages [pyfastexcel]: Downloading https://files.pythonhosted.org/packages/38/0e/4ddb0788c550c8d2a04986b3f01f5d1397cc700b18213dcc67559379346f/pyfastexcel-0.0.5.tar.gz
+[2024-05-05 11:54:26] INFO root fetch - processPackages [NearBeach]: Downloading https://files.pythonhosted.org/packages/d3/c9/4444a9584fae7ddaa87ff4efa7f16f8833a3827e50758749323b05d77edd/nearbeach-0.31.8.tar.gz
+[2024-05-05 11:54:26] INFO root fetch - processPackages [goodwe]: Downloading https://files.pythonhosted.org/packages/e8/fc/97f6eaab90a15252d4c2bf1b200a6dfd7520d1ef1dd7b4142948b75cc7e9/goodwe-0.3.4.tar.gz
+[2024-05-05 11:54:26] INFO root fetch - processPackages [embed-anything]: Downloading https://files.pythonhosted.org/packages/0b/de/6833a6f52a083aed0a6903049ddd3a59775dea6d8d49be143fd8e767e2b5/embed_anything-0.1.8.tar.gz
+[2024-05-05 11:54:26] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 11:54:26] WARNING root fetch - processPackages [NearBeach]: Skipping package: exceeds size limit 32530107>=10485760
+[2024-05-05 11:54:26] INFO root fetch - main [MainThread]: End processing [NearBeach] error
+[2024-05-05 11:54:26] INFO root fetch - processPackages [goodwe]: executing diffoscope
+[2024-05-05 11:54:26] INFO root fetch - processPackages [goodwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodwe-0.3.3.tar.gz tmp/goodwe-0.3.4.tar.gz --markdown 20240505/g/goodwe/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-05 11:54:26] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 11:54:26] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 11:54:26] INFO root fetch - processPackages [embed-anything]: Downloading https://files.pythonhosted.org/packages/fd/9b/e485e2b774254c26b7fb0ad0b5b4660008adfdb07ec0c23eee84e42cfda9/embed_anything-0.1.9.tar.gz
+[2024-05-05 11:54:26] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 11:54:26] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 11:54:26] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 11:54:26] INFO root fetch - processPackages [goodwe]: Remove: archive file [/home/abi/fetcher/tmp/goodwe-0.3.3.tar.gz]
+[2024-05-05 11:54:26] INFO root fetch - processPackages [goodwe]: Remove: archive file [/home/abi/fetcher/tmp/goodwe-0.3.4.tar.gz]
+[2024-05-05 11:54:26] INFO root fetch - main [MainThread]: End processing [goodwe]: success
+[2024-05-05 11:54:26] INFO root fetch - processPackages [embed-anything]: executing diffoscope
+[2024-05-05 11:54:26] INFO root fetch - processPackages [embed-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embed_anything-0.1.8.tar.gz tmp/embed_anything-0.1.9.tar.gz --markdown 20240505/e/embed-anything/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 11:54:27] INFO root fetch - processPackages [pyfastexcel]: Downloading https://files.pythonhosted.org/packages/1f/06/4e4878bc06f68176366ad20da7ea72d1df57e0844845c2c777ebf972e1bd/pyfastexcel-0.0.6.tar.gz
+[2024-05-05 11:54:27] INFO root fetch - processPackages [pyfastexcel]: executing diffoscope
+[2024-05-05 11:54:27] INFO root fetch - processPackages [pyfastexcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfastexcel-0.0.5.tar.gz tmp/pyfastexcel-0.0.6.tar.gz --markdown 20240505/p/pyfastexcel/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-05 11:54:27] INFO root fetch - processPackages [embed-anything]: Remove: archive file [/home/abi/fetcher/tmp/embed_anything-0.1.8.tar.gz]
+[2024-05-05 11:54:27] INFO root fetch - processPackages [embed-anything]: Remove: archive file [/home/abi/fetcher/tmp/embed_anything-0.1.9.tar.gz]
+[2024-05-05 11:54:27] INFO root fetch - main [MainThread]: End processing [embed-anything]: success
+[2024-05-05 11:56:31] INFO root fetch - processPackages [pyfastexcel]: Remove: archive file [/home/abi/fetcher/tmp/pyfastexcel-0.0.5.tar.gz]
+[2024-05-05 11:56:31] INFO root fetch - processPackages [pyfastexcel]: Remove: archive file [/home/abi/fetcher/tmp/pyfastexcel-0.0.6.tar.gz]
+[2024-05-05 11:56:31] INFO root fetch - main [MainThread]: End processing [pyfastexcel]: success
+[2024-05-05 11:56:31] INFO root fetch - main [MainThread]: Store serial: [23064597]
