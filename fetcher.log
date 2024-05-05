@@ -15023,3 +15023,36 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:53:27] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
 [2024-05-05 20:53:27] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2024-05-05 20:53:27] INFO root fetch - main [MainThread]: Store serial: [23068111]
+[2024-05-05 20:55:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068111]
+[2024-05-05 20:55:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 20:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyLauncherMPI
+[2024-05-05 20:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostkit
+[2024-05-05 20:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywgraph
+[2024-05-05 20:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: web-ui-helper
+[2024-05-05 20:55:36] INFO root fetch - processPackages [PyLauncherMPI]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-05 20:55:36] INFO root fetch - processPackages [web-ui-helper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 20:55:36] WARNING root fetch - processPackages [pywgraph]: Skipping, unable to determine old version
+[2024-05-05 20:55:36] INFO root fetch - main [MainThread]: End processing [pywgraph] error
+[2024-05-05 20:55:36] INFO root fetch - processPackages [PyLauncherMPI]: Downloading https://files.pythonhosted.org/packages/6e/cc/966bfc20cc87c09cf7a2a695928eb9e78effd196f15f5cd160637e8a55f5/pylaunchermpi-0.1.6.tar.gz
+[2024-05-05 20:55:36] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-05 20:55:36] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/8b/93/49dc1065832d53fd7be9cce42ce367cc7fdde3a1ca97da14b611258e611d/web-ui-helper-0.0.6.tar.gz
+[2024-05-05 20:55:36] INFO root fetch - processPackages [PyLauncherMPI]: Downloading https://files.pythonhosted.org/packages/48/4e/33c784ded17b0e14fce4e400f2e608e4434bd0dc30fed7609a829319b625/pylaunchermpi-0.1.7.tar.gz
+[2024-05-05 20:55:37] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-05 20:55:37] INFO root fetch - processPackages [PyLauncherMPI]: executing diffoscope
+[2024-05-05 20:55:37] INFO root fetch - processPackages [PyLauncherMPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylaunchermpi-0.1.6.tar.gz tmp/pylaunchermpi-0.1.7.tar.gz --markdown 20240505/P/PyLauncherMPI/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-05 20:55:37] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/4b/68/1e24ae0ff04473cebebb64b1d1cfad16f76009648f0acbeaf86a930c7f79/web-ui-helper-0.0.7.tar.gz
+[2024-05-05 20:55:37] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-05 20:55:37] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-0.0.6.tar.gz tmp/web-ui-helper-0.0.7.tar.gz --markdown 20240505/w/web-ui-helper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-05 20:55:37] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-05 20:55:37] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-05 20:55:37] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240505/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-05 20:55:37] INFO root fetch - processPackages [PyLauncherMPI]: Remove: archive file [/home/abi/fetcher/tmp/pylaunchermpi-0.1.6.tar.gz]
+[2024-05-05 20:55:37] INFO root fetch - processPackages [PyLauncherMPI]: Remove: archive file [/home/abi/fetcher/tmp/pylaunchermpi-0.1.7.tar.gz]
+[2024-05-05 20:55:37] INFO root fetch - main [MainThread]: End processing [PyLauncherMPI]: success
+[2024-05-05 20:55:37] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.6.tar.gz]
+[2024-05-05 20:55:37] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.7.tar.gz]
+[2024-05-05 20:55:37] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-05 20:55:38] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-05 20:55:38] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-05 20:55:38] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-05 20:55:38] INFO root fetch - main [MainThread]: Store serial: [23068123]
