@@ -4271,3 +4271,38 @@
 [2024-05-05 07:36:21] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.9.tar.gz]
 [2024-05-05 07:36:21] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
 [2024-05-05 07:36:21] INFO root fetch - main [MainThread]: Store serial: [23063305]
+[2024-05-05 07:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063305]
+[2024-05-05 07:38:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 07:40:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063305]
+[2024-05-05 07:40:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuantyLF
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ynab-split-budget
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-pos-partner-second-lastname
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-pos-product-expiry
+[2024-05-05 07:40:35] WARNING root fetch - processPackages [QuantyLF]: Skipping, unable to determine old version
+[2024-05-05 07:40:35] INFO root fetch - main [MainThread]: End processing [QuantyLF] error
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: New version: [17.0.1.0.0.8] Old Version: [17.0.1.0.0.7]
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: New version: [17.0.1.0.0.7] Old Version: [17.0.1.0.0.6]
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ynab-split-budget]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ynab-split-budget]: Downloading https://files.pythonhosted.org/packages/e8/9e/7e3ea61c6b9832635e167fbab642d391b129aa998ca27e4730a6043b9bac/ynab_split_budget-1.0.0.tar.gz
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: Downloading https://files.pythonhosted.org/packages/10/b0/6d9fd5ca694691ee64ccf7a4823c20ba51c7a105077ac488177167ce7859/odoo_addon_pos_product_expiry-17.0.1.0.0.7-py3-none-any.whl
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: Downloading https://files.pythonhosted.org/packages/f2/9e/74d822138eaebd6d41bd0e11de788a956d38c05d9db1ac761de12c2fb026/odoo_addon_pos_partner_second_lastname-17.0.1.0.0.6-py3-none-any.whl
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: Downloading https://files.pythonhosted.org/packages/79/fc/eaba1f9f746365a7f02b9633aa603f1e646c5608a8b47af5934a1c5f7dd3/odoo_addon_pos_product_expiry-17.0.1.0.0.8-py3-none-any.whl
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: Downloading https://files.pythonhosted.org/packages/67/56/ce4ccf5621031baf02e96aecfaf3a866bba61408eaf4fe12ce0514cc5ffc/odoo_addon_pos_partner_second_lastname-17.0.1.0.0.7-py3-none-any.whl
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ynab-split-budget]: Downloading https://files.pythonhosted.org/packages/ec/62/2d75ea57698b5dbf540336043bd89b1db831b4fae420751f5b45ac5d5282/ynab_split_budget-1.0.1.tar.gz
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: executing diffoscope
+[2024-05-05 07:40:35] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_product_expiry-17.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_pos_product_expiry-17.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-pos-product-expiry/17.0.1.0.0.7-17.0.1.0.0.8/README.md --exclude *.pyd
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ynab-split-budget]: executing diffoscope
+[2024-05-05 07:40:35] INFO root fetch - processPackages [ynab-split-budget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynab_split_budget-1.0.0.tar.gz tmp/ynab_split_budget-1.0.1.tar.gz --markdown 20240505/y/ynab-split-budget/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 07:40:36] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: executing diffoscope
+[2024-05-05 07:40:36] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_partner_second_lastname-17.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_pos_partner_second_lastname-17.0.1.0.0.7-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-pos-partner-second-lastname/17.0.1.0.0.6-17.0.1.0.0.7/README.md --exclude *.pyd
+[2024-05-05 07:40:36] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_product_expiry-17.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-05 07:40:36] INFO root fetch - processPackages [odoo-addon-pos-product-expiry]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_product_expiry-17.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-05 07:40:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-product-expiry]: success
+[2024-05-05 07:40:36] INFO root fetch - processPackages [ynab-split-budget]: Remove: archive file [/home/abi/fetcher/tmp/ynab_split_budget-1.0.0.tar.gz]
+[2024-05-05 07:40:36] INFO root fetch - processPackages [ynab-split-budget]: Remove: archive file [/home/abi/fetcher/tmp/ynab_split_budget-1.0.1.tar.gz]
+[2024-05-05 07:40:36] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_partner_second_lastname-17.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-05 07:40:36] INFO root fetch - main [MainThread]: End processing [ynab-split-budget]: success
+[2024-05-05 07:40:36] INFO root fetch - processPackages [odoo-addon-pos-partner-second-lastname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_partner_second_lastname-17.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-05 07:40:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-partner-second-lastname]: success
+[2024-05-05 07:40:36] INFO root fetch - main [MainThread]: Store serial: [23063316]
