@@ -10484,3 +10484,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:48:26] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17149167.tar.gz]
 [2024-05-05 15:48:26] INFO root fetch - main [MainThread]: End processing [utilmy]: success
 [2024-05-05 15:48:26] INFO root fetch - main [MainThread]: Store serial: [23066092]
+[2024-05-05 15:50:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066092]
+[2024-05-05 15:50:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 15:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-llms-azure-openai
+[2024-05-05 15:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hdsr-pygithub
+[2024-05-05 15:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PgQueuer
+[2024-05-05 15:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: assisted-service-client
+[2024-05-05 15:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nqrduck-autotm
+[2024-05-05 15:50:35] INFO root fetch - processPackages [hdsr-pygithub]: New version: [1.9] Old Version: [1.8]
+[2024-05-05 15:50:35] INFO root fetch - processPackages [PgQueuer]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-05 15:50:35] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2024-05-05 15:50:35] INFO root fetch - processPackages [nqrduck-autotm]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 15:50:35] INFO root fetch - processPackages [llama-index-llms-azure-openai]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-05 15:50:35] INFO root fetch - processPackages [PgQueuer]: Downloading https://files.pythonhosted.org/packages/a3/d7/21cbf8e32f847e181cec2a83c018fc69bdf62a556914cf6e8da7c354908d/pgqueuer-0.3.1.tar.gz
+[2024-05-05 15:50:35] INFO root fetch - processPackages [hdsr-pygithub]: Downloading https://files.pythonhosted.org/packages/41/f9/141e6b650cc5d419f4d1b0a37b76c17fc249842093c99e830ffe39515b3e/hdsr_pygithub-1.8.tar.gz
+[2024-05-05 15:50:35] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/a5/ee/a5837c5427b0689f863021f5d65c42ff9d4ae267905a751492653198b2dc/assisted_service_client-2.9.0.post8-py3-none-any.whl
+[2024-05-05 15:50:35] INFO root fetch - processPackages [llama-index-llms-azure-openai]: Downloading https://files.pythonhosted.org/packages/dc/69/92df3aab223d3f692eadda70771801b919b5a508e13ce28f8692ce4ea7c6/llama_index_llms_azure_openai-0.1.6.tar.gz
+[2024-05-05 15:50:35] INFO root fetch - processPackages [nqrduck-autotm]: Downloading https://files.pythonhosted.org/packages/dc/1c/e9d7d3f8a617ac186a2a00ddefa8a02822aca33e887e8b2faf57c243cbd8/nqrduck_autotm-0.0.3.tar.gz
+[2024-05-05 15:50:35] INFO root fetch - processPackages [hdsr-pygithub]: Downloading https://files.pythonhosted.org/packages/5d/42/aaeb22fc67e6d652872597b97abfc7cca20a0bf555240cce92c5858309f2/hdsr_pygithub-1.9.tar.gz
+[2024-05-05 15:50:35] INFO root fetch - processPackages [assisted-service-client]: Downloading https://files.pythonhosted.org/packages/f6/90/2599b3c134ea21c06d22f83dd1dfac6801d974b9aa0958f008fb332e5b4d/assisted_service_client-2.9.0.post9-py3-none-any.whl
+[2024-05-05 15:50:36] INFO root fetch - processPackages [PgQueuer]: Downloading https://files.pythonhosted.org/packages/b7/a7/71e95f1ac817aef2bd1b41759f37fe377863eef10ca9d6062223005fc004/pgqueuer-0.3.2.tar.gz
+[2024-05-05 15:50:36] INFO root fetch - processPackages [hdsr-pygithub]: executing diffoscope
+[2024-05-05 15:50:36] INFO root fetch - processPackages [hdsr-pygithub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdsr_pygithub-1.8.tar.gz tmp/hdsr_pygithub-1.9.tar.gz --markdown 20240505/h/hdsr-pygithub/1.8-1.9/README.md --exclude *.pyd
+[2024-05-05 15:50:36] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2024-05-05 15:50:36] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20240505/a/assisted-service-client/2.9.0.post8-2.9.0.post9/README.md --exclude *.pyd
+[2024-05-05 15:50:36] INFO root fetch - processPackages [PgQueuer]: executing diffoscope
+[2024-05-05 15:50:36] INFO root fetch - processPackages [PgQueuer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgqueuer-0.3.1.tar.gz tmp/pgqueuer-0.3.2.tar.gz --markdown 20240505/P/PgQueuer/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-05 15:50:36] INFO root fetch - processPackages [llama-index-llms-azure-openai]: Downloading https://files.pythonhosted.org/packages/6f/dc/2a81fa27a4073d68996f51d23e027cb3463b4ac2b6bf496b1b278f0def7d/llama_index_llms_azure_openai-0.1.7.tar.gz
+[2024-05-05 15:50:36] INFO root fetch - processPackages [llama-index-llms-azure-openai]: executing diffoscope
+[2024-05-05 15:50:36] INFO root fetch - processPackages [llama-index-llms-azure-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_llms_azure_openai-0.1.6.tar.gz tmp/llama_index_llms_azure_openai-0.1.7.tar.gz --markdown 20240505/l/llama-index-llms-azure-openai/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-05 15:50:36] INFO root fetch - processPackages [nqrduck-autotm]: Downloading https://files.pythonhosted.org/packages/b8/5f/dd06de1f42f63324a448c454b3d274e7fb7f138bd28df87f3b55c66a2ee3/nqrduck_autotm-0.0.4.tar.gz
+[2024-05-05 15:50:36] INFO root fetch - processPackages [hdsr-pygithub]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_pygithub-1.8.tar.gz]
+[2024-05-05 15:50:36] INFO root fetch - processPackages [hdsr-pygithub]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_pygithub-1.9.tar.gz]
+[2024-05-05 15:50:36] INFO root fetch - main [MainThread]: End processing [hdsr-pygithub]: success
+[2024-05-05 15:50:36] INFO root fetch - processPackages [nqrduck-autotm]: executing diffoscope
+[2024-05-05 15:50:36] INFO root fetch - processPackages [nqrduck-autotm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqrduck_autotm-0.0.3.tar.gz tmp/nqrduck_autotm-0.0.4.tar.gz --markdown 20240505/n/nqrduck-autotm/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 15:50:36] INFO root fetch - processPackages [PgQueuer]: Remove: archive file [/home/abi/fetcher/tmp/pgqueuer-0.3.1.tar.gz]
+[2024-05-05 15:50:36] INFO root fetch - processPackages [PgQueuer]: Remove: archive file [/home/abi/fetcher/tmp/pgqueuer-0.3.2.tar.gz]
+[2024-05-05 15:50:36] INFO root fetch - main [MainThread]: End processing [PgQueuer]: success
+[2024-05-05 15:50:37] INFO root fetch - processPackages [llama-index-llms-azure-openai]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_azure_openai-0.1.6.tar.gz]
+[2024-05-05 15:50:37] INFO root fetch - processPackages [llama-index-llms-azure-openai]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_azure_openai-0.1.7.tar.gz]
+[2024-05-05 15:50:37] INFO root fetch - main [MainThread]: End processing [llama-index-llms-azure-openai]: success
+[2024-05-05 15:50:37] INFO root fetch - processPackages [nqrduck-autotm]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_autotm-0.0.3.tar.gz]
+[2024-05-05 15:50:37] INFO root fetch - processPackages [nqrduck-autotm]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_autotm-0.0.4.tar.gz]
+[2024-05-05 15:50:37] INFO root fetch - main [MainThread]: End processing [nqrduck-autotm]: success
+[2024-05-05 15:50:37] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip]
+[2024-05-05 15:50:37] INFO root fetch - processPackages [assisted-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip]
+[2024-05-05 15:50:37] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2024-05-05 15:50:37] INFO root fetch - main [MainThread]: Store serial: [23066105]
