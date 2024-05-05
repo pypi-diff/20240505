@@ -2236,3 +2236,15 @@
 [2024-05-05 03:30:00] INFO root fetch - processPackages [kywy]: Remove: archive file [/home/abi/fetcher/tmp/kywy-0.18.0b9-py3-none-any.whl.zip]
 [2024-05-05 03:30:00] INFO root fetch - main [MainThread]: End processing [kywy]: success
 [2024-05-05 03:30:00] INFO root fetch - main [MainThread]: Store serial: [23062455]
+[2024-05-05 03:32:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062455]
+[2024-05-05 03:32:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 03:32:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiconnects
+[2024-05-05 03:32:08] INFO root fetch - processPackages [multiconnects]: New version: [2.34.9] Old Version: [2.34.8]
+[2024-05-05 03:32:09] INFO root fetch - processPackages [multiconnects]: Downloading https://files.pythonhosted.org/packages/ea/68/69ab32d5de939c5c369becb16ab181b05f4fbb61d809af9d6a14036fce73/multiconnects-2.34.8.tar.gz
+[2024-05-05 03:32:09] INFO root fetch - processPackages [multiconnects]: Downloading https://files.pythonhosted.org/packages/37/82/ba23e0ae6b83e6282c5646fdd704d0f8570c9a13af554c21b57a6e598708/multiconnects-2.34.9.tar.gz
+[2024-05-05 03:32:09] INFO root fetch - processPackages [multiconnects]: executing diffoscope
+[2024-05-05 03:32:09] INFO root fetch - processPackages [multiconnects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiconnects-2.34.8.tar.gz tmp/multiconnects-2.34.9.tar.gz --markdown 20240505/m/multiconnects/2.34.8-2.34.9/README.md --exclude *.pyd
+[2024-05-05 03:32:10] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.8.tar.gz]
+[2024-05-05 03:32:10] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.9.tar.gz]
+[2024-05-05 03:32:10] INFO root fetch - main [MainThread]: End processing [multiconnects]: success
+[2024-05-05 03:32:10] INFO root fetch - main [MainThread]: Store serial: [23062457]
