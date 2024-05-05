@@ -11984,3 +11984,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:31:37] INFO root fetch - processPackages [qstd-config]: Remove: archive file [/home/abi/fetcher/tmp/qstd_config-0.2.1.tar.gz]
 [2024-05-05 17:31:37] INFO root fetch - main [MainThread]: End processing [qstd-config]: success
 [2024-05-05 17:31:37] INFO root fetch - main [MainThread]: Store serial: [23066782]
+[2024-05-05 17:33:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066782]
+[2024-05-05 17:33:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 17:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lego-handlers
+[2024-05-05 17:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-kg
+[2024-05-05 17:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aisp
+[2024-05-05 17:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cortexapps-cli
+[2024-05-05 17:33:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyauth0
+[2024-05-05 17:33:45] INFO root fetch - processPackages [pyauth0]: New version: [0.1.4a0] Old Version: [0.1.3a2]
+[2024-05-05 17:33:45] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/f9/b2/8bdf82185c887bd561953d1ba3ab3f9e4595bbcb9f60fc363b990a6e2c38/pyauth0-0.1.3a2.tar.gz
+[2024-05-05 17:33:45] INFO root fetch - processPackages [llama-kg]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 17:33:45] INFO root fetch - processPackages [lego-handlers]: New version: [1.0.0] Old Version: [0.3.0]
+[2024-05-05 17:33:45] INFO root fetch - processPackages [aisp]: New version: [0.1.32] Old Version: [0.1.31]
+[2024-05-05 17:33:45] INFO root fetch - processPackages [cortexapps-cli]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 17:33:46] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/b9/af/789ebcfb1ab9b488fc431b6ca5b8ef85f8cc9680dfb87990c30aa5cc57e1/llama-kg-0.0.1.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c4/85/31803dcf0bc54ccc8518f43f94ef2bd2151a50b358f0dee7600b98b094e8/lego_handlers-0.3.0.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [aisp]: Downloading https://files.pythonhosted.org/packages/63/a1/67d442dc352bbc55aff7e2a5d2d25ab39698bd8e734a683269ffc082bff0/aisp-0.1.31.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [cortexapps-cli]: Downloading https://files.pythonhosted.org/packages/f9/60/ca63be5aa188f4ef481f2220f05c1f90014513d0e01a32c6b9e596f0712a/cortexapps_cli-0.8.0.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [pyauth0]: Downloading https://files.pythonhosted.org/packages/fc/0a/55beac2413cb594810381b6b96f41ec1c682ebe2a4acf88cea40d236a84e/pyauth0-0.1.4a0.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [pyauth0]: executing diffoscope
+[2024-05-05 17:33:46] INFO root fetch - processPackages [pyauth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyauth0-0.1.3a2.tar.gz tmp/pyauth0-0.1.4a0.tar.gz --markdown 20240505/p/pyauth0/0.1.3a2-0.1.4a0/README.md --exclude *.pyd
+[2024-05-05 17:33:46] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c2/92/fb611f90339b0cb7887f8a4b3d5ce153b922bcbc5598372613b045691a76/lego_handlers-1.0.0.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/e6/74/53ebc84ec09d842fdc2b81d705001aa06b6230bd64e685f8701120659351/llama-kg-0.0.2.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [aisp]: Downloading https://files.pythonhosted.org/packages/6a/bf/31bd7df00acf49eb96cec1bbeea6b4a1aa8688bb9d3106fc3af49fa58f38/aisp-0.1.32.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [cortexapps-cli]: Downloading https://files.pythonhosted.org/packages/ca/86/a771bd8cccb536f1a3c722757f36c7de2938a83a44fb9d602f3ddb5b554a/cortexapps_cli-0.9.0.tar.gz
+[2024-05-05 17:33:46] INFO root fetch - processPackages [lego-handlers]: executing diffoscope
+[2024-05-05 17:33:46] INFO root fetch - processPackages [lego-handlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lego_handlers-0.3.0.tar.gz tmp/lego_handlers-1.0.0.tar.gz --markdown 20240505/l/lego-handlers/0.3.0-1.0.0/README.md --exclude *.pyd
+[2024-05-05 17:33:46] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 17:33:46] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.1.tar.gz tmp/llama-kg-0.0.2.tar.gz --markdown 20240505/l/llama-kg/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 17:33:46] INFO root fetch - processPackages [aisp]: executing diffoscope
+[2024-05-05 17:33:46] INFO root fetch - processPackages [aisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisp-0.1.31.tar.gz tmp/aisp-0.1.32.tar.gz --markdown 20240505/a/aisp/0.1.31-0.1.32/README.md --exclude *.pyd
+[2024-05-05 17:33:46] INFO root fetch - processPackages [cortexapps-cli]: executing diffoscope
+[2024-05-05 17:33:46] INFO root fetch - processPackages [cortexapps-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortexapps_cli-0.8.0.tar.gz tmp/cortexapps_cli-0.9.0.tar.gz --markdown 20240505/c/cortexapps-cli/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-05 17:33:46] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.3a2.tar.gz]
+[2024-05-05 17:33:46] INFO root fetch - processPackages [pyauth0]: Remove: archive file [/home/abi/fetcher/tmp/pyauth0-0.1.4a0.tar.gz]
+[2024-05-05 17:33:46] INFO root fetch - main [MainThread]: End processing [pyauth0]: success
+[2024-05-05 17:33:47] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-0.3.0.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.0.0.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - main [MainThread]: End processing [lego-handlers]: success
+[2024-05-05 17:33:47] INFO root fetch - processPackages [cortexapps-cli]: Remove: archive file [/home/abi/fetcher/tmp/cortexapps_cli-0.8.0.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - processPackages [cortexapps-cli]: Remove: archive file [/home/abi/fetcher/tmp/cortexapps_cli-0.9.0.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - main [MainThread]: End processing [cortexapps-cli]: success
+[2024-05-05 17:33:47] INFO root fetch - processPackages [aisp]: Remove: archive file [/home/abi/fetcher/tmp/aisp-0.1.31.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - processPackages [aisp]: Remove: archive file [/home/abi/fetcher/tmp/aisp-0.1.32.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - main [MainThread]: End processing [aisp]: success
+[2024-05-05 17:33:47] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.1.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.2.tar.gz]
+[2024-05-05 17:33:47] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 17:33:47] INFO root fetch - main [MainThread]: Store serial: [23066797]
