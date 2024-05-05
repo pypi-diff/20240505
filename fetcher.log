@@ -15002,3 +15002,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:51:17] INFO root fetch - processPackages [smithed]: Remove: archive file [/home/abi/fetcher/tmp/smithed-0.9.3.tar.gz]
 [2024-05-05 20:51:17] INFO root fetch - main [MainThread]: End processing [smithed]: success
 [2024-05-05 20:51:17] INFO root fetch - main [MainThread]: Store serial: [23068106]
+[2024-05-05 20:53:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068106]
+[2024-05-05 20:53:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 20:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lapa-file-store
+[2024-05-05 20:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peaqevcore
+[2024-05-05 20:53:26] INFO root fetch - processPackages [lapa-file-store]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 20:53:26] INFO root fetch - processPackages [lapa-file-store]: Downloading https://files.pythonhosted.org/packages/66/40/059cd8a53ee83a040abb5cb411dd01e024eb25bc2c8d9686a4a7c2c5ad70/lapa_file_store-0.0.8.tar.gz
+[2024-05-05 20:53:26] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-05 20:53:26] INFO root fetch - processPackages [lapa-file-store]: Downloading https://files.pythonhosted.org/packages/7e/c9/aa2294b4bf940339d41d4a860cdf92f0f495aaf71d9fccc81a5df4c858c6/lapa_file_store-0.0.9.tar.gz
+[2024-05-05 20:53:26] INFO root fetch - processPackages [lapa-file-store]: executing diffoscope
+[2024-05-05 20:53:26] INFO root fetch - processPackages [lapa-file-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_file_store-0.0.8.tar.gz tmp/lapa_file_store-0.0.9.tar.gz --markdown 20240505/l/lapa-file-store/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 20:53:26] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-05 20:53:26] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-05 20:53:27] INFO root fetch - processPackages [lapa-file-store]: Remove: archive file [/home/abi/fetcher/tmp/lapa_file_store-0.0.8.tar.gz]
+[2024-05-05 20:53:27] INFO root fetch - processPackages [lapa-file-store]: Remove: archive file [/home/abi/fetcher/tmp/lapa_file_store-0.0.9.tar.gz]
+[2024-05-05 20:53:27] INFO root fetch - main [MainThread]: End processing [lapa-file-store]: success
+[2024-05-05 20:53:27] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-05 20:53:27] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240505/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-05 20:53:27] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-05 20:53:27] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-05 20:53:27] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-05 20:53:27] INFO root fetch - main [MainThread]: Store serial: [23068111]
