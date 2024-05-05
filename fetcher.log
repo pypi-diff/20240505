@@ -7094,3 +7094,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:39:19] INFO root fetch - processPackages [dartrs]: Remove: archive file [/home/abi/fetcher/tmp/dartrs-0.1.1.tar.gz]
 [2024-05-05 11:39:19] INFO root fetch - main [MainThread]: End processing [dartrs]: success
 [2024-05-05 11:39:19] INFO root fetch - main [MainThread]: Store serial: [23064498]
+[2024-05-05 11:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064498]
+[2024-05-05 11:41:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 11:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botasaurus-proxy-authentication
+[2024-05-05 11:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multiconnection
+[2024-05-05 11:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zfx
+[2024-05-05 11:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abstract-pandas
+[2024-05-05 11:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xcloudClients
+[2024-05-05 11:41:29] INFO root fetch - processPackages [zfx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 11:41:29] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 11:41:29] WARNING root fetch - processPackages [xcloudClients]: Skipping, unable to determine old version
+[2024-05-05 11:41:29] INFO root fetch - main [MainThread]: End processing [xcloudClients] error
+[2024-05-05 11:41:30] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/59/eb/f257e3407edfa0e36bd6d262b25e02023066e104ba26d20cee83a63198f0/zfx-1.0.8.tar.gz
+[2024-05-05 11:41:30] INFO root fetch - processPackages [botasaurus-proxy-authentication]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 11:41:30] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 11:41:30] WARNING root fetch - processPackages [multiconnection]: Skipping, unable to determine old version
+[2024-05-05 11:41:30] INFO root fetch - main [MainThread]: End processing [multiconnection] error
+[2024-05-05 11:41:30] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Downloading https://files.pythonhosted.org/packages/79/c5/c8800f375c5477ba9dad4440c1befa1e7e22f3072d4ec401614b39e91345/botasaurus_proxy_authentication-1.0.8.tar.gz
+[2024-05-05 11:41:30] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/79/72/81e8c9f95e9effa80a25b20d494a3c3b21ed5cbbd53440c562d52fe8fe8a/zfx-1.0.9.tar.gz
+[2024-05-05 11:41:30] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 11:41:30] INFO root fetch - processPackages [zfx]: executing diffoscope
+[2024-05-05 11:41:30] INFO root fetch - processPackages [zfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfx-1.0.8.tar.gz tmp/zfx-1.0.9.tar.gz --markdown 20240505/z/zfx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 11:41:30] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 11:41:30] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 11:41:30] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Downloading https://files.pythonhosted.org/packages/7b/77/44e453ceaffb7ce5bbc256dbef18a6090ccbd5ddb52ee74559de0fc93571/botasaurus_proxy_authentication-1.0.9.tar.gz
+[2024-05-05 11:41:30] INFO root fetch - processPackages [botasaurus-proxy-authentication]: executing diffoscope
+[2024-05-05 11:41:30] INFO root fetch - processPackages [botasaurus-proxy-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus_proxy_authentication-1.0.8.tar.gz tmp/botasaurus_proxy_authentication-1.0.9.tar.gz --markdown 20240505/b/botasaurus-proxy-authentication/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 11:41:30] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 11:41:30] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 11:41:30] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 11:41:31] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.8.tar.gz]
+[2024-05-05 11:41:31] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
+[2024-05-05 11:41:31] INFO root fetch - main [MainThread]: End processing [zfx]: success
+[2024-05-05 11:41:31] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_proxy_authentication-1.0.8.tar.gz]
+[2024-05-05 11:41:31] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_proxy_authentication-1.0.9.tar.gz]
+[2024-05-05 11:41:31] INFO root fetch - main [MainThread]: End processing [botasaurus-proxy-authentication]: success
+[2024-05-05 11:41:31] INFO root fetch - main [MainThread]: Store serial: [23064543]
