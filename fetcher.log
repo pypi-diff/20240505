@@ -1217,3 +1217,45 @@
 [2024-05-05 02:11:58] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405050010.tar.gz]
 [2024-05-05 02:11:58] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-05-05 02:11:58] INFO root fetch - main [MainThread]: Store serial: [23061993]
+[2024-05-05 02:14:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061993]
+[2024-05-05 02:14:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-events-notify
+[2024-05-05 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: empirical-calibration
+[2024-05-05 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-nag
+[2024-05-05 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-gitlab-runner
+[2024-05-05 02:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hypersync
+[2024-05-05 02:14:06] WARNING root fetch - processPackages [empirical-calibration]: Skipping, unable to determine old version
+[2024-05-05 02:14:06] INFO root fetch - main [MainThread]: End processing [empirical-calibration] error
+[2024-05-05 02:14:06] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2024-05-05 02:14:06] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-05 02:14:06] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/8a/6e/f1c520e407ce3adf90b51d2d1ca84d283a08c808fc00c9deeff4f4734d82/cdktf-gitlab-runner-0.0.98.tar.gz
+[2024-05-05 02:14:06] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/26/bc/b8768e307b8d360b78f45303ac30baa4232637f372296203b0005cd07cd4/cdk-nag-2.9.6.tar.gz
+[2024-05-05 02:14:06] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-05 02:14:06] INFO root fetch - processPackages [hypersync]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/59/f2/0d7ab5ec05a2b43bd92c00fd237afddb1e2770c7edaf03b1f7ddef6c0793/cdktf-gitlab-runner-0.0.99.tar.gz
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-05 02:14:07] INFO root fetch - processPackages [hypersync]: Downloading https://files.pythonhosted.org/packages/70/50/fe310681332ec77e8e103a538ab65ae3dd5e0d19cc0cf794d120441fa4c8/hypersync-0.6.1.tar.gz
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/71/78/6a2d0c627f1033774d5be3d2faca465e0bc0b07cf97cec491c795775999a/cdk-nag-2.9.7.tar.gz
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20240505/c/cdktf-gitlab-runner/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240505/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20240505/c/cdk-nag/2.9.6-2.9.7/README.md --exclude *.pyd
+[2024-05-05 02:14:07] INFO root fetch - processPackages [hypersync]: Downloading https://files.pythonhosted.org/packages/a3/fb/f3ab0d13ddd7ad3a48474856a7992e9e1aba760a09a3eec3e041b3d22907/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.98.tar.gz]
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.99.tar.gz]
+[2024-05-05 02:14:07] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.6.tar.gz]
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.7.tar.gz]
+[2024-05-05 02:14:07] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-05 02:14:07] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-05 02:14:07] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-05 02:14:10] INFO root fetch - processPackages [hypersync]: executing diffoscope
+[2024-05-05 02:14:10] INFO root fetch - processPackages [hypersync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypersync-0.6.1.tar.gz tmp/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240505/h/hypersync/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-05 02:14:11] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.6.1.tar.gz]
+[2024-05-05 02:14:11] INFO root fetch - processPackages [hypersync]: Remove: archive file [/home/abi/fetcher/tmp/hypersync-0.6.2-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-05-05 02:14:11] INFO root fetch - main [MainThread]: End processing [hypersync]: success
+[2024-05-05 02:14:11] INFO root fetch - main [MainThread]: Store serial: [23062004]
