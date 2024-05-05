@@ -5723,3 +5723,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:43:46] INFO root fetch - processPackages [rofi-rbw]: Remove: archive file [/home/abi/fetcher/tmp/rofi_rbw-1.4.2.tar.gz]
 [2024-05-05 09:43:46] INFO root fetch - main [MainThread]: End processing [rofi-rbw]: success
 [2024-05-05 09:43:46] INFO root fetch - main [MainThread]: Store serial: [23063935]
+[2024-05-05 09:45:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063935]
+[2024-05-05 09:45:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 09:45:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STAIR-tools
+[2024-05-05 09:45:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-05-05 09:45:54] INFO root fetch - processPackages [STAIR-tools]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-05 09:45:54] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-05 09:45:54] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/28/3b/5abfdb8bb181b41279f26e453d7e50b09f52a22430c23428dc6782a5e125/STAIR-tools-1.2.2.tar.gz
+[2024-05-05 09:45:55] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-05 09:45:55] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/a9/cc/fbe2fbd002d65a93043b8592576f900904493dfb5f0e1aed480df6fa36a7/STAIR-tools-1.2.3.tar.gz
+[2024-05-05 09:45:55] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-05 09:45:55] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-05-05 09:45:55] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.2.2.tar.gz tmp/STAIR-tools-1.2.3.tar.gz --markdown 20240505/S/STAIR-tools/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-05 09:45:55] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-05 09:45:55] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240505/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-05 09:45:55] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.2.2.tar.gz]
+[2024-05-05 09:45:55] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.2.3.tar.gz]
+[2024-05-05 09:45:55] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-05-05 09:45:56] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-05 09:45:56] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-05 09:45:56] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-05 09:45:56] INFO root fetch - main [MainThread]: Store serial: [23063941]
