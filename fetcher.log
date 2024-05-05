@@ -13764,3 +13764,41 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:18:38] INFO root fetch - processPackages [fastbencode]: Remove: archive file [/home/abi/fetcher/tmp/fastbencode-0.3.1-pp310-pypy310_pp73-macosx_11_0_arm64.whl.zip]
 [2024-05-05 19:18:38] INFO root fetch - main [MainThread]: End processing [fastbencode]: success
 [2024-05-05 19:18:38] INFO root fetch - main [MainThread]: Store serial: [23067531]
+[2024-05-05 19:20:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067531]
+[2024-05-05 19:20:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 19:22:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067546]
+[2024-05-05 19:22:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 19:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epimodel-sensitivity-test
+[2024-05-05 19:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MainFileHostUtils
+[2024-05-05 19:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbkit
+[2024-05-05 19:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fact-checker
+[2024-05-05 19:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 19:22:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.4.1] Old Version: [4.4.0]
+[2024-05-05 19:22:52] WARNING root fetch - processPackages [fact-checker]: Skipping, unable to determine old version
+[2024-05-05 19:22:52] INFO root fetch - main [MainThread]: End processing [fact-checker] error
+[2024-05-05 19:22:52] INFO root fetch - processPackages [lbkit]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-05 19:22:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/81/0a/7e54cac88d7701bbdb64f3a2afd328b4d07f9e924af3b5722e6488a7e959/Buke_autoTrade_Pypi-4.4.0.tar.gz
+[2024-05-05 19:22:52] INFO root fetch - processPackages [epimodel-sensitivity-test]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 19:22:52] WARNING root fetch - processPackages [MainFileHostUtils]: Skipping, unable to determine old version
+[2024-05-05 19:22:52] INFO root fetch - main [MainThread]: End processing [MainFileHostUtils] error
+[2024-05-05 19:22:53] INFO root fetch - processPackages [epimodel-sensitivity-test]: Downloading https://files.pythonhosted.org/packages/8e/7f/0d0d25c57a332c235ca8795a2d7c90b66a2fb95df691edb26f3e2ea592a4/epimodel_sensitivity_test-0.1.8.tar.gz
+[2024-05-05 19:22:53] INFO root fetch - processPackages [lbkit]: Downloading https://files.pythonhosted.org/packages/9b/f6/aa3dbe61ee89aba83e2fb9fad8fed292a29c88e405659427943f3ea61651/lbkit-0.5.8.tar.gz
+[2024-05-05 19:22:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/2e/c1/301f1ce40373acb2cc13e792e48f08f82481ea3201cec134dfc7000470f6/Buke_autoTrade_Pypi-4.4.1.tar.gz
+[2024-05-05 19:22:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 19:22:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.4.0.tar.gz tmp/Buke_autoTrade_Pypi-4.4.1.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.4.0-4.4.1/README.md --exclude *.pyd
+[2024-05-05 19:22:53] INFO root fetch - processPackages [epimodel-sensitivity-test]: Downloading https://files.pythonhosted.org/packages/d7/d7/8b62d5443dfbe8593c57e1b827c1944ff940d9e7dcf8041f4a4ff5a17fd4/epimodel_sensitivity_test-0.1.9.tar.gz
+[2024-05-05 19:22:53] INFO root fetch - processPackages [lbkit]: Downloading https://files.pythonhosted.org/packages/d0/24/c5bde542e91b4c974f5c6571751440689d1745d5d1ede0058d5d010fd0f3/lbkit-0.5.9.tar.gz
+[2024-05-05 19:22:53] INFO root fetch - processPackages [lbkit]: executing diffoscope
+[2024-05-05 19:22:53] INFO root fetch - processPackages [lbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbkit-0.5.8.tar.gz tmp/lbkit-0.5.9.tar.gz --markdown 20240505/l/lbkit/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-05 19:22:53] INFO root fetch - processPackages [epimodel-sensitivity-test]: executing diffoscope
+[2024-05-05 19:22:53] INFO root fetch - processPackages [epimodel-sensitivity-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epimodel_sensitivity_test-0.1.8.tar.gz tmp/epimodel_sensitivity_test-0.1.9.tar.gz --markdown 20240505/e/epimodel-sensitivity-test/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 19:22:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.0.tar.gz]
+[2024-05-05 19:22:53] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.1.tar.gz]
+[2024-05-05 19:22:53] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 19:22:54] INFO root fetch - processPackages [epimodel-sensitivity-test]: Remove: archive file [/home/abi/fetcher/tmp/epimodel_sensitivity_test-0.1.8.tar.gz]
+[2024-05-05 19:22:54] INFO root fetch - processPackages [epimodel-sensitivity-test]: Remove: archive file [/home/abi/fetcher/tmp/epimodel_sensitivity_test-0.1.9.tar.gz]
+[2024-05-05 19:22:54] INFO root fetch - main [MainThread]: End processing [epimodel-sensitivity-test]: success
+[2024-05-05 19:22:54] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.8.tar.gz]
+[2024-05-05 19:22:54] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.9.tar.gz]
+[2024-05-05 19:22:54] INFO root fetch - main [MainThread]: End processing [lbkit]: success
+[2024-05-05 19:22:54] INFO root fetch - main [MainThread]: Store serial: [23067565]
