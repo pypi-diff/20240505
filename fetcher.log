@@ -4590,3 +4590,51 @@
 [2024-05-05 08:08:58] INFO root fetch - processPackages [generate-tools]: Remove: archive file [/home/abi/fetcher/tmp/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-05 08:08:58] INFO root fetch - main [MainThread]: End processing [generate-tools]: success
 [2024-05-05 08:08:58] INFO root fetch - main [MainThread]: Store serial: [23063453]
+[2024-05-05 08:11:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063453]
+[2024-05-05 08:11:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 08:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2024-05-05 08:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-fts
+[2024-05-05 08:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bdownload
+[2024-05-05 08:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cpg-workflows
+[2024-05-05 08:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: generate-tools
+[2024-05-05 08:11:06] INFO root fetch - processPackages [generate-tools]: New version: [0.1.2] Old Version: [0.1.1.dev4]
+[2024-05-05 08:11:06] INFO root fetch - processPackages [cpg-workflows]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-05 08:11:06] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 08:11:07] INFO root fetch - processPackages [generate-tools]: Downloading https://files.pythonhosted.org/packages/03/30/c102f1c6d72af5efefb807246b602180a2f3ab4af9e9e5e22ee7b1d75ed2/generate_tools-0.1.1.dev4-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 08:11:07] INFO root fetch - processPackages [bdownload]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-05 08:11:07] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/a4/72/e5ed8aed67daafdeeaee77ce84706e7b284c03900bebc8b4c9a5418c9100/yt-fts-0.1.8.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240505] Old Version: [2.6.0.dev20240504]
+[2024-05-05 08:11:07] INFO root fetch - processPackages [cpg-workflows]: Downloading https://files.pythonhosted.org/packages/97/85/ebcf50223506f96abcfa077315ab244e192faa632ed400789582dcf565e0/cpg-workflows-1.9.0.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [bdownload]: Downloading https://files.pythonhosted.org/packages/44/03/b0ecb1460919c8895c181b89461a187b6e6c894092fdd34e3dfda796c23f/bdownload-0.1.9.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/07/27/81af49bf3228838a5be25585fd9eafb45419bd52a1bd7d47660f8fd3f1e6/yt-fts-0.1.9.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/57/bc/5b8e5c52b50f0cd203373899da0c310f150bd2eb4da389c9eef280590398/pyg_nightly-2.6.0.dev20240504.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [cpg-workflows]: Downloading https://files.pythonhosted.org/packages/0d/82/bd0cb905c3b340f5cd9b1eb95911c5444e8ba0f6369afc3c60336fed7e14/cpg-workflows-1.9.1.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2024-05-05 08:11:07] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20240505/y/yt-fts/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 08:11:07] INFO root fetch - processPackages [cpg-workflows]: executing diffoscope
+[2024-05-05 08:11:07] INFO root fetch - processPackages [cpg-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpg-workflows-1.9.0.tar.gz tmp/cpg-workflows-1.9.1.tar.gz --markdown 20240505/c/cpg-workflows/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-05 08:11:07] INFO root fetch - processPackages [generate-tools]: Downloading https://files.pythonhosted.org/packages/be/4d/dac25fe1ee8f13d3c87a48ec784b63d8bd30b45fcc0c31ecbffc41779990/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 08:11:07] INFO root fetch - processPackages [bdownload]: Downloading https://files.pythonhosted.org/packages/f5/e4/baffe731404e999c383be45b414eceae866e4a4f07b19ae67958ebe767ca/bdownload-0.2.0.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [bdownload]: executing diffoscope
+[2024-05-05 08:11:07] INFO root fetch - processPackages [bdownload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdownload-0.1.9.tar.gz tmp/bdownload-0.2.0.tar.gz --markdown 20240505/b/bdownload/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-05 08:11:07] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/a7/b7/f0f8c92fc80f1bbd246062918b9bb4ef1b35afe073d209391c5e70e2aaea/pyg_nightly-2.6.0.dev20240505.tar.gz
+[2024-05-05 08:11:07] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-05-05 08:11:07] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240504.tar.gz tmp/pyg_nightly-2.6.0.dev20240505.tar.gz --markdown 20240505/p/pyg-nightly/2.6.0.dev20240504-2.6.0.dev20240505/README.md --exclude *.pyd
+[2024-05-05 08:11:08] INFO root fetch - processPackages [generate-tools]: executing diffoscope
+[2024-05-05 08:11:08] INFO root fetch - processPackages [generate-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generate_tools-0.1.1.dev4-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240505/g/generate-tools/0.1.1.dev4-0.1.2/README.md --exclude *.pyd
+[2024-05-05 08:11:08] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.8.tar.gz]
+[2024-05-05 08:11:08] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.9.tar.gz]
+[2024-05-05 08:11:08] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2024-05-05 08:11:08] INFO root fetch - processPackages [cpg-workflows]: Remove: archive file [/home/abi/fetcher/tmp/cpg-workflows-1.9.0.tar.gz]
+[2024-05-05 08:11:08] INFO root fetch - processPackages [cpg-workflows]: Remove: archive file [/home/abi/fetcher/tmp/cpg-workflows-1.9.1.tar.gz]
+[2024-05-05 08:11:08] INFO root fetch - main [MainThread]: End processing [cpg-workflows]: success
+[2024-05-05 08:11:08] INFO root fetch - processPackages [bdownload]: Remove: archive file [/home/abi/fetcher/tmp/bdownload-0.1.9.tar.gz]
+[2024-05-05 08:11:08] INFO root fetch - processPackages [bdownload]: Remove: archive file [/home/abi/fetcher/tmp/bdownload-0.2.0.tar.gz]
+[2024-05-05 08:11:08] INFO root fetch - main [MainThread]: End processing [bdownload]: success
+[2024-05-05 08:11:10] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240504.tar.gz]
+[2024-05-05 08:11:10] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240505.tar.gz]
+[2024-05-05 08:11:10] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-05-05 08:11:10] INFO root fetch - processPackages [generate-tools]: Remove: archive file [/home/abi/fetcher/tmp/generate_tools-0.1.1.dev4-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-05 08:11:10] INFO root fetch - processPackages [generate-tools]: Remove: archive file [/home/abi/fetcher/tmp/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-05 08:11:10] INFO root fetch - main [MainThread]: End processing [generate-tools]: success
+[2024-05-05 08:11:10] INFO root fetch - main [MainThread]: Store serial: [23063470]
