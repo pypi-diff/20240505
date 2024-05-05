@@ -16050,3 +16050,42 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:54:44] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.3.tar.gz]
 [2024-05-05 21:54:44] INFO root fetch - main [MainThread]: End processing [agent-bdi]: success
 [2024-05-05 21:54:44] INFO root fetch - main [MainThread]: Store serial: [23068609]
+[2024-05-05 21:56:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068609]
+[2024-05-05 21:56:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 21:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PrioNet
+[2024-05-05 21:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-nets-core
+[2024-05-05 21:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: d-jwt-auth
+[2024-05-05 21:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flash1dkmeans
+[2024-05-05 21:56:53] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.77] Old Version: [0.1.76]
+[2024-05-05 21:56:53] INFO root fetch - processPackages [flash1dkmeans]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-05 21:56:53] INFO root fetch - processPackages [d-jwt-auth]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 21:56:53] INFO root fetch - processPackages [PrioNet]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-05 21:56:53] INFO root fetch - processPackages [flash1dkmeans]: Downloading https://files.pythonhosted.org/packages/b3/50/90053ab4f0d7ee7cbad56af55e87109fbe9b035b28da8ca36e55173d753a/flash1dkmeans-0.0.4.tar.gz
+[2024-05-05 21:56:53] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/5c/00/b798ab54b62cdfce1f84e00d813f05a7c42b05651945a8d66e711f4c1197/django_nets_core-0.1.76.tar.gz
+[2024-05-05 21:56:53] INFO root fetch - processPackages [d-jwt-auth]: Downloading https://files.pythonhosted.org/packages/4b/37/affa5129b0405bf838914f5a640d39d2efb857b5dec57be1644ed9659b88/d_jwt_auth-0.0.2.tar.gz
+[2024-05-05 21:56:53] INFO root fetch - processPackages [PrioNet]: Downloading https://files.pythonhosted.org/packages/8e/1f/28bac2bfadfe651c0497e2e934fa962e8792cd340bc9b19648aead6306c6/prionet-0.0.0.tar.gz
+[2024-05-05 21:56:54] INFO root fetch - processPackages [flash1dkmeans]: Downloading https://files.pythonhosted.org/packages/2b/83/22fdd6fddef2d32e7203ad82bb9401fa402ac5c753197919d1407c2a9d73/flash1dkmeans-0.0.5.tar.gz
+[2024-05-05 21:56:54] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/63/9e/b36291b5d930d1f9787a97bf6db2dbf290b93c0ce158036c095312e66ad5/django_nets_core-0.1.77.tar.gz
+[2024-05-05 21:56:54] INFO root fetch - processPackages [d-jwt-auth]: Downloading https://files.pythonhosted.org/packages/c3/62/851a1f5e723420d9e7c7aa1c34e7ea0d66d97161db1f7efd2948b343441d/d_jwt_auth-0.0.3.tar.gz
+[2024-05-05 21:56:54] INFO root fetch - processPackages [flash1dkmeans]: executing diffoscope
+[2024-05-05 21:56:54] INFO root fetch - processPackages [flash1dkmeans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash1dkmeans-0.0.4.tar.gz tmp/flash1dkmeans-0.0.5.tar.gz --markdown 20240505/f/flash1dkmeans/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-05 21:56:54] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-05 21:56:54] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.76.tar.gz tmp/django_nets_core-0.1.77.tar.gz --markdown 20240505/d/django-nets-core/0.1.76-0.1.77/README.md --exclude *.pyd
+[2024-05-05 21:56:54] INFO root fetch - processPackages [PrioNet]: Downloading https://files.pythonhosted.org/packages/aa/01/334b05a9bc588ac3d96921a8f41b8922a42d9a76cba8e3a04652b844acef/prionet-0.0.1.tar.gz
+[2024-05-05 21:56:54] INFO root fetch - processPackages [d-jwt-auth]: executing diffoscope
+[2024-05-05 21:56:54] INFO root fetch - processPackages [d-jwt-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d_jwt_auth-0.0.2.tar.gz tmp/d_jwt_auth-0.0.3.tar.gz --markdown 20240505/d/d-jwt-auth/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 21:56:54] INFO root fetch - processPackages [PrioNet]: executing diffoscope
+[2024-05-05 21:56:54] INFO root fetch - processPackages [PrioNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prionet-0.0.0.tar.gz tmp/prionet-0.0.1.tar.gz --markdown 20240505/P/PrioNet/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-05 21:56:54] INFO root fetch - processPackages [PrioNet]: Remove: archive file [/home/abi/fetcher/tmp/prionet-0.0.0.tar.gz]
+[2024-05-05 21:56:54] INFO root fetch - processPackages [PrioNet]: Remove: archive file [/home/abi/fetcher/tmp/prionet-0.0.1.tar.gz]
+[2024-05-05 21:56:54] INFO root fetch - main [MainThread]: End processing [PrioNet]: success
+[2024-05-05 21:56:55] INFO root fetch - processPackages [d-jwt-auth]: Remove: archive file [/home/abi/fetcher/tmp/d_jwt_auth-0.0.2.tar.gz]
+[2024-05-05 21:56:55] INFO root fetch - processPackages [d-jwt-auth]: Remove: archive file [/home/abi/fetcher/tmp/d_jwt_auth-0.0.3.tar.gz]
+[2024-05-05 21:56:55] INFO root fetch - main [MainThread]: End processing [d-jwt-auth]: success
+[2024-05-05 21:56:55] INFO root fetch - processPackages [flash1dkmeans]: Remove: archive file [/home/abi/fetcher/tmp/flash1dkmeans-0.0.4.tar.gz]
+[2024-05-05 21:56:55] INFO root fetch - processPackages [flash1dkmeans]: Remove: archive file [/home/abi/fetcher/tmp/flash1dkmeans-0.0.5.tar.gz]
+[2024-05-05 21:56:55] INFO root fetch - main [MainThread]: End processing [flash1dkmeans]: success
+[2024-05-05 21:56:55] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.76.tar.gz]
+[2024-05-05 21:56:55] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.77.tar.gz]
+[2024-05-05 21:56:55] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-05 21:56:55] INFO root fetch - main [MainThread]: Store serial: [23068621]
