@@ -5538,3 +5538,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:30:45] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl.zip]
 [2024-05-05 09:30:45] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock]: success
 [2024-05-05 09:30:45] INFO root fetch - main [MainThread]: Store serial: [23063850]
+[2024-05-05 09:32:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063850]
+[2024-05-05 09:32:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 09:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-ro-stock
+[2024-05-05 09:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-ro-stock-account-date
+[2024-05-05 09:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-ro-stock-account
+[2024-05-05 09:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-05-05 09:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bellek
+[2024-05-05 09:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: query-test-lib
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: New version: [17.0.0.6.0] Old Version: [17.0.0.5.0]
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: New version: [17.0.1.3.0] Old Version: [16.0.1.2.0.1]
+[2024-05-05 09:32:54] INFO root fetch - processPackages [query-test-lib]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 09:32:54] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-05 09:32:54] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240505.334] Old Version: [0.44.20240504.333]
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: New version: [17.0.1.4.0] Old Version: [17.0.1.3.0]
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Downloading https://files.pythonhosted.org/packages/89/b6/4bf6a5f97acca4adbba130abb641451de425a217a378c4064e79d223bfbb/odoo_addon_l10n_ro_stock-17.0.0.5.0-py3-none-any.whl
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Downloading https://files.pythonhosted.org/packages/ac/58/a86c2888d69348440b7170e2f53b4797686d2823277a348a082610e1b3b0/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0.1-py3-none-any.whl
+[2024-05-05 09:32:54] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-05 09:32:54] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/49/48/d6d0d5b36be36bb650633c77591ab6dac505a3faa0713817983ad599fb06/pkscreener-0.44.20240504.333.tar.gz
+[2024-05-05 09:32:54] INFO root fetch - processPackages [query-test-lib]: Downloading https://files.pythonhosted.org/packages/14/71/91469d6eee3c08d23cab318ab5a03bcdb7eb6b36827e5d43c52ca001497d/query_test_lib-0.0.1.tar.gz
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: Downloading https://files.pythonhosted.org/packages/e4/7b/5d3282b5e34d70e861665f57ff3a52e44abd0d0cbc81d7d2568ce8ee1b55/odoo_addon_l10n_ro_stock_account-17.0.1.3.0-py3-none-any.whl
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Downloading https://files.pythonhosted.org/packages/22/3a/7a0334ecd49c05e5a309fc2e1c73ecc8adbb3ccac2cafebab099e7145f69/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Downloading https://files.pythonhosted.org/packages/eb/6a/fd36d5ed788adeecca7be017bba2ddc5717a11df9bd0d9e787a2e2acb450/odoo_addon_l10n_ro_stock_account_date-17.0.1.3.0-py3-none-any.whl
+[2024-05-05 09:32:54] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: executing diffoscope
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock-17.0.0.5.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-ro-stock/17.0.0.5.0-17.0.0.6.0/README.md --exclude *.pyd
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: executing diffoscope
+[2024-05-05 09:32:54] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0.1-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_account_date-17.0.1.3.0-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-ro-stock-account-date/16.0.1.2.0.1-17.0.1.3.0/README.md --exclude *.pyd
+[2024-05-05 09:32:54] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-05 09:32:54] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240505/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-05 09:32:55] INFO root fetch - processPackages [query-test-lib]: Downloading https://files.pythonhosted.org/packages/38/d6/c1789322f8172557c7d16d9b282042b7ca659e05ab49088a9d182ff7b6aa/query_test_lib-0.0.2.tar.gz
+[2024-05-05 09:32:55] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/0b/1d/43c8dbdd83025fbb0f0781c0f2181ee361b22d99e637a14a68892f313c4e/pkscreener-0.44.20240505.334.tar.gz
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: Downloading https://files.pythonhosted.org/packages/b7/b0/52be9385676f9e357d49822af3cd3b9e830bfea963c6bf2e1a4f35aa8b79/odoo_addon_l10n_ro_stock_account-17.0.1.4.0-py3-none-any.whl
+[2024-05-05 09:32:55] INFO root fetch - processPackages [query-test-lib]: executing diffoscope
+[2024-05-05 09:32:55] INFO root fetch - processPackages [query-test-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/query_test_lib-0.0.1.tar.gz tmp/query_test_lib-0.0.2.tar.gz --markdown 20240505/q/query-test-lib/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: executing diffoscope
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_account-17.0.1.3.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_account-17.0.1.4.0-py3-none-any.whl.zip --markdown 20240505/o/odoo-addon-l10n-ro-stock-account/17.0.1.3.0-17.0.1.4.0/README.md --exclude *.pyd
+[2024-05-05 09:32:55] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-05 09:32:55] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.333.tar.gz tmp/pkscreener-0.44.20240505.334.tar.gz --markdown 20240505/p/pkscreener/0.44.20240504.333-0.44.20240505.334/README.md --exclude *.pyd
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock-17.0.0.5.0-py3-none-any.whl.zip]
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock-17.0.0.6.0-py3-none-any.whl.zip]
+[2024-05-05 09:32:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock]: success
+[2024-05-05 09:32:55] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-05 09:32:55] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-05 09:32:55] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-05 09:32:55] INFO root fetch - processPackages [query-test-lib]: Remove: archive file [/home/abi/fetcher/tmp/query_test_lib-0.0.1.tar.gz]
+[2024-05-05 09:32:55] INFO root fetch - processPackages [query-test-lib]: Remove: archive file [/home/abi/fetcher/tmp/query_test_lib-0.0.2.tar.gz]
+[2024-05-05 09:32:55] INFO root fetch - main [MainThread]: End processing [query-test-lib]: success
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_date-17.0.1.3.0-py3-none-any.whl.zip]
+[2024-05-05 09:32:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-account-date]: success
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account-17.0.1.3.0-py3-none-any.whl.zip]
+[2024-05-05 09:32:55] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account-17.0.1.4.0-py3-none-any.whl.zip]
+[2024-05-05 09:32:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-account]: success
+[2024-05-05 09:32:56] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.333.tar.gz]
+[2024-05-05 09:32:56] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.334.tar.gz]
+[2024-05-05 09:32:56] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-05 09:32:56] INFO root fetch - main [MainThread]: Store serial: [23063866]
