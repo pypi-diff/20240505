@@ -10858,3 +10858,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:13:33] INFO root fetch - processPackages [django-ckeditor-5]: Remove: archive file [/home/abi/fetcher/tmp/django-ckeditor-5-0.2.9.tar.gz]
 [2024-05-05 16:13:33] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
 [2024-05-05 16:13:33] INFO root fetch - main [MainThread]: Store serial: [23066283]
+[2024-05-05 16:15:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066283]
+[2024-05-05 16:15:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: constellate
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otf-addons-vault
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coherent.build
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xtrain
+[2024-05-05 16:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sinli
+[2024-05-05 16:15:44] INFO root fetch - processPackages [constellate]: New version: [0.8.3] Old Version: [0.8.1]
+[2024-05-05 16:15:44] INFO root fetch - processPackages [coherent.build]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-05 16:15:44] INFO root fetch - processPackages [xtrain]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-05-05 16:15:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-05 16:15:44] WARNING root fetch - processPackages [otf-addons-vault]: Skipping, unable to determine old version
+[2024-05-05 16:15:44] INFO root fetch - main [MainThread]: End processing [otf-addons-vault] error
+[2024-05-05 16:15:44] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/80/ed/edcf2c508ae19019006ee852fb5dfa62f1d095a5bba8f3e6a04905aaf2a1/coherent_build-0.2.0.tar.gz
+[2024-05-05 16:15:44] INFO root fetch - processPackages [sinli]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 16:15:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-05 16:15:44] INFO root fetch - processPackages [constellate]: Downloading https://files.pythonhosted.org/packages/3c/92/a15e18ccb2a239a8435aca8aaebcabb065788106525b040c27b0234bcf8c/constellate-0.8.1-py2.py3-none-any.whl
+[2024-05-05 16:15:44] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-05 16:15:44] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [xtrain]: Downloading https://files.pythonhosted.org/packages/8d/c0/eb1db959a2653c87095c89cd12531e90bdda21d74b496ab1e966b5fb0dc4/xtrain-0.2.3.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [sinli]: Downloading https://files.pythonhosted.org/packages/59/9b/47d770b9f765237fc84ac45cbdf27eefd87020a7eae2cc3197c968d05742/sinli-1.2.0.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [constellate]: Downloading https://files.pythonhosted.org/packages/bc/3b/f3e5867c10417de85bb919efe73c20e1fd4a4d9f47b396db48c262621119/constellate-0.8.3-py2.py3-none-any.whl
+[2024-05-05 16:15:45] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/14/af/1d20042d6ca1071371d7165ffa64cfbb8ad50437e31d193fc07122e6dcbe/coherent_build-0.2.1.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-05 16:15:45] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240505/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-05 16:15:45] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-05 16:15:45] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.2.0.tar.gz tmp/coherent_build-0.2.1.tar.gz --markdown 20240505/c/coherent.build/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-05 16:15:45] INFO root fetch - processPackages [constellate]: executing diffoscope
+[2024-05-05 16:15:45] INFO root fetch - processPackages [constellate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constellate-0.8.1-py2.py3-none-any.whl.zip tmp/constellate-0.8.3-py2.py3-none-any.whl.zip --markdown 20240505/c/constellate/0.8.1-0.8.3/README.md --exclude *.pyd
+[2024-05-05 16:15:45] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-05 16:15:45] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240505/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-05 16:15:45] INFO root fetch - processPackages [xtrain]: Downloading https://files.pythonhosted.org/packages/9c/e2/07805d11aad5235cb90497c8248bf779501fe470a1333194cb0dfe7f70e1/xtrain-0.3.0.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [sinli]: Downloading https://files.pythonhosted.org/packages/53/94/d5330fdcbb629d393a2e6ed37e1d1661f40e796ad2e37140445dd7e9c2df/sinli-1.2.1.tar.gz
+[2024-05-05 16:15:45] INFO root fetch - processPackages [xtrain]: executing diffoscope
+[2024-05-05 16:15:45] INFO root fetch - processPackages [xtrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtrain-0.2.3.tar.gz tmp/xtrain-0.3.0.tar.gz --markdown 20240505/x/xtrain/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-05-05 16:15:45] INFO root fetch - processPackages [sinli]: executing diffoscope
+[2024-05-05 16:15:45] INFO root fetch - processPackages [sinli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinli-1.2.0.tar.gz tmp/sinli-1.2.1.tar.gz --markdown 20240505/s/sinli/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 16:15:45] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.0.tar.gz]
+[2024-05-05 16:15:45] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.1.tar.gz]
+[2024-05-05 16:15:45] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-05 16:15:46] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-05 16:15:46] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-05 16:15:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-05 16:15:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-05 16:15:46] INFO root fetch - processPackages [xtrain]: Remove: archive file [/home/abi/fetcher/tmp/xtrain-0.2.3.tar.gz]
+[2024-05-05 16:15:46] INFO root fetch - processPackages [xtrain]: Remove: archive file [/home/abi/fetcher/tmp/xtrain-0.3.0.tar.gz]
+[2024-05-05 16:15:46] INFO root fetch - main [MainThread]: End processing [xtrain]: success
+[2024-05-05 16:15:46] INFO root fetch - processPackages [sinli]: Remove: archive file [/home/abi/fetcher/tmp/sinli-1.2.0.tar.gz]
+[2024-05-05 16:15:46] INFO root fetch - processPackages [sinli]: Remove: archive file [/home/abi/fetcher/tmp/sinli-1.2.1.tar.gz]
+[2024-05-05 16:15:46] INFO root fetch - main [MainThread]: End processing [sinli]: success
+[2024-05-05 16:15:46] INFO root fetch - processPackages [constellate]: Remove: archive file [/home/abi/fetcher/tmp/constellate-0.8.1-py2.py3-none-any.whl.zip]
+[2024-05-05 16:15:46] INFO root fetch - processPackages [constellate]: Remove: archive file [/home/abi/fetcher/tmp/constellate-0.8.3-py2.py3-none-any.whl.zip]
+[2024-05-05 16:15:46] INFO root fetch - main [MainThread]: End processing [constellate]: success
+[2024-05-05 16:15:46] INFO root fetch - main [MainThread]: Store serial: [23066305]
