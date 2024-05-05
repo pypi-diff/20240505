@@ -9175,3 +9175,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:28:04] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.9.tar.gz]
 [2024-05-05 14:28:04] INFO root fetch - main [MainThread]: End processing [PyCompGeomAlgorithms]: success
 [2024-05-05 14:28:04] INFO root fetch - main [MainThread]: Store serial: [23065426]
+[2024-05-05 14:30:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065426]
+[2024-05-05 14:30:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 14:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astrometry-net-client
+[2024-05-05 14:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyjinx
+[2024-05-05 14:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloud-governance
+[2024-05-05 14:30:13] INFO root fetch - processPackages [hyjinx]: New version: [0.28.9] Old Version: [0.28.8]
+[2024-05-05 14:30:13] INFO root fetch - processPackages [cloud-governance]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-05-05 14:30:13] INFO root fetch - processPackages [hyjinx]: Downloading https://files.pythonhosted.org/packages/91/d7/f43c88b522705449485448baaa61e2974a89e3213c2febabe170f4d144de/hyjinx-0.28.8.tar.gz
+[2024-05-05 14:30:13] INFO root fetch - processPackages [astrometry-net-client]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-05 14:30:13] INFO root fetch - processPackages [cloud-governance]: Downloading https://files.pythonhosted.org/packages/af/f8/db9bacb41ff13a7d3ae59369ae36809c3202232c910b932a09e42257b676/cloud-governance-1.1.98.tar.gz
+[2024-05-05 14:30:13] INFO root fetch - processPackages [astrometry-net-client]: Downloading https://files.pythonhosted.org/packages/7b/cb/55b45dec1552d79f399be84e6ad83cbb4b77df4c6689a8c4608cc03bb0b1/astrometry_net_client-0.3.1.tar.gz
+[2024-05-05 14:30:14] INFO root fetch - processPackages [hyjinx]: Downloading https://files.pythonhosted.org/packages/bc/20/3bbc29f72f1b59cfe3f831ef05d6a0cf629676f050ac2fef0d527b7ae046/hyjinx-0.28.9.tar.gz
+[2024-05-05 14:30:14] INFO root fetch - processPackages [cloud-governance]: Downloading https://files.pythonhosted.org/packages/ec/3e/06dc6e6844d3033717858064a494efaaf4cdae01a0c58d2b2a38273075e2/cloud-governance-1.1.99.tar.gz
+[2024-05-05 14:30:14] INFO root fetch - processPackages [hyjinx]: executing diffoscope
+[2024-05-05 14:30:14] INFO root fetch - processPackages [hyjinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyjinx-0.28.8.tar.gz tmp/hyjinx-0.28.9.tar.gz --markdown 20240505/h/hyjinx/0.28.8-0.28.9/README.md --exclude *.pyd
+[2024-05-05 14:30:14] INFO root fetch - processPackages [cloud-governance]: executing diffoscope
+[2024-05-05 14:30:14] INFO root fetch - processPackages [cloud-governance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-governance-1.1.98.tar.gz tmp/cloud-governance-1.1.99.tar.gz --markdown 20240505/c/cloud-governance/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-05-05 14:30:14] INFO root fetch - processPackages [astrometry-net-client]: Downloading https://files.pythonhosted.org/packages/df/7d/5c28016fa1c423f36976a6f143abd66264a9f54ced607f299f59f11333cf/astrometry_net_client-0.4.0.tar.gz
+[2024-05-05 14:30:14] INFO root fetch - processPackages [astrometry-net-client]: executing diffoscope
+[2024-05-05 14:30:14] INFO root fetch - processPackages [astrometry-net-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrometry_net_client-0.3.1.tar.gz tmp/astrometry_net_client-0.4.0.tar.gz --markdown 20240505/a/astrometry-net-client/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-05 14:30:14] INFO root fetch - processPackages [hyjinx]: Remove: archive file [/home/abi/fetcher/tmp/hyjinx-0.28.8.tar.gz]
+[2024-05-05 14:30:14] INFO root fetch - processPackages [hyjinx]: Remove: archive file [/home/abi/fetcher/tmp/hyjinx-0.28.9.tar.gz]
+[2024-05-05 14:30:14] INFO root fetch - main [MainThread]: End processing [hyjinx]: success
+[2024-05-05 14:30:15] INFO root fetch - processPackages [astrometry-net-client]: Remove: archive file [/home/abi/fetcher/tmp/astrometry_net_client-0.3.1.tar.gz]
+[2024-05-05 14:30:15] INFO root fetch - processPackages [astrometry-net-client]: Remove: archive file [/home/abi/fetcher/tmp/astrometry_net_client-0.4.0.tar.gz]
+[2024-05-05 14:30:15] INFO root fetch - main [MainThread]: End processing [astrometry-net-client]: success
+[2024-05-05 14:30:15] INFO root fetch - processPackages [cloud-governance]: Remove: archive file [/home/abi/fetcher/tmp/cloud-governance-1.1.98.tar.gz]
+[2024-05-05 14:30:15] INFO root fetch - processPackages [cloud-governance]: Remove: archive file [/home/abi/fetcher/tmp/cloud-governance-1.1.99.tar.gz]
+[2024-05-05 14:30:15] INFO root fetch - main [MainThread]: End processing [cloud-governance]: success
+[2024-05-05 14:30:15] INFO root fetch - main [MainThread]: Store serial: [23065436]
