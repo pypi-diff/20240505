@@ -10098,3 +10098,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:22:10] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.7.tar.gz]
 [2024-05-05 15:22:10] INFO root fetch - main [MainThread]: End processing [dataidea]: success
 [2024-05-05 15:22:10] INFO root fetch - main [MainThread]: Store serial: [23065901]
+[2024-05-05 15:24:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065901]
+[2024-05-05 15:24:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 15:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vdf-io
+[2024-05-05 15:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dalle-gen-save
+[2024-05-05 15:24:19] WARNING root fetch - processPackages [dalle-gen-save]: Skipping, unable to determine old version
+[2024-05-05 15:24:19] INFO root fetch - main [MainThread]: End processing [dalle-gen-save] error
+[2024-05-05 15:24:19] INFO root fetch - processPackages [vdf-io]: New version: [0.1.9] Old Version: [0.1.85]
+[2024-05-05 15:24:20] INFO root fetch - processPackages [vdf-io]: Downloading https://files.pythonhosted.org/packages/0f/79/960c399848c4b4e73ae4986620f78539ea8443881aa1b95f0e571909a7f3/vdf_io-0.1.85.tar.gz
+[2024-05-05 15:24:20] INFO root fetch - processPackages [vdf-io]: Downloading https://files.pythonhosted.org/packages/54/48/6653d701926d0676616e4c8e49bd591c2fa67a2abb3c903073d39d6cfe8b/vdf_io-0.1.9.tar.gz
+[2024-05-05 15:24:20] INFO root fetch - processPackages [vdf-io]: executing diffoscope
+[2024-05-05 15:24:20] INFO root fetch - processPackages [vdf-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdf_io-0.1.85.tar.gz tmp/vdf_io-0.1.9.tar.gz --markdown 20240505/v/vdf-io/0.1.85-0.1.9/README.md --exclude *.pyd
+[2024-05-05 15:24:21] INFO root fetch - processPackages [vdf-io]: Remove: archive file [/home/abi/fetcher/tmp/vdf_io-0.1.85.tar.gz]
+[2024-05-05 15:24:21] INFO root fetch - processPackages [vdf-io]: Remove: archive file [/home/abi/fetcher/tmp/vdf_io-0.1.9.tar.gz]
+[2024-05-05 15:24:21] INFO root fetch - main [MainThread]: End processing [vdf-io]: success
+[2024-05-05 15:24:21] INFO root fetch - main [MainThread]: Store serial: [23065912]
