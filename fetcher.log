@@ -9738,3 +9738,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:59:10] INFO root fetch - processPackages [flexmin]: Remove: archive file [/home/abi/fetcher/tmp/flexmin-0.3.9.tar.gz]
 [2024-05-05 14:59:10] INFO root fetch - main [MainThread]: End processing [flexmin]: success
 [2024-05-05 14:59:10] INFO root fetch - main [MainThread]: Store serial: [23065704]
+[2024-05-05 15:01:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065704]
+[2024-05-05 15:01:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 15:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-05 15:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fennel-ai
+[2024-05-05 15:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beamer-slider
+[2024-05-05 15:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pd-extras
+[2024-05-05 15:01:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plutobook
+[2024-05-05 15:01:19] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 15:01:19] INFO root fetch - processPackages [pd-extras]: New version: [5.0.2] Old Version: [4.0.2]
+[2024-05-05 15:01:19] INFO root fetch - processPackages [beamer-slider]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 15:01:19] ERROR root fetch - processPackages [plutobook]: Unable to get metadata: No such project 'plutobook'
+[2024-05-05 15:01:19] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-05 15:01:19] INFO root fetch - processPackages [fennel-ai]: New version: [1.3.3] Old Version: [1.3.0]
+[2024-05-05 15:01:19] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 15:01:19] INFO root fetch - processPackages [pd-extras]: Downloading https://files.pythonhosted.org/packages/86/39/07dd1267f08658ed430da48fa12cb1e145091df0a2b58caffa19f726bfcc/pd_extras-4.0.2.tar.gz
+[2024-05-05 15:01:19] INFO root fetch - processPackages [beamer-slider]: Downloading https://files.pythonhosted.org/packages/d9/59/f1d14eb325bf3f6806b470fd808c364522b711906ba00ad8fc0ed716c75f/beamer-slider-0.1.8.tar.gz
+[2024-05-05 15:01:19] INFO root fetch - processPackages [fennel-ai]: Downloading https://files.pythonhosted.org/packages/2e/e2/b4d288d1f498cef2b026c6352c6ccc0239543740c36a7b886c00c975d9e5/fennel_ai-1.3.0.tar.gz
+[2024-05-05 15:01:19] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 15:01:19] WARNING root fetch - processPackages [fennel-ai]: Skipping package: exceeds size limit 40197486>=10485760
+[2024-05-05 15:01:19] INFO root fetch - main [MainThread]: End processing [fennel-ai] error
+[2024-05-05 15:01:19] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 15:01:19] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 15:01:19] INFO root fetch - processPackages [pd-extras]: Downloading https://files.pythonhosted.org/packages/36/02/6e8ee294f61d659fb5c52a97c9bb4294a982445b1ebbc0cf93952c4bc91a/pd_extras-5.0.2.tar.gz
+[2024-05-05 15:01:20] INFO root fetch - processPackages [pd-extras]: executing diffoscope
+[2024-05-05 15:01:20] INFO root fetch - processPackages [pd-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pd_extras-4.0.2.tar.gz tmp/pd_extras-5.0.2.tar.gz --markdown 20240505/p/pd-extras/4.0.2-5.0.2/README.md --exclude *.pyd
+[2024-05-05 15:01:20] INFO root fetch - processPackages [beamer-slider]: Downloading https://files.pythonhosted.org/packages/93/ae/5cacf262cb7248d6b7f0bf540e58f1cc53b607cdac5b59bfe74501a4bed4/beamer-slider-0.1.9.tar.gz
+[2024-05-05 15:01:20] INFO root fetch - processPackages [beamer-slider]: executing diffoscope
+[2024-05-05 15:01:20] INFO root fetch - processPackages [beamer-slider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beamer-slider-0.1.8.tar.gz tmp/beamer-slider-0.1.9.tar.gz --markdown 20240505/b/beamer-slider/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 15:01:20] INFO root fetch - processPackages [pd-extras]: Remove: archive file [/home/abi/fetcher/tmp/pd_extras-4.0.2.tar.gz]
+[2024-05-05 15:01:20] INFO root fetch - processPackages [pd-extras]: Remove: archive file [/home/abi/fetcher/tmp/pd_extras-5.0.2.tar.gz]
+[2024-05-05 15:01:20] INFO root fetch - main [MainThread]: End processing [pd-extras]: success
+[2024-05-05 15:01:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 15:01:20] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 15:01:20] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 15:01:20] INFO root fetch - processPackages [beamer-slider]: Remove: archive file [/home/abi/fetcher/tmp/beamer-slider-0.1.8.tar.gz]
+[2024-05-05 15:01:20] INFO root fetch - processPackages [beamer-slider]: Remove: archive file [/home/abi/fetcher/tmp/beamer-slider-0.1.9.tar.gz]
+[2024-05-05 15:01:20] INFO root fetch - main [MainThread]: End processing [beamer-slider]: success
+[2024-05-05 15:01:20] INFO root fetch - main [MainThread]: Store serial: [23065718]
