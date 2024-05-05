@@ -2848,3 +2848,24 @@
 [2024-05-05 04:36:26] INFO root fetch - processPackages [msanic]: Remove: archive file [/home/abi/fetcher/tmp/msanic-1.0.18-py3-none-any.whl.zip]
 [2024-05-05 04:36:26] INFO root fetch - main [MainThread]: End processing [msanic]: success
 [2024-05-05 04:36:26] INFO root fetch - main [MainThread]: Store serial: [23062760]
+[2024-05-05 04:38:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062760]
+[2024-05-05 04:38:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 04:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devicebay
+[2024-05-05 04:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PerplexiPy
+[2024-05-05 04:38:35] INFO root fetch - processPackages [devicebay]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 04:38:35] INFO root fetch - processPackages [PerplexiPy]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-05 04:38:35] INFO root fetch - processPackages [devicebay]: Downloading https://files.pythonhosted.org/packages/5d/35/9e41c1d2bd15e88729fdcd5b62b4a7de5dbc1c8a97674c8e26f2bbb51cc2/devicebay-0.1.8.tar.gz
+[2024-05-05 04:38:35] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/16/92/20aa9270546dfdb13833b85e724df27920686936558901f74702ca8f9f6d/PerplexiPy-1.0.5-py3-none-any.whl
+[2024-05-05 04:38:35] INFO root fetch - processPackages [devicebay]: Downloading https://files.pythonhosted.org/packages/e5/96/b13c67b11af0747066e9d93a63ece2bb5f80d597ff1909a2e3178ec12a2c/devicebay-0.1.9.tar.gz
+[2024-05-05 04:38:35] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/4d/fd/1c373169513016e60e230def989a755bd3318f45fd506be40da44c54f18d/PerplexiPy-1.0.6-py3-none-any.whl
+[2024-05-05 04:38:35] INFO root fetch - processPackages [devicebay]: executing diffoscope
+[2024-05-05 04:38:35] INFO root fetch - processPackages [devicebay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devicebay-0.1.8.tar.gz tmp/devicebay-0.1.9.tar.gz --markdown 20240505/d/devicebay/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 04:38:35] INFO root fetch - processPackages [PerplexiPy]: executing diffoscope
+[2024-05-05 04:38:35] INFO root fetch - processPackages [PerplexiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PerplexiPy-1.0.5-py3-none-any.whl.zip tmp/PerplexiPy-1.0.6-py3-none-any.whl.zip --markdown 20240505/P/PerplexiPy/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-05 04:38:36] INFO root fetch - processPackages [devicebay]: Remove: archive file [/home/abi/fetcher/tmp/devicebay-0.1.8.tar.gz]
+[2024-05-05 04:38:36] INFO root fetch - processPackages [devicebay]: Remove: archive file [/home/abi/fetcher/tmp/devicebay-0.1.9.tar.gz]
+[2024-05-05 04:38:36] INFO root fetch - main [MainThread]: End processing [devicebay]: success
+[2024-05-05 04:38:36] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.5-py3-none-any.whl.zip]
+[2024-05-05 04:38:36] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.6-py3-none-any.whl.zip]
+[2024-05-05 04:38:36] INFO root fetch - main [MainThread]: End processing [PerplexiPy]: success
+[2024-05-05 04:38:36] INFO root fetch - main [MainThread]: Store serial: [23062765]
