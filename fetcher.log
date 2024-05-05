@@ -12568,3 +12568,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:13:05] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.4.tar.gz]
 [2024-05-05 18:13:05] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
 [2024-05-05 18:13:05] INFO root fetch - main [MainThread]: Store serial: [23067015]
+[2024-05-05 18:15:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067015]
+[2024-05-05 18:15:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otf-addons-vault
+[2024-05-05 18:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MoleculaPy
+[2024-05-05 18:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: utillc
+[2024-05-05 18:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ashfaquecodes
+[2024-05-05 18:15:14] INFO root fetch - processPackages [otf-addons-vault]: New version: [24.18.2] Old Version: [24.18.1]
+[2024-05-05 18:15:14] INFO root fetch - processPackages [utillc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 18:15:14] INFO root fetch - processPackages [otf-addons-vault]: Downloading https://files.pythonhosted.org/packages/2c/45/473d4d87d17de19294d35e72e6ea1bf80702cbce3567997ca07a31d7ab20/otf_addons_vault-24.18.1.tar.gz
+[2024-05-05 18:15:14] INFO root fetch - processPackages [MoleculaPy]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-05 18:15:14] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/cc/f6/8602a3365c5bdae211c3ac294519f44f09a48d78f82481686f04441605d1/utillc-0.9.8-py2.py3-none-any.whl
+[2024-05-05 18:15:14] INFO root fetch - processPackages [ashfaquecodes]: New version: [0.8] Old Version: [0.7]
+[2024-05-05 18:15:14] INFO root fetch - processPackages [MoleculaPy]: Downloading https://files.pythonhosted.org/packages/05/c5/57064cdcfce1926c1a53bf3729192d1e8b22e9e6c1250e448ca9d095264e/moleculapy-1.1.1.tar.gz
+[2024-05-05 18:15:14] INFO root fetch - processPackages [ashfaquecodes]: Downloading https://files.pythonhosted.org/packages/9b/88/881f6e7b40ab32e535dcaa1c344e21b431e5798473cc7399128e999db190/ashfaquecodes-0.7.tar.gz
+[2024-05-05 18:15:14] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/d8/3c/db840ab098014cd53956ab58f90e832f7dc4cd45fba1ebcbb74463d04f94/utillc-0.9.9-py2.py3-none-any.whl
+[2024-05-05 18:15:14] INFO root fetch - processPackages [utillc]: executing diffoscope
+[2024-05-05 18:15:14] INFO root fetch - processPackages [utillc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utillc-0.9.8-py2.py3-none-any.whl.zip tmp/utillc-0.9.9-py2.py3-none-any.whl.zip --markdown 20240505/u/utillc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 18:15:14] INFO root fetch - processPackages [otf-addons-vault]: Downloading https://files.pythonhosted.org/packages/dd/53/792d68a7bb48ce625f5fe79be88b1a47072e27c0a293cea33599212c5799/otf_addons_vault-24.18.2.tar.gz
+[2024-05-05 18:15:14] INFO root fetch - processPackages [otf-addons-vault]: executing diffoscope
+[2024-05-05 18:15:14] INFO root fetch - processPackages [otf-addons-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otf_addons_vault-24.18.1.tar.gz tmp/otf_addons_vault-24.18.2.tar.gz --markdown 20240505/o/otf-addons-vault/24.18.1-24.18.2/README.md --exclude *.pyd
+[2024-05-05 18:15:14] INFO root fetch - processPackages [ashfaquecodes]: Downloading https://files.pythonhosted.org/packages/fa/66/407725e8f4c257c7071560e2dc610a7fee997aa7178680a0c13f1e6bbaf0/ashfaquecodes-0.8.tar.gz
+[2024-05-05 18:15:14] INFO root fetch - processPackages [MoleculaPy]: Downloading https://files.pythonhosted.org/packages/7c/c9/8ae975d0627517356a130051a1ba854d6187516d9506b9e7168cd9d2fc0d/moleculapy-1.1.2.tar.gz
+[2024-05-05 18:15:14] INFO root fetch - processPackages [ashfaquecodes]: executing diffoscope
+[2024-05-05 18:15:14] INFO root fetch - processPackages [ashfaquecodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ashfaquecodes-0.7.tar.gz tmp/ashfaquecodes-0.8.tar.gz --markdown 20240505/a/ashfaquecodes/0.7-0.8/README.md --exclude *.pyd
+[2024-05-05 18:15:14] INFO root fetch - processPackages [MoleculaPy]: executing diffoscope
+[2024-05-05 18:15:14] INFO root fetch - processPackages [MoleculaPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moleculapy-1.1.1.tar.gz tmp/moleculapy-1.1.2.tar.gz --markdown 20240505/M/MoleculaPy/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-05 18:15:15] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.8-py2.py3-none-any.whl.zip]
+[2024-05-05 18:15:15] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.9-py2.py3-none-any.whl.zip]
+[2024-05-05 18:15:15] INFO root fetch - main [MainThread]: End processing [utillc]: success
+[2024-05-05 18:15:15] INFO root fetch - processPackages [otf-addons-vault]: Remove: archive file [/home/abi/fetcher/tmp/otf_addons_vault-24.18.1.tar.gz]
+[2024-05-05 18:15:15] INFO root fetch - processPackages [otf-addons-vault]: Remove: archive file [/home/abi/fetcher/tmp/otf_addons_vault-24.18.2.tar.gz]
+[2024-05-05 18:15:15] INFO root fetch - main [MainThread]: End processing [otf-addons-vault]: success
+[2024-05-05 18:15:15] INFO root fetch - processPackages [MoleculaPy]: Remove: archive file [/home/abi/fetcher/tmp/moleculapy-1.1.1.tar.gz]
+[2024-05-05 18:15:15] INFO root fetch - processPackages [MoleculaPy]: Remove: archive file [/home/abi/fetcher/tmp/moleculapy-1.1.2.tar.gz]
+[2024-05-05 18:15:15] INFO root fetch - main [MainThread]: End processing [MoleculaPy]: success
+[2024-05-05 18:15:15] INFO root fetch - processPackages [ashfaquecodes]: Remove: archive file [/home/abi/fetcher/tmp/ashfaquecodes-0.7.tar.gz]
+[2024-05-05 18:15:15] INFO root fetch - processPackages [ashfaquecodes]: Remove: archive file [/home/abi/fetcher/tmp/ashfaquecodes-0.8.tar.gz]
+[2024-05-05 18:15:15] INFO root fetch - main [MainThread]: End processing [ashfaquecodes]: success
+[2024-05-05 18:15:15] INFO root fetch - main [MainThread]: Store serial: [23067024]
