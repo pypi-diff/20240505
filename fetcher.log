@@ -16933,3 +16933,42 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:56:15] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.3.tar.gz]
 [2024-05-05 22:56:15] INFO root fetch - main [MainThread]: End processing [opteryx]: success
 [2024-05-05 22:56:15] INFO root fetch - main [MainThread]: Store serial: [23069001]
+[2024-05-05 22:58:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069001]
+[2024-05-05 22:58:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdm-conda
+[2024-05-05 22:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MontagePy
+[2024-05-05 22:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: congress-transaction-scraper
+[2024-05-05 22:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyQtUIkit
+[2024-05-05 22:58:24] INFO root fetch - processPackages [congress-transaction-scraper]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-05 22:58:24] INFO root fetch - processPackages [pdm-conda]: New version: [0.9.3b1] Old Version: [0.9.3b0]
+[2024-05-05 22:58:25] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/7b/e3/47203bdd14ae5746b1be5a388fe60b74a39f4242b85ceadd526eb6943787/congress_transaction_scraper-0.0.5.tar.gz
+[2024-05-05 22:58:25] INFO root fetch - processPackages [MontagePy]: New version: [2.2.0] Old Version: [1.2.3]
+[2024-05-05 22:58:25] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/5d/1b/dc1cb149f079d3d41db755870a003994c36588d5a196747c0b7e42194938/pdm_conda-0.9.3b0.tar.gz
+[2024-05-05 22:58:25] INFO root fetch - processPackages [PyQtUIkit]: New version: [2.9.0] Old Version: [2.8.7]
+[2024-05-05 22:58:25] INFO root fetch - processPackages [MontagePy]: Downloading https://files.pythonhosted.org/packages/e8/00/fbb4468dec62ec0b9e7152588c14ded838298fe370fa70d1d59ee4041f81/MontagePy-1.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl
+[2024-05-05 22:58:25] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/23/ae/9ae2762f3341650d36462bc006fcb4de1bea93e1cf224fb94dc45f376d38/pdm_conda-0.9.3b1.tar.gz
+[2024-05-05 22:58:25] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/33/39/67c798d7d600377400978c9e48e91748b7f3bbb82f246c22c9d2e5ad8f25/PyQtUIkit-2.8.7.tar.gz
+[2024-05-05 22:58:25] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/bb/fa/efb5f456f48d9b2c23aaeaa1516a459fa8863229d63bb1c1d6487c44b1a2/congress_transaction_scraper-0.0.6.tar.gz
+[2024-05-05 22:58:25] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2024-05-05 22:58:25] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.9.3b0.tar.gz tmp/pdm_conda-0.9.3b1.tar.gz --markdown 20240505/p/pdm-conda/0.9.3b0-0.9.3b1/README.md --exclude *.pyd
+[2024-05-05 22:58:25] INFO root fetch - processPackages [congress-transaction-scraper]: executing diffoscope
+[2024-05-05 22:58:25] INFO root fetch - processPackages [congress-transaction-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/congress_transaction_scraper-0.0.5.tar.gz tmp/congress_transaction_scraper-0.0.6.tar.gz --markdown 20240505/c/congress-transaction-scraper/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-05 22:58:25] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/66/80/bdfd049ba06a9e8d3bfb2663d46f852805b93acdcb6ea38aedaf4485a307/PyQtUIkit-2.9.0.tar.gz
+[2024-05-05 22:58:26] INFO root fetch - processPackages [pdm-conda]: Remove: archive file [/home/abi/fetcher/tmp/pdm_conda-0.9.3b0.tar.gz]
+[2024-05-05 22:58:26] INFO root fetch - processPackages [pdm-conda]: Remove: archive file [/home/abi/fetcher/tmp/pdm_conda-0.9.3b1.tar.gz]
+[2024-05-05 22:58:26] INFO root fetch - main [MainThread]: End processing [pdm-conda]: success
+[2024-05-05 22:58:26] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.5.tar.gz]
+[2024-05-05 22:58:26] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.6.tar.gz]
+[2024-05-05 22:58:26] INFO root fetch - main [MainThread]: End processing [congress-transaction-scraper]: success
+[2024-05-05 22:58:26] INFO root fetch - processPackages [PyQtUIkit]: executing diffoscope
+[2024-05-05 22:58:26] INFO root fetch - processPackages [PyQtUIkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtUIkit-2.8.7.tar.gz tmp/PyQtUIkit-2.9.0.tar.gz --markdown 20240505/P/PyQtUIkit/2.8.7-2.9.0/README.md --exclude *.pyd
+[2024-05-05 22:58:27] INFO root fetch - processPackages [MontagePy]: Downloading https://files.pythonhosted.org/packages/ae/64/3ee5a5de979b360d90a160fb9e774a6c376b3d220783efbdafcfa9485eb3/MontagePy-2.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 22:58:27] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.8.7.tar.gz]
+[2024-05-05 22:58:27] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.9.0.tar.gz]
+[2024-05-05 22:58:27] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
+[2024-05-05 22:58:30] INFO root fetch - processPackages [MontagePy]: executing diffoscope
+[2024-05-05 22:58:30] INFO root fetch - processPackages [MontagePy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MontagePy-1.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.zip tmp/MontagePy-2.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/M/MontagePy/1.2.3-2.2.0/README.md --exclude *.pyd
+[2024-05-05 22:59:49] INFO root fetch - processPackages [MontagePy]: Remove: archive file [/home/abi/fetcher/tmp/MontagePy-1.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.zip]
+[2024-05-05 22:59:49] INFO root fetch - processPackages [MontagePy]: Remove: archive file [/home/abi/fetcher/tmp/MontagePy-2.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 22:59:49] INFO root fetch - main [MainThread]: End processing [MontagePy]: success
+[2024-05-05 22:59:49] INFO root fetch - main [MainThread]: Store serial: [23069032]
