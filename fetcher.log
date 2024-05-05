@@ -10772,3 +10772,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:03:46] INFO root fetch - processPackages [artemis-hunter]: Remove: archive file [/home/abi/fetcher/tmp/artemis_hunter-0.111-py3-none-any.whl.zip]
 [2024-05-05 16:03:46] INFO root fetch - main [MainThread]: End processing [artemis-hunter]: success
 [2024-05-05 16:03:46] INFO root fetch - main [MainThread]: Store serial: [23066225]
+[2024-05-05 16:05:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066225]
+[2024-05-05 16:05:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-05-05 16:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petrosa
+[2024-05-05 16:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arknights-toolkit
+[2024-05-05 16:05:54] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 16:05:54] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-05 16:05:54] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-05 16:05:54] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-05-05 16:05:54] INFO root fetch - processPackages [arknights-toolkit]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-05 16:05:54] INFO root fetch - processPackages [arknights-toolkit]: Downloading https://files.pythonhosted.org/packages/b8/72/386375f1f902578c18ed5e7a5d4850273d0861174471c3cf7aa73754f54e/arknights_toolkit-0.7.2.tar.gz
+[2024-05-05 16:05:54] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-05-05 16:05:55] WARNING root fetch - processPackages [arknights-toolkit]: Skipping package: exceeds size limit 17446674>=10485760
+[2024-05-05 16:05:55] INFO root fetch - main [MainThread]: End processing [arknights-toolkit] error
+[2024-05-05 16:05:55] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-05 16:05:55] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240505/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-05 16:05:55] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-05 16:05:55] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-05 16:05:55] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240505/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 16:05:56] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-05 16:05:56] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-05 16:05:56] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-05 16:05:56] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-05-05 16:05:56] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-05-05 16:05:56] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-05 16:05:56] INFO root fetch - main [MainThread]: Store serial: [23066233]
