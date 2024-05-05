@@ -7860,3 +7860,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:43:30] INFO root fetch - processPackages [bitcoin-safe]: Remove: archive file [/home/abi/fetcher/tmp/bitcoin_safe-0.6.1a0.tar.gz]
 [2024-05-05 12:43:30] INFO root fetch - main [MainThread]: End processing [bitcoin-safe]: success
 [2024-05-05 12:43:30] INFO root fetch - main [MainThread]: Store serial: [23064807]
+[2024-05-05 12:45:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064807]
+[2024-05-05 12:45:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 12:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyranges1
+[2024-05-05 12:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-05-05 12:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plutobook
+[2024-05-05 12:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qwak-core
+[2024-05-05 12:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shcheck
+[2024-05-05 12:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oda-reader
+[2024-05-05 12:45:41] INFO root fetch - processPackages [pyranges1]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-05 12:45:41] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 12:45:41] INFO root fetch - processPackages [shcheck]: New version: [1.6] Old Version: [1.5.9]
+[2024-05-05 12:45:41] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/4d/d4/21d3b56320e2b8a51071d09babeddb3578274301d5adb114b4ee6a300da1/pyranges1-0.1.1.tar.gz
+[2024-05-05 12:45:41] INFO root fetch - processPackages [plutobook]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 12:45:41] ERROR root fetch - processPackages [oda-reader]: Unable to get metadata: No such project 'oda-reader'
+[2024-05-05 12:45:41] INFO root fetch - main [MainThread]: End processing [oda-reader] error
+[2024-05-05 12:45:41] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 12:45:41] INFO root fetch - processPackages [qwak-core]: New version: [0.4.0] Old Version: [0.3.99]
+[2024-05-05 12:45:42] INFO root fetch - processPackages [plutobook]: Downloading https://files.pythonhosted.org/packages/bb/df/cf53548ea6bef4f8f56c5bdf340926506cc6385e4e5772ada8c8a3387b79/plutobook-0.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 12:45:42] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/71/0e/e7c880c764df31bf9e71679c2a411ac1a48667bfd4caee997236b1cc61fb/qwak_core-0.3.99.tar.gz
+[2024-05-05 12:45:42] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 12:45:42] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/5e/fd/ea97ca7443fa6baf6a232850a8baeadf59fcea9f68900bfbcdfc9846c4e2/pyranges1-0.1.2.tar.gz
+[2024-05-05 12:45:42] INFO root fetch - processPackages [shcheck]: Downloading https://files.pythonhosted.org/packages/05/66/978e56fff2f04a77ae2b36e17719506cdc753dc7a65a42851d7db4e4b290/shcheck-1.5.9.tar.gz
+[2024-05-05 12:45:42] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 12:45:42] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 12:45:42] INFO root fetch - processPackages [plutobook]: Downloading https://files.pythonhosted.org/packages/00/58/8e2e691bce19f1c07b326924d61187aed7918ad5d34b89864ebe9d330caf/plutobook-0.0.2-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 12:45:42] INFO root fetch - processPackages [pyranges1]: executing diffoscope
+[2024-05-05 12:45:42] INFO root fetch - processPackages [pyranges1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranges1-0.1.1.tar.gz tmp/pyranges1-0.1.2.tar.gz --markdown 20240505/p/pyranges1/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-05 12:45:42] INFO root fetch - processPackages [shcheck]: Downloading https://files.pythonhosted.org/packages/d3/24/161fcc7240f28b9fec776145e2a738eb1680f22dbbce550cac00a699b073/shcheck-1.6.tar.gz
+[2024-05-05 12:45:42] INFO root fetch - processPackages [plutobook]: executing diffoscope
+[2024-05-05 12:45:42] INFO root fetch - processPackages [plutobook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutobook-0.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/plutobook-0.0.2-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/p/plutobook/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 12:45:42] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/67/5c/230a4b38912da5b8730d4c30c421b4331788da9ed85148ed8cc9dc3c04a1/qwak_core-0.4.0.tar.gz
+[2024-05-05 12:45:42] INFO root fetch - processPackages [shcheck]: executing diffoscope
+[2024-05-05 12:45:42] INFO root fetch - processPackages [shcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shcheck-1.5.9.tar.gz tmp/shcheck-1.6.tar.gz --markdown 20240505/s/shcheck/1.5.9-1.6/README.md --exclude *.pyd
+[2024-05-05 12:45:42] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-05-05 12:45:42] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.3.99.tar.gz tmp/qwak_core-0.4.0.tar.gz --markdown 20240505/q/qwak-core/0.3.99-0.4.0/README.md --exclude *.pyd
+[2024-05-05 12:45:43] INFO root fetch - processPackages [plutobook]: Remove: archive file [/home/abi/fetcher/tmp/plutobook-0.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 12:45:43] INFO root fetch - processPackages [plutobook]: Remove: archive file [/home/abi/fetcher/tmp/plutobook-0.0.2-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 12:45:43] INFO root fetch - main [MainThread]: End processing [plutobook]: success
+[2024-05-05 12:45:43] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 12:45:43] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 12:45:43] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 12:45:43] INFO root fetch - processPackages [shcheck]: Remove: archive file [/home/abi/fetcher/tmp/shcheck-1.5.9.tar.gz]
+[2024-05-05 12:45:43] INFO root fetch - processPackages [shcheck]: Remove: archive file [/home/abi/fetcher/tmp/shcheck-1.6.tar.gz]
+[2024-05-05 12:45:43] INFO root fetch - main [MainThread]: End processing [shcheck]: success
+[2024-05-05 12:45:43] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-0.1.1.tar.gz]
+[2024-05-05 12:45:43] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-0.1.2.tar.gz]
+[2024-05-05 12:45:43] INFO root fetch - main [MainThread]: End processing [pyranges1]: success
+[2024-05-05 12:45:45] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.3.99.tar.gz]
+[2024-05-05 12:45:45] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.0.tar.gz]
+[2024-05-05 12:45:45] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-05-05 12:45:45] INFO root fetch - main [MainThread]: Store serial: [23064852]
