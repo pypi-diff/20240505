@@ -9086,3 +9086,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:19:24] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.9.tar.gz]
 [2024-05-05 14:19:24] INFO root fetch - main [MainThread]: End processing [naverplaceapi]: success
 [2024-05-05 14:19:24] INFO root fetch - main [MainThread]: Store serial: [23065393]
+[2024-05-05 14:21:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065393]
+[2024-05-05 14:21:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe-esimd
+[2024-05-05 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MoleculaPy
+[2024-05-05 14:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smb-sync
+[2024-05-05 14:21:33] INFO root fetch - processPackages [MoleculaPy]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-05 14:21:33] INFO root fetch - processPackages [MoleculaPy]: Downloading https://files.pythonhosted.org/packages/1f/6e/f3a871b654ade0c8baa8f6b758adac8d1b72aea63c3c5465a2e476f65194/moleculapy-1.0.1.tar.gz
+[2024-05-05 14:21:33] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240505] Old Version: [2.5.0b20240504]
+[2024-05-05 14:21:33] INFO root fetch - processPackages [smb-sync]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 14:21:33] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/25/c1/e2167e20d2c1dedc8cdaa46d8382095a29538ca8ffc87d98bc839c47ffb3/bigdl_core_xe_esimd-2.5.0b20240504-cp39-cp39-manylinux2010_x86_64.whl
+[2024-05-05 14:21:33] INFO root fetch - processPackages [MoleculaPy]: Downloading https://files.pythonhosted.org/packages/f8/ca/40839d803e178205a52a21ecab1a7c5dd5afd29a7db7ec0bded1efa7389a/moleculapy-1.1.0.tar.gz
+[2024-05-05 14:21:33] INFO root fetch - processPackages [smb-sync]: Downloading https://files.pythonhosted.org/packages/7e/8d/31c5b09cd74390aadc129daab2bd0f8f3a0b1cce13760ded76f62014e330/smb_sync-0.0.1.tar.gz
+[2024-05-05 14:21:33] INFO root fetch - processPackages [MoleculaPy]: executing diffoscope
+[2024-05-05 14:21:33] INFO root fetch - processPackages [MoleculaPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moleculapy-1.0.1.tar.gz tmp/moleculapy-1.1.0.tar.gz --markdown 20240505/M/MoleculaPy/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-05 14:21:33] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871663>=10485760
+[2024-05-05 14:21:33] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-05-05 14:21:34] INFO root fetch - processPackages [smb-sync]: Downloading https://files.pythonhosted.org/packages/04/55/c481bc944d846ba7501be1b695ff54aecdc4ee343527c872f18158795574/smb_sync-0.0.2.tar.gz
+[2024-05-05 14:21:34] INFO root fetch - processPackages [smb-sync]: executing diffoscope
+[2024-05-05 14:21:34] INFO root fetch - processPackages [smb-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smb_sync-0.0.1.tar.gz tmp/smb_sync-0.0.2.tar.gz --markdown 20240505/s/smb-sync/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 14:21:34] INFO root fetch - processPackages [MoleculaPy]: Remove: archive file [/home/abi/fetcher/tmp/moleculapy-1.0.1.tar.gz]
+[2024-05-05 14:21:34] INFO root fetch - processPackages [MoleculaPy]: Remove: archive file [/home/abi/fetcher/tmp/moleculapy-1.1.0.tar.gz]
+[2024-05-05 14:21:34] INFO root fetch - main [MainThread]: End processing [MoleculaPy]: success
+[2024-05-05 14:21:34] INFO root fetch - processPackages [smb-sync]: Remove: archive file [/home/abi/fetcher/tmp/smb_sync-0.0.1.tar.gz]
+[2024-05-05 14:21:34] INFO root fetch - processPackages [smb-sync]: Remove: archive file [/home/abi/fetcher/tmp/smb_sync-0.0.2.tar.gz]
+[2024-05-05 14:21:34] INFO root fetch - main [MainThread]: End processing [smb-sync]: success
+[2024-05-05 14:21:34] INFO root fetch - main [MainThread]: Store serial: [23065401]
