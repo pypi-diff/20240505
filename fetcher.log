@@ -15927,3 +15927,60 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:47:58] INFO root fetch - processPackages [pd-extras]: Remove: archive file [/home/abi/fetcher/tmp/pd_extras-5.0.5.tar.gz]
 [2024-05-05 21:47:58] INFO root fetch - main [MainThread]: End processing [pd-extras]: success
 [2024-05-05 21:47:58] INFO root fetch - main [MainThread]: Store serial: [23068573]
+[2024-05-05 21:50:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068573]
+[2024-05-05 21:50:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: avn
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-nets-core
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ableton-control-surface-core
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ableton-control-surface-scripts
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lazylinop
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: congress-transaction-scraper
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ableton-control-surface-core]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 21:50:07] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.76] Old Version: [0.1.75]
+[2024-05-05 21:50:07] INFO root fetch - processPackages [ableton-control-surface-scripts]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 21:50:08] INFO root fetch - processPackages [avn]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-05 21:50:08] INFO root fetch - processPackages [congress-transaction-scraper]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 21:50:08] INFO root fetch - processPackages [lazylinop]: New version: [1.9.0a0] Old Version: [1.9.0]
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-core]: Downloading https://files.pythonhosted.org/packages/10/31/c729e53962b8a3faed4bb24f4b4cdb9b9db26098cd0f45c12eea5b0c7497/ableton-control-surface-core-0.0.3.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/d6/b8/05e3761e6d58f7f3ce8897be2526e09f6b0c3dc8c3f82227a7da6e7f78da/django_nets_core-0.1.75.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-scripts]: Downloading https://files.pythonhosted.org/packages/d1/bf/49a9c504d141b5aa053872b4d219df58a4b6eb96b025e7a244f09b79dd85/ableton-control-surface-scripts-0.0.3.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [avn]: Downloading https://files.pythonhosted.org/packages/f9/f6/41d934a3b18503873b844b97f51bb9b630600d18a113423481f2295c1287/avn-0.4.0.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [lazylinop]: Downloading https://files.pythonhosted.org/packages/a6/85/7c8c98a190ae8b22f07af1aa79320ecae3c399ea84963ddbba12ff004593/lazylinop-1.9.0-py3-none-any.whl
+[2024-05-05 21:50:08] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/f7/1d/2993b933ff7dd7a01ccc1e38d8deaa16b70c7b2464bd8d026ad2cb5bbde1/congress-transaction-scraper-0.0.1.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/5c/00/b798ab54b62cdfce1f84e00d813f05a7c42b05651945a8d66e711f4c1197/django_nets_core-0.1.76.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-core]: Downloading https://files.pythonhosted.org/packages/18/ba/2a329e808f172adfb70a52f776bce003e8b668b41f71dfdba580869acf2c/ableton-control-surface-core-0.0.4.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-scripts]: Downloading https://files.pythonhosted.org/packages/a5/8c/3d9ccd84e8f4008fa1972f674deb6b0f0a8ebad42ace9a13b8d9f37d38f0/ableton-control-surface-scripts-0.0.4.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-05 21:50:08] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.75.tar.gz tmp/django_nets_core-0.1.76.tar.gz --markdown 20240505/d/django-nets-core/0.1.75-0.1.76/README.md --exclude *.pyd
+[2024-05-05 21:50:08] INFO root fetch - processPackages [avn]: Downloading https://files.pythonhosted.org/packages/03/eb/806be6c50d3b3360aaee606d3f6324deb75ee62e7c6f77a5440437ff23c5/avn-0.5.0.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-core]: executing diffoscope
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ableton-control-surface-core-0.0.3.tar.gz tmp/ableton-control-surface-core-0.0.4.tar.gz --markdown 20240505/a/ableton-control-surface-core/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-scripts]: executing diffoscope
+[2024-05-05 21:50:08] INFO root fetch - processPackages [ableton-control-surface-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ableton-control-surface-scripts-0.0.3.tar.gz tmp/ableton-control-surface-scripts-0.0.4.tar.gz --markdown 20240505/a/ableton-control-surface-scripts/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 21:50:08] INFO root fetch - processPackages [avn]: executing diffoscope
+[2024-05-05 21:50:08] INFO root fetch - processPackages [congress-transaction-scraper]: Downloading https://files.pythonhosted.org/packages/fb/fb/c787ae6aa76e3065094cdcd666335e85d61633cfe7c0d5fc773250d03d8e/congress_transaction_scraper-0.0.2.tar.gz
+[2024-05-05 21:50:08] INFO root fetch - processPackages [avn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avn-0.4.0.tar.gz tmp/avn-0.5.0.tar.gz --markdown 20240505/a/avn/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-05 21:50:08] INFO root fetch - processPackages [lazylinop]: Downloading https://files.pythonhosted.org/packages/30/85/00c52007446a5f392301e7f30b58d0d1c48a775f923b57e5bb9f0a4733a0/lazylinop-1.9.0a0-py3-none-any.whl
+[2024-05-05 21:50:08] INFO root fetch - processPackages [lazylinop]: executing diffoscope
+[2024-05-05 21:50:08] INFO root fetch - processPackages [lazylinop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylinop-1.9.0-py3-none-any.whl.zip tmp/lazylinop-1.9.0a0-py3-none-any.whl.zip --markdown 20240505/l/lazylinop/1.9.0-1.9.0a0/README.md --exclude *.pyd
+[2024-05-05 21:50:08] INFO root fetch - processPackages [congress-transaction-scraper]: executing diffoscope
+[2024-05-05 21:50:08] INFO root fetch - processPackages [congress-transaction-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/congress-transaction-scraper-0.0.1.tar.gz tmp/congress_transaction_scraper-0.0.2.tar.gz --markdown 20240505/c/congress-transaction-scraper/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 21:50:09] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.75.tar.gz]
+[2024-05-05 21:50:09] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.76.tar.gz]
+[2024-05-05 21:50:09] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-05 21:50:09] INFO root fetch - processPackages [avn]: Remove: archive file [/home/abi/fetcher/tmp/avn-0.4.0.tar.gz]
+[2024-05-05 21:50:09] INFO root fetch - processPackages [avn]: Remove: archive file [/home/abi/fetcher/tmp/avn-0.5.0.tar.gz]
+[2024-05-05 21:50:09] INFO root fetch - main [MainThread]: End processing [avn]: success
+[2024-05-05 21:50:09] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress-transaction-scraper-0.0.1.tar.gz]
+[2024-05-05 21:50:09] INFO root fetch - processPackages [congress-transaction-scraper]: Remove: archive file [/home/abi/fetcher/tmp/congress_transaction_scraper-0.0.2.tar.gz]
+[2024-05-05 21:50:09] INFO root fetch - main [MainThread]: End processing [congress-transaction-scraper]: success
+[2024-05-05 21:50:09] INFO root fetch - processPackages [lazylinop]: Remove: archive file [/home/abi/fetcher/tmp/lazylinop-1.9.0-py3-none-any.whl.zip]
+[2024-05-05 21:50:09] INFO root fetch - processPackages [lazylinop]: Remove: archive file [/home/abi/fetcher/tmp/lazylinop-1.9.0a0-py3-none-any.whl.zip]
+[2024-05-05 21:50:09] INFO root fetch - main [MainThread]: End processing [lazylinop]: success
+[2024-05-05 21:50:10] INFO root fetch - processPackages [ableton-control-surface-core]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-core-0.0.3.tar.gz]
+[2024-05-05 21:50:10] INFO root fetch - processPackages [ableton-control-surface-core]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-core-0.0.4.tar.gz]
+[2024-05-05 21:50:10] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-core]: success
+[2024-05-05 21:50:12] INFO root fetch - processPackages [ableton-control-surface-scripts]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-scripts-0.0.3.tar.gz]
+[2024-05-05 21:50:12] INFO root fetch - processPackages [ableton-control-surface-scripts]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-scripts-0.0.4.tar.gz]
+[2024-05-05 21:50:12] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-scripts]: success
+[2024-05-05 21:50:12] INFO root fetch - main [MainThread]: Store serial: [23068589]
