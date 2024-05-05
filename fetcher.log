@@ -9006,3 +9006,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:08:30] INFO root fetch - processPackages [pyscail]: Remove: archive file [/home/abi/fetcher/tmp/pyscail-0.0.9.tar.gz]
 [2024-05-05 14:08:30] INFO root fetch - main [MainThread]: End processing [pyscail]: success
 [2024-05-05 14:08:30] INFO root fetch - main [MainThread]: Store serial: [23065354]
+[2024-05-05 14:10:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065354]
+[2024-05-05 14:10:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 14:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torcheval-nightly
+[2024-05-05 14:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-activitylog-jwt
+[2024-05-05 14:10:39] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.5.4] Old Version: [2024.5.2]
+[2024-05-05 14:10:39] WARNING root fetch - processPackages [django-activitylog-jwt]: Skipping, unable to determine old version
+[2024-05-05 14:10:39] INFO root fetch - main [MainThread]: End processing [django-activitylog-jwt] error
+[2024-05-05 14:10:39] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/3e/71/fe5e74040619b088b4eea47b0e637489ff896ae0e6a2feb291970a4b5921/torcheval-nightly-2024.5.2.tar.gz
+[2024-05-05 14:10:40] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/ef/af/21b1fdb006794e9e4cab18e28d28c8d24a6376dcdc5b18e4458a899b92da/torcheval-nightly-2024.5.4.tar.gz
+[2024-05-05 14:10:40] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-05-05 14:10:40] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2024.5.2.tar.gz tmp/torcheval-nightly-2024.5.4.tar.gz --markdown 20240505/t/torcheval-nightly/2024.5.2-2024.5.4/README.md --exclude *.pyd
+[2024-05-05 14:10:41] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.5.2.tar.gz]
+[2024-05-05 14:10:41] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.5.4.tar.gz]
+[2024-05-05 14:10:41] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-05-05 14:10:41] INFO root fetch - main [MainThread]: Store serial: [23065362]
