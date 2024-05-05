@@ -2050,3 +2050,33 @@
 [2024-05-05 03:13:04] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954554104-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-05 03:13:04] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2024-05-05 03:13:04] INFO root fetch - main [MainThread]: Store serial: [23062356]
+[2024-05-05 03:15:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062356]
+[2024-05-05 03:15:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 03:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-curl
+[2024-05-05 03:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-parser
+[2024-05-05 03:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gr1336-toolbox
+[2024-05-05 03:15:13] INFO root fetch - processPackages [gr1336-toolbox]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 03:15:13] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.8954554104] Old Version: [0.0.1.8954491766]
+[2024-05-05 03:15:13] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-05 03:15:13] INFO root fetch - processPackages [gr1336-toolbox]: Downloading https://files.pythonhosted.org/packages/72/57/d5c62a535c9f5b81a767f7fb9edea162b04b8104efc889473bd42f70c80a/gr1336_toolbox-0.0.6.tar.gz
+[2024-05-05 03:15:13] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/86/eb/64b7f7c1b122fa5283f29e7ba2a0ea902d7b0e44243c4fc6d661f94c4c05/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 03:15:13] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-05-05 03:15:13] INFO root fetch - processPackages [gr1336-toolbox]: Downloading https://files.pythonhosted.org/packages/42/66/ed151dad1307c69e46d1d48dda1ee244f64d1bb22ffb3bf179681431025c/gr1336_toolbox-0.0.7.tar.gz
+[2024-05-05 03:15:13] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-05-05 03:15:14] INFO root fetch - processPackages [gr1336-toolbox]: executing diffoscope
+[2024-05-05 03:15:14] INFO root fetch - processPackages [gr1336-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gr1336_toolbox-0.0.6.tar.gz tmp/gr1336_toolbox-0.0.7.tar.gz --markdown 20240505/g/gr1336-toolbox/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-05 03:15:14] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/42/75/073bd220e0981dc42c279940c0b15e927f1ed3300557749dd025f40f2b84/zuspec_parser-0.0.1.8954554104-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 03:15:14] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-05-05 03:15:14] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240505/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-05 03:15:14] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2024-05-05 03:15:14] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.8954554104-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/z/zuspec-parser/0.0.1.8954491766-0.0.1.8954554104/README.md --exclude *.pyd
+[2024-05-05 03:15:14] INFO root fetch - processPackages [gr1336-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gr1336_toolbox-0.0.6.tar.gz]
+[2024-05-05 03:15:14] INFO root fetch - processPackages [gr1336-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gr1336_toolbox-0.0.7.tar.gz]
+[2024-05-05 03:15:14] INFO root fetch - main [MainThread]: End processing [gr1336-toolbox]: success
+[2024-05-05 03:15:15] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-05-05 03:15:15] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-05-05 03:15:15] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-05-05 03:15:16] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954491766-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 03:15:16] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954554104-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 03:15:16] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2024-05-05 03:15:16] INFO root fetch - main [MainThread]: Store serial: [23062370]
