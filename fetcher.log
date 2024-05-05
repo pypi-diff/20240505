@@ -8317,3 +8317,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:22:42] INFO root fetch - processPackages [betty]: Remove: archive file [/home/abi/fetcher/tmp/betty-0.3.4.tar.gz]
 [2024-05-05 13:22:42] INFO root fetch - main [MainThread]: End processing [betty]: success
 [2024-05-05 13:22:42] INFO root fetch - main [MainThread]: Store serial: [23065013]
+[2024-05-05 13:24:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065013]
+[2024-05-05 13:24:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 13:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ara-tools
+[2024-05-05 13:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemini-ai-app-downloader
+[2024-05-05 13:24:52] INFO root fetch - processPackages [gemini-ai-app-downloader]: New version: [1.6] Old Version: [1.5]
+[2024-05-05 13:24:52] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/41/36/9e45ad1d4d9903e5747793c9c4758903830baa6d3179d42ea9cdd7e156fe/gemini_ai_app_downloader-1.5.tar.gz
+[2024-05-05 13:24:52] INFO root fetch - processPackages [ara-tools]: New version: [0.1.4.9] Old Version: [0.1.4.7]
+[2024-05-05 13:24:52] INFO root fetch - processPackages [ara-tools]: Downloading https://files.pythonhosted.org/packages/61/c2/1f3d69fc991264dd1e6328b3883195ba6fa6d5e6dfe12f30bfb63b1a821a/ara-tools-0.1.4.7.tar.gz
+[2024-05-05 13:24:53] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/ce/84/00b934f654e79f23a13e0c9c5259256deb27df8d88d25c9773bb85b5d476/gemini_ai_app_downloader-1.6.tar.gz
+[2024-05-05 13:24:53] INFO root fetch - processPackages [gemini-ai-app-downloader]: executing diffoscope
+[2024-05-05 13:24:53] INFO root fetch - processPackages [gemini-ai-app-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_ai_app_downloader-1.5.tar.gz tmp/gemini_ai_app_downloader-1.6.tar.gz --markdown 20240505/g/gemini-ai-app-downloader/1.5-1.6/README.md --exclude *.pyd
+[2024-05-05 13:24:53] INFO root fetch - processPackages [ara-tools]: Downloading https://files.pythonhosted.org/packages/7c/e1/03c26e41f4232ed77de9425e2c3c556446e754b88575d02b10b992988c26/ara-tools-0.1.4.9.tar.gz
+[2024-05-05 13:24:53] INFO root fetch - processPackages [ara-tools]: executing diffoscope
+[2024-05-05 13:24:53] INFO root fetch - processPackages [ara-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ara-tools-0.1.4.7.tar.gz tmp/ara-tools-0.1.4.9.tar.gz --markdown 20240505/a/ara-tools/0.1.4.7-0.1.4.9/README.md --exclude *.pyd
+[2024-05-05 13:24:53] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.5.tar.gz]
+[2024-05-05 13:24:53] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.6.tar.gz]
+[2024-05-05 13:24:53] INFO root fetch - main [MainThread]: End processing [gemini-ai-app-downloader]: success
+[2024-05-05 13:24:53] INFO root fetch - processPackages [ara-tools]: Remove: archive file [/home/abi/fetcher/tmp/ara-tools-0.1.4.7.tar.gz]
+[2024-05-05 13:24:53] INFO root fetch - processPackages [ara-tools]: Remove: archive file [/home/abi/fetcher/tmp/ara-tools-0.1.4.9.tar.gz]
+[2024-05-05 13:24:53] INFO root fetch - main [MainThread]: End processing [ara-tools]: success
+[2024-05-05 13:24:53] INFO root fetch - main [MainThread]: Store serial: [23065020]
