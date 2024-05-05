@@ -5205,3 +5205,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:08:54] INFO root fetch - processPackages [miner-ai-beta]: Remove: archive file [/home/abi/fetcher/tmp/miner_ai_beta-0.1.2.tar.gz]
 [2024-05-05 09:08:54] INFO root fetch - main [MainThread]: End processing [miner-ai-beta]: success
 [2024-05-05 09:08:54] INFO root fetch - main [MainThread]: Store serial: [23063726]
+[2024-05-05 09:10:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063726]
+[2024-05-05 09:11:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 09:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ghostbase
+[2024-05-05 09:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyphetools
+[2024-05-05 09:11:02] INFO root fetch - processPackages [ghostbase]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 09:11:02] INFO root fetch - processPackages [ghostbase]: Downloading https://files.pythonhosted.org/packages/43/3a/5a9685b3851489ad8ca5ff18c7f8f5c2310cae7bd2b8cf876979d7b44b07/ghostbase-1.2.0-py3-none-any.whl
+[2024-05-05 09:11:02] INFO root fetch - processPackages [pyphetools]: New version: [0.9.9] Old Version: [0.9.84]
+[2024-05-05 09:11:02] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/52/3b/ce6a3ad7981ad290579d3f1298ba002d12c65abc414b15d14ddd0793d5e4/pyphetools-0.9.84.tar.gz
+[2024-05-05 09:11:02] INFO root fetch - processPackages [ghostbase]: Downloading https://files.pythonhosted.org/packages/80/36/7d4b4bb63372c1b70b2a1aa2ce714e2c453fba1a8315740f80f7192325d6/ghostbase-1.2.1-py3-none-any.whl
+[2024-05-05 09:11:03] INFO root fetch - processPackages [ghostbase]: executing diffoscope
+[2024-05-05 09:11:03] INFO root fetch - processPackages [ghostbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghostbase-1.2.0-py3-none-any.whl.zip tmp/ghostbase-1.2.1-py3-none-any.whl.zip --markdown 20240505/g/ghostbase/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 09:11:03] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/21/0f/082981f834d44e19354002ae37884bb9cf87bb330242ae69908f6f893dcf/pyphetools-0.9.9.tar.gz
+[2024-05-05 09:11:03] INFO root fetch - processPackages [ghostbase]: Remove: archive file [/home/abi/fetcher/tmp/ghostbase-1.2.0-py3-none-any.whl.zip]
+[2024-05-05 09:11:03] INFO root fetch - processPackages [ghostbase]: Remove: archive file [/home/abi/fetcher/tmp/ghostbase-1.2.1-py3-none-any.whl.zip]
+[2024-05-05 09:11:03] INFO root fetch - main [MainThread]: End processing [ghostbase]: success
+[2024-05-05 09:11:03] INFO root fetch - processPackages [pyphetools]: executing diffoscope
+[2024-05-05 09:11:03] INFO root fetch - processPackages [pyphetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphetools-0.9.84.tar.gz tmp/pyphetools-0.9.9.tar.gz --markdown 20240505/p/pyphetools/0.9.84-0.9.9/README.md --exclude *.pyd
+[2024-05-05 09:11:04] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.84.tar.gz]
+[2024-05-05 09:11:04] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.9.tar.gz]
+[2024-05-05 09:11:04] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
+[2024-05-05 09:11:04] INFO root fetch - main [MainThread]: Store serial: [23063731]
