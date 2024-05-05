@@ -15861,3 +15861,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:43:36] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
 [2024-05-05 21:43:36] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
 [2024-05-05 21:43:36] INFO root fetch - main [MainThread]: Store serial: [23068543]
+[2024-05-05 21:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068543]
+[2024-05-05 21:45:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 21:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: noiseestimator
+[2024-05-05 21:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-accounts
+[2024-05-05 21:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SingleCellExperiment
+[2024-05-05 21:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cae-cli
+[2024-05-05 21:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maling
+[2024-05-05 21:45:46] INFO root fetch - processPackages [cae-cli]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-05 21:45:46] WARNING root fetch - processPackages [noiseestimator]: Skipping, unable to determine old version
+[2024-05-05 21:45:46] INFO root fetch - main [MainThread]: End processing [noiseestimator] error
+[2024-05-05 21:45:46] INFO root fetch - processPackages [maling]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-05-05 21:45:46] INFO root fetch - processPackages [SingleCellExperiment]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-05 21:45:46] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/1f/b2/a66f5d29ead0b38b587044b14045d45263af8975962efd277a59b1755675/cae_cli-0.0.7.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [heaserver-accounts]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-05 21:45:46] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/2c/13/78b6a7b3628afb87b4fb7c087ff43aa448cf561d5f9116db21178b1ed7eb/maling-2.3.4.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [SingleCellExperiment]: Downloading https://files.pythonhosted.org/packages/25/86/bb5c68bf674bff2059090bcced08f9ac12256f78e259579783fc92e7904c/SingleCellExperiment-0.4.4.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [heaserver-accounts]: Downloading https://files.pythonhosted.org/packages/f0/c1/7de688d7670efacbf40a30b6417b9be389be0a0b0b8717f79c1efbd2c0cc/heaserver_accounts-1.1.2.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/bc/7c/ee971e0b7ec648b3e2cbf2d39225f12d42e505306f2bdd201064019689c7/cae_cli-0.0.8.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/d1/70/841f4bf7aea18a721d2ee7557cf64a4179fe738345cce4e9c5c72a6fbc6c/maling-2.3.5.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-05 21:45:46] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.0.7.tar.gz tmp/cae_cli-0.0.8.tar.gz --markdown 20240505/c/cae-cli/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-05 21:45:46] INFO root fetch - processPackages [heaserver-accounts]: Downloading https://files.pythonhosted.org/packages/c0/e1/4ac129c630581e7675babe0098a38067613670120a7a25c21bbf07994d12/heaserver_accounts-1.1.3.tar.gz
+[2024-05-05 21:45:46] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-05-05 21:45:46] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.3.4.tar.gz tmp/maling-2.3.5.tar.gz --markdown 20240505/m/maling/2.3.4-2.3.5/README.md --exclude *.pyd
+[2024-05-05 21:45:46] INFO root fetch - processPackages [SingleCellExperiment]: Downloading https://files.pythonhosted.org/packages/45/85/3b822f9207404b16fc1d826701cf93381e035e5a72a6371b24800a333330/singlecellexperiment-0.4.5.tar.gz
+[2024-05-05 21:45:47] INFO root fetch - processPackages [heaserver-accounts]: executing diffoscope
+[2024-05-05 21:45:47] INFO root fetch - processPackages [heaserver-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver_accounts-1.1.2.tar.gz tmp/heaserver_accounts-1.1.3.tar.gz --markdown 20240505/h/heaserver-accounts/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-05 21:45:47] INFO root fetch - processPackages [SingleCellExperiment]: executing diffoscope
+[2024-05-05 21:45:47] INFO root fetch - processPackages [SingleCellExperiment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SingleCellExperiment-0.4.4.tar.gz tmp/singlecellexperiment-0.4.5.tar.gz --markdown 20240505/S/SingleCellExperiment/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-05 21:45:47] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.7.tar.gz]
+[2024-05-05 21:45:47] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.8.tar.gz]
+[2024-05-05 21:45:47] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-05 21:45:47] INFO root fetch - processPackages [heaserver-accounts]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_accounts-1.1.2.tar.gz]
+[2024-05-05 21:45:47] INFO root fetch - processPackages [heaserver-accounts]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_accounts-1.1.3.tar.gz]
+[2024-05-05 21:45:47] INFO root fetch - main [MainThread]: End processing [heaserver-accounts]: success
+[2024-05-05 21:45:47] INFO root fetch - processPackages [SingleCellExperiment]: Remove: archive file [/home/abi/fetcher/tmp/SingleCellExperiment-0.4.4.tar.gz]
+[2024-05-05 21:45:47] INFO root fetch - processPackages [SingleCellExperiment]: Remove: archive file [/home/abi/fetcher/tmp/singlecellexperiment-0.4.5.tar.gz]
+[2024-05-05 21:45:47] INFO root fetch - main [MainThread]: End processing [SingleCellExperiment]: success
+[2024-05-05 21:45:48] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.4.tar.gz]
+[2024-05-05 21:45:48] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.5.tar.gz]
+[2024-05-05 21:45:48] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-05-05 21:45:48] INFO root fetch - main [MainThread]: Store serial: [23068560]
