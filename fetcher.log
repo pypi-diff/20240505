@@ -17373,3 +17373,9 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:28:43] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
 [2024-05-05 23:28:43] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
 [2024-05-05 23:28:43] INFO root fetch - main [MainThread]: Store serial: [23069215]
+[2024-05-05 23:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069215]
+[2024-05-05 23:30:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 23:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmail
+[2024-05-05 23:30:53] WARNING root fetch - processPackages [llmail]: Skipping, unable to determine old version
+[2024-05-05 23:30:53] INFO root fetch - main [MainThread]: End processing [llmail] error
+[2024-05-05 23:30:53] INFO root fetch - main [MainThread]: Store serial: [23069220]
