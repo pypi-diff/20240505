@@ -16688,3 +16688,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:36:44] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.758.1.tar.gz]
 [2024-05-05 22:36:44] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2024-05-05 22:36:44] INFO root fetch - main [MainThread]: Store serial: [23068889]
+[2024-05-05 22:38:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068889]
+[2024-05-05 22:38:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 22:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snakestream
+[2024-05-05 22:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: not-again-ai
+[2024-05-05 22:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zedcli
+[2024-05-05 22:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cc-py-commons
+[2024-05-05 22:38:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: atlas-db
+[2024-05-05 22:38:53] INFO root fetch - processPackages [cc-py-commons]: New version: [0.3.98] Old Version: [0.3.97]
+[2024-05-05 22:38:53] INFO root fetch - processPackages [snakestream]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 22:38:53] INFO root fetch - processPackages [cc-py-commons]: Downloading https://files.pythonhosted.org/packages/43/12/7d144a1f2454f1f5aaa151ebecb851c05df4ed1a812a9488f02cebe2c48b/cc_py_commons-0.3.97.tar.gz
+[2024-05-05 22:38:53] INFO root fetch - processPackages [atlas-db]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 22:38:53] WARNING root fetch - processPackages [zedcli]: Skipping, unable to determine old version
+[2024-05-05 22:38:53] INFO root fetch - main [MainThread]: End processing [zedcli] error
+[2024-05-05 22:38:53] INFO root fetch - processPackages [not-again-ai]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-05 22:38:54] INFO root fetch - processPackages [snakestream]: Downloading https://files.pythonhosted.org/packages/11/83/d1d6377a3490476d9d2299cf17a259078ce7cc8c489d716ea3267fbb6c99/snakestream-0.3.0.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/4c/36/b9bd55176a6abd80fa43ed27b9d5c8b0692589662daa50d2035e529b7a93/not_again_ai-0.6.0.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [atlas-db]: Downloading https://files.pythonhosted.org/packages/c0/84/cac98faafde5dfecf90231da9b2f9a944eb9488b567a72adf2b7567f99cc/atlas_db-0.2.8.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [cc-py-commons]: Downloading https://files.pythonhosted.org/packages/d2/7d/9a27ad4a33ed857aa5bfff9aeb0514988e462655becab45a97c39767f995/cc_py_commons-0.3.98.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [cc-py-commons]: executing diffoscope
+[2024-05-05 22:38:54] INFO root fetch - processPackages [cc-py-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cc_py_commons-0.3.97.tar.gz tmp/cc_py_commons-0.3.98.tar.gz --markdown 20240505/c/cc-py-commons/0.3.97-0.3.98/README.md --exclude *.pyd
+[2024-05-05 22:38:54] INFO root fetch - processPackages [snakestream]: Downloading https://files.pythonhosted.org/packages/8a/a5/0df9a412da216bce2909272bdafbd23d58dfb68f1fbb8b4212f8caa65789/snakestream-0.3.1.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/d6/9f/1356af808a042b788d7967539cc8b74087f1399cdb13ddffee060d833749/not_again_ai-0.7.0.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [atlas-db]: Downloading https://files.pythonhosted.org/packages/ec/3e/034ebe03b3836177510d3278700b70a32ac29533a0f8b5f04615ab2ce8e8/atlas_db-0.2.9.tar.gz
+[2024-05-05 22:38:54] INFO root fetch - processPackages [snakestream]: executing diffoscope
+[2024-05-05 22:38:54] INFO root fetch - processPackages [snakestream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snakestream-0.3.0.tar.gz tmp/snakestream-0.3.1.tar.gz --markdown 20240505/s/snakestream/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 22:38:54] INFO root fetch - processPackages [not-again-ai]: executing diffoscope
+[2024-05-05 22:38:54] INFO root fetch - processPackages [not-again-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not_again_ai-0.6.0.tar.gz tmp/not_again_ai-0.7.0.tar.gz --markdown 20240505/n/not-again-ai/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-05 22:38:54] INFO root fetch - processPackages [atlas-db]: executing diffoscope
+[2024-05-05 22:38:54] INFO root fetch - processPackages [atlas-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlas_db-0.2.8.tar.gz tmp/atlas_db-0.2.9.tar.gz --markdown 20240505/a/atlas-db/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-05 22:38:55] INFO root fetch - processPackages [cc-py-commons]: Remove: archive file [/home/abi/fetcher/tmp/cc_py_commons-0.3.97.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - processPackages [cc-py-commons]: Remove: archive file [/home/abi/fetcher/tmp/cc_py_commons-0.3.98.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - main [MainThread]: End processing [cc-py-commons]: success
+[2024-05-05 22:38:55] INFO root fetch - processPackages [snakestream]: Remove: archive file [/home/abi/fetcher/tmp/snakestream-0.3.0.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - processPackages [snakestream]: Remove: archive file [/home/abi/fetcher/tmp/snakestream-0.3.1.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - main [MainThread]: End processing [snakestream]: success
+[2024-05-05 22:38:55] INFO root fetch - processPackages [atlas-db]: Remove: archive file [/home/abi/fetcher/tmp/atlas_db-0.2.8.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - processPackages [atlas-db]: Remove: archive file [/home/abi/fetcher/tmp/atlas_db-0.2.9.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - main [MainThread]: End processing [atlas-db]: success
+[2024-05-05 22:38:55] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.6.0.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.7.0.tar.gz]
+[2024-05-05 22:38:55] INFO root fetch - main [MainThread]: End processing [not-again-ai]: success
+[2024-05-05 22:38:55] INFO root fetch - main [MainThread]: Store serial: [23068907]
