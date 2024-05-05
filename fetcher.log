@@ -6191,3 +6191,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:29:19] INFO root fetch - processPackages [libsigscan-python]: Remove: archive file [/home/abi/fetcher/tmp/libsigscan-python-20240505.tar.gz]
 [2024-05-05 10:29:19] INFO root fetch - main [MainThread]: End processing [libsigscan-python]: success
 [2024-05-05 10:29:19] INFO root fetch - main [MainThread]: Store serial: [23064130]
+[2024-05-05 10:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064130]
+[2024-05-05 10:31:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 10:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TensorART
+[2024-05-05 10:31:28] WARNING root fetch - processPackages [TensorART]: Skipping, unable to determine old version
+[2024-05-05 10:31:28] INFO root fetch - main [MainThread]: End processing [TensorART] error
+[2024-05-05 10:31:28] INFO root fetch - main [MainThread]: Store serial: [23064135]
