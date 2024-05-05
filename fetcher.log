@@ -16379,3 +16379,65 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:16:35] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
 [2024-05-05 22:16:35] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-05 22:16:35] INFO root fetch - main [MainThread]: Store serial: [23068780]
+[2024-05-05 22:18:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068780]
+[2024-05-05 22:18:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-cjkcms
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magic-extract
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: augpathlib
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tkinterweb
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: heaserver-folders-aws-s3
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ml4teens
+[2024-05-05 22:18:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: organage
+[2024-05-05 22:18:43] WARNING root fetch - processPackages [sqlalchemy-multilingual]: Skipping, unable to determine old version
+[2024-05-05 22:18:43] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual] error
+[2024-05-05 22:18:44] INFO root fetch - processPackages [magic-extract]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [augpathlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [ml4teens]: New version: [0.1.39] Old Version: [0.1.38]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [wagtail-cjkcms]: New version: [24.5.2] Old Version: [24.5.1]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [tkinterweb]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [organage]: New version: [1.0.0] Old Version: [0.5.2]
+[2024-05-05 22:18:44] INFO root fetch - processPackages [magic-extract]: Downloading https://files.pythonhosted.org/packages/de/48/0cf72bbcf2b7348166a6bd9faee94b7a401e5fbf96a8b97a32fb468a97c6/magic_extract-0.2.2.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [augpathlib]: Downloading https://files.pythonhosted.org/packages/b3/59/9b4a6181169539b166bcf777106dd4da3e04aa8ecd4562eb289b7ea9be22/augpathlib-0.0.8.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [ml4teens]: Downloading https://files.pythonhosted.org/packages/90/d9/309606658a8a7da8a429f85ae951a2f112ba7b838da349e3bf4b11656a9b/ml4teens-0.1.38.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/5a/e2/9998f025663132c320dc199c06a7a4753d9262ccf396d6eea944743150b9/wagtail_cjkcms-24.5.1.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [organage]: Downloading https://files.pythonhosted.org/packages/23/1e/6911b55a3cfada09c6033b8db8da411744afa6d18dfe5de0eec94ddf4716/organage-0.5.2.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Downloading https://files.pythonhosted.org/packages/71/81/b4df4254c70f9c7b8bd1da267c6776bf5dd1b938ee6d1ab10ecd43d30bcd/heaserver_folders_aws_s3-1.1.2.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/fb/88/c86c5a5baae51628333717b42e4fb53d2b159233ba97f5089fcb5e1f65cb/tkinterweb-3.9.6.tar.gz
+[2024-05-05 22:18:44] WARNING root fetch - processPackages [ml4teens]: Skipping package: exceeds size limit 22454699>=10485760
+[2024-05-05 22:18:44] INFO root fetch - main [MainThread]: End processing [ml4teens] error
+[2024-05-05 22:18:44] INFO root fetch - processPackages [magic-extract]: Downloading https://files.pythonhosted.org/packages/18/b4/fece0ba73b432b50b39a2d60776317639f9c2a15941c98f14242f4f07f34/magic_extract-0.3.0.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [augpathlib]: Downloading https://files.pythonhosted.org/packages/81/84/ce5dc1dc8101143f2553820ed664469e8462ce1bed567615dea5389202ef/augpathlib-0.0.9.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Downloading https://files.pythonhosted.org/packages/b5/ac/522a078f5903c4c85ed6423f53e565305daed8c1b3d38324e9f948caa56f/heaserver_folders_aws_s3-1.1.3.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [magic-extract]: executing diffoscope
+[2024-05-05 22:18:44] INFO root fetch - processPackages [magic-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_extract-0.2.2.tar.gz tmp/magic_extract-0.3.0.tar.gz --markdown 20240505/m/magic-extract/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-05 22:18:44] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/51/7a/b134296bc2c208ae5b4b834ddb631274dc42e08b53fb3869bd37f2d9481a/wagtail_cjkcms-24.5.2.tar.gz
+[2024-05-05 22:18:44] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2024-05-05 22:18:44] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver_folders_aws_s3-1.1.2.tar.gz tmp/heaserver_folders_aws_s3-1.1.3.tar.gz --markdown 20240505/h/heaserver-folders-aws-s3/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-05 22:18:45] INFO root fetch - processPackages [wagtail-cjkcms]: executing diffoscope
+[2024-05-05 22:18:45] INFO root fetch - processPackages [wagtail-cjkcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_cjkcms-24.5.1.tar.gz tmp/wagtail_cjkcms-24.5.2.tar.gz --markdown 20240505/w/wagtail-cjkcms/24.5.1-24.5.2/README.md --exclude *.pyd
+[2024-05-05 22:18:45] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/00/e1/a22d4bc360d1eaed4590da7adf3b45a448f6055ca35ab8939a8019e0203f/tkinterweb-3.9.7.tar.gz
+[2024-05-05 22:18:45] INFO root fetch - processPackages [magic-extract]: Remove: archive file [/home/abi/fetcher/tmp/magic_extract-0.2.2.tar.gz]
+[2024-05-05 22:18:45] INFO root fetch - processPackages [magic-extract]: Remove: archive file [/home/abi/fetcher/tmp/magic_extract-0.3.0.tar.gz]
+[2024-05-05 22:18:45] INFO root fetch - main [MainThread]: End processing [magic-extract]: success
+[2024-05-05 22:18:45] INFO root fetch - processPackages [tkinterweb]: executing diffoscope
+[2024-05-05 22:18:45] INFO root fetch - processPackages [tkinterweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinterweb-3.9.6.tar.gz tmp/tkinterweb-3.9.7.tar.gz --markdown 20240505/t/tkinterweb/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-05-05 22:18:45] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_folders_aws_s3-1.1.2.tar.gz]
+[2024-05-05 22:18:45] INFO root fetch - processPackages [heaserver-folders-aws-s3]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_folders_aws_s3-1.1.3.tar.gz]
+[2024-05-05 22:18:45] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2024-05-05 22:18:45] INFO root fetch - processPackages [augpathlib]: executing diffoscope
+[2024-05-05 22:18:45] INFO root fetch - processPackages [augpathlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/augpathlib-0.0.8.tar.gz tmp/augpathlib-0.0.9.tar.gz --markdown 20240505/a/augpathlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 22:18:46] INFO root fetch - processPackages [augpathlib]: Remove: archive file [/home/abi/fetcher/tmp/augpathlib-0.0.8.tar.gz]
+[2024-05-05 22:18:46] INFO root fetch - processPackages [augpathlib]: Remove: archive file [/home/abi/fetcher/tmp/augpathlib-0.0.9.tar.gz]
+[2024-05-05 22:18:46] INFO root fetch - main [MainThread]: End processing [augpathlib]: success
+[2024-05-05 22:18:46] INFO root fetch - processPackages [tkinterweb]: Remove: archive file [/home/abi/fetcher/tmp/tkinterweb-3.9.6.tar.gz]
+[2024-05-05 22:18:46] INFO root fetch - processPackages [tkinterweb]: Remove: archive file [/home/abi/fetcher/tmp/tkinterweb-3.9.7.tar.gz]
+[2024-05-05 22:18:46] INFO root fetch - main [MainThread]: End processing [tkinterweb]: success
+[2024-05-05 22:18:46] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.5.1.tar.gz]
+[2024-05-05 22:18:46] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.5.2.tar.gz]
+[2024-05-05 22:18:46] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
+[2024-05-05 22:18:47] INFO root fetch - processPackages [organage]: Downloading https://files.pythonhosted.org/packages/4d/39/4f5f06262f84b73050fa24514b26a20618467f76d0b7b894693483767f51/organage-1.0.0.tar.gz
+[2024-05-05 22:18:47] WARNING root fetch - processPackages [organage]: Skipping package: exceeds size limit 11318488>=10485760
+[2024-05-05 22:18:47] INFO root fetch - main [MainThread]: End processing [organage] error
+[2024-05-05 22:18:47] INFO root fetch - main [MainThread]: Store serial: [23068803]
