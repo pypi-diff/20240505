@@ -15113,3 +15113,29 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:59:58] WARNING root fetch - processPackages [pyOMRON]: Skipping, unable to determine old version
 [2024-05-05 20:59:58] INFO root fetch - main [MainThread]: End processing [pyOMRON] error
 [2024-05-05 20:59:58] INFO root fetch - main [MainThread]: Store serial: [23068152]
+[2024-05-05 21:02:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068152]
+[2024-05-05 21:02:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 21:02:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-nets-core
+[2024-05-05 21:02:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AnimatedWordCloud
+[2024-05-05 21:02:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-vision
+[2024-05-05 21:02:06] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.71] Old Version: [0.1.70]
+[2024-05-05 21:02:06] INFO root fetch - processPackages [keras-vision]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-05 21:02:07] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/e8/53/467735ed08fcea32a4f9fdadc9bac22f7ee175f25b53104b599225e43794/django-nets-core-0.1.70.tar.gz
+[2024-05-05 21:02:07] INFO root fetch - processPackages [AnimatedWordCloud]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-05 21:02:07] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/07/65/92783ecf1a3141be036f7e635fd31af5f75ef7ab1a3144bd1fe6580fb492/keras-vision-0.4.1.tar.gz
+[2024-05-05 21:02:07] INFO root fetch - processPackages [AnimatedWordCloud]: Downloading https://files.pythonhosted.org/packages/2d/c1/f304503d42eb025a47f69be60b6fad13fdd55ee24e78aa102b4fa06879fc/AnimatedWordCloud-1.0.7.tar.gz
+[2024-05-05 21:02:07] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/ba/e3/53e0ef2378aea4a38d000f38d0c7464c7bbecf67d602032ea9f157eb566e/keras-vision-0.4.2.tar.gz
+[2024-05-05 21:02:07] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/07/0c/511b34c00e66f2cd15a03aa8cd1b8ce379b6004728ed6263e8b55339cb9c/django_nets_core-0.1.71.tar.gz
+[2024-05-05 21:02:07] WARNING root fetch - processPackages [AnimatedWordCloud]: Skipping package: exceeds size limit 35072764>=10485760
+[2024-05-05 21:02:07] INFO root fetch - main [MainThread]: End processing [AnimatedWordCloud] error
+[2024-05-05 21:02:07] INFO root fetch - processPackages [keras-vision]: executing diffoscope
+[2024-05-05 21:02:07] INFO root fetch - processPackages [keras-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-vision-0.4.1.tar.gz tmp/keras-vision-0.4.2.tar.gz --markdown 20240505/k/keras-vision/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-05 21:02:07] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-05 21:02:07] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-nets-core-0.1.70.tar.gz tmp/django_nets_core-0.1.71.tar.gz --markdown 20240505/d/django-nets-core/0.1.70-0.1.71/README.md --exclude *.pyd
+[2024-05-05 21:02:08] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.1.tar.gz]
+[2024-05-05 21:02:08] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.2.tar.gz]
+[2024-05-05 21:02:08] INFO root fetch - main [MainThread]: End processing [keras-vision]: success
+[2024-05-05 21:02:08] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django-nets-core-0.1.70.tar.gz]
+[2024-05-05 21:02:08] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.71.tar.gz]
+[2024-05-05 21:02:08] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-05 21:02:08] INFO root fetch - main [MainThread]: Store serial: [23068160]
