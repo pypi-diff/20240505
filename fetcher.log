@@ -2116,3 +2116,36 @@
 [2024-05-05 03:19:37] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954569474-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-05 03:19:37] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2024-05-05 03:19:37] INFO root fetch - main [MainThread]: Store serial: [23062391]
+[2024-05-05 03:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062391]
+[2024-05-05 03:21:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exponent-run
+[2024-05-05 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blastpipe
+[2024-05-05 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: replaytables-andnp
+[2024-05-05 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zuspec-parser
+[2024-05-05 03:21:45] INFO root fetch - processPackages [zuspec-parser]: New version: [0.0.1.8954589128] Old Version: [0.0.1.8954569474]
+[2024-05-05 03:21:45] WARNING root fetch - processPackages [exponent-run]: Skipping, unable to determine old version
+[2024-05-05 03:21:45] INFO root fetch - main [MainThread]: End processing [exponent-run] error
+[2024-05-05 03:21:45] INFO root fetch - processPackages [blastpipe]: New version: [2024.4.5] Old Version: [2024.4.4]
+[2024-05-05 03:21:45] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/b8/01/152ee33a2b6e25ab72396d4d256165b2b450ccc0fe9bf9e266b6d194b386/zuspec_parser-0.0.1.8954569474-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 03:21:45] INFO root fetch - processPackages [replaytables-andnp]: New version: [6.3.0] Old Version: [6.2.16]
+[2024-05-05 03:21:46] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/06/89/ef9b7846ec591061696d6660aac7961406d5fe81a92204339b17c490e6d9/blastpipe-2024.4.4.tar.gz
+[2024-05-05 03:21:46] INFO root fetch - processPackages [replaytables-andnp]: Downloading https://files.pythonhosted.org/packages/29/65/12b74ec613a063c890f294ff0d7818ba8cfc481a640e966db954c632c4c5/ReplayTables_andnp-6.2.16.tar.gz
+[2024-05-05 03:21:46] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/ff/b9/eaab9562cfbbda669606ea128878f67bdca022764f946491e16ccc52e376/blastpipe-2024.4.5.tar.gz
+[2024-05-05 03:21:46] INFO root fetch - processPackages [replaytables-andnp]: Downloading https://files.pythonhosted.org/packages/4a/46/2f751936d6d258a90f19aa31231db45c0a58258efc524b9fb8c79680e5ea/ReplayTables_andnp-6.3.0.tar.gz
+[2024-05-05 03:21:46] INFO root fetch - processPackages [zuspec-parser]: Downloading https://files.pythonhosted.org/packages/a3/56/261c91973cd7735a19cdf51cd6e7e3514c6dfdc625b013790497b4155a94/zuspec_parser-0.0.1.8954589128-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 03:21:46] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-05-05 03:21:46] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.4.4.tar.gz tmp/blastpipe-2024.4.5.tar.gz --markdown 20240505/b/blastpipe/2024.4.4-2024.4.5/README.md --exclude *.pyd
+[2024-05-05 03:21:46] INFO root fetch - processPackages [replaytables-andnp]: executing diffoscope
+[2024-05-05 03:21:46] INFO root fetch - processPackages [replaytables-andnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReplayTables_andnp-6.2.16.tar.gz tmp/ReplayTables_andnp-6.3.0.tar.gz --markdown 20240505/r/replaytables-andnp/6.2.16-6.3.0/README.md --exclude *.pyd
+[2024-05-05 03:21:47] INFO root fetch - processPackages [replaytables-andnp]: Remove: archive file [/home/abi/fetcher/tmp/ReplayTables_andnp-6.2.16.tar.gz]
+[2024-05-05 03:21:47] INFO root fetch - processPackages [replaytables-andnp]: Remove: archive file [/home/abi/fetcher/tmp/ReplayTables_andnp-6.3.0.tar.gz]
+[2024-05-05 03:21:47] INFO root fetch - main [MainThread]: End processing [replaytables-andnp]: success
+[2024-05-05 03:21:47] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.4.tar.gz]
+[2024-05-05 03:21:47] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.5.tar.gz]
+[2024-05-05 03:21:47] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-05-05 03:21:47] INFO root fetch - processPackages [zuspec-parser]: executing diffoscope
+[2024-05-05 03:21:47] INFO root fetch - processPackages [zuspec-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_parser-0.0.1.8954569474-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_parser-0.0.1.8954589128-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240505/z/zuspec-parser/0.0.1.8954569474-0.0.1.8954589128/README.md --exclude *.pyd
+[2024-05-05 03:23:22] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954569474-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 03:23:22] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954589128-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-05 03:23:22] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
+[2024-05-05 03:23:22] INFO root fetch - main [MainThread]: Store serial: [23062420]
