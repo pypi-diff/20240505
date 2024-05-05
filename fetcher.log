@@ -10819,3 +10819,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:08:06] INFO root fetch - processPackages [ragrank]: Remove: archive file [/home/abi/fetcher/tmp/ragrank-0.0.7.tar.gz]
 [2024-05-05 16:08:06] INFO root fetch - main [MainThread]: End processing [ragrank]: success
 [2024-05-05 16:08:06] INFO root fetch - main [MainThread]: Store serial: [23066240]
+[2024-05-05 16:10:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066240]
+[2024-05-05 16:10:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: structured-outputs
+[2024-05-05 16:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocstrings
+[2024-05-05 16:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macronet
+[2024-05-05 16:10:15] WARNING root fetch - processPackages [structured-outputs]: Skipping, unable to determine old version
+[2024-05-05 16:10:15] INFO root fetch - main [MainThread]: End processing [structured-outputs] error
+[2024-05-05 16:10:15] WARNING root fetch - processPackages [macronet]: Skipping, unable to determine old version
+[2024-05-05 16:10:15] INFO root fetch - main [MainThread]: End processing [macronet] error
+[2024-05-05 16:10:15] INFO root fetch - processPackages [mkdocstrings]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-05 16:10:15] INFO root fetch - processPackages [mkdocstrings]: Downloading https://files.pythonhosted.org/packages/b2/4d/7904c5e13a783aed71048718a9ecfcf5d2720aec85285198a52908fdaf07/mkdocstrings-0.9.0.tar.gz
+[2024-05-05 16:10:15] INFO root fetch - processPackages [mkdocstrings]: Downloading https://files.pythonhosted.org/packages/ee/29/d819ea65169866d3fee6067c14b192756c98408b59346a6bc12b46a65d0e/mkdocstrings-0.9.1.tar.gz
+[2024-05-05 16:10:15] INFO root fetch - processPackages [mkdocstrings]: executing diffoscope
+[2024-05-05 16:10:15] INFO root fetch - processPackages [mkdocstrings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings-0.9.0.tar.gz tmp/mkdocstrings-0.9.1.tar.gz --markdown 20240505/m/mkdocstrings/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-05 16:10:16] INFO root fetch - processPackages [mkdocstrings]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings-0.9.0.tar.gz]
+[2024-05-05 16:10:16] INFO root fetch - processPackages [mkdocstrings]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings-0.9.1.tar.gz]
+[2024-05-05 16:10:16] INFO root fetch - main [MainThread]: End processing [mkdocstrings]: success
+[2024-05-05 16:10:16] INFO root fetch - main [MainThread]: Store serial: [23066253]
