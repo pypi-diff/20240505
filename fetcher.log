@@ -8296,3 +8296,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:20:31] INFO root fetch - processPackages [betty]: Remove: archive file [/home/abi/fetcher/tmp/betty-0.3.4.tar.gz]
 [2024-05-05 13:20:31] INFO root fetch - main [MainThread]: End processing [betty]: success
 [2024-05-05 13:20:31] INFO root fetch - main [MainThread]: Store serial: [23065007]
+[2024-05-05 13:22:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065007]
+[2024-05-05 13:22:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 13:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: betty
+[2024-05-05 13:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: randog
+[2024-05-05 13:22:40] INFO root fetch - processPackages [betty]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-05 13:22:40] INFO root fetch - processPackages [betty]: Downloading https://files.pythonhosted.org/packages/5b/42/d1ce049665a2c425ed7967736aec204c069784dddd498bb69c3a87c6c5d4/betty-0.3.3.tar.gz
+[2024-05-05 13:22:40] INFO root fetch - processPackages [randog]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 13:22:40] INFO root fetch - processPackages [randog]: Downloading https://files.pythonhosted.org/packages/df/8f/a0f5c7bcda3a1fb9cbd76ad259eb0a432cb04a74576fa8bcbfba38cf7575/randog-0.8.0.tar.gz
+[2024-05-05 13:22:40] INFO root fetch - processPackages [betty]: Downloading https://files.pythonhosted.org/packages/b8/78/74bc95447ada05c5aecb1609abed188d2ad3b74b70a1675b2426f65454a7/betty-0.3.4.tar.gz
+[2024-05-05 13:22:40] INFO root fetch - processPackages [betty]: executing diffoscope
+[2024-05-05 13:22:40] INFO root fetch - processPackages [betty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betty-0.3.3.tar.gz tmp/betty-0.3.4.tar.gz --markdown 20240505/b/betty/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-05 13:22:40] INFO root fetch - processPackages [randog]: Downloading https://files.pythonhosted.org/packages/96/c4/579c41879f6cf64c0264a477ec851c4e68c39681281c4c9ed0a4cf178134/randog-0.9.0.tar.gz
+[2024-05-05 13:22:41] INFO root fetch - processPackages [randog]: executing diffoscope
+[2024-05-05 13:22:41] INFO root fetch - processPackages [randog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/randog-0.8.0.tar.gz tmp/randog-0.9.0.tar.gz --markdown 20240505/r/randog/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-05 13:22:41] INFO root fetch - processPackages [randog]: Remove: archive file [/home/abi/fetcher/tmp/randog-0.8.0.tar.gz]
+[2024-05-05 13:22:41] INFO root fetch - processPackages [randog]: Remove: archive file [/home/abi/fetcher/tmp/randog-0.9.0.tar.gz]
+[2024-05-05 13:22:41] INFO root fetch - main [MainThread]: End processing [randog]: success
+[2024-05-05 13:22:42] INFO root fetch - processPackages [betty]: Remove: archive file [/home/abi/fetcher/tmp/betty-0.3.3.tar.gz]
+[2024-05-05 13:22:42] INFO root fetch - processPackages [betty]: Remove: archive file [/home/abi/fetcher/tmp/betty-0.3.4.tar.gz]
+[2024-05-05 13:22:42] INFO root fetch - main [MainThread]: End processing [betty]: success
+[2024-05-05 13:22:42] INFO root fetch - main [MainThread]: Store serial: [23065013]
