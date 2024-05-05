@@ -5466,3 +5466,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:26:23] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.9.tar.gz]
 [2024-05-05 09:26:23] INFO root fetch - main [MainThread]: End processing [half-orm]: success
 [2024-05-05 09:26:23] INFO root fetch - main [MainThread]: Store serial: [23063830]
+[2024-05-05 09:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063830]
+[2024-05-05 09:28:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 09:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccxt-unmerged
+[2024-05-05 09:28:33] INFO root fetch - processPackages [ccxt-unmerged]: New version: [4.0] Old Version: [2.2]
+[2024-05-05 09:28:34] INFO root fetch - processPackages [ccxt-unmerged]: Downloading https://files.pythonhosted.org/packages/58/0a/e5f89a7be0124b16d4b04f8688c8d453a638f15065bb7c2e382e3b2ac98e/ccxt-unmerged-2.2.tar.gz
+[2024-05-05 09:28:34] INFO root fetch - processPackages [ccxt-unmerged]: Downloading https://files.pythonhosted.org/packages/58/ac/5032fb5eaf9071f0c0fe1fb23e6bb84a886f569b545751d8c2ad0d33b77c/ccxt_unmerged-4.0.tar.gz
+[2024-05-05 09:28:34] INFO root fetch - processPackages [ccxt-unmerged]: executing diffoscope
+[2024-05-05 09:28:34] INFO root fetch - processPackages [ccxt-unmerged]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-unmerged-2.2.tar.gz tmp/ccxt_unmerged-4.0.tar.gz --markdown 20240505/c/ccxt-unmerged/2.2-4.0/README.md --exclude *.pyd
+[2024-05-05 09:28:35] INFO root fetch - processPackages [ccxt-unmerged]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-unmerged-2.2.tar.gz]
+[2024-05-05 09:28:35] INFO root fetch - processPackages [ccxt-unmerged]: Remove: archive file [/home/abi/fetcher/tmp/ccxt_unmerged-4.0.tar.gz]
+[2024-05-05 09:28:35] INFO root fetch - main [MainThread]: End processing [ccxt-unmerged]: success
+[2024-05-05 09:28:35] INFO root fetch - main [MainThread]: Store serial: [23063834]
