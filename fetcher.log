@@ -12682,3 +12682,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:21:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
 [2024-05-05 18:21:48] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-05 18:21:48] INFO root fetch - main [MainThread]: Store serial: [23067094]
+[2024-05-05 18:23:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067094]
+[2024-05-05 18:23:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 18:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utillc
+[2024-05-05 18:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cohdl
+[2024-05-05 18:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hedging-gym
+[2024-05-05 18:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: retriever-search
+[2024-05-05 18:23:56] WARNING root fetch - processPackages [cohdl]: Skipping, unable to determine old version
+[2024-05-05 18:23:56] INFO root fetch - main [MainThread]: End processing [cohdl] error
+[2024-05-05 18:23:56] WARNING root fetch - processPackages [hedging-gym]: Skipping, unable to determine old version
+[2024-05-05 18:23:56] INFO root fetch - main [MainThread]: End processing [hedging-gym] error
+[2024-05-05 18:23:56] INFO root fetch - processPackages [utillc]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 18:23:56] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/cc/f6/8602a3365c5bdae211c3ac294519f44f09a48d78f82481686f04441605d1/utillc-0.9.8-py2.py3-none-any.whl
+[2024-05-05 18:23:56] INFO root fetch - processPackages [retriever-search]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-05 18:23:56] INFO root fetch - processPackages [utillc]: Downloading https://files.pythonhosted.org/packages/d8/3c/db840ab098014cd53956ab58f90e832f7dc4cd45fba1ebcbb74463d04f94/utillc-0.9.9-py2.py3-none-any.whl
+[2024-05-05 18:23:56] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/66/26/2868f4f04108e028e4e53c037db0d1d125d73791198f5e300e8148341b51/retriever_search-0.1.0.tar.gz
+[2024-05-05 18:23:57] INFO root fetch - processPackages [utillc]: executing diffoscope
+[2024-05-05 18:23:57] INFO root fetch - processPackages [utillc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utillc-0.9.8-py2.py3-none-any.whl.zip tmp/utillc-0.9.9-py2.py3-none-any.whl.zip --markdown 20240505/u/utillc/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 18:23:57] INFO root fetch - processPackages [retriever-search]: Downloading https://files.pythonhosted.org/packages/ea/0b/393c7b9c91d99e5160536b98bb1397819b76ee8ed7726aaa89277229508c/retriever_search-0.2.0.tar.gz
+[2024-05-05 18:23:57] INFO root fetch - processPackages [retriever-search]: executing diffoscope
+[2024-05-05 18:23:57] INFO root fetch - processPackages [retriever-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retriever_search-0.1.0.tar.gz tmp/retriever_search-0.2.0.tar.gz --markdown 20240505/r/retriever-search/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-05 18:23:57] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.8-py2.py3-none-any.whl.zip]
+[2024-05-05 18:23:57] INFO root fetch - processPackages [utillc]: Remove: archive file [/home/abi/fetcher/tmp/utillc-0.9.9-py2.py3-none-any.whl.zip]
+[2024-05-05 18:23:57] INFO root fetch - main [MainThread]: End processing [utillc]: success
+[2024-05-05 18:23:58] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.1.0.tar.gz]
+[2024-05-05 18:23:58] INFO root fetch - processPackages [retriever-search]: Remove: archive file [/home/abi/fetcher/tmp/retriever_search-0.2.0.tar.gz]
+[2024-05-05 18:23:58] INFO root fetch - main [MainThread]: End processing [retriever-search]: success
+[2024-05-05 18:23:58] INFO root fetch - main [MainThread]: Store serial: [23067104]
