@@ -12877,3 +12877,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:32:58] INFO root fetch - processPackages [whl2conda]: Remove: archive file [/home/abi/fetcher/tmp/whl2conda-24.5.0.tar.gz]
 [2024-05-05 18:32:58] INFO root fetch - main [MainThread]: End processing [whl2conda]: success
 [2024-05-05 18:32:58] INFO root fetch - main [MainThread]: Store serial: [23067178]
+[2024-05-05 18:35:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067178]
+[2024-05-05 18:35:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 18:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ig-package
+[2024-05-05 18:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: html2rl
+[2024-05-05 18:35:07] INFO root fetch - processPackages [ig-package]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-05 18:35:07] WARNING root fetch - processPackages [html2rl]: Skipping, unable to determine old version
+[2024-05-05 18:35:07] INFO root fetch - main [MainThread]: End processing [html2rl] error
+[2024-05-05 18:35:07] INFO root fetch - processPackages [ig-package]: Downloading https://files.pythonhosted.org/packages/5b/2b/16a8ac52f11bf463dc4d611e556f4e5601b82e6f02c49a5a0e4a4d74137c/ig_package-1.1.0.tar.gz
+[2024-05-05 18:35:07] INFO root fetch - processPackages [ig-package]: Downloading https://files.pythonhosted.org/packages/58/03/0bf565769b056204b63627716e63863afde508815ab01708ba4fb770d701/ig_package-1.2.0.tar.gz
+[2024-05-05 18:35:07] INFO root fetch - processPackages [ig-package]: executing diffoscope
+[2024-05-05 18:35:07] INFO root fetch - processPackages [ig-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ig_package-1.1.0.tar.gz tmp/ig_package-1.2.0.tar.gz --markdown 20240505/i/ig-package/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-05 18:35:08] INFO root fetch - processPackages [ig-package]: Remove: archive file [/home/abi/fetcher/tmp/ig_package-1.1.0.tar.gz]
+[2024-05-05 18:35:08] INFO root fetch - processPackages [ig-package]: Remove: archive file [/home/abi/fetcher/tmp/ig_package-1.2.0.tar.gz]
+[2024-05-05 18:35:08] INFO root fetch - main [MainThread]: End processing [ig-package]: success
+[2024-05-05 18:35:08] INFO root fetch - main [MainThread]: Store serial: [23067186]
