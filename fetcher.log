@@ -2740,3 +2740,24 @@
 [2024-05-05 04:25:29] INFO root fetch - processPackages [coh2-live-stats]: Remove: archive file [/home/abi/fetcher/tmp/coh2_live_stats-1.2.3.tar.gz]
 [2024-05-05 04:25:29] INFO root fetch - main [MainThread]: End processing [coh2-live-stats]: success
 [2024-05-05 04:25:29] INFO root fetch - main [MainThread]: Store serial: [23062726]
+[2024-05-05 04:27:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062726]
+[2024-05-05 04:27:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram3-form
+[2024-05-05 04:27:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ethyca-fides
+[2024-05-05 04:27:37] INFO root fetch - processPackages [aiogram3-form]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-05 04:27:37] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/94/2d/5bfb6b0aca10b50748473ed3f60a82eb4fb2fee1075ad9e0d3bf38e51f61/aiogram3_form-2.0.0.tar.gz
+[2024-05-05 04:27:37] INFO root fetch - processPackages [ethyca-fides]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-05-05 04:27:38] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a5/ce/6ad04dd381854d1db26960c5cc1e174a086becd7eea9daa2b89a8dde7a70/ethyca-fides-2.9.1.tar.gz
+[2024-05-05 04:27:38] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/25/ae/23e8e72c44ca0a454510f7a80c4924f3472b377d7f0ba0aa70ec93160f61/aiogram3_form-2.0.1.tar.gz
+[2024-05-05 04:27:38] INFO root fetch - processPackages [aiogram3-form]: executing diffoscope
+[2024-05-05 04:27:38] INFO root fetch - processPackages [aiogram3-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram3_form-2.0.0.tar.gz tmp/aiogram3_form-2.0.1.tar.gz --markdown 20240505/a/aiogram3-form/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-05 04:27:38] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a3/0c/e979f7bc3c1a405c539d4df6c4c75896975e70d6b87777b8378ea071da2c/ethyca-fides-2.9.2.tar.gz
+[2024-05-05 04:27:38] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-2.0.0.tar.gz]
+[2024-05-05 04:27:38] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-2.0.1.tar.gz]
+[2024-05-05 04:27:38] INFO root fetch - main [MainThread]: End processing [aiogram3-form]: success
+[2024-05-05 04:27:38] INFO root fetch - processPackages [ethyca-fides]: executing diffoscope
+[2024-05-05 04:27:38] INFO root fetch - processPackages [ethyca-fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethyca-fides-2.9.1.tar.gz tmp/ethyca-fides-2.9.2.tar.gz --markdown 20240505/e/ethyca-fides/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-05-05 04:27:42] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.1.tar.gz]
+[2024-05-05 04:27:42] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.2.tar.gz]
+[2024-05-05 04:27:42] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
+[2024-05-05 04:27:42] INFO root fetch - main [MainThread]: Store serial: [23062732]
