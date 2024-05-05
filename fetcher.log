@@ -16026,3 +16026,27 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:52:34] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-05 21:52:34] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-05 21:52:34] INFO root fetch - main [MainThread]: Store serial: [23068600]
+[2024-05-05 21:54:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068600]
+[2024-05-05 21:54:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 21:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notion-api-client
+[2024-05-05 21:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zed-py
+[2024-05-05 21:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agent-bdi
+[2024-05-05 21:54:43] INFO root fetch - processPackages [notion-api-client]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 21:54:43] INFO root fetch - processPackages [agent-bdi]: New version: [2.4.3] Old Version: [2.4.2]
+[2024-05-05 21:54:43] WARNING root fetch - processPackages [zed-py]: Skipping, unable to determine old version
+[2024-05-05 21:54:43] INFO root fetch - main [MainThread]: End processing [zed-py] error
+[2024-05-05 21:54:43] INFO root fetch - processPackages [notion-api-client]: Downloading https://files.pythonhosted.org/packages/b9/db/db183f1d64b41c5f1c8ffa1555274db77fc3defd88bd85b063ed6ad36637/notion_api_client-0.0.1.tar.gz
+[2024-05-05 21:54:43] INFO root fetch - processPackages [agent-bdi]: Downloading https://files.pythonhosted.org/packages/8c/fc/cab05961bf749953c2c1f0b6c08ff3ede661494c57f5500f66aa45473d0a/agent-bdi-2.4.2.tar.gz
+[2024-05-05 21:54:43] INFO root fetch - processPackages [notion-api-client]: Downloading https://files.pythonhosted.org/packages/70/a7/f9d134f3bfc7827ea4cba93c56a4fe9da3c3866184021d3ea73f99e3d6e1/notion_api_client-0.0.2.tar.gz
+[2024-05-05 21:54:43] INFO root fetch - processPackages [agent-bdi]: Downloading https://files.pythonhosted.org/packages/e0/e9/62e2c602b41c2ec2225c7c60a94fe2318b7d38022e0d364626ac168b40d3/agent-bdi-2.4.3.tar.gz
+[2024-05-05 21:54:44] INFO root fetch - processPackages [notion-api-client]: executing diffoscope
+[2024-05-05 21:54:44] INFO root fetch - processPackages [notion-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion_api_client-0.0.1.tar.gz tmp/notion_api_client-0.0.2.tar.gz --markdown 20240505/n/notion-api-client/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 21:54:44] INFO root fetch - processPackages [agent-bdi]: executing diffoscope
+[2024-05-05 21:54:44] INFO root fetch - processPackages [agent-bdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agent-bdi-2.4.2.tar.gz tmp/agent-bdi-2.4.3.tar.gz --markdown 20240505/a/agent-bdi/2.4.2-2.4.3/README.md --exclude *.pyd
+[2024-05-05 21:54:44] INFO root fetch - processPackages [notion-api-client]: Remove: archive file [/home/abi/fetcher/tmp/notion_api_client-0.0.1.tar.gz]
+[2024-05-05 21:54:44] INFO root fetch - processPackages [notion-api-client]: Remove: archive file [/home/abi/fetcher/tmp/notion_api_client-0.0.2.tar.gz]
+[2024-05-05 21:54:44] INFO root fetch - main [MainThread]: End processing [notion-api-client]: success
+[2024-05-05 21:54:44] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.2.tar.gz]
+[2024-05-05 21:54:44] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.3.tar.gz]
+[2024-05-05 21:54:44] INFO root fetch - main [MainThread]: End processing [agent-bdi]: success
+[2024-05-05 21:54:44] INFO root fetch - main [MainThread]: Store serial: [23068609]
