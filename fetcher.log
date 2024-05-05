@@ -17352,3 +17352,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:26:34] INFO root fetch - processPackages [molsystem]: Remove: archive file [/home/abi/fetcher/tmp/molsystem-2024.5.5.tar.gz]
 [2024-05-05 23:26:34] INFO root fetch - main [MainThread]: End processing [molsystem]: success
 [2024-05-05 23:26:34] INFO root fetch - main [MainThread]: Store serial: [23069207]
+[2024-05-05 23:28:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069207]
+[2024-05-05 23:28:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 23:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-llama
+[2024-05-05 23:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swan-sdk
+[2024-05-05 23:28:42] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 23:28:42] INFO root fetch - processPackages [swan-sdk]: New version: [0.0.2.post1] Old Version: [0.0.2]
+[2024-05-05 23:28:42] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-05-05 23:28:42] INFO root fetch - processPackages [swan-sdk]: Downloading https://files.pythonhosted.org/packages/52/61/905dbb106793358fa5529d9c6c1a52b8177466adf09b91884ddbd720c115/swan_sdk-0.0.2.tar.gz
+[2024-05-05 23:28:43] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-05-05 23:28:43] INFO root fetch - processPackages [swan-sdk]: Downloading https://files.pythonhosted.org/packages/a9/a8/a201b642dcc2b5f444132c284b9fc3583791e59cdb989b8ac1da0afe859d/swan_sdk-0.0.2.post1.tar.gz
+[2024-05-05 23:28:43] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-05-05 23:28:43] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240505/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 23:28:43] INFO root fetch - processPackages [swan-sdk]: executing diffoscope
+[2024-05-05 23:28:43] INFO root fetch - processPackages [swan-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swan_sdk-0.0.2.tar.gz tmp/swan_sdk-0.0.2.post1.tar.gz --markdown 20240505/s/swan-sdk/0.0.2-0.0.2.post1/README.md --exclude *.pyd
+[2024-05-05 23:28:43] INFO root fetch - processPackages [swan-sdk]: Remove: archive file [/home/abi/fetcher/tmp/swan_sdk-0.0.2.tar.gz]
+[2024-05-05 23:28:43] INFO root fetch - processPackages [swan-sdk]: Remove: archive file [/home/abi/fetcher/tmp/swan_sdk-0.0.2.post1.tar.gz]
+[2024-05-05 23:28:43] INFO root fetch - main [MainThread]: End processing [swan-sdk]: success
+[2024-05-05 23:28:43] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-05-05 23:28:43] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-05-05 23:28:43] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-05-05 23:28:43] INFO root fetch - main [MainThread]: Store serial: [23069215]
