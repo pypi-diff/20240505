@@ -5834,3 +5834,23 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:56:47] INFO root fetch - processPackages [fons]: Remove: archive file [/home/abi/fetcher/tmp/fons-0.4.0.tar.gz]
 [2024-05-05 09:56:47] INFO root fetch - main [MainThread]: End processing [fons]: success
 [2024-05-05 09:56:47] INFO root fetch - main [MainThread]: Store serial: [23063969]
+[2024-05-05 09:58:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063969]
+[2024-05-05 09:58:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 10:00:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063969]
+[2024-05-05 10:01:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 10:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly
+[2024-05-05 10:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ddeutil-model
+[2024-05-05 10:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: treenode-py
+[2024-05-05 10:01:02] WARNING root fetch - processPackages [treenode-py]: Skipping, unable to determine old version
+[2024-05-05 10:01:02] INFO root fetch - main [MainThread]: End processing [treenode-py] error
+[2024-05-05 10:01:02] WARNING root fetch - processPackages [ddeutil-model]: Skipping, unable to determine old version
+[2024-05-05 10:01:02] INFO root fetch - main [MainThread]: End processing [ddeutil-model] error
+[2024-05-05 10:01:02] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240505] Old Version: [2.17.0.dev20240504]
+[2024-05-05 10:01:02] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/c0/2f/eaa2445fda3d2ef46843dcb97478445dc3cb02f59eae3885c6661face042/tf_nightly-2.17.0.dev20240504-cp39-cp39-win_amd64.whl
+[2024-05-05 10:01:02] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/48/28/2bdd1aaef1ebf4ea43f567ac7ccf5e5c950fb29cefb4a2c2cc026cfefe1d/tf_nightly-2.17.0.dev20240505-cp39-cp39-win_amd64.whl
+[2024-05-05 10:01:02] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-05-05 10:01:02] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240504-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240505-cp39-cp39-win_amd64.whl.zip --markdown 20240505/t/tf-nightly/2.17.0.dev20240504-2.17.0.dev20240505/README.md --exclude *.pyd
+[2024-05-05 10:01:03] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240504-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 10:01:03] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240505-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 10:01:03] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-05-05 10:01:03] INFO root fetch - main [MainThread]: Store serial: [23063987]
