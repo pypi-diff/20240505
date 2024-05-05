@@ -15708,3 +15708,39 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:34:51] INFO root fetch - processPackages [glassesValidator]: Remove: archive file [/home/abi/fetcher/tmp/glassesvalidator-1.2.5.tar.gz]
 [2024-05-05 21:34:51] INFO root fetch - main [MainThread]: End processing [glassesValidator]: success
 [2024-05-05 21:34:51] INFO root fetch - main [MainThread]: Store serial: [23068477]
+[2024-05-05 21:36:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068477]
+[2024-05-05 21:36:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 21:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdm-conda
+[2024-05-05 21:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lg-rez
+[2024-05-05 21:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-nets-core
+[2024-05-05 21:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zed-py
+[2024-05-05 21:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ariane-lib
+[2024-05-05 21:37:00] WARNING root fetch - processPackages [ariane-lib]: Skipping, unable to determine old version
+[2024-05-05 21:37:00] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.75] Old Version: [0.1.74]
+[2024-05-05 21:37:00] INFO root fetch - main [MainThread]: End processing [ariane-lib] error
+[2024-05-05 21:37:00] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/33/eb/d9649b6127f70df8266ff7b774e02c68d23f7fe2a0b59207df868561602b/django_nets_core-0.1.74.tar.gz
+[2024-05-05 21:37:00] INFO root fetch - processPackages [pdm-conda]: New version: [0.9.3b1] Old Version: [0.9.3b0]
+[2024-05-05 21:37:00] WARNING root fetch - processPackages [zed-py]: Skipping, unable to determine old version
+[2024-05-05 21:37:00] INFO root fetch - main [MainThread]: End processing [zed-py] error
+[2024-05-05 21:37:00] INFO root fetch - processPackages [lg-rez]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-05 21:37:00] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/5d/1b/dc1cb149f079d3d41db755870a003994c36588d5a196747c0b7e42194938/pdm_conda-0.9.3b0.tar.gz
+[2024-05-05 21:37:00] INFO root fetch - processPackages [lg-rez]: Downloading https://files.pythonhosted.org/packages/9d/1d/5ad12242680f6ef2b6ec981d7226a8b9a535b2a963d100fb8b5da5406da4/lg_rez-4.0.8.tar.gz
+[2024-05-05 21:37:00] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/d6/b8/05e3761e6d58f7f3ce8897be2526e09f6b0c3dc8c3f82227a7da6e7f78da/django_nets_core-0.1.75.tar.gz
+[2024-05-05 21:37:00] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/23/ae/9ae2762f3341650d36462bc006fcb4de1bea93e1cf224fb94dc45f376d38/pdm_conda-0.9.3b1.tar.gz
+[2024-05-05 21:37:00] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-05 21:37:00] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.74.tar.gz tmp/django_nets_core-0.1.75.tar.gz --markdown 20240505/d/django-nets-core/0.1.74-0.1.75/README.md --exclude *.pyd
+[2024-05-05 21:37:00] INFO root fetch - processPackages [lg-rez]: Downloading https://files.pythonhosted.org/packages/ec/52/ca77e07c49436d31b39564d11299f3256c97fbe81dfe58038f3e735fe6c7/lg_rez-4.0.9.tar.gz
+[2024-05-05 21:37:00] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2024-05-05 21:37:00] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.9.3b0.tar.gz tmp/pdm_conda-0.9.3b1.tar.gz --markdown 20240505/p/pdm-conda/0.9.3b0-0.9.3b1/README.md --exclude *.pyd
+[2024-05-05 21:37:00] INFO root fetch - processPackages [lg-rez]: executing diffoscope
+[2024-05-05 21:37:00] INFO root fetch - processPackages [lg-rez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lg_rez-4.0.8.tar.gz tmp/lg_rez-4.0.9.tar.gz --markdown 20240505/l/lg-rez/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-05 21:37:01] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.74.tar.gz]
+[2024-05-05 21:37:01] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.75.tar.gz]
+[2024-05-05 21:37:01] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-05 21:37:01] INFO root fetch - processPackages [pdm-conda]: Remove: archive file [/home/abi/fetcher/tmp/pdm_conda-0.9.3b0.tar.gz]
+[2024-05-05 21:37:01] INFO root fetch - processPackages [pdm-conda]: Remove: archive file [/home/abi/fetcher/tmp/pdm_conda-0.9.3b1.tar.gz]
+[2024-05-05 21:37:01] INFO root fetch - main [MainThread]: End processing [pdm-conda]: success
+[2024-05-05 21:37:01] INFO root fetch - processPackages [lg-rez]: Remove: archive file [/home/abi/fetcher/tmp/lg_rez-4.0.8.tar.gz]
+[2024-05-05 21:37:01] INFO root fetch - processPackages [lg-rez]: Remove: archive file [/home/abi/fetcher/tmp/lg_rez-4.0.9.tar.gz]
+[2024-05-05 21:37:01] INFO root fetch - main [MainThread]: End processing [lg-rez]: success
+[2024-05-05 21:37:01] INFO root fetch - main [MainThread]: Store serial: [23068494]
