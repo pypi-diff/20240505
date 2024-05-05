@@ -4380,3 +4380,48 @@
 [2024-05-05 07:49:15] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.3.tar.gz]
 [2024-05-05 07:49:15] INFO root fetch - main [MainThread]: End processing [QuantyLF]: success
 [2024-05-05 07:49:15] INFO root fetch - main [MainThread]: Store serial: [23063383]
+[2024-05-05 07:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063383]
+[2024-05-05 07:51:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 07:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STAIR-tools
+[2024-05-05 07:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-fts
+[2024-05-05 07:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuantyLF
+[2024-05-05 07:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cae-cli
+[2024-05-05 07:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-richmin
+[2024-05-05 07:51:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: markcli
+[2024-05-05 07:51:23] INFO root fetch - processPackages [QuantyLF]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 07:51:23] INFO root fetch - processPackages [STAIR-tools]: New version: [1.2.1] Old Version: [1.1.9]
+[2024-05-05 07:51:24] INFO root fetch - processPackages [QuantyLF]: Downloading https://files.pythonhosted.org/packages/c7/f1/c85808a1cda1381f266c4c5405b114f42e2aa231034d41f11c082457191a/quantylf-0.0.3.tar.gz
+[2024-05-05 07:51:24] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-05-05 07:51:24] WARNING root fetch - processPackages [cae-cli]: Skipping, unable to determine old version
+[2024-05-05 07:51:24] INFO root fetch - main [MainThread]: End processing [cae-cli] error
+[2024-05-05 07:51:24] INFO root fetch - processPackages [django-richmin]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 07:51:24] WARNING root fetch - processPackages [markcli]: Skipping, unable to determine old version
+[2024-05-05 07:51:24] INFO root fetch - main [MainThread]: End processing [markcli] error
+[2024-05-05 07:51:24] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 07:51:24] INFO root fetch - processPackages [django-richmin]: Downloading https://files.pythonhosted.org/packages/87/43/428dbf50e4c36b3134e643b31af20a3a90c4acb681284e3e5e37c47f51df/django-richmin-0.1.8.tar.gz
+[2024-05-05 07:51:24] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/a4/72/e5ed8aed67daafdeeaee77ce84706e7b284c03900bebc8b4c9a5418c9100/yt-fts-0.1.8.tar.gz
+[2024-05-05 07:51:24] INFO root fetch - processPackages [QuantyLF]: Downloading https://files.pythonhosted.org/packages/72/5a/c43c445f24b275ade0c6439ae6a40a8df89ca2af3f6fae6aefd1a5acb594/quantylf-0.0.4.tar.gz
+[2024-05-05 07:51:24] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/07/bc/636e8c4bd5a166a54a619106950dde0c30e7db34965fa312334a6bf731ce/STAIR-tools-1.2.1.tar.gz
+[2024-05-05 07:51:24] INFO root fetch - processPackages [QuantyLF]: executing diffoscope
+[2024-05-05 07:51:24] INFO root fetch - processPackages [QuantyLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantylf-0.0.3.tar.gz tmp/quantylf-0.0.4.tar.gz --markdown 20240505/Q/QuantyLF/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 07:51:24] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-05-05 07:51:24] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.9.tar.gz tmp/STAIR-tools-1.2.1.tar.gz --markdown 20240505/S/STAIR-tools/1.1.9-1.2.1/README.md --exclude *.pyd
+[2024-05-05 07:51:24] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/07/27/81af49bf3228838a5be25585fd9eafb45419bd52a1bd7d47660f8fd3f1e6/yt-fts-0.1.9.tar.gz
+[2024-05-05 07:51:24] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2024-05-05 07:51:24] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20240505/y/yt-fts/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 07:51:25] INFO root fetch - processPackages [django-richmin]: Downloading https://files.pythonhosted.org/packages/e8/d3/e2d3050e5b7fed2bd5ac3dbaedc9077a005508010f094dd0d686ee2a1a4e/django-richmin-0.1.9.tar.gz
+[2024-05-05 07:51:25] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.3.tar.gz]
+[2024-05-05 07:51:25] INFO root fetch - processPackages [QuantyLF]: Remove: archive file [/home/abi/fetcher/tmp/quantylf-0.0.4.tar.gz]
+[2024-05-05 07:51:25] INFO root fetch - main [MainThread]: End processing [QuantyLF]: success
+[2024-05-05 07:51:25] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-05-05 07:51:25] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.2.1.tar.gz]
+[2024-05-05 07:51:25] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-05-05 07:51:25] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.8.tar.gz]
+[2024-05-05 07:51:25] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.9.tar.gz]
+[2024-05-05 07:51:25] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2024-05-05 07:51:25] INFO root fetch - processPackages [django-richmin]: executing diffoscope
+[2024-05-05 07:51:25] INFO root fetch - processPackages [django-richmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-richmin-0.1.8.tar.gz tmp/django-richmin-0.1.9.tar.gz --markdown 20240505/d/django-richmin/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 07:51:27] INFO root fetch - processPackages [django-richmin]: Remove: archive file [/home/abi/fetcher/tmp/django-richmin-0.1.8.tar.gz]
+[2024-05-05 07:51:27] INFO root fetch - processPackages [django-richmin]: Remove: archive file [/home/abi/fetcher/tmp/django-richmin-0.1.9.tar.gz]
+[2024-05-05 07:51:27] INFO root fetch - main [MainThread]: End processing [django-richmin]: success
+[2024-05-05 07:51:27] INFO root fetch - main [MainThread]: Store serial: [23063403]
