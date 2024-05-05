@@ -15744,3 +15744,66 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:37:01] INFO root fetch - processPackages [lg-rez]: Remove: archive file [/home/abi/fetcher/tmp/lg_rez-4.0.9.tar.gz]
 [2024-05-05 21:37:01] INFO root fetch - main [MainThread]: End processing [lg-rez]: success
 [2024-05-05 21:37:01] INFO root fetch - main [MainThread]: Store serial: [23068494]
+[2024-05-05 21:39:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068494]
+[2024-05-05 21:39:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ariane-lib
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ableton-control-surface-core
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ableton-control-surface-scripts
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odlabel
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyroblack
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wwpdb.apps.ann-tasks-v2
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: maling
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yerba
+[2024-05-05 21:39:10] WARNING root fetch - processPackages [odlabel]: Skipping, unable to determine old version
+[2024-05-05 21:39:10] INFO root fetch - main [MainThread]: End processing [odlabel] error
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ableton-control-surface-scripts]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ableton-control-surface-core]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 21:39:10] WARNING root fetch - processPackages [ariane-lib]: Skipping, unable to determine old version
+[2024-05-05 21:39:10] INFO root fetch - main [MainThread]: End processing [ariane-lib] error
+[2024-05-05 21:39:10] INFO root fetch - processPackages [pyroblack]: New version: [2.3.68] Old Version: [2.3.67]
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ableton-control-surface-scripts]: Downloading https://files.pythonhosted.org/packages/b6/7f/329d4756c6d55a02f784e958f0935f6645d4e5374194e906e6c2b0ef7e53/ableton-control-surface-scripts-0.0.2.tar.gz
+[2024-05-05 21:39:10] INFO root fetch - processPackages [ableton-control-surface-core]: Downloading https://files.pythonhosted.org/packages/df/9f/481cf844eb4e7631cece659a1f0b1dcbc0e2f2d1878ed3a487a3d5982116/ableton-control-surface-core-0.0.2.tar.gz
+[2024-05-05 21:39:10] INFO root fetch - processPackages [yerba]: New version: [0.0.2a0.dev0] Old Version: [0.0.1a0.dev1]
+[2024-05-05 21:39:10] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: New version: [0.37.4] Old Version: [0.37.3]
+[2024-05-05 21:39:10] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/35/3f/99d5392e22b512cc7760a4e8a38890e8548753a548eef055cfb4ebae139d/pyroblack-2.3.67.tar.gz
+[2024-05-05 21:39:10] INFO root fetch - processPackages [maling]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-05-05 21:39:10] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: Downloading https://files.pythonhosted.org/packages/85/89/409d3f91da4fd4bb79d4f6390259fb120fff3f8978c138d7bb3615b319df/wwpdb_apps_ann_tasks_v2-0.37.3.tar.gz
+[2024-05-05 21:39:10] INFO root fetch - processPackages [yerba]: Downloading https://files.pythonhosted.org/packages/a5/83/97c2550b4ff8d01dac3435ec7252cb525f2f0f8fde30d3bafb3327ae1de2/yerba-0.0.1a0.dev1.tar.gz
+[2024-05-05 21:39:10] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/2c/13/78b6a7b3628afb87b4fb7c087ff43aa448cf561d5f9116db21178b1ed7eb/maling-2.3.4.tar.gz
+[2024-05-05 21:39:10] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/df/c0/e622cab6044a1ff48c90249ffb0f47d2cc5b1d19f0b00bfca30c35d0acd0/pyroblack-2.3.68.tar.gz
+[2024-05-05 21:39:11] INFO root fetch - processPackages [ableton-control-surface-core]: Downloading https://files.pythonhosted.org/packages/10/31/c729e53962b8a3faed4bb24f4b4cdb9b9db26098cd0f45c12eea5b0c7497/ableton-control-surface-core-0.0.3.tar.gz
+[2024-05-05 21:39:11] INFO root fetch - processPackages [ableton-control-surface-scripts]: Downloading https://files.pythonhosted.org/packages/d1/bf/49a9c504d141b5aa053872b4d219df58a4b6eb96b025e7a244f09b79dd85/ableton-control-surface-scripts-0.0.3.tar.gz
+[2024-05-05 21:39:11] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-05-05 21:39:11] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.67.tar.gz tmp/pyroblack-2.3.68.tar.gz --markdown 20240505/p/pyroblack/2.3.67-2.3.68/README.md --exclude *.pyd
+[2024-05-05 21:39:11] INFO root fetch - processPackages [yerba]: Downloading https://files.pythonhosted.org/packages/0e/6f/fdf93638071e0ec82aa4bc2b77411fcb151467474f2ebfb118296f542d5f/yerba-0.0.2a0.dev0.tar.gz
+[2024-05-05 21:39:11] INFO root fetch - processPackages [ableton-control-surface-core]: executing diffoscope
+[2024-05-05 21:39:11] INFO root fetch - processPackages [ableton-control-surface-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ableton-control-surface-core-0.0.2.tar.gz tmp/ableton-control-surface-core-0.0.3.tar.gz --markdown 20240505/a/ableton-control-surface-core/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 21:39:11] INFO root fetch - processPackages [ableton-control-surface-scripts]: executing diffoscope
+[2024-05-05 21:39:11] INFO root fetch - processPackages [ableton-control-surface-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ableton-control-surface-scripts-0.0.2.tar.gz tmp/ableton-control-surface-scripts-0.0.3.tar.gz --markdown 20240505/a/ableton-control-surface-scripts/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 21:39:11] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/d1/70/841f4bf7aea18a721d2ee7557cf64a4179fe738345cce4e9c5c72a6fbc6c/maling-2.3.5.tar.gz
+[2024-05-05 21:39:11] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: Downloading https://files.pythonhosted.org/packages/23/89/bd1b53ed42ff10b50072e02dc44850d90a9089d0bcfbb0b9216be9000e8e/wwpdb_apps_ann_tasks_v2-0.37.4.tar.gz
+[2024-05-05 21:39:11] INFO root fetch - processPackages [yerba]: executing diffoscope
+[2024-05-05 21:39:11] INFO root fetch - processPackages [yerba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yerba-0.0.1a0.dev1.tar.gz tmp/yerba-0.0.2a0.dev0.tar.gz --markdown 20240505/y/yerba/0.0.1a0.dev1-0.0.2a0.dev0/README.md --exclude *.pyd
+[2024-05-05 21:39:11] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: executing diffoscope
+[2024-05-05 21:39:11] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb_apps_ann_tasks_v2-0.37.3.tar.gz tmp/wwpdb_apps_ann_tasks_v2-0.37.4.tar.gz --markdown 20240505/w/wwpdb.apps.ann-tasks-v2/0.37.3-0.37.4/README.md --exclude *.pyd
+[2024-05-05 21:39:11] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-05-05 21:39:11] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.3.4.tar.gz tmp/maling-2.3.5.tar.gz --markdown 20240505/m/maling/2.3.4-2.3.5/README.md --exclude *.pyd
+[2024-05-05 21:39:11] INFO root fetch - processPackages [yerba]: Remove: archive file [/home/abi/fetcher/tmp/yerba-0.0.1a0.dev1.tar.gz]
+[2024-05-05 21:39:11] INFO root fetch - processPackages [yerba]: Remove: archive file [/home/abi/fetcher/tmp/yerba-0.0.2a0.dev0.tar.gz]
+[2024-05-05 21:39:11] INFO root fetch - main [MainThread]: End processing [yerba]: success
+[2024-05-05 21:39:12] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_ann_tasks_v2-0.37.3.tar.gz]
+[2024-05-05 21:39:12] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_ann_tasks_v2-0.37.4.tar.gz]
+[2024-05-05 21:39:12] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.ann-tasks-v2]: success
+[2024-05-05 21:39:13] INFO root fetch - processPackages [ableton-control-surface-core]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-core-0.0.2.tar.gz]
+[2024-05-05 21:39:13] INFO root fetch - processPackages [ableton-control-surface-core]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-core-0.0.3.tar.gz]
+[2024-05-05 21:39:13] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-core]: success
+[2024-05-05 21:39:13] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.4.tar.gz]
+[2024-05-05 21:39:13] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.5.tar.gz]
+[2024-05-05 21:39:13] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-05-05 21:39:13] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.67.tar.gz]
+[2024-05-05 21:39:13] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.68.tar.gz]
+[2024-05-05 21:39:13] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-05-05 21:39:15] INFO root fetch - processPackages [ableton-control-surface-scripts]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-scripts-0.0.2.tar.gz]
+[2024-05-05 21:39:15] INFO root fetch - processPackages [ableton-control-surface-scripts]: Remove: archive file [/home/abi/fetcher/tmp/ableton-control-surface-scripts-0.0.3.tar.gz]
+[2024-05-05 21:39:15] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-scripts]: success
+[2024-05-05 21:39:15] INFO root fetch - main [MainThread]: Store serial: [23068519]
