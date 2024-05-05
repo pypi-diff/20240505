@@ -10916,3 +10916,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:15:46] INFO root fetch - processPackages [constellate]: Remove: archive file [/home/abi/fetcher/tmp/constellate-0.8.3-py2.py3-none-any.whl.zip]
 [2024-05-05 16:15:46] INFO root fetch - main [MainThread]: End processing [constellate]: success
 [2024-05-05 16:15:46] INFO root fetch - main [MainThread]: Store serial: [23066305]
+[2024-05-05 16:17:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066305]
+[2024-05-05 16:17:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nocasedict
+[2024-05-05 16:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openshift-python-wrapper
+[2024-05-05 16:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pcleaner
+[2024-05-05 16:17:55] INFO root fetch - processPackages [openshift-python-wrapper]: New version: [4.9.9.12] Old Version: [4.9.7.12]
+[2024-05-05 16:17:55] INFO root fetch - processPackages [nocasedict]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-05 16:17:55] INFO root fetch - processPackages [pcleaner]: New version: [2.6.3] Old Version: [2.6.2]
+[2024-05-05 16:17:55] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/9f/52/8943f0836c823ed0ab894348233d99a219025753e654fa494137828358f9/openshift-python-wrapper-4.9.7.12.tar.gz
+[2024-05-05 16:17:55] INFO root fetch - processPackages [nocasedict]: Downloading https://files.pythonhosted.org/packages/b7/0c/7efaea31c527e62c38c12a2482a8f24114f53746832f9032152950f01786/nocasedict-2.0.1.tar.gz
+[2024-05-05 16:17:55] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/68/78/6de608b3b042645c5e762800fe793d75a6ade06cc52a458f25da779519b0/pcleaner-2.6.2.tar.gz
+[2024-05-05 16:17:55] INFO root fetch - processPackages [openshift-python-wrapper]: Downloading https://files.pythonhosted.org/packages/e7/2c/25381b003b6e49919b5c98f68796af474a0b6fb3e28c46552a6949c6160a/openshift-python-wrapper-4.9.9.12.tar.gz
+[2024-05-05 16:17:55] INFO root fetch - processPackages [openshift-python-wrapper]: executing diffoscope
+[2024-05-05 16:17:55] INFO root fetch - processPackages [openshift-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-python-wrapper-4.9.7.12.tar.gz tmp/openshift-python-wrapper-4.9.9.12.tar.gz --markdown 20240505/o/openshift-python-wrapper/4.9.7.12-4.9.9.12/README.md --exclude *.pyd
+[2024-05-05 16:17:56] INFO root fetch - processPackages [nocasedict]: Downloading https://files.pythonhosted.org/packages/c2/bd/57dc59e873886d26c48f5494b70ddd53f28cfa10450b4d273b7759babd32/nocasedict-2.0.2.tar.gz
+[2024-05-05 16:17:56] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/5c/2c/4f5bd9b33567ebfeea032c9159271015c551fc90819e7114b54e8c8402ac/pcleaner-2.6.3.tar.gz
+[2024-05-05 16:17:56] INFO root fetch - processPackages [nocasedict]: executing diffoscope
+[2024-05-05 16:17:56] INFO root fetch - processPackages [nocasedict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nocasedict-2.0.1.tar.gz tmp/nocasedict-2.0.2.tar.gz --markdown 20240505/n/nocasedict/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-05 16:17:56] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2024-05-05 16:17:56] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-2.6.2.tar.gz tmp/pcleaner-2.6.3.tar.gz --markdown 20240505/p/pcleaner/2.6.2-2.6.3/README.md --exclude *.pyd
+[2024-05-05 16:17:56] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.7.12.tar.gz]
+[2024-05-05 16:17:56] INFO root fetch - processPackages [openshift-python-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/openshift-python-wrapper-4.9.9.12.tar.gz]
+[2024-05-05 16:17:56] INFO root fetch - main [MainThread]: End processing [openshift-python-wrapper]: success
+[2024-05-05 16:17:56] INFO root fetch - processPackages [nocasedict]: Remove: archive file [/home/abi/fetcher/tmp/nocasedict-2.0.1.tar.gz]
+[2024-05-05 16:17:56] INFO root fetch - processPackages [nocasedict]: Remove: archive file [/home/abi/fetcher/tmp/nocasedict-2.0.2.tar.gz]
+[2024-05-05 16:17:56] INFO root fetch - main [MainThread]: End processing [nocasedict]: success
+[2024-05-05 16:17:57] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.6.2.tar.gz]
+[2024-05-05 16:17:57] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.6.3.tar.gz]
+[2024-05-05 16:17:57] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
+[2024-05-05 16:17:57] INFO root fetch - main [MainThread]: Store serial: [23066314]
