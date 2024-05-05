@@ -9205,3 +9205,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:30:15] INFO root fetch - processPackages [cloud-governance]: Remove: archive file [/home/abi/fetcher/tmp/cloud-governance-1.1.99.tar.gz]
 [2024-05-05 14:30:15] INFO root fetch - main [MainThread]: End processing [cloud-governance]: success
 [2024-05-05 14:30:15] INFO root fetch - main [MainThread]: Store serial: [23065436]
+[2024-05-05 14:32:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065436]
+[2024-05-05 14:32:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 14:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: desktop-notifier
+[2024-05-05 14:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: countryguess
+[2024-05-05 14:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-05 14:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FasterAPI
+[2024-05-05 14:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altscore
+[2024-05-05 14:32:23] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 14:32:23] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-05 14:32:23] INFO root fetch - processPackages [countryguess]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-05 14:32:23] INFO root fetch - processPackages [FasterAPI]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 14:32:23] INFO root fetch - processPackages [desktop-notifier]: New version: [3.5.7.dev0] Old Version: [3.5.6]
+[2024-05-05 14:32:23] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [countryguess]: Downloading https://files.pythonhosted.org/packages/ac/a8/5b8e498a6bd57b526650eb66246a79161b78e17072242b0d8ec2ea52d03f/countryguess-0.4.3.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [FasterAPI]: Downloading https://files.pythonhosted.org/packages/dc/4f/7387d4a3d73df0697fb82575cf0abf3616188443a1780b1a678316992352/FasterAPI-0.0.8.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [desktop-notifier]: Downloading https://files.pythonhosted.org/packages/a4/45/d04a904f2f33602c89ee9df82f720682468276f1d39ef297a7483e734ce6/desktop-notifier-3.5.6.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 14:32:24] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 14:32:24] INFO root fetch - processPackages [FasterAPI]: Downloading https://files.pythonhosted.org/packages/09/63/f2c95b745b48d5d64a4d53291dd2fd375492d53193a93427dd80cea9a480/FasterAPI-0.0.9.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [desktop-notifier]: Downloading https://files.pythonhosted.org/packages/0a/a5/0a3bd92afe6a5f4da3667253f495b526152f73139d89463d27ebfc823ecb/desktop_notifier-3.5.7.dev0.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [countryguess]: Downloading https://files.pythonhosted.org/packages/c5/19/7c4ed30d2623d050cead46e57d033b349b28cfd011fda769d66e79f692b7/countryguess-0.4.4.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-05-05 14:32:24] INFO root fetch - processPackages [FasterAPI]: executing diffoscope
+[2024-05-05 14:32:24] INFO root fetch - processPackages [FasterAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FasterAPI-0.0.8.tar.gz tmp/FasterAPI-0.0.9.tar.gz --markdown 20240505/F/FasterAPI/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 14:32:24] INFO root fetch - processPackages [desktop-notifier]: executing diffoscope
+[2024-05-05 14:32:24] INFO root fetch - processPackages [desktop-notifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop-notifier-3.5.6.tar.gz tmp/desktop_notifier-3.5.7.dev0.tar.gz --markdown 20240505/d/desktop-notifier/3.5.6-3.5.7.dev0/README.md --exclude *.pyd
+[2024-05-05 14:32:24] INFO root fetch - processPackages [countryguess]: executing diffoscope
+[2024-05-05 14:32:24] INFO root fetch - processPackages [countryguess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/countryguess-0.4.3.tar.gz tmp/countryguess-0.4.4.tar.gz --markdown 20240505/c/countryguess/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-05 14:32:24] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-05-05 14:32:24] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240505/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-05 14:32:25] INFO root fetch - processPackages [FasterAPI]: Remove: archive file [/home/abi/fetcher/tmp/FasterAPI-0.0.8.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - processPackages [FasterAPI]: Remove: archive file [/home/abi/fetcher/tmp/FasterAPI-0.0.9.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - main [MainThread]: End processing [FasterAPI]: success
+[2024-05-05 14:32:25] INFO root fetch - processPackages [desktop-notifier]: Remove: archive file [/home/abi/fetcher/tmp/desktop-notifier-3.5.6.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - processPackages [desktop-notifier]: Remove: archive file [/home/abi/fetcher/tmp/desktop_notifier-3.5.7.dev0.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - main [MainThread]: End processing [desktop-notifier]: success
+[2024-05-05 14:32:25] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 14:32:25] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-05-05 14:32:25] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-05-05 14:32:28] INFO root fetch - processPackages [countryguess]: Remove: archive file [/home/abi/fetcher/tmp/countryguess-0.4.3.tar.gz]
+[2024-05-05 14:32:28] INFO root fetch - processPackages [countryguess]: Remove: archive file [/home/abi/fetcher/tmp/countryguess-0.4.4.tar.gz]
+[2024-05-05 14:32:28] INFO root fetch - main [MainThread]: End processing [countryguess]: success
+[2024-05-05 14:32:28] INFO root fetch - main [MainThread]: Store serial: [23065453]
