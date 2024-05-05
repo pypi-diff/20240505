@@ -13802,3 +13802,27 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:22:54] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.9.tar.gz]
 [2024-05-05 19:22:54] INFO root fetch - main [MainThread]: End processing [lbkit]: success
 [2024-05-05 19:22:54] INFO root fetch - main [MainThread]: Store serial: [23067565]
+[2024-05-05 19:24:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067565]
+[2024-05-05 19:25:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 19:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matrix-reportbot
+[2024-05-05 19:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-05-05 19:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beancount-black
+[2024-05-05 19:25:02] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-05 19:25:03] INFO root fetch - processPackages [beancount-black]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-05 19:25:03] WARNING root fetch - processPackages [matrix-reportbot]: Skipping, unable to determine old version
+[2024-05-05 19:25:03] INFO root fetch - main [MainThread]: End processing [matrix-reportbot] error
+[2024-05-05 19:25:03] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-05 19:25:03] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-05 19:25:03] INFO root fetch - processPackages [beancount-black]: Downloading https://files.pythonhosted.org/packages/89/d6/547d1d58c381d2b4c09cd9082edb37baafc275e8ad4bb05dbefa418e24a9/beancount_black-1.0.1.tar.gz
+[2024-05-05 19:25:03] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-05 19:25:03] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240505/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-05 19:25:03] INFO root fetch - processPackages [beancount-black]: Downloading https://files.pythonhosted.org/packages/c0/3a/1c005818278d819db07f7df5b7319b999a51bf3a7ca0c2ae71778192e9e2/beancount_black-1.0.2.tar.gz
+[2024-05-05 19:25:03] INFO root fetch - processPackages [beancount-black]: executing diffoscope
+[2024-05-05 19:25:03] INFO root fetch - processPackages [beancount-black]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_black-1.0.1.tar.gz tmp/beancount_black-1.0.2.tar.gz --markdown 20240505/b/beancount-black/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-05 19:25:04] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-05 19:25:04] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-05 19:25:04] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-05 19:25:04] INFO root fetch - processPackages [beancount-black]: Remove: archive file [/home/abi/fetcher/tmp/beancount_black-1.0.1.tar.gz]
+[2024-05-05 19:25:04] INFO root fetch - processPackages [beancount-black]: Remove: archive file [/home/abi/fetcher/tmp/beancount_black-1.0.2.tar.gz]
+[2024-05-05 19:25:04] INFO root fetch - main [MainThread]: End processing [beancount-black]: success
+[2024-05-05 19:25:04] INFO root fetch - main [MainThread]: Store serial: [23067576]
