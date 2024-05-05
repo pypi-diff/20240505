@@ -3517,3 +3517,33 @@
 [2024-05-05 06:00:57] INFO root fetch - processPackages [taskgen-ai]: Remove: archive file [/home/abi/fetcher/tmp/taskgen_ai-1.4.0.tar.gz]
 [2024-05-05 06:00:57] INFO root fetch - main [MainThread]: End processing [taskgen-ai]: success
 [2024-05-05 06:00:57] INFO root fetch - main [MainThread]: Store serial: [23063000]
+[2024-05-05 06:03:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063000]
+[2024-05-05 06:03:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 06:03:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whoisit
+[2024-05-05 06:03:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rj2y
+[2024-05-05 06:03:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: womb
+[2024-05-05 06:03:06] INFO root fetch - processPackages [womb]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 06:03:06] INFO root fetch - processPackages [whoisit]: New version: [2.7.7] Old Version: [2.7.6]
+[2024-05-05 06:03:06] INFO root fetch - processPackages [rj2y]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 06:03:06] INFO root fetch - processPackages [womb]: Downloading https://files.pythonhosted.org/packages/b3/04/e1f0f786af88d5ae24fd10bba0b2a7d762323d393f92e7c0c06311c6ce35/womb-1.2.0.tar.gz
+[2024-05-05 06:03:06] INFO root fetch - processPackages [rj2y]: Downloading https://files.pythonhosted.org/packages/27/58/633382ca870f1a6afea24db80a0411afdef00a40857035e144f7ba2bdca3/rj2y-0.1.0.tar.gz
+[2024-05-05 06:03:06] INFO root fetch - processPackages [whoisit]: Downloading https://files.pythonhosted.org/packages/9a/b0/d3e8928dfca485ca8e99c5408a73f30fc5a9f52fa474464c7efb5b68a031/whoisit-2.7.6.tar.gz
+[2024-05-05 06:03:07] INFO root fetch - processPackages [whoisit]: Downloading https://files.pythonhosted.org/packages/07/6b/3409a0ee030a5b875000e3deec5d52b58b8ba72ef9e6e32631fcef58ed8a/whoisit-2.7.7.tar.gz
+[2024-05-05 06:03:07] INFO root fetch - processPackages [rj2y]: Downloading https://files.pythonhosted.org/packages/23/46/a8688dbba2a0b41468a8e7d73d483936fc11713d366d4d2867fdc5a12cf1/rj2y-0.1.1.tar.gz
+[2024-05-05 06:03:07] INFO root fetch - processPackages [womb]: Downloading https://files.pythonhosted.org/packages/8b/84/f2b46dedb5bd07676bfa7a2a75cb62b4acd89cab956e9b3ece85a93edddc/womb-1.2.1.tar.gz
+[2024-05-05 06:03:07] INFO root fetch - processPackages [rj2y]: executing diffoscope
+[2024-05-05 06:03:07] INFO root fetch - processPackages [rj2y]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rj2y-0.1.0.tar.gz tmp/rj2y-0.1.1.tar.gz --markdown 20240505/r/rj2y/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 06:03:07] INFO root fetch - processPackages [whoisit]: executing diffoscope
+[2024-05-05 06:03:07] INFO root fetch - processPackages [whoisit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whoisit-2.7.6.tar.gz tmp/whoisit-2.7.7.tar.gz --markdown 20240505/w/whoisit/2.7.6-2.7.7/README.md --exclude *.pyd
+[2024-05-05 06:03:07] INFO root fetch - processPackages [womb]: executing diffoscope
+[2024-05-05 06:03:07] INFO root fetch - processPackages [womb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/womb-1.2.0.tar.gz tmp/womb-1.2.1.tar.gz --markdown 20240505/w/womb/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 06:03:07] INFO root fetch - processPackages [rj2y]: Remove: archive file [/home/abi/fetcher/tmp/rj2y-0.1.0.tar.gz]
+[2024-05-05 06:03:07] INFO root fetch - processPackages [rj2y]: Remove: archive file [/home/abi/fetcher/tmp/rj2y-0.1.1.tar.gz]
+[2024-05-05 06:03:07] INFO root fetch - main [MainThread]: End processing [rj2y]: success
+[2024-05-05 06:03:07] INFO root fetch - processPackages [whoisit]: Remove: archive file [/home/abi/fetcher/tmp/whoisit-2.7.6.tar.gz]
+[2024-05-05 06:03:07] INFO root fetch - processPackages [whoisit]: Remove: archive file [/home/abi/fetcher/tmp/whoisit-2.7.7.tar.gz]
+[2024-05-05 06:03:07] INFO root fetch - main [MainThread]: End processing [whoisit]: success
+[2024-05-05 06:03:23] INFO root fetch - processPackages [womb]: Remove: archive file [/home/abi/fetcher/tmp/womb-1.2.0.tar.gz]
+[2024-05-05 06:03:23] INFO root fetch - processPackages [womb]: Remove: archive file [/home/abi/fetcher/tmp/womb-1.2.1.tar.gz]
+[2024-05-05 06:03:23] INFO root fetch - main [MainThread]: End processing [womb]: success
+[2024-05-05 06:03:23] INFO root fetch - main [MainThread]: Store serial: [23063008]
