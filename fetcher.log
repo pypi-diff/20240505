@@ -11498,3 +11498,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:59:43] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.31.0.tar.gz]
 [2024-05-05 16:59:43] INFO root fetch - main [MainThread]: End processing [sts-lib]: success
 [2024-05-05 16:59:43] INFO root fetch - main [MainThread]: Store serial: [23066604]
+[2024-05-05 17:01:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066604]
+[2024-05-05 17:01:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mongopersistence
+[2024-05-05 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mp2c
+[2024-05-05 17:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autocortext-py
+[2024-05-05 17:01:51] WARNING root fetch - processPackages [autocortext-py]: Skipping, unable to determine old version
+[2024-05-05 17:01:51] INFO root fetch - main [MainThread]: End processing [autocortext-py] error
+[2024-05-05 17:01:51] INFO root fetch - processPackages [mongopersistence]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 17:01:51] INFO root fetch - processPackages [mp2c]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mongopersistence]: Downloading https://files.pythonhosted.org/packages/ce/b8/4a57fd32152bdeafe5afa8b36f64a98b737f4dcb68a2d86aa2295fadfd84/mongopersistence-0.3.0.tar.gz
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mp2c]: Downloading https://files.pythonhosted.org/packages/23/01/7c57ecdc9367e9e1cd85282b1040cebae2c1e938ce4061cca8a5d7f25b6f/mp2c-0.0.1.tar.gz
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mongopersistence]: Downloading https://files.pythonhosted.org/packages/d2/ee/770c78489c740593146f34c3d77ce60a7c41cc9ceed63c09a11fd90e3f5e/mongopersistence-0.3.1.tar.gz
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mp2c]: Downloading https://files.pythonhosted.org/packages/4a/79/292164426d5c75621a9f0703837564c36745c9e47cc1ca45c900ac983ae3/mp2c-0.0.2.tar.gz
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mongopersistence]: executing diffoscope
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mongopersistence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongopersistence-0.3.0.tar.gz tmp/mongopersistence-0.3.1.tar.gz --markdown 20240505/m/mongopersistence/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mp2c]: executing diffoscope
+[2024-05-05 17:01:52] INFO root fetch - processPackages [mp2c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp2c-0.0.1.tar.gz tmp/mp2c-0.0.2.tar.gz --markdown 20240505/m/mp2c/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 17:01:53] INFO root fetch - processPackages [mongopersistence]: Remove: archive file [/home/abi/fetcher/tmp/mongopersistence-0.3.0.tar.gz]
+[2024-05-05 17:01:53] INFO root fetch - processPackages [mongopersistence]: Remove: archive file [/home/abi/fetcher/tmp/mongopersistence-0.3.1.tar.gz]
+[2024-05-05 17:01:53] INFO root fetch - main [MainThread]: End processing [mongopersistence]: success
+[2024-05-05 17:01:53] INFO root fetch - processPackages [mp2c]: Remove: archive file [/home/abi/fetcher/tmp/mp2c-0.0.1.tar.gz]
+[2024-05-05 17:01:53] INFO root fetch - processPackages [mp2c]: Remove: archive file [/home/abi/fetcher/tmp/mp2c-0.0.2.tar.gz]
+[2024-05-05 17:01:53] INFO root fetch - main [MainThread]: End processing [mp2c]: success
+[2024-05-05 17:01:53] INFO root fetch - main [MainThread]: Store serial: [23066613]
