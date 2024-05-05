@@ -1720,3 +1720,24 @@
 [2024-05-05 02:41:44] INFO root fetch - processPackages [alphabetic]: Remove: archive file [/home/abi/fetcher/tmp/alphabetic-0.0.2.tar.gz]
 [2024-05-05 02:41:44] INFO root fetch - main [MainThread]: End processing [alphabetic]: success
 [2024-05-05 02:41:44] INFO root fetch - main [MainThread]: Store serial: [23062215]
+[2024-05-05 02:43:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062215]
+[2024-05-05 02:43:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 02:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TreeSAK
+[2024-05-05 02:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eidolon-ai-client
+[2024-05-05 02:43:53] INFO root fetch - processPackages [eidolon-ai-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 02:43:53] INFO root fetch - processPackages [TreeSAK]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-05 02:43:53] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/f0/61/6ca231006909006ba96753a764654d05e47de665b1bf7f42b131a6cdb841/eidolon_ai_client-0.1.8.tar.gz
+[2024-05-05 02:43:53] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/33/3d/03ab6748b3aed0610812e461492b58278718c5c15236ce439a758aa3fc27/TreeSAK-1.9.1.tar.gz
+[2024-05-05 02:43:53] INFO root fetch - processPackages [eidolon-ai-client]: Downloading https://files.pythonhosted.org/packages/14/16/63be890da3058c38960189037563296eb56f3d69154718e4a35d80261950/eidolon_ai_client-0.1.9.tar.gz
+[2024-05-05 02:43:53] INFO root fetch - processPackages [TreeSAK]: Downloading https://files.pythonhosted.org/packages/3d/18/0b0f8a2c565de5415024065f522c859677184cac283a7e4af0060f267891/TreeSAK-1.9.2.tar.gz
+[2024-05-05 02:43:53] INFO root fetch - processPackages [eidolon-ai-client]: executing diffoscope
+[2024-05-05 02:43:53] INFO root fetch - processPackages [eidolon-ai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_client-0.1.8.tar.gz tmp/eidolon_ai_client-0.1.9.tar.gz --markdown 20240505/e/eidolon-ai-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 02:43:53] INFO root fetch - processPackages [TreeSAK]: executing diffoscope
+[2024-05-05 02:43:53] INFO root fetch - processPackages [TreeSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TreeSAK-1.9.1.tar.gz tmp/TreeSAK-1.9.2.tar.gz --markdown 20240505/T/TreeSAK/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-05 02:43:54] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.8.tar.gz]
+[2024-05-05 02:43:54] INFO root fetch - processPackages [eidolon-ai-client]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_client-0.1.9.tar.gz]
+[2024-05-05 02:43:54] INFO root fetch - main [MainThread]: End processing [eidolon-ai-client]: success
+[2024-05-05 02:43:54] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.1.tar.gz]
+[2024-05-05 02:43:54] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
+[2024-05-05 02:43:54] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
+[2024-05-05 02:43:54] INFO root fetch - main [MainThread]: Store serial: [23062222]
