@@ -4758,3 +4758,18 @@
 [2024-05-05 08:26:51] INFO root fetch - processPackages [rer.solrpush]: Remove: archive file [/home/abi/fetcher/tmp/rer.solrpush-1.4.0.tar.gz]
 [2024-05-05 08:26:51] INFO root fetch - main [MainThread]: End processing [rer.solrpush]: success
 [2024-05-05 08:26:51] INFO root fetch - main [MainThread]: Store serial: [23063507]
+[2024-05-05 08:28:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063507]
+[2024-05-05 08:29:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyIClab
+[2024-05-05 08:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rwmapeditor-exgcdwu
+[2024-05-05 08:29:01] WARNING root fetch - processPackages [pyIClab]: Skipping, unable to determine old version
+[2024-05-05 08:29:01] INFO root fetch - main [MainThread]: End processing [pyIClab] error
+[2024-05-05 08:29:01] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-05-05 08:29:02] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/31/09/56a5b2979a7bbd61bab5b4104f2a3c466f73c26751333f14ba6e135a1cb8/rwmapeditor_exgcdwu-1.4.1.tar.gz
+[2024-05-05 08:29:02] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/1c/42/91a4602cf19e2be5252bdb82bb8b4b2df6493d2d6975aee03068925276ce/rwmapeditor_exgcdwu-1.4.2.tar.gz
+[2024-05-05 08:29:02] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: executing diffoscope
+[2024-05-05 08:29:02] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwmapeditor_exgcdwu-1.4.1.tar.gz tmp/rwmapeditor_exgcdwu-1.4.2.tar.gz --markdown 20240505/r/rwmapeditor-exgcdwu/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-05-05 08:29:04] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.4.1.tar.gz]
+[2024-05-05 08:29:04] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.4.2.tar.gz]
+[2024-05-05 08:29:04] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
+[2024-05-05 08:29:04] INFO root fetch - main [MainThread]: Store serial: [23063515]
