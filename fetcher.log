@@ -8052,3 +8052,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 13:03:02] WARNING root fetch - processPackages [TensorART]: Skipping, unable to determine old version
 [2024-05-05 13:03:02] INFO root fetch - main [MainThread]: End processing [TensorART] error
 [2024-05-05 13:03:02] INFO root fetch - main [MainThread]: Store serial: [23064952]
+[2024-05-05 13:05:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064952]
+[2024-05-05 13:05:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 13:05:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmexio
+[2024-05-05 13:05:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onboardme
+[2024-05-05 13:05:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qs-codec
+[2024-05-05 13:05:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mediapipe-apiserver
+[2024-05-05 13:05:11] WARNING root fetch - processPackages [tmexio]: Skipping, unable to determine old version
+[2024-05-05 13:05:11] INFO root fetch - main [MainThread]: End processing [tmexio] error
+[2024-05-05 13:05:11] WARNING root fetch - processPackages [mediapipe-apiserver]: Skipping, unable to determine old version
+[2024-05-05 13:05:11] INFO root fetch - main [MainThread]: End processing [mediapipe-apiserver] error
+[2024-05-05 13:05:11] INFO root fetch - processPackages [onboardme]: New version: [1.8.0] Old Version: [1.7.1]
+[2024-05-05 13:05:11] INFO root fetch - processPackages [qs-codec]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-05-05 13:05:11] INFO root fetch - processPackages [qs-codec]: Downloading https://files.pythonhosted.org/packages/4a/72/259523a452209c9f76c45b9812aba12de45dc9bd6a5a9c51520656fac2fc/qs_codec-0.1.6.tar.gz
+[2024-05-05 13:05:11] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/30/e4/f0892b234c7b7b22fa8071988a1198166f725dee8f4bec77e89b61349d7f/onboardme-1.7.1.tar.gz
+[2024-05-05 13:05:12] INFO root fetch - processPackages [qs-codec]: Downloading https://files.pythonhosted.org/packages/0e/7e/1303b5af556d2d6eb7b336dcd867724c22f622526f877c01384e9660e621/qs_codec-0.2.0.tar.gz
+[2024-05-05 13:05:12] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/82/98/78199c42ade68405dda4bc7352f339d6169a0164bc1cdcff1d1112d8814d/onboardme-1.8.0.tar.gz
+[2024-05-05 13:05:12] INFO root fetch - processPackages [qs-codec]: executing diffoscope
+[2024-05-05 13:05:12] INFO root fetch - processPackages [qs-codec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qs_codec-0.1.6.tar.gz tmp/qs_codec-0.2.0.tar.gz --markdown 20240505/q/qs-codec/0.1.6-0.2.0/README.md --exclude *.pyd
+[2024-05-05 13:05:12] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2024-05-05 13:05:12] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.7.1.tar.gz tmp/onboardme-1.8.0.tar.gz --markdown 20240505/o/onboardme/1.7.1-1.8.0/README.md --exclude *.pyd
+[2024-05-05 13:05:12] INFO root fetch - processPackages [onboardme]: Remove: archive file [/home/abi/fetcher/tmp/onboardme-1.7.1.tar.gz]
+[2024-05-05 13:05:12] INFO root fetch - processPackages [onboardme]: Remove: archive file [/home/abi/fetcher/tmp/onboardme-1.8.0.tar.gz]
+[2024-05-05 13:05:12] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2024-05-05 13:05:12] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.1.6.tar.gz]
+[2024-05-05 13:05:12] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.2.0.tar.gz]
+[2024-05-05 13:05:12] INFO root fetch - main [MainThread]: End processing [qs-codec]: success
+[2024-05-05 13:05:12] INFO root fetch - main [MainThread]: Store serial: [23064968]
