@@ -12547,3 +12547,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:10:55] INFO root fetch - processPackages [gutta]: Remove: archive file [/home/abi/fetcher/tmp/gutta-0.1.9-py3-none-any.whl.zip]
 [2024-05-05 18:10:55] INFO root fetch - main [MainThread]: End processing [gutta]: success
 [2024-05-05 18:10:55] INFO root fetch - main [MainThread]: Store serial: [23067010]
+[2024-05-05 18:12:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067010]
+[2024-05-05 18:13:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 18:13:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blankslate-python
+[2024-05-05 18:13:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alwhatsapp
+[2024-05-05 18:13:04] INFO root fetch - processPackages [blankslate-python]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-05 18:13:04] INFO root fetch - processPackages [alwhatsapp]: New version: [0.2] Old Version: [0.1]
+[2024-05-05 18:13:04] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/fa/e2/b69fa187692fc6db85b85df5a45d11ac195cae227df21de4de882de2a16c/blankslate_python-1.2.3.tar.gz
+[2024-05-05 18:13:04] INFO root fetch - processPackages [alwhatsapp]: Downloading https://files.pythonhosted.org/packages/f7/bf/cfbb816a89adc029520b0568b236d3ac84d1b1d88a5a07bafa69a95e76ab/alwhatsapp-0.1-py3-none-any.whl
+[2024-05-05 18:13:04] INFO root fetch - processPackages [alwhatsapp]: Downloading https://files.pythonhosted.org/packages/fb/ef/5c37f151138f5b0fb2c613716095c10a62b021cbb65e4d50da281fbad95c/alwhatsapp-0.2-py3-none-any.whl
+[2024-05-05 18:13:04] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/41/c0/b7667ba0f735a196d02506e4b0ae09151394c1b2307ef2d2a95f79d30f5f/blankslate_python-1.2.4.tar.gz
+[2024-05-05 18:13:04] INFO root fetch - processPackages [alwhatsapp]: executing diffoscope
+[2024-05-05 18:13:04] INFO root fetch - processPackages [alwhatsapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alwhatsapp-0.1-py3-none-any.whl.zip tmp/alwhatsapp-0.2-py3-none-any.whl.zip --markdown 20240505/a/alwhatsapp/0.1-0.2/README.md --exclude *.pyd
+[2024-05-05 18:13:04] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-05 18:13:04] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.2.3.tar.gz tmp/blankslate_python-1.2.4.tar.gz --markdown 20240505/b/blankslate-python/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-05 18:13:05] INFO root fetch - processPackages [alwhatsapp]: Remove: archive file [/home/abi/fetcher/tmp/alwhatsapp-0.1-py3-none-any.whl.zip]
+[2024-05-05 18:13:05] INFO root fetch - processPackages [alwhatsapp]: Remove: archive file [/home/abi/fetcher/tmp/alwhatsapp-0.2-py3-none-any.whl.zip]
+[2024-05-05 18:13:05] INFO root fetch - main [MainThread]: End processing [alwhatsapp]: success
+[2024-05-05 18:13:05] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.3.tar.gz]
+[2024-05-05 18:13:05] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.4.tar.gz]
+[2024-05-05 18:13:05] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-05 18:13:05] INFO root fetch - main [MainThread]: Store serial: [23067015]
