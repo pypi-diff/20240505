@@ -5051,3 +5051,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 08:48:52] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.333.tar.gz]
 [2024-05-05 08:48:52] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-05 08:48:52] INFO root fetch - main [MainThread]: Store serial: [23063674]
+[2024-05-05 08:50:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063674]
+[2024-05-05 08:51:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 08:51:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eazydocs
+[2024-05-05 08:51:01] WARNING root fetch - processPackages [eazydocs]: Skipping, unable to determine old version
+[2024-05-05 08:51:01] INFO root fetch - main [MainThread]: End processing [eazydocs] error
+[2024-05-05 08:51:01] INFO root fetch - main [MainThread]: Store serial: [23063677]
