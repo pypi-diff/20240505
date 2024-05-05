@@ -4719,3 +4719,9 @@
 [2024-05-05 08:20:21] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240505.96.tar.gz]
 [2024-05-05 08:20:21] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
 [2024-05-05 08:20:21] INFO root fetch - main [MainThread]: Store serial: [23063494]
+[2024-05-05 08:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063494]
+[2024-05-05 08:22:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 08:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dartrs
+[2024-05-05 08:22:29] WARNING root fetch - processPackages [dartrs]: Skipping, unable to determine old version
+[2024-05-05 08:22:29] INFO root fetch - main [MainThread]: End processing [dartrs] error
+[2024-05-05 08:22:29] INFO root fetch - main [MainThread]: Store serial: [23063498]
