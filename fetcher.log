@@ -15056,3 +15056,51 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:55:38] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
 [2024-05-05 20:55:38] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
 [2024-05-05 20:55:38] INFO root fetch - main [MainThread]: Store serial: [23068123]
+[2024-05-05 20:57:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068123]
+[2024-05-05 20:57:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anydi
+[2024-05-05 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: httpie-credential-store
+[2024-05-05 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: petrosa
+[2024-05-05 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audio-sed
+[2024-05-05 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-vision
+[2024-05-05 20:57:46] INFO root fetch - processPackages [keras-vision]: New version: [0.4.1] Old Version: [0.4]
+[2024-05-05 20:57:46] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 20:57:47] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/46/8f/e27facf09df6f22094267fb6da7edaa1625862ea006064efc8c9e6c3a785/keras-vision-0.4.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [httpie-credential-store]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-05-05 20:57:47] INFO root fetch - processPackages [audio-sed]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2024-05-05 20:57:47] INFO root fetch - processPackages [anydi]: New version: [0.25.0a0] Old Version: [0.24.0]
+[2024-05-05 20:57:47] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [keras-vision]: Downloading https://files.pythonhosted.org/packages/07/65/92783ecf1a3141be036f7e635fd31af5f75ef7ab1a3144bd1fe6580fb492/keras-vision-0.4.1.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [httpie-credential-store]: Downloading https://files.pythonhosted.org/packages/5e/98/35c65fafa40163a28131d7c5021193963acd9d03e12448a9ce3903160821/httpie-credential-store-3.0.0.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [audio-sed]: Downloading https://files.pythonhosted.org/packages/a3/82/ff3fc05daaa4b381091a166a75e37e44b5008202a61b97fe32d065eb82ff/audio_sed-0.0.1.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [keras-vision]: executing diffoscope
+[2024-05-05 20:57:47] INFO root fetch - processPackages [keras-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-vision-0.4.tar.gz tmp/keras-vision-0.4.1.tar.gz --markdown 20240505/k/keras-vision/0.4-0.4.1/README.md --exclude *.pyd
+[2024-05-05 20:57:47] INFO root fetch - processPackages [httpie-credential-store]: Downloading https://files.pythonhosted.org/packages/16/e3/f97af71455ecf2418c33496389a12756999877a87b49f15405d49ce18d78/httpie_credential_store-3.1.0.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/bf/a9/addf542c782670340612618feb1446b5ae923e05e8b60752258ec76ca7ee/anydi-0.24.0.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [httpie-credential-store]: executing diffoscope
+[2024-05-05 20:57:47] INFO root fetch - processPackages [httpie-credential-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpie-credential-store-3.0.0.tar.gz tmp/httpie_credential_store-3.1.0.tar.gz --markdown 20240505/h/httpie-credential-store/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-05-05 20:57:47] INFO root fetch - processPackages [audio-sed]: Downloading https://files.pythonhosted.org/packages/e9/89/d1b65527727e6a75aa165e2bd71a637a6a946c3947afdfaec725eaaddd6f/audio_sed-0.0.1.1.tar.gz
+[2024-05-05 20:57:47] INFO root fetch - processPackages [audio-sed]: executing diffoscope
+[2024-05-05 20:57:47] INFO root fetch - processPackages [audio-sed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audio_sed-0.0.1.tar.gz tmp/audio_sed-0.0.1.1.tar.gz --markdown 20240505/a/audio-sed/0.0.1-0.0.1.1/README.md --exclude *.pyd
+[2024-05-05 20:57:47] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.tar.gz]
+[2024-05-05 20:57:47] INFO root fetch - processPackages [keras-vision]: Remove: archive file [/home/abi/fetcher/tmp/keras-vision-0.4.1.tar.gz]
+[2024-05-05 20:57:47] INFO root fetch - main [MainThread]: End processing [keras-vision]: success
+[2024-05-05 20:57:48] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-05 20:57:48] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240505/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 20:57:48] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/52/86/a6f5dfdb0a57d0ecb7f6edee6c7879bd20282d85f33a1ddd3022eee835b2/anydi-0.25.0a0.tar.gz
+[2024-05-05 20:57:48] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-05-05 20:57:48] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.24.0.tar.gz tmp/anydi-0.25.0a0.tar.gz --markdown 20240505/a/anydi/0.24.0-0.25.0a0/README.md --exclude *.pyd
+[2024-05-05 20:57:48] INFO root fetch - processPackages [httpie-credential-store]: Remove: archive file [/home/abi/fetcher/tmp/httpie-credential-store-3.0.0.tar.gz]
+[2024-05-05 20:57:48] INFO root fetch - processPackages [httpie-credential-store]: Remove: archive file [/home/abi/fetcher/tmp/httpie_credential_store-3.1.0.tar.gz]
+[2024-05-05 20:57:48] INFO root fetch - main [MainThread]: End processing [httpie-credential-store]: success
+[2024-05-05 20:57:48] INFO root fetch - processPackages [audio-sed]: Remove: archive file [/home/abi/fetcher/tmp/audio_sed-0.0.1.tar.gz]
+[2024-05-05 20:57:48] INFO root fetch - processPackages [audio-sed]: Remove: archive file [/home/abi/fetcher/tmp/audio_sed-0.0.1.1.tar.gz]
+[2024-05-05 20:57:48] INFO root fetch - main [MainThread]: End processing [audio-sed]: success
+[2024-05-05 20:57:48] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.24.0.tar.gz]
+[2024-05-05 20:57:48] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.25.0a0.tar.gz]
+[2024-05-05 20:57:48] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-05-05 20:57:49] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-05 20:57:49] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-05 20:57:49] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-05 20:57:49] INFO root fetch - main [MainThread]: Store serial: [23068138]
