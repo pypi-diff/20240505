@@ -14227,3 +14227,15 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:53:57] INFO root fetch - processPackages [cleese-stim]: Remove: archive file [/home/abi/fetcher/tmp/cleese_stim-2.3.0.tar.gz]
 [2024-05-05 19:53:57] INFO root fetch - main [MainThread]: End processing [cleese-stim]: success
 [2024-05-05 19:53:57] INFO root fetch - main [MainThread]: Store serial: [23067740]
+[2024-05-05 19:56:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067740]
+[2024-05-05 19:56:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 19:56:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvguicom
+[2024-05-05 19:56:06] INFO root fetch - processPackages [pyvguicom]: New version: [1.1.1] Old Version: [1.0.1]
+[2024-05-05 19:56:06] INFO root fetch - processPackages [pyvguicom]: Downloading https://files.pythonhosted.org/packages/76/33/efc38d80988e76b5c738b818b2aa7b80f2df3aa33003175cd9e39d66870b/pyvguicom-1.0.1.tar.gz
+[2024-05-05 19:56:06] INFO root fetch - processPackages [pyvguicom]: Downloading https://files.pythonhosted.org/packages/38/68/d3ebf2e72777a341a8246427e47fdf21dee1d3f93617c2a638201232e96c/pyvguicom-1.1.1.tar.gz
+[2024-05-05 19:56:06] INFO root fetch - processPackages [pyvguicom]: executing diffoscope
+[2024-05-05 19:56:06] INFO root fetch - processPackages [pyvguicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvguicom-1.0.1.tar.gz tmp/pyvguicom-1.1.1.tar.gz --markdown 20240505/p/pyvguicom/1.0.1-1.1.1/README.md --exclude *.pyd
+[2024-05-05 19:56:07] INFO root fetch - processPackages [pyvguicom]: Remove: archive file [/home/abi/fetcher/tmp/pyvguicom-1.0.1.tar.gz]
+[2024-05-05 19:56:07] INFO root fetch - processPackages [pyvguicom]: Remove: archive file [/home/abi/fetcher/tmp/pyvguicom-1.1.1.tar.gz]
+[2024-05-05 19:56:07] INFO root fetch - main [MainThread]: End processing [pyvguicom]: success
+[2024-05-05 19:56:07] INFO root fetch - main [MainThread]: Store serial: [23067749]
