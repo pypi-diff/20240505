@@ -8925,3 +8925,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:04:08] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.3.tar.gz]
 [2024-05-05 14:04:08] INFO root fetch - main [MainThread]: End processing [super-rubik-cube]: success
 [2024-05-05 14:04:08] INFO root fetch - main [MainThread]: Store serial: [23065308]
+[2024-05-05 14:06:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065308]
+[2024-05-05 14:06:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 14:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ableton-control-surface-toolkit
+[2024-05-05 14:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-pandas
+[2024-05-05 14:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genomeshader
+[2024-05-05 14:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ableton-control-surface-core
+[2024-05-05 14:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ableton-control-surface-scripts
+[2024-05-05 14:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-restricted-fields
+[2024-05-05 14:06:17] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 14:06:18] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 14:06:18] WARNING root fetch - processPackages [ableton-control-surface-scripts]: Skipping, unable to determine old version
+[2024-05-05 14:06:18] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-scripts] error
+[2024-05-05 14:06:18] ERROR root fetch - processPackages [ableton-control-surface-toolkit]: Unable to get metadata: No such project 'ableton-control-surface-toolkit'
+[2024-05-05 14:06:18] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-toolkit] error
+[2024-05-05 14:06:18] WARNING root fetch - processPackages [ableton-control-surface-core]: Skipping, unable to determine old version
+[2024-05-05 14:06:18] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-core] error
+[2024-05-05 14:06:18] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 14:06:18] INFO root fetch - processPackages [django-restricted-fields]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-05 14:06:18] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-05-05 14:06:18] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 14:06:18] INFO root fetch - processPackages [django-restricted-fields]: Downloading https://files.pythonhosted.org/packages/33/6e/17726ccc50ae855685d1fe3221f0dc0b2b93d463d19a0c3417e14604cd2e/django_restricted_fields-0.3.1.tar.gz
+[2024-05-05 14:06:18] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 14:06:18] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 14:06:18] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-05-05 14:06:18] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-05-05 14:06:18] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240505/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 14:06:18] INFO root fetch - processPackages [django-restricted-fields]: Downloading https://files.pythonhosted.org/packages/b8/79/b6cde0592c030981ed34c9e53842f677bcaeed7d9d4c19b5b451700959f2/django_restricted_fields-0.3.2.tar.gz
+[2024-05-05 14:06:18] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 14:06:18] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 14:06:18] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 14:06:19] INFO root fetch - processPackages [django-restricted-fields]: executing diffoscope
+[2024-05-05 14:06:19] INFO root fetch - processPackages [django-restricted-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_restricted_fields-0.3.1.tar.gz tmp/django_restricted_fields-0.3.2.tar.gz --markdown 20240505/d/django-restricted-fields/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-05 14:06:19] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-05-05 14:06:19] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-05-05 14:06:19] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-05-05 14:06:19] INFO root fetch - processPackages [django-restricted-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_restricted_fields-0.3.1.tar.gz]
+[2024-05-05 14:06:19] INFO root fetch - processPackages [django-restricted-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_restricted_fields-0.3.2.tar.gz]
+[2024-05-05 14:06:19] INFO root fetch - main [MainThread]: End processing [django-restricted-fields]: success
+[2024-05-05 14:06:19] INFO root fetch - main [MainThread]: Store serial: [23065336]
