@@ -12445,3 +12445,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:04:22] INFO root fetch - processPackages [qstd-core]: Remove: archive file [/home/abi/fetcher/tmp/qstd_core-0.5.1.tar.gz]
 [2024-05-05 18:04:22] INFO root fetch - main [MainThread]: End processing [qstd-core]: success
 [2024-05-05 18:04:22] INFO root fetch - main [MainThread]: Store serial: [23066937]
+[2024-05-05 18:06:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066937]
+[2024-05-05 18:06:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 18:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xbstrap-version-bumper
+[2024-05-05 18:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odlabel
+[2024-05-05 18:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-kg
+[2024-05-05 18:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 18:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpl-ascii
+[2024-05-05 18:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xtrain
+[2024-05-05 18:06:31] INFO root fetch - processPackages [xtrain]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-05-05 18:06:31] INFO root fetch - processPackages [llama-kg]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 18:06:31] WARNING root fetch - processPackages [xbstrap-version-bumper]: Skipping, unable to determine old version
+[2024-05-05 18:06:31] INFO root fetch - main [MainThread]: End processing [xbstrap-version-bumper] error
+[2024-05-05 18:06:31] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.3.2] Old Version: [4.3.1]
+[2024-05-05 18:06:31] INFO root fetch - processPackages [mpl-ascii]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-05 18:06:31] WARNING root fetch - processPackages [odlabel]: Skipping, unable to determine old version
+[2024-05-05 18:06:31] INFO root fetch - main [MainThread]: End processing [odlabel] error
+[2024-05-05 18:06:31] INFO root fetch - processPackages [xtrain]: Downloading https://files.pythonhosted.org/packages/8d/c0/eb1db959a2653c87095c89cd12531e90bdda21d74b496ab1e966b5fb0dc4/xtrain-0.2.3.tar.gz
+[2024-05-05 18:06:31] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/12/8b/8659ecdb50dc8ea255dcbff809a07784fa74d5cfbcfceea96a35dff37194/Buke_autoTrade_Pypi-4.3.1.tar.gz
+[2024-05-05 18:06:31] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/08/33/acbffff9267b6ea55cd33c4a1362c98c804cb794b62006d4bf7190594e96/llama-kg-0.0.3.tar.gz
+[2024-05-05 18:06:31] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/dc/69/fa1fbfa729126098fe47fc593259424963f7ddb76bf5632ac34e8c584ed8/mpl_ascii-0.3.0.tar.gz
+[2024-05-05 18:06:31] INFO root fetch - processPackages [xtrain]: Downloading https://files.pythonhosted.org/packages/9c/e2/07805d11aad5235cb90497c8248bf779501fe470a1333194cb0dfe7f70e1/xtrain-0.3.0.tar.gz
+[2024-05-05 18:06:32] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/48/42/09fc7a1087eeb9edb010a498fd55ac800854c1adab9c25d8448daef6f284/llama-kg-0.0.4.tar.gz
+[2024-05-05 18:06:32] INFO root fetch - processPackages [xtrain]: executing diffoscope
+[2024-05-05 18:06:32] INFO root fetch - processPackages [xtrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtrain-0.2.3.tar.gz tmp/xtrain-0.3.0.tar.gz --markdown 20240505/x/xtrain/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-05-05 18:06:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/a2/7e/d642f1a7b88c1eb8a766c77a10f1feb782eb2e232ecbb55d069265c10ce6/Buke_autoTrade_Pypi-4.3.2.tar.gz
+[2024-05-05 18:06:32] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 18:06:32] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.3.tar.gz tmp/llama-kg-0.0.4.tar.gz --markdown 20240505/l/llama-kg/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 18:06:32] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/04/0c/9abdacc52b2701376f656bbf0706b47257ad906f7138df5ab1ef327a8eb6/mpl_ascii-0.4.0.tar.gz
+[2024-05-05 18:06:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 18:06:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.3.1.tar.gz tmp/Buke_autoTrade_Pypi-4.3.2.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.3.1-4.3.2/README.md --exclude *.pyd
+[2024-05-05 18:06:32] INFO root fetch - processPackages [mpl-ascii]: executing diffoscope
+[2024-05-05 18:06:32] INFO root fetch - processPackages [mpl-ascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_ascii-0.3.0.tar.gz tmp/mpl_ascii-0.4.0.tar.gz --markdown 20240505/m/mpl-ascii/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-05 18:06:32] INFO root fetch - processPackages [xtrain]: Remove: archive file [/home/abi/fetcher/tmp/xtrain-0.2.3.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - processPackages [xtrain]: Remove: archive file [/home/abi/fetcher/tmp/xtrain-0.3.0.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - main [MainThread]: End processing [xtrain]: success
+[2024-05-05 18:06:32] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.3.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.4.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 18:06:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.1.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.2.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 18:06:32] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.3.0.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.4.0.tar.gz]
+[2024-05-05 18:06:32] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
+[2024-05-05 18:06:32] INFO root fetch - main [MainThread]: Store serial: [23066959]
