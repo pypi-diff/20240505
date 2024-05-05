@@ -8103,3 +8103,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 13:09:33] INFO root fetch - processPackages [ujenkins]: Remove: archive file [/home/abi/fetcher/tmp/ujenkins-0.9.0.tar.gz]
 [2024-05-05 13:09:33] INFO root fetch - main [MainThread]: End processing [ujenkins]: success
 [2024-05-05 13:09:33] INFO root fetch - main [MainThread]: Store serial: [23064975]
+[2024-05-05 13:11:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064975]
+[2024-05-05 13:11:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 13:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-05-05 13:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: short-transformers
+[2024-05-05 13:11:43] INFO root fetch - processPackages [short-transformers]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-05 13:11:43] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 13:11:43] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 13:11:43] INFO root fetch - processPackages [short-transformers]: Downloading https://files.pythonhosted.org/packages/d9/a3/45aba74264b6963b0f85453334c777cfdb9534d468aa7d57cd92e685908d/short_transformers-0.1.0.tar.gz
+[2024-05-05 13:11:44] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 13:11:44] INFO root fetch - processPackages [short-transformers]: Downloading https://files.pythonhosted.org/packages/2a/b8/5ceed2146363356db39dff0a7d6ccc855011742502a0e34706a7f3c29df1/short_transformers-0.2.0.tar.gz
+[2024-05-05 13:11:44] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 13:11:44] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 13:11:44] INFO root fetch - processPackages [short-transformers]: executing diffoscope
+[2024-05-05 13:11:44] INFO root fetch - processPackages [short-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/short_transformers-0.1.0.tar.gz tmp/short_transformers-0.2.0.tar.gz --markdown 20240505/s/short-transformers/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-05 13:11:44] INFO root fetch - processPackages [short-transformers]: Remove: archive file [/home/abi/fetcher/tmp/short_transformers-0.1.0.tar.gz]
+[2024-05-05 13:11:44] INFO root fetch - processPackages [short-transformers]: Remove: archive file [/home/abi/fetcher/tmp/short_transformers-0.2.0.tar.gz]
+[2024-05-05 13:11:44] INFO root fetch - main [MainThread]: End processing [short-transformers]: success
+[2024-05-05 13:11:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 13:11:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 13:11:45] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 13:11:45] INFO root fetch - main [MainThread]: Store serial: [23064981]
