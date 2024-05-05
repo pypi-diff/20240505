@@ -2594,3 +2594,51 @@
 [2024-05-05 04:14:34] INFO root fetch - processPackages [aiogram3-form]: Remove: archive file [/home/abi/fetcher/tmp/aiogram3_form-2.0.0.tar.gz]
 [2024-05-05 04:14:34] INFO root fetch - main [MainThread]: End processing [aiogram3-form]: success
 [2024-05-05 04:14:34] INFO root fetch - main [MainThread]: Store serial: [23062672]
+[2024-05-05 04:16:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062672]
+[2024-05-05 04:16:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 04:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openscad-docsgen
+[2024-05-05 04:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-library-objects
+[2024-05-05 04:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-catalog-objects
+[2024-05-05 04:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thor
+[2024-05-05 04:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monai-weekly
+[2024-05-05 04:16:42] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 04:16:42] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-05-05 04:16:43] INFO root fetch - processPackages [thor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 04:16:43] INFO root fetch - processPackages [openscad-docsgen]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2418] Old Version: [1.4.dev2417]
+[2024-05-05 04:16:43] INFO root fetch - processPackages [openscad-docsgen]: Downloading https://files.pythonhosted.org/packages/8f/a6/053b06aa189fcec0088ac621cb5a1c5980b6e371dcc79b8b1f2aac0abc85/openscad_docsgen-2.0.8-py2.py3-none-any.whl
+[2024-05-05 04:16:43] INFO root fetch - processPackages [thor]: Downloading https://files.pythonhosted.org/packages/6b/43/3808f163005af01c7fa631ef865898b34f6aa29d074d140066ba16c6ae78/thor-0.9.8.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/87/25/a166a00a8c9d06a998259f2c71a1b07b58725089341499bb1d3d065960d8/monai_weekly-1.4.dev2417.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240505/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-05-05 04:16:43] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240505/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-05-05 04:16:43] INFO root fetch - processPackages [openscad-docsgen]: Downloading https://files.pythonhosted.org/packages/58/9d/2d71c385dcb38bea2195d6531dbbd93a3aeff057c5104fbb2a1af9b896bd/openscad_docsgen-2.0.9-py2.py3-none-any.whl
+[2024-05-05 04:16:43] INFO root fetch - processPackages [thor]: Downloading https://files.pythonhosted.org/packages/d0/ca/4ed5b622a23dea82284cbe071a76f0c774adfdaa706917444e15f623bb98/thor-0.9.9.tar.gz
+[2024-05-05 04:16:43] INFO root fetch - processPackages [openscad-docsgen]: executing diffoscope
+[2024-05-05 04:16:43] INFO root fetch - processPackages [openscad-docsgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openscad_docsgen-2.0.8-py2.py3-none-any.whl.zip tmp/openscad_docsgen-2.0.9-py2.py3-none-any.whl.zip --markdown 20240505/o/openscad-docsgen/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-05 04:16:43] INFO root fetch - processPackages [thor]: executing diffoscope
+[2024-05-05 04:16:43] INFO root fetch - processPackages [thor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thor-0.9.8.tar.gz tmp/thor-0.9.9.tar.gz --markdown 20240505/t/thor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 04:16:43] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/ff/c9/b00f36a3a25f3de9b6089f5e54cdccbc091dca386d5bcfff72d20aa0c332/monai_weekly-1.4.dev2418.tar.gz
+[2024-05-05 04:16:44] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-05-05 04:16:44] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-05-05 04:16:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-05-05 04:16:44] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-05-05 04:16:44] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-05-05 04:16:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-05-05 04:16:44] INFO root fetch - processPackages [openscad-docsgen]: Remove: archive file [/home/abi/fetcher/tmp/openscad_docsgen-2.0.8-py2.py3-none-any.whl.zip]
+[2024-05-05 04:16:44] INFO root fetch - processPackages [openscad-docsgen]: Remove: archive file [/home/abi/fetcher/tmp/openscad_docsgen-2.0.9-py2.py3-none-any.whl.zip]
+[2024-05-05 04:16:44] INFO root fetch - main [MainThread]: End processing [openscad-docsgen]: success
+[2024-05-05 04:16:44] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-05-05 04:16:44] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai_weekly-1.4.dev2417.tar.gz tmp/monai_weekly-1.4.dev2418.tar.gz --markdown 20240505/m/monai-weekly/1.4.dev2417-1.4.dev2418/README.md --exclude *.pyd
+[2024-05-05 04:16:44] INFO root fetch - processPackages [thor]: Remove: archive file [/home/abi/fetcher/tmp/thor-0.9.8.tar.gz]
+[2024-05-05 04:16:44] INFO root fetch - processPackages [thor]: Remove: archive file [/home/abi/fetcher/tmp/thor-0.9.9.tar.gz]
+[2024-05-05 04:16:44] INFO root fetch - main [MainThread]: End processing [thor]: success
+[2024-05-05 04:16:49] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2417.tar.gz]
+[2024-05-05 04:16:49] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2418.tar.gz]
+[2024-05-05 04:16:49] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-05-05 04:16:49] INFO root fetch - main [MainThread]: Store serial: [23062688]
