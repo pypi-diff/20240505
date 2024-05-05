@@ -12277,3 +12277,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:51:13] INFO root fetch - processPackages [limnoria]: Remove: archive file [/home/abi/fetcher/tmp/limnoria-2024.4.26.tar.gz]
 [2024-05-05 17:51:13] INFO root fetch - main [MainThread]: End processing [limnoria]: success
 [2024-05-05 17:51:13] INFO root fetch - main [MainThread]: Store serial: [23066878]
+[2024-05-05 17:53:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066878]
+[2024-05-05 17:53:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 17:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: replace-accents
+[2024-05-05 17:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genml
+[2024-05-05 17:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wrapyfi
+[2024-05-05 17:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyproject-version
+[2024-05-05 17:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: satorisynapse
+[2024-05-05 17:53:22] INFO root fetch - processPackages [wrapyfi]: New version: [0.4.44] Old Version: [0.4.43]
+[2024-05-05 17:53:22] INFO root fetch - processPackages [replace-accents]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 17:53:22] WARNING root fetch - processPackages [pyproject-version]: Skipping, unable to determine old version
+[2024-05-05 17:53:22] INFO root fetch - main [MainThread]: End processing [pyproject-version] error
+[2024-05-05 17:53:22] INFO root fetch - processPackages [genml]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-05 17:53:22] INFO root fetch - processPackages [satorisynapse]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-05 17:53:22] INFO root fetch - processPackages [genml]: Downloading https://files.pythonhosted.org/packages/e6/7d/d5a8fba4a9280e07fe70fb6bcae414173cc863631fd1bdbd79ea3f9df802/genml-0.3.1.tar.gz
+[2024-05-05 17:53:22] INFO root fetch - processPackages [wrapyfi]: Downloading https://files.pythonhosted.org/packages/8c/8c/1a8c192ce965819866139c84f9f1c0cd2eab2661637c81c9f6ab1f85356d/wrapyfi-0.4.43.tar.gz
+[2024-05-05 17:53:22] INFO root fetch - processPackages [replace-accents]: Downloading https://files.pythonhosted.org/packages/b7/89/479e923a571fd9e569733c1436500709f0d5c57b793e59844b1ddd9c4773/replace_accents-0.0.3-py3-none-any.whl
+[2024-05-05 17:53:22] INFO root fetch - processPackages [satorisynapse]: Downloading https://files.pythonhosted.org/packages/8b/de/461b8cb08a020ef43c8f76d9ffa4bb451855aa9fdd05c7f91b3e68128833/satorisynapse-0.0.9.tar.gz
+[2024-05-05 17:53:22] INFO root fetch - processPackages [replace-accents]: Downloading https://files.pythonhosted.org/packages/7a/fc/502f95fc978a47fa1f52af55ad8240286fca5f38a7de85b8a8719dee6748/replace_accents-0.0.4.tar.gz
+[2024-05-05 17:53:22] INFO root fetch - processPackages [genml]: Downloading https://files.pythonhosted.org/packages/8d/0d/aa920b1a131b90daf8a51605272de6cbf4b8ece6d84ef8f0b56c82e5b7a2/genml-0.4.0.tar.gz
+[2024-05-05 17:53:22] INFO root fetch - processPackages [satorisynapse]: Downloading https://files.pythonhosted.org/packages/19/b6/97b684697b6afbd804711df8028d6243509b63734a3d7f4a9257d0f578da/satorisynapse-0.1.0.tar.gz
+[2024-05-05 17:53:22] INFO root fetch - processPackages [replace-accents]: executing diffoscope
+[2024-05-05 17:53:22] INFO root fetch - processPackages [replace-accents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replace_accents-0.0.3-py3-none-any.whl.zip tmp/replace_accents-0.0.4.tar.gz --markdown 20240505/r/replace-accents/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 17:53:22] INFO root fetch - processPackages [genml]: executing diffoscope
+[2024-05-05 17:53:22] INFO root fetch - processPackages [genml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genml-0.3.1.tar.gz tmp/genml-0.4.0.tar.gz --markdown 20240505/g/genml/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-05 17:53:23] INFO root fetch - processPackages [satorisynapse]: executing diffoscope
+[2024-05-05 17:53:23] INFO root fetch - processPackages [satorisynapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satorisynapse-0.0.9.tar.gz tmp/satorisynapse-0.1.0.tar.gz --markdown 20240505/s/satorisynapse/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-05 17:53:23] INFO root fetch - processPackages [satorisynapse]: Remove: archive file [/home/abi/fetcher/tmp/satorisynapse-0.0.9.tar.gz]
+[2024-05-05 17:53:23] INFO root fetch - processPackages [satorisynapse]: Remove: archive file [/home/abi/fetcher/tmp/satorisynapse-0.1.0.tar.gz]
+[2024-05-05 17:53:23] INFO root fetch - main [MainThread]: End processing [satorisynapse]: success
+[2024-05-05 17:53:23] INFO root fetch - processPackages [replace-accents]: Remove: archive file [/home/abi/fetcher/tmp/replace_accents-0.0.3-py3-none-any.whl.zip]
+[2024-05-05 17:53:23] INFO root fetch - processPackages [replace-accents]: Remove: archive file [/home/abi/fetcher/tmp/replace_accents-0.0.4.tar.gz]
+[2024-05-05 17:53:23] INFO root fetch - main [MainThread]: End processing [replace-accents]: success
+[2024-05-05 17:53:23] INFO root fetch - processPackages [genml]: Remove: archive file [/home/abi/fetcher/tmp/genml-0.3.1.tar.gz]
+[2024-05-05 17:53:23] INFO root fetch - processPackages [genml]: Remove: archive file [/home/abi/fetcher/tmp/genml-0.4.0.tar.gz]
+[2024-05-05 17:53:23] INFO root fetch - main [MainThread]: End processing [genml]: success
+[2024-05-05 17:53:23] INFO root fetch - processPackages [wrapyfi]: Downloading https://files.pythonhosted.org/packages/e6/72/109d143632cd135cbfb8b654f24aabf09269655152a0ecff3536267ea60d/wrapyfi-0.4.44.tar.gz
+[2024-05-05 17:53:24] INFO root fetch - processPackages [wrapyfi]: executing diffoscope
+[2024-05-05 17:53:24] INFO root fetch - processPackages [wrapyfi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrapyfi-0.4.43.tar.gz tmp/wrapyfi-0.4.44.tar.gz --markdown 20240505/w/wrapyfi/0.4.43-0.4.44/README.md --exclude *.pyd
+[2024-05-05 17:53:26] INFO root fetch - processPackages [wrapyfi]: Remove: archive file [/home/abi/fetcher/tmp/wrapyfi-0.4.43.tar.gz]
+[2024-05-05 17:53:26] INFO root fetch - processPackages [wrapyfi]: Remove: archive file [/home/abi/fetcher/tmp/wrapyfi-0.4.44.tar.gz]
+[2024-05-05 17:53:26] INFO root fetch - main [MainThread]: End processing [wrapyfi]: success
+[2024-05-05 17:53:26] INFO root fetch - main [MainThread]: Store serial: [23066895]
