@@ -4554,3 +4554,15 @@
 [2024-05-05 08:04:33] INFO root fetch - processPackages [iac-init]: Remove: archive file [/home/abi/fetcher/tmp/iac_init-0.4.7.tar.gz]
 [2024-05-05 08:04:33] INFO root fetch - main [MainThread]: End processing [iac-init]: success
 [2024-05-05 08:04:33] INFO root fetch - main [MainThread]: Store serial: [23063438]
+[2024-05-05 08:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063438]
+[2024-05-05 08:06:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 08:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2024-05-05 08:06:42] INFO root fetch - processPackages [pypipr]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-05-05 08:06:42] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/41/8e/296646c6a3d68ecf6c58c3ec52ece636443172c24750f76c7001939e52d3/pypipr-1.0.98.tar.gz
+[2024-05-05 08:06:43] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/49/d0/c23afc67d1fa03531bbd97cc72ad024e79b8e25678a6a5674d469d19cdf9/pypipr-1.0.99.tar.gz
+[2024-05-05 08:06:43] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-05-05 08:06:43] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.98.tar.gz tmp/pypipr-1.0.99.tar.gz --markdown 20240505/p/pypipr/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-05-05 08:06:43] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.98.tar.gz]
+[2024-05-05 08:06:43] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.99.tar.gz]
+[2024-05-05 08:06:43] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-05-05 08:06:43] INFO root fetch - main [MainThread]: Store serial: [23063441]
