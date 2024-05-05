@@ -11729,3 +11729,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:14:10] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.0.tar.gz]
 [2024-05-05 17:14:10] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2024-05-05 17:14:10] INFO root fetch - main [MainThread]: Store serial: [23066681]
+[2024-05-05 17:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066681]
+[2024-05-05 17:16:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 17:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fortls
+[2024-05-05 17:16:19] INFO root fetch - processPackages [fortls]: New version: [3.0.0rc4] Old Version: [3.0.0rc3]
+[2024-05-05 17:16:19] INFO root fetch - processPackages [fortls]: Downloading https://files.pythonhosted.org/packages/44/af/2229b92be3c879a95aad15f8b8fa2eb989125d9fbe577ec70cf1f8721093/fortls-3.0.0rc3.tar.gz
+[2024-05-05 17:16:20] INFO root fetch - processPackages [fortls]: Downloading https://files.pythonhosted.org/packages/f1/44/d5a2a2ad24df455ea545f4cbdaf1b7422d49c9da994ea99a627b48dfacb8/fortls-3.0.0rc4.tar.gz
+[2024-05-05 17:16:20] INFO root fetch - processPackages [fortls]: executing diffoscope
+[2024-05-05 17:16:20] INFO root fetch - processPackages [fortls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fortls-3.0.0rc3.tar.gz tmp/fortls-3.0.0rc4.tar.gz --markdown 20240505/f/fortls/3.0.0rc3-3.0.0rc4/README.md --exclude *.pyd
+[2024-05-05 17:16:22] INFO root fetch - processPackages [fortls]: Remove: archive file [/home/abi/fetcher/tmp/fortls-3.0.0rc3.tar.gz]
+[2024-05-05 17:16:22] INFO root fetch - processPackages [fortls]: Remove: archive file [/home/abi/fetcher/tmp/fortls-3.0.0rc4.tar.gz]
+[2024-05-05 17:16:22] INFO root fetch - main [MainThread]: End processing [fortls]: success
+[2024-05-05 17:16:22] INFO root fetch - main [MainThread]: Store serial: [23066684]
