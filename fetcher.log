@@ -1848,3 +1848,9 @@
 [2024-05-05 02:50:46] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
 [2024-05-05 02:50:46] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
 [2024-05-05 02:50:46] INFO root fetch - main [MainThread]: Store serial: [23062260]
+[2024-05-05 02:52:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062260]
+[2024-05-05 02:52:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 02:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edterm
+[2024-05-05 02:52:54] WARNING root fetch - processPackages [edterm]: Skipping, unable to determine old version
+[2024-05-05 02:52:54] INFO root fetch - main [MainThread]: End processing [edterm] error
+[2024-05-05 02:52:54] INFO root fetch - main [MainThread]: Store serial: [23062263]
