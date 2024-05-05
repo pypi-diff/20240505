@@ -13874,3 +13874,15 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:29:23] INFO root fetch - processPackages [byol-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/byol_pytorch-0.8.1.tar.gz]
 [2024-05-05 19:29:23] INFO root fetch - main [MainThread]: End processing [byol-pytorch]: success
 [2024-05-05 19:29:23] INFO root fetch - main [MainThread]: Store serial: [23067595]
+[2024-05-05 19:31:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067595]
+[2024-05-05 19:31:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 19:31:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 19:31:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.4.4] Old Version: [4.4.2]
+[2024-05-05 19:31:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/d5/b3/25a756dd8a8097f3913b92e93349b5f9f6f6fe0032c8c2d1d67ffc8ebe72/Buke_autoTrade_Pypi-4.4.2.tar.gz
+[2024-05-05 19:31:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/7d/de/625e6208d7d5233c2bf640ce3da1c7ea3d2582df766dc6d1d0cc35108714/Buke_autoTrade_Pypi-4.4.4.tar.gz
+[2024-05-05 19:31:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 19:31:32] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.4.2.tar.gz tmp/Buke_autoTrade_Pypi-4.4.4.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.4.2-4.4.4/README.md --exclude *.pyd
+[2024-05-05 19:31:33] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.2.tar.gz]
+[2024-05-05 19:31:33] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.4.tar.gz]
+[2024-05-05 19:31:33] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 19:31:33] INFO root fetch - main [MainThread]: Store serial: [23067598]
