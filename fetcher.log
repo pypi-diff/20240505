@@ -2761,3 +2761,24 @@
 [2024-05-05 04:27:42] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.2.tar.gz]
 [2024-05-05 04:27:42] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
 [2024-05-05 04:27:42] INFO root fetch - main [MainThread]: Store serial: [23062732]
+[2024-05-05 04:29:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062732]
+[2024-05-05 04:29:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 04:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thor
+[2024-05-05 04:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 04:29:50] INFO root fetch - processPackages [thor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 04:29:50] INFO root fetch - processPackages [thor]: Downloading https://files.pythonhosted.org/packages/6b/43/3808f163005af01c7fa631ef865898b34f6aa29d074d140066ba16c6ae78/thor-0.9.8.tar.gz
+[2024-05-05 04:29:50] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-05-05 04:29:51] INFO root fetch - processPackages [thor]: Downloading https://files.pythonhosted.org/packages/d0/ca/4ed5b622a23dea82284cbe071a76f0c774adfdaa706917444e15f623bb98/thor-0.9.9.tar.gz
+[2024-05-05 04:29:51] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/4e/77/bce8c232991f5a9f9952bbd3ef1a2a75bfa2b63c2979629cd44cbe03aad0/Buke_autoTrade_Pypi-4.2.0.tar.gz
+[2024-05-05 04:29:51] INFO root fetch - processPackages [thor]: executing diffoscope
+[2024-05-05 04:29:51] INFO root fetch - processPackages [thor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thor-0.9.8.tar.gz tmp/thor-0.9.9.tar.gz --markdown 20240505/t/thor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 04:29:51] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/56/ee/f19f2a8fdabc3b4166779ebea5a65bce869896fc5e06bbb03f6e1ee04aca/Buke_autoTrade_Pypi-4.2.1.tar.gz
+[2024-05-05 04:29:51] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 04:29:51] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.2.0.tar.gz tmp/Buke_autoTrade_Pypi-4.2.1.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.2.0-4.2.1/README.md --exclude *.pyd
+[2024-05-05 04:29:52] INFO root fetch - processPackages [thor]: Remove: archive file [/home/abi/fetcher/tmp/thor-0.9.8.tar.gz]
+[2024-05-05 04:29:52] INFO root fetch - processPackages [thor]: Remove: archive file [/home/abi/fetcher/tmp/thor-0.9.9.tar.gz]
+[2024-05-05 04:29:52] INFO root fetch - main [MainThread]: End processing [thor]: success
+[2024-05-05 04:29:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.2.0.tar.gz]
+[2024-05-05 04:29:52] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.2.1.tar.gz]
+[2024-05-05 04:29:52] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 04:29:52] INFO root fetch - main [MainThread]: Store serial: [23062737]
