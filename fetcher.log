@@ -3296,3 +3296,33 @@
 [2024-05-05 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-05-05 05:30:23] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-05-05 05:30:23] INFO root fetch - main [MainThread]: Store serial: [23062922]
+[2024-05-05 05:32:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062922]
+[2024-05-05 05:32:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 05:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diaspora-event-sdk
+[2024-05-05 05:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feffery-antd-charts
+[2024-05-05 05:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pitricks
+[2024-05-05 05:32:32] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-05 05:32:32] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/6c/79/90b5daca6e8700b6a5178fc91ee709b6afc226809c5a4acef29b99f768ff/diaspora-event-sdk-0.2.6.tar.gz
+[2024-05-05 05:32:32] INFO root fetch - processPackages [pitricks]: New version: [0.1.4a2] Old Version: [0.1.4a1]
+[2024-05-05 05:32:32] INFO root fetch - processPackages [feffery-antd-charts]: New version: [0.1.0rc1] Old Version: [0.1.0rc0]
+[2024-05-05 05:32:32] INFO root fetch - processPackages [feffery-antd-charts]: Downloading https://files.pythonhosted.org/packages/a8/b6/38ef5ba1b763049e5f3387c1e2e8b61bc89b3af4873e148be0b7f1ed61c5/feffery_antd_charts-0.1.0rc0.tar.gz
+[2024-05-05 05:32:32] INFO root fetch - processPackages [pitricks]: Downloading https://files.pythonhosted.org/packages/98/57/24cc95af7859cf1ee508c7cab2cfd1b296ed97586e5aa183d8e8cb5d921f/pitricks-0.1.4a1.tar.gz
+[2024-05-05 05:32:32] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/aa/28/14c2b27387ab8f0a13c02a800a80411961932e0aedab0527946820b0ed6b/diaspora-event-sdk-0.2.7.tar.gz
+[2024-05-05 05:32:32] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-05-05 05:32:32] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.2.6.tar.gz tmp/diaspora-event-sdk-0.2.7.tar.gz --markdown 20240505/d/diaspora-event-sdk/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-05 05:32:33] INFO root fetch - processPackages [feffery-antd-charts]: Downloading https://files.pythonhosted.org/packages/58/eb/f1a9412261e4af793b4b5d6c7d5f2e47bc6e2de204ec8afca56d690de8f8/feffery_antd_charts-0.1.0rc1.tar.gz
+[2024-05-05 05:32:33] INFO root fetch - processPackages [pitricks]: Downloading https://files.pythonhosted.org/packages/5e/2e/8d98651c9ba2398421dd619993522148d5477d469bc94e984382a8f2aaf4/pitricks-0.1.4a2.tar.gz
+[2024-05-05 05:32:33] INFO root fetch - processPackages [pitricks]: executing diffoscope
+[2024-05-05 05:32:33] INFO root fetch - processPackages [pitricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitricks-0.1.4a1.tar.gz tmp/pitricks-0.1.4a2.tar.gz --markdown 20240505/p/pitricks/0.1.4a1-0.1.4a2/README.md --exclude *.pyd
+[2024-05-05 05:32:33] INFO root fetch - processPackages [feffery-antd-charts]: executing diffoscope
+[2024-05-05 05:32:33] INFO root fetch - processPackages [feffery-antd-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_antd_charts-0.1.0rc0.tar.gz tmp/feffery_antd_charts-0.1.0rc1.tar.gz --markdown 20240505/f/feffery-antd-charts/0.1.0rc0-0.1.0rc1/README.md --exclude *.pyd
+[2024-05-05 05:32:33] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.6.tar.gz]
+[2024-05-05 05:32:33] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.7.tar.gz]
+[2024-05-05 05:32:33] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-05-05 05:32:33] INFO root fetch - processPackages [pitricks]: Remove: archive file [/home/abi/fetcher/tmp/pitricks-0.1.4a1.tar.gz]
+[2024-05-05 05:32:33] INFO root fetch - processPackages [pitricks]: Remove: archive file [/home/abi/fetcher/tmp/pitricks-0.1.4a2.tar.gz]
+[2024-05-05 05:32:33] INFO root fetch - main [MainThread]: End processing [pitricks]: success
+[2024-05-05 05:32:46] INFO root fetch - processPackages [feffery-antd-charts]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_charts-0.1.0rc0.tar.gz]
+[2024-05-05 05:32:46] INFO root fetch - processPackages [feffery-antd-charts]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_charts-0.1.0rc1.tar.gz]
+[2024-05-05 05:32:46] INFO root fetch - main [MainThread]: End processing [feffery-antd-charts]: success
+[2024-05-05 05:32:46] INFO root fetch - main [MainThread]: Store serial: [23062931]
