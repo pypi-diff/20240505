@@ -14069,3 +14069,38 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:40:15] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
 [2024-05-05 19:40:15] INFO root fetch - main [MainThread]: End processing [leads]: success
 [2024-05-05 19:40:15] INFO root fetch - main [MainThread]: Store serial: [23067668]
+[2024-05-05 19:42:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067668]
+[2024-05-05 19:42:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 19:44:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067668]
+[2024-05-05 19:44:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 19:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terminaltexteffects
+[2024-05-05 19:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strictdoc
+[2024-05-05 19:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mmdit
+[2024-05-05 19:44:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odlabel
+[2024-05-05 19:44:29] INFO root fetch - processPackages [mmdit]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-05 19:44:29] WARNING root fetch - processPackages [odlabel]: Skipping, unable to determine old version
+[2024-05-05 19:44:29] INFO root fetch - main [MainThread]: End processing [odlabel] error
+[2024-05-05 19:44:29] INFO root fetch - processPackages [mmdit]: Downloading https://files.pythonhosted.org/packages/2b/ba/32d7fb73065ec24fa0790649fa52c930096bdb04b19b388b496ade14c822/mmdit-0.0.7.tar.gz
+[2024-05-05 19:44:29] INFO root fetch - processPackages [terminaltexteffects]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-05 19:44:29] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 19:44:29] INFO root fetch - processPackages [terminaltexteffects]: Downloading https://files.pythonhosted.org/packages/b8/00/d64ab46e5e81a0b4936e103ee5f3d757077743639ae71b434bf3ed8a06a5/terminaltexteffects-0.8.0.tar.gz
+[2024-05-05 19:44:29] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/0e/0c/3782c5673a36cda9e2189ef1e7d9661ba2f1e5c9822b736cf2ce0d2545a7/strictdoc-0.0.8.tar.gz
+[2024-05-05 19:44:29] INFO root fetch - processPackages [mmdit]: Downloading https://files.pythonhosted.org/packages/fa/e2/30919a1d236b0d3ce8c82bf4c0160d9c7af12151ab61ecc4c1ae7bf18315/mmdit-0.0.8.tar.gz
+[2024-05-05 19:44:29] INFO root fetch - processPackages [terminaltexteffects]: Downloading https://files.pythonhosted.org/packages/bb/19/9caec9e1496f432552ace9ca2e1c5c8e80c30cd3978681561fad19ea4f00/terminaltexteffects-0.9.0.tar.gz
+[2024-05-05 19:44:29] INFO root fetch - processPackages [mmdit]: executing diffoscope
+[2024-05-05 19:44:29] INFO root fetch - processPackages [mmdit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmdit-0.0.7.tar.gz tmp/mmdit-0.0.8.tar.gz --markdown 20240505/m/mmdit/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-05 19:44:29] INFO root fetch - processPackages [terminaltexteffects]: executing diffoscope
+[2024-05-05 19:44:29] INFO root fetch - processPackages [terminaltexteffects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminaltexteffects-0.8.0.tar.gz tmp/terminaltexteffects-0.9.0.tar.gz --markdown 20240505/t/terminaltexteffects/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-05 19:44:29] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/b6/06/2219b569301c00406d344dca69ac5e31a169bb9529b66ec957609495d940/strictdoc-0.0.9.tar.gz
+[2024-05-05 19:44:29] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2024-05-05 19:44:29] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20240505/s/strictdoc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 19:44:30] INFO root fetch - processPackages [mmdit]: Remove: archive file [/home/abi/fetcher/tmp/mmdit-0.0.7.tar.gz]
+[2024-05-05 19:44:30] INFO root fetch - processPackages [mmdit]: Remove: archive file [/home/abi/fetcher/tmp/mmdit-0.0.8.tar.gz]
+[2024-05-05 19:44:30] INFO root fetch - main [MainThread]: End processing [mmdit]: success
+[2024-05-05 19:44:30] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.8.tar.gz]
+[2024-05-05 19:44:30] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.9.tar.gz]
+[2024-05-05 19:44:30] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2024-05-05 19:44:30] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.8.0.tar.gz]
+[2024-05-05 19:44:30] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.0.tar.gz]
+[2024-05-05 19:44:30] INFO root fetch - main [MainThread]: End processing [terminaltexteffects]: success
+[2024-05-05 19:44:30] INFO root fetch - main [MainThread]: Store serial: [23067682]
