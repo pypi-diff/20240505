@@ -11612,3 +11612,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:09:47] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240504-py3-none-win_amd64.whl.zip]
 [2024-05-05 17:09:47] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-05-05 17:09:47] INFO root fetch - main [MainThread]: Store serial: [23066640]
+[2024-05-05 17:11:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066640]
+[2024-05-05 17:11:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 17:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: varorm
+[2024-05-05 17:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maia-hdl
+[2024-05-05 17:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-05-05 17:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypomes-db
+[2024-05-05 17:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: web-ui-helper
+[2024-05-05 17:11:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: connectome-interpreter
+[2024-05-05 17:11:56] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-05 17:11:56] WARNING root fetch - processPackages [varorm]: Skipping, unable to determine old version
+[2024-05-05 17:11:56] INFO root fetch - main [MainThread]: End processing [varorm] error
+[2024-05-05 17:11:56] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-05 17:11:56] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 17:11:56] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/72/de/7429f17670f9d75add995ee553b3ff61faa6a475e2746cbd883593b1ae5f/pypomes_db-0.4.6.tar.gz
+[2024-05-05 17:11:56] WARNING root fetch - processPackages [web-ui-helper]: Skipping, unable to determine old version
+[2024-05-05 17:11:56] INFO root fetch - main [MainThread]: End processing [web-ui-helper] error
+[2024-05-05 17:11:56] INFO root fetch - processPackages [maia-hdl]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-05 17:11:56] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/80/20/709a8ad24b128cd7f56402fe9b64107c07dd3cf1992cdbd9b6ee62590616/connectome_interpreter-1.7.0.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [maia-hdl]: Downloading https://files.pythonhosted.org/packages/6e/ce/c3e6234a942415ccc51f52c9aed9995d9364ef780b2fbf6f9760549205b8/maia_hdl-0.4.0.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/c9/77/8f216fe167f02f47f5ef1b33f15db0cced16c2147b47df48ee4139a4d241/connectome_interpreter-1.7.1.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-05-05 17:11:56] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.7.0.tar.gz tmp/connectome_interpreter-1.7.1.tar.gz --markdown 20240505/c/connectome-interpreter/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-05 17:11:56] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/12/12/dcb9b6c7276c33726c3575861b6a35f7e1968382cb9f34349e81e3232255/pypomes_db-0.4.7.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 17:11:56] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.6.tar.gz tmp/pypomes_db-0.4.7.tar.gz --markdown 20240505/p/pypomes-db/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-05 17:11:56] INFO root fetch - processPackages [maia-hdl]: Downloading https://files.pythonhosted.org/packages/c1/de/54fb036353db701809b17a5a872fece4d71d564b474d26b4e1aa292c7896/maia_hdl-0.5.0.tar.gz
+[2024-05-05 17:11:56] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 17:11:56] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 17:11:57] WARNING root fetch - processPackages [maia-hdl]: Skipping package: exceeds size limit 28167896>=10485760
+[2024-05-05 17:11:57] INFO root fetch - main [MainThread]: End processing [maia-hdl] error
+[2024-05-05 17:11:57] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.7.0.tar.gz]
+[2024-05-05 17:11:57] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.7.1.tar.gz]
+[2024-05-05 17:11:57] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-05-05 17:11:57] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.6.tar.gz]
+[2024-05-05 17:11:57] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.7.tar.gz]
+[2024-05-05 17:11:57] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 17:11:57] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 17:11:57] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 17:11:57] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 17:11:57] INFO root fetch - main [MainThread]: Store serial: [23066658]
