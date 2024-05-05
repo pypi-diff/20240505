@@ -1071,3 +1071,47 @@
 [2024-05-05 02:03:13] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-05-05 02:03:13] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-05-05 02:03:13] INFO root fetch - main [MainThread]: Store serial: [23061942]
+[2024-05-05 02:05:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23061942]
+[2024-05-05 02:05:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 02:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mskt
+[2024-05-05 02:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nnfasta
+[2024-05-05 02:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-nightly
+[2024-05-05 02:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaxkern-nightly
+[2024-05-05 02:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onnxscript
+[2024-05-05 02:05:22] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240504.425] Old Version: [2.0.0.20240503.422]
+[2024-05-05 02:05:22] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240504] Old Version: [0.1.0.dev20240503]
+[2024-05-05 02:05:22] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mskt]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/83/43/8bb6a16e5437d36b67f7af91da3a1f1533a3749ea8d756e83db38316783d/mct-nightly-2.0.0.20240503.422.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/35/61/843035cbabb4b36ede6194a5a44aaf6609a54fb983a9465d0c0ae3f62ab5/onnxscript-0.1.0.dev20240503.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mskt]: Downloading https://files.pythonhosted.org/packages/2b/a7/c7bf00f64b5f3254c019f34aa8decfda4fd7833827239a6386f9d5906a0f/mskt-0.0.6.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-05-05 02:05:22] WARNING root fetch - processPackages [mskt]: Skipping package: exceeds size limit 46900916>=10485760
+[2024-05-05 02:05:22] INFO root fetch - main [MainThread]: End processing [mskt] error
+[2024-05-05 02:05:22] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/ee/c2/4b4cc47bf3fffe3c7b864132f76c9fd51599f3a037a4e12667c4f7ee1604/mct-nightly-2.0.0.20240504.425.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240505/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-05-05 02:05:22] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240505/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-05-05 02:05:22] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/e0/f3/d17362830f8d30045b7ba7668d4373ad0155bb45c7581471954fae8c3da7/onnxscript-0.1.0.dev20240504.tar.gz
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-05 02:05:22] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240503.422.tar.gz tmp/mct-nightly-2.0.0.20240504.425.tar.gz --markdown 20240505/m/mct-nightly/2.0.0.20240503.422-2.0.0.20240504.425/README.md --exclude *.pyd
+[2024-05-05 02:05:22] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-05 02:05:22] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240503.tar.gz tmp/onnxscript-0.1.0.dev20240504.tar.gz --markdown 20240505/o/onnxscript/0.1.0.dev20240503-0.1.0.dev20240504/README.md --exclude *.pyd
+[2024-05-05 02:05:23] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-05 02:05:23] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-05 02:05:23] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-05 02:05:23] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-05-05 02:05:23] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-05-05 02:05:23] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-05-05 02:05:24] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240503.tar.gz]
+[2024-05-05 02:05:24] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240504.tar.gz]
+[2024-05-05 02:05:24] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-05 02:05:24] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240503.422.tar.gz]
+[2024-05-05 02:05:24] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240504.425.tar.gz]
+[2024-05-05 02:05:24] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-05 02:05:24] INFO root fetch - main [MainThread]: Store serial: [23061959]
