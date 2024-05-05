@@ -13639,3 +13639,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:12:06] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.4.0.tar.gz]
 [2024-05-05 19:12:06] INFO root fetch - main [MainThread]: End processing [maya-umbrella]: success
 [2024-05-05 19:12:06] INFO root fetch - main [MainThread]: Store serial: [23067460]
+[2024-05-05 19:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067460]
+[2024-05-05 19:14:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 19:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beancount-parser
+[2024-05-05 19:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Dash-tooltip
+[2024-05-05 19:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-05-05 19:14:15] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-05 19:14:15] INFO root fetch - processPackages [Dash-tooltip]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-05 19:14:15] INFO root fetch - processPackages [beancount-parser]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 19:14:15] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-05 19:14:15] INFO root fetch - processPackages [Dash-tooltip]: Downloading https://files.pythonhosted.org/packages/7b/e8/e8a7a574f4080eef33a67f90b967acd2f8dacba798f900e83890a68a0696/Dash_tooltip-0.3.9.tar.gz
+[2024-05-05 19:14:15] INFO root fetch - processPackages [beancount-parser]: Downloading https://files.pythonhosted.org/packages/da/16/b33c95252c50fcd76966e1140403664d260d324aa77a78b1d204f3f1170a/beancount_parser-1.0.0.tar.gz
+[2024-05-05 19:14:15] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-05 19:14:15] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-05 19:14:15] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240505/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-05 19:14:15] INFO root fetch - processPackages [beancount-parser]: Downloading https://files.pythonhosted.org/packages/92/ae/640c98ef62e43ac1cb3a25c76a39fb306534893b7ed8da6f7386c691eb3a/beancount_parser-1.0.1.tar.gz
+[2024-05-05 19:14:16] INFO root fetch - processPackages [beancount-parser]: executing diffoscope
+[2024-05-05 19:14:16] INFO root fetch - processPackages [beancount-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_parser-1.0.0.tar.gz tmp/beancount_parser-1.0.1.tar.gz --markdown 20240505/b/beancount-parser/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 19:14:16] INFO root fetch - processPackages [Dash-tooltip]: Downloading https://files.pythonhosted.org/packages/8e/a5/d27725d89e3cea38d8ad0de98de27e86114015e1a2cb3e7a19e200dab1b0/Dash_tooltip-0.4.0.tar.gz
+[2024-05-05 19:14:16] INFO root fetch - processPackages [Dash-tooltip]: executing diffoscope
+[2024-05-05 19:14:16] INFO root fetch - processPackages [Dash-tooltip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Dash_tooltip-0.3.9.tar.gz tmp/Dash_tooltip-0.4.0.tar.gz --markdown 20240505/D/Dash-tooltip/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-05 19:14:16] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-05 19:14:16] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-05 19:14:16] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-05 19:14:16] INFO root fetch - processPackages [beancount-parser]: Remove: archive file [/home/abi/fetcher/tmp/beancount_parser-1.0.0.tar.gz]
+[2024-05-05 19:14:16] INFO root fetch - processPackages [beancount-parser]: Remove: archive file [/home/abi/fetcher/tmp/beancount_parser-1.0.1.tar.gz]
+[2024-05-05 19:14:16] INFO root fetch - main [MainThread]: End processing [beancount-parser]: success
+[2024-05-05 19:14:16] INFO root fetch - processPackages [Dash-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/Dash_tooltip-0.3.9.tar.gz]
+[2024-05-05 19:14:16] INFO root fetch - processPackages [Dash-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/Dash_tooltip-0.4.0.tar.gz]
+[2024-05-05 19:14:16] INFO root fetch - main [MainThread]: End processing [Dash-tooltip]: success
+[2024-05-05 19:14:16] INFO root fetch - main [MainThread]: Store serial: [23067468]
