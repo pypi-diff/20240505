@@ -8255,3 +8255,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-05-05 13:16:07] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
 [2024-05-05 13:16:07] INFO root fetch - main [MainThread]: Store serial: [23064993]
+[2024-05-05 13:18:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064993]
+[2024-05-05 13:18:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 13:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-cpp
+[2024-05-05 13:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymeteobridgesql
+[2024-05-05 13:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pchjlib
+[2024-05-05 13:18:16] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240504] Old Version: [2.5.0b20240503]
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pchjlib]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pymeteobridgesql]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-05 13:18:16] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/22/86/0449c6cad9ff391d127345f8db14a6c0c001c669ffc3d5ba258e7337f07c/bigdl_core_cpp-2.5.0b20240503-py3-none-win_amd64.whl
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pchjlib]: Downloading https://files.pythonhosted.org/packages/f9/7a/03e22221ad9f7e4e7d00a3fd287fcf09dfb7e5a0e310f3c75f2a453bc3ae/pchjlib-0.0.3.8.tar.gz
+[2024-05-05 13:18:16] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 28077871>=10485760
+[2024-05-05 13:18:16] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pymeteobridgesql]: Downloading https://files.pythonhosted.org/packages/35/79/b97f9b75ed7668690b9a02adc28b077fe80546a1573019e29fa7df4aaccb/pymeteobridgesql-1.2.1.tar.gz
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pchjlib]: Downloading https://files.pythonhosted.org/packages/79/f0/e3a362873ba9ba251100e331869bf4f0134b2a09a516edb7e24f0840c14e/pchjlib-0.0.3.9.tar.gz
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pchjlib]: executing diffoscope
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pchjlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pchjlib-0.0.3.8.tar.gz tmp/pchjlib-0.0.3.9.tar.gz --markdown 20240505/p/pchjlib/0.0.3.8-0.0.3.9/README.md --exclude *.pyd
+[2024-05-05 13:18:16] INFO root fetch - processPackages [pymeteobridgesql]: Downloading https://files.pythonhosted.org/packages/6b/80/8aba53ccf16f28a4d252e635e1aa1400088b91fffb3009f563b71db95960/pymeteobridgesql-1.2.2.tar.gz
+[2024-05-05 13:18:17] INFO root fetch - processPackages [pymeteobridgesql]: executing diffoscope
+[2024-05-05 13:18:17] INFO root fetch - processPackages [pymeteobridgesql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymeteobridgesql-1.2.1.tar.gz tmp/pymeteobridgesql-1.2.2.tar.gz --markdown 20240505/p/pymeteobridgesql/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-05 13:18:17] INFO root fetch - processPackages [pchjlib]: Remove: archive file [/home/abi/fetcher/tmp/pchjlib-0.0.3.8.tar.gz]
+[2024-05-05 13:18:17] INFO root fetch - processPackages [pchjlib]: Remove: archive file [/home/abi/fetcher/tmp/pchjlib-0.0.3.9.tar.gz]
+[2024-05-05 13:18:17] INFO root fetch - main [MainThread]: End processing [pchjlib]: success
+[2024-05-05 13:18:17] INFO root fetch - processPackages [pymeteobridgesql]: Remove: archive file [/home/abi/fetcher/tmp/pymeteobridgesql-1.2.1.tar.gz]
+[2024-05-05 13:18:17] INFO root fetch - processPackages [pymeteobridgesql]: Remove: archive file [/home/abi/fetcher/tmp/pymeteobridgesql-1.2.2.tar.gz]
+[2024-05-05 13:18:17] INFO root fetch - main [MainThread]: End processing [pymeteobridgesql]: success
+[2024-05-05 13:18:17] INFO root fetch - main [MainThread]: Store serial: [23065001]
