@@ -16298,3 +16298,42 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:10:02] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-05-05 22:10:02] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-05-05 22:10:02] INFO root fetch - main [MainThread]: Store serial: [23068702]
+[2024-05-05 22:12:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068702]
+[2024-05-05 22:12:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-pydantic-field
+[2024-05-05 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clump-python
+[2024-05-05 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asynctnt
+[2024-05-05 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-mpv
+[2024-05-05 22:12:11] INFO root fetch - processPackages [clump-python]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 22:12:11] INFO root fetch - processPackages [clump-python]: Downloading https://files.pythonhosted.org/packages/08/1e/4dfae8006abfbad5e771c21a3363bd55b76b77f947af723f455670a19412/clump-python-0.3.0.tar.gz
+[2024-05-05 22:12:11] INFO root fetch - processPackages [python-mpv]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-05 22:12:11] INFO root fetch - processPackages [django-pydantic-field]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-05 22:12:11] INFO root fetch - processPackages [asynctnt]: New version: [2.2.0] Old Version: [2.1.0a1]
+[2024-05-05 22:12:11] INFO root fetch - processPackages [django-pydantic-field]: Downloading https://files.pythonhosted.org/packages/36/e3/88ecc5d73f893e4f64a2bc137f8a0cd2c24a45c808131387145468848b89/django_pydantic_field-0.3.8.tar.gz
+[2024-05-05 22:12:11] INFO root fetch - processPackages [python-mpv]: Downloading https://files.pythonhosted.org/packages/51/2a/613384a2f355cace9e7010c71f2b3a7b4ff085fc77d29de0758fe34a5a28/python-mpv-1.0.5.tar.gz
+[2024-05-05 22:12:11] INFO root fetch - processPackages [asynctnt]: Downloading https://files.pythonhosted.org/packages/0f/cc/3e36841e3b661c7ce7af69f105118b3cc0a8d09d3237fe34ff32734adcae/asynctnt-2.1.0a1.tar.gz
+[2024-05-05 22:12:11] INFO root fetch - processPackages [clump-python]: Downloading https://files.pythonhosted.org/packages/39/9d/e3a644ffbaad43684e587d2da4f5f527b21643cec31b779ec9632e8cad3f/clump-python-0.3.1.tar.gz
+[2024-05-05 22:12:11] INFO root fetch - processPackages [django-pydantic-field]: Downloading https://files.pythonhosted.org/packages/83/18/ea52c166ba4d01ac5f4ff736b3fd332ad9c8ea1ea3ba3674a1bc6789e799/django_pydantic_field-0.3.9.tar.gz
+[2024-05-05 22:12:11] INFO root fetch - processPackages [python-mpv]: Downloading https://files.pythonhosted.org/packages/3f/3e/5f9af21e2f7563d5444b3920110f0bce5678a31071e05ea56abb4cef9d02/python_mpv-1.0.6.tar.gz
+[2024-05-05 22:12:12] INFO root fetch - processPackages [clump-python]: executing diffoscope
+[2024-05-05 22:12:12] INFO root fetch - processPackages [clump-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clump-python-0.3.0.tar.gz tmp/clump-python-0.3.1.tar.gz --markdown 20240505/c/clump-python/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 22:12:12] INFO root fetch - processPackages [django-pydantic-field]: executing diffoscope
+[2024-05-05 22:12:12] INFO root fetch - processPackages [django-pydantic-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pydantic_field-0.3.8.tar.gz tmp/django_pydantic_field-0.3.9.tar.gz --markdown 20240505/d/django-pydantic-field/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-05 22:12:12] INFO root fetch - processPackages [asynctnt]: Downloading https://files.pythonhosted.org/packages/3a/6a/28a4e0bf789482d1fc9b4fd5b4a1fef227c30545379d205fa494804a956d/asynctnt-2.2.0.tar.gz
+[2024-05-05 22:12:12] INFO root fetch - processPackages [python-mpv]: executing diffoscope
+[2024-05-05 22:12:12] INFO root fetch - processPackages [python-mpv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-mpv-1.0.5.tar.gz tmp/python_mpv-1.0.6.tar.gz --markdown 20240505/p/python-mpv/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-05 22:12:12] INFO root fetch - processPackages [asynctnt]: executing diffoscope
+[2024-05-05 22:12:12] INFO root fetch - processPackages [asynctnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asynctnt-2.1.0a1.tar.gz tmp/asynctnt-2.2.0.tar.gz --markdown 20240505/a/asynctnt/2.1.0a1-2.2.0/README.md --exclude *.pyd
+[2024-05-05 22:12:12] INFO root fetch - processPackages [django-pydantic-field]: Remove: archive file [/home/abi/fetcher/tmp/django_pydantic_field-0.3.8.tar.gz]
+[2024-05-05 22:12:12] INFO root fetch - processPackages [django-pydantic-field]: Remove: archive file [/home/abi/fetcher/tmp/django_pydantic_field-0.3.9.tar.gz]
+[2024-05-05 22:12:12] INFO root fetch - main [MainThread]: End processing [django-pydantic-field]: success
+[2024-05-05 22:12:12] INFO root fetch - processPackages [python-mpv]: Remove: archive file [/home/abi/fetcher/tmp/python-mpv-1.0.5.tar.gz]
+[2024-05-05 22:12:12] INFO root fetch - processPackages [python-mpv]: Remove: archive file [/home/abi/fetcher/tmp/python_mpv-1.0.6.tar.gz]
+[2024-05-05 22:12:12] INFO root fetch - main [MainThread]: End processing [python-mpv]: success
+[2024-05-05 22:12:13] INFO root fetch - processPackages [clump-python]: Remove: archive file [/home/abi/fetcher/tmp/clump-python-0.3.0.tar.gz]
+[2024-05-05 22:12:13] INFO root fetch - processPackages [clump-python]: Remove: archive file [/home/abi/fetcher/tmp/clump-python-0.3.1.tar.gz]
+[2024-05-05 22:12:13] INFO root fetch - main [MainThread]: End processing [clump-python]: success
+[2024-05-05 22:12:14] INFO root fetch - processPackages [asynctnt]: Remove: archive file [/home/abi/fetcher/tmp/asynctnt-2.1.0a1.tar.gz]
+[2024-05-05 22:12:14] INFO root fetch - processPackages [asynctnt]: Remove: archive file [/home/abi/fetcher/tmp/asynctnt-2.2.0.tar.gz]
+[2024-05-05 22:12:14] INFO root fetch - main [MainThread]: End processing [asynctnt]: success
+[2024-05-05 22:12:14] INFO root fetch - main [MainThread]: Store serial: [23068760]
