@@ -2670,3 +2670,43 @@
 [2024-05-05 04:18:58] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
 [2024-05-05 04:18:58] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
 [2024-05-05 04:18:58] INFO root fetch - main [MainThread]: Store serial: [23062697]
+[2024-05-05 04:21:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062697]
+[2024-05-05 04:21:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 04:23:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062700]
+[2024-05-05 04:23:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 04:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-unidiff
+[2024-05-05 04:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DeepXDE
+[2024-05-05 04:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocorum
+[2024-05-05 04:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: missil
+[2024-05-05 04:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iam-actions
+[2024-05-05 04:23:13] INFO root fetch - processPackages [cocorum]: New version: [1.0.0] Old Version: [0.5.3]
+[2024-05-05 04:23:13] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240504] Old Version: [1.2.20240503]
+[2024-05-05 04:23:13] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/9e/dc/54e5b62116e4852ddf338b458b36dd667098dd179162df1161a57a2f7bc4/cocorum-0.5.3.tar.gz
+[2024-05-05 04:23:13] WARNING root fetch - processPackages [types-unidiff]: Skipping, unable to determine old version
+[2024-05-05 04:23:13] INFO root fetch - main [MainThread]: End processing [types-unidiff] error
+[2024-05-05 04:23:13] INFO root fetch - processPackages [DeepXDE]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-05 04:23:13] INFO root fetch - processPackages [missil]: New version: [0.1.7] Old Version: [0.1.6b0]
+[2024-05-05 04:23:13] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/7e/24/287f81e58d9952a36e5c568056a81005a83b0cde3e5f6bcad3191e8b8703/iam_actions-1.2.20240503.tar.gz
+[2024-05-05 04:23:13] INFO root fetch - processPackages [DeepXDE]: Downloading https://files.pythonhosted.org/packages/cf/7c/fbdba6bd23fc6e4942e8ed3bd9878873b42e686b4f688bc74d521e9a841b/DeepXDE-1.9.2.tar.gz
+[2024-05-05 04:23:13] INFO root fetch - processPackages [missil]: Downloading https://files.pythonhosted.org/packages/a8/b7/87fd4457289294323daa9dc86c838580c73306591e11a9041485e5da283d/missil-0.1.6b0.tar.gz
+[2024-05-05 04:23:13] WARNING root fetch - processPackages [DeepXDE]: Skipping package: exceeds size limit 24831894>=10485760
+[2024-05-05 04:23:13] INFO root fetch - main [MainThread]: End processing [DeepXDE] error
+[2024-05-05 04:23:13] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/ae/c0/035298b4f4f5b650dbd24b1ab0c52e606b1a83a63eba55e92b1dbd7ef9a0/cocorum-1.0.0.tar.gz
+[2024-05-05 04:23:13] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/60/25/2acf45b877c80ca0ce576fa39a5fd4d21d7995902b58178cc7c70bc64d43/iam_actions-1.2.20240504.tar.gz
+[2024-05-05 04:23:13] INFO root fetch - processPackages [cocorum]: executing diffoscope
+[2024-05-05 04:23:13] INFO root fetch - processPackages [cocorum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocorum-0.5.3.tar.gz tmp/cocorum-1.0.0.tar.gz --markdown 20240505/c/cocorum/0.5.3-1.0.0/README.md --exclude *.pyd
+[2024-05-05 04:23:13] INFO root fetch - processPackages [missil]: Downloading https://files.pythonhosted.org/packages/9c/44/f8099f38324f4571786da0acdc3602621222dbfac8b5f28a9dab5f3a33d5/missil-0.1.7.tar.gz
+[2024-05-05 04:23:13] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-05-05 04:23:13] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240503.tar.gz tmp/iam_actions-1.2.20240504.tar.gz --markdown 20240505/i/iam-actions/1.2.20240503-1.2.20240504/README.md --exclude *.pyd
+[2024-05-05 04:23:13] INFO root fetch - processPackages [missil]: executing diffoscope
+[2024-05-05 04:23:13] INFO root fetch - processPackages [missil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/missil-0.1.6b0.tar.gz tmp/missil-0.1.7.tar.gz --markdown 20240505/m/missil/0.1.6b0-0.1.7/README.md --exclude *.pyd
+[2024-05-05 04:23:14] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.5.3.tar.gz]
+[2024-05-05 04:23:14] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-1.0.0.tar.gz]
+[2024-05-05 04:23:14] INFO root fetch - main [MainThread]: End processing [cocorum]: success
+[2024-05-05 04:23:14] INFO root fetch - processPackages [missil]: Remove: archive file [/home/abi/fetcher/tmp/missil-0.1.6b0.tar.gz]
+[2024-05-05 04:23:14] INFO root fetch - processPackages [missil]: Remove: archive file [/home/abi/fetcher/tmp/missil-0.1.7.tar.gz]
+[2024-05-05 04:23:14] INFO root fetch - main [MainThread]: End processing [missil]: success
+[2024-05-05 04:23:18] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240503.tar.gz]
+[2024-05-05 04:23:18] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240504.tar.gz]
+[2024-05-05 04:23:18] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-05-05 04:23:18] INFO root fetch - main [MainThread]: Store serial: [23062717]
