@@ -4086,3 +4086,18 @@
 [2024-05-05 07:12:39] WARNING root fetch - processPackages [shift-forex-tester-data]: Skipping, unable to determine old version
 [2024-05-05 07:12:39] INFO root fetch - main [MainThread]: End processing [shift-forex-tester-data] error
 [2024-05-05 07:12:39] INFO root fetch - main [MainThread]: Store serial: [23063238]
+[2024-05-05 07:14:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063238]
+[2024-05-05 07:14:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 07:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eazydocs
+[2024-05-05 07:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htagui
+[2024-05-05 07:14:48] WARNING root fetch - processPackages [eazydocs]: Skipping, unable to determine old version
+[2024-05-05 07:14:48] INFO root fetch - main [MainThread]: End processing [eazydocs] error
+[2024-05-05 07:14:48] INFO root fetch - processPackages [htagui]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-05 07:14:48] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/fe/f7/085ff92f4ab42725b5fa32eee5ad7a4c94fab13deaeaeb61cda3e6363b77/htagui-0.5.8.tar.gz
+[2024-05-05 07:14:48] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/47/9d/0c1208869caef2f9ea3d38c248f7354673c6dc8fd26b2495b4d75f3b1236/htagui-0.5.9.tar.gz
+[2024-05-05 07:14:49] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-05-05 07:14:49] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.5.8.tar.gz tmp/htagui-0.5.9.tar.gz --markdown 20240505/h/htagui/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-05 07:14:49] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.8.tar.gz]
+[2024-05-05 07:14:49] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.9.tar.gz]
+[2024-05-05 07:14:49] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-05-05 07:14:49] INFO root fetch - main [MainThread]: Store serial: [23063246]
