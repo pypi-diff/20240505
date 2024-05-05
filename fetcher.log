@@ -8868,3 +8868,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:01:55] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/akatosh-3.0.5.tar.gz]
 [2024-05-05 14:01:55] INFO root fetch - main [MainThread]: End processing [Akatosh]: success
 [2024-05-05 14:01:55] INFO root fetch - main [MainThread]: Store serial: [23065292]
+[2024-05-05 14:03:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065292]
+[2024-05-05 14:04:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 14:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Akatosh
+[2024-05-05 14:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyranges1
+[2024-05-05 14:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vastpy
+[2024-05-05 14:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thothglyph-doc
+[2024-05-05 14:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: super-rubik-cube
+[2024-05-05 14:04:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tgctoolbox
+[2024-05-05 14:04:04] INFO root fetch - processPackages [super-rubik-cube]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-05 14:04:04] INFO root fetch - processPackages [tgctoolbox]: New version: [0.3] Old Version: [0.2]
+[2024-05-05 14:04:04] INFO root fetch - processPackages [pyranges1]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-05 14:04:04] INFO root fetch - processPackages [Akatosh]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-05-05 14:04:04] INFO root fetch - processPackages [vastpy]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-05 14:04:04] INFO root fetch - processPackages [thothglyph-doc]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-05 14:04:04] INFO root fetch - processPackages [super-rubik-cube]: Downloading https://files.pythonhosted.org/packages/51/3a/de16c110576e1cf33c58d89cdd911353bf7e9e016fe206fa00749d300e97/super_rubik_cube-1.0.2.tar.gz
+[2024-05-05 14:04:04] INFO root fetch - processPackages [tgctoolbox]: Downloading https://files.pythonhosted.org/packages/e8/5b/7c1749eab7cc1e214f25360ed152df4c010fe3f29c3e735bcff894b8cf5f/tgctoolbox-0.2.tar.gz
+[2024-05-05 14:04:04] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/5e/fd/ea97ca7443fa6baf6a232850a8baeadf59fcea9f68900bfbcdfc9846c4e2/pyranges1-0.1.2.tar.gz
+[2024-05-05 14:04:04] INFO root fetch - processPackages [Akatosh]: Downloading https://files.pythonhosted.org/packages/65/54/bd457b06daab98293290bfff15706dc8f671859e6126697227d20864eca9/akatosh-3.0.4.tar.gz
+[2024-05-05 14:04:04] INFO root fetch - processPackages [vastpy]: Downloading https://files.pythonhosted.org/packages/6b/22/04602fed5778a1d8deb647b95020d48fa992047ca626179c638022cccb51/vastpy-0.2.0.tar.gz
+[2024-05-05 14:04:04] INFO root fetch - processPackages [thothglyph-doc]: Downloading https://files.pythonhosted.org/packages/99/91/19d340ca0257231610ff5ce63e528d2fb5c607e4870ea5a952d115f3a3c3/thothglyph_doc-0.2.2.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [Akatosh]: Downloading https://files.pythonhosted.org/packages/88/9e/08d11818d5332e1abbaf2cf3221cd33bf6e27faa1dcbe98e1f68d398f87d/akatosh-3.0.5.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [tgctoolbox]: Downloading https://files.pythonhosted.org/packages/f3/38/d59b4bef7f40fa1e142a4a6583ea8ec7137cc2bc4af41cfd64598730f656/tgctoolbox-0.3.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [Akatosh]: executing diffoscope
+[2024-05-05 14:04:05] INFO root fetch - processPackages [Akatosh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akatosh-3.0.4.tar.gz tmp/akatosh-3.0.5.tar.gz --markdown 20240505/A/Akatosh/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-05-05 14:04:05] INFO root fetch - processPackages [pyranges1]: Downloading https://files.pythonhosted.org/packages/ad/66/73705c9f06a9e48e50a35a5d023300c7b8da3f062b117cea5f4932cda6e2/pyranges1-0.1.3.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [tgctoolbox]: executing diffoscope
+[2024-05-05 14:04:05] INFO root fetch - processPackages [tgctoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgctoolbox-0.2.tar.gz tmp/tgctoolbox-0.3.tar.gz --markdown 20240505/t/tgctoolbox/0.2-0.3/README.md --exclude *.pyd
+[2024-05-05 14:04:05] INFO root fetch - processPackages [vastpy]: Downloading https://files.pythonhosted.org/packages/a6/ab/d1e6e29e86a956635dd0e88476e6fb21ca78e0f872eabd4fc4314b5a6746/vastpy-0.2.1.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [super-rubik-cube]: Downloading https://files.pythonhosted.org/packages/79/69/4b7b77be2a7ddf108eab495d0cc69aaa0262b334d7145a34b737b5688349/super_rubik_cube-1.0.3.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [thothglyph-doc]: Downloading https://files.pythonhosted.org/packages/a8/f7/f38994ff9369b7c049ad6d88ff90692460020a77daef017648fb08153241/thothglyph_doc-0.2.3.tar.gz
+[2024-05-05 14:04:05] INFO root fetch - processPackages [pyranges1]: executing diffoscope
+[2024-05-05 14:04:05] INFO root fetch - processPackages [pyranges1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranges1-0.1.2.tar.gz tmp/pyranges1-0.1.3.tar.gz --markdown 20240505/p/pyranges1/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-05 14:04:05] INFO root fetch - processPackages [vastpy]: executing diffoscope
+[2024-05-05 14:04:05] INFO root fetch - processPackages [vastpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vastpy-0.2.0.tar.gz tmp/vastpy-0.2.1.tar.gz --markdown 20240505/v/vastpy/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-05 14:04:05] INFO root fetch - processPackages [thothglyph-doc]: executing diffoscope
+[2024-05-05 14:04:05] INFO root fetch - processPackages [thothglyph-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thothglyph_doc-0.2.2.tar.gz tmp/thothglyph_doc-0.2.3.tar.gz --markdown 20240505/t/thothglyph-doc/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-05 14:04:05] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/akatosh-3.0.4.tar.gz]
+[2024-05-05 14:04:05] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/akatosh-3.0.5.tar.gz]
+[2024-05-05 14:04:05] INFO root fetch - main [MainThread]: End processing [Akatosh]: success
+[2024-05-05 14:04:05] INFO root fetch - processPackages [super-rubik-cube]: executing diffoscope
+[2024-05-05 14:04:05] INFO root fetch - processPackages [super-rubik-cube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/super_rubik_cube-1.0.2.tar.gz tmp/super_rubik_cube-1.0.3.tar.gz --markdown 20240505/s/super-rubik-cube/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-05 14:04:05] INFO root fetch - processPackages [tgctoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tgctoolbox-0.2.tar.gz]
+[2024-05-05 14:04:05] INFO root fetch - processPackages [tgctoolbox]: Remove: archive file [/home/abi/fetcher/tmp/tgctoolbox-0.3.tar.gz]
+[2024-05-05 14:04:05] INFO root fetch - main [MainThread]: End processing [tgctoolbox]: success
+[2024-05-05 14:04:06] INFO root fetch - processPackages [vastpy]: Remove: archive file [/home/abi/fetcher/tmp/vastpy-0.2.0.tar.gz]
+[2024-05-05 14:04:06] INFO root fetch - processPackages [vastpy]: Remove: archive file [/home/abi/fetcher/tmp/vastpy-0.2.1.tar.gz]
+[2024-05-05 14:04:06] INFO root fetch - main [MainThread]: End processing [vastpy]: success
+[2024-05-05 14:04:06] INFO root fetch - processPackages [thothglyph-doc]: Remove: archive file [/home/abi/fetcher/tmp/thothglyph_doc-0.2.2.tar.gz]
+[2024-05-05 14:04:06] INFO root fetch - processPackages [thothglyph-doc]: Remove: archive file [/home/abi/fetcher/tmp/thothglyph_doc-0.2.3.tar.gz]
+[2024-05-05 14:04:06] INFO root fetch - main [MainThread]: End processing [thothglyph-doc]: success
+[2024-05-05 14:04:06] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-0.1.2.tar.gz]
+[2024-05-05 14:04:06] INFO root fetch - processPackages [pyranges1]: Remove: archive file [/home/abi/fetcher/tmp/pyranges1-0.1.3.tar.gz]
+[2024-05-05 14:04:06] INFO root fetch - main [MainThread]: End processing [pyranges1]: success
+[2024-05-05 14:04:08] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.2.tar.gz]
+[2024-05-05 14:04:08] INFO root fetch - processPackages [super-rubik-cube]: Remove: archive file [/home/abi/fetcher/tmp/super_rubik_cube-1.0.3.tar.gz]
+[2024-05-05 14:04:08] INFO root fetch - main [MainThread]: End processing [super-rubik-cube]: success
+[2024-05-05 14:04:08] INFO root fetch - main [MainThread]: Store serial: [23065308]
