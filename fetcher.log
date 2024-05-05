@@ -5681,3 +5681,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:39:26] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
 [2024-05-05 09:39:26] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
 [2024-05-05 09:39:26] INFO root fetch - main [MainThread]: Store serial: [23063916]
+[2024-05-05 09:41:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063916]
+[2024-05-05 09:41:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 09:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GreenLightPlus
+[2024-05-05 09:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parseq-XES-scan
+[2024-05-05 09:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpservice
+[2024-05-05 09:41:35] WARNING root fetch - processPackages [parseq-XES-scan]: Skipping, unable to determine old version
+[2024-05-05 09:41:35] INFO root fetch - main [MainThread]: End processing [parseq-XES-scan] error
+[2024-05-05 09:41:35] WARNING root fetch - processPackages [GreenLightPlus]: Skipping, unable to determine old version
+[2024-05-05 09:41:35] INFO root fetch - main [MainThread]: End processing [GreenLightPlus] error
+[2024-05-05 09:41:35] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2024-05-05 09:41:35] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2024-05-05 09:41:35] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2024-05-05 09:41:35] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2024-05-05 09:41:35] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20240505/m/mpservice/0.9.9-0.9.9.post1/README.md --exclude *.pyd
+[2024-05-05 09:41:36] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.tar.gz]
+[2024-05-05 09:41:36] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.post1.tar.gz]
+[2024-05-05 09:41:36] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2024-05-05 09:41:36] INFO root fetch - main [MainThread]: Store serial: [23063926]
