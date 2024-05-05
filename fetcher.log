@@ -14275,3 +14275,31 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:00:58] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/self_reasoning_tokens_pytorch-0.0.3.tar.gz]
 [2024-05-05 20:00:58] INFO root fetch - main [MainThread]: End processing [self-reasoning-tokens-pytorch]: success
 [2024-05-05 20:00:58] INFO root fetch - main [MainThread]: Store serial: [23067765]
+[2024-05-05 20:03:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067765]
+[2024-05-05 20:03:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 20:03:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: self-reasoning-tokens-pytorch
+[2024-05-05 20:03:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: self-reasoning-tokens-pytorch
+[2024-05-05 20:03:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rns
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/ed/34e350eaec3c63c296bd20028e46d0cc12f29bb7d2d9dd26dd337625d671/self_reasoning_tokens_pytorch-0.0.2.tar.gz
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Downloading https://files.pythonhosted.org/packages/e9/ed/34e350eaec3c63c296bd20028e46d0cc12f29bb7d2d9dd26dd337625d671/self_reasoning_tokens_pytorch-0.0.2.tar.gz
+[2024-05-05 20:03:07] INFO root fetch - processPackages [rns]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Downloading https://files.pythonhosted.org/packages/a1/44/f3a252ba6010d00f62c06f8513dc16f5c1b9848425a086810e493f9e8619/self_reasoning_tokens_pytorch-0.0.3.tar.gz
+[2024-05-05 20:03:07] INFO root fetch - processPackages [rns]: Downloading https://files.pythonhosted.org/packages/ff/00/d9bc3227070444837f1587c9dbcbf0e5ff4ce45fc50dcf15276e0fae8f03/rns-0.7.3.tar.gz
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Downloading https://files.pythonhosted.org/packages/a1/44/f3a252ba6010d00f62c06f8513dc16f5c1b9848425a086810e493f9e8619/self_reasoning_tokens_pytorch-0.0.3.tar.gz
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: executing diffoscope
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/self_reasoning_tokens_pytorch-0.0.2.tar.gz tmp/self_reasoning_tokens_pytorch-0.0.3.tar.gz --markdown 20240505/s/self-reasoning-tokens-pytorch/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: executing diffoscope
+[2024-05-05 20:03:07] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/self_reasoning_tokens_pytorch-0.0.2.tar.gz tmp/self_reasoning_tokens_pytorch-0.0.3.tar.gz --markdown 20240505/s/self-reasoning-tokens-pytorch/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 20:03:07] INFO root fetch - processPackages [rns]: Downloading https://files.pythonhosted.org/packages/b4/a7/9398323166cd61edfedfeb779ed709085e8722f7ab91b977bae69bd2c9ec/rns-0.7.4-py3-none-any.whl
+[2024-05-05 20:03:08] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/self_reasoning_tokens_pytorch-0.0.2.tar.gz]
+[2024-05-05 20:03:08] INFO root fetch - processPackages [self-reasoning-tokens-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/self_reasoning_tokens_pytorch-0.0.3.tar.gz]
+[2024-05-05 20:03:08] INFO root fetch - main [MainThread]: End processing [self-reasoning-tokens-pytorch]: success
+[2024-05-05 20:03:08] INFO root fetch - processPackages [rns]: executing diffoscope
+[2024-05-05 20:03:08] INFO root fetch - processPackages [rns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rns-0.7.3.tar.gz tmp/rns-0.7.4-py3-none-any.whl.zip --markdown 20240505/r/rns/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-05 20:03:08] INFO root fetch - main [MainThread]: End processing [self-reasoning-tokens-pytorch]: success
+[2024-05-05 20:03:08] INFO root fetch - processPackages [rns]: Remove: archive file [/home/abi/fetcher/tmp/rns-0.7.3.tar.gz]
+[2024-05-05 20:03:08] INFO root fetch - processPackages [rns]: Remove: archive file [/home/abi/fetcher/tmp/rns-0.7.4-py3-none-any.whl.zip]
+[2024-05-05 20:03:08] INFO root fetch - main [MainThread]: End processing [rns]: success
+[2024-05-05 20:03:08] INFO root fetch - main [MainThread]: Store serial: [23067773]
