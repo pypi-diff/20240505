@@ -3112,3 +3112,15 @@
 [2024-05-05 05:06:41] INFO root fetch - processPackages [fs-attestation-safe-cli]: Remove: archive file [/home/abi/fetcher/tmp/fs_attestation_safe_cli-1.0.5.tar.gz]
 [2024-05-05 05:06:41] INFO root fetch - main [MainThread]: End processing [fs-attestation-safe-cli]: success
 [2024-05-05 05:06:41] INFO root fetch - main [MainThread]: Store serial: [23062852]
+[2024-05-05 05:08:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062852]
+[2024-05-05 05:08:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 05:08:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diaspora-event-sdk
+[2024-05-05 05:08:49] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-05 05:08:49] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/2f/9a/4a80ab50a0a7c85d9b047b5d679b1bd3d1d04d05e2b1add7197aeb018c8a/diaspora-event-sdk-0.2.5.tar.gz
+[2024-05-05 05:08:50] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/6c/79/90b5daca6e8700b6a5178fc91ee709b6afc226809c5a4acef29b99f768ff/diaspora-event-sdk-0.2.6.tar.gz
+[2024-05-05 05:08:50] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-05-05 05:08:50] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.2.5.tar.gz tmp/diaspora-event-sdk-0.2.6.tar.gz --markdown 20240505/d/diaspora-event-sdk/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-05 05:08:50] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.5.tar.gz]
+[2024-05-05 05:08:50] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.6.tar.gz]
+[2024-05-05 05:08:50] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-05-05 05:08:50] INFO root fetch - main [MainThread]: Store serial: [23062855]
