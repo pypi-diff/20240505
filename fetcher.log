@@ -4458,3 +4458,45 @@
 [2024-05-05 07:55:50] INFO root fetch - processPackages [taguchi]: Remove: archive file [/home/abi/fetcher/tmp/taguchi-0.0.2.tar.gz]
 [2024-05-05 07:55:50] INFO root fetch - main [MainThread]: End processing [taguchi]: success
 [2024-05-05 07:55:50] INFO root fetch - main [MainThread]: Store serial: [23063409]
+[2024-05-05 07:57:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063409]
+[2024-05-05 07:57:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 07:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taguchi
+[2024-05-05 07:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crewai
+[2024-05-05 07:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyPtt
+[2024-05-05 07:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cae-cli
+[2024-05-05 07:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: magpylib-force
+[2024-05-05 07:58:00] INFO root fetch - processPackages [taguchi]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 07:58:00] WARNING root fetch - processPackages [cae-cli]: Skipping, unable to determine old version
+[2024-05-05 07:58:00] INFO root fetch - main [MainThread]: End processing [cae-cli] error
+[2024-05-05 07:58:00] INFO root fetch - processPackages [taguchi]: Downloading https://files.pythonhosted.org/packages/ea/81/a0caee195f8c569f57dd993251fcbc16b96ad6828a1ca96f0af2ecac0fb3/taguchi-0.0.2.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [magpylib-force]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-05 07:58:00] INFO root fetch - processPackages [PyPtt]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-05 07:58:00] INFO root fetch - processPackages [crewai]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-05-05 07:58:00] INFO root fetch - processPackages [magpylib-force]: Downloading https://files.pythonhosted.org/packages/87/59/c46896c5e68012a776204845d4f361cc1965531255c6f4abf58ae475ba0e/magpylib_force-0.1.6.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/73/f6/ed98db080991833aea23b06a4f2495fc48bbdcae27575fd084c7a9fd1110/pyptt-1.2.8.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/e9/e3/15cbe7ed14b2b805613edd70fe8d16de0f00ad49e45f0496db0d34c3274c/crewai-0.5.3.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [taguchi]: Downloading https://files.pythonhosted.org/packages/8e/3c/0667f0776c662bb19cd0d977cdb6a48dfe392f86f8f5c2c080ddbd3b0d3a/taguchi-0.0.3.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [taguchi]: executing diffoscope
+[2024-05-05 07:58:00] INFO root fetch - processPackages [taguchi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taguchi-0.0.2.tar.gz tmp/taguchi-0.0.3.tar.gz --markdown 20240505/t/taguchi/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 07:58:00] INFO root fetch - processPackages [magpylib-force]: Downloading https://files.pythonhosted.org/packages/6d/1e/6c18a9536a22b97dfb79019bbc48f7a7d13f7eddd4c219a2873c2e6de2f7/magpylib_force-0.1.7.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/4e/2d/131d296cf0495637bfea59b11af0767de8fa11466880e3d702ab43a360d0/crewai-0.5.5.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/08/ec/f00fc0e50a99f3830240518fdaabf0227a13fa860ccd6c7bed5091ace893/pyptt-1.2.9.tar.gz
+[2024-05-05 07:58:00] INFO root fetch - processPackages [magpylib-force]: executing diffoscope
+[2024-05-05 07:58:00] INFO root fetch - processPackages [magpylib-force]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magpylib_force-0.1.6.tar.gz tmp/magpylib_force-0.1.7.tar.gz --markdown 20240505/m/magpylib-force/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-05 07:58:01] INFO root fetch - processPackages [crewai]: executing diffoscope
+[2024-05-05 07:58:01] INFO root fetch - processPackages [crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai-0.5.3.tar.gz tmp/crewai-0.5.5.tar.gz --markdown 20240505/c/crewai/0.5.3-0.5.5/README.md --exclude *.pyd
+[2024-05-05 07:58:01] INFO root fetch - processPackages [PyPtt]: executing diffoscope
+[2024-05-05 07:58:01] INFO root fetch - processPackages [PyPtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyptt-1.2.8.tar.gz tmp/pyptt-1.2.9.tar.gz --markdown 20240505/P/PyPtt/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-05 07:58:01] INFO root fetch - processPackages [taguchi]: Remove: archive file [/home/abi/fetcher/tmp/taguchi-0.0.2.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - processPackages [taguchi]: Remove: archive file [/home/abi/fetcher/tmp/taguchi-0.0.3.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - main [MainThread]: End processing [taguchi]: success
+[2024-05-05 07:58:01] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.3.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - main [MainThread]: End processing [crewai]: success
+[2024-05-05 07:58:01] INFO root fetch - processPackages [magpylib-force]: Remove: archive file [/home/abi/fetcher/tmp/magpylib_force-0.1.6.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - processPackages [magpylib-force]: Remove: archive file [/home/abi/fetcher/tmp/magpylib_force-0.1.7.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - main [MainThread]: End processing [magpylib-force]: success
+[2024-05-05 07:58:01] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/pyptt-1.2.8.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - processPackages [PyPtt]: Remove: archive file [/home/abi/fetcher/tmp/pyptt-1.2.9.tar.gz]
+[2024-05-05 07:58:01] INFO root fetch - main [MainThread]: End processing [PyPtt]: success
+[2024-05-05 07:58:01] INFO root fetch - main [MainThread]: Store serial: [23063423]
