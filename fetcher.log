@@ -16730,3 +16730,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:38:55] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.7.0.tar.gz]
 [2024-05-05 22:38:55] INFO root fetch - main [MainThread]: End processing [not-again-ai]: success
 [2024-05-05 22:38:55] INFO root fetch - main [MainThread]: Store serial: [23068907]
+[2024-05-05 22:40:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068907]
+[2024-05-05 22:41:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 22:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-05-05 22:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: miniwdl-omics-run
+[2024-05-05 22:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coffe-analyzer
+[2024-05-05 22:41:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyCatFile
+[2024-05-05 22:41:04] INFO root fetch - processPackages [sqlalchemy-multilingual]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-05 22:41:04] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-05 22:41:04] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/6e/1e/a97deb7939d3beb302e1a2aa978ba24564cdb93fcd66d59f98465801c03a/sqlalchemy-multilingual-0.0.5.tar.gz
+[2024-05-05 22:41:04] INFO root fetch - processPackages [miniwdl-omics-run]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-05 22:41:04] INFO root fetch - processPackages [PyCatFile]: New version: [0.9.8] Old Version: [0.9.6]
+[2024-05-05 22:41:04] WARNING root fetch - processPackages [coffe-analyzer]: Skipping, unable to determine old version
+[2024-05-05 22:41:04] INFO root fetch - main [MainThread]: End processing [coffe-analyzer] error
+[2024-05-05 22:41:04] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-05-05 22:41:04] INFO root fetch - processPackages [miniwdl-omics-run]: Downloading https://files.pythonhosted.org/packages/bb/0f/c7bca46de9e07cfd579997d23cfbd302acd6d7253316dec5321c5b6ed0cd/miniwdl-omics-run-0.4.0.tar.gz
+[2024-05-05 22:41:04] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/08/96/4c154ca314dbb76c0bba84e70c73f3a53cd4528ee43f7ac17b54954c0b85/pycatfile-0.9.6.tar.gz
+[2024-05-05 22:41:04] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-05-05 22:41:04] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/ab/79/6d18382aabc5edfa165376c3c4c4f45a3b21eaa9d9f8570d332e17492cbe/sqlalchemy_multilingual-0.0.6.tar.gz
+[2024-05-05 22:41:04] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-05 22:41:04] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240505/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-05 22:41:04] INFO root fetch - processPackages [sqlalchemy-multilingual]: executing diffoscope
+[2024-05-05 22:41:04] INFO root fetch - processPackages [sqlalchemy-multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-multilingual-0.0.5.tar.gz tmp/sqlalchemy_multilingual-0.0.6.tar.gz --markdown 20240505/s/sqlalchemy-multilingual/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-05 22:41:04] INFO root fetch - processPackages [miniwdl-omics-run]: Downloading https://files.pythonhosted.org/packages/4d/2a/1302820eb389071048f36e53561d5735208305c9adc8c10bb7ef67864ba7/miniwdl_omics_run-0.5.0.tar.gz
+[2024-05-05 22:41:05] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/d8/c3/779688dd1beca850480edb18c8e26ce64dcf364b8ab9b110d2a55552ca93/pycatfile-0.9.8.tar.gz
+[2024-05-05 22:41:05] INFO root fetch - processPackages [miniwdl-omics-run]: executing diffoscope
+[2024-05-05 22:41:05] INFO root fetch - processPackages [miniwdl-omics-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniwdl-omics-run-0.4.0.tar.gz tmp/miniwdl_omics_run-0.5.0.tar.gz --markdown 20240505/m/miniwdl-omics-run/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-05 22:41:05] INFO root fetch - processPackages [PyCatFile]: executing diffoscope
+[2024-05-05 22:41:05] INFO root fetch - processPackages [PyCatFile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatfile-0.9.6.tar.gz tmp/pycatfile-0.9.8.tar.gz --markdown 20240505/P/PyCatFile/0.9.6-0.9.8/README.md --exclude *.pyd
+[2024-05-05 22:41:05] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.5.tar.gz]
+[2024-05-05 22:41:05] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy_multilingual-0.0.6.tar.gz]
+[2024-05-05 22:41:05] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
+[2024-05-05 22:41:05] INFO root fetch - processPackages [miniwdl-omics-run]: Remove: archive file [/home/abi/fetcher/tmp/miniwdl-omics-run-0.4.0.tar.gz]
+[2024-05-05 22:41:05] INFO root fetch - processPackages [miniwdl-omics-run]: Remove: archive file [/home/abi/fetcher/tmp/miniwdl_omics_run-0.5.0.tar.gz]
+[2024-05-05 22:41:05] INFO root fetch - main [MainThread]: End processing [miniwdl-omics-run]: success
+[2024-05-05 22:41:05] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.6.tar.gz]
+[2024-05-05 22:41:05] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.8.tar.gz]
+[2024-05-05 22:41:05] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
+[2024-05-05 22:41:06] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-05-05 22:41:06] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-05-05 22:41:06] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-05 22:41:06] INFO root fetch - main [MainThread]: Store serial: [23068924]
