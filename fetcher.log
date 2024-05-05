@@ -7911,3 +7911,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:45:45] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.0.tar.gz]
 [2024-05-05 12:45:45] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2024-05-05 12:45:45] INFO root fetch - main [MainThread]: Store serial: [23064852]
+[2024-05-05 12:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064852]
+[2024-05-05 12:47:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 12:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: string-fixer
+[2024-05-05 12:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sumapi
+[2024-05-05 12:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkt-retv
+[2024-05-05 12:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lovis4u
+[2024-05-05 12:47:54] INFO root fetch - processPackages [sumapi]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-05 12:47:54] INFO root fetch - processPackages [lovis4u]: New version: [0.0.3.2] Old Version: [0.0.3.1]
+[2024-05-05 12:47:54] INFO root fetch - processPackages [mkt-retv]: New version: [1.411] Old Version: [1.410]
+[2024-05-05 12:47:54] INFO root fetch - processPackages [string-fixer]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-05 12:47:54] INFO root fetch - processPackages [lovis4u]: Downloading https://files.pythonhosted.org/packages/16/ac/096464a891853df531c8381ebf246610f0bd8fc0f2b780654e306e0bce17/lovis4u-0.0.3.1.tar.gz
+[2024-05-05 12:47:54] INFO root fetch - processPackages [sumapi]: Downloading https://files.pythonhosted.org/packages/ca/65/44cf7103db70a5ceb53421ed1902805b01932eefb5a5755535ca53c253f8/sumapi-0.3.8.tar.gz
+[2024-05-05 12:47:54] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ed/e9/5c3d2996012d5877c6ae8c172ee18c2a798a4413756d721671fce3764fba/mkt-retv-1.410.tar.gz
+[2024-05-05 12:47:54] WARNING root fetch - processPackages [lovis4u]: Skipping package: exceeds size limit 71364336>=10485760
+[2024-05-05 12:47:54] INFO root fetch - main [MainThread]: End processing [lovis4u] error
+[2024-05-05 12:47:54] INFO root fetch - processPackages [string-fixer]: Downloading https://files.pythonhosted.org/packages/61/62/c81e09bdc15ecd0dd3aba073a54da3cf41924fecb658197b7a69561b41eb/string_fixer-0.1.0.tar.gz
+[2024-05-05 12:47:54] INFO root fetch - processPackages [sumapi]: Downloading https://files.pythonhosted.org/packages/6b/dc/8593626811bef1641e20ba6f0dbc1fe733a10e5b137f2c3769b29e0f0aa2/sumapi-0.3.9.tar.gz
+[2024-05-05 12:47:54] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/d8/32/d0e19cb505e61a69e1890028734191f1cb9a9d64945e0f62e849ca31a1b7/mkt-retv-1.411.tar.gz
+[2024-05-05 12:47:54] INFO root fetch - processPackages [sumapi]: executing diffoscope
+[2024-05-05 12:47:54] INFO root fetch - processPackages [sumapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sumapi-0.3.8.tar.gz tmp/sumapi-0.3.9.tar.gz --markdown 20240505/s/sumapi/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-05 12:47:55] INFO root fetch - processPackages [mkt-retv]: executing diffoscope
+[2024-05-05 12:47:55] INFO root fetch - processPackages [mkt-retv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkt-retv-1.410.tar.gz tmp/mkt-retv-1.411.tar.gz --markdown 20240505/m/mkt-retv/1.410-1.411/README.md --exclude *.pyd
+[2024-05-05 12:47:55] INFO root fetch - processPackages [string-fixer]: Downloading https://files.pythonhosted.org/packages/18/cd/f606eb0e306f792da34489c11ccef3444f69b1c5a4079e093a777ef89576/string_fixer-0.2.0.tar.gz
+[2024-05-05 12:47:55] INFO root fetch - processPackages [string-fixer]: executing diffoscope
+[2024-05-05 12:47:55] INFO root fetch - processPackages [string-fixer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/string_fixer-0.1.0.tar.gz tmp/string_fixer-0.2.0.tar.gz --markdown 20240505/s/string-fixer/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-05 12:47:55] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.410.tar.gz]
+[2024-05-05 12:47:55] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.411.tar.gz]
+[2024-05-05 12:47:55] INFO root fetch - main [MainThread]: End processing [mkt-retv]: success
+[2024-05-05 12:47:55] INFO root fetch - processPackages [sumapi]: Remove: archive file [/home/abi/fetcher/tmp/sumapi-0.3.8.tar.gz]
+[2024-05-05 12:47:55] INFO root fetch - processPackages [sumapi]: Remove: archive file [/home/abi/fetcher/tmp/sumapi-0.3.9.tar.gz]
+[2024-05-05 12:47:55] INFO root fetch - main [MainThread]: End processing [sumapi]: success
+[2024-05-05 12:47:55] INFO root fetch - processPackages [string-fixer]: Remove: archive file [/home/abi/fetcher/tmp/string_fixer-0.1.0.tar.gz]
+[2024-05-05 12:47:55] INFO root fetch - processPackages [string-fixer]: Remove: archive file [/home/abi/fetcher/tmp/string_fixer-0.2.0.tar.gz]
+[2024-05-05 12:47:55] INFO root fetch - main [MainThread]: End processing [string-fixer]: success
+[2024-05-05 12:47:55] INFO root fetch - main [MainThread]: Store serial: [23064872]
