@@ -14884,3 +14884,40 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:42:29] INFO root fetch - processPackages [WPP-Whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/wpp_whatsapp-0.2.2.3.tar.gz]
 [2024-05-05 20:42:29] INFO root fetch - main [MainThread]: End processing [WPP-Whatsapp]: success
 [2024-05-05 20:42:29] INFO root fetch - main [MainThread]: Store serial: [23068072]
+[2024-05-05 20:44:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068072]
+[2024-05-05 20:44:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 20:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nicotine-plus
+[2024-05-05 20:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: web-ui-helper
+[2024-05-05 20:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ikpls
+[2024-05-05 20:44:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: web-ui-helper
+[2024-05-05 20:44:37] INFO root fetch - processPackages [ikpls]: New version: [1.2.2] Old Version: [1.2.1.post2]
+[2024-05-05 20:44:37] INFO root fetch - processPackages [web-ui-helper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 20:44:37] INFO root fetch - processPackages [web-ui-helper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-05 20:44:37] INFO root fetch - processPackages [nicotine-plus]: New version: [3.3.3] Old Version: [3.3.2]
+[2024-05-05 20:44:38] INFO root fetch - processPackages [ikpls]: Downloading https://files.pythonhosted.org/packages/1f/e2/13b8df173f51daafb31fec1a919037cee44009815f929381fbbc1203d9ac/ikpls-1.2.1.post2.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/8b/93/49dc1065832d53fd7be9cce42ce367cc7fdde3a1ca97da14b611258e611d/web-ui-helper-0.0.6.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [nicotine-plus]: Downloading https://files.pythonhosted.org/packages/65/c7/890d2e484b3149e268fa3ebc3024fe4947b9bc91123431c70064c1ed54fd/nicotine-plus-3.3.2.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/8b/93/49dc1065832d53fd7be9cce42ce367cc7fdde3a1ca97da14b611258e611d/web-ui-helper-0.0.6.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [ikpls]: Downloading https://files.pythonhosted.org/packages/17/8d/bdb40d13277eb896f154f21052f65845631d30920ce6108ed0f7f6962393/ikpls-1.2.2.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/4b/68/1e24ae0ff04473cebebb64b1d1cfad16f76009648f0acbeaf86a930c7f79/web-ui-helper-0.0.7.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/4b/68/1e24ae0ff04473cebebb64b1d1cfad16f76009648f0acbeaf86a930c7f79/web-ui-helper-0.0.7.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [ikpls]: executing diffoscope
+[2024-05-05 20:44:38] INFO root fetch - processPackages [ikpls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikpls-1.2.1.post2.tar.gz tmp/ikpls-1.2.2.tar.gz --markdown 20240505/i/ikpls/1.2.1.post2-1.2.2/README.md --exclude *.pyd
+[2024-05-05 20:44:38] INFO root fetch - processPackages [nicotine-plus]: Downloading https://files.pythonhosted.org/packages/0d/90/7e808ba3a5d9bcff4319c50ed7ac233853d8f5cd90518caf0c5305f1d3bc/nicotine_plus-3.3.3.tar.gz
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-0.0.6.tar.gz tmp/web-ui-helper-0.0.7.tar.gz --markdown 20240505/w/web-ui-helper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-05 20:44:38] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-0.0.6.tar.gz tmp/web-ui-helper-0.0.7.tar.gz --markdown 20240505/w/web-ui-helper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-05 20:44:39] INFO root fetch - processPackages [nicotine-plus]: executing diffoscope
+[2024-05-05 20:44:39] INFO root fetch - processPackages [nicotine-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nicotine-plus-3.3.2.tar.gz tmp/nicotine_plus-3.3.3.tar.gz --markdown 20240505/n/nicotine-plus/3.3.2-3.3.3/README.md --exclude *.pyd
+[2024-05-05 20:44:39] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.6.tar.gz]
+[2024-05-05 20:44:39] INFO root fetch - processPackages [ikpls]: Remove: archive file [/home/abi/fetcher/tmp/ikpls-1.2.1.post2.tar.gz]
+[2024-05-05 20:44:39] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.7.tar.gz]
+[2024-05-05 20:44:39] INFO root fetch - processPackages [ikpls]: Remove: archive file [/home/abi/fetcher/tmp/ikpls-1.2.2.tar.gz]
+[2024-05-05 20:44:39] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-05 20:44:39] INFO root fetch - main [MainThread]: End processing [ikpls]: success
+[2024-05-05 20:44:39] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-05 20:44:45] INFO root fetch - processPackages [nicotine-plus]: Remove: archive file [/home/abi/fetcher/tmp/nicotine-plus-3.3.2.tar.gz]
+[2024-05-05 20:44:45] INFO root fetch - processPackages [nicotine-plus]: Remove: archive file [/home/abi/fetcher/tmp/nicotine_plus-3.3.3.tar.gz]
+[2024-05-05 20:44:45] INFO root fetch - main [MainThread]: End processing [nicotine-plus]: success
+[2024-05-05 20:44:45] INFO root fetch - main [MainThread]: Store serial: [23068083]
