@@ -4188,3 +4188,42 @@
 [2024-05-05 07:27:46] WARNING root fetch - processPackages [QuantyLF]: Skipping, unable to determine old version
 [2024-05-05 07:27:46] INFO root fetch - main [MainThread]: End processing [QuantyLF] error
 [2024-05-05 07:27:46] INFO root fetch - main [MainThread]: Store serial: [23063272]
+[2024-05-05 07:29:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063272]
+[2024-05-05 07:29:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 07:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FFEM
+[2024-05-05 07:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2024-05-05 07:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-anime-downloader
+[2024-05-05 07:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypomes-db
+[2024-05-05 07:29:54] INFO root fetch - processPackages [FFEM]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-05 07:29:54] INFO root fetch - processPackages [pypomes-db]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-05 07:29:54] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.5.0] Old Version: [2024.5.4.1]
+[2024-05-05 07:29:54] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-05-05 07:29:54] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/52/99/e41a3b2923347de23fe04dae19c17191bbab92c4f41d0b421b459e964a08/FFEM-0.4.1.tar.gz
+[2024-05-05 07:29:54] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/11/5f/3a7bdac2975d116089515c8929a2cf0491e9d863dbec676fc2bcc17b8715/pypomes_db-0.4.3.tar.gz
+[2024-05-05 07:29:54] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/51/fa/c91f54d577d36aa427361cbe929ae66f1ee7b92eab7acf1d0199fd0b93fd/crazy_thursday-2024.5.4.1.tar.gz
+[2024-05-05 07:29:55] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Downloading https://files.pythonhosted.org/packages/17/47/1c2a955d32d13a568a37d030a7935ee7aeb02d912b5e9dee3cde6ffb0d6d/nonebot_plugin_anime_downloader-0.1.5.tar.gz
+[2024-05-05 07:29:55] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/68/12/f64ebee0816b1c2752057bc4f0b2e52aea7275ba85b851206a36ec7b5634/crazy_thursday-2024.5.5.0.tar.gz
+[2024-05-05 07:29:55] INFO root fetch - processPackages [FFEM]: Downloading https://files.pythonhosted.org/packages/1c/6c/5726c4981a1bed0bbe17f8a9291b7982457137b69882fcb5f9d0726344f4/FFEM-0.4.2.tar.gz
+[2024-05-05 07:29:55] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/ba/bb/25e5748984b480aaea0e033437c2ddb11dc4c548c55f439d9754e8b8d84d/pypomes_db-0.4.4.tar.gz
+[2024-05-05 07:29:55] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-05 07:29:55] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.4.1.tar.gz tmp/crazy_thursday-2024.5.5.0.tar.gz --markdown 20240505/c/crazy-thursday/2024.5.4.1-2024.5.5.0/README.md --exclude *.pyd
+[2024-05-05 07:29:55] INFO root fetch - processPackages [FFEM]: executing diffoscope
+[2024-05-05 07:29:55] INFO root fetch - processPackages [FFEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FFEM-0.4.1.tar.gz tmp/FFEM-0.4.2.tar.gz --markdown 20240505/F/FFEM/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-05 07:29:55] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-05 07:29:55] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.4.3.tar.gz tmp/pypomes_db-0.4.4.tar.gz --markdown 20240505/p/pypomes-db/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-05 07:29:55] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Downloading https://files.pythonhosted.org/packages/c7/df/49fb25fadcd7b5f751809ddf0380759b82a738b50845bd91fa4a9f903050/nonebot_plugin_anime_downloader-0.2.0.tar.gz
+[2024-05-05 07:29:55] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: executing diffoscope
+[2024-05-05 07:29:55] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_anime_downloader-0.1.5.tar.gz tmp/nonebot_plugin_anime_downloader-0.2.0.tar.gz --markdown 20240505/n/nonebot-plugin-anime-downloader/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-05-05 07:29:56] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.4.1.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.5.0.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-05 07:29:56] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.3.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.4.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-05 07:29:56] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.4.1.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - processPackages [FFEM]: Remove: archive file [/home/abi/fetcher/tmp/FFEM-0.4.2.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - main [MainThread]: End processing [FFEM]: success
+[2024-05-05 07:29:56] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_anime_downloader-0.1.5.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - processPackages [nonebot-plugin-anime-downloader]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_anime_downloader-0.2.0.tar.gz]
+[2024-05-05 07:29:56] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-anime-downloader]: success
+[2024-05-05 07:29:56] INFO root fetch - main [MainThread]: Store serial: [23063286]
