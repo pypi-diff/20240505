@@ -3041,3 +3041,24 @@
 [2024-05-05 04:58:06] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.2.tar.gz]
 [2024-05-05 04:58:06] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
 [2024-05-05 04:58:06] INFO root fetch - main [MainThread]: Store serial: [23062829]
+[2024-05-05 05:00:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062829]
+[2024-05-05 05:00:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 05:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-adapter-feishu
+[2024-05-05 05:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psp-liquids-daq-parser
+[2024-05-05 05:00:15] INFO root fetch - processPackages [psp-liquids-daq-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 05:00:15] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/5a/ac/acb2afa30ac1f5b2b0951c15a15e36c8ff37d2b157a58f13f26d6da72f9d/psp_liquids_daq_parser-0.0.8.tar.gz
+[2024-05-05 05:00:15] INFO root fetch - processPackages [nonebot-adapter-feishu]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-05-05 05:00:15] INFO root fetch - processPackages [nonebot-adapter-feishu]: Downloading https://files.pythonhosted.org/packages/d7/bd/6e1773ceba4cbdbcdde8dc16a502511cdaea9a93bd2e1657959f68258fd2/nonebot_adapter_feishu-2.6.0.tar.gz
+[2024-05-05 05:00:15] INFO root fetch - processPackages [psp-liquids-daq-parser]: Downloading https://files.pythonhosted.org/packages/d4/93/54529293da723ef115445c4b8df210739f8431f36b86101fd0a2925667c2/psp_liquids_daq_parser-0.0.9.tar.gz
+[2024-05-05 05:00:15] INFO root fetch - processPackages [psp-liquids-daq-parser]: executing diffoscope
+[2024-05-05 05:00:15] INFO root fetch - processPackages [psp-liquids-daq-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psp_liquids_daq_parser-0.0.8.tar.gz tmp/psp_liquids_daq_parser-0.0.9.tar.gz --markdown 20240505/p/psp-liquids-daq-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 05:00:15] INFO root fetch - processPackages [nonebot-adapter-feishu]: Downloading https://files.pythonhosted.org/packages/c4/7b/e3704a4456b46448c1add57efc8442de50a904f8bc1375b21b58507a1bb9/nonebot_adapter_feishu-2.6.1.tar.gz
+[2024-05-05 05:00:15] INFO root fetch - processPackages [nonebot-adapter-feishu]: executing diffoscope
+[2024-05-05 05:00:15] INFO root fetch - processPackages [nonebot-adapter-feishu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_feishu-2.6.0.tar.gz tmp/nonebot_adapter_feishu-2.6.1.tar.gz --markdown 20240505/n/nonebot-adapter-feishu/2.6.0-2.6.1/README.md --exclude *.pyd
+[2024-05-05 05:00:16] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.8.tar.gz]
+[2024-05-05 05:00:16] INFO root fetch - processPackages [psp-liquids-daq-parser]: Remove: archive file [/home/abi/fetcher/tmp/psp_liquids_daq_parser-0.0.9.tar.gz]
+[2024-05-05 05:00:16] INFO root fetch - main [MainThread]: End processing [psp-liquids-daq-parser]: success
+[2024-05-05 05:00:16] INFO root fetch - processPackages [nonebot-adapter-feishu]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_feishu-2.6.0.tar.gz]
+[2024-05-05 05:00:16] INFO root fetch - processPackages [nonebot-adapter-feishu]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_feishu-2.6.1.tar.gz]
+[2024-05-05 05:00:16] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-feishu]: success
+[2024-05-05 05:00:16] INFO root fetch - main [MainThread]: Store serial: [23062835]
