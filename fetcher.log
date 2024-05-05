@@ -10180,3 +10180,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:26:33] INFO root fetch - processPackages [mdpsolver]: Remove: archive file [/home/abi/fetcher/tmp/mdpsolver-0.9.3.tar.gz]
 [2024-05-05 15:26:33] INFO root fetch - main [MainThread]: End processing [mdpsolver]: success
 [2024-05-05 15:26:33] INFO root fetch - main [MainThread]: Store serial: [23065947]
+[2024-05-05 15:28:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065947]
+[2024-05-05 15:28:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 15:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jenfi-pipeline-data-app
+[2024-05-05 15:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stigg-api-client
+[2024-05-05 15:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stigg-api-client-v2
+[2024-05-05 15:28:42] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-05-05 15:28:42] INFO root fetch - processPackages [stigg-api-client-v2]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-05-05 15:28:43] INFO root fetch - processPackages [jenfi-pipeline-data-app]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/9e/ad/1fefc56e33c405d4aa0b5a382414f77d27efc7861a1cedce255c72c8f7d7/stigg_api_client_v2-1.98.0.tar.gz
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-05-05 15:28:43] INFO root fetch - processPackages [jenfi-pipeline-data-app]: Downloading https://files.pythonhosted.org/packages/70/2d/1e48f9d138603453a9548a4cdfb97d93d146d3bab58ae1ff74d1d3497c21/jenfi_pipeline_data_app-0.4.7.tar.gz
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/e4/6e/6806296621be882a70042a1d47ba321aad0c99c69b0e1a5f16346a41b4b5/stigg_api_client_v2-1.98.1.tar.gz
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240505/s/stigg-api-client/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client-v2]: executing diffoscope
+[2024-05-05 15:28:43] INFO root fetch - processPackages [stigg-api-client-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client_v2-1.98.0.tar.gz tmp/stigg_api_client_v2-1.98.1.tar.gz --markdown 20240505/s/stigg-api-client-v2/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-05-05 15:28:43] INFO root fetch - processPackages [jenfi-pipeline-data-app]: Downloading https://files.pythonhosted.org/packages/2c/10/15c4b261b705142bd42d4d28c882346de3947ca9be5176ba0549ae293b22/jenfi_pipeline_data_app-0.4.8.tar.gz
+[2024-05-05 15:28:43] INFO root fetch - processPackages [jenfi-pipeline-data-app]: executing diffoscope
+[2024-05-05 15:28:43] INFO root fetch - processPackages [jenfi-pipeline-data-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jenfi_pipeline_data_app-0.4.7.tar.gz tmp/jenfi_pipeline_data_app-0.4.8.tar.gz --markdown 20240505/j/jenfi-pipeline-data-app/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-05 15:28:44] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-05-05 15:28:44] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-05-05 15:28:44] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-05-05 15:28:44] INFO root fetch - processPackages [jenfi-pipeline-data-app]: Remove: archive file [/home/abi/fetcher/tmp/jenfi_pipeline_data_app-0.4.7.tar.gz]
+[2024-05-05 15:28:44] INFO root fetch - processPackages [jenfi-pipeline-data-app]: Remove: archive file [/home/abi/fetcher/tmp/jenfi_pipeline_data_app-0.4.8.tar.gz]
+[2024-05-05 15:28:44] INFO root fetch - main [MainThread]: End processing [jenfi-pipeline-data-app]: success
+[2024-05-05 15:28:44] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.0.tar.gz]
+[2024-05-05 15:28:44] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
+[2024-05-05 15:28:44] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
+[2024-05-05 15:28:44] INFO root fetch - main [MainThread]: Store serial: [23065958]
