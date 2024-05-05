@@ -16637,3 +16637,33 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:31:48] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.4.tar.gz]
 [2024-05-05 22:31:48] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
 [2024-05-05 22:31:48] INFO root fetch - main [MainThread]: Store serial: [23068874]
+[2024-05-05 22:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068874]
+[2024-05-05 22:33:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 22:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-sdk
+[2024-05-05 22:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-buckets
+[2024-05-05 22:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-trading212
+[2024-05-05 22:33:56] INFO root fetch - processPackages [python-trading212]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-05 22:33:56] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/9a/fa/ae9717b53caeed8c959d0628061ab184f04ff22c28e8ad0e87556df8ebca/python_trading212-2.0.0.tar.gz
+[2024-05-05 22:33:56] INFO root fetch - processPackages [heaserver-buckets]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-05 22:33:57] INFO root fetch - processPackages [heaserver-buckets]: Downloading https://files.pythonhosted.org/packages/2d/0e/b0d112152201dfa8550b6ebb8ec3cba64e5ffa5b3c2d7668e8165e554e17/heaserver_buckets-1.1.2.tar.gz
+[2024-05-05 22:33:57] INFO root fetch - processPackages [lusid-sdk]: New version: [2.1.91] Old Version: [2.1.90]
+[2024-05-05 22:33:57] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/79/a7/12681ff6e955c06a1301d4a8138b5fafaed151a2a6f74ebe45709cbb824a/python_trading212-2.0.1.tar.gz
+[2024-05-05 22:33:57] INFO root fetch - processPackages [python-trading212]: executing diffoscope
+[2024-05-05 22:33:57] INFO root fetch - processPackages [python-trading212]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_trading212-2.0.0.tar.gz tmp/python_trading212-2.0.1.tar.gz --markdown 20240505/p/python-trading212/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-05 22:33:57] INFO root fetch - processPackages [heaserver-buckets]: Downloading https://files.pythonhosted.org/packages/37/21/ddf341524ba3c016652ecc7319b8f09b497c28b024276eb86f87e12316c4/heaserver_buckets-1.1.3.tar.gz
+[2024-05-05 22:33:57] INFO root fetch - processPackages [heaserver-buckets]: executing diffoscope
+[2024-05-05 22:33:57] INFO root fetch - processPackages [heaserver-buckets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver_buckets-1.1.2.tar.gz tmp/heaserver_buckets-1.1.3.tar.gz --markdown 20240505/h/heaserver-buckets/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-05 22:33:57] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/e2/93/72143bd559886897c54af313322d4bb6c789d8b87b76991b2077e536c780/lusid_sdk-2.1.90.tar.gz
+[2024-05-05 22:33:57] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-2.0.0.tar.gz]
+[2024-05-05 22:33:57] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-2.0.1.tar.gz]
+[2024-05-05 22:33:57] INFO root fetch - main [MainThread]: End processing [python-trading212]: success
+[2024-05-05 22:33:58] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/9f/9c/153caf75900c3979008ef2d4e81a9d74cd6548adfcb07c49937c7e2b43ce/lusid_sdk-2.1.91.tar.gz
+[2024-05-05 22:33:58] INFO root fetch - processPackages [heaserver-buckets]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_buckets-1.1.2.tar.gz]
+[2024-05-05 22:33:58] INFO root fetch - processPackages [heaserver-buckets]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_buckets-1.1.3.tar.gz]
+[2024-05-05 22:33:58] INFO root fetch - main [MainThread]: End processing [heaserver-buckets]: success
+[2024-05-05 22:33:58] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2024-05-05 22:33:58] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_sdk-2.1.90.tar.gz tmp/lusid_sdk-2.1.91.tar.gz --markdown 20240505/l/lusid-sdk/2.1.90-2.1.91/README.md --exclude *.pyd
+[2024-05-05 22:34:02] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.90.tar.gz]
+[2024-05-05 22:34:02] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.91.tar.gz]
+[2024-05-05 22:34:02] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2024-05-05 22:34:02] INFO root fetch - main [MainThread]: Store serial: [23068883]
