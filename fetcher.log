@@ -5331,3 +5331,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:15:31] INFO root fetch - processPackages [vllm]: Remove: archive file [/home/abi/fetcher/tmp/vllm-0.4.2.tar.gz]
 [2024-05-05 09:15:31] INFO root fetch - main [MainThread]: End processing [vllm]: success
 [2024-05-05 09:15:31] INFO root fetch - main [MainThread]: Store serial: [23063767]
+[2024-05-05 09:17:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063767]
+[2024-05-05 09:17:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ghostbase
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intellipandora
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastbzip2-lib
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SAM-ONNX
+[2024-05-05 09:17:40] WARNING root fetch - processPackages [fastbzip2-lib]: Skipping, unable to determine old version
+[2024-05-05 09:17:40] INFO root fetch - main [MainThread]: End processing [fastbzip2-lib] error
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ghostbase]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-05 09:17:40] INFO root fetch - processPackages [SAM-ONNX]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ghostbase]: Downloading https://files.pythonhosted.org/packages/70/23/6920bf5e5cad28eedd8b25772220924e6caed39d952af17cb421fab651ef/ghostbase-1.2.3-py3-none-any.whl
+[2024-05-05 09:17:40] WARNING root fetch - processPackages [intellipandora]: Skipping, unable to determine old version
+[2024-05-05 09:17:40] INFO root fetch - main [MainThread]: End processing [intellipandora] error
+[2024-05-05 09:17:40] INFO root fetch - processPackages [SAM-ONNX]: Downloading https://files.pythonhosted.org/packages/93/45/ecbb6414cdd10fb83377804d0715f6ac5d6d49ac2571160d7dd382ce8c95/sam_onnx-0.0.1.tar.gz
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ghostbase]: Downloading https://files.pythonhosted.org/packages/8e/76/04da37e90951d53b2f7d93f1ab73382f3f33d23d8804e58a6d9ea0b944e6/ghostbase-1.2.4-py3-none-any.whl
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ghostbase]: executing diffoscope
+[2024-05-05 09:17:40] INFO root fetch - processPackages [ghostbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghostbase-1.2.3-py3-none-any.whl.zip tmp/ghostbase-1.2.4-py3-none-any.whl.zip --markdown 20240505/g/ghostbase/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-05 09:17:40] INFO root fetch - processPackages [SAM-ONNX]: Downloading https://files.pythonhosted.org/packages/41/8e/3f41e7cffc1fe480df80711318d11ecfb74373d5952b672aeb2cb7d21abd/sam_onnx-0.0.2.tar.gz
+[2024-05-05 09:17:41] INFO root fetch - processPackages [SAM-ONNX]: executing diffoscope
+[2024-05-05 09:17:41] INFO root fetch - processPackages [SAM-ONNX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sam_onnx-0.0.1.tar.gz tmp/sam_onnx-0.0.2.tar.gz --markdown 20240505/S/SAM-ONNX/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 09:17:41] INFO root fetch - processPackages [ghostbase]: Remove: archive file [/home/abi/fetcher/tmp/ghostbase-1.2.3-py3-none-any.whl.zip]
+[2024-05-05 09:17:41] INFO root fetch - processPackages [ghostbase]: Remove: archive file [/home/abi/fetcher/tmp/ghostbase-1.2.4-py3-none-any.whl.zip]
+[2024-05-05 09:17:41] INFO root fetch - main [MainThread]: End processing [ghostbase]: success
+[2024-05-05 09:17:41] INFO root fetch - processPackages [SAM-ONNX]: Remove: archive file [/home/abi/fetcher/tmp/sam_onnx-0.0.1.tar.gz]
+[2024-05-05 09:17:41] INFO root fetch - processPackages [SAM-ONNX]: Remove: archive file [/home/abi/fetcher/tmp/sam_onnx-0.0.2.tar.gz]
+[2024-05-05 09:17:41] INFO root fetch - main [MainThread]: End processing [SAM-ONNX]: success
+[2024-05-05 09:17:41] INFO root fetch - main [MainThread]: Store serial: [23063783]
