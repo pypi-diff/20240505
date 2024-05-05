@@ -6894,3 +6894,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:23:57] INFO root fetch - processPackages [elastiknn-client]: Remove: archive file [/home/abi/fetcher/tmp/elastiknn-client-8.9.2.0.tar.gz]
 [2024-05-05 11:23:57] INFO root fetch - main [MainThread]: End processing [elastiknn-client]: success
 [2024-05-05 11:23:57] INFO root fetch - main [MainThread]: Store serial: [23064419]
+[2024-05-05 11:26:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064419]
+[2024-05-05 11:26:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcloudClients
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zfx
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-pandas
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: research-framework
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abstract-distances
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ec_slp_lib
+[2024-05-05 11:26:06] INFO root fetch - processPackages [abstract-distances]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 11:26:06] INFO root fetch - processPackages [zfx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 11:26:06] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 11:26:06] WARNING root fetch - processPackages [xcloudClients]: Skipping, unable to determine old version
+[2024-05-05 11:26:06] INFO root fetch - main [MainThread]: End processing [xcloudClients] error
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ec_slp_lib]: New version: [1.0.5] Old Version: [1.0.4a2]
+[2024-05-05 11:26:06] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/59/eb/f257e3407edfa0e36bd6d262b25e02023066e104ba26d20cee83a63198f0/zfx-1.0.8.tar.gz
+[2024-05-05 11:26:06] INFO root fetch - processPackages [research-framework]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-05 11:26:06] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/6c/61/10624b0822b74cb8e6bbaba4320399754b0de6e25995972dddb708044f4b/abstract_distances-0.0.0.8.tar.gz
+[2024-05-05 11:26:06] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 11:26:06] INFO root fetch - processPackages [ec_slp_lib]: Downloading https://files.pythonhosted.org/packages/3e/33/a5884aaeb540e4171a68a631c033a73c7a50ab0d58729ffb5d02534bdc39/ec_slp_lib-1.0.4a2.tar.gz
+[2024-05-05 11:26:06] INFO root fetch - processPackages [research-framework]: Downloading https://files.pythonhosted.org/packages/2e/08/7fe84f42c012428d6ee92749e51555789106ee3c53e5b444ef3559b52f51/research_framework-0.2.3.tar.gz
+[2024-05-05 11:26:06] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/79/72/81e8c9f95e9effa80a25b20d494a3c3b21ed5cbbd53440c562d52fe8fe8a/zfx-1.0.9.tar.gz
+[2024-05-05 11:26:06] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/42/0a/b586993eb0a4e95ae76f9d55bb716facab5d906b9ebda232a2cabc51b595/abstract_distances-0.0.0.9.tar.gz
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-distances]: executing diffoscope
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-distances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_distances-0.0.0.8.tar.gz tmp/abstract_distances-0.0.0.9.tar.gz --markdown 20240505/a/abstract-distances/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 11:26:07] INFO root fetch - processPackages [zfx]: executing diffoscope
+[2024-05-05 11:26:07] INFO root fetch - processPackages [zfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfx-1.0.8.tar.gz tmp/zfx-1.0.9.tar.gz --markdown 20240505/z/zfx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 11:26:07] INFO root fetch - processPackages [research-framework]: Downloading https://files.pythonhosted.org/packages/7a/65/b1f07195ef504fd4f5e36f7c99917efe96440202713bc933c7bc93c40ca8/research_framework-0.2.4.tar.gz
+[2024-05-05 11:26:07] INFO root fetch - processPackages [ec_slp_lib]: Downloading https://files.pythonhosted.org/packages/b8/6d/1387a86b70e7e8f8f082466f12a2f48517bafeb01583b502bf10aaffca59/ec_slp_lib-1.0.5.tar.gz
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 11:26:07] INFO root fetch - processPackages [research-framework]: executing diffoscope
+[2024-05-05 11:26:07] INFO root fetch - processPackages [research-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/research_framework-0.2.3.tar.gz tmp/research_framework-0.2.4.tar.gz --markdown 20240505/r/research-framework/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-05 11:26:07] INFO root fetch - processPackages [ec_slp_lib]: executing diffoscope
+[2024-05-05 11:26:07] INFO root fetch - processPackages [ec_slp_lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ec_slp_lib-1.0.4a2.tar.gz tmp/ec_slp_lib-1.0.5.tar.gz --markdown 20240505/e/ec_slp_lib/1.0.4a2-1.0.5/README.md --exclude *.pyd
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-distances]: Remove: archive file [/home/abi/fetcher/tmp/abstract_distances-0.0.0.8.tar.gz]
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-distances]: Remove: archive file [/home/abi/fetcher/tmp/abstract_distances-0.0.0.9.tar.gz]
+[2024-05-05 11:26:07] INFO root fetch - main [MainThread]: End processing [abstract-distances]: success
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 11:26:07] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 11:26:07] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 11:26:07] INFO root fetch - processPackages [ec_slp_lib]: Remove: archive file [/home/abi/fetcher/tmp/ec_slp_lib-1.0.4a2.tar.gz]
+[2024-05-05 11:26:07] INFO root fetch - processPackages [ec_slp_lib]: Remove: archive file [/home/abi/fetcher/tmp/ec_slp_lib-1.0.5.tar.gz]
+[2024-05-05 11:26:07] INFO root fetch - main [MainThread]: End processing [ec_slp_lib]: success
+[2024-05-05 11:26:08] INFO root fetch - processPackages [research-framework]: Remove: archive file [/home/abi/fetcher/tmp/research_framework-0.2.3.tar.gz]
+[2024-05-05 11:26:08] INFO root fetch - processPackages [research-framework]: Remove: archive file [/home/abi/fetcher/tmp/research_framework-0.2.4.tar.gz]
+[2024-05-05 11:26:08] INFO root fetch - main [MainThread]: End processing [research-framework]: success
+[2024-05-05 11:26:08] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.8.tar.gz]
+[2024-05-05 11:26:08] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
+[2024-05-05 11:26:08] INFO root fetch - main [MainThread]: End processing [zfx]: success
+[2024-05-05 11:26:08] INFO root fetch - main [MainThread]: Store serial: [23064438]
