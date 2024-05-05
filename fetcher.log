@@ -11258,3 +11258,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:44:02] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.0.dev1.tar.gz]
 [2024-05-05 16:44:02] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-05-05 16:44:02] INFO root fetch - main [MainThread]: Store serial: [23066463]
+[2024-05-05 16:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066463]
+[2024-05-05 16:46:11] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 16:48:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066463]
+[2024-05-05 16:48:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx2tf
+[2024-05-05 16:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: careamics
+[2024-05-05 16:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyretailscience
+[2024-05-05 16:48:17] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-05 16:48:17] INFO root fetch - processPackages [careamics]: New version: [0.1.0rc4] Old Version: [0.1.0rc3]
+[2024-05-05 16:48:17] INFO root fetch - processPackages [pyretailscience]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 16:48:17] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/6f/b3/519ee148592d2531639c5f3c1434df000ecf2c24a5b55b61cba8fd4767f9/onnx2tf-1.9.8.tar.gz
+[2024-05-05 16:48:17] INFO root fetch - processPackages [careamics]: Downloading https://files.pythonhosted.org/packages/4f/44/8518992eb36cecc99ef089a7050507a9f3dfc25f88c90c62922eda3249a3/careamics-0.1.0rc3.tar.gz
+[2024-05-05 16:48:17] INFO root fetch - processPackages [pyretailscience]: Downloading https://files.pythonhosted.org/packages/14/c4/704707cee14e4bad4031e54ecf2137812188d631006d9a7f29c7416dd88f/pyretailscience-0.3.0.tar.gz
+[2024-05-05 16:48:17] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/0e/df/e0c6978b06db6c5c04de100ecbe0bbb281caed31c4dd88663e61e36ca571/onnx2tf-1.9.9.tar.gz
+[2024-05-05 16:48:17] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2024-05-05 16:48:17] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20240505/o/onnx2tf/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-05 16:48:18] INFO root fetch - processPackages [careamics]: Downloading https://files.pythonhosted.org/packages/56/31/9d3257a7238d590928f01fc682054d0706b2a2cedeadfa2b068f34755f46/careamics-0.1.0rc4.tar.gz
+[2024-05-05 16:48:18] INFO root fetch - processPackages [pyretailscience]: Downloading https://files.pythonhosted.org/packages/f4/84/ed9aba9f7ea7107fd648fb7b91ea6ab6e38552b429b6d83a9e004a1ac8aa/pyretailscience-0.3.1.tar.gz
+[2024-05-05 16:48:18] INFO root fetch - processPackages [careamics]: executing diffoscope
+[2024-05-05 16:48:18] INFO root fetch - processPackages [careamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/careamics-0.1.0rc3.tar.gz tmp/careamics-0.1.0rc4.tar.gz --markdown 20240505/c/careamics/0.1.0rc3-0.1.0rc4/README.md --exclude *.pyd
+[2024-05-05 16:48:18] INFO root fetch - processPackages [pyretailscience]: executing diffoscope
+[2024-05-05 16:48:18] INFO root fetch - processPackages [pyretailscience]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyretailscience-0.3.0.tar.gz tmp/pyretailscience-0.3.1.tar.gz --markdown 20240505/p/pyretailscience/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 16:48:18] INFO root fetch - processPackages [pyretailscience]: Remove: archive file [/home/abi/fetcher/tmp/pyretailscience-0.3.0.tar.gz]
+[2024-05-05 16:48:18] INFO root fetch - processPackages [pyretailscience]: Remove: archive file [/home/abi/fetcher/tmp/pyretailscience-0.3.1.tar.gz]
+[2024-05-05 16:48:18] INFO root fetch - main [MainThread]: End processing [pyretailscience]: success
+[2024-05-05 16:48:19] INFO root fetch - processPackages [careamics]: Remove: archive file [/home/abi/fetcher/tmp/careamics-0.1.0rc3.tar.gz]
+[2024-05-05 16:48:19] INFO root fetch - processPackages [careamics]: Remove: archive file [/home/abi/fetcher/tmp/careamics-0.1.0rc4.tar.gz]
+[2024-05-05 16:48:19] INFO root fetch - main [MainThread]: End processing [careamics]: success
+[2024-05-05 16:48:19] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.8.tar.gz]
+[2024-05-05 16:48:19] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.9.tar.gz]
+[2024-05-05 16:48:19] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2024-05-05 16:48:19] INFO root fetch - main [MainThread]: Store serial: [23066472]
