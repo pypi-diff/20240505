@@ -16778,3 +16778,28 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:43:15] WARNING root fetch - processPackages [pytruco]: Skipping, unable to determine old version
 [2024-05-05 22:43:15] INFO root fetch - main [MainThread]: End processing [pytruco] error
 [2024-05-05 22:43:15] INFO root fetch - main [MainThread]: Store serial: [23068924]
+[2024-05-05 22:45:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068924]
+[2024-05-05 22:45:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytruco
+[2024-05-05 22:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymobiledevice3
+[2024-05-05 22:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lolcatt
+[2024-05-05 22:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphscope
+[2024-05-05 22:45:24] WARNING root fetch - processPackages [pytruco]: Skipping, unable to determine old version
+[2024-05-05 22:45:24] INFO root fetch - main [MainThread]: End processing [pytruco] error
+[2024-05-05 22:45:24] INFO root fetch - processPackages [graphscope]: New version: [0.28.0a20240505] Old Version: [0.28.0a20240503]
+[2024-05-05 22:45:24] INFO root fetch - processPackages [lolcatt]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-05-05 22:45:24] INFO root fetch - processPackages [pymobiledevice3]: New version: [4.5.2] Old Version: [4.5.1]
+[2024-05-05 22:45:24] INFO root fetch - processPackages [lolcatt]: Downloading https://files.pythonhosted.org/packages/65/7b/7544879edbd9ee3f1c3f7bd5b80187d9ed741bd660d11eb8b39edb58dcb2/lolcatt-0.2.3.tar.gz
+[2024-05-05 22:45:24] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/32/f6/eec5520847d591d68eec80f758ac75302942c8cf01dc8ccfb70c29c65fcd/graphscope-0.28.0a20240503-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 22:45:24] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/7d/99/6526003ef35bc346cab866801b6bf1053a7679fcaff528e9d40729c7f323/pymobiledevice3-4.5.1.tar.gz
+[2024-05-05 22:45:24] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 218534254>=10485760
+[2024-05-05 22:45:24] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2024-05-05 22:45:24] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31545925>=10485760
+[2024-05-05 22:45:24] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-05-05 22:45:24] INFO root fetch - processPackages [lolcatt]: Downloading https://files.pythonhosted.org/packages/6b/2d/be429da4cbca196e7257d851291e6d296f71f713be51fbcf0baa235c85ba/lolcatt-0.3.0.tar.gz
+[2024-05-05 22:45:25] INFO root fetch - processPackages [lolcatt]: executing diffoscope
+[2024-05-05 22:45:25] INFO root fetch - processPackages [lolcatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lolcatt-0.2.3.tar.gz tmp/lolcatt-0.3.0.tar.gz --markdown 20240505/l/lolcatt/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-05-05 22:45:25] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.2.3.tar.gz]
+[2024-05-05 22:45:25] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.3.0.tar.gz]
+[2024-05-05 22:45:25] INFO root fetch - main [MainThread]: End processing [lolcatt]: success
+[2024-05-05 22:45:25] INFO root fetch - main [MainThread]: Store serial: [23068941]
