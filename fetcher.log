@@ -10113,3 +10113,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:24:21] INFO root fetch - processPackages [vdf-io]: Remove: archive file [/home/abi/fetcher/tmp/vdf_io-0.1.9.tar.gz]
 [2024-05-05 15:24:21] INFO root fetch - main [MainThread]: End processing [vdf-io]: success
 [2024-05-05 15:24:21] INFO root fetch - main [MainThread]: Store serial: [23065912]
+[2024-05-05 15:26:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065912]
+[2024-05-05 15:26:29] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinxcontrib-terraform
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastosc
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: al-common-utils
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: narwhals
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mdpsolver
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: attackai
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sphinxcontrib-terraform
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: anydoor
+[2024-05-05 15:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: plutobook
+[2024-05-05 15:26:29] WARNING root fetch - processPackages [plutobook]: Skipping, unable to determine old version
+[2024-05-05 15:26:29] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-05 15:26:29] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.3.1] Old Version: [4.3.0]
+[2024-05-05 15:26:29] INFO root fetch - processPackages [mdpsolver]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-05 15:26:29] INFO root fetch - processPackages [sphinxcontrib-terraform]: New version: [0.2] Old Version: [0.1]
+[2024-05-05 15:26:29] INFO root fetch - processPackages [sphinxcontrib-terraform]: New version: [0.2] Old Version: [0.1]
+[2024-05-05 15:26:29] WARNING root fetch - processPackages [al-common-utils]: Skipping, unable to determine old version
+[2024-05-05 15:26:29] INFO root fetch - main [MainThread]: End processing [al-common-utils] error
+[2024-05-05 15:26:29] INFO root fetch - processPackages [narwhals]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-05 15:26:30] WARNING root fetch - processPackages [fastosc]: Skipping, unable to determine old version
+[2024-05-05 15:26:30] INFO root fetch - main [MainThread]: End processing [fastosc] error
+[2024-05-05 15:26:30] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/b8/dd/bf0b5d5d5b92f216625feb5c0ed89209a07e772b5f687ce64f63417817c9/Buke_autoTrade_Pypi-4.3.0.tar.gz
+[2024-05-05 15:26:30] WARNING root fetch - processPackages [attackai]: Skipping, unable to determine old version
+[2024-05-05 15:26:30] INFO root fetch - main [MainThread]: End processing [attackai] error
+[2024-05-05 15:26:30] INFO root fetch - processPackages [mdpsolver]: Downloading https://files.pythonhosted.org/packages/42/35/ba8ab54bdbcb6d56897084eb9bc497b3a6ff82c75b2e2443237f2739bfe5/mdpsolver-0.9.2.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: Downloading https://files.pythonhosted.org/packages/fa/59/deb1fc12371a61937b34495569e620ad2a36980c9337375f638264227c4a/sphinxcontrib_terraform-0.1.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: Downloading https://files.pythonhosted.org/packages/fa/59/deb1fc12371a61937b34495569e620ad2a36980c9337375f638264227c4a/sphinxcontrib_terraform-0.1.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/e9/b0/5d4cebdfc1af7026e72d6359f9b774b6fe68419f425d81996d3095cd15c1/narwhals-0.7.8.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [anydoor]: New version: [0.1.2] Old Version: [0.0.1]
+[2024-05-05 15:26:30] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/12/8b/8659ecdb50dc8ea255dcbff809a07784fa74d5cfbcfceea96a35dff37194/Buke_autoTrade_Pypi-4.3.1.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [anydoor]: Downloading https://files.pythonhosted.org/packages/dc/54/694337c6f1494bee374816ae6fd8424bc3e4b991edebb9a59ed8a117c29d/anydoor-0.0.1.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: Downloading https://files.pythonhosted.org/packages/61/ad/ce87c15a42bb217d3ba81cdd8c847613756abc277eb2c1816d6275d0a056/sphinxcontrib_terraform-0.2.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.3.0.tar.gz tmp/Buke_autoTrade_Pypi-4.3.1.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.3.0-4.3.1/README.md --exclude *.pyd
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: Downloading https://files.pythonhosted.org/packages/61/ad/ce87c15a42bb217d3ba81cdd8c847613756abc277eb2c1816d6275d0a056/sphinxcontrib_terraform-0.2.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/8e/b0/b325b1fa81ccb08d9d018240ecf5c29d300745e2541cbc4f1aef9cc4a06a/narwhals-0.7.9.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: executing diffoscope
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_terraform-0.1.tar.gz tmp/sphinxcontrib_terraform-0.2.tar.gz --markdown 20240505/s/sphinxcontrib-terraform/0.1-0.2/README.md --exclude *.pyd
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: executing diffoscope
+[2024-05-05 15:26:30] INFO root fetch - processPackages [sphinxcontrib-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_terraform-0.1.tar.gz tmp/sphinxcontrib_terraform-0.2.tar.gz --markdown 20240505/s/sphinxcontrib-terraform/0.1-0.2/README.md --exclude *.pyd
+[2024-05-05 15:26:30] INFO root fetch - processPackages [narwhals]: executing diffoscope
+[2024-05-05 15:26:30] INFO root fetch - processPackages [narwhals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narwhals-0.7.8.tar.gz tmp/narwhals-0.7.9.tar.gz --markdown 20240505/n/narwhals/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-05 15:26:30] INFO root fetch - processPackages [mdpsolver]: Downloading https://files.pythonhosted.org/packages/13/ad/e14dd61d5b0fe362b8a7855ae7fba965e553ab05442280f9112a46437d11/mdpsolver-0.9.3.tar.gz
+[2024-05-05 15:26:30] INFO root fetch - processPackages [anydoor]: Downloading https://files.pythonhosted.org/packages/40/37/e181e83cc1092e34ae9ebfad99573debbdfb1a778a8b1f51d37bc209552c/anydoor-0.1.2-py3-none-any.whl
+[2024-05-05 15:26:30] INFO root fetch - processPackages [mdpsolver]: executing diffoscope
+[2024-05-05 15:26:30] INFO root fetch - processPackages [mdpsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpsolver-0.9.2.tar.gz tmp/mdpsolver-0.9.3.tar.gz --markdown 20240505/m/mdpsolver/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-05 15:26:31] INFO root fetch - processPackages [anydoor]: executing diffoscope
+[2024-05-05 15:26:31] INFO root fetch - processPackages [anydoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydoor-0.0.1.tar.gz tmp/anydoor-0.1.2-py3-none-any.whl.zip --markdown 20240505/a/anydoor/0.0.1-0.1.2/README.md --exclude *.pyd
+[2024-05-05 15:26:31] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.0.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.3.1.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 15:26:31] INFO root fetch - processPackages [sphinxcontrib-terraform]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_terraform-0.1.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - processPackages [sphinxcontrib-terraform]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_terraform-0.2.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-terraform]: success
+[2024-05-05 15:26:31] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-terraform]: success
+[2024-05-05 15:26:31] INFO root fetch - processPackages [anydoor]: Remove: archive file [/home/abi/fetcher/tmp/anydoor-0.0.1.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - processPackages [anydoor]: Remove: archive file [/home/abi/fetcher/tmp/anydoor-0.1.2-py3-none-any.whl.zip]
+[2024-05-05 15:26:31] INFO root fetch - main [MainThread]: End processing [anydoor]: success
+[2024-05-05 15:26:31] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.7.8.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.7.9.tar.gz]
+[2024-05-05 15:26:31] INFO root fetch - main [MainThread]: End processing [narwhals]: success
+[2024-05-05 15:26:33] INFO root fetch - processPackages [mdpsolver]: Remove: archive file [/home/abi/fetcher/tmp/mdpsolver-0.9.2.tar.gz]
+[2024-05-05 15:26:33] INFO root fetch - processPackages [mdpsolver]: Remove: archive file [/home/abi/fetcher/tmp/mdpsolver-0.9.3.tar.gz]
+[2024-05-05 15:26:33] INFO root fetch - main [MainThread]: End processing [mdpsolver]: success
+[2024-05-05 15:26:33] INFO root fetch - main [MainThread]: Store serial: [23065947]
