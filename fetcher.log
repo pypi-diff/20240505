@@ -10760,3 +10760,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:01:36] INFO root fetch - processPackages [nqrduck-broadband]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_broadband-0.0.14.tar.gz]
 [2024-05-05 16:01:36] INFO root fetch - main [MainThread]: End processing [nqrduck-broadband]: success
 [2024-05-05 16:01:36] INFO root fetch - main [MainThread]: Store serial: [23066222]
+[2024-05-05 16:03:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066222]
+[2024-05-05 16:03:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 16:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: artemis-hunter
+[2024-05-05 16:03:45] INFO root fetch - processPackages [artemis-hunter]: New version: [0.111] Old Version: [0.11]
+[2024-05-05 16:03:45] INFO root fetch - processPackages [artemis-hunter]: Downloading https://files.pythonhosted.org/packages/2f/17/da65ec5b31d698f441b347638825fdf54591486d635d8e0984a6663b367d/artemis_hunter-0.11-py3-none-any.whl
+[2024-05-05 16:03:45] INFO root fetch - processPackages [artemis-hunter]: Downloading https://files.pythonhosted.org/packages/cc/c5/6a3c70e2eb320cbbbfbefef7b2a62c8855e3440794e84234d4f373c04ad9/artemis_hunter-0.111-py3-none-any.whl
+[2024-05-05 16:03:45] INFO root fetch - processPackages [artemis-hunter]: executing diffoscope
+[2024-05-05 16:03:45] INFO root fetch - processPackages [artemis-hunter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis_hunter-0.11-py3-none-any.whl.zip tmp/artemis_hunter-0.111-py3-none-any.whl.zip --markdown 20240505/a/artemis-hunter/0.11-0.111/README.md --exclude *.pyd
+[2024-05-05 16:03:46] INFO root fetch - processPackages [artemis-hunter]: Remove: archive file [/home/abi/fetcher/tmp/artemis_hunter-0.11-py3-none-any.whl.zip]
+[2024-05-05 16:03:46] INFO root fetch - processPackages [artemis-hunter]: Remove: archive file [/home/abi/fetcher/tmp/artemis_hunter-0.111-py3-none-any.whl.zip]
+[2024-05-05 16:03:46] INFO root fetch - main [MainThread]: End processing [artemis-hunter]: success
+[2024-05-05 16:03:46] INFO root fetch - main [MainThread]: Store serial: [23066225]
