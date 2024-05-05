@@ -16667,3 +16667,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:34:02] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.91.tar.gz]
 [2024-05-05 22:34:02] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2024-05-05 22:34:02] INFO root fetch - main [MainThread]: Store serial: [23068883]
+[2024-05-05 22:36:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068883]
+[2024-05-05 22:36:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 22:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: policyengine-us
+[2024-05-05 22:36:11] INFO root fetch - processPackages [sqlalchemy-multilingual]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-05 22:36:11] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/73/af/2385eb6b1a11aa95dfb20a30c78b83793094ad013f0135ce54eb4bcf8c2f/sqlalchemy-multilingual-0.0.4.tar.gz
+[2024-05-05 22:36:11] INFO root fetch - processPackages [policyengine-us]: New version: [0.758.1] Old Version: [0.758.0]
+[2024-05-05 22:36:11] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/e5/ac/4bcefddfac2274f1abb45d9a83ff018eaa96ff6cbaf2bc7cb55898184691/policyengine-us-0.758.0.tar.gz
+[2024-05-05 22:36:11] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/6e/1e/a97deb7939d3beb302e1a2aa978ba24564cdb93fcd66d59f98465801c03a/sqlalchemy-multilingual-0.0.5.tar.gz
+[2024-05-05 22:36:11] INFO root fetch - processPackages [sqlalchemy-multilingual]: executing diffoscope
+[2024-05-05 22:36:11] INFO root fetch - processPackages [sqlalchemy-multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-multilingual-0.0.4.tar.gz tmp/sqlalchemy-multilingual-0.0.5.tar.gz --markdown 20240505/s/sqlalchemy-multilingual/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-05 22:36:11] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/ef/e6/743b2c7160ca0e3b2bb4cd3f614482a3246681fdb01fa1bf89af9a78047b/policyengine-us-0.758.1.tar.gz
+[2024-05-05 22:36:12] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-05-05 22:36:12] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.758.0.tar.gz tmp/policyengine-us-0.758.1.tar.gz --markdown 20240505/p/policyengine-us/0.758.0-0.758.1/README.md --exclude *.pyd
+[2024-05-05 22:36:12] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.4.tar.gz]
+[2024-05-05 22:36:12] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.5.tar.gz]
+[2024-05-05 22:36:12] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
+[2024-05-05 22:36:44] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.758.0.tar.gz]
+[2024-05-05 22:36:44] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.758.1.tar.gz]
+[2024-05-05 22:36:44] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-05-05 22:36:44] INFO root fetch - main [MainThread]: Store serial: [23068889]
