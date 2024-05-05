@@ -2815,3 +2815,36 @@
 [2024-05-05 04:34:16] INFO root fetch - processPackages [megadetector]: Remove: archive file [/home/abi/fetcher/tmp/megadetector-5.0.9.tar.gz]
 [2024-05-05 04:34:16] INFO root fetch - main [MainThread]: End processing [megadetector]: success
 [2024-05-05 04:34:16] INFO root fetch - main [MainThread]: Store serial: [23062747]
+[2024-05-05 04:36:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062747]
+[2024-05-05 04:36:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 04:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolfuse
+[2024-05-05 04:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AST-Stubgen
+[2024-05-05 04:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: msanic
+[2024-05-05 04:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thor
+[2024-05-05 04:36:24] INFO root fetch - processPackages [thor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 04:36:24] INFO root fetch - processPackages [thor]: Downloading https://files.pythonhosted.org/packages/6b/43/3808f163005af01c7fa631ef865898b34f6aa29d074d140066ba16c6ae78/thor-0.9.8.tar.gz
+[2024-05-05 04:36:24] WARNING root fetch - processPackages [AST-Stubgen]: Skipping, unable to determine old version
+[2024-05-05 04:36:24] INFO root fetch - main [MainThread]: End processing [AST-Stubgen] error
+[2024-05-05 04:36:24] INFO root fetch - processPackages [toolfuse]: New version: [0.1.21] Old Version: [0.1.20]
+[2024-05-05 04:36:24] INFO root fetch - processPackages [msanic]: New version: [1.0.18] Old Version: [1.0.17]
+[2024-05-05 04:36:25] INFO root fetch - processPackages [thor]: Downloading https://files.pythonhosted.org/packages/d0/ca/4ed5b622a23dea82284cbe071a76f0c774adfdaa706917444e15f623bb98/thor-0.9.9.tar.gz
+[2024-05-05 04:36:25] INFO root fetch - processPackages [msanic]: Downloading https://files.pythonhosted.org/packages/7e/9b/69c80aef843e864ee692b94a7696fac549b17b71d58b4a0a224c52c18aad/msanic-1.0.17-py3-none-any.whl
+[2024-05-05 04:36:25] INFO root fetch - processPackages [thor]: executing diffoscope
+[2024-05-05 04:36:25] INFO root fetch - processPackages [thor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thor-0.9.8.tar.gz tmp/thor-0.9.9.tar.gz --markdown 20240505/t/thor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 04:36:25] INFO root fetch - processPackages [toolfuse]: Downloading https://files.pythonhosted.org/packages/e1/4e/ca6f7375267ced38b8f1824e83bff7788535c67ad493d86d52d15f056876/toolfuse-0.1.20.tar.gz
+[2024-05-05 04:36:25] INFO root fetch - processPackages [msanic]: Downloading https://files.pythonhosted.org/packages/0d/1b/1f87783b14ac830326b53e2cb699a4f15ce5566d019881955f74fd713559/msanic-1.0.18-py3-none-any.whl
+[2024-05-05 04:36:25] INFO root fetch - processPackages [toolfuse]: Downloading https://files.pythonhosted.org/packages/1e/40/240f7ce1cd2abd8ab2f5d75a0f3278b541fe8adb063880d9e00865793dab/toolfuse-0.1.21.tar.gz
+[2024-05-05 04:36:25] INFO root fetch - processPackages [toolfuse]: executing diffoscope
+[2024-05-05 04:36:25] INFO root fetch - processPackages [toolfuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolfuse-0.1.20.tar.gz tmp/toolfuse-0.1.21.tar.gz --markdown 20240505/t/toolfuse/0.1.20-0.1.21/README.md --exclude *.pyd
+[2024-05-05 04:36:25] INFO root fetch - processPackages [msanic]: executing diffoscope
+[2024-05-05 04:36:25] INFO root fetch - processPackages [msanic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msanic-1.0.17-py3-none-any.whl.zip tmp/msanic-1.0.18-py3-none-any.whl.zip --markdown 20240505/m/msanic/1.0.17-1.0.18/README.md --exclude *.pyd
+[2024-05-05 04:36:25] INFO root fetch - processPackages [thor]: Remove: archive file [/home/abi/fetcher/tmp/thor-0.9.8.tar.gz]
+[2024-05-05 04:36:25] INFO root fetch - processPackages [thor]: Remove: archive file [/home/abi/fetcher/tmp/thor-0.9.9.tar.gz]
+[2024-05-05 04:36:25] INFO root fetch - main [MainThread]: End processing [thor]: success
+[2024-05-05 04:36:26] INFO root fetch - processPackages [toolfuse]: Remove: archive file [/home/abi/fetcher/tmp/toolfuse-0.1.20.tar.gz]
+[2024-05-05 04:36:26] INFO root fetch - processPackages [toolfuse]: Remove: archive file [/home/abi/fetcher/tmp/toolfuse-0.1.21.tar.gz]
+[2024-05-05 04:36:26] INFO root fetch - main [MainThread]: End processing [toolfuse]: success
+[2024-05-05 04:36:26] INFO root fetch - processPackages [msanic]: Remove: archive file [/home/abi/fetcher/tmp/msanic-1.0.17-py3-none-any.whl.zip]
+[2024-05-05 04:36:26] INFO root fetch - processPackages [msanic]: Remove: archive file [/home/abi/fetcher/tmp/msanic-1.0.18-py3-none-any.whl.zip]
+[2024-05-05 04:36:26] INFO root fetch - main [MainThread]: End processing [msanic]: success
+[2024-05-05 04:36:26] INFO root fetch - main [MainThread]: Store serial: [23062760]
