@@ -6141,3 +6141,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:22:50] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.335.tar.gz]
 [2024-05-05 10:22:50] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-05 10:22:50] INFO root fetch - main [MainThread]: Store serial: [23064112]
+[2024-05-05 10:24:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064112]
+[2024-05-05 10:24:58] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 10:26:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064112]
+[2024-05-05 10:27:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 10:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freeze-dried-data
+[2024-05-05 10:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-safety
+[2024-05-05 10:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bellek
+[2024-05-05 10:27:04] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-05 10:27:04] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-05 10:27:04] INFO root fetch - processPackages [freeze-dried-data]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-05 10:27:04] WARNING root fetch - processPackages [ai-safety]: Skipping, unable to determine old version
+[2024-05-05 10:27:04] INFO root fetch - main [MainThread]: End processing [ai-safety] error
+[2024-05-05 10:27:04] INFO root fetch - processPackages [freeze-dried-data]: Downloading https://files.pythonhosted.org/packages/e4/38/6c2c26c1cf51796d5645f1246b7d52fae6a9c11bee568d1fdef945ecca6e/freeze_dried_data-2.0.0.tar.gz
+[2024-05-05 10:27:04] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-05 10:27:05] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-05 10:27:05] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240505/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-05 10:27:05] INFO root fetch - processPackages [freeze-dried-data]: Downloading https://files.pythonhosted.org/packages/00/0f/0496f165069bf9bfac61603d48aab16f9c3a9ac27ad4db1ed0d1aaae223e/freeze_dried_data-2.1.0.tar.gz
+[2024-05-05 10:27:05] INFO root fetch - processPackages [freeze-dried-data]: executing diffoscope
+[2024-05-05 10:27:05] INFO root fetch - processPackages [freeze-dried-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeze_dried_data-2.0.0.tar.gz tmp/freeze_dried_data-2.1.0.tar.gz --markdown 20240505/f/freeze-dried-data/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-05 10:27:05] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-05 10:27:05] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-05 10:27:05] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-05 10:27:05] INFO root fetch - processPackages [freeze-dried-data]: Remove: archive file [/home/abi/fetcher/tmp/freeze_dried_data-2.0.0.tar.gz]
+[2024-05-05 10:27:05] INFO root fetch - processPackages [freeze-dried-data]: Remove: archive file [/home/abi/fetcher/tmp/freeze_dried_data-2.1.0.tar.gz]
+[2024-05-05 10:27:05] INFO root fetch - main [MainThread]: End processing [freeze-dried-data]: success
+[2024-05-05 10:27:05] INFO root fetch - main [MainThread]: Store serial: [23064123]
