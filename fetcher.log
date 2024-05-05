@@ -9253,3 +9253,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:32:28] INFO root fetch - processPackages [countryguess]: Remove: archive file [/home/abi/fetcher/tmp/countryguess-0.4.4.tar.gz]
 [2024-05-05 14:32:28] INFO root fetch - main [MainThread]: End processing [countryguess]: success
 [2024-05-05 14:32:28] INFO root fetch - main [MainThread]: Store serial: [23065453]
+[2024-05-05 14:34:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065453]
+[2024-05-05 14:34:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smb-sync
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-allauth-themes
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-components
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blankslate-python
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stigg-api-client
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dalle3-gen-save
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stigg-sidecar-sdk
+[2024-05-05 14:34:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dalle3-gen-save
+[2024-05-05 14:34:36] WARNING root fetch - processPackages [django-allauth-themes]: Skipping, unable to determine old version
+[2024-05-05 14:34:36] INFO root fetch - main [MainThread]: End processing [django-allauth-themes] error
+[2024-05-05 14:34:36] INFO root fetch - processPackages [blankslate-python]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [smb-sync]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [dalle3-gen-save]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [dalle3-gen-save]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [stigg-sidecar-sdk]: New version: [1.98.3] Old Version: [1.58.3]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [django-components]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-05-05 14:34:36] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/f3/4b/553447abb78bc6e521d59d441acdc9034e0b2de7314d5dfd4196001dc53e/blankslate_python-1.1.9.tar.gz
+[2024-05-05 14:34:36] INFO root fetch - processPackages [smb-sync]: Downloading https://files.pythonhosted.org/packages/7e/8d/31c5b09cd74390aadc129daab2bd0f8f3a0b1cce13760ded76f62014e330/smb_sync-0.0.1.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/d9/a9/0e17dfb6bc2c9ffafac974b36a0078d0df2730d82373e45392b15ca26fe1/django_components-0.9.1.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/35/42/ee637dfb922eb81b719b64fc0e429999448475d587e1ef4bc49d8b002328/dalle3_gen_save-0.1.0.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-sidecar-sdk]: Downloading https://files.pythonhosted.org/packages/52/c7/4645984c76d1b7fc1d8e9fb50bfa6195d5bec5587a6a42a3983064732688/stigg_sidecar_sdk-1.58.3.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/35/42/ee637dfb922eb81b719b64fc0e429999448475d587e1ef4bc49d8b002328/dalle3_gen_save-0.1.0.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [smb-sync]: Downloading https://files.pythonhosted.org/packages/04/55/c481bc944d846ba7501be1b695ff54aecdc4ee343527c872f18158795574/smb_sync-0.0.2.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/3a/41/8a842c3b817a8b7e72b9a1d7666c1d903f10327da0b1bbc44a356a081d01/blankslate_python-1.2.0.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [smb-sync]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [smb-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smb_sync-0.0.1.tar.gz tmp/smb_sync-0.0.2.tar.gz --markdown 20240505/s/smb-sync/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 14:34:37] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.1.9.tar.gz tmp/blankslate_python-1.2.0.tar.gz --markdown 20240505/b/blankslate-python/1.1.9-1.2.0/README.md --exclude *.pyd
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-sidecar-sdk]: Downloading https://files.pythonhosted.org/packages/13/f0/1dd45c52fa6933bcb6645fbd7719eaa7e9bcbde08fac2a852d9331e238e0/stigg_sidecar_sdk-1.98.3.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/65/e8/0e8988196545175d4d5f6aefdf065ee6ba25de22ca3e4a8203a38ed116f1/dalle3_gen_save-0.1.1.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/01/b6/7465ad9480fe781bc5c56d355a7b96cc21758c50d747830e87dcac29a4db/django_components-0.9.2.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/65/e8/0e8988196545175d4d5f6aefdf065ee6ba25de22ca3e4a8203a38ed116f1/dalle3_gen_save-0.1.1.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-sidecar-sdk]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-sidecar-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_sidecar_sdk-1.58.3.tar.gz tmp/stigg_sidecar_sdk-1.98.3.tar.gz --markdown 20240505/s/stigg-sidecar-sdk/1.58.3-1.98.3/README.md --exclude *.pyd
+[2024-05-05 14:34:37] INFO root fetch - processPackages [django-components]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [django-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_components-0.9.1.tar.gz tmp/django_components-0.9.2.tar.gz --markdown 20240505/d/django-components/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240505/s/stigg-api-client/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalle3_gen_save-0.1.0.tar.gz tmp/dalle3_gen_save-0.1.1.tar.gz --markdown 20240505/d/dalle3-gen-save/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: executing diffoscope
+[2024-05-05 14:34:37] INFO root fetch - processPackages [dalle3-gen-save]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalle3_gen_save-0.1.0.tar.gz tmp/dalle3_gen_save-0.1.1.tar.gz --markdown 20240505/d/dalle3-gen-save/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 14:34:38] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.1.9.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.0.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-05 14:34:38] INFO root fetch - processPackages [smb-sync]: Remove: archive file [/home/abi/fetcher/tmp/smb_sync-0.0.1.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - processPackages [smb-sync]: Remove: archive file [/home/abi/fetcher/tmp/smb_sync-0.0.2.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [smb-sync]: success
+[2024-05-05 14:34:38] INFO root fetch - processPackages [stigg-sidecar-sdk]: Remove: archive file [/home/abi/fetcher/tmp/stigg_sidecar_sdk-1.58.3.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - processPackages [stigg-sidecar-sdk]: Remove: archive file [/home/abi/fetcher/tmp/stigg_sidecar_sdk-1.98.3.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [stigg-sidecar-sdk]: success
+[2024-05-05 14:34:38] INFO root fetch - processPackages [dalle3-gen-save]: Remove: archive file [/home/abi/fetcher/tmp/dalle3_gen_save-0.1.0.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - processPackages [dalle3-gen-save]: Remove: archive file [/home/abi/fetcher/tmp/dalle3_gen_save-0.1.1.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [dalle3-gen-save]: success
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [dalle3-gen-save]: success
+[2024-05-05 14:34:38] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-05-05 14:34:38] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.1.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.2.tar.gz]
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: End processing [django-components]: success
+[2024-05-05 14:34:38] INFO root fetch - main [MainThread]: Store serial: [23065480]
