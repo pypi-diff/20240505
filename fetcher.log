@@ -5744,3 +5744,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:45:56] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
 [2024-05-05 09:45:56] INFO root fetch - main [MainThread]: End processing [bellek]: success
 [2024-05-05 09:45:56] INFO root fetch - main [MainThread]: Store serial: [23063941]
+[2024-05-05 09:47:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063941]
+[2024-05-05 09:48:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 09:48:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-core
+[2024-05-05 09:48:04] INFO root fetch - processPackages [pypomes-core]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-05 09:48:05] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/54/3b/d84b7f7aa29086b662b868abf7364a0e04ec41a7cd99798c1f0f50eeb84c/pypomes_core-0.9.6.tar.gz
+[2024-05-05 09:48:05] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/3c/af/cf63c6393e28500aac8ca8523de957855921f6642525a634e9b5e9a91210/pypomes_core-0.9.7.tar.gz
+[2024-05-05 09:48:05] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-05-05 09:48:05] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.9.6.tar.gz tmp/pypomes_core-0.9.7.tar.gz --markdown 20240505/p/pypomes-core/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-05 09:48:06] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.6.tar.gz]
+[2024-05-05 09:48:06] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.7.tar.gz]
+[2024-05-05 09:48:06] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-05-05 09:48:06] INFO root fetch - main [MainThread]: Store serial: [23063944]
