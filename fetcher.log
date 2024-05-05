@@ -17521,3 +17521,36 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:52:30] INFO root fetch - processPackages [a5]: Remove: archive file [/home/abi/fetcher/tmp/a5-0.0.4.tar.gz]
 [2024-05-05 23:52:30] INFO root fetch - main [MainThread]: End processing [a5]: success
 [2024-05-05 23:52:30] INFO root fetch - main [MainThread]: Store serial: [23069270]
+[2024-05-05 23:54:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069270]
+[2024-05-05 23:54:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 23:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cbor-diag
+[2024-05-05 23:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ntv-numpy
+[2024-05-05 23:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g4f
+[2024-05-05 23:54:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scReg2
+[2024-05-05 23:54:38] INFO root fetch - processPackages [ntv-numpy]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-05 23:54:38] INFO root fetch - processPackages [g4f]: New version: [0.3.0.9] Old Version: [0.3.0.8]
+[2024-05-05 23:54:39] WARNING root fetch - processPackages [scReg2]: Skipping, unable to determine old version
+[2024-05-05 23:54:39] INFO root fetch - main [MainThread]: End processing [scReg2] error
+[2024-05-05 23:54:39] INFO root fetch - processPackages [ntv-numpy]: Downloading https://files.pythonhosted.org/packages/60/d3/cbd59ab1ea1da456f7c7e205fd8ae2335bca68b5dc51f9938105ce36356c/ntv_numpy-0.1.2.tar.gz
+[2024-05-05 23:54:39] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/ab/68/1084c6062cc1cd17dfe90d2eac6ddc2c58a0e37c1a05ee819e43fc7336f9/g4f-0.3.0.8.tar.gz
+[2024-05-05 23:54:39] INFO root fetch - processPackages [cbor-diag]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-05 23:54:39] INFO root fetch - processPackages [cbor-diag]: Downloading https://files.pythonhosted.org/packages/94/87/29ce613f876cd0ceb99ed1db71f7e3d90460c1babd2133ce30f18d5f540d/cbor_diag-1.0.1.tar.gz
+[2024-05-05 23:54:39] INFO root fetch - processPackages [ntv-numpy]: Downloading https://files.pythonhosted.org/packages/66/41/e8dca9c611dcbc8331689f39780e619d45ed170f1705a82027b2ce859166/ntv_numpy-0.2.0.tar.gz
+[2024-05-05 23:54:39] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/8e/ad/50aebdb0621058ec246a8b2ca6dfc99245538fdf6cc5f51a677007b34bd2/g4f-0.3.0.9.tar.gz
+[2024-05-05 23:54:39] INFO root fetch - processPackages [ntv-numpy]: executing diffoscope
+[2024-05-05 23:54:39] INFO root fetch - processPackages [ntv-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntv_numpy-0.1.2.tar.gz tmp/ntv_numpy-0.2.0.tar.gz --markdown 20240505/n/ntv-numpy/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-05 23:54:39] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-05-05 23:54:39] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.3.0.8.tar.gz tmp/g4f-0.3.0.9.tar.gz --markdown 20240505/g/g4f/0.3.0.8-0.3.0.9/README.md --exclude *.pyd
+[2024-05-05 23:54:39] INFO root fetch - processPackages [cbor-diag]: Downloading https://files.pythonhosted.org/packages/f4/44/fb558a613986b247d4da58c631f64ec2351d327fe786d5cb9f864a2bd132/cbor_diag-1.0.2.tar.gz
+[2024-05-05 23:54:40] INFO root fetch - processPackages [cbor-diag]: executing diffoscope
+[2024-05-05 23:54:40] INFO root fetch - processPackages [cbor-diag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbor_diag-1.0.1.tar.gz tmp/cbor_diag-1.0.2.tar.gz --markdown 20240505/c/cbor-diag/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-05 23:54:40] INFO root fetch - processPackages [ntv-numpy]: Remove: archive file [/home/abi/fetcher/tmp/ntv_numpy-0.1.2.tar.gz]
+[2024-05-05 23:54:40] INFO root fetch - processPackages [ntv-numpy]: Remove: archive file [/home/abi/fetcher/tmp/ntv_numpy-0.2.0.tar.gz]
+[2024-05-05 23:54:40] INFO root fetch - main [MainThread]: End processing [ntv-numpy]: success
+[2024-05-05 23:54:40] INFO root fetch - processPackages [cbor-diag]: Remove: archive file [/home/abi/fetcher/tmp/cbor_diag-1.0.1.tar.gz]
+[2024-05-05 23:54:40] INFO root fetch - processPackages [cbor-diag]: Remove: archive file [/home/abi/fetcher/tmp/cbor_diag-1.0.2.tar.gz]
+[2024-05-05 23:54:40] INFO root fetch - main [MainThread]: End processing [cbor-diag]: success
+[2024-05-05 23:54:40] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.8.tar.gz]
+[2024-05-05 23:54:40] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.9.tar.gz]
+[2024-05-05 23:54:40] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-05-05 23:54:40] INFO root fetch - main [MainThread]: Store serial: [23069349]
