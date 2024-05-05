@@ -3632,3 +3632,27 @@
 [2024-05-05 06:07:52] INFO root fetch - processPackages [libem]: Remove: archive file [/home/abi/fetcher/tmp/libem-0.0.2.tar.gz]
 [2024-05-05 06:07:52] INFO root fetch - main [MainThread]: End processing [libem]: success
 [2024-05-05 06:07:52] INFO root fetch - main [MainThread]: Store serial: [23063032]
+[2024-05-05 06:09:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063032]
+[2024-05-05 06:10:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 06:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sopel-ai
+[2024-05-05 06:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: KTLKit
+[2024-05-05 06:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-geoacumen
+[2024-05-05 06:10:01] INFO root fetch - processPackages [sopel-ai]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 06:10:01] WARNING root fetch - processPackages [KTLKit]: Skipping, unable to determine old version
+[2024-05-05 06:10:01] INFO root fetch - main [MainThread]: End processing [KTLKit] error
+[2024-05-05 06:10:01] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.5.5] Old Version: [2024.4.7]
+[2024-05-05 06:10:01] INFO root fetch - processPackages [sopel-ai]: Downloading https://files.pythonhosted.org/packages/94/0c/c7ce8b2b9ec5f8dd9e1050d91c0dde7d08cb32b95f027359f069e2099c2f/sopel_ai-1.2.0-py3-none-any.whl
+[2024-05-05 06:10:01] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/f6/4d/d2bd3da5d4357004c515ec3a07f006b6e719414f1ed9f74e0e7d072f9f59/python-geoacumen-2024.4.7.tar.gz
+[2024-05-05 06:10:02] INFO root fetch - processPackages [sopel-ai]: Downloading https://files.pythonhosted.org/packages/7a/f6/dcb4cf2dacef952a000dceb55ac5b16dcdef177474768db3ed8ef1b019b8/sopel_ai-1.2.1-py3-none-any.whl
+[2024-05-05 06:10:02] INFO root fetch - processPackages [sopel-ai]: executing diffoscope
+[2024-05-05 06:10:02] INFO root fetch - processPackages [sopel-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_ai-1.2.0-py3-none-any.whl.zip tmp/sopel_ai-1.2.1-py3-none-any.whl.zip --markdown 20240505/s/sopel-ai/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 06:10:02] INFO root fetch - processPackages [sopel-ai]: Remove: archive file [/home/abi/fetcher/tmp/sopel_ai-1.2.0-py3-none-any.whl.zip]
+[2024-05-05 06:10:02] INFO root fetch - processPackages [sopel-ai]: Remove: archive file [/home/abi/fetcher/tmp/sopel_ai-1.2.1-py3-none-any.whl.zip]
+[2024-05-05 06:10:02] INFO root fetch - main [MainThread]: End processing [sopel-ai]: success
+[2024-05-05 06:10:03] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/90/c0/07d5db0508938cc316c7a276f6f70aa320c1da593c6ecb7a45cd1be82880/python-geoacumen-2024.5.5.tar.gz
+[2024-05-05 06:10:03] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-05-05 06:10:03] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2024.4.7.tar.gz tmp/python-geoacumen-2024.5.5.tar.gz --markdown 20240505/p/python-geoacumen/2024.4.7-2024.5.5/README.md --exclude *.pyd
+[2024-05-05 06:10:04] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
+[2024-05-05 06:10:04] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.5.5.tar.gz]
+[2024-05-05 06:10:04] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-05-05 06:10:04] INFO root fetch - main [MainThread]: Store serial: [23063043]
