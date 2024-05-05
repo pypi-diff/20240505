@@ -3160,3 +3160,38 @@
 [2024-05-05 05:13:10] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
 [2024-05-05 05:13:10] INFO root fetch - main [MainThread]: End processing [surfkit]: success
 [2024-05-05 05:13:10] INFO root fetch - main [MainThread]: Store serial: [23062870]
+[2024-05-05 05:15:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062870]
+[2024-05-05 05:15:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 05:17:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062870]
+[2024-05-05 05:17:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 05:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diaspora-event-sdk
+[2024-05-05 05:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: artemis-hunter
+[2024-05-05 05:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-cv-nightly
+[2024-05-05 05:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pywlroots
+[2024-05-05 05:17:24] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-05 05:17:24] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-05 05:17:24] INFO root fetch - processPackages [pywlroots]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 05:17:24] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/2f/9a/4a80ab50a0a7c85d9b047b5d679b1bd3d1d04d05e2b1add7197aeb018c8a/diaspora-event-sdk-0.2.5.tar.gz
+[2024-05-05 05:17:24] WARNING root fetch - processPackages [artemis-hunter]: Skipping, unable to determine old version
+[2024-05-05 05:17:24] INFO root fetch - main [MainThread]: End processing [artemis-hunter] error
+[2024-05-05 05:17:24] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-05 05:17:25] INFO root fetch - processPackages [pywlroots]: Downloading https://files.pythonhosted.org/packages/04/2c/2b8e1598804aa4ec0236ed5f3d40015f6ec0a85212d8b0bd36ae7728b017/pywlroots-0.2.8.tar.gz
+[2024-05-05 05:17:25] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/6c/79/90b5daca6e8700b6a5178fc91ee709b6afc226809c5a4acef29b99f768ff/diaspora-event-sdk-0.2.6.tar.gz
+[2024-05-05 05:17:25] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-05 05:17:25] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-05-05 05:17:25] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.2.5.tar.gz tmp/diaspora-event-sdk-0.2.6.tar.gz --markdown 20240505/d/diaspora-event-sdk/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-05 05:17:25] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-05 05:17:25] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240505/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-05 05:17:25] INFO root fetch - processPackages [pywlroots]: Downloading https://files.pythonhosted.org/packages/ed/3b/374aff31c2aaf618ea34e82553e535a849c409d10bc7b6a61a595cad01f6/pywlroots-0.2.9.tar.gz
+[2024-05-05 05:17:25] INFO root fetch - processPackages [pywlroots]: executing diffoscope
+[2024-05-05 05:17:25] INFO root fetch - processPackages [pywlroots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywlroots-0.2.8.tar.gz tmp/pywlroots-0.2.9.tar.gz --markdown 20240505/p/pywlroots/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-05 05:17:25] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.5.tar.gz]
+[2024-05-05 05:17:25] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.6.tar.gz]
+[2024-05-05 05:17:25] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-05-05 05:17:26] INFO root fetch - processPackages [pywlroots]: Remove: archive file [/home/abi/fetcher/tmp/pywlroots-0.2.8.tar.gz]
+[2024-05-05 05:17:26] INFO root fetch - processPackages [pywlroots]: Remove: archive file [/home/abi/fetcher/tmp/pywlroots-0.2.9.tar.gz]
+[2024-05-05 05:17:26] INFO root fetch - main [MainThread]: End processing [pywlroots]: success
+[2024-05-05 05:17:26] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-05 05:17:26] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-05 05:17:26] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-05 05:17:26] INFO root fetch - main [MainThread]: Store serial: [23062892]
