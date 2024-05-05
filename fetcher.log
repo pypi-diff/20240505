@@ -1815,3 +1815,36 @@
 [2024-05-05 02:48:26] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.3.8.tar.gz]
 [2024-05-05 02:48:26] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
 [2024-05-05 02:48:26] INFO root fetch - main [MainThread]: Store serial: [23062246]
+[2024-05-05 02:50:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062246]
+[2024-05-05 02:50:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 02:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-databrew-cicd
+[2024-05-05 02:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sysrev
+[2024-05-05 02:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taguchi
+[2024-05-05 02:50:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alphabetic
+[2024-05-05 02:50:44] INFO root fetch - processPackages [sysrev]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-05-05 02:50:44] INFO root fetch - processPackages [alphabetic]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 02:50:45] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-05 02:50:45] WARNING root fetch - processPackages [taguchi]: Skipping, unable to determine old version
+[2024-05-05 02:50:45] INFO root fetch - main [MainThread]: End processing [taguchi] error
+[2024-05-05 02:50:45] INFO root fetch - processPackages [sysrev]: Downloading https://files.pythonhosted.org/packages/77/52/0d280174882705c20081f1022529c5f679dc1986f23ccb31c9a7e14ee2e1/sysrev-1.3.5.tar.gz
+[2024-05-05 02:50:45] INFO root fetch - processPackages [alphabetic]: Downloading https://files.pythonhosted.org/packages/fb/5b/12b34207daeb1cfb68c0a00e412a8d5a7623a8f1d96213a47f6f5fe94047/alphabetic-0.0.1.tar.gz
+[2024-05-05 02:50:45] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-05-05 02:50:45] INFO root fetch - processPackages [alphabetic]: Downloading https://files.pythonhosted.org/packages/2e/0a/032c2d7edae2b39b729ca2687479bde3637d980c7e4c07a0260e3c12e7ba/alphabetic-0.0.2.tar.gz
+[2024-05-05 02:50:45] INFO root fetch - processPackages [sysrev]: Downloading https://files.pythonhosted.org/packages/82/f1/03862682f5059f7a5a80a0868c16d029d1dcfa67273a305dbc1b74837aaa/sysrev-1.3.6.tar.gz
+[2024-05-05 02:50:45] INFO root fetch - processPackages [sysrev]: executing diffoscope
+[2024-05-05 02:50:45] INFO root fetch - processPackages [sysrev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysrev-1.3.5.tar.gz tmp/sysrev-1.3.6.tar.gz --markdown 20240505/s/sysrev/1.3.5-1.3.6/README.md --exclude *.pyd
+[2024-05-05 02:50:45] INFO root fetch - processPackages [alphabetic]: executing diffoscope
+[2024-05-05 02:50:45] INFO root fetch - processPackages [alphabetic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphabetic-0.0.1.tar.gz tmp/alphabetic-0.0.2.tar.gz --markdown 20240505/a/alphabetic/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 02:50:45] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-05-05 02:50:45] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-05-05 02:50:45] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240505/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-05 02:50:46] INFO root fetch - processPackages [sysrev]: Remove: archive file [/home/abi/fetcher/tmp/sysrev-1.3.5.tar.gz]
+[2024-05-05 02:50:46] INFO root fetch - processPackages [sysrev]: Remove: archive file [/home/abi/fetcher/tmp/sysrev-1.3.6.tar.gz]
+[2024-05-05 02:50:46] INFO root fetch - main [MainThread]: End processing [sysrev]: success
+[2024-05-05 02:50:46] INFO root fetch - processPackages [alphabetic]: Remove: archive file [/home/abi/fetcher/tmp/alphabetic-0.0.1.tar.gz]
+[2024-05-05 02:50:46] INFO root fetch - processPackages [alphabetic]: Remove: archive file [/home/abi/fetcher/tmp/alphabetic-0.0.2.tar.gz]
+[2024-05-05 02:50:46] INFO root fetch - main [MainThread]: End processing [alphabetic]: success
+[2024-05-05 02:50:46] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-05-05 02:50:46] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-05-05 02:50:46] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-05-05 02:50:46] INFO root fetch - main [MainThread]: Store serial: [23062260]
