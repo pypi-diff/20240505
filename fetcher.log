@@ -6338,3 +6338,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:42:24] INFO root fetch - processPackages [nameless-deploy-tools]: Remove: archive file [/home/abi/fetcher/tmp/nameless-deploy-tools-1.99.tar.gz]
 [2024-05-05 10:42:24] INFO root fetch - main [MainThread]: End processing [nameless-deploy-tools]: success
 [2024-05-05 10:42:24] INFO root fetch - main [MainThread]: Store serial: [23064196]
+[2024-05-05 10:44:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064196]
+[2024-05-05 10:44:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 10:44:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djangocms-versioning
+[2024-05-05 10:44:35] INFO root fetch - processPackages [djangocms-versioning]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-05 10:44:35] INFO root fetch - processPackages [djangocms-versioning]: Downloading https://files.pythonhosted.org/packages/c7/a9/ab012a44fd40ad96a2e91865670465b9203f5359a7bc3bf5647867231b5f/djangocms-versioning-2.0.1.tar.gz
+[2024-05-05 10:44:35] INFO root fetch - processPackages [djangocms-versioning]: Downloading https://files.pythonhosted.org/packages/82/2d/fa8ce41aa4d50eed42b2b0c834aed4c1e1ee4736cbfe16462566be21af68/djangocms_versioning-2.0.2.tar.gz
+[2024-05-05 10:44:36] INFO root fetch - processPackages [djangocms-versioning]: executing diffoscope
+[2024-05-05 10:44:36] INFO root fetch - processPackages [djangocms-versioning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-versioning-2.0.1.tar.gz tmp/djangocms_versioning-2.0.2.tar.gz --markdown 20240505/d/djangocms-versioning/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-05 10:44:37] INFO root fetch - processPackages [djangocms-versioning]: Remove: archive file [/home/abi/fetcher/tmp/djangocms-versioning-2.0.1.tar.gz]
+[2024-05-05 10:44:37] INFO root fetch - processPackages [djangocms-versioning]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_versioning-2.0.2.tar.gz]
+[2024-05-05 10:44:37] INFO root fetch - main [MainThread]: End processing [djangocms-versioning]: success
+[2024-05-05 10:44:37] INFO root fetch - main [MainThread]: Store serial: [23064200]
