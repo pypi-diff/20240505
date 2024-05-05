@@ -1708,3 +1708,15 @@
 [2024-05-05 02:39:34] WARNING root fetch - processPackages [multiconnects]: Skipping, unable to determine old version
 [2024-05-05 02:39:34] INFO root fetch - main [MainThread]: End processing [multiconnects] error
 [2024-05-05 02:39:34] INFO root fetch - main [MainThread]: Store serial: [23062212]
+[2024-05-05 02:41:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062212]
+[2024-05-05 02:41:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 02:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alphabetic
+[2024-05-05 02:41:43] INFO root fetch - processPackages [alphabetic]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 02:41:43] INFO root fetch - processPackages [alphabetic]: Downloading https://files.pythonhosted.org/packages/fb/5b/12b34207daeb1cfb68c0a00e412a8d5a7623a8f1d96213a47f6f5fe94047/alphabetic-0.0.1.tar.gz
+[2024-05-05 02:41:43] INFO root fetch - processPackages [alphabetic]: Downloading https://files.pythonhosted.org/packages/2e/0a/032c2d7edae2b39b729ca2687479bde3637d980c7e4c07a0260e3c12e7ba/alphabetic-0.0.2.tar.gz
+[2024-05-05 02:41:43] INFO root fetch - processPackages [alphabetic]: executing diffoscope
+[2024-05-05 02:41:43] INFO root fetch - processPackages [alphabetic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphabetic-0.0.1.tar.gz tmp/alphabetic-0.0.2.tar.gz --markdown 20240505/a/alphabetic/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 02:41:44] INFO root fetch - processPackages [alphabetic]: Remove: archive file [/home/abi/fetcher/tmp/alphabetic-0.0.1.tar.gz]
+[2024-05-05 02:41:44] INFO root fetch - processPackages [alphabetic]: Remove: archive file [/home/abi/fetcher/tmp/alphabetic-0.0.2.tar.gz]
+[2024-05-05 02:41:44] INFO root fetch - main [MainThread]: End processing [alphabetic]: success
+[2024-05-05 02:41:44] INFO root fetch - main [MainThread]: Store serial: [23062215]
