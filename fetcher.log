@@ -4638,3 +4638,24 @@
 [2024-05-05 08:11:10] INFO root fetch - processPackages [generate-tools]: Remove: archive file [/home/abi/fetcher/tmp/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-05 08:11:10] INFO root fetch - main [MainThread]: End processing [generate-tools]: success
 [2024-05-05 08:11:10] INFO root fetch - main [MainThread]: Store serial: [23063470]
+[2024-05-05 08:13:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063470]
+[2024-05-05 08:13:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monisha
+[2024-05-05 08:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycolorecho
+[2024-05-05 08:13:19] INFO root fetch - processPackages [monisha]: New version: [0.0.66] Old Version: [0.0.65]
+[2024-05-05 08:13:19] INFO root fetch - processPackages [pycolorecho]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 08:13:19] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/5f/e5/05c995013e1132ca584f84187f39f0657da5a68b9af29411c7d88920d314/monisha-0.0.65.tar.gz
+[2024-05-05 08:13:19] INFO root fetch - processPackages [pycolorecho]: Downloading https://files.pythonhosted.org/packages/cd/7f/f062d097b0d7c2588e1819eb0f1a0b33960ee130069aaee55837f2e59fd4/pycolorecho-0.1.0-py3-none-any.whl
+[2024-05-05 08:13:19] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/16/96/ec7c55bef404ca43e269b0b621726609f6147d604c7f11034cf6860bc945/monisha-0.0.66.tar.gz
+[2024-05-05 08:13:19] INFO root fetch - processPackages [pycolorecho]: Downloading https://files.pythonhosted.org/packages/8d/3e/1f1a11b95bc2659ff4a1b0c903915bde47db4a9328f8c42e3cda7f784b38/pycolorecho-0.1.1-py3-none-any.whl
+[2024-05-05 08:13:19] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-05-05 08:13:19] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.65.tar.gz tmp/monisha-0.0.66.tar.gz --markdown 20240505/m/monisha/0.0.65-0.0.66/README.md --exclude *.pyd
+[2024-05-05 08:13:19] INFO root fetch - processPackages [pycolorecho]: executing diffoscope
+[2024-05-05 08:13:19] INFO root fetch - processPackages [pycolorecho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycolorecho-0.1.0-py3-none-any.whl.zip tmp/pycolorecho-0.1.1-py3-none-any.whl.zip --markdown 20240505/p/pycolorecho/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 08:13:20] INFO root fetch - processPackages [pycolorecho]: Remove: archive file [/home/abi/fetcher/tmp/pycolorecho-0.1.0-py3-none-any.whl.zip]
+[2024-05-05 08:13:20] INFO root fetch - processPackages [pycolorecho]: Remove: archive file [/home/abi/fetcher/tmp/pycolorecho-0.1.1-py3-none-any.whl.zip]
+[2024-05-05 08:13:20] INFO root fetch - main [MainThread]: End processing [pycolorecho]: success
+[2024-05-05 08:13:20] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.65.tar.gz]
+[2024-05-05 08:13:20] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.66.tar.gz]
+[2024-05-05 08:13:20] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-05-05 08:13:20] INFO root fetch - main [MainThread]: Store serial: [23063475]
