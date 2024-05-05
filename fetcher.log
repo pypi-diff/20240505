@@ -7726,3 +7726,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:28:13] INFO root fetch - processPackages [normal-position-combination]: Remove: archive file [/home/abi/fetcher/tmp/normal-position-combination-0.0.3.tar.gz]
 [2024-05-05 12:28:13] INFO root fetch - main [MainThread]: End processing [normal-position-combination]: success
 [2024-05-05 12:28:13] INFO root fetch - main [MainThread]: Store serial: [23064759]
+[2024-05-05 12:30:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064759]
+[2024-05-05 12:30:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 12:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mxersion
+[2024-05-05 12:30:25] WARNING root fetch - processPackages [mxersion]: Skipping, unable to determine old version
+[2024-05-05 12:30:25] INFO root fetch - main [MainThread]: End processing [mxersion] error
+[2024-05-05 12:30:25] INFO root fetch - main [MainThread]: Store serial: [23064764]
