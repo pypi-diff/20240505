@@ -17179,3 +17179,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:13:18] INFO root fetch - processPackages [pyams-app-msc]: Remove: archive file [/home/abi/fetcher/tmp/pyams_app_msc-1.99.3.tar.gz]
 [2024-05-05 23:13:18] INFO root fetch - main [MainThread]: End processing [pyams-app-msc]: success
 [2024-05-05 23:13:18] INFO root fetch - main [MainThread]: Store serial: [23069116]
+[2024-05-05 23:15:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069116]
+[2024-05-05 23:15:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 23:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rfproto
+[2024-05-05 23:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: microvault
+[2024-05-05 23:15:27] INFO root fetch - processPackages [rfproto]: New version: [0.0.6] Old Version: [0.0.2]
+[2024-05-05 23:15:27] INFO root fetch - processPackages [microvault]: New version: [0.2.32] Old Version: [0.2.31]
+[2024-05-05 23:15:27] INFO root fetch - processPackages [rfproto]: Downloading https://files.pythonhosted.org/packages/37/a5/1bc8a9965f2a6113a55c7e38fef08f6e59133c23c97b35229fedf2353f9f/rfproto-0.0.2.tar.gz
+[2024-05-05 23:15:27] INFO root fetch - processPackages [microvault]: Downloading https://files.pythonhosted.org/packages/60/ce/60ff8fb6facacd13e1319d53b1d98999885b9f40cf74918e3c90649561c2/microvault-0.2.31.tar.gz
+[2024-05-05 23:15:27] INFO root fetch - processPackages [rfproto]: Downloading https://files.pythonhosted.org/packages/97/1f/496158a1eabddb3cf5ad8bed82d4e55bc921176489faf3634da66ed89317/rfproto-0.0.6.tar.gz
+[2024-05-05 23:15:27] INFO root fetch - processPackages [microvault]: Downloading https://files.pythonhosted.org/packages/bb/95/7b447dd6964246935f4844dbd571ec59abb349adbc02e58b6b818b9bdeca/microvault-0.2.32.tar.gz
+[2024-05-05 23:15:27] INFO root fetch - processPackages [rfproto]: executing diffoscope
+[2024-05-05 23:15:27] INFO root fetch - processPackages [rfproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rfproto-0.0.2.tar.gz tmp/rfproto-0.0.6.tar.gz --markdown 20240505/r/rfproto/0.0.2-0.0.6/README.md --exclude *.pyd
+[2024-05-05 23:15:27] INFO root fetch - processPackages [microvault]: executing diffoscope
+[2024-05-05 23:15:27] INFO root fetch - processPackages [microvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microvault-0.2.31.tar.gz tmp/microvault-0.2.32.tar.gz --markdown 20240505/m/microvault/0.2.31-0.2.32/README.md --exclude *.pyd
+[2024-05-05 23:15:28] INFO root fetch - processPackages [microvault]: Remove: archive file [/home/abi/fetcher/tmp/microvault-0.2.31.tar.gz]
+[2024-05-05 23:15:28] INFO root fetch - processPackages [microvault]: Remove: archive file [/home/abi/fetcher/tmp/microvault-0.2.32.tar.gz]
+[2024-05-05 23:15:28] INFO root fetch - main [MainThread]: End processing [microvault]: success
+[2024-05-05 23:15:28] INFO root fetch - processPackages [rfproto]: Remove: archive file [/home/abi/fetcher/tmp/rfproto-0.0.2.tar.gz]
+[2024-05-05 23:15:28] INFO root fetch - processPackages [rfproto]: Remove: archive file [/home/abi/fetcher/tmp/rfproto-0.0.6.tar.gz]
+[2024-05-05 23:15:28] INFO root fetch - main [MainThread]: End processing [rfproto]: success
+[2024-05-05 23:15:28] INFO root fetch - main [MainThread]: Store serial: [23069123]
