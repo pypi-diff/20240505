@@ -4566,3 +4566,27 @@
 [2024-05-05 08:06:43] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.99.tar.gz]
 [2024-05-05 08:06:43] INFO root fetch - main [MainThread]: End processing [pypipr]: success
 [2024-05-05 08:06:43] INFO root fetch - main [MainThread]: Store serial: [23063441]
+[2024-05-05 08:08:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063441]
+[2024-05-05 08:08:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 08:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: generate-tools
+[2024-05-05 08:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: markcli
+[2024-05-05 08:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cae-cli
+[2024-05-05 08:08:53] INFO root fetch - processPackages [cae-cli]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 08:08:53] WARNING root fetch - processPackages [markcli]: Skipping, unable to determine old version
+[2024-05-05 08:08:53] INFO root fetch - main [MainThread]: End processing [markcli] error
+[2024-05-05 08:08:53] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/be/36/a50cd7206e03b1c170db6c5b48bd7ed531b5e753496e558312f7de0cb921/cae_cli-0.0.2.tar.gz
+[2024-05-05 08:08:53] INFO root fetch - processPackages [generate-tools]: New version: [0.1.2] Old Version: [0.1.1.dev4]
+[2024-05-05 08:08:54] INFO root fetch - processPackages [generate-tools]: Downloading https://files.pythonhosted.org/packages/03/30/c102f1c6d72af5efefb807246b602180a2f3ab4af9e9e5e22ee7b1d75ed2/generate_tools-0.1.1.dev4-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 08:08:54] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/19/f3/37970bf848b1b47cd5071384206056e0594586f399e02a788990a061d4b7/cae_cli-0.0.3.tar.gz
+[2024-05-05 08:08:54] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-05 08:08:54] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.0.2.tar.gz tmp/cae_cli-0.0.3.tar.gz --markdown 20240505/c/cae-cli/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 08:08:54] INFO root fetch - processPackages [generate-tools]: Downloading https://files.pythonhosted.org/packages/be/4d/dac25fe1ee8f13d3c87a48ec784b63d8bd30b45fcc0c31ecbffc41779990/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-05 08:08:54] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.2.tar.gz]
+[2024-05-05 08:08:54] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.3.tar.gz]
+[2024-05-05 08:08:54] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-05 08:08:55] INFO root fetch - processPackages [generate-tools]: executing diffoscope
+[2024-05-05 08:08:55] INFO root fetch - processPackages [generate-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generate_tools-0.1.1.dev4-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240505/g/generate-tools/0.1.1.dev4-0.1.2/README.md --exclude *.pyd
+[2024-05-05 08:08:58] INFO root fetch - processPackages [generate-tools]: Remove: archive file [/home/abi/fetcher/tmp/generate_tools-0.1.1.dev4-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-05 08:08:58] INFO root fetch - processPackages [generate-tools]: Remove: archive file [/home/abi/fetcher/tmp/generate_tools-0.1.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-05 08:08:58] INFO root fetch - main [MainThread]: End processing [generate-tools]: success
+[2024-05-05 08:08:58] INFO root fetch - main [MainThread]: Store serial: [23063453]
