@@ -4113,3 +4113,9 @@
 [2024-05-05 07:16:59] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-05-05 07:16:59] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-05-05 07:16:59] INFO root fetch - main [MainThread]: Store serial: [23063249]
+[2024-05-05 07:19:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063249]
+[2024-05-05 07:19:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 07:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-nets-core
+[2024-05-05 07:19:07] WARNING root fetch - processPackages [django-nets-core]: Skipping, unable to determine old version
+[2024-05-05 07:19:07] INFO root fetch - main [MainThread]: End processing [django-nets-core] error
+[2024-05-05 07:19:07] INFO root fetch - main [MainThread]: Store serial: [23063251]
