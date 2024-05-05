@@ -1929,3 +1929,18 @@
 [2024-05-05 02:59:45] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-05-05 02:59:45] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-05-05 02:59:45] INFO root fetch - main [MainThread]: Store serial: [23062296]
+[2024-05-05 03:01:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062296]
+[2024-05-05 03:01:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 03:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-nets-core
+[2024-05-05 03:01:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rime-sdk
+[2024-05-05 03:01:54] WARNING root fetch - processPackages [django-nets-core]: Skipping, unable to determine old version
+[2024-05-05 03:01:54] INFO root fetch - main [MainThread]: End processing [django-nets-core] error
+[2024-05-05 03:01:54] INFO root fetch - processPackages [rime-sdk]: New version: [2.8.0rc9] Old Version: [2.8.0rc8]
+[2024-05-05 03:01:54] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/5f/ee/9f99cee94313fd0846bc0b261c0a705f5b9f0b87d20d6934a77d616566e0/rime_sdk-2.8.0rc8.tar.gz
+[2024-05-05 03:01:54] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/82/d0/af2bc54a7ae81e59f924b38132b45b3fa131069dcddc38c084be863230b7/rime_sdk-2.8.0rc9.tar.gz
+[2024-05-05 03:01:55] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2024-05-05 03:01:55] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.8.0rc8.tar.gz tmp/rime_sdk-2.8.0rc9.tar.gz --markdown 20240505/r/rime-sdk/2.8.0rc8-2.8.0rc9/README.md --exclude *.pyd
+[2024-05-05 03:01:57] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc8.tar.gz]
+[2024-05-05 03:01:57] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc9.tar.gz]
+[2024-05-05 03:01:57] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2024-05-05 03:01:57] INFO root fetch - main [MainThread]: Store serial: [23062303]
