@@ -10237,3 +10237,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:33:05] INFO root fetch - processPackages [hdsr-pygithub]: Remove: archive file [/home/abi/fetcher/tmp/hdsr_pygithub-1.9.tar.gz]
 [2024-05-05 15:33:05] INFO root fetch - main [MainThread]: End processing [hdsr-pygithub]: success
 [2024-05-05 15:33:05] INFO root fetch - main [MainThread]: Store serial: [23065971]
+[2024-05-05 15:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065971]
+[2024-05-05 15:35:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 15:37:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065971]
+[2024-05-05 15:37:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytilpack
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inspyre-toolbox
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TP-VulnBox
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ODLabeler
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfatsecret
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ancpbids
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ancpbids]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-05 15:37:19] INFO root fetch - processPackages [inspyre-toolbox]: New version: [1.5.0] Old Version: [1.4.3]
+[2024-05-05 15:37:19] WARNING root fetch - processPackages [TP-VulnBox]: Skipping, unable to determine old version
+[2024-05-05 15:37:19] INFO root fetch - main [MainThread]: End processing [TP-VulnBox] error
+[2024-05-05 15:37:19] INFO root fetch - processPackages [pytilpack]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ancpbids]: Downloading https://files.pythonhosted.org/packages/93/0a/f44ba42a49dd36eb4dbcb0ae83107e73ebd3c1aa539d6eb7b48fdea48592/ancpbids-0.2.2.tar.gz
+[2024-05-05 15:37:19] WARNING root fetch - processPackages [pyfatsecret]: Skipping, unable to determine old version
+[2024-05-05 15:37:19] WARNING root fetch - processPackages [ODLabeler]: Skipping, unable to determine old version
+[2024-05-05 15:37:19] INFO root fetch - main [MainThread]: End processing [pyfatsecret] error
+[2024-05-05 15:37:19] INFO root fetch - main [MainThread]: End processing [ODLabeler] error
+[2024-05-05 15:37:19] INFO root fetch - processPackages [inspyre-toolbox]: Downloading https://files.pythonhosted.org/packages/db/00/803f5a701635e64601a7ec760878ccbd5f08f2935c048bf09b42cb052ce8/inspyre_toolbox-1.4.3.tar.gz
+[2024-05-05 15:37:19] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/ab/20/2cfdd9a8529c3f47b09b9e2b6520118649ebfa7b02a8e0cb16a9e9136279/pytilpack-0.2.3.tar.gz
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ancpbids]: Downloading https://files.pythonhosted.org/packages/8b/58/94abc38c881b4f33dcd578c223cc15c4c10725b9ef086d7045bd80ee1dc7/ancpbids-0.2.3.tar.gz
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ancpbids]: executing diffoscope
+[2024-05-05 15:37:19] INFO root fetch - processPackages [ancpbids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ancpbids-0.2.2.tar.gz tmp/ancpbids-0.2.3.tar.gz --markdown 20240505/a/ancpbids/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-05 15:37:19] INFO root fetch - processPackages [inspyre-toolbox]: Downloading https://files.pythonhosted.org/packages/41/61/e6135d198a7ffc2404d976424b5f9ac5d084919e2169d56a305705822995/inspyre_toolbox-1.5.0.tar.gz
+[2024-05-05 15:37:19] INFO root fetch - processPackages [pytilpack]: Downloading https://files.pythonhosted.org/packages/b6/34/652de762559a3358067373ade3e5d22a64f14443952b00c651d57ab9bda8/pytilpack-0.3.0.tar.gz
+[2024-05-05 15:37:20] INFO root fetch - processPackages [pytilpack]: executing diffoscope
+[2024-05-05 15:37:20] INFO root fetch - processPackages [pytilpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytilpack-0.2.3.tar.gz tmp/pytilpack-0.3.0.tar.gz --markdown 20240505/p/pytilpack/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-05-05 15:37:20] INFO root fetch - processPackages [inspyre-toolbox]: executing diffoscope
+[2024-05-05 15:37:20] INFO root fetch - processPackages [inspyre-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspyre_toolbox-1.4.3.tar.gz tmp/inspyre_toolbox-1.5.0.tar.gz --markdown 20240505/i/inspyre-toolbox/1.4.3-1.5.0/README.md --exclude *.pyd
+[2024-05-05 15:37:20] INFO root fetch - processPackages [ancpbids]: Remove: archive file [/home/abi/fetcher/tmp/ancpbids-0.2.2.tar.gz]
+[2024-05-05 15:37:20] INFO root fetch - processPackages [ancpbids]: Remove: archive file [/home/abi/fetcher/tmp/ancpbids-0.2.3.tar.gz]
+[2024-05-05 15:37:20] INFO root fetch - main [MainThread]: End processing [ancpbids]: success
+[2024-05-05 15:37:20] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.2.3.tar.gz]
+[2024-05-05 15:37:20] INFO root fetch - processPackages [pytilpack]: Remove: archive file [/home/abi/fetcher/tmp/pytilpack-0.3.0.tar.gz]
+[2024-05-05 15:37:20] INFO root fetch - main [MainThread]: End processing [pytilpack]: success
+[2024-05-05 15:37:20] INFO root fetch - processPackages [inspyre-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/inspyre_toolbox-1.4.3.tar.gz]
+[2024-05-05 15:37:20] INFO root fetch - processPackages [inspyre-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/inspyre_toolbox-1.5.0.tar.gz]
+[2024-05-05 15:37:20] INFO root fetch - main [MainThread]: End processing [inspyre-toolbox]: success
+[2024-05-05 15:37:20] INFO root fetch - main [MainThread]: Store serial: [23065996]
