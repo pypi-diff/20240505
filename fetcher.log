@@ -12053,3 +12053,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:35:57] INFO root fetch - processPackages [py-pkg-logging]: Remove: archive file [/home/abi/fetcher/tmp/py_pkg_logging-0.0.2.tar.gz]
 [2024-05-05 17:35:57] INFO root fetch - main [MainThread]: End processing [py-pkg-logging]: success
 [2024-05-05 17:35:57] INFO root fetch - main [MainThread]: Store serial: [23066806]
+[2024-05-05 17:38:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066806]
+[2024-05-05 17:38:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 17:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coherent.build
+[2024-05-05 17:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: staging-cacao-accounting-desktop
+[2024-05-05 17:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xcloudClients
+[2024-05-05 17:38:05] INFO root fetch - processPackages [coherent.build]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-05 17:38:05] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/8a/a7/e6ee6f7cfc801b397eedee4cce4f733c44a11057997dc59386a9d1551809/coherent_build-0.2.3.tar.gz
+[2024-05-05 17:38:05] WARNING root fetch - processPackages [staging-cacao-accounting-desktop]: Skipping, unable to determine old version
+[2024-05-05 17:38:05] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting-desktop] error
+[2024-05-05 17:38:05] INFO root fetch - processPackages [xcloudClients]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-05 17:38:06] INFO root fetch - processPackages [xcloudClients]: Downloading https://files.pythonhosted.org/packages/a0/61/1098268bc9a281fcf8c2021b6e8206ee0709e66b622cbab8fcce36ba5026/xcloudClients-0.2.0.tar.gz
+[2024-05-05 17:38:06] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/f1/5f/427ccd10509be8d8f978f995b77721defe416ee35a7dc2c02609209e9e77/coherent_build-0.2.4.tar.gz
+[2024-05-05 17:38:06] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-05 17:38:06] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.2.3.tar.gz tmp/coherent_build-0.2.4.tar.gz --markdown 20240505/c/coherent.build/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-05 17:38:06] INFO root fetch - processPackages [xcloudClients]: Downloading https://files.pythonhosted.org/packages/84/55/800d240f01649e3777b2c7c2933d2568e1b7c91d0e8a79d17c046891fdf5/xcloudClients-0.3.0.tar.gz
+[2024-05-05 17:38:06] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.3.tar.gz]
+[2024-05-05 17:38:06] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.4.tar.gz]
+[2024-05-05 17:38:06] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-05 17:38:07] INFO root fetch - processPackages [xcloudClients]: executing diffoscope
+[2024-05-05 17:38:07] INFO root fetch - processPackages [xcloudClients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcloudClients-0.2.0.tar.gz tmp/xcloudClients-0.3.0.tar.gz --markdown 20240505/x/xcloudClients/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-05 17:38:08] INFO root fetch - processPackages [xcloudClients]: Remove: archive file [/home/abi/fetcher/tmp/xcloudClients-0.2.0.tar.gz]
+[2024-05-05 17:38:08] INFO root fetch - processPackages [xcloudClients]: Remove: archive file [/home/abi/fetcher/tmp/xcloudClients-0.3.0.tar.gz]
+[2024-05-05 17:38:08] INFO root fetch - main [MainThread]: End processing [xcloudClients]: success
+[2024-05-05 17:38:08] INFO root fetch - main [MainThread]: Store serial: [23066817]
