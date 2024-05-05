@@ -2248,3 +2248,33 @@
 [2024-05-05 03:32:10] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.9.tar.gz]
 [2024-05-05 03:32:10] INFO root fetch - main [MainThread]: End processing [multiconnects]: success
 [2024-05-05 03:32:10] INFO root fetch - main [MainThread]: Store serial: [23062457]
+[2024-05-05 03:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062457]
+[2024-05-05 03:34:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 03:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shellcrafter
+[2024-05-05 03:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qrawl
+[2024-05-05 03:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bttc
+[2024-05-05 03:34:18] INFO root fetch - processPackages [bttc]: New version: [0.0.77] Old Version: [0.0.76]
+[2024-05-05 03:34:18] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/c6/25/51781960caa635d05cef34c984b3655481ca3f23b6c048cfb9b7a674d61c/bttc-0.0.76.tar.gz
+[2024-05-05 03:34:18] INFO root fetch - processPackages [shellcrafter]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-05 03:34:18] INFO root fetch - processPackages [qrawl]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 03:34:18] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/95/24/f534e89b1dedebae75559db59ce112e357ce4778cb88c1f09ecc88ad72ab/qrawl-0.1.8.tar.gz
+[2024-05-05 03:34:18] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/ef/e3/6572814424c104526e97cff7a6acf55c8ff7e85fc209ce7670c0726c560f/shellcrafter-1.1.2.tar.gz
+[2024-05-05 03:34:18] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/e4/75/0e27f752d7f3ba2b4bb2cdb649c0364ce14fc6b9cd4f7a77abefa784ee42/bttc-0.0.77.tar.gz
+[2024-05-05 03:34:19] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-05-05 03:34:19] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.76.tar.gz tmp/bttc-0.0.77.tar.gz --markdown 20240505/b/bttc/0.0.76-0.0.77/README.md --exclude *.pyd
+[2024-05-05 03:34:19] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/21/e5/e3d938a80684f6995f276ac6b82ae70381bef3a51512dd69fb6d626f386d/shellcrafter-1.1.3.tar.gz
+[2024-05-05 03:34:19] INFO root fetch - processPackages [qrawl]: Downloading https://files.pythonhosted.org/packages/d8/60/f0f85eebfb560a8f2c94cf5f5756e54fb21b3856424d08079ff45eebcee4/qrawl-0.1.9.tar.gz
+[2024-05-05 03:34:19] INFO root fetch - processPackages [qrawl]: executing diffoscope
+[2024-05-05 03:34:19] INFO root fetch - processPackages [qrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qrawl-0.1.8.tar.gz tmp/qrawl-0.1.9.tar.gz --markdown 20240505/q/qrawl/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 03:34:19] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2024-05-05 03:34:19] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.1.2.tar.gz tmp/shellcrafter-1.1.3.tar.gz --markdown 20240505/s/shellcrafter/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-05 03:34:19] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.76.tar.gz]
+[2024-05-05 03:34:19] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.77.tar.gz]
+[2024-05-05 03:34:19] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-05-05 03:34:19] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.1.2.tar.gz]
+[2024-05-05 03:34:19] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.1.3.tar.gz]
+[2024-05-05 03:34:19] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2024-05-05 03:34:19] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.1.8.tar.gz]
+[2024-05-05 03:34:19] INFO root fetch - processPackages [qrawl]: Remove: archive file [/home/abi/fetcher/tmp/qrawl-0.1.9.tar.gz]
+[2024-05-05 03:34:19] INFO root fetch - main [MainThread]: End processing [qrawl]: success
+[2024-05-05 03:34:19] INFO root fetch - main [MainThread]: Store serial: [23062463]
