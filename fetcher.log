@@ -16622,3 +16622,18 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:29:38] INFO root fetch - processPackages [vodesfunc]: Remove: archive file [/home/abi/fetcher/tmp/vodesfunc-1.6.1.tar.gz]
 [2024-05-05 22:29:38] INFO root fetch - main [MainThread]: End processing [vodesfunc]: success
 [2024-05-05 22:29:38] INFO root fetch - main [MainThread]: Store serial: [23068865]
+[2024-05-05 22:31:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068865]
+[2024-05-05 22:31:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 22:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:31:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zed-cli
+[2024-05-05 22:31:47] INFO root fetch - processPackages [sqlalchemy-multilingual]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 22:31:47] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/a7/46/ac5a6349648681b7151b4519797bb595cc49108204bb8aff6cba1eb12f0b/sqlalchemy-multilingual-0.0.3.tar.gz
+[2024-05-05 22:31:47] WARNING root fetch - processPackages [zed-cli]: Skipping, unable to determine old version
+[2024-05-05 22:31:47] INFO root fetch - main [MainThread]: End processing [zed-cli] error
+[2024-05-05 22:31:47] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/73/af/2385eb6b1a11aa95dfb20a30c78b83793094ad013f0135ce54eb4bcf8c2f/sqlalchemy-multilingual-0.0.4.tar.gz
+[2024-05-05 22:31:47] INFO root fetch - processPackages [sqlalchemy-multilingual]: executing diffoscope
+[2024-05-05 22:31:47] INFO root fetch - processPackages [sqlalchemy-multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-multilingual-0.0.3.tar.gz tmp/sqlalchemy-multilingual-0.0.4.tar.gz --markdown 20240505/s/sqlalchemy-multilingual/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 22:31:48] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.3.tar.gz]
+[2024-05-05 22:31:48] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.4.tar.gz]
+[2024-05-05 22:31:48] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
+[2024-05-05 22:31:48] INFO root fetch - main [MainThread]: Store serial: [23068874]
