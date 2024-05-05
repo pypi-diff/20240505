@@ -15634,3 +15634,39 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:30:29] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-05-05 21:30:29] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-05 21:30:29] INFO root fetch - main [MainThread]: Store serial: [23068441]
+[2024-05-05 21:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068441]
+[2024-05-05 21:32:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 21:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odlabel
+[2024-05-05 21:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pin-generator-and-validator
+[2024-05-05 21:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamdal-protos
+[2024-05-05 21:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flash1dkmeans
+[2024-05-05 21:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyvelop
+[2024-05-05 21:32:38] INFO root fetch - processPackages [flash1dkmeans]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 21:32:38] WARNING root fetch - processPackages [odlabel]: Skipping, unable to determine old version
+[2024-05-05 21:32:38] INFO root fetch - main [MainThread]: End processing [odlabel] error
+[2024-05-05 21:32:38] INFO root fetch - processPackages [flash1dkmeans]: Downloading https://files.pythonhosted.org/packages/ce/4e/1e3959eb6381f45fb45fa596a4158e0d5fcd62cfe3525334055edd045e9b/flash1dkmeans-0.0.3.tar.gz
+[2024-05-05 21:32:38] WARNING root fetch - processPackages [pin-generator-and-validator]: Skipping, unable to determine old version
+[2024-05-05 21:32:38] INFO root fetch - main [MainThread]: End processing [pin-generator-and-validator] error
+[2024-05-05 21:32:38] INFO root fetch - processPackages [pyvelop]: New version: [2024.5.1] Old Version: [2024.4.1]
+[2024-05-05 21:32:38] INFO root fetch - processPackages [streamdal-protos]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 21:32:39] INFO root fetch - processPackages [streamdal-protos]: Downloading https://files.pythonhosted.org/packages/9a/85/875a0cc63e8eaf03e7f69179dd43e59be5de746f533facf0e93f83fe7733/streamdal-protos-0.1.8.tar.gz
+[2024-05-05 21:32:39] INFO root fetch - processPackages [pyvelop]: Downloading https://files.pythonhosted.org/packages/2f/06/16b4d1af2eb82f856be809b708fe56ffec4f204756af5f908c0b3aa5c3c5/pyvelop-2024.4.1.tar.gz
+[2024-05-05 21:32:39] INFO root fetch - processPackages [flash1dkmeans]: Downloading https://files.pythonhosted.org/packages/b3/50/90053ab4f0d7ee7cbad56af55e87109fbe9b035b28da8ca36e55173d753a/flash1dkmeans-0.0.4.tar.gz
+[2024-05-05 21:32:39] INFO root fetch - processPackages [flash1dkmeans]: executing diffoscope
+[2024-05-05 21:32:39] INFO root fetch - processPackages [flash1dkmeans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash1dkmeans-0.0.3.tar.gz tmp/flash1dkmeans-0.0.4.tar.gz --markdown 20240505/f/flash1dkmeans/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 21:32:39] INFO root fetch - processPackages [pyvelop]: Downloading https://files.pythonhosted.org/packages/a7/55/8dd1873163079fdc083bd29acefa17ec8305c25acdb68bfeea44ee8b0722/pyvelop-2024.5.1.tar.gz
+[2024-05-05 21:32:39] INFO root fetch - processPackages [streamdal-protos]: Downloading https://files.pythonhosted.org/packages/ff/9a/d64c17f9a456cd7f5e0c324fea4495da769fdfd48b5f1db3436a44190bfa/streamdal-protos-0.1.9.tar.gz
+[2024-05-05 21:32:39] INFO root fetch - processPackages [streamdal-protos]: executing diffoscope
+[2024-05-05 21:32:39] INFO root fetch - processPackages [streamdal-protos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamdal-protos-0.1.8.tar.gz tmp/streamdal-protos-0.1.9.tar.gz --markdown 20240505/s/streamdal-protos/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 21:32:39] INFO root fetch - processPackages [pyvelop]: executing diffoscope
+[2024-05-05 21:32:39] INFO root fetch - processPackages [pyvelop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvelop-2024.4.1.tar.gz tmp/pyvelop-2024.5.1.tar.gz --markdown 20240505/p/pyvelop/2024.4.1-2024.5.1/README.md --exclude *.pyd
+[2024-05-05 21:32:40] INFO root fetch - processPackages [flash1dkmeans]: Remove: archive file [/home/abi/fetcher/tmp/flash1dkmeans-0.0.3.tar.gz]
+[2024-05-05 21:32:40] INFO root fetch - processPackages [flash1dkmeans]: Remove: archive file [/home/abi/fetcher/tmp/flash1dkmeans-0.0.4.tar.gz]
+[2024-05-05 21:32:40] INFO root fetch - main [MainThread]: End processing [flash1dkmeans]: success
+[2024-05-05 21:32:40] INFO root fetch - processPackages [streamdal-protos]: Remove: archive file [/home/abi/fetcher/tmp/streamdal-protos-0.1.8.tar.gz]
+[2024-05-05 21:32:40] INFO root fetch - processPackages [streamdal-protos]: Remove: archive file [/home/abi/fetcher/tmp/streamdal-protos-0.1.9.tar.gz]
+[2024-05-05 21:32:40] INFO root fetch - main [MainThread]: End processing [streamdal-protos]: success
+[2024-05-05 21:32:40] INFO root fetch - processPackages [pyvelop]: Remove: archive file [/home/abi/fetcher/tmp/pyvelop-2024.4.1.tar.gz]
+[2024-05-05 21:32:40] INFO root fetch - processPackages [pyvelop]: Remove: archive file [/home/abi/fetcher/tmp/pyvelop-2024.5.1.tar.gz]
+[2024-05-05 21:32:40] INFO root fetch - main [MainThread]: End processing [pyvelop]: success
+[2024-05-05 21:32:40] INFO root fetch - main [MainThread]: Store serial: [23068460]
