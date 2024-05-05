@@ -8124,3 +8124,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 13:11:45] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-05 13:11:45] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-05 13:11:45] INFO root fetch - main [MainThread]: Store serial: [23064981]
+[2024-05-05 13:13:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064981]
+[2024-05-05 13:13:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 13:13:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pchjlib
+[2024-05-05 13:13:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb-nightly
+[2024-05-05 13:13:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fnug
+[2024-05-05 13:13:53] INFO root fetch - processPackages [pchjlib]: New version: [0.0.3.8] Old Version: [0.0.3.7]
+[2024-05-05 13:13:53] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-05-05 13:13:53] INFO root fetch - processPackages [pchjlib]: Downloading https://files.pythonhosted.org/packages/82/8e/2505ef81a4b2e62f0cc0904319ae3b2fb41c4a70f1fd89c76601e218bb90/pchjlib-0.0.3.7.tar.gz
+[2024-05-05 13:13:53] INFO root fetch - processPackages [fnug]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 13:13:53] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-05-05 13:13:54] INFO root fetch - processPackages [fnug]: Downloading https://files.pythonhosted.org/packages/4e/fe/42c768dcfa3e058b7d7feb28de8b034a85fcc8e49b2db8fde784c9f1dc29/fnug-0.0.8.tar.gz
+[2024-05-05 13:13:54] INFO root fetch - processPackages [pchjlib]: Downloading https://files.pythonhosted.org/packages/f9/7a/03e22221ad9f7e4e7d00a3fd287fcf09dfb7e5a0e310f3c75f2a453bc3ae/pchjlib-0.0.3.8.tar.gz
+[2024-05-05 13:13:54] INFO root fetch - processPackages [pchjlib]: executing diffoscope
+[2024-05-05 13:13:54] INFO root fetch - processPackages [pchjlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pchjlib-0.0.3.7.tar.gz tmp/pchjlib-0.0.3.8.tar.gz --markdown 20240505/p/pchjlib/0.0.3.7-0.0.3.8/README.md --exclude *.pyd
+[2024-05-05 13:13:54] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-05-05 13:13:54] INFO root fetch - processPackages [fnug]: Downloading https://files.pythonhosted.org/packages/9f/3d/4df3bef004824ac77994455ffea8c4b3c00a23049e4e98dacbc02e046773/fnug-0.0.9.tar.gz
+[2024-05-05 13:13:54] INFO root fetch - processPackages [fnug]: executing diffoscope
+[2024-05-05 13:13:54] INFO root fetch - processPackages [fnug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnug-0.0.8.tar.gz tmp/fnug-0.0.9.tar.gz --markdown 20240505/f/fnug/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 13:13:54] INFO root fetch - processPackages [pchjlib]: Remove: archive file [/home/abi/fetcher/tmp/pchjlib-0.0.3.7.tar.gz]
+[2024-05-05 13:13:54] INFO root fetch - processPackages [pchjlib]: Remove: archive file [/home/abi/fetcher/tmp/pchjlib-0.0.3.8.tar.gz]
+[2024-05-05 13:13:54] INFO root fetch - main [MainThread]: End processing [pchjlib]: success
+[2024-05-05 13:13:54] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-05-05 13:13:54] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240505/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-05-05 13:13:55] INFO root fetch - processPackages [fnug]: Remove: archive file [/home/abi/fetcher/tmp/fnug-0.0.8.tar.gz]
+[2024-05-05 13:13:55] INFO root fetch - processPackages [fnug]: Remove: archive file [/home/abi/fetcher/tmp/fnug-0.0.9.tar.gz]
+[2024-05-05 13:13:55] INFO root fetch - main [MainThread]: End processing [fnug]: success
+[2024-05-05 13:13:56] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-05-05 13:13:56] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-05-05 13:13:56] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-05-05 13:13:56] INFO root fetch - main [MainThread]: Store serial: [23064991]
