@@ -1741,3 +1741,33 @@
 [2024-05-05 02:43:54] INFO root fetch - processPackages [TreeSAK]: Remove: archive file [/home/abi/fetcher/tmp/TreeSAK-1.9.2.tar.gz]
 [2024-05-05 02:43:54] INFO root fetch - main [MainThread]: End processing [TreeSAK]: success
 [2024-05-05 02:43:54] INFO root fetch - main [MainThread]: Store serial: [23062222]
+[2024-05-05 02:45:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062222]
+[2024-05-05 02:46:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 02:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eidolon-ai-sdk
+[2024-05-05 02:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfds-nightly
+[2024-05-05 02:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multiconnects
+[2024-05-05 02:46:02] INFO root fetch - processPackages [multiconnects]: New version: [2.34.8] Old Version: [2.34.7]
+[2024-05-05 02:46:02] INFO root fetch - processPackages [eidolon-ai-sdk]: New version: [0.1.46] Old Version: [0.1.45]
+[2024-05-05 02:46:02] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405040044] Old Version: [4.9.4.dev202405030044]
+[2024-05-05 02:46:02] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/e7/5b/183a96c6a66f8532bf81cd261cea12f6488e927ff8ed59603d5644aa897b/eidolon_ai_sdk-0.1.45.tar.gz
+[2024-05-05 02:46:02] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/2d/fd/292e1858f353f66d834f5419a352754870f91d17d1fd78e75241c0db0b51/tfds-nightly-4.9.4.dev202405030044.tar.gz
+[2024-05-05 02:46:02] INFO root fetch - processPackages [multiconnects]: Downloading https://files.pythonhosted.org/packages/4d/9f/c992faa21a1b923e1be66439ba5878cda47ef017985ca1774266f6fa5151/multiconnects-2.34.7.tar.gz
+[2024-05-05 02:46:03] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/ed/af/1ab427284a2a623a6dfef4d9219f1805c0fc92a4720c55075e4b1a9aafb9/eidolon_ai_sdk-0.1.46.tar.gz
+[2024-05-05 02:46:03] INFO root fetch - processPackages [multiconnects]: Downloading https://files.pythonhosted.org/packages/ea/68/69ab32d5de939c5c369becb16ab181b05f4fbb61d809af9d6a14036fce73/multiconnects-2.34.8.tar.gz
+[2024-05-05 02:46:03] INFO root fetch - processPackages [eidolon-ai-sdk]: executing diffoscope
+[2024-05-05 02:46:03] INFO root fetch - processPackages [eidolon-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_sdk-0.1.45.tar.gz tmp/eidolon_ai_sdk-0.1.46.tar.gz --markdown 20240505/e/eidolon-ai-sdk/0.1.45-0.1.46/README.md --exclude *.pyd
+[2024-05-05 02:46:03] INFO root fetch - processPackages [multiconnects]: executing diffoscope
+[2024-05-05 02:46:03] INFO root fetch - processPackages [multiconnects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiconnects-2.34.7.tar.gz tmp/multiconnects-2.34.8.tar.gz --markdown 20240505/m/multiconnects/2.34.7-2.34.8/README.md --exclude *.pyd
+[2024-05-05 02:46:03] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/5a/72/03c9ea805fbadbbe3421441b77c499961022f3314870de16cfbc48b48670/tfds-nightly-4.9.4.dev202405040044.tar.gz
+[2024-05-05 02:46:03] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-05 02:46:03] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405030044.tar.gz tmp/tfds-nightly-4.9.4.dev202405040044.tar.gz --markdown 20240505/t/tfds-nightly/4.9.4.dev202405030044-4.9.4.dev202405040044/README.md --exclude *.pyd
+[2024-05-05 02:46:04] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.7.tar.gz]
+[2024-05-05 02:46:04] INFO root fetch - processPackages [multiconnects]: Remove: archive file [/home/abi/fetcher/tmp/multiconnects-2.34.8.tar.gz]
+[2024-05-05 02:46:04] INFO root fetch - main [MainThread]: End processing [multiconnects]: success
+[2024-05-05 02:46:04] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.45.tar.gz]
+[2024-05-05 02:46:04] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.46.tar.gz]
+[2024-05-05 02:46:04] INFO root fetch - main [MainThread]: End processing [eidolon-ai-sdk]: success
+[2024-05-05 02:46:12] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405030044.tar.gz]
+[2024-05-05 02:46:12] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405040044.tar.gz]
+[2024-05-05 02:46:12] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-05 02:46:12] INFO root fetch - main [MainThread]: Store serial: [23062230]
