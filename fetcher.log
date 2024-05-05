@@ -12376,3 +12376,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:57:52] INFO root fetch - processPackages [qtconsole]: Remove: archive file [/home/abi/fetcher/tmp/qtconsole-5.5.1.tar.gz]
 [2024-05-05 17:57:52] INFO root fetch - main [MainThread]: End processing [qtconsole]: success
 [2024-05-05 17:57:52] INFO root fetch - main [MainThread]: Store serial: [23066916]
+[2024-05-05 17:59:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066916]
+[2024-05-05 18:00:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 18:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: err-aprs-backend
+[2024-05-05 18:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lego-handlers
+[2024-05-05 18:00:01] INFO root fetch - processPackages [lego-handlers]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-05 18:00:01] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/fc/7f/ec2320e716855cc977c3bb3c38780d41eab6d3940b48b9f234849b514138/lego_handlers-1.1.0.tar.gz
+[2024-05-05 18:00:01] INFO root fetch - processPackages [err-aprs-backend]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-05 18:00:01] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/0d/cd/d2da717215943bbd89e9633e9dbbcc327170537b5bfb34e948dcc19245a1/err_aprs_backend-0.3.0.tar.gz
+[2024-05-05 18:00:01] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c3/98/f4cb763bb728a247c80425c615216fb093d0141630d06fe70e90f169481b/lego_handlers-1.1.1.tar.gz
+[2024-05-05 18:00:01] INFO root fetch - processPackages [lego-handlers]: executing diffoscope
+[2024-05-05 18:00:01] INFO root fetch - processPackages [lego-handlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lego_handlers-1.1.0.tar.gz tmp/lego_handlers-1.1.1.tar.gz --markdown 20240505/l/lego-handlers/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-05 18:00:01] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/79/71/965c5dedd01ecdc5f82669aa92da6a1a093d759254661191f7f9383cc011/err_aprs_backend-0.4.0.tar.gz
+[2024-05-05 18:00:02] INFO root fetch - processPackages [err-aprs-backend]: executing diffoscope
+[2024-05-05 18:00:02] INFO root fetch - processPackages [err-aprs-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/err_aprs_backend-0.3.0.tar.gz tmp/err_aprs_backend-0.4.0.tar.gz --markdown 20240505/e/err-aprs-backend/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-05 18:00:02] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.0.tar.gz]
+[2024-05-05 18:00:02] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.1.tar.gz]
+[2024-05-05 18:00:02] INFO root fetch - main [MainThread]: End processing [lego-handlers]: success
+[2024-05-05 18:00:02] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.3.0.tar.gz]
+[2024-05-05 18:00:02] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.4.0.tar.gz]
+[2024-05-05 18:00:02] INFO root fetch - main [MainThread]: End processing [err-aprs-backend]: success
+[2024-05-05 18:00:02] INFO root fetch - main [MainThread]: Store serial: [23066920]
