@@ -14531,3 +14531,69 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:20:33] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.5.3.tar.gz]
 [2024-05-05 20:20:33] INFO root fetch - main [MainThread]: End processing [heaserver]: success
 [2024-05-05 20:20:33] INFO root fetch - main [MainThread]: Store serial: [23067851]
+[2024-05-05 20:22:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067851]
+[2024-05-05 20:22:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web-ui-helper
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEDAA.Reports
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: echovault
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gammarers.aws-secure-vpc-bucket
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ryutils
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-osmosis
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gammarers.aws-secure-frontend-web-app-cloudfront-distribution
+[2024-05-05 20:22:42] INFO root fetch - processPackages [web-ui-helper]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ryutils]: New version: [4.1.3] Old Version: [4.1.2]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [echovault]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [dbt-osmosis]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [pyEDAA.Reports]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-05 20:22:42] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/d8/83/b537e25eef953263293fc609e829c4c00d3b45bc10b72602f78d879295bf/web-ui-helper-0.0.4.tar.gz
+[2024-05-05 20:22:42] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/2f/70/a46c208a5a0ee17ab31d129b43fbf3544de48ecf18afaab9675f7fa9b94a/ryutils-4.1.2.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/0f/c9/6c6dbaaf8c7557d931b0476e54e491375b30e66d6c141d7240caffbd76e3/gammarers.aws-secure-vpc-bucket-1.3.1.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [echovault]: Downloading https://files.pythonhosted.org/packages/29/2c/7a7fe86b3e6a37d0de2feb8cff9254ef94293b64195a3bac141e548a0cb0/echovault-0.2.3.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/e7/d5/3fc940351b795acb77045e01ada251e3ce6f73612fd2562e02b2236fa6ae/pyedaa_reports-0.5.2.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/3a/70/51da2988878f83e128896c7590d1593e74b7358fb2850534c3e54812d9e9/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.1.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [dbt-osmosis]: Downloading https://files.pythonhosted.org/packages/58/6d/6065b954fa2e9197c6c66eda6a5f68a925bfd3e928477828ce1bb1396a6f/dbt-osmosis-0.9.7.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/4f/ca/d47df2db4978d125c7aaa77c29a21a4a6aefbf1b8a305c080a6a32f96b30/ryutils-4.1.3.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [web-ui-helper]: Downloading https://files.pythonhosted.org/packages/a5/4c/ed245156e4fda2f489a44c81d8d26fc2dd10036053d44336e6ddd6f16e59/web-ui-helper-0.0.5.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [web-ui-helper]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [web-ui-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-ui-helper-0.0.4.tar.gz tmp/web-ui-helper-0.0.5.tar.gz --markdown 20240505/w/web-ui-helper/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/7a/9d/851699cb1b0022976501d07b4e5504315adf89dd11512aa8c72892345340/gammarers.aws-secure-vpc-bucket-1.3.2.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [echovault]: Downloading https://files.pythonhosted.org/packages/2a/22/020d530dc9d4548caf8bd5b4985ed5b4d68e77138ac5329933805a556f49/echovault-0.2.4.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.1.2.tar.gz tmp/ryutils-4.1.3.tar.gz --markdown 20240505/r/ryutils/4.1.2-4.1.3/README.md --exclude *.pyd
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/0a/0e/b4ebfbdbe4cb1d1833633909e60d65ded9be00d7fe2e08347c84f05b9c6b/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.2.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [echovault]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [echovault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echovault-0.2.3.tar.gz tmp/echovault-0.2.4.tar.gz --markdown 20240505/e/echovault/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-vpc-bucket-1.3.1.tar.gz tmp/gammarers.aws-secure-vpc-bucket-1.3.2.tar.gz --markdown 20240505/g/gammarers.aws-secure-vpc-bucket/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-05 20:22:43] INFO root fetch - processPackages [dbt-osmosis]: Downloading https://files.pythonhosted.org/packages/a5/6a/58a5f5250da317c29d672ba44dbcfeb2f99247daff9259c3be659f9bbd6e/dbt_osmosis-0.9.8.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/c7/e6/70f7cf7cdb955706158408a3bd8cf3d8b1867fa0196e79eae1582c893c8a/pyedaa_reports-0.6.0.tar.gz
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.1.tar.gz tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.2.tar.gz --markdown 20240505/g/gammarers.aws-secure-frontend-web-app-cloudfront-distribution/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-05 20:22:43] INFO root fetch - processPackages [dbt-osmosis]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [dbt-osmosis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-osmosis-0.9.7.tar.gz tmp/dbt_osmosis-0.9.8.tar.gz --markdown 20240505/d/dbt-osmosis/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-05 20:22:43] INFO root fetch - processPackages [pyEDAA.Reports]: executing diffoscope
+[2024-05-05 20:22:43] INFO root fetch - processPackages [pyEDAA.Reports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyedaa_reports-0.5.2.tar.gz tmp/pyedaa_reports-0.6.0.tar.gz --markdown 20240505/p/pyEDAA.Reports/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-05 20:22:44] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.4.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [web-ui-helper]: Remove: archive file [/home/abi/fetcher/tmp/web-ui-helper-0.0.5.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [web-ui-helper]: success
+[2024-05-05 20:22:44] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.2.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.1.3.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-05-05 20:22:44] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.1.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.2.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-vpc-bucket]: success
+[2024-05-05 20:22:44] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.1.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.2.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: success
+[2024-05-05 20:22:44] INFO root fetch - processPackages [echovault]: Remove: archive file [/home/abi/fetcher/tmp/echovault-0.2.3.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [echovault]: Remove: archive file [/home/abi/fetcher/tmp/echovault-0.2.4.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [echovault]: success
+[2024-05-05 20:22:44] INFO root fetch - processPackages [dbt-osmosis]: Remove: archive file [/home/abi/fetcher/tmp/dbt-osmosis-0.9.7.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [dbt-osmosis]: Remove: archive file [/home/abi/fetcher/tmp/dbt_osmosis-0.9.8.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [dbt-osmosis]: success
+[2024-05-05 20:22:44] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.5.2.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.6.0.tar.gz]
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [pyEDAA.Reports]: success
+[2024-05-05 20:22:44] INFO root fetch - main [MainThread]: Store serial: [23067880]
