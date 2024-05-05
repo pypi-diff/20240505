@@ -5015,3 +5015,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 
 [2024-05-05 08:46:42] INFO root fetch - main [MainThread]: End processing [parseq-XAS] error
 [2024-05-05 08:46:42] INFO root fetch - main [MainThread]: Store serial: [23063613]
+[2024-05-05 08:48:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063613]
+[2024-05-05 08:48:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 08:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dartrs
+[2024-05-05 08:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchsense
+[2024-05-05 08:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-retrieval
+[2024-05-05 08:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CheeseAPI
+[2024-05-05 08:48:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkscreener
+[2024-05-05 08:48:51] INFO root fetch - processPackages [rag-retrieval]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-05 08:48:51] WARNING root fetch - processPackages [dartrs]: Skipping, unable to determine old version
+[2024-05-05 08:48:51] INFO root fetch - main [MainThread]: End processing [dartrs] error
+[2024-05-05 08:48:51] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240504.333] Old Version: [0.44.20240504.332]
+[2024-05-05 08:48:51] INFO root fetch - processPackages [rag-retrieval]: Downloading https://files.pythonhosted.org/packages/b4/8e/d17160532cb320113ae94d8278b200a483edcb01ac3cbf933786792dfa9e/rag_retrieval-0.1.1.tar.gz
+[2024-05-05 08:48:51] WARNING root fetch - processPackages [torchsense]: Skipping, unable to determine old version
+[2024-05-05 08:48:51] INFO root fetch - main [MainThread]: End processing [torchsense] error
+[2024-05-05 08:48:51] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/ca/ac/8ef02708facb6ad22eebc054e7eac472e482407289e739c84b4dd134d71f/pkscreener-0.44.20240504.332.tar.gz
+[2024-05-05 08:48:51] INFO root fetch - processPackages [CheeseAPI]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-05 08:48:51] INFO root fetch - processPackages [rag-retrieval]: Downloading https://files.pythonhosted.org/packages/a1/88/9e3556711d41fa8f95dafa38ebc41327154cc7d8b5eaf14e079d718d9574/rag_retrieval-0.2.0.tar.gz
+[2024-05-05 08:48:51] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/24/c6/641bbf3419ba2842bf61708f576ede6557df1e131129d052b0e94082375d/cheeseapi-1.1.4.tar.gz
+[2024-05-05 08:48:51] INFO root fetch - processPackages [rag-retrieval]: executing diffoscope
+[2024-05-05 08:48:51] INFO root fetch - processPackages [rag-retrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_retrieval-0.1.1.tar.gz tmp/rag_retrieval-0.2.0.tar.gz --markdown 20240505/r/rag-retrieval/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-05 08:48:51] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/49/48/d6d0d5b36be36bb650633c77591ab6dac505a3faa0713817983ad599fb06/pkscreener-0.44.20240504.333.tar.gz
+[2024-05-05 08:48:51] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/ca/db/562424685cc8433bbb32034f8ca92607da48273d3584a46c495a723a30d1/cheeseapi-1.1.5.tar.gz
+[2024-05-05 08:48:51] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-05 08:48:51] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240504.332.tar.gz tmp/pkscreener-0.44.20240504.333.tar.gz --markdown 20240505/p/pkscreener/0.44.20240504.332-0.44.20240504.333/README.md --exclude *.pyd
+[2024-05-05 08:48:51] INFO root fetch - processPackages [CheeseAPI]: executing diffoscope
+[2024-05-05 08:48:51] INFO root fetch - processPackages [CheeseAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheeseapi-1.1.4.tar.gz tmp/cheeseapi-1.1.5.tar.gz --markdown 20240505/C/CheeseAPI/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-05 08:48:52] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.1.1.tar.gz]
+[2024-05-05 08:48:52] INFO root fetch - processPackages [rag-retrieval]: Remove: archive file [/home/abi/fetcher/tmp/rag_retrieval-0.2.0.tar.gz]
+[2024-05-05 08:48:52] INFO root fetch - main [MainThread]: End processing [rag-retrieval]: success
+[2024-05-05 08:48:52] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-1.1.4.tar.gz]
+[2024-05-05 08:48:52] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-1.1.5.tar.gz]
+[2024-05-05 08:48:52] INFO root fetch - main [MainThread]: End processing [CheeseAPI]: success
+[2024-05-05 08:48:52] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.332.tar.gz]
+[2024-05-05 08:48:52] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240504.333.tar.gz]
+[2024-05-05 08:48:52] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-05 08:48:52] INFO root fetch - main [MainThread]: Store serial: [23063674]
