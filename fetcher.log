@@ -13081,3 +13081,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:48:11] INFO root fetch - processPackages [podman-init]: Remove: archive file [/home/abi/fetcher/tmp/podman_init-1.0.1.tar.gz]
 [2024-05-05 18:48:11] INFO root fetch - main [MainThread]: End processing [podman-init]: success
 [2024-05-05 18:48:11] INFO root fetch - main [MainThread]: Store serial: [23067252]
+[2024-05-05 18:50:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067252]
+[2024-05-05 18:50:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 18:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyreqwest-impersonate
+[2024-05-05 18:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: runorm
+[2024-05-05 18:50:20] INFO root fetch - processPackages [pyreqwest-impersonate]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-05 18:50:20] WARNING root fetch - processPackages [runorm]: Skipping, unable to determine old version
+[2024-05-05 18:50:20] INFO root fetch - main [MainThread]: End processing [runorm] error
+[2024-05-05 18:50:20] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/82/2d/178b08c869a9598d61b4741e436aa116d125e9ebd87fd243085da8989ee2/pyreqwest_impersonate-0.4.1.tar.gz
+[2024-05-05 18:50:21] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/b8/45/588b23dd76142404b012a7f3972938faaa65c50931ed6272a81a87f8da49/pyreqwest_impersonate-0.4.2.tar.gz
+[2024-05-05 18:50:21] INFO root fetch - processPackages [pyreqwest-impersonate]: executing diffoscope
+[2024-05-05 18:50:21] INFO root fetch - processPackages [pyreqwest-impersonate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreqwest_impersonate-0.4.1.tar.gz tmp/pyreqwest_impersonate-0.4.2.tar.gz --markdown 20240505/p/pyreqwest-impersonate/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-05 18:50:21] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.4.1.tar.gz]
+[2024-05-05 18:50:21] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.4.2.tar.gz]
+[2024-05-05 18:50:21] INFO root fetch - main [MainThread]: End processing [pyreqwest-impersonate]: success
+[2024-05-05 18:50:21] INFO root fetch - main [MainThread]: Store serial: [23067267]
