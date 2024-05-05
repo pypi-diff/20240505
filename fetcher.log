@@ -17432,3 +17432,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:41:41] INFO root fetch - processPackages [runseq]: Remove: archive file [/home/abi/fetcher/tmp/runseq-0.3.0.tar.gz]
 [2024-05-05 23:41:41] INFO root fetch - main [MainThread]: End processing [runseq]: success
 [2024-05-05 23:41:41] INFO root fetch - main [MainThread]: Store serial: [23069242]
+[2024-05-05 23:43:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069242]
+[2024-05-05 23:43:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 23:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whisperplus
+[2024-05-05 23:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beancount-parser
+[2024-05-05 23:43:51] INFO root fetch - processPackages [beancount-parser]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 23:43:51] INFO root fetch - processPackages [whisperplus]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 23:43:52] INFO root fetch - processPackages [beancount-parser]: Downloading https://files.pythonhosted.org/packages/da/16/b33c95252c50fcd76966e1140403664d260d324aa77a78b1d204f3f1170a/beancount_parser-1.0.0.tar.gz
+[2024-05-05 23:43:52] INFO root fetch - processPackages [whisperplus]: Downloading https://files.pythonhosted.org/packages/95/d7/5e490e43fa84e8a942b3df50d63139dbfb75d43a888c310e2a016bb2b9ab/whisperplus-0.3.0.tar.gz
+[2024-05-05 23:43:52] INFO root fetch - processPackages [beancount-parser]: Downloading https://files.pythonhosted.org/packages/92/ae/640c98ef62e43ac1cb3a25c76a39fb306534893b7ed8da6f7386c691eb3a/beancount_parser-1.0.1.tar.gz
+[2024-05-05 23:43:52] INFO root fetch - processPackages [beancount-parser]: executing diffoscope
+[2024-05-05 23:43:52] INFO root fetch - processPackages [beancount-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_parser-1.0.0.tar.gz tmp/beancount_parser-1.0.1.tar.gz --markdown 20240505/b/beancount-parser/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 23:43:52] INFO root fetch - processPackages [whisperplus]: Downloading https://files.pythonhosted.org/packages/a5/09/acc4e860687e1b773f71a21ec6233448bb242b4d9e97757c3cb69a3a28e4/whisperplus-0.3.1.tar.gz
+[2024-05-05 23:43:52] INFO root fetch - processPackages [whisperplus]: executing diffoscope
+[2024-05-05 23:43:52] INFO root fetch - processPackages [whisperplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisperplus-0.3.0.tar.gz tmp/whisperplus-0.3.1.tar.gz --markdown 20240505/w/whisperplus/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 23:43:53] INFO root fetch - processPackages [beancount-parser]: Remove: archive file [/home/abi/fetcher/tmp/beancount_parser-1.0.0.tar.gz]
+[2024-05-05 23:43:53] INFO root fetch - processPackages [beancount-parser]: Remove: archive file [/home/abi/fetcher/tmp/beancount_parser-1.0.1.tar.gz]
+[2024-05-05 23:43:53] INFO root fetch - main [MainThread]: End processing [beancount-parser]: success
+[2024-05-05 23:43:53] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.3.0.tar.gz]
+[2024-05-05 23:43:53] INFO root fetch - processPackages [whisperplus]: Remove: archive file [/home/abi/fetcher/tmp/whisperplus-0.3.1.tar.gz]
+[2024-05-05 23:43:53] INFO root fetch - main [MainThread]: End processing [whisperplus]: success
+[2024-05-05 23:43:53] INFO root fetch - main [MainThread]: Store serial: [23069247]
