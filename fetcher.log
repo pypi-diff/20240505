@@ -8701,3 +8701,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:53:13] INFO root fetch - processPackages [pylablib]: Remove: archive file [/home/abi/fetcher/tmp/pylablib-1.4.3-cp312-cp312-musllinux_1_1_x86_64.whl.zip]
 [2024-05-05 13:53:13] INFO root fetch - main [MainThread]: End processing [pylablib]: success
 [2024-05-05 13:53:13] INFO root fetch - main [MainThread]: Store serial: [23065176]
+[2024-05-05 13:55:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065176]
+[2024-05-05 13:55:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smb-sync
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MoleculaPy
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeastmlp
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autocortext-py
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tgctoolbox
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: redhat-qe-cloud-tools
+[2024-05-05 13:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mxersion
+[2024-05-05 13:55:22] WARNING root fetch - processPackages [smb-sync]: Skipping, unable to determine old version
+[2024-05-05 13:55:22] INFO root fetch - main [MainThread]: End processing [smb-sync] error
+[2024-05-05 13:55:22] WARNING root fetch - processPackages [tgctoolbox]: Skipping, unable to determine old version
+[2024-05-05 13:55:22] INFO root fetch - main [MainThread]: End processing [tgctoolbox] error
+[2024-05-05 13:55:22] INFO root fetch - processPackages [MoleculaPy]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-05 13:55:22] WARNING root fetch - processPackages [autocortext-py]: Skipping, unable to determine old version
+[2024-05-05 13:55:22] INFO root fetch - main [MainThread]: End processing [autocortext-py] error
+[2024-05-05 13:55:22] INFO root fetch - processPackages [yeastmlp]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-05 13:55:22] INFO root fetch - processPackages [mxersion]: New version: [0.2] Old Version: [0.1]
+[2024-05-05 13:55:22] INFO root fetch - processPackages [redhat-qe-cloud-tools]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-05 13:55:22] INFO root fetch - processPackages [MoleculaPy]: Downloading https://files.pythonhosted.org/packages/1f/6e/f3a871b654ade0c8baa8f6b758adac8d1b72aea63c3c5465a2e476f65194/moleculapy-1.0.1.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [yeastmlp]: Downloading https://files.pythonhosted.org/packages/8c/47/afc1d92a91516902d7275fe7316801019ae0dd6edbd529e1c96fef2d9511/yeastmlp-1.0.4.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [mxersion]: Downloading https://files.pythonhosted.org/packages/60/a6/244276e23f4a2053c229f03d1b9e7bf6833896ce961d764074db461274e4/mxersion-0.1.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/bb/ba/b006d094180ea2c9d36260eb23821d2bdf0bc3e11192b77282a510ac39ee/redhat_qe_cloud_tools-1.0.8.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [MoleculaPy]: Downloading https://files.pythonhosted.org/packages/f8/ca/40839d803e178205a52a21ecab1a7c5dd5afd29a7db7ec0bded1efa7389a/moleculapy-1.1.0.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [yeastmlp]: Downloading https://files.pythonhosted.org/packages/76/8a/995fec7c23d9bcfd02216635429140a6b7d5ddc0a779a80e2719011ff794/yeastmlp-1.0.5.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/73/ee/78f15b2144832b2da8cfd67c1d7f49253a5bbeabe351e94adf1af190017c/redhat_qe_cloud_tools-1.0.9.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [mxersion]: Downloading https://files.pythonhosted.org/packages/5a/e1/4c017012118742ada3650f223c89355ade95f035333a57d0e410be6dab76/mxersion-0.2.tar.gz
+[2024-05-05 13:55:22] INFO root fetch - processPackages [yeastmlp]: executing diffoscope
+[2024-05-05 13:55:22] INFO root fetch - processPackages [yeastmlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeastmlp-1.0.4.tar.gz tmp/yeastmlp-1.0.5.tar.gz --markdown 20240505/y/yeastmlp/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-05 13:55:22] INFO root fetch - processPackages [redhat-qe-cloud-tools]: executing diffoscope
+[2024-05-05 13:55:22] INFO root fetch - processPackages [redhat-qe-cloud-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_qe_cloud_tools-1.0.8.tar.gz tmp/redhat_qe_cloud_tools-1.0.9.tar.gz --markdown 20240505/r/redhat-qe-cloud-tools/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-05 13:55:23] INFO root fetch - processPackages [MoleculaPy]: executing diffoscope
+[2024-05-05 13:55:23] INFO root fetch - processPackages [MoleculaPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moleculapy-1.0.1.tar.gz tmp/moleculapy-1.1.0.tar.gz --markdown 20240505/M/MoleculaPy/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-05 13:55:23] INFO root fetch - processPackages [mxersion]: executing diffoscope
+[2024-05-05 13:55:23] INFO root fetch - processPackages [mxersion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mxersion-0.1.tar.gz tmp/mxersion-0.2.tar.gz --markdown 20240505/m/mxersion/0.1-0.2/README.md --exclude *.pyd
+[2024-05-05 13:55:23] INFO root fetch - processPackages [yeastmlp]: Remove: archive file [/home/abi/fetcher/tmp/yeastmlp-1.0.4.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - processPackages [yeastmlp]: Remove: archive file [/home/abi/fetcher/tmp/yeastmlp-1.0.5.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - main [MainThread]: End processing [yeastmlp]: success
+[2024-05-05 13:55:23] INFO root fetch - processPackages [MoleculaPy]: Remove: archive file [/home/abi/fetcher/tmp/moleculapy-1.0.1.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - processPackages [MoleculaPy]: Remove: archive file [/home/abi/fetcher/tmp/moleculapy-1.1.0.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - main [MainThread]: End processing [MoleculaPy]: success
+[2024-05-05 13:55:23] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.8.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Remove: archive file [/home/abi/fetcher/tmp/redhat_qe_cloud_tools-1.0.9.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - main [MainThread]: End processing [redhat-qe-cloud-tools]: success
+[2024-05-05 13:55:23] INFO root fetch - processPackages [mxersion]: Remove: archive file [/home/abi/fetcher/tmp/mxersion-0.1.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - processPackages [mxersion]: Remove: archive file [/home/abi/fetcher/tmp/mxersion-0.2.tar.gz]
+[2024-05-05 13:55:23] INFO root fetch - main [MainThread]: End processing [mxersion]: success
+[2024-05-05 13:55:23] INFO root fetch - main [MainThread]: Store serial: [23065235]
