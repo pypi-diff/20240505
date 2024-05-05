@@ -2179,3 +2179,60 @@
 [2024-05-05 03:27:31] INFO root fetch - processPackages [zuspec-parser]: Remove: archive file [/home/abi/fetcher/tmp/zuspec_parser-0.0.1.8954608045-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-05 03:27:31] INFO root fetch - main [MainThread]: End processing [zuspec-parser]: success
 [2024-05-05 03:27:31] INFO root fetch - main [MainThread]: Store serial: [23062436]
+[2024-05-05 03:29:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062436]
+[2024-05-05 03:29:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 03:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kywy
+[2024-05-05 03:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-nai3
+[2024-05-05 03:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-api-core
+[2024-05-05 03:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2024-05-05 03:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onediff
+[2024-05-05 03:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onediffx
+[2024-05-05 03:29:58] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202405040125] Old Version: [1.0.0.dev202405030127]
+[2024-05-05 03:29:58] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 03:29:58] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202405040125] Old Version: [1.0.0.dev202405030127]
+[2024-05-05 03:29:58] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 03:29:58] INFO root fetch - processPackages [nonebot-plugin-nai3]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 03:29:58] INFO root fetch - processPackages [kywy]: New version: [0.18.0b9] Old Version: [0.18.0b8]
+[2024-05-05 03:29:58] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/d9/70/3ca4cd73a03342ddd2d732188cafb59e4b80db41f3c6033bf508ee7455bb/onediffx-1.0.0.dev202405030127.tar.gz
+[2024-05-05 03:29:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-05-05 03:29:58] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/fd/9c/cbf00a8ac449ad36aafea2dc14513ecb57d73988063d3d4cfc95b4790147/onediff-1.0.0.dev202405030127.tar.gz
+[2024-05-05 03:29:58] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-05-05 03:29:58] INFO root fetch - processPackages [kywy]: Downloading https://files.pythonhosted.org/packages/5a/35/d09681ca4dba675cb340afcda2294f700aa776e80bb79d04f8b902d66c14/kywy-0.18.0b8-py3-none-any.whl
+[2024-05-05 03:29:58] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/85/16/048301acbd391c49e8f21eadf1cbf681c6185cd630540d5d03a91ab24a78/nonebot_plugin_nai3-0.1.8.tar.gz
+[2024-05-05 03:29:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-05-05 03:29:58] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240505/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 03:29:59] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/72/6e/a4f1d94f9209d4a26542ad128ba8ef16d5b3ec4f529531f1787dd8c2c39b/onediff-1.0.0.dev202405040125.tar.gz
+[2024-05-05 03:29:59] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/18/72/a2def790dc4d0e721b4aee71f3479b36287a1e1fbc5785b8a35da0c94de3/onediffx-1.0.0.dev202405040125.tar.gz
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240505/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 03:29:59] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-05 03:29:59] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202405030127.tar.gz tmp/onediff-1.0.0.dev202405040125.tar.gz --markdown 20240505/o/onediff/1.0.0.dev202405030127-1.0.0.dev202405040125/README.md --exclude *.pyd
+[2024-05-05 03:29:59] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-05 03:29:59] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202405030127.tar.gz tmp/onediffx-1.0.0.dev202405040125.tar.gz --markdown 20240505/o/onediffx/1.0.0.dev202405030127-1.0.0.dev202405040125/README.md --exclude *.pyd
+[2024-05-05 03:29:59] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/12/6e/c4fe30a232863cadebd0869d12075a15c431517b0f619141a9adb81307ea/nonebot_plugin_nai3-0.1.9.tar.gz
+[2024-05-05 03:29:59] INFO root fetch - processPackages [kywy]: Downloading https://files.pythonhosted.org/packages/9a/f8/24411333415c7d5a41eb0b9f0ad87d2cd2123835ebc09f94853b04aca91c/kywy-0.18.0b9-py3-none-any.whl
+[2024-05-05 03:29:59] INFO root fetch - processPackages [kywy]: executing diffoscope
+[2024-05-05 03:29:59] INFO root fetch - processPackages [kywy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kywy-0.18.0b8-py3-none-any.whl.zip tmp/kywy-0.18.0b9-py3-none-any.whl.zip --markdown 20240505/k/kywy/0.18.0b8-0.18.0b9/README.md --exclude *.pyd
+[2024-05-05 03:29:59] INFO root fetch - processPackages [nonebot-plugin-nai3]: executing diffoscope
+[2024-05-05 03:29:59] INFO root fetch - processPackages [nonebot-plugin-nai3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3-0.1.8.tar.gz tmp/nonebot_plugin_nai3-0.1.9.tar.gz --markdown 20240505/n/nonebot-plugin-nai3/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-05-05 03:29:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-05-05 03:29:59] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-05-05 03:29:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-05-05 03:30:00] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405030127.tar.gz]
+[2024-05-05 03:30:00] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405040125.tar.gz]
+[2024-05-05 03:30:00] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-05 03:30:00] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405030127.tar.gz]
+[2024-05-05 03:30:00] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405040125.tar.gz]
+[2024-05-05 03:30:00] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-05 03:30:00] INFO root fetch - processPackages [nonebot-plugin-nai3]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3-0.1.8.tar.gz]
+[2024-05-05 03:30:00] INFO root fetch - processPackages [nonebot-plugin-nai3]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3-0.1.9.tar.gz]
+[2024-05-05 03:30:00] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3]: success
+[2024-05-05 03:30:00] INFO root fetch - processPackages [kywy]: Remove: archive file [/home/abi/fetcher/tmp/kywy-0.18.0b8-py3-none-any.whl.zip]
+[2024-05-05 03:30:00] INFO root fetch - processPackages [kywy]: Remove: archive file [/home/abi/fetcher/tmp/kywy-0.18.0b9-py3-none-any.whl.zip]
+[2024-05-05 03:30:00] INFO root fetch - main [MainThread]: End processing [kywy]: success
+[2024-05-05 03:30:00] INFO root fetch - main [MainThread]: Store serial: [23062455]
