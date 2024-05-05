@@ -5637,3 +5637,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:37:16] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.9.tar.gz]
 [2024-05-05 09:37:16] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2024-05-05 09:37:16] INFO root fetch - main [MainThread]: Store serial: [23063888]
+[2024-05-05 09:39:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063888]
+[2024-05-05 09:39:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-pandas
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-pandas
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ghostbase
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: narration
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ghostbase]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-05 09:39:24] INFO root fetch - processPackages [narration]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 09:39:24] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 09:39:24] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 09:39:24] INFO root fetch - processPackages [ghostbase]: Downloading https://files.pythonhosted.org/packages/8e/76/04da37e90951d53b2f7d93f1ab73382f3f33d23d8804e58a6d9ea0b944e6/ghostbase-1.2.4-py3-none-any.whl
+[2024-05-05 09:39:24] INFO root fetch - processPackages [narration]: Downloading https://files.pythonhosted.org/packages/94/68/d4b987a55d1e69910b6648e9f7574b53526e1a425368b0af94c00161fb5e/narration-0.2.8-py2.py3-none-any.whl
+[2024-05-05 09:39:25] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 09:39:25] INFO root fetch - processPackages [narration]: Downloading https://files.pythonhosted.org/packages/9b/62/541227082ab9cb0ccc5a9e3e5acd309c0476ff81fe7d4822bf737eb12b39/narration-0.2.9-py2.py3-none-any.whl
+[2024-05-05 09:39:25] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-05 09:39:25] INFO root fetch - processPackages [ghostbase]: Downloading https://files.pythonhosted.org/packages/0d/40/759390daad8c217252139927d2200793e1eb303b12c6190b29ab355dea77/ghostbase-1.2.5-py3-none-any.whl
+[2024-05-05 09:39:25] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-05 09:39:25] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-05 09:39:25] INFO root fetch - processPackages [narration]: executing diffoscope
+[2024-05-05 09:39:25] INFO root fetch - processPackages [narration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narration-0.2.8-py2.py3-none-any.whl.zip tmp/narration-0.2.9-py2.py3-none-any.whl.zip --markdown 20240505/n/narration/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-05 09:39:25] INFO root fetch - processPackages [ghostbase]: executing diffoscope
+[2024-05-05 09:39:25] INFO root fetch - processPackages [ghostbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghostbase-1.2.4-py3-none-any.whl.zip tmp/ghostbase-1.2.5-py3-none-any.whl.zip --markdown 20240505/g/ghostbase/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 09:39:25] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 09:39:26] INFO root fetch - processPackages [ghostbase]: Remove: archive file [/home/abi/fetcher/tmp/ghostbase-1.2.4-py3-none-any.whl.zip]
+[2024-05-05 09:39:26] INFO root fetch - processPackages [ghostbase]: Remove: archive file [/home/abi/fetcher/tmp/ghostbase-1.2.5-py3-none-any.whl.zip]
+[2024-05-05 09:39:26] INFO root fetch - main [MainThread]: End processing [ghostbase]: success
+[2024-05-05 09:39:26] INFO root fetch - processPackages [narration]: Remove: archive file [/home/abi/fetcher/tmp/narration-0.2.8-py2.py3-none-any.whl.zip]
+[2024-05-05 09:39:26] INFO root fetch - processPackages [narration]: Remove: archive file [/home/abi/fetcher/tmp/narration-0.2.9-py2.py3-none-any.whl.zip]
+[2024-05-05 09:39:26] INFO root fetch - main [MainThread]: End processing [narration]: success
+[2024-05-05 09:39:26] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 09:39:26] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 09:39:26] WARNING root fetch - processPackages [abstract-pandas]: Unable to remove archive file: [[Errno 2] No such file or directory: '/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz']
+[2024-05-05 09:39:26] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 09:39:26] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 09:39:26] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 09:39:26] INFO root fetch - main [MainThread]: Store serial: [23063916]
