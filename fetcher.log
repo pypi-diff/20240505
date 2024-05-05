@@ -6479,3 +6479,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:55:36] INFO root fetch - processPackages [miner-ai-beta]: Remove: archive file [/home/abi/fetcher/tmp/miner_ai_beta-0.1.5.tar.gz]
 [2024-05-05 10:55:36] INFO root fetch - main [MainThread]: End processing [miner-ai-beta]: success
 [2024-05-05 10:55:36] INFO root fetch - main [MainThread]: Store serial: [23064244]
+[2024-05-05 10:57:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064244]
+[2024-05-05 10:57:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 10:59:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064244]
+[2024-05-05 10:59:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 10:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timex-lca
+[2024-05-05 10:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bitbox02
+[2024-05-05 10:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docx2latex
+[2024-05-05 10:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bellek
+[2024-05-05 10:59:50] INFO root fetch - processPackages [docx2latex]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-05 10:59:50] WARNING root fetch - processPackages [timex-lca]: Skipping, unable to determine old version
+[2024-05-05 10:59:50] INFO root fetch - main [MainThread]: End processing [timex-lca] error
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bitbox02]: New version: [6.3.0] Old Version: [6.2.0]
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-05 10:59:50] INFO root fetch - processPackages [docx2latex]: Downloading https://files.pythonhosted.org/packages/a5/ce/e385c478c8bcce718a0810f03891518b178463bdccd91b66072a6aae6129/docx2latex-0.0.1-py3-none-any.whl
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bitbox02]: Downloading https://files.pythonhosted.org/packages/10/a1/fc77f13cddb5c3c0c4aec4674c69d3b2ec46fabb0c86ba7b82ce98539f9b/bitbox02-6.2.0.tar.gz
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-05 10:59:50] INFO root fetch - processPackages [docx2latex]: Downloading https://files.pythonhosted.org/packages/b0/4e/0c191e8b132524393b5ae72b32711cb5aa75bdf4f96104f773012c9600c5/docx2latex-0.0.2-py3-none-any.whl
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-05 10:59:50] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240505/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-05 10:59:51] INFO root fetch - processPackages [docx2latex]: executing diffoscope
+[2024-05-05 10:59:51] INFO root fetch - processPackages [docx2latex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docx2latex-0.0.1-py3-none-any.whl.zip tmp/docx2latex-0.0.2-py3-none-any.whl.zip --markdown 20240505/d/docx2latex/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bitbox02]: Downloading https://files.pythonhosted.org/packages/22/d8/9c7ac8854cdd285a00235e78d6c351e9e3ebfcfccb3c1a667c0da00c439d/bitbox02-6.3.0.tar.gz
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bitbox02]: executing diffoscope
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bitbox02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitbox02-6.2.0.tar.gz tmp/bitbox02-6.3.0.tar.gz --markdown 20240505/b/bitbox02/6.2.0-6.3.0/README.md --exclude *.pyd
+[2024-05-05 10:59:51] INFO root fetch - processPackages [docx2latex]: Remove: archive file [/home/abi/fetcher/tmp/docx2latex-0.0.1-py3-none-any.whl.zip]
+[2024-05-05 10:59:51] INFO root fetch - processPackages [docx2latex]: Remove: archive file [/home/abi/fetcher/tmp/docx2latex-0.0.2-py3-none-any.whl.zip]
+[2024-05-05 10:59:51] INFO root fetch - main [MainThread]: End processing [docx2latex]: success
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-05 10:59:51] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bitbox02]: Remove: archive file [/home/abi/fetcher/tmp/bitbox02-6.2.0.tar.gz]
+[2024-05-05 10:59:51] INFO root fetch - processPackages [bitbox02]: Remove: archive file [/home/abi/fetcher/tmp/bitbox02-6.3.0.tar.gz]
+[2024-05-05 10:59:51] INFO root fetch - main [MainThread]: End processing [bitbox02]: success
+[2024-05-05 10:59:51] INFO root fetch - main [MainThread]: Store serial: [23064255]
