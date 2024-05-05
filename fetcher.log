@@ -3326,3 +3326,11 @@
 [2024-05-05 05:32:46] INFO root fetch - processPackages [feffery-antd-charts]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_charts-0.1.0rc1.tar.gz]
 [2024-05-05 05:32:46] INFO root fetch - main [MainThread]: End processing [feffery-antd-charts]: success
 [2024-05-05 05:32:46] INFO root fetch - main [MainThread]: Store serial: [23062931]
+[2024-05-05 05:34:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062931]
+[2024-05-05 05:34:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 05:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062931]
+[2024-05-05 05:37:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 05:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepaipng
+[2024-05-05 05:37:00] WARNING root fetch - processPackages [deepaipng]: Skipping, unable to determine old version
+[2024-05-05 05:37:00] INFO root fetch - main [MainThread]: End processing [deepaipng] error
+[2024-05-05 05:37:00] INFO root fetch - main [MainThread]: Store serial: [23062936]
