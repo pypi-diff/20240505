@@ -12847,3 +12847,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:30:48] INFO root fetch - processPackages [alchemical-storage]: Remove: archive file [/home/abi/fetcher/tmp/alchemical_storage-1.0.0.dev2.tar.gz]
 [2024-05-05 18:30:48] INFO root fetch - main [MainThread]: End processing [alchemical-storage]: success
 [2024-05-05 18:30:48] INFO root fetch - main [MainThread]: Store serial: [23067169]
+[2024-05-05 18:32:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067169]
+[2024-05-05 18:32:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 18:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whl2conda
+[2024-05-05 18:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: got-cli
+[2024-05-05 18:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lego-handlers
+[2024-05-05 18:32:56] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 18:32:56] INFO root fetch - processPackages [lego-handlers]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-05 18:32:56] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-05 18:32:56] INFO root fetch - processPackages [whl2conda]: New version: [24.5.0] Old Version: [24.4.0]
+[2024-05-05 18:32:57] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-05 18:32:57] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c3/98/f4cb763bb728a247c80425c615216fb093d0141630d06fe70e90f169481b/lego_handlers-1.1.1.tar.gz
+[2024-05-05 18:32:57] INFO root fetch - processPackages [whl2conda]: Downloading https://files.pythonhosted.org/packages/51/fa/4eb2212829d01bab1c738c9ead8ad4b51377a1a7eba426c828e7acb75de7/whl2conda-24.4.0.tar.gz
+[2024-05-05 18:32:57] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-05 18:32:57] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240505/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 18:32:57] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/1f/5d/1f91f40ed3c93d194d2c55a8274be8d6a5b0314a1211ad19544e3eb3325e/lego_handlers-1.1.2.tar.gz
+[2024-05-05 18:32:57] INFO root fetch - processPackages [lego-handlers]: executing diffoscope
+[2024-05-05 18:32:57] INFO root fetch - processPackages [lego-handlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lego_handlers-1.1.1.tar.gz tmp/lego_handlers-1.1.2.tar.gz --markdown 20240505/l/lego-handlers/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-05 18:32:57] INFO root fetch - processPackages [whl2conda]: Downloading https://files.pythonhosted.org/packages/fa/9e/c2ce8888a64634c64b6a72b240ea46579409d2e439861aa6f4bdcaecf860/whl2conda-24.5.0.tar.gz
+[2024-05-05 18:32:57] INFO root fetch - processPackages [whl2conda]: executing diffoscope
+[2024-05-05 18:32:57] INFO root fetch - processPackages [whl2conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whl2conda-24.4.0.tar.gz tmp/whl2conda-24.5.0.tar.gz --markdown 20240505/w/whl2conda/24.4.0-24.5.0/README.md --exclude *.pyd
+[2024-05-05 18:32:57] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-05 18:32:57] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-05 18:32:57] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-05 18:32:57] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.1.tar.gz]
+[2024-05-05 18:32:57] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.2.tar.gz]
+[2024-05-05 18:32:57] INFO root fetch - main [MainThread]: End processing [lego-handlers]: success
+[2024-05-05 18:32:58] INFO root fetch - processPackages [whl2conda]: Remove: archive file [/home/abi/fetcher/tmp/whl2conda-24.4.0.tar.gz]
+[2024-05-05 18:32:58] INFO root fetch - processPackages [whl2conda]: Remove: archive file [/home/abi/fetcher/tmp/whl2conda-24.5.0.tar.gz]
+[2024-05-05 18:32:58] INFO root fetch - main [MainThread]: End processing [whl2conda]: success
+[2024-05-05 18:32:58] INFO root fetch - main [MainThread]: Store serial: [23067178]
