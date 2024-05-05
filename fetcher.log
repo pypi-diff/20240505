@@ -5923,3 +5923,49 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:07:35] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240504.tar.gz]
 [2024-05-05 10:07:35] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-05-05 10:07:35] INFO root fetch - main [MainThread]: Store serial: [23064019]
+[2024-05-05 10:09:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064019]
+[2024-05-05 10:09:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 10:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Django-inline-column-extension
+[2024-05-05 10:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyshared
+[2024-05-05 10:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: treenode-py
+[2024-05-05 10:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiondata
+[2024-05-05 10:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: roktools
+[2024-05-05 10:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flops-utils
+[2024-05-05 10:09:44] INFO root fetch - processPackages [flops-utils]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 10:09:44] INFO root fetch - processPackages [treenode-py]: New version: [1.2.0] Old Version: [1.0.0]
+[2024-05-05 10:09:44] INFO root fetch - processPackages [pyshared]: New version: [1.5.8] Old Version: [1.5.7]
+[2024-05-05 10:09:44] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/a7/f6/7061928ae9875d5cd9cb3816b8e608c22b6b7af7ea458d0712cf86844991/flops_utils-0.3.0.tar.gz
+[2024-05-05 10:09:44] INFO root fetch - processPackages [aiondata]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-05 10:09:44] WARNING root fetch - processPackages [Django-inline-column-extension]: Skipping, unable to determine old version
+[2024-05-05 10:09:44] INFO root fetch - main [MainThread]: End processing [Django-inline-column-extension] error
+[2024-05-05 10:09:44] INFO root fetch - processPackages [pyshared]: Downloading https://files.pythonhosted.org/packages/d2/b0/22c30e75bae9e34ab6c98fe87b9da086b2ca4ec9e53fc1485f5269ab7386/pyshared-1.5.7-py3-none-any.whl
+[2024-05-05 10:09:44] INFO root fetch - processPackages [roktools]: New version: [6.3.0] Old Version: [6.2.0]
+[2024-05-05 10:09:44] ERROR root fetch - processPackages [treenode-py]: Unable to fetch info: No such project/version 'treenode-py' 1.0.0
+[2024-05-05 10:09:44] INFO root fetch - main [MainThread]: End processing [treenode-py] error
+[2024-05-05 10:09:44] INFO root fetch - processPackages [aiondata]: Downloading https://files.pythonhosted.org/packages/d8/41/fb96b0d167e8020ef5988660a8babe2fb73906ea861117588041fb0578e3/aiondata-0.4.2.tar.gz
+[2024-05-05 10:09:44] INFO root fetch - processPackages [roktools]: Downloading https://files.pythonhosted.org/packages/d1/e6/55605ffedf84afbbe27bacf1701cbd2a128df23e89a15861b43e413bdb99/roktools-6.2.0.tar.gz
+[2024-05-05 10:09:44] INFO root fetch - processPackages [pyshared]: Downloading https://files.pythonhosted.org/packages/2c/65/3cf92f203d82bb4ab3330ee0c24faeb0036e41a10136bde14616cc3b8ab0/pyshared-1.5.8-py3-none-any.whl
+[2024-05-05 10:09:44] INFO root fetch - processPackages [pyshared]: executing diffoscope
+[2024-05-05 10:09:44] INFO root fetch - processPackages [pyshared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyshared-1.5.7-py3-none-any.whl.zip tmp/pyshared-1.5.8-py3-none-any.whl.zip --markdown 20240505/p/pyshared/1.5.7-1.5.8/README.md --exclude *.pyd
+[2024-05-05 10:09:44] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/d4/d8/f4b8675797fdec1f1562fdef2534a6e9e851c5d948c4765ef6410435ae9b/flops_utils-0.3.1.tar.gz
+[2024-05-05 10:09:44] INFO root fetch - processPackages [aiondata]: Downloading https://files.pythonhosted.org/packages/31/f4/b7d2ec3e43b34ecbe99238f1245ddc081aa6778a985a21874526a6f36929/aiondata-0.4.3.tar.gz
+[2024-05-05 10:09:44] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-05 10:09:44] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.3.0.tar.gz tmp/flops_utils-0.3.1.tar.gz --markdown 20240505/f/flops-utils/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 10:09:44] INFO root fetch - processPackages [roktools]: Downloading https://files.pythonhosted.org/packages/24/0c/003749da2f0f475767d1ced38b51d35cce58b9f5866889a3fc0ff0b94cb7/roktools-6.3.0.tar.gz
+[2024-05-05 10:09:44] INFO root fetch - processPackages [aiondata]: executing diffoscope
+[2024-05-05 10:09:44] INFO root fetch - processPackages [aiondata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiondata-0.4.2.tar.gz tmp/aiondata-0.4.3.tar.gz --markdown 20240505/a/aiondata/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-05 10:09:44] INFO root fetch - processPackages [roktools]: executing diffoscope
+[2024-05-05 10:09:44] INFO root fetch - processPackages [roktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roktools-6.2.0.tar.gz tmp/roktools-6.3.0.tar.gz --markdown 20240505/r/roktools/6.2.0-6.3.0/README.md --exclude *.pyd
+[2024-05-05 10:09:45] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.7-py3-none-any.whl.zip]
+[2024-05-05 10:09:45] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.8-py3-none-any.whl.zip]
+[2024-05-05 10:09:45] INFO root fetch - main [MainThread]: End processing [pyshared]: success
+[2024-05-05 10:09:45] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.0.tar.gz]
+[2024-05-05 10:09:45] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.1.tar.gz]
+[2024-05-05 10:09:45] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-05 10:09:45] INFO root fetch - processPackages [aiondata]: Remove: archive file [/home/abi/fetcher/tmp/aiondata-0.4.2.tar.gz]
+[2024-05-05 10:09:45] INFO root fetch - processPackages [aiondata]: Remove: archive file [/home/abi/fetcher/tmp/aiondata-0.4.3.tar.gz]
+[2024-05-05 10:09:45] INFO root fetch - main [MainThread]: End processing [aiondata]: success
+[2024-05-05 10:09:45] INFO root fetch - processPackages [roktools]: Remove: archive file [/home/abi/fetcher/tmp/roktools-6.2.0.tar.gz]
+[2024-05-05 10:09:45] INFO root fetch - processPackages [roktools]: Remove: archive file [/home/abi/fetcher/tmp/roktools-6.3.0.tar.gz]
+[2024-05-05 10:09:45] INFO root fetch - main [MainThread]: End processing [roktools]: success
+[2024-05-05 10:09:45] INFO root fetch - main [MainThread]: Store serial: [23064040]
