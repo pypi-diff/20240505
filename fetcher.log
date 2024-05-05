@@ -4746,3 +4746,15 @@
 [2024-05-05 08:24:40] INFO root fetch - processPackages [python-AGS4]: Remove: archive file [/home/abi/fetcher/tmp/python_ags4-0.6.0.tar.gz]
 [2024-05-05 08:24:40] INFO root fetch - main [MainThread]: End processing [python-AGS4]: success
 [2024-05-05 08:24:40] INFO root fetch - main [MainThread]: Store serial: [23063504]
+[2024-05-05 08:26:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063504]
+[2024-05-05 08:26:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 08:26:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rer.solrpush
+[2024-05-05 08:26:49] INFO root fetch - processPackages [rer.solrpush]: New version: [1.4.0] Old Version: [1.3.3]
+[2024-05-05 08:26:49] INFO root fetch - processPackages [rer.solrpush]: Downloading https://files.pythonhosted.org/packages/41/ca/3ba6f51ce6e05d9b1dc56fb8f7986568465ab3f2ed89211bf52e86aa5767/rer.solrpush-1.3.3.tar.gz
+[2024-05-05 08:26:50] INFO root fetch - processPackages [rer.solrpush]: Downloading https://files.pythonhosted.org/packages/2c/39/9f38b970c70bed03ea6d8a2f3673a050143715b3447afa8729b724e6a55b/rer.solrpush-1.4.0.tar.gz
+[2024-05-05 08:26:50] INFO root fetch - processPackages [rer.solrpush]: executing diffoscope
+[2024-05-05 08:26:50] INFO root fetch - processPackages [rer.solrpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rer.solrpush-1.3.3.tar.gz tmp/rer.solrpush-1.4.0.tar.gz --markdown 20240505/r/rer.solrpush/1.3.3-1.4.0/README.md --exclude *.pyd
+[2024-05-05 08:26:51] INFO root fetch - processPackages [rer.solrpush]: Remove: archive file [/home/abi/fetcher/tmp/rer.solrpush-1.3.3.tar.gz]
+[2024-05-05 08:26:51] INFO root fetch - processPackages [rer.solrpush]: Remove: archive file [/home/abi/fetcher/tmp/rer.solrpush-1.4.0.tar.gz]
+[2024-05-05 08:26:51] INFO root fetch - main [MainThread]: End processing [rer.solrpush]: success
+[2024-05-05 08:26:51] INFO root fetch - main [MainThread]: Store serial: [23063507]
