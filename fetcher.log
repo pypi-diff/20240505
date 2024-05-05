@@ -2710,3 +2710,33 @@
 [2024-05-05 04:23:18] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240504.tar.gz]
 [2024-05-05 04:23:18] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-05-05 04:23:18] INFO root fetch - main [MainThread]: Store serial: [23062717]
+[2024-05-05 04:25:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062717]
+[2024-05-05 04:25:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 04:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coh2-live-stats
+[2024-05-05 04:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naverplaceapi
+[2024-05-05 04:25:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-quantize-pytorch
+[2024-05-05 04:25:26] INFO root fetch - processPackages [coh2-live-stats]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-05 04:25:26] INFO root fetch - processPackages [naverplaceapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 04:25:27] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/76/d9/4dd5ff78d7edda8549c2197c4bf8e22fb61282799812c8a99d6229923df0/naverplaceapi-0.1.8.tar.gz
+[2024-05-05 04:25:27] INFO root fetch - processPackages [coh2-live-stats]: Downloading https://files.pythonhosted.org/packages/c2/18/2f127b1e82d6100f0f1c114dc5eb7715dfa56bdffd3f7c391c6559020b3e/coh2_live_stats-1.2.2.tar.gz
+[2024-05-05 04:25:27] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-05 04:25:27] INFO root fetch - processPackages [naverplaceapi]: Downloading https://files.pythonhosted.org/packages/d6/49/6fd82197b70cc3b07a714c6728efc2da9518496de2c2a7d893b2283afbce/naverplaceapi-0.1.9.tar.gz
+[2024-05-05 04:25:27] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/45/76/97e8130fc79375eb08a692959dc48753e5a368719d459e90a73871a3ce0a/vector_quantize_pytorch-1.9.8.tar.gz
+[2024-05-05 04:25:27] INFO root fetch - processPackages [naverplaceapi]: executing diffoscope
+[2024-05-05 04:25:27] INFO root fetch - processPackages [naverplaceapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naverplaceapi-0.1.8.tar.gz tmp/naverplaceapi-0.1.9.tar.gz --markdown 20240505/n/naverplaceapi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 04:25:27] INFO root fetch - processPackages [coh2-live-stats]: Downloading https://files.pythonhosted.org/packages/24/79/17edcf12d6cbcd5125d433bc536bf00a006ebc72c44049198105f185b910/coh2_live_stats-1.2.3.tar.gz
+[2024-05-05 04:25:27] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/34/b1/750271936b6c48315424aaafb75d4e54614b3ea12a0e5ba5c3868bd576ef/vector_quantize_pytorch-1.9.9.tar.gz
+[2024-05-05 04:25:27] INFO root fetch - processPackages [coh2-live-stats]: executing diffoscope
+[2024-05-05 04:25:27] INFO root fetch - processPackages [coh2-live-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coh2_live_stats-1.2.2.tar.gz tmp/coh2_live_stats-1.2.3.tar.gz --markdown 20240505/c/coh2-live-stats/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-05 04:25:27] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2024-05-05 04:25:27] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.9.8.tar.gz tmp/vector_quantize_pytorch-1.9.9.tar.gz --markdown 20240505/v/vector-quantize-pytorch/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-05 04:25:28] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.8.tar.gz]
+[2024-05-05 04:25:28] INFO root fetch - processPackages [naverplaceapi]: Remove: archive file [/home/abi/fetcher/tmp/naverplaceapi-0.1.9.tar.gz]
+[2024-05-05 04:25:28] INFO root fetch - main [MainThread]: End processing [naverplaceapi]: success
+[2024-05-05 04:25:28] INFO root fetch - processPackages [vector-quantize-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/vector_quantize_pytorch-1.9.8.tar.gz]
+[2024-05-05 04:25:28] INFO root fetch - processPackages [vector-quantize-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/vector_quantize_pytorch-1.9.9.tar.gz]
+[2024-05-05 04:25:28] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2024-05-05 04:25:29] INFO root fetch - processPackages [coh2-live-stats]: Remove: archive file [/home/abi/fetcher/tmp/coh2_live_stats-1.2.2.tar.gz]
+[2024-05-05 04:25:29] INFO root fetch - processPackages [coh2-live-stats]: Remove: archive file [/home/abi/fetcher/tmp/coh2_live_stats-1.2.3.tar.gz]
+[2024-05-05 04:25:29] INFO root fetch - main [MainThread]: End processing [coh2-live-stats]: success
+[2024-05-05 04:25:29] INFO root fetch - main [MainThread]: Store serial: [23062726]
