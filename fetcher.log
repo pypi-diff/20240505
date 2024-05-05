@@ -5358,3 +5358,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:17:41] INFO root fetch - processPackages [SAM-ONNX]: Remove: archive file [/home/abi/fetcher/tmp/sam_onnx-0.0.2.tar.gz]
 [2024-05-05 09:17:41] INFO root fetch - main [MainThread]: End processing [SAM-ONNX]: success
 [2024-05-05 09:17:41] INFO root fetch - main [MainThread]: Store serial: [23063783]
+[2024-05-05 09:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063783]
+[2024-05-05 09:19:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 09:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dtPyAppFramework
+[2024-05-05 09:19:50] INFO root fetch - processPackages [dtPyAppFramework]: New version: [1.2] Old Version: [1.1]
+[2024-05-05 09:19:50] INFO root fetch - processPackages [dtPyAppFramework]: Downloading https://files.pythonhosted.org/packages/9c/95/9cf34928e4873c94d1aeba9136e1574b596c43fcf57d7a634ac17a6c285a/dtPyAppFramework-1.1.tar.gz
+[2024-05-05 09:19:50] INFO root fetch - processPackages [dtPyAppFramework]: Downloading https://files.pythonhosted.org/packages/35/52/da3c46984b2d9ff98dfaf04303da78bd8aa4b493ea17c0a515c990119c64/dtpyappframework-1.2.tar.gz
+[2024-05-05 09:19:50] INFO root fetch - processPackages [dtPyAppFramework]: executing diffoscope
+[2024-05-05 09:19:50] INFO root fetch - processPackages [dtPyAppFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtPyAppFramework-1.1.tar.gz tmp/dtpyappframework-1.2.tar.gz --markdown 20240505/d/dtPyAppFramework/1.1-1.2/README.md --exclude *.pyd
+[2024-05-05 09:19:51] INFO root fetch - processPackages [dtPyAppFramework]: Remove: archive file [/home/abi/fetcher/tmp/dtPyAppFramework-1.1.tar.gz]
+[2024-05-05 09:19:51] INFO root fetch - processPackages [dtPyAppFramework]: Remove: archive file [/home/abi/fetcher/tmp/dtpyappframework-1.2.tar.gz]
+[2024-05-05 09:19:51] INFO root fetch - main [MainThread]: End processing [dtPyAppFramework]: success
+[2024-05-05 09:19:51] INFO root fetch - main [MainThread]: Store serial: [23063787]
