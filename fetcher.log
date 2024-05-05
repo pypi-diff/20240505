@@ -11008,3 +11008,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:22:18] INFO root fetch - processPackages [cycling-nestedls]: Remove: archive file [/home/abi/fetcher/tmp/cycling_nestedls-1.2.1.tar.gz]
 [2024-05-05 16:22:18] INFO root fetch - main [MainThread]: End processing [cycling-nestedls]: success
 [2024-05-05 16:22:18] INFO root fetch - main [MainThread]: Store serial: [23066342]
+[2024-05-05 16:24:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066342]
+[2024-05-05 16:24:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 16:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otf-addons-vault
+[2024-05-05 16:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ableton-control-surface-core
+[2024-05-05 16:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastosc
+[2024-05-05 16:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ableton-control-surface-scripts
+[2024-05-05 16:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-arkgacha
+[2024-05-05 16:24:27] WARNING root fetch - processPackages [ableton-control-surface-scripts]: Skipping, unable to determine old version
+[2024-05-05 16:24:27] WARNING root fetch - processPackages [fastosc]: Skipping, unable to determine old version
+[2024-05-05 16:24:27] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-scripts] error
+[2024-05-05 16:24:27] INFO root fetch - main [MainThread]: End processing [fastosc] error
+[2024-05-05 16:24:27] WARNING root fetch - processPackages [otf-addons-vault]: Skipping, unable to determine old version
+[2024-05-05 16:24:27] INFO root fetch - main [MainThread]: End processing [otf-addons-vault] error
+[2024-05-05 16:24:27] WARNING root fetch - processPackages [ableton-control-surface-core]: Skipping, unable to determine old version
+[2024-05-05 16:24:27] INFO root fetch - main [MainThread]: End processing [ableton-control-surface-core] error
+[2024-05-05 16:24:27] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-05 16:24:27] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Downloading https://files.pythonhosted.org/packages/3a/21/d609a106a568803edfe6d0518aa94ef86e0733681247a7c3183d2fc1ff02/nonebot_plugin_arkgacha-0.6.0.tar.gz
+[2024-05-05 16:24:28] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Downloading https://files.pythonhosted.org/packages/a8/49/208a072dad6fd60399229f58c3d09c28db326709f893e3aa74d723b1b5f1/nonebot_plugin_arkgacha-0.7.0.tar.gz
+[2024-05-05 16:24:28] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: executing diffoscope
+[2024-05-05 16:24:28] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_arkgacha-0.6.0.tar.gz tmp/nonebot_plugin_arkgacha-0.7.0.tar.gz --markdown 20240505/n/nonebot-plugin-arkgacha/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-05 16:24:28] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_arkgacha-0.6.0.tar.gz]
+[2024-05-05 16:24:28] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_arkgacha-0.7.0.tar.gz]
+[2024-05-05 16:24:28] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arkgacha]: success
+[2024-05-05 16:24:28] INFO root fetch - main [MainThread]: Store serial: [23066356]
