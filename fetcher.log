@@ -12032,3 +12032,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:33:47] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.2.tar.gz]
 [2024-05-05 17:33:47] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
 [2024-05-05 17:33:47] INFO root fetch - main [MainThread]: Store serial: [23066797]
+[2024-05-05 17:35:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066797]
+[2024-05-05 17:35:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 17:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lego-handlers
+[2024-05-05 17:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-pkg-logging
+[2024-05-05 17:35:56] INFO root fetch - processPackages [lego-handlers]: New version: [1.0.0] Old Version: [0.3.0]
+[2024-05-05 17:35:56] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c4/85/31803dcf0bc54ccc8518f43f94ef2bd2151a50b358f0dee7600b98b094e8/lego_handlers-0.3.0.tar.gz
+[2024-05-05 17:35:56] INFO root fetch - processPackages [py-pkg-logging]: New version: [0.0.2] Old Version: [0.0.1rc0]
+[2024-05-05 17:35:56] INFO root fetch - processPackages [py-pkg-logging]: Downloading https://files.pythonhosted.org/packages/c3/ba/ecc331d7926457dc6d1dceb6e12a1db9b4a991acd546e789fb967e94a601/py_pkg_logging-0.0.1rc0.tar.gz
+[2024-05-05 17:35:56] INFO root fetch - processPackages [lego-handlers]: Downloading https://files.pythonhosted.org/packages/c2/92/fb611f90339b0cb7887f8a4b3d5ce153b922bcbc5598372613b045691a76/lego_handlers-1.0.0.tar.gz
+[2024-05-05 17:35:56] INFO root fetch - processPackages [lego-handlers]: executing diffoscope
+[2024-05-05 17:35:56] INFO root fetch - processPackages [lego-handlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lego_handlers-0.3.0.tar.gz tmp/lego_handlers-1.0.0.tar.gz --markdown 20240505/l/lego-handlers/0.3.0-1.0.0/README.md --exclude *.pyd
+[2024-05-05 17:35:56] INFO root fetch - processPackages [py-pkg-logging]: Downloading https://files.pythonhosted.org/packages/73/15/e66aa92353a1698b3e74872453ee2de45b1364129ca4cac26733ce01c257/py_pkg_logging-0.0.2.tar.gz
+[2024-05-05 17:35:56] INFO root fetch - processPackages [py-pkg-logging]: executing diffoscope
+[2024-05-05 17:35:56] INFO root fetch - processPackages [py-pkg-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_pkg_logging-0.0.1rc0.tar.gz tmp/py_pkg_logging-0.0.2.tar.gz --markdown 20240505/p/py-pkg-logging/0.0.1rc0-0.0.2/README.md --exclude *.pyd
+[2024-05-05 17:35:57] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-0.3.0.tar.gz]
+[2024-05-05 17:35:57] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.0.0.tar.gz]
+[2024-05-05 17:35:57] INFO root fetch - main [MainThread]: End processing [lego-handlers]: success
+[2024-05-05 17:35:57] INFO root fetch - processPackages [py-pkg-logging]: Remove: archive file [/home/abi/fetcher/tmp/py_pkg_logging-0.0.1rc0.tar.gz]
+[2024-05-05 17:35:57] INFO root fetch - processPackages [py-pkg-logging]: Remove: archive file [/home/abi/fetcher/tmp/py_pkg_logging-0.0.2.tar.gz]
+[2024-05-05 17:35:57] INFO root fetch - main [MainThread]: End processing [py-pkg-logging]: success
+[2024-05-05 17:35:57] INFO root fetch - main [MainThread]: Store serial: [23066806]
