@@ -9503,3 +9503,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:48:14] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.757.1.tar.gz]
 [2024-05-05 14:48:14] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2024-05-05 14:48:14] INFO root fetch - main [MainThread]: Store serial: [23065613]
+[2024-05-05 14:50:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065613]
+[2024-05-05 14:50:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: formio-data
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dalle3-gen-save
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: legend-pygeom-hpges
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tijatools
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mmdit
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ktoolbox
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ktoolbox-pure-py
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torch-snippets
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gitlabform
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Cyantities
+[2024-05-05 14:50:23] INFO root fetch - processPackages [dalle3-gen-save]: New version: [4.5.51] Old Version: [0.1.1]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [mmdit]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/65/e8/0e8988196545175d4d5f6aefdf065ee6ba25de22ca3e4a8203a38ed116f1/dalle3_gen_save-0.1.1.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ktoolbox-pure-py]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [mmdit]: Downloading https://files.pythonhosted.org/packages/a5/db/d0ff843783200a53f6714ae825e874941cb400c6800ee3e66e428ad46238/mmdit-0.0.3.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ktoolbox]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-05 14:50:23] WARNING root fetch - processPackages [tijatools]: Skipping, unable to determine old version
+[2024-05-05 14:50:23] INFO root fetch - main [MainThread]: End processing [tijatools] error
+[2024-05-05 14:50:23] INFO root fetch - processPackages [Cyantities]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [gitlabform]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [formio-data]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [legend-pygeom-hpges]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [torch-snippets]: New version: [0.530] Old Version: [0.528]
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ktoolbox-pure-py]: Downloading https://files.pythonhosted.org/packages/02/8e/6dcb98809497271fcceabb2a48c57325258d98c0c24d09dbfb11216c981c/ktoolbox_pure_py-0.5.2.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [ktoolbox]: Downloading https://files.pythonhosted.org/packages/15/98/2679edb01cf916e5aebee7c2d6c587548ed41caa546d6ed2cca6811a28bd/ktoolbox-0.5.2.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [formio-data]: Downloading https://files.pythonhosted.org/packages/3c/52/92d96ccbdd051da5197faab0808e3efe6461f6efcac9569803858c295a0d/formio-data-1.2.6.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [legend-pygeom-hpges]: Downloading https://files.pythonhosted.org/packages/07/97/1f8ad5265772bbc53db1593dff4f9da92d6e2a31f43be6e21b347d823064/legend_pygeom_hpges-0.4.2.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [gitlabform]: Downloading https://files.pythonhosted.org/packages/8e/df/fecdfe198343b7c466397d7d836e8ece2914c76b64f2fd2ece7483badef3/gitlabform-3.9.6.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [Cyantities]: Downloading https://files.pythonhosted.org/packages/ff/69/fc64f59a4dd5ad4a33fe183e967b5fcfef9403795386c7e88e0f11f45e50/cyantities-0.0.3.tar.gz
+[2024-05-05 14:50:23] INFO root fetch - processPackages [torch-snippets]: Downloading https://files.pythonhosted.org/packages/fc/f6/0beee4f16392f42a8c5a23948e09549617479540e724e40b8e291b8c2b06/torch_snippets-0.528.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [dalle3-gen-save]: Downloading https://files.pythonhosted.org/packages/44/ea/020f50b3c0d8e0c9da4d9f7999c2c5f2cd08db37af9a201e8c00ea89c7a4/dalle3_gen_save-4.5.51.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [mmdit]: Downloading https://files.pythonhosted.org/packages/3f/93/1954db997120751dc87a7fe35acb8ff3428346feeeb85898091fcb33dd6d/mmdit-0.0.4.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [dalle3-gen-save]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [dalle3-gen-save]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalle3_gen_save-0.1.1.tar.gz tmp/dalle3_gen_save-4.5.51.tar.gz --markdown 20240505/d/dalle3-gen-save/0.1.1-4.5.51/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [mmdit]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [mmdit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmdit-0.0.3.tar.gz tmp/mmdit-0.0.4.tar.gz --markdown 20240505/m/mmdit/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [formio-data]: Downloading https://files.pythonhosted.org/packages/ba/0c/0731a3c8990c5f74542e22c8497182abe8b21e3ddcc7d960fd2ed3f66389/formio-data-1.2.7.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [ktoolbox]: Downloading https://files.pythonhosted.org/packages/8f/f6/27ac47c7a6d1f7a19622cdbb6aa1b96230019936c0561cf169fe2322407e/ktoolbox-0.6.0.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [ktoolbox-pure-py]: Downloading https://files.pythonhosted.org/packages/bc/2e/7d3feb0ea9ac38f8192192668f0d381ab84aec9afc2b45d883ee12897666/ktoolbox_pure_py-0.6.0.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [Cyantities]: Downloading https://files.pythonhosted.org/packages/ce/9f/c2c84f4589e7ba991a1982118da80c6e1589190af01ad9cf3073d1af7282/cyantities-0.1.0.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [gitlabform]: Downloading https://files.pythonhosted.org/packages/00/49/cff53f84ca94edda5f0d60cdc531752bc0aa36fb710fed4c0e8255f96da8/gitlabform-3.9.7.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [torch-snippets]: Downloading https://files.pythonhosted.org/packages/33/29/ec172cc92aaf82303a25784f9470114ed76acfd52b734a1a9cfd93d20c64/torch_snippets-0.530.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [legend-pygeom-hpges]: Downloading https://files.pythonhosted.org/packages/d3/6a/7dee0a17972d5995eec6196a8de6b7bf04a859c80109357eebb39d7f7619/legend_pygeom_hpges-0.4.3.tar.gz
+[2024-05-05 14:50:24] INFO root fetch - processPackages [formio-data]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [formio-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formio-data-1.2.6.tar.gz tmp/formio-data-1.2.7.tar.gz --markdown 20240505/f/formio-data/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [ktoolbox]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [ktoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ktoolbox-0.5.2.tar.gz tmp/ktoolbox-0.6.0.tar.gz --markdown 20240505/k/ktoolbox/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [gitlabform]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [gitlabform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlabform-3.9.6.tar.gz tmp/gitlabform-3.9.7.tar.gz --markdown 20240505/g/gitlabform/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [torch-snippets]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [torch-snippets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_snippets-0.528.tar.gz tmp/torch_snippets-0.530.tar.gz --markdown 20240505/t/torch-snippets/0.528-0.530/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [legend-pygeom-hpges]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [legend-pygeom-hpges]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legend_pygeom_hpges-0.4.2.tar.gz tmp/legend_pygeom_hpges-0.4.3.tar.gz --markdown 20240505/l/legend-pygeom-hpges/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [ktoolbox-pure-py]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [ktoolbox-pure-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ktoolbox_pure_py-0.5.2.tar.gz tmp/ktoolbox_pure_py-0.6.0.tar.gz --markdown 20240505/k/ktoolbox-pure-py/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [Cyantities]: executing diffoscope
+[2024-05-05 14:50:24] INFO root fetch - processPackages [Cyantities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyantities-0.0.3.tar.gz tmp/cyantities-0.1.0.tar.gz --markdown 20240505/C/Cyantities/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-05-05 14:50:24] INFO root fetch - processPackages [dalle3-gen-save]: Remove: archive file [/home/abi/fetcher/tmp/dalle3_gen_save-0.1.1.tar.gz]
+[2024-05-05 14:50:24] INFO root fetch - processPackages [dalle3-gen-save]: Remove: archive file [/home/abi/fetcher/tmp/dalle3_gen_save-4.5.51.tar.gz]
+[2024-05-05 14:50:24] INFO root fetch - main [MainThread]: End processing [dalle3-gen-save]: success
+[2024-05-05 14:50:24] INFO root fetch - processPackages [mmdit]: Remove: archive file [/home/abi/fetcher/tmp/mmdit-0.0.3.tar.gz]
+[2024-05-05 14:50:24] INFO root fetch - processPackages [mmdit]: Remove: archive file [/home/abi/fetcher/tmp/mmdit-0.0.4.tar.gz]
+[2024-05-05 14:50:24] INFO root fetch - main [MainThread]: End processing [mmdit]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [ktoolbox]: Remove: archive file [/home/abi/fetcher/tmp/ktoolbox-0.5.2.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [ktoolbox]: Remove: archive file [/home/abi/fetcher/tmp/ktoolbox-0.6.0.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [ktoolbox]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [formio-data]: Remove: archive file [/home/abi/fetcher/tmp/formio-data-1.2.6.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [formio-data]: Remove: archive file [/home/abi/fetcher/tmp/formio-data-1.2.7.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [formio-data]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [ktoolbox-pure-py]: Remove: archive file [/home/abi/fetcher/tmp/ktoolbox_pure_py-0.5.2.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [ktoolbox-pure-py]: Remove: archive file [/home/abi/fetcher/tmp/ktoolbox_pure_py-0.6.0.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [ktoolbox-pure-py]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [Cyantities]: Remove: archive file [/home/abi/fetcher/tmp/cyantities-0.0.3.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [Cyantities]: Remove: archive file [/home/abi/fetcher/tmp/cyantities-0.1.0.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [Cyantities]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [legend-pygeom-hpges]: Remove: archive file [/home/abi/fetcher/tmp/legend_pygeom_hpges-0.4.2.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [legend-pygeom-hpges]: Remove: archive file [/home/abi/fetcher/tmp/legend_pygeom_hpges-0.4.3.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [legend-pygeom-hpges]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [torch-snippets]: Remove: archive file [/home/abi/fetcher/tmp/torch_snippets-0.528.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [torch-snippets]: Remove: archive file [/home/abi/fetcher/tmp/torch_snippets-0.530.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [torch-snippets]: success
+[2024-05-05 14:50:25] INFO root fetch - processPackages [gitlabform]: Remove: archive file [/home/abi/fetcher/tmp/gitlabform-3.9.6.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - processPackages [gitlabform]: Remove: archive file [/home/abi/fetcher/tmp/gitlabform-3.9.7.tar.gz]
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: End processing [gitlabform]: success
+[2024-05-05 14:50:25] INFO root fetch - main [MainThread]: Store serial: [23065647]
