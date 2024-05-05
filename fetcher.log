@@ -1406,3 +1406,74 @@
 [2024-05-05 02:20:41] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b2.tar.gz]
 [2024-05-05 02:20:41] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-05-05 02:20:41] INFO root fetch - main [MainThread]: Store serial: [23062073]
+[2024-05-05 02:22:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062073]
+[2024-05-05 02:22:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightning-thunder
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightning
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-cr-constructs
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: total-connect-client
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-aurora-globaldatabase
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: varorm
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdklabs.cdk-ethereum-node
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: seffaflik2
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: beanhub-extract
+[2024-05-05 02:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: OZI
+[2024-05-05 02:22:49] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.445] Old Version: [2.1.444]
+[2024-05-05 02:22:49] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-05 02:22:49] INFO root fetch - processPackages [lightning-thunder]: New version: [0.2.0.dev20240505] Old Version: [0.2.0.dev20240428]
+[2024-05-05 02:22:49] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 02:22:49] WARNING root fetch - processPackages [varorm]: Skipping, unable to determine old version
+[2024-05-05 02:22:49] INFO root fetch - main [MainThread]: End processing [varorm] error
+[2024-05-05 02:22:49] INFO root fetch - processPackages [total-connect-client]: New version: [2024.5] Old Version: [2024.4]
+[2024-05-05 02:22:49] WARNING root fetch - processPackages [seffaflik2]: Skipping, unable to determine old version
+[2024-05-05 02:22:49] WARNING root fetch - processPackages [beanhub-extract]: Skipping, unable to determine old version
+[2024-05-05 02:22:49] INFO root fetch - main [MainThread]: End processing [seffaflik2] error
+[2024-05-05 02:22:49] INFO root fetch - main [MainThread]: End processing [beanhub-extract] error
+[2024-05-05 02:22:49] INFO root fetch - processPackages [lightning]: New version: [2.3.0.dev20240505] Old Version: [2.3.0.dev20240428]
+[2024-05-05 02:22:49] INFO root fetch - processPackages [OZI]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-05 02:22:49] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-05 02:22:49] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-05-05 02:22:49] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/d1/5f/e7ad7b67b6f20129a9ece6ac1c31d576d1a2eb69aec28e871fa2a5fbbf8e/cdk-cr-constructs-2.1.444.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/be/11/3fd55852d19172136026fb775c1fcfc6b31c4e57ef2ef5ff5ec73cdbd240/lightning_thunder-0.2.0.dev20240428.tar.gz
+[2024-05-05 02:22:50] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15106424>=10485760
+[2024-05-05 02:22:50] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-05-05 02:22:50] INFO root fetch - processPackages [total-connect-client]: Downloading https://files.pythonhosted.org/packages/be/f3/edafcf7d60fdfca62be6764ad3c01a79d5cad228c477959ad7597a34e76e/total_connect_client-2024.4.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/76/22/d7c402bfc4d8c32b31b18da7cf9983ff7617531ffa48bdd63c6073e01423/lightning-2.3.0.dev20240428.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/a2/ea/76197376f93c16687c1937083e2d241fcaac45ad3f49074ccd62c08cf8c8/OZI-1.4.0.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-05-05 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240505/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 02:22:50] INFO root fetch - processPackages [total-connect-client]: Downloading https://files.pythonhosted.org/packages/6f/af/77c0387bda2caa332220ac34e682bc9b70990f57dbb12a70493bc26407b4/total_connect_client-2024.5.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/01/fd/ce172955f279c4d9bc867dcf72646c5b6fb0a5043dfba0e9fb7fb77078d6/lightning_thunder-0.2.0.dev20240505.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-05 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240505/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-05 02:22:50] INFO root fetch - processPackages [total-connect-client]: executing diffoscope
+[2024-05-05 02:22:50] INFO root fetch - processPackages [total-connect-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/total_connect_client-2024.4.tar.gz tmp/total_connect_client-2024.5.tar.gz --markdown 20240505/t/total-connect-client/2024.4-2024.5/README.md --exclude *.pyd
+[2024-05-05 02:22:50] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/ba/d5/187866233cbff38cd51b4597eaa0ed0472870b0d07a23cf0eadf21570df6/OZI-1.4.1-cp311-cp311-any.whl
+[2024-05-05 02:22:50] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/99/3f/f9347b94af6e84c6446c74ef0b34a65416e47137ff95d64b395e5abe1457/lightning-2.3.0.dev20240505.tar.gz
+[2024-05-05 02:22:50] INFO root fetch - processPackages [lightning-thunder]: executing diffoscope
+[2024-05-05 02:22:50] INFO root fetch - processPackages [lightning-thunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_thunder-0.2.0.dev20240428.tar.gz tmp/lightning_thunder-0.2.0.dev20240505.tar.gz --markdown 20240505/l/lightning-thunder/0.2.0.dev20240428-0.2.0.dev20240505/README.md --exclude *.pyd
+[2024-05-05 02:22:50] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-05 02:22:50] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.4.0.tar.gz tmp/OZI-1.4.1-cp311-cp311-any.whl.zip --markdown 20240505/O/OZI/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-05 02:22:51] INFO root fetch - processPackages [lightning]: executing diffoscope
+[2024-05-05 02:22:51] INFO root fetch - processPackages [lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-2.3.0.dev20240428.tar.gz tmp/lightning-2.3.0.dev20240505.tar.gz --markdown 20240505/l/lightning/2.3.0.dev20240428-2.3.0.dev20240505/README.md --exclude *.pyd
+[2024-05-05 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-05-05 02:22:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-05 02:22:51] INFO root fetch - processPackages [total-connect-client]: Remove: archive file [/home/abi/fetcher/tmp/total_connect_client-2024.4.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - processPackages [total-connect-client]: Remove: archive file [/home/abi/fetcher/tmp/total_connect_client-2024.5.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - main [MainThread]: End processing [total-connect-client]: success
+[2024-05-05 02:22:51] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.4.0.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.4.1-cp311-cp311-any.whl.zip]
+[2024-05-05 02:22:51] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-05 02:22:51] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240428.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240505.tar.gz]
+[2024-05-05 02:22:51] INFO root fetch - main [MainThread]: End processing [lightning-thunder]: success
+[2024-05-05 02:22:53] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240428.tar.gz]
+[2024-05-05 02:22:53] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240505.tar.gz]
+[2024-05-05 02:22:53] INFO root fetch - main [MainThread]: End processing [lightning]: success
+[2024-05-05 02:22:53] INFO root fetch - main [MainThread]: Store serial: [23062107]
