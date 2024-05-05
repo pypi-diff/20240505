@@ -11654,3 +11654,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:11:57] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-05-05 17:11:57] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-05-05 17:11:57] INFO root fetch - main [MainThread]: Store serial: [23066658]
+[2024-05-05 17:14:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066658]
+[2024-05-05 17:14:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrotgfork
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alwhatsapp
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: miniscons
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qwak-core
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qteasy
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coherent.build
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2024-05-05 17:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Tooldelta
+[2024-05-05 17:14:06] INFO root fetch - processPackages [coherent.build]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qwak-core]: New version: [0.4.0] Old Version: [0.3.99]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [alwhatsapp]: New version: [0.2] Old Version: [0.1]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [miniscons]: New version: [0.6.0] Old Version: [0.11.2]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [pyrotgfork]: New version: [2.1.29] Old Version: [2.1.28]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qteasy]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/71/0e/e7c880c764df31bf9e71679c2a411ac1a48667bfd4caee997236b1cc61fb/qwak_core-0.3.99.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [Tooldelta]: New version: [0.6.0] Old Version: [0.5.9]
+[2024-05-05 17:14:06] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/87/61/cfc0a0f8a33f3d9b416f41b40d2b511d1301e2dcf0d19054b41b0f7bda4d/coherent_build-0.2.2.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [alwhatsapp]: Downloading https://files.pythonhosted.org/packages/f7/bf/cfbb816a89adc029520b0568b236d3ac84d1b1d88a5a07bafa69a95e76ab/alwhatsapp-0.1-py3-none-any.whl
+[2024-05-05 17:14:06] INFO root fetch - processPackages [miniscons]: Downloading https://files.pythonhosted.org/packages/52/c4/75fc3e4c3edd1bdc9b14fb9392828223ea8c260d42e8f775488227f8f0d1/miniscons-0.11.2.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/98/de/b76dd4b1ea1cf41338c0deaf06fa3968dd19570cd37f8422606e6c1f6668/pyrotgfork-2.1.28.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qteasy]: Downloading https://files.pythonhosted.org/packages/5e/d7/57e487e670db17e8f36a06d5613ba59f0a6b25f916f15a146175220b0bd3/qteasy-1.2.3.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/e1/11/c50f2ee24d502a125d09f509013222be273073e73cb56e5592108e8a8ea6/tooldelta-0.5.9.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/8a/a7/e6ee6f7cfc801b397eedee4cce4f733c44a11057997dc59386a9d1551809/coherent_build-0.2.3.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/67/5c/230a4b38912da5b8730d4c30c421b4331788da9ed85148ed8cc9dc3c04a1/qwak_core-0.4.0.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-05-05 17:14:06] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-05 17:14:06] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.2.2.tar.gz tmp/coherent_build-0.2.3.tar.gz --markdown 20240505/c/coherent.build/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-05 17:14:06] INFO root fetch - processPackages [alwhatsapp]: Downloading https://files.pythonhosted.org/packages/fb/ef/5c37f151138f5b0fb2c613716095c10a62b021cbb65e4d50da281fbad95c/alwhatsapp-0.2-py3-none-any.whl
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-05-05 17:14:06] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.3.99.tar.gz tmp/qwak_core-0.4.0.tar.gz --markdown 20240505/q/qwak-core/0.3.99-0.4.0/README.md --exclude *.pyd
+[2024-05-05 17:14:06] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-05-05 17:14:06] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240505/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-05 17:14:07] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/c2/e3/928395cd59ee887ee975eede8a54f9b2768f634b047851f391a605556239/pyrotgfork-2.1.29.tar.gz
+[2024-05-05 17:14:07] INFO root fetch - processPackages [alwhatsapp]: executing diffoscope
+[2024-05-05 17:14:07] INFO root fetch - processPackages [alwhatsapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alwhatsapp-0.1-py3-none-any.whl.zip tmp/alwhatsapp-0.2-py3-none-any.whl.zip --markdown 20240505/a/alwhatsapp/0.1-0.2/README.md --exclude *.pyd
+[2024-05-05 17:14:07] INFO root fetch - processPackages [qteasy]: Downloading https://files.pythonhosted.org/packages/51/92/0338a6e7fa32d54eb11ff25af5b6e3509a03191dd7206facb6cd9cdec3ef/qteasy-1.2.4.tar.gz
+[2024-05-05 17:14:07] INFO root fetch - processPackages [miniscons]: Downloading https://files.pythonhosted.org/packages/a1/6b/da2cfaef6508c9d0b513222a3d44aaf11df90315b816467b8932d61777ac/miniscons-0.6.0.tar.gz
+[2024-05-05 17:14:07] INFO root fetch - processPackages [miniscons]: executing diffoscope
+[2024-05-05 17:14:07] INFO root fetch - processPackages [miniscons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniscons-0.11.2.tar.gz tmp/miniscons-0.6.0.tar.gz --markdown 20240505/m/miniscons/0.11.2-0.6.0/README.md --exclude *.pyd
+[2024-05-05 17:14:07] INFO root fetch - processPackages [pyrotgfork]: executing diffoscope
+[2024-05-05 17:14:07] INFO root fetch - processPackages [pyrotgfork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotgfork-2.1.28.tar.gz tmp/pyrotgfork-2.1.29.tar.gz --markdown 20240505/p/pyrotgfork/2.1.28-2.1.29/README.md --exclude *.pyd
+[2024-05-05 17:14:07] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/1c/54/3743e2a2c64314d1dc29fefb11c4f74f9c413d0855355b07a40d38e373d7/tooldelta-0.6.0.tar.gz
+[2024-05-05 17:14:07] INFO root fetch - processPackages [qteasy]: executing diffoscope
+[2024-05-05 17:14:07] INFO root fetch - processPackages [qteasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qteasy-1.2.3.tar.gz tmp/qteasy-1.2.4.tar.gz --markdown 20240505/q/qteasy/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-05 17:14:07] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-05-05 17:14:07] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.5.9.tar.gz tmp/tooldelta-0.6.0.tar.gz --markdown 20240505/T/Tooldelta/0.5.9-0.6.0/README.md --exclude *.pyd
+[2024-05-05 17:14:07] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.2.tar.gz]
+[2024-05-05 17:14:07] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.2.3.tar.gz]
+[2024-05-05 17:14:07] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-05 17:14:07] INFO root fetch - processPackages [alwhatsapp]: Remove: archive file [/home/abi/fetcher/tmp/alwhatsapp-0.1-py3-none-any.whl.zip]
+[2024-05-05 17:14:07] INFO root fetch - processPackages [alwhatsapp]: Remove: archive file [/home/abi/fetcher/tmp/alwhatsapp-0.2-py3-none-any.whl.zip]
+[2024-05-05 17:14:07] INFO root fetch - main [MainThread]: End processing [alwhatsapp]: success
+[2024-05-05 17:14:07] INFO root fetch - processPackages [miniscons]: Remove: archive file [/home/abi/fetcher/tmp/miniscons-0.11.2.tar.gz]
+[2024-05-05 17:14:07] INFO root fetch - processPackages [miniscons]: Remove: archive file [/home/abi/fetcher/tmp/miniscons-0.6.0.tar.gz]
+[2024-05-05 17:14:07] INFO root fetch - main [MainThread]: End processing [miniscons]: success
+[2024-05-05 17:14:07] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-05-05 17:14:07] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-05-05 17:14:07] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-05-05 17:14:08] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.9.tar.gz]
+[2024-05-05 17:14:08] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.6.0.tar.gz]
+[2024-05-05 17:14:08] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-05-05 17:14:08] INFO root fetch - processPackages [qteasy]: Remove: archive file [/home/abi/fetcher/tmp/qteasy-1.2.3.tar.gz]
+[2024-05-05 17:14:08] INFO root fetch - processPackages [qteasy]: Remove: archive file [/home/abi/fetcher/tmp/qteasy-1.2.4.tar.gz]
+[2024-05-05 17:14:08] INFO root fetch - main [MainThread]: End processing [qteasy]: success
+[2024-05-05 17:14:09] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.28.tar.gz]
+[2024-05-05 17:14:09] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.29.tar.gz]
+[2024-05-05 17:14:09] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
+[2024-05-05 17:14:10] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.3.99.tar.gz]
+[2024-05-05 17:14:10] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.4.0.tar.gz]
+[2024-05-05 17:14:10] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-05-05 17:14:10] INFO root fetch - main [MainThread]: Store serial: [23066681]
