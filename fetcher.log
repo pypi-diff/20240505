@@ -2570,3 +2570,15 @@
 [2024-05-05 04:10:14] INFO root fetch - processPackages [RL-OM]: Remove: archive file [/home/abi/fetcher/tmp/RL_OM-0.7.99.tar.gz]
 [2024-05-05 04:10:14] INFO root fetch - main [MainThread]: End processing [RL-OM]: success
 [2024-05-05 04:10:14] INFO root fetch - main [MainThread]: Store serial: [23062664]
+[2024-05-05 04:12:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062664]
+[2024-05-05 04:12:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 04:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blastpipe
+[2024-05-05 04:12:22] INFO root fetch - processPackages [blastpipe]: New version: [2024.4.5] Old Version: [2024.4.4]
+[2024-05-05 04:12:22] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/06/89/ef9b7846ec591061696d6660aac7961406d5fe81a92204339b17c490e6d9/blastpipe-2024.4.4.tar.gz
+[2024-05-05 04:12:23] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/ff/b9/eaab9562cfbbda669606ea128878f67bdca022764f946491e16ccc52e376/blastpipe-2024.4.5.tar.gz
+[2024-05-05 04:12:23] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-05-05 04:12:23] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.4.4.tar.gz tmp/blastpipe-2024.4.5.tar.gz --markdown 20240505/b/blastpipe/2024.4.4-2024.4.5/README.md --exclude *.pyd
+[2024-05-05 04:12:24] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.4.tar.gz]
+[2024-05-05 04:12:24] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.4.5.tar.gz]
+[2024-05-05 04:12:24] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-05-05 04:12:24] INFO root fetch - main [MainThread]: Store serial: [23062669]
