@@ -2381,3 +2381,15 @@
 [2024-05-05 03:43:10] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-05-05 03:43:10] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-05-05 03:43:10] INFO root fetch - main [MainThread]: Store serial: [23062543]
+[2024-05-05 03:45:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062543]
+[2024-05-05 03:45:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 03:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyckb
+[2024-05-05 03:45:19] INFO root fetch - processPackages [pyckb]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-05 03:45:19] INFO root fetch - processPackages [pyckb]: Downloading https://files.pythonhosted.org/packages/81/f1/5badb25531a55fb0e08289b931ac7e6617c982cad774068da7047bb267b6/pyckb-0.1.9.tar.gz
+[2024-05-05 03:45:20] INFO root fetch - processPackages [pyckb]: Downloading https://files.pythonhosted.org/packages/d0/9d/d18d93c37a1cf491e95d1f65e79c28e6df270127fec5ebe6f672462b300f/pyckb-0.2.0.tar.gz
+[2024-05-05 03:45:20] INFO root fetch - processPackages [pyckb]: executing diffoscope
+[2024-05-05 03:45:20] INFO root fetch - processPackages [pyckb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyckb-0.1.9.tar.gz tmp/pyckb-0.2.0.tar.gz --markdown 20240505/p/pyckb/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-05 03:45:20] INFO root fetch - processPackages [pyckb]: Remove: archive file [/home/abi/fetcher/tmp/pyckb-0.1.9.tar.gz]
+[2024-05-05 03:45:20] INFO root fetch - processPackages [pyckb]: Remove: archive file [/home/abi/fetcher/tmp/pyckb-0.2.0.tar.gz]
+[2024-05-05 03:45:20] INFO root fetch - main [MainThread]: End processing [pyckb]: success
+[2024-05-05 03:45:20] INFO root fetch - main [MainThread]: Store serial: [23062566]
