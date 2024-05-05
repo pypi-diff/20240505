@@ -9455,3 +9455,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:45:32] INFO root fetch - processPackages [nameless-deploy-tools]: Remove: archive file [/home/abi/fetcher/tmp/nameless-deploy-tools-1.99.tar.gz]
 [2024-05-05 14:45:32] INFO root fetch - main [MainThread]: End processing [nameless-deploy-tools]: success
 [2024-05-05 14:45:32] INFO root fetch - main [MainThread]: Store serial: [23065598]
+[2024-05-05 14:47:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065598]
+[2024-05-05 14:47:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 14:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unnecessary-abstraction
+[2024-05-05 14:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unitxt
+[2024-05-05 14:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: policyengine-us
+[2024-05-05 14:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: legend-pygeom-optics
+[2024-05-05 14:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blankslate-python
+[2024-05-05 14:47:40] INFO root fetch - processPackages [blankslate-python]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-05 14:47:40] INFO root fetch - processPackages [unitxt]: New version: [1.7.8] Old Version: [1.7.7]
+[2024-05-05 14:47:40] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/3a/41/8a842c3b817a8b7e72b9a1d7666c1d903f10327da0b1bbc44a356a081d01/blankslate_python-1.2.0.tar.gz
+[2024-05-05 14:47:40] INFO root fetch - processPackages [legend-pygeom-optics]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-05 14:47:40] INFO root fetch - processPackages [unitxt]: Downloading https://files.pythonhosted.org/packages/11/90/50793b6f9dcde0a23dcf8de3e1d051835f23c76b66918248e21964456570/unitxt-1.7.7.tar.gz
+[2024-05-05 14:47:40] INFO root fetch - processPackages [unnecessary-abstraction]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 14:47:40] INFO root fetch - processPackages [policyengine-us]: New version: [0.757.1] Old Version: [0.757.0]
+[2024-05-05 14:47:40] INFO root fetch - processPackages [unnecessary-abstraction]: Downloading https://files.pythonhosted.org/packages/61/19/7f0620e08f533a16c7bba8c3307bb3f49392d10d22119cb89cca94bf20b7/unnecessary-abstraction-1.0.0.tar.gz
+[2024-05-05 14:47:40] INFO root fetch - processPackages [unitxt]: Downloading https://files.pythonhosted.org/packages/2a/65/c423c9142c37ca5e6c04b07856aa4403cc8e7cd1ac082986c349bbba8d11/unitxt-1.7.8.tar.gz
+[2024-05-05 14:47:40] INFO root fetch - processPackages [legend-pygeom-optics]: Downloading https://files.pythonhosted.org/packages/32/50/dccd5b1c466c465ea15c715835db342f24c0bce4a103174216f29f8f6e12/legend_pygeom_optics-0.6.1.tar.gz
+[2024-05-05 14:47:41] INFO root fetch - processPackages [blankslate-python]: Downloading https://files.pythonhosted.org/packages/f1/6b/b76829b9f1b775a289cd6b5c7aeb5246712eaf97bd88b19916da202658f3/blankslate_python-1.2.1.tar.gz
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unitxt]: executing diffoscope
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unitxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitxt-1.7.7.tar.gz tmp/unitxt-1.7.8.tar.gz --markdown 20240505/u/unitxt/1.7.7-1.7.8/README.md --exclude *.pyd
+[2024-05-05 14:47:41] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/1f/8d/240780eb280cadc1df4cefdb6464b2279d4645a6e3516449ec35edfb01c3/policyengine-us-0.757.0.tar.gz
+[2024-05-05 14:47:41] INFO root fetch - processPackages [blankslate-python]: executing diffoscope
+[2024-05-05 14:47:41] INFO root fetch - processPackages [blankslate-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blankslate_python-1.2.0.tar.gz tmp/blankslate_python-1.2.1.tar.gz --markdown 20240505/b/blankslate-python/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unnecessary-abstraction]: Downloading https://files.pythonhosted.org/packages/13/fc/e5770f98e7ae46eed9a65e5b6c61419ddb61deea98484a4422ba74ae4625/unnecessary_abstraction-1.0.1.tar.gz
+[2024-05-05 14:47:41] INFO root fetch - processPackages [legend-pygeom-optics]: Downloading https://files.pythonhosted.org/packages/89/07/831a723ef4827a64e678ede9ad7ecb34e761b179e5c35185b5b24f20ca6b/legend_pygeom_optics-0.6.2.tar.gz
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unnecessary-abstraction]: executing diffoscope
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unnecessary-abstraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unnecessary-abstraction-1.0.0.tar.gz tmp/unnecessary_abstraction-1.0.1.tar.gz --markdown 20240505/u/unnecessary-abstraction/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 14:47:41] INFO root fetch - processPackages [legend-pygeom-optics]: executing diffoscope
+[2024-05-05 14:47:41] INFO root fetch - processPackages [legend-pygeom-optics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legend_pygeom_optics-0.6.1.tar.gz tmp/legend_pygeom_optics-0.6.2.tar.gz --markdown 20240505/l/legend-pygeom-optics/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-05 14:47:41] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/9e/ff/48658187f390228ac9094f7e8c2ba8e407567ffd67fb0063578a27812b4e/policyengine-us-0.757.1.tar.gz
+[2024-05-05 14:47:41] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-05-05 14:47:41] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.757.0.tar.gz tmp/policyengine-us-0.757.1.tar.gz --markdown 20240505/p/policyengine-us/0.757.0-0.757.1/README.md --exclude *.pyd
+[2024-05-05 14:47:41] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.0.tar.gz]
+[2024-05-05 14:47:41] INFO root fetch - processPackages [blankslate-python]: Remove: archive file [/home/abi/fetcher/tmp/blankslate_python-1.2.1.tar.gz]
+[2024-05-05 14:47:41] INFO root fetch - main [MainThread]: End processing [blankslate-python]: success
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unnecessary-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/unnecessary-abstraction-1.0.0.tar.gz]
+[2024-05-05 14:47:41] INFO root fetch - processPackages [unnecessary-abstraction]: Remove: archive file [/home/abi/fetcher/tmp/unnecessary_abstraction-1.0.1.tar.gz]
+[2024-05-05 14:47:41] INFO root fetch - main [MainThread]: End processing [unnecessary-abstraction]: success
+[2024-05-05 14:47:42] INFO root fetch - processPackages [legend-pygeom-optics]: Remove: archive file [/home/abi/fetcher/tmp/legend_pygeom_optics-0.6.1.tar.gz]
+[2024-05-05 14:47:42] INFO root fetch - processPackages [legend-pygeom-optics]: Remove: archive file [/home/abi/fetcher/tmp/legend_pygeom_optics-0.6.2.tar.gz]
+[2024-05-05 14:47:42] INFO root fetch - main [MainThread]: End processing [legend-pygeom-optics]: success
+[2024-05-05 14:47:42] INFO root fetch - processPackages [unitxt]: Remove: archive file [/home/abi/fetcher/tmp/unitxt-1.7.7.tar.gz]
+[2024-05-05 14:47:42] INFO root fetch - processPackages [unitxt]: Remove: archive file [/home/abi/fetcher/tmp/unitxt-1.7.8.tar.gz]
+[2024-05-05 14:47:42] INFO root fetch - main [MainThread]: End processing [unitxt]: success
+[2024-05-05 14:48:14] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.757.0.tar.gz]
+[2024-05-05 14:48:14] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.757.1.tar.gz]
+[2024-05-05 14:48:14] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-05-05 14:48:14] INFO root fetch - main [MainThread]: Store serial: [23065613]
