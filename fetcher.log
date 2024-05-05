@@ -1654,3 +1654,30 @@
 [2024-05-05 02:33:00] INFO root fetch - processPackages [sourcedefender]: Remove: archive file [/home/abi/fetcher/tmp/sourcedefender-11.0.21.tar.gz]
 [2024-05-05 02:33:00] INFO root fetch - main [MainThread]: End processing [sourcedefender]: success
 [2024-05-05 02:33:00] INFO root fetch - main [MainThread]: Store serial: [23062186]
+[2024-05-05 02:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062186]
+[2024-05-05 02:35:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 02:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OpenSafe
+[2024-05-05 02:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeppl-nightly
+[2024-05-05 02:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multiconnects
+[2024-05-05 02:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lute3
+[2024-05-05 02:35:12] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240504] Old Version: [0.1.5.dev20240503]
+[2024-05-05 02:35:12] WARNING root fetch - processPackages [OpenSafe]: Skipping, unable to determine old version
+[2024-05-05 02:35:12] INFO root fetch - main [MainThread]: End processing [OpenSafe] error
+[2024-05-05 02:35:12] WARNING root fetch - processPackages [multiconnects]: Skipping, unable to determine old version
+[2024-05-05 02:35:12] INFO root fetch - main [MainThread]: End processing [multiconnects] error
+[2024-05-05 02:35:12] INFO root fetch - processPackages [lute3]: New version: [3.3.3b1] Old Version: [3.3.2b1]
+[2024-05-05 02:35:12] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/a7/13/2074e3e750574ed4a99df30cf445bd3c41a7ea34789eeb4b5b323ad1d558/aeppl_nightly-0.1.5.dev20240503.tar.gz
+[2024-05-05 02:35:13] INFO root fetch - processPackages [lute3]: Downloading https://files.pythonhosted.org/packages/92/31/a7cc8b15e977b0c1d4d7af56ad2cc04cf90bec2f628ffe2a4a717d8b9593/lute3-3.3.2b1.tar.gz
+[2024-05-05 02:35:13] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/31/66/156d8cc72ce39c3b58fe03c7c779b0ecd2993bfa95c648c0f2d70d82bb2a/aeppl_nightly-0.1.5.dev20240504.tar.gz
+[2024-05-05 02:35:13] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-05 02:35:13] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240503.tar.gz tmp/aeppl_nightly-0.1.5.dev20240504.tar.gz --markdown 20240505/a/aeppl-nightly/0.1.5.dev20240503-0.1.5.dev20240504/README.md --exclude *.pyd
+[2024-05-05 02:35:13] INFO root fetch - processPackages [lute3]: Downloading https://files.pythonhosted.org/packages/b9/c5/99347ead774f5caffc4aac6bdefe577fe2382f923adc45cfc687ab2bc7bb/lute3-3.3.3b1.tar.gz
+[2024-05-05 02:35:13] INFO root fetch - processPackages [lute3]: executing diffoscope
+[2024-05-05 02:35:13] INFO root fetch - processPackages [lute3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lute3-3.3.2b1.tar.gz tmp/lute3-3.3.3b1.tar.gz --markdown 20240505/l/lute3/3.3.2b1-3.3.3b1/README.md --exclude *.pyd
+[2024-05-05 02:35:13] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240503.tar.gz]
+[2024-05-05 02:35:13] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240504.tar.gz]
+[2024-05-05 02:35:13] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-05 02:35:16] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.3.2b1.tar.gz]
+[2024-05-05 02:35:16] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.3.3b1.tar.gz]
+[2024-05-05 02:35:16] INFO root fetch - main [MainThread]: End processing [lute3]: success
+[2024-05-05 02:35:16] INFO root fetch - main [MainThread]: Store serial: [23062203]
