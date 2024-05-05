@@ -7780,3 +7780,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:34:47] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240505.336.tar.gz]
 [2024-05-05 12:34:47] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-05 12:34:47] INFO root fetch - main [MainThread]: Store serial: [23064785]
+[2024-05-05 12:36:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064785]
+[2024-05-05 12:36:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sde-simulator
+[2024-05-05 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connectome-interpreter
+[2024-05-05 12:36:56] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-05 12:36:56] INFO root fetch - processPackages [sde-simulator]: New version: [0.1.92] Old Version: [0.1.91]
+[2024-05-05 12:36:56] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/80/20/709a8ad24b128cd7f56402fe9b64107c07dd3cf1992cdbd9b6ee62590616/connectome_interpreter-1.7.0.tar.gz
+[2024-05-05 12:36:56] INFO root fetch - processPackages [sde-simulator]: Downloading https://files.pythonhosted.org/packages/21/54/5a05fc166def9adae73d3785689a14085263446630643a4a1d0c68042679/sde_simulator-0.1.91.tar.gz
+[2024-05-05 12:36:56] INFO root fetch - processPackages [sde-simulator]: Downloading https://files.pythonhosted.org/packages/ee/79/15b69b8aae80278231748cddacbc287298f448cd5fc75afe37c0fe0b27bb/sde_simulator-0.1.92.tar.gz
+[2024-05-05 12:36:56] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/c9/77/8f216fe167f02f47f5ef1b33f15db0cced16c2147b47df48ee4139a4d241/connectome_interpreter-1.7.1.tar.gz
+[2024-05-05 12:36:56] INFO root fetch - processPackages [sde-simulator]: executing diffoscope
+[2024-05-05 12:36:56] INFO root fetch - processPackages [sde-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sde_simulator-0.1.91.tar.gz tmp/sde_simulator-0.1.92.tar.gz --markdown 20240505/s/sde-simulator/0.1.91-0.1.92/README.md --exclude *.pyd
+[2024-05-05 12:36:56] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-05-05 12:36:56] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.7.0.tar.gz tmp/connectome_interpreter-1.7.1.tar.gz --markdown 20240505/c/connectome-interpreter/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-05 12:36:57] INFO root fetch - processPackages [sde-simulator]: Remove: archive file [/home/abi/fetcher/tmp/sde_simulator-0.1.91.tar.gz]
+[2024-05-05 12:36:57] INFO root fetch - processPackages [sde-simulator]: Remove: archive file [/home/abi/fetcher/tmp/sde_simulator-0.1.92.tar.gz]
+[2024-05-05 12:36:57] INFO root fetch - main [MainThread]: End processing [sde-simulator]: success
+[2024-05-05 12:36:57] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.7.0.tar.gz]
+[2024-05-05 12:36:57] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.7.1.tar.gz]
+[2024-05-05 12:36:57] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-05-05 12:36:57] INFO root fetch - main [MainThread]: Store serial: [23064791]
