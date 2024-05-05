@@ -15139,3 +15139,45 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 21:02:08] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.71.tar.gz]
 [2024-05-05 21:02:08] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
 [2024-05-05 21:02:08] INFO root fetch - main [MainThread]: Store serial: [23068160]
+[2024-05-05 21:04:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068160]
+[2024-05-05 21:04:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 21:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rutificador
+[2024-05-05 21:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmticket
+[2024-05-05 21:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glook
+[2024-05-05 21:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RocketSim
+[2024-05-05 21:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: a5
+[2024-05-05 21:04:16] INFO root fetch - processPackages [tmticket]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-05-05 21:04:16] INFO root fetch - processPackages [glook]: New version: [1.1.8b1] Old Version: [1.1.7b1]
+[2024-05-05 21:04:16] INFO root fetch - processPackages [RocketSim]: New version: [2.1.0a5] Old Version: [2.1.0a4]
+[2024-05-05 21:04:17] INFO root fetch - processPackages [rutificador]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-05 21:04:17] INFO root fetch - processPackages [RocketSim]: Downloading https://files.pythonhosted.org/packages/d8/09/7aeceb3dfc0ab36c7eb2c11550ddecb3fa769732dd2f0920edbcb21ee9d4/RocketSim-2.1.0a4.tar.gz
+[2024-05-05 21:04:17] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/06/5d/7e58e24686127bc237b43066036a7d280762b3b62beac968028639e66636/tmticket-0.1.3-py3-none-any.whl
+[2024-05-05 21:04:17] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/93/4f/05a8741d76edfadbb1edb0b0a5fc5e134f056c70bb40688f047d50df2823/glook-1.1.7b1-py3-none-any.whl
+[2024-05-05 21:04:17] WARNING root fetch - processPackages [a5]: Skipping, unable to determine old version
+[2024-05-05 21:04:17] INFO root fetch - main [MainThread]: End processing [a5] error
+[2024-05-05 21:04:17] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/e6/05/250942fb6a3c13989a9849f7f40d437cae3d3be4d3fb6ba9e04815f79479/rutificador-0.2.7.tar.gz
+[2024-05-05 21:04:17] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/c6/4e/08502f90aa028dc15841efdfa47e327ae41fc6e0b4594fa4b0873fd7a28a/glook-1.1.8b1.tar.gz
+[2024-05-05 21:04:17] INFO root fetch - processPackages [tmticket]: Downloading https://files.pythonhosted.org/packages/e5/55/25df781c8fa88a3e9a5bc23fccbe07bf36e5a47bb07c1081c1da24e5a19c/tmticket-0.1.5.tar.gz
+[2024-05-05 21:04:17] INFO root fetch - processPackages [glook]: executing diffoscope
+[2024-05-05 21:04:17] INFO root fetch - processPackages [glook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glook-1.1.7b1-py3-none-any.whl.zip tmp/glook-1.1.8b1.tar.gz --markdown 20240505/g/glook/1.1.7b1-1.1.8b1/README.md --exclude *.pyd
+[2024-05-05 21:04:17] INFO root fetch - processPackages [RocketSim]: Downloading https://files.pythonhosted.org/packages/9d/b4/091a7debdd58c767a6c89fd7035ffca3e541c5c2f9bbeb757a55a15fb844/RocketSim-2.1.0a5.tar.gz
+[2024-05-05 21:04:17] INFO root fetch - processPackages [tmticket]: executing diffoscope
+[2024-05-05 21:04:17] INFO root fetch - processPackages [tmticket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmticket-0.1.3-py3-none-any.whl.zip tmp/tmticket-0.1.5.tar.gz --markdown 20240505/t/tmticket/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-05-05 21:04:17] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/c7/88/2ef11778f94b4667297b99cc8130c12efc3c858233f2b800dcbabd92161e/rutificador-0.2.8.tar.gz
+[2024-05-05 21:04:17] INFO root fetch - processPackages [rutificador]: executing diffoscope
+[2024-05-05 21:04:17] INFO root fetch - processPackages [rutificador]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rutificador-0.2.7.tar.gz tmp/rutificador-0.2.8.tar.gz --markdown 20240505/r/rutificador/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-05 21:04:17] INFO root fetch - processPackages [RocketSim]: executing diffoscope
+[2024-05-05 21:04:17] INFO root fetch - processPackages [RocketSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RocketSim-2.1.0a4.tar.gz tmp/RocketSim-2.1.0a5.tar.gz --markdown 20240505/R/RocketSim/2.1.0a4-2.1.0a5/README.md --exclude *.pyd
+[2024-05-05 21:04:17] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.3-py3-none-any.whl.zip]
+[2024-05-05 21:04:17] INFO root fetch - processPackages [tmticket]: Remove: archive file [/home/abi/fetcher/tmp/tmticket-0.1.5.tar.gz]
+[2024-05-05 21:04:17] INFO root fetch - main [MainThread]: End processing [tmticket]: success
+[2024-05-05 21:04:18] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-1.1.7b1-py3-none-any.whl.zip]
+[2024-05-05 21:04:18] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-1.1.8b1.tar.gz]
+[2024-05-05 21:04:18] INFO root fetch - main [MainThread]: End processing [glook]: success
+[2024-05-05 21:04:18] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.7.tar.gz]
+[2024-05-05 21:04:18] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.8.tar.gz]
+[2024-05-05 21:04:18] INFO root fetch - main [MainThread]: End processing [rutificador]: success
+[2024-05-05 21:04:19] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a4.tar.gz]
+[2024-05-05 21:04:19] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a5.tar.gz]
+[2024-05-05 21:04:19] INFO root fetch - main [MainThread]: End processing [RocketSim]: success
+[2024-05-05 21:04:19] INFO root fetch - main [MainThread]: Store serial: [23068171]
