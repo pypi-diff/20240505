@@ -8564,3 +8564,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:46:39] INFO root fetch - processPackages [vastdb]: Remove: archive file [/home/abi/fetcher/tmp/vastdb-0.1.3.tar.gz]
 [2024-05-05 13:46:39] INFO root fetch - main [MainThread]: End processing [vastdb]: success
 [2024-05-05 13:46:39] INFO root fetch - main [MainThread]: Store serial: [23065103]
+[2024-05-05 13:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065103]
+[2024-05-05 13:48:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 13:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dspy-ai-hmoazam
+[2024-05-05 13:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djdantic
+[2024-05-05 13:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: memory-machine
+[2024-05-05 13:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bpm-ai
+[2024-05-05 13:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: 2020239019
+[2024-05-05 13:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: thingking-machine
+[2024-05-05 13:48:48] WARNING root fetch - processPackages [thingking-machine]: Skipping, unable to determine old version
+[2024-05-05 13:48:48] INFO root fetch - main [MainThread]: End processing [thingking-machine] error
+[2024-05-05 13:48:48] INFO root fetch - processPackages [memory-machine]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 13:48:48] INFO root fetch - processPackages [djdantic]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 13:48:48] INFO root fetch - processPackages [bpm-ai]: New version: [1.7.3] Old Version: [1.7.2]
+[2024-05-05 13:48:48] WARNING root fetch - processPackages [dspy-ai-hmoazam]: Skipping, unable to determine old version
+[2024-05-05 13:48:48] INFO root fetch - main [MainThread]: End processing [dspy-ai-hmoazam] error
+[2024-05-05 13:48:48] WARNING root fetch - processPackages [2020239019]: Skipping, unable to determine old version
+[2024-05-05 13:48:48] INFO root fetch - main [MainThread]: End processing [2020239019] error
+[2024-05-05 13:48:48] INFO root fetch - processPackages [memory-machine]: Downloading https://files.pythonhosted.org/packages/25/ae/cf0d5563651ca5924e9fe575197abecdc740102ab80132b24884cd2c3ffd/memory_machine-0.0.1.tar.gz
+[2024-05-05 13:48:48] INFO root fetch - processPackages [djdantic]: Downloading https://files.pythonhosted.org/packages/6b/01/7b99b438be3180f4c11b404a39696e894c48441b43764956dfe1c658a47e/djdantic-0.0.8.tar.gz
+[2024-05-05 13:48:48] INFO root fetch - processPackages [bpm-ai]: Downloading https://files.pythonhosted.org/packages/eb/89/4cafd971c03fe1c9f1d6dd2c301907aaf130be49f70ae240e4fe660234c4/bpm_ai-1.7.2.tar.gz
+[2024-05-05 13:48:48] INFO root fetch - processPackages [memory-machine]: Downloading https://files.pythonhosted.org/packages/83/aa/65a18422bb05a11639a7365b24e78694885074668106ac06a380907a1ffc/memory_machine-0.0.2.tar.gz
+[2024-05-05 13:48:48] INFO root fetch - processPackages [bpm-ai]: Downloading https://files.pythonhosted.org/packages/84/a5/a42d9726d32e966e1d71d97554969c80c1b4df185ca84829d2cecd43f0fe/bpm_ai-1.7.3.tar.gz
+[2024-05-05 13:48:48] INFO root fetch - processPackages [djdantic]: Downloading https://files.pythonhosted.org/packages/88/22/c9aa0b10748408764928cf0af9f3447f06fac8c6db08ba9a54a5703619c0/djdantic-0.0.9.tar.gz
+[2024-05-05 13:48:48] INFO root fetch - processPackages [memory-machine]: executing diffoscope
+[2024-05-05 13:48:48] INFO root fetch - processPackages [memory-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_machine-0.0.1.tar.gz tmp/memory_machine-0.0.2.tar.gz --markdown 20240505/m/memory-machine/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 13:48:48] INFO root fetch - processPackages [bpm-ai]: executing diffoscope
+[2024-05-05 13:48:48] INFO root fetch - processPackages [bpm-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpm_ai-1.7.2.tar.gz tmp/bpm_ai-1.7.3.tar.gz --markdown 20240505/b/bpm-ai/1.7.2-1.7.3/README.md --exclude *.pyd
+[2024-05-05 13:48:49] INFO root fetch - processPackages [djdantic]: executing diffoscope
+[2024-05-05 13:48:49] INFO root fetch - processPackages [djdantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djdantic-0.0.8.tar.gz tmp/djdantic-0.0.9.tar.gz --markdown 20240505/d/djdantic/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 13:48:49] INFO root fetch - processPackages [memory-machine]: Remove: archive file [/home/abi/fetcher/tmp/memory_machine-0.0.1.tar.gz]
+[2024-05-05 13:48:49] INFO root fetch - processPackages [memory-machine]: Remove: archive file [/home/abi/fetcher/tmp/memory_machine-0.0.2.tar.gz]
+[2024-05-05 13:48:49] INFO root fetch - main [MainThread]: End processing [memory-machine]: success
+[2024-05-05 13:48:49] INFO root fetch - processPackages [bpm-ai]: Remove: archive file [/home/abi/fetcher/tmp/bpm_ai-1.7.2.tar.gz]
+[2024-05-05 13:48:49] INFO root fetch - processPackages [bpm-ai]: Remove: archive file [/home/abi/fetcher/tmp/bpm_ai-1.7.3.tar.gz]
+[2024-05-05 13:48:49] INFO root fetch - main [MainThread]: End processing [bpm-ai]: success
+[2024-05-05 13:48:49] INFO root fetch - processPackages [djdantic]: Remove: archive file [/home/abi/fetcher/tmp/djdantic-0.0.8.tar.gz]
+[2024-05-05 13:48:49] INFO root fetch - processPackages [djdantic]: Remove: archive file [/home/abi/fetcher/tmp/djdantic-0.0.9.tar.gz]
+[2024-05-05 13:48:49] INFO root fetch - main [MainThread]: End processing [djdantic]: success
+[2024-05-05 13:48:49] INFO root fetch - main [MainThread]: Store serial: [23065123]
