@@ -9033,3 +9033,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 14:12:56] INFO root fetch - processPackages [whatshap]: Remove: archive file [/home/abi/fetcher/tmp/whatshap-2.3.tar.gz]
 [2024-05-05 14:12:56] INFO root fetch - main [MainThread]: End processing [whatshap]: success
 [2024-05-05 14:12:56] INFO root fetch - main [MainThread]: Store serial: [23065370]
+[2024-05-05 14:15:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065370]
+[2024-05-05 14:15:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 14:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-05-05 14:15:05] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-05-05 14:15:05] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-05-05 14:15:05] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-05-05 14:15:05] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-05-05 14:15:05] INFO root fetch - main [MainThread]: Store serial: [23065372]
