@@ -7946,3 +7946,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:47:55] INFO root fetch - processPackages [string-fixer]: Remove: archive file [/home/abi/fetcher/tmp/string_fixer-0.2.0.tar.gz]
 [2024-05-05 12:47:55] INFO root fetch - main [MainThread]: End processing [string-fixer]: success
 [2024-05-05 12:47:55] INFO root fetch - main [MainThread]: Store serial: [23064872]
+[2024-05-05 12:49:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064872]
+[2024-05-05 12:50:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 12:50:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: potatoscript
+[2024-05-05 12:50:04] WARNING root fetch - processPackages [potatoscript]: Skipping, unable to determine old version
+[2024-05-05 12:50:04] INFO root fetch - main [MainThread]: End processing [potatoscript] error
+[2024-05-05 12:50:04] INFO root fetch - main [MainThread]: Store serial: [23064881]
