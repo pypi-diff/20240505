@@ -10391,3 +10391,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 15:43:51] INFO root fetch - processPackages [nqrduck-spectrometer]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck_spectrometer-0.0.9.tar.gz]
 [2024-05-05 15:43:51] INFO root fetch - main [MainThread]: End processing [nqrduck-spectrometer]: success
 [2024-05-05 15:43:51] INFO root fetch - main [MainThread]: Store serial: [23066057]
+[2024-05-05 15:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066057]
+[2024-05-05 15:46:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyinim
+[2024-05-05 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oda-reader
+[2024-05-05 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TDhelper
+[2024-05-05 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: utilmy
+[2024-05-05 15:46:00] INFO root fetch - processPackages [pyinim]: New version: [0.0.13] Old Version: [0.0.12]
+[2024-05-05 15:46:00] INFO root fetch - processPackages [utilmy]: New version: [0.1.17148804] Old Version: [0.1.17141395]
+[2024-05-05 15:46:00] INFO root fetch - processPackages [oda-reader]: New version: [0.2.0] Old Version: [0.0.9]
+[2024-05-05 15:46:00] INFO root fetch - processPackages [TDhelper]: New version: [2.7.9] Old Version: [2.7.8]
+[2024-05-05 15:46:00] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/03/d2/ce1b320c98595170d2fb370d8833ff78533793c50e4be80e51624d2a88e8/utilmy-0.1.17141395.tar.gz
+[2024-05-05 15:46:00] INFO root fetch - processPackages [pyinim]: Downloading https://files.pythonhosted.org/packages/90/af/a00527ca61278d43fd5c4fc43253ad61beada8af0f5b33b630f49bb00457/pyinim-0.0.12.tar.gz
+[2024-05-05 15:46:00] INFO root fetch - processPackages [oda-reader]: Downloading https://files.pythonhosted.org/packages/a2/e6/c08c734234e8c600a3e6b51010fb8f591f29639712b2315ab0da66bff578/oda_reader-0.0.9.tar.gz
+[2024-05-05 15:46:00] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/62/41/8bb1c5a0ec63db74f740859fd80bd5fb3f78d0d66bd1804cca0fa5c4bf9d/TDhelper-2.7.8.tar.gz
+[2024-05-05 15:46:00] INFO root fetch - processPackages [pyinim]: Downloading https://files.pythonhosted.org/packages/6a/51/66308a60b5c9fe2668f84cf0d57935c3e2a298c0560c45b09bf948a1f05d/pyinim-0.0.13.tar.gz
+[2024-05-05 15:46:00] INFO root fetch - processPackages [oda-reader]: Downloading https://files.pythonhosted.org/packages/90/92/202d5eded288c7f4f3c79f98d711f17c088a9951ffd302ea46827c8878b6/oda_reader-0.2.0.tar.gz
+[2024-05-05 15:46:01] INFO root fetch - processPackages [pyinim]: executing diffoscope
+[2024-05-05 15:46:01] INFO root fetch - processPackages [pyinim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinim-0.0.12.tar.gz tmp/pyinim-0.0.13.tar.gz --markdown 20240505/p/pyinim/0.0.12-0.0.13/README.md --exclude *.pyd
+[2024-05-05 15:46:01] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/ee/02/51fff29adb6203952ba1f972f64db9912a78e902c240e5c24f7fa47ba5ff/TDhelper-2.7.9.tar.gz
+[2024-05-05 15:46:01] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/3a/09/07b9cb23c8b3aa7eba6d4504ad83b916a3982df4e639adc2ac43cddae71f/utilmy-0.1.17148804.tar.gz
+[2024-05-05 15:46:01] INFO root fetch - processPackages [oda-reader]: executing diffoscope
+[2024-05-05 15:46:01] INFO root fetch - processPackages [oda-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oda_reader-0.0.9.tar.gz tmp/oda_reader-0.2.0.tar.gz --markdown 20240505/o/oda-reader/0.0.9-0.2.0/README.md --exclude *.pyd
+[2024-05-05 15:46:01] INFO root fetch - processPackages [TDhelper]: executing diffoscope
+[2024-05-05 15:46:01] INFO root fetch - processPackages [TDhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TDhelper-2.7.8.tar.gz tmp/TDhelper-2.7.9.tar.gz --markdown 20240505/T/TDhelper/2.7.8-2.7.9/README.md --exclude *.pyd
+[2024-05-05 15:46:01] INFO root fetch - processPackages [utilmy]: executing diffoscope
+[2024-05-05 15:46:01] INFO root fetch - processPackages [utilmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilmy-0.1.17141395.tar.gz tmp/utilmy-0.1.17148804.tar.gz --markdown 20240505/u/utilmy/0.1.17141395-0.1.17148804/README.md --exclude *.pyd
+[2024-05-05 15:46:01] INFO root fetch - processPackages [pyinim]: Remove: archive file [/home/abi/fetcher/tmp/pyinim-0.0.12.tar.gz]
+[2024-05-05 15:46:01] INFO root fetch - processPackages [pyinim]: Remove: archive file [/home/abi/fetcher/tmp/pyinim-0.0.13.tar.gz]
+[2024-05-05 15:46:01] INFO root fetch - main [MainThread]: End processing [pyinim]: success
+[2024-05-05 15:46:01] INFO root fetch - processPackages [oda-reader]: Remove: archive file [/home/abi/fetcher/tmp/oda_reader-0.0.9.tar.gz]
+[2024-05-05 15:46:01] INFO root fetch - processPackages [oda-reader]: Remove: archive file [/home/abi/fetcher/tmp/oda_reader-0.2.0.tar.gz]
+[2024-05-05 15:46:01] INFO root fetch - main [MainThread]: End processing [oda-reader]: success
+[2024-05-05 15:46:02] INFO root fetch - processPackages [TDhelper]: Remove: archive file [/home/abi/fetcher/tmp/TDhelper-2.7.8.tar.gz]
+[2024-05-05 15:46:02] INFO root fetch - processPackages [TDhelper]: Remove: archive file [/home/abi/fetcher/tmp/TDhelper-2.7.9.tar.gz]
+[2024-05-05 15:46:02] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
+[2024-05-05 15:46:09] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17141395.tar.gz]
+[2024-05-05 15:46:09] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17148804.tar.gz]
+[2024-05-05 15:46:09] INFO root fetch - main [MainThread]: End processing [utilmy]: success
+[2024-05-05 15:46:09] INFO root fetch - main [MainThread]: Store serial: [23066066]
