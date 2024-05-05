@@ -14433,3 +14433,59 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:16:09] WARNING root fetch - processPackages [shiki.py]: Skipping, unable to determine old version
 [2024-05-05 20:16:09] INFO root fetch - main [MainThread]: End processing [shiki.py] error
 [2024-05-05 20:16:09] INFO root fetch - main [MainThread]: Store serial: [23067816]
+[2024-05-05 20:18:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067816]
+[2024-05-05 20:18:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: songfinder
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dsplus
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: songfindercli
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mailhog
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tinygrad-tools
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-neon
+[2024-05-05 20:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flightanalysis
+[2024-05-05 20:18:18] INFO root fetch - processPackages [mailhog]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 20:18:18] INFO root fetch - processPackages [dsplus]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-05 20:18:18] INFO root fetch - processPackages [tinygrad-tools]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-05 20:18:18] WARNING root fetch - processPackages [fastapi-neon]: Skipping, unable to determine old version
+[2024-05-05 20:18:18] INFO root fetch - main [MainThread]: End processing [fastapi-neon] error
+[2024-05-05 20:18:18] INFO root fetch - processPackages [songfindercli]: New version: [0.9.7] Old Version: [0.9.5]
+[2024-05-05 20:18:18] INFO root fetch - processPackages [flightanalysis]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 20:18:18] INFO root fetch - processPackages [songfinder]: New version: [0.9.7] Old Version: [0.9.5]
+[2024-05-05 20:18:18] INFO root fetch - processPackages [mailhog]: Downloading https://files.pythonhosted.org/packages/cc/08/b1045c372a1a403dfe8ff88408ea535ab7e9bfeca8eee7f02e405b6b8256/mailhog-0.1.0.tar.gz
+[2024-05-05 20:18:18] INFO root fetch - processPackages [dsplus]: Downloading https://files.pythonhosted.org/packages/a1/5a/8a84aa073f91ae92c624686782d4e824f4d4b451a946c38b2daf3c029a97/dsplus-0.4.3.tar.gz
+[2024-05-05 20:18:18] INFO root fetch - processPackages [songfindercli]: Downloading https://files.pythonhosted.org/packages/16/db/126ee764619b1e3e11bac4b35631a31c33c2c836bb9825d65347861e1e48/songfindercli-0.9.5-py3-none-any.whl
+[2024-05-05 20:18:18] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/a4/ad/9182e05cd8b08d52fcc4a76126a30fc9f524025f3e4c573acdb778f54a23/songfinder-0.9.5-py3-none-any.whl
+[2024-05-05 20:18:18] INFO root fetch - processPackages [tinygrad-tools]: Downloading https://files.pythonhosted.org/packages/5c/0a/ab221ea6225553562119efefc238c7003a918601abf8a30b6eab2e53ae76/tinygrad_tools-0.8.0-py3-none-any.whl
+[2024-05-05 20:18:18] INFO root fetch - processPackages [flightanalysis]: Downloading https://files.pythonhosted.org/packages/c5/b8/b106ff5563081c957869725b277e1bc0ef78e382b9bcd8949bfbce6887d6/flightanalysis-0.2.9.tar.gz
+[2024-05-05 20:18:18] INFO root fetch - processPackages [dsplus]: Downloading https://files.pythonhosted.org/packages/ea/ce/6707c875299b71ff59a385a23cc2518157399fe22eb8fc04cc80838a7b16/dsplus-0.4.4.tar.gz
+[2024-05-05 20:18:19] INFO root fetch - processPackages [mailhog]: Downloading https://files.pythonhosted.org/packages/41/45/27db1a209cda3512362c95e5d6236b307592ab4668e11371b24c3ae75794/mailhog-0.1.1.tar.gz
+[2024-05-05 20:18:19] INFO root fetch - processPackages [tinygrad-tools]: Downloading https://files.pythonhosted.org/packages/a6/25/6f57ed1cb85d394efc03843046d73fbe9bb2d5b6b22c3986ce1b5d16f751/tinygrad_tools-0.8.1.tar.gz
+[2024-05-05 20:18:19] WARNING root fetch - processPackages [flightanalysis]: Skipping package: exceeds size limit 22935901>=10485760
+[2024-05-05 20:18:19] INFO root fetch - main [MainThread]: End processing [flightanalysis] error
+[2024-05-05 20:18:19] INFO root fetch - processPackages [songfindercli]: Downloading https://files.pythonhosted.org/packages/33/3b/641deefaf0e91cf6a1df5eba6ee91bd111b880aa2e6b3fb259217b9e0459/songfindercli-0.9.7-py3-none-any.whl
+[2024-05-05 20:18:19] INFO root fetch - processPackages [mailhog]: executing diffoscope
+[2024-05-05 20:18:19] INFO root fetch - processPackages [mailhog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailhog-0.1.0.tar.gz tmp/mailhog-0.1.1.tar.gz --markdown 20240505/m/mailhog/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 20:18:19] INFO root fetch - processPackages [tinygrad-tools]: executing diffoscope
+[2024-05-05 20:18:19] INFO root fetch - processPackages [tinygrad-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinygrad_tools-0.8.0-py3-none-any.whl.zip tmp/tinygrad_tools-0.8.1.tar.gz --markdown 20240505/t/tinygrad-tools/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-05 20:18:19] INFO root fetch - processPackages [dsplus]: executing diffoscope
+[2024-05-05 20:18:19] INFO root fetch - processPackages [dsplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsplus-0.4.3.tar.gz tmp/dsplus-0.4.4.tar.gz --markdown 20240505/d/dsplus/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-05 20:18:19] INFO root fetch - processPackages [songfindercli]: executing diffoscope
+[2024-05-05 20:18:19] INFO root fetch - processPackages [songfindercli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfindercli-0.9.5-py3-none-any.whl.zip tmp/songfindercli-0.9.7-py3-none-any.whl.zip --markdown 20240505/s/songfindercli/0.9.5-0.9.7/README.md --exclude *.pyd
+[2024-05-05 20:18:19] INFO root fetch - processPackages [mailhog]: Remove: archive file [/home/abi/fetcher/tmp/mailhog-0.1.0.tar.gz]
+[2024-05-05 20:18:19] INFO root fetch - processPackages [mailhog]: Remove: archive file [/home/abi/fetcher/tmp/mailhog-0.1.1.tar.gz]
+[2024-05-05 20:18:19] INFO root fetch - main [MainThread]: End processing [mailhog]: success
+[2024-05-05 20:18:19] INFO root fetch - processPackages [dsplus]: Remove: archive file [/home/abi/fetcher/tmp/dsplus-0.4.3.tar.gz]
+[2024-05-05 20:18:19] INFO root fetch - processPackages [dsplus]: Remove: archive file [/home/abi/fetcher/tmp/dsplus-0.4.4.tar.gz]
+[2024-05-05 20:18:19] INFO root fetch - main [MainThread]: End processing [dsplus]: success
+[2024-05-05 20:18:20] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.5-py3-none-any.whl.zip]
+[2024-05-05 20:18:20] INFO root fetch - processPackages [songfindercli]: Remove: archive file [/home/abi/fetcher/tmp/songfindercli-0.9.7-py3-none-any.whl.zip]
+[2024-05-05 20:18:20] INFO root fetch - main [MainThread]: End processing [songfindercli]: success
+[2024-05-05 20:18:20] INFO root fetch - processPackages [tinygrad-tools]: Remove: archive file [/home/abi/fetcher/tmp/tinygrad_tools-0.8.0-py3-none-any.whl.zip]
+[2024-05-05 20:18:20] INFO root fetch - processPackages [tinygrad-tools]: Remove: archive file [/home/abi/fetcher/tmp/tinygrad_tools-0.8.1.tar.gz]
+[2024-05-05 20:18:20] INFO root fetch - main [MainThread]: End processing [tinygrad-tools]: success
+[2024-05-05 20:18:20] INFO root fetch - processPackages [songfinder]: Downloading https://files.pythonhosted.org/packages/58/a4/8d6ec2246f1d896b47cb78752c0e9be1b58f3bcd7d8fa589ca5bb37cf07a/songfinder-0.9.7-py3-none-any.whl
+[2024-05-05 20:18:20] INFO root fetch - processPackages [songfinder]: executing diffoscope
+[2024-05-05 20:18:20] INFO root fetch - processPackages [songfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/songfinder-0.9.5-py3-none-any.whl.zip tmp/songfinder-0.9.7-py3-none-any.whl.zip --markdown 20240505/s/songfinder/0.9.5-0.9.7/README.md --exclude *.pyd
+[2024-05-05 20:18:21] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.5-py3-none-any.whl.zip]
+[2024-05-05 20:18:21] INFO root fetch - processPackages [songfinder]: Remove: archive file [/home/abi/fetcher/tmp/songfinder-0.9.7-py3-none-any.whl.zip]
+[2024-05-05 20:18:21] INFO root fetch - main [MainThread]: End processing [songfinder]: success
+[2024-05-05 20:18:21] INFO root fetch - main [MainThread]: Store serial: [23067837]
