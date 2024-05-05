@@ -3124,3 +3124,24 @@
 [2024-05-05 05:08:50] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.6.tar.gz]
 [2024-05-05 05:08:50] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
 [2024-05-05 05:08:50] INFO root fetch - main [MainThread]: Store serial: [23062855]
+[2024-05-05 05:10:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062855]
+[2024-05-05 05:10:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 05:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RocketSim
+[2024-05-05 05:10:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batchfetch
+[2024-05-05 05:10:59] INFO root fetch - processPackages [RocketSim]: New version: [2.1.0a4] Old Version: [2.1.0a3]
+[2024-05-05 05:10:59] INFO root fetch - processPackages [RocketSim]: Downloading https://files.pythonhosted.org/packages/f9/34/b1313262a6ecbd265b9a6c157f0227909feb8f4cf4ffb8d0f953cd92b3f0/RocketSim-2.1.0a3.tar.gz
+[2024-05-05 05:10:59] INFO root fetch - processPackages [batchfetch]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-05 05:10:59] INFO root fetch - processPackages [batchfetch]: Downloading https://files.pythonhosted.org/packages/e3/0f/69fb012bbc9fd49df58f155902dbdc53addfca47f5a5015967cc178c531a/batchfetch-1.0.4.tar.gz
+[2024-05-05 05:10:59] INFO root fetch - processPackages [RocketSim]: Downloading https://files.pythonhosted.org/packages/d8/09/7aeceb3dfc0ab36c7eb2c11550ddecb3fa769732dd2f0920edbcb21ee9d4/RocketSim-2.1.0a4.tar.gz
+[2024-05-05 05:10:59] INFO root fetch - processPackages [RocketSim]: executing diffoscope
+[2024-05-05 05:10:59] INFO root fetch - processPackages [RocketSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RocketSim-2.1.0a3.tar.gz tmp/RocketSim-2.1.0a4.tar.gz --markdown 20240505/R/RocketSim/2.1.0a3-2.1.0a4/README.md --exclude *.pyd
+[2024-05-05 05:10:59] INFO root fetch - processPackages [batchfetch]: Downloading https://files.pythonhosted.org/packages/0a/7a/2da0562d3c4d2c72d68a85ae56e5c82632adcdd5857b4191b4fe2a823a8c/batchfetch-1.0.5.tar.gz
+[2024-05-05 05:10:59] INFO root fetch - processPackages [batchfetch]: executing diffoscope
+[2024-05-05 05:10:59] INFO root fetch - processPackages [batchfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batchfetch-1.0.4.tar.gz tmp/batchfetch-1.0.5.tar.gz --markdown 20240505/b/batchfetch/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-05 05:11:00] INFO root fetch - processPackages [batchfetch]: Remove: archive file [/home/abi/fetcher/tmp/batchfetch-1.0.4.tar.gz]
+[2024-05-05 05:11:00] INFO root fetch - processPackages [batchfetch]: Remove: archive file [/home/abi/fetcher/tmp/batchfetch-1.0.5.tar.gz]
+[2024-05-05 05:11:00] INFO root fetch - main [MainThread]: End processing [batchfetch]: success
+[2024-05-05 05:11:01] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a3.tar.gz]
+[2024-05-05 05:11:01] INFO root fetch - processPackages [RocketSim]: Remove: archive file [/home/abi/fetcher/tmp/RocketSim-2.1.0a4.tar.gz]
+[2024-05-05 05:11:01] INFO root fetch - main [MainThread]: End processing [RocketSim]: success
+[2024-05-05 05:11:01] INFO root fetch - main [MainThread]: Store serial: [23062863]
