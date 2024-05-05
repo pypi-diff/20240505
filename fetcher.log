@@ -6514,3 +6514,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:59:51] INFO root fetch - processPackages [bitbox02]: Remove: archive file [/home/abi/fetcher/tmp/bitbox02-6.3.0.tar.gz]
 [2024-05-05 10:59:51] INFO root fetch - main [MainThread]: End processing [bitbox02]: success
 [2024-05-05 10:59:51] INFO root fetch - main [MainThread]: Store serial: [23064255]
+[2024-05-05 11:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064255]
+[2024-05-05 11:02:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-05 11:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monobit
+[2024-05-05 11:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shell-ai
+[2024-05-05 11:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pter
+[2024-05-05 11:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bambooai
+[2024-05-05 11:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mmo-tools
+[2024-05-05 11:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: siglyser
+[2024-05-05 11:02:00] INFO root fetch - processPackages [siglyser]: New version: [0.2] Old Version: [0.112]
+[2024-05-05 11:02:00] INFO root fetch - processPackages [mmo-tools]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-05 11:02:00] INFO root fetch - processPackages [bambooai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-05 11:02:00] INFO root fetch - processPackages [shell-ai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-05 11:02:00] INFO root fetch - processPackages [pter]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-05-05 11:02:01] INFO root fetch - processPackages [siglyser]: Downloading https://files.pythonhosted.org/packages/c8/4b/45cf818f1a46a615293acfae6ecbca719bb28031dc0d7f5ca22e7a4831ac/siglyser-0.112.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [monobit]: New version: [0.43.0] Old Version: [0.42.2]
+[2024-05-05 11:02:01] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/29/da/c205af6119d6ae79db9f10609dc689eda96c87fe51ba5af16b79ede94635/mmo_tools-0.1.4.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/32/81/667ba343ba60a295254f89b642987cfea30c5f5389f53750ed5c6b6865c2/bambooai-0.3.8.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [shell-ai]: Downloading https://files.pythonhosted.org/packages/0a/c2/3b0cf7425ba8d634826f6516801da0239384c40e3848cf4cdba0d0c1b8b3/shell-ai-0.3.8.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [pter]: Downloading https://files.pythonhosted.org/packages/cc/3d/6fc7f754cc7f76b4392a781dabc3029bff9cc43efbe59e7a1cd534f51fbb/pter-3.8.0.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [monobit]: Downloading https://files.pythonhosted.org/packages/b3/e9/cba5a7a6c202f97696300f789a022b3870b5706600b397443d4c2314b1b7/monobit-0.42.2.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [siglyser]: Downloading https://files.pythonhosted.org/packages/95/67/805ee3427612e09b19d1bfb676898fe8e5bc64c1f33975861ed962232099/siglyser-0.2.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/03/5c/8e0fe2795f349e0c1dbced288884ecd1b91aa641b5350b8181c6fa97f865/mmo_tools-0.1.5.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [siglyser]: executing diffoscope
+[2024-05-05 11:02:01] INFO root fetch - processPackages [siglyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siglyser-0.112.tar.gz tmp/siglyser-0.2.tar.gz --markdown 20240505/s/siglyser/0.112-0.2/README.md --exclude *.pyd
+[2024-05-05 11:02:01] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/ea/a0/d05c4cc2cbb7dcb2bdaea0ccdee9f888f37edeb6b0a643084744079f4939/bambooai-0.3.9.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-05 11:02:01] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.1.4.tar.gz tmp/mmo_tools-0.1.5.tar.gz --markdown 20240505/m/mmo-tools/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-05 11:02:01] INFO root fetch - processPackages [shell-ai]: Downloading https://files.pythonhosted.org/packages/e8/12/46bfaae41af03dc297446bbc3e38c6d0b55b93cd5234c52151239ee13ca4/shell-ai-0.3.9.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2024-05-05 11:02:01] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.3.8.tar.gz tmp/bambooai-0.3.9.tar.gz --markdown 20240505/b/bambooai/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-05 11:02:01] INFO root fetch - processPackages [shell-ai]: executing diffoscope
+[2024-05-05 11:02:01] INFO root fetch - processPackages [shell-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell-ai-0.3.8.tar.gz tmp/shell-ai-0.3.9.tar.gz --markdown 20240505/s/shell-ai/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-05 11:02:01] INFO root fetch - processPackages [pter]: Downloading https://files.pythonhosted.org/packages/1f/43/955ca5bbcfb19599f7f1f3f1fab8d67fc2afd17d8233bfa5f081a5b1407c/pter-3.9.0.tar.gz
+[2024-05-05 11:02:01] INFO root fetch - processPackages [pter]: executing diffoscope
+[2024-05-05 11:02:01] INFO root fetch - processPackages [pter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pter-3.8.0.tar.gz tmp/pter-3.9.0.tar.gz --markdown 20240505/p/pter/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-05-05 11:02:02] INFO root fetch - processPackages [siglyser]: Remove: archive file [/home/abi/fetcher/tmp/siglyser-0.112.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - processPackages [siglyser]: Remove: archive file [/home/abi/fetcher/tmp/siglyser-0.2.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - main [MainThread]: End processing [siglyser]: success
+[2024-05-05 11:02:02] INFO root fetch - processPackages [shell-ai]: Remove: archive file [/home/abi/fetcher/tmp/shell-ai-0.3.8.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - processPackages [shell-ai]: Remove: archive file [/home/abi/fetcher/tmp/shell-ai-0.3.9.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - main [MainThread]: End processing [shell-ai]: success
+[2024-05-05 11:02:02] INFO root fetch - processPackages [monobit]: Downloading https://files.pythonhosted.org/packages/3b/a1/beac1a585dcab8315715a35a8e345e00ea63ac8f80aea6d851941206956c/monobit-0.43.0.tar.gz
+[2024-05-05 11:02:02] INFO root fetch - processPackages [bambooai]: Remove: archive file [/home/abi/fetcher/tmp/bambooai-0.3.8.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - processPackages [bambooai]: Remove: archive file [/home/abi/fetcher/tmp/bambooai-0.3.9.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2024-05-05 11:02:02] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.4.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.5.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-05 11:02:02] INFO root fetch - processPackages [monobit]: executing diffoscope
+[2024-05-05 11:02:02] INFO root fetch - processPackages [monobit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monobit-0.42.2.tar.gz tmp/monobit-0.43.0.tar.gz --markdown 20240505/m/monobit/0.42.2-0.43.0/README.md --exclude *.pyd
+[2024-05-05 11:02:02] INFO root fetch - processPackages [pter]: Remove: archive file [/home/abi/fetcher/tmp/pter-3.8.0.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - processPackages [pter]: Remove: archive file [/home/abi/fetcher/tmp/pter-3.9.0.tar.gz]
+[2024-05-05 11:02:02] INFO root fetch - main [MainThread]: End processing [pter]: success
+[2024-05-05 11:02:06] INFO root fetch - processPackages [monobit]: Remove: archive file [/home/abi/fetcher/tmp/monobit-0.42.2.tar.gz]
+[2024-05-05 11:02:06] INFO root fetch - processPackages [monobit]: Remove: archive file [/home/abi/fetcher/tmp/monobit-0.43.0.tar.gz]
+[2024-05-05 11:02:06] INFO root fetch - main [MainThread]: End processing [monobit]: success
+[2024-05-05 11:02:06] INFO root fetch - main [MainThread]: Store serial: [23064272]
