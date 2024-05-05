@@ -17274,3 +17274,30 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:22:13] WARNING root fetch - processPackages [youtube-html-parser]: Skipping, unable to determine old version
 [2024-05-05 23:22:13] INFO root fetch - main [MainThread]: End processing [youtube-html-parser] error
 [2024-05-05 23:22:13] INFO root fetch - main [MainThread]: Store serial: [23069155]
+[2024-05-05 23:24:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069155]
+[2024-05-05 23:24:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 23:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytrivialsql
+[2024-05-05 23:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: youtube-html-parser
+[2024-05-05 23:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyEDAA.Reports
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pyEDAA.Reports]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-05 23:24:22] INFO root fetch - processPackages [youtube-html-parser]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/e7/d5/3fc940351b795acb77045e01ada251e3ce6f73612fd2562e02b2236fa6ae/pyedaa_reports-0.5.2.tar.gz
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pytrivialsql]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-05 23:24:22] INFO root fetch - processPackages [youtube-html-parser]: Downloading https://files.pythonhosted.org/packages/bf/e0/e0a42866607f70b24fc699df7734b142302d4aa6310af6cb35c9bc1a4980/youtube_html_parser-1.0.0-py2.py3-none-any.whl
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pytrivialsql]: Downloading https://files.pythonhosted.org/packages/b9/5d/6db9f5a7ef35780260776c2921848857f8f8e560edde260433d7fb6a8497/pytrivialsql-0.1.4.tar.gz
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pyEDAA.Reports]: Downloading https://files.pythonhosted.org/packages/c7/e6/70f7cf7cdb955706158408a3bd8cf3d8b1867fa0196e79eae1582c893c8a/pyedaa_reports-0.6.0.tar.gz
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pyEDAA.Reports]: executing diffoscope
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pyEDAA.Reports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyedaa_reports-0.5.2.tar.gz tmp/pyedaa_reports-0.6.0.tar.gz --markdown 20240505/p/pyEDAA.Reports/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-05 23:24:22] INFO root fetch - processPackages [youtube-html-parser]: Downloading https://files.pythonhosted.org/packages/a6/f9/2d8e8c6a216359f473090a4fbf5e32ecd30654f3446febd71ac1333e1852/youtube_html_parser-1.0.1.tar.gz
+[2024-05-05 23:24:22] WARNING root fetch - processPackages [youtube-html-parser]: Skipping package: exceeds size limit 17595001>=10485760
+[2024-05-05 23:24:22] INFO root fetch - main [MainThread]: End processing [youtube-html-parser] error
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pytrivialsql]: Downloading https://files.pythonhosted.org/packages/9d/fe/483b834e7cb6e83cefd14ac177432f1145d843131855a7fd2eef8de536a7/pytrivialsql-0.1.5.tar.gz
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pytrivialsql]: executing diffoscope
+[2024-05-05 23:24:22] INFO root fetch - processPackages [pytrivialsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrivialsql-0.1.4.tar.gz tmp/pytrivialsql-0.1.5.tar.gz --markdown 20240505/p/pytrivialsql/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-05 23:24:23] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.5.2.tar.gz]
+[2024-05-05 23:24:23] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.6.0.tar.gz]
+[2024-05-05 23:24:23] INFO root fetch - main [MainThread]: End processing [pyEDAA.Reports]: success
+[2024-05-05 23:24:23] INFO root fetch - processPackages [pytrivialsql]: Remove: archive file [/home/abi/fetcher/tmp/pytrivialsql-0.1.4.tar.gz]
+[2024-05-05 23:24:23] INFO root fetch - processPackages [pytrivialsql]: Remove: archive file [/home/abi/fetcher/tmp/pytrivialsql-0.1.5.tar.gz]
+[2024-05-05 23:24:23] INFO root fetch - main [MainThread]: End processing [pytrivialsql]: success
+[2024-05-05 23:24:23] INFO root fetch - main [MainThread]: Store serial: [23069161]
