@@ -3334,3 +3334,21 @@
 [2024-05-05 05:37:00] WARNING root fetch - processPackages [deepaipng]: Skipping, unable to determine old version
 [2024-05-05 05:37:00] INFO root fetch - main [MainThread]: End processing [deepaipng] error
 [2024-05-05 05:37:00] INFO root fetch - main [MainThread]: Store serial: [23062936]
+[2024-05-05 05:39:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062936]
+[2024-05-05 05:39:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 05:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docx2latex
+[2024-05-05 05:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sponge
+[2024-05-05 05:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rj2y
+[2024-05-05 05:39:09] WARNING root fetch - processPackages [docx2latex]: Skipping, unable to determine old version
+[2024-05-05 05:39:09] INFO root fetch - main [MainThread]: End processing [docx2latex] error
+[2024-05-05 05:39:09] INFO root fetch - processPackages [sponge]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-05 05:39:09] WARNING root fetch - processPackages [rj2y]: Skipping, unable to determine old version
+[2024-05-05 05:39:09] INFO root fetch - main [MainThread]: End processing [rj2y] error
+[2024-05-05 05:39:09] INFO root fetch - processPackages [sponge]: Downloading https://files.pythonhosted.org/packages/5a/18/fe892b79e49d8dd7faba9ad1064b59af31ddad98988146a906eae468b936/sponge-0.0.7.tar.gz
+[2024-05-05 05:39:09] INFO root fetch - processPackages [sponge]: Downloading https://files.pythonhosted.org/packages/ed/5b/c86fcb7e9d4bfe38d3ec878b62f2fe617e3c676254117cff24d5be45a694/sponge-0.0.8.tar.gz
+[2024-05-05 05:39:10] INFO root fetch - processPackages [sponge]: executing diffoscope
+[2024-05-05 05:39:10] INFO root fetch - processPackages [sponge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sponge-0.0.7.tar.gz tmp/sponge-0.0.8.tar.gz --markdown 20240505/s/sponge/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-05 05:39:10] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.7.tar.gz]
+[2024-05-05 05:39:10] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.8.tar.gz]
+[2024-05-05 05:39:10] INFO root fetch - main [MainThread]: End processing [sponge]: success
+[2024-05-05 05:39:10] INFO root fetch - main [MainThread]: Store serial: [23062940]
