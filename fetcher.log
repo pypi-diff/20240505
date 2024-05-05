@@ -7607,3 +7607,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:18:38] INFO root fetch - processPackages [logki]: Remove: archive file [/home/abi/fetcher/tmp/logki-1.0.3.tar.gz]
 [2024-05-05 12:18:38] INFO root fetch - main [MainThread]: End processing [logki]: success
 [2024-05-05 12:18:38] INFO root fetch - main [MainThread]: Store serial: [23064724]
+[2024-05-05 12:20:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064724]
+[2024-05-05 12:20:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 12:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ALLM
+[2024-05-05 12:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argrelay
+[2024-05-05 12:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clump-python
+[2024-05-05 12:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abstract-pandas
+[2024-05-05 12:20:48] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 12:20:48] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 12:20:48] INFO root fetch - processPackages [ALLM]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-05 12:20:48] INFO root fetch - processPackages [clump-python]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-05 12:20:48] INFO root fetch - processPackages [argrelay]: New version: [0.7.0.dev0] Old Version: [0.6.9]
+[2024-05-05 12:20:48] INFO root fetch - processPackages [clump-python]: Downloading https://files.pythonhosted.org/packages/08/1e/4dfae8006abfbad5e771c21a3363bd55b76b77f947af723f455670a19412/clump-python-0.3.0.tar.gz
+[2024-05-05 12:20:48] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/e4/2f/d72190a23422ed52841bc0d525e444b08ea368cb3ab0e481a1bd524d0cd0/ALLM-1.0.2-py3-none-any.whl
+[2024-05-05 12:20:48] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/9f/b9/c98fecee4bc15a91526ef7afb17fbc6699846017179c9d846a2e0fa58f93/argrelay-0.6.9.tar.gz
+[2024-05-05 12:20:48] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 12:20:49] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 12:20:49] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 12:20:49] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/ed/76/e3611015a89f11f8e3d2220f796c79f163cc1cf57f7df0b237eaea03a70e/ALLM-1.0.3-py3-none-any.whl
+[2024-05-05 12:20:49] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/62/ba/d19e694150761e14a1210c7b2e28cdb20b3b5a28dad9febb09354c21f2c9/argrelay-0.7.0.dev0.tar.gz
+[2024-05-05 12:20:49] INFO root fetch - processPackages [ALLM]: executing diffoscope
+[2024-05-05 12:20:49] INFO root fetch - processPackages [ALLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLM-1.0.2-py3-none-any.whl.zip tmp/ALLM-1.0.3-py3-none-any.whl.zip --markdown 20240505/A/ALLM/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-05 12:20:49] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-05 12:20:49] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.6.9.tar.gz tmp/argrelay-0.7.0.dev0.tar.gz --markdown 20240505/a/argrelay/0.6.9-0.7.0.dev0/README.md --exclude *.pyd
+[2024-05-05 12:20:49] INFO root fetch - processPackages [clump-python]: Downloading https://files.pythonhosted.org/packages/39/9d/e3a644ffbaad43684e587d2da4f5f527b21643cec31b779ec9632e8cad3f/clump-python-0.3.1.tar.gz
+[2024-05-05 12:20:49] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 12:20:49] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 12:20:49] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 12:20:49] INFO root fetch - processPackages [clump-python]: executing diffoscope
+[2024-05-05 12:20:49] INFO root fetch - processPackages [clump-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clump-python-0.3.0.tar.gz tmp/clump-python-0.3.1.tar.gz --markdown 20240505/c/clump-python/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-05 12:20:49] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.2-py3-none-any.whl.zip]
+[2024-05-05 12:20:49] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.3-py3-none-any.whl.zip]
+[2024-05-05 12:20:49] INFO root fetch - main [MainThread]: End processing [ALLM]: success
+[2024-05-05 12:20:50] INFO root fetch - processPackages [clump-python]: Remove: archive file [/home/abi/fetcher/tmp/clump-python-0.3.0.tar.gz]
+[2024-05-05 12:20:50] INFO root fetch - processPackages [clump-python]: Remove: archive file [/home/abi/fetcher/tmp/clump-python-0.3.1.tar.gz]
+[2024-05-05 12:20:50] INFO root fetch - main [MainThread]: End processing [clump-python]: success
+[2024-05-05 12:20:51] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.9.tar.gz]
+[2024-05-05 12:20:51] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.0.dev0.tar.gz]
+[2024-05-05 12:20:51] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-05 12:20:51] INFO root fetch - main [MainThread]: Store serial: [23064734]
