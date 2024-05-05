@@ -6197,3 +6197,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:31:28] WARNING root fetch - processPackages [TensorART]: Skipping, unable to determine old version
 [2024-05-05 10:31:28] INFO root fetch - main [MainThread]: End processing [TensorART] error
 [2024-05-05 10:31:28] INFO root fetch - main [MainThread]: Store serial: [23064135]
+[2024-05-05 10:33:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064135]
+[2024-05-05 10:33:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 10:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multidefusion
+[2024-05-05 10:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profile-local
+[2024-05-05 10:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: luminesce-sdk-preview
+[2024-05-05 10:33:36] INFO root fetch - processPackages [multidefusion]: New version: [0.0.6] Old Version: [0.0.21]
+[2024-05-05 10:33:36] INFO root fetch - processPackages [multidefusion]: Downloading https://files.pythonhosted.org/packages/c7/d3/d71761772c0465d193d9b331129d73e1eb9de4b8a4304b914f40929e2088/multidefusion-0.0.21.tar.gz
+[2024-05-05 10:33:36] INFO root fetch - processPackages [profile-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 10:33:36] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/4b/d7/8af14a0850e980f53de36404fc2079c451edc1e65f24be79c595f88f602d/profile-local-0.0.8.tar.gz
+[2024-05-05 10:33:36] INFO root fetch - processPackages [multidefusion]: Downloading https://files.pythonhosted.org/packages/71/c6/69c3646915a255d3c6a2a81eec500a18d5846357e6cf00eb9d65ea8a1e1c/multidefusion-0.0.6.tar.gz
+[2024-05-05 10:33:36] INFO root fetch - processPackages [multidefusion]: executing diffoscope
+[2024-05-05 10:33:36] INFO root fetch - processPackages [multidefusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidefusion-0.0.21.tar.gz tmp/multidefusion-0.0.6.tar.gz --markdown 20240505/m/multidefusion/0.0.21-0.0.6/README.md --exclude *.pyd
+[2024-05-05 10:33:37] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2024-05-05 10:33:37] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/a8/54/e07308090c523485559291c7a02f014be5ed9511f87a7701fb7328a58149/profile-local-0.0.9.tar.gz
+[2024-05-05 10:33:37] INFO root fetch - processPackages [profile-local]: executing diffoscope
+[2024-05-05 10:33:37] INFO root fetch - processPackages [profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profile-local-0.0.8.tar.gz tmp/profile-local-0.0.9.tar.gz --markdown 20240505/p/profile-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 10:33:37] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/d3/7b/a9c3e829fb03ae79379224fe34adb99d80c6dbfc5f00ccc44cf429d34f61/luminesce-sdk-preview-1.9.88.tar.gz
+[2024-05-05 10:33:37] INFO root fetch - processPackages [multidefusion]: Remove: archive file [/home/abi/fetcher/tmp/multidefusion-0.0.21.tar.gz]
+[2024-05-05 10:33:37] INFO root fetch - processPackages [multidefusion]: Remove: archive file [/home/abi/fetcher/tmp/multidefusion-0.0.6.tar.gz]
+[2024-05-05 10:33:37] INFO root fetch - main [MainThread]: End processing [multidefusion]: success
+[2024-05-05 10:33:37] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/b4/a1/29e30342ad6b0ee5f31f57c9ebeee25c12a4805f3f972e1908bf31abd599/luminesce-sdk-preview-1.9.92.tar.gz
+[2024-05-05 10:33:37] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.8.tar.gz]
+[2024-05-05 10:33:37] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.9.tar.gz]
+[2024-05-05 10:33:37] INFO root fetch - main [MainThread]: End processing [profile-local]: success
+[2024-05-05 10:33:37] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2024-05-05 10:33:37] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20240505/l/luminesce-sdk-preview/1.9.88-1.9.92/README.md --exclude *.pyd
+[2024-05-05 10:33:38] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.88.tar.gz]
+[2024-05-05 10:33:38] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.92.tar.gz]
+[2024-05-05 10:33:38] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2024-05-05 10:33:38] INFO root fetch - main [MainThread]: Store serial: [23064140]
