@@ -6861,3 +6861,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:19:36] INFO root fetch - processPackages [lumipy]: Remove: archive file [/home/abi/fetcher/tmp/lumipy-1.0.9-py3-none-any.whl.zip]
 [2024-05-05 11:19:36] INFO root fetch - main [MainThread]: End processing [lumipy]: success
 [2024-05-05 11:19:36] INFO root fetch - main [MainThread]: Store serial: [23064409]
+[2024-05-05 11:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064409]
+[2024-05-05 11:21:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: depp-test
+[2024-05-05 11:21:46] INFO root fetch - processPackages [depp-test]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-05-05 11:21:46] INFO root fetch - processPackages [depp-test]: Downloading https://files.pythonhosted.org/packages/26/ad/624c71f0a891659cbab5ad3cb994d5b03d3ed7b0ae3fb0e0a1836d55af07/depp_test-0.3.9.tar.gz
+[2024-05-05 11:21:46] INFO root fetch - processPackages [depp-test]: Downloading https://files.pythonhosted.org/packages/c6/d4/61a55890bcbd8df485f46bb617845b9376915420d96ecafe4bdc0618708d/depp_test-0.4.0.tar.gz
+[2024-05-05 11:21:47] INFO root fetch - processPackages [depp-test]: executing diffoscope
+[2024-05-05 11:21:47] INFO root fetch - processPackages [depp-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/depp_test-0.3.9.tar.gz tmp/depp_test-0.4.0.tar.gz --markdown 20240505/d/depp-test/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-05-05 11:21:47] INFO root fetch - processPackages [depp-test]: Remove: archive file [/home/abi/fetcher/tmp/depp_test-0.3.9.tar.gz]
+[2024-05-05 11:21:47] INFO root fetch - processPackages [depp-test]: Remove: archive file [/home/abi/fetcher/tmp/depp_test-0.4.0.tar.gz]
+[2024-05-05 11:21:47] INFO root fetch - main [MainThread]: End processing [depp-test]: success
+[2024-05-05 11:21:47] INFO root fetch - main [MainThread]: Store serial: [23064413]
