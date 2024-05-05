@@ -6571,3 +6571,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 11:02:06] INFO root fetch - processPackages [monobit]: Remove: archive file [/home/abi/fetcher/tmp/monobit-0.43.0.tar.gz]
 [2024-05-05 11:02:06] INFO root fetch - main [MainThread]: End processing [monobit]: success
 [2024-05-05 11:02:06] INFO root fetch - main [MainThread]: Store serial: [23064272]
+[2024-05-05 11:04:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064272]
+[2024-05-05 11:04:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 11:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rclip
+[2024-05-05 11:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-distances
+[2024-05-05 11:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-pandas
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-pandas]: New version: [0.0.0.9] Old Version: [0.0.0.8]
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/7d/62/c4985f5737204784016c1722d9c95321c2be826c044f278a77c5b4bb1c26/abstract_pandas-0.0.0.8.tar.gz
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-distances]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-05-05 11:04:16] INFO root fetch - processPackages [rclip]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/6a/ea/52cafb55b0c81633aaa63231ff37619ff45c87d44d1a1e963c50114b76f4/abstract_distances-0.0.0.4.tar.gz
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-pandas]: Downloading https://files.pythonhosted.org/packages/6a/97/73420eb015bb3cd4f0190b373a58e04b6d7a072924c5ad742804869aae2d/abstract_pandas-0.0.0.9.tar.gz
+[2024-05-05 11:04:16] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/80/a3/c2741a607955c25212be0a5784d978dac7d8690e3de9d7f3949cbf106c70/rclip-1.8.8.tar.gz
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-pandas]: executing diffoscope
+[2024-05-05 11:04:16] INFO root fetch - processPackages [abstract-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_pandas-0.0.0.8.tar.gz tmp/abstract_pandas-0.0.0.9.tar.gz --markdown 20240505/a/abstract-pandas/0.0.0.8-0.0.0.9/README.md --exclude *.pyd
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-distances]: Downloading https://files.pythonhosted.org/packages/29/bd/9e7a38727cba6699327ed24a87dd59dacb257eb6438f3003253a6b013533/abstract_distances-0.0.0.5.tar.gz
+[2024-05-05 11:04:17] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/76/ad/fb0c4a5984bf5f17800a93ea37b1c340d580e769de376e53c72ed2cedfc5/rclip-1.8.9.tar.gz
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-distances]: executing diffoscope
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-distances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_distances-0.0.0.4.tar.gz tmp/abstract_distances-0.0.0.5.tar.gz --markdown 20240505/a/abstract-distances/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-05-05 11:04:17] INFO root fetch - processPackages [rclip]: executing diffoscope
+[2024-05-05 11:04:17] INFO root fetch - processPackages [rclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rclip-1.8.8.tar.gz tmp/rclip-1.8.9.tar.gz --markdown 20240505/r/rclip/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.8.tar.gz]
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-pandas]: Remove: archive file [/home/abi/fetcher/tmp/abstract_pandas-0.0.0.9.tar.gz]
+[2024-05-05 11:04:17] INFO root fetch - main [MainThread]: End processing [abstract-pandas]: success
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-distances]: Remove: archive file [/home/abi/fetcher/tmp/abstract_distances-0.0.0.4.tar.gz]
+[2024-05-05 11:04:17] INFO root fetch - processPackages [abstract-distances]: Remove: archive file [/home/abi/fetcher/tmp/abstract_distances-0.0.0.5.tar.gz]
+[2024-05-05 11:04:17] INFO root fetch - main [MainThread]: End processing [abstract-distances]: success
+[2024-05-05 11:04:17] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.8.tar.gz]
+[2024-05-05 11:04:17] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.9.tar.gz]
+[2024-05-05 11:04:17] INFO root fetch - main [MainThread]: End processing [rclip]: success
+[2024-05-05 11:04:17] INFO root fetch - main [MainThread]: Store serial: [23064281]
