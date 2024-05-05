@@ -16441,3 +16441,38 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:18:47] WARNING root fetch - processPackages [organage]: Skipping package: exceeds size limit 11318488>=10485760
 [2024-05-05 22:18:47] INFO root fetch - main [MainThread]: End processing [organage] error
 [2024-05-05 22:18:47] INFO root fetch - main [MainThread]: Store serial: [23068803]
+[2024-05-05 22:20:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068803]
+[2024-05-05 22:20:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: organage
+[2024-05-05 22:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: profitpulse
+[2024-05-05 22:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlalchemy-multilingual
+[2024-05-05 22:20:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yerba
+[2024-05-05 22:20:56] INFO root fetch - processPackages [sqlalchemy-multilingual]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 22:20:56] INFO root fetch - processPackages [organage]: New version: [1.0.0] Old Version: [0.5.2]
+[2024-05-05 22:20:57] INFO root fetch - processPackages [yerba]: New version: [0.0.2a0.dev0] Old Version: [0.0.1a0.dev1]
+[2024-05-05 22:20:57] INFO root fetch - processPackages [profitpulse]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-05 22:20:57] INFO root fetch - processPackages [yerba]: Downloading https://files.pythonhosted.org/packages/a5/83/97c2550b4ff8d01dac3435ec7252cb525f2f0f8fde30d3bafb3327ae1de2/yerba-0.0.1a0.dev1.tar.gz
+[2024-05-05 22:20:57] INFO root fetch - processPackages [organage]: Downloading https://files.pythonhosted.org/packages/4d/39/4f5f06262f84b73050fa24514b26a20618467f76d0b7b894693483767f51/organage-1.0.0.tar.gz
+[2024-05-05 22:20:57] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/4b/e5/8f70390eb9d943a0c2116c9af9f49bd19305b4e364599fedff0f40b6c98d/sqlalchemy-multilingual-0.0.1.tar.gz
+[2024-05-05 22:20:57] WARNING root fetch - processPackages [organage]: Skipping package: exceeds size limit 11318488>=10485760
+[2024-05-05 22:20:57] INFO root fetch - main [MainThread]: End processing [organage] error
+[2024-05-05 22:20:57] INFO root fetch - processPackages [yerba]: Downloading https://files.pythonhosted.org/packages/0e/6f/fdf93638071e0ec82aa4bc2b77411fcb151467474f2ebfb118296f542d5f/yerba-0.0.2a0.dev0.tar.gz
+[2024-05-05 22:20:57] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/15/42/1ed43197a49c992ee89f78ed2429402485f13c3beafffa021a7dee580402/profitpulse-1.4.0.tar.gz
+[2024-05-05 22:20:57] INFO root fetch - processPackages [yerba]: executing diffoscope
+[2024-05-05 22:20:57] INFO root fetch - processPackages [yerba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yerba-0.0.1a0.dev1.tar.gz tmp/yerba-0.0.2a0.dev0.tar.gz --markdown 20240505/y/yerba/0.0.1a0.dev1-0.0.2a0.dev0/README.md --exclude *.pyd
+[2024-05-05 22:20:57] INFO root fetch - processPackages [sqlalchemy-multilingual]: Downloading https://files.pythonhosted.org/packages/b8/8a/00a94f78b3f2e515fd3ea0bfed5d3cdec7541cc8a185fb30eaf72674cf78/sqlalchemy-multilingual-0.0.2.tar.gz
+[2024-05-05 22:20:57] INFO root fetch - processPackages [profitpulse]: Downloading https://files.pythonhosted.org/packages/76/2a/4cdd7cf61a370c0c181904341330fdef9be0eedeb36aeba341d8ef0ed51c/profitpulse-1.4.1.tar.gz
+[2024-05-05 22:20:57] INFO root fetch - processPackages [sqlalchemy-multilingual]: executing diffoscope
+[2024-05-05 22:20:57] INFO root fetch - processPackages [sqlalchemy-multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-multilingual-0.0.1.tar.gz tmp/sqlalchemy-multilingual-0.0.2.tar.gz --markdown 20240505/s/sqlalchemy-multilingual/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 22:20:57] INFO root fetch - processPackages [profitpulse]: executing diffoscope
+[2024-05-05 22:20:57] INFO root fetch - processPackages [profitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profitpulse-1.4.0.tar.gz tmp/profitpulse-1.4.1.tar.gz --markdown 20240505/p/profitpulse/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-05 22:20:58] INFO root fetch - processPackages [yerba]: Remove: archive file [/home/abi/fetcher/tmp/yerba-0.0.1a0.dev1.tar.gz]
+[2024-05-05 22:20:58] INFO root fetch - processPackages [yerba]: Remove: archive file [/home/abi/fetcher/tmp/yerba-0.0.2a0.dev0.tar.gz]
+[2024-05-05 22:20:58] INFO root fetch - main [MainThread]: End processing [yerba]: success
+[2024-05-05 22:20:58] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.1.tar.gz]
+[2024-05-05 22:20:58] INFO root fetch - processPackages [sqlalchemy-multilingual]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-multilingual-0.0.2.tar.gz]
+[2024-05-05 22:20:58] INFO root fetch - main [MainThread]: End processing [sqlalchemy-multilingual]: success
+[2024-05-05 22:20:58] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-1.4.0.tar.gz]
+[2024-05-05 22:20:58] INFO root fetch - processPackages [profitpulse]: Remove: archive file [/home/abi/fetcher/tmp/profitpulse-1.4.1.tar.gz]
+[2024-05-05 22:20:58] INFO root fetch - main [MainThread]: End processing [profitpulse]: success
+[2024-05-05 22:20:58] INFO root fetch - main [MainThread]: Store serial: [23068823]
