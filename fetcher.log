@@ -14597,3 +14597,15 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:22:44] INFO root fetch - processPackages [pyEDAA.Reports]: Remove: archive file [/home/abi/fetcher/tmp/pyedaa_reports-0.6.0.tar.gz]
 [2024-05-05 20:22:44] INFO root fetch - main [MainThread]: End processing [pyEDAA.Reports]: success
 [2024-05-05 20:22:44] INFO root fetch - main [MainThread]: Store serial: [23067880]
+[2024-05-05 20:24:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067880]
+[2024-05-05 20:24:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 20:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gammarers.aws-secure-log-bucket
+[2024-05-05 20:24:53] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: New version: [1.6.3] Old Version: [1.6.2]
+[2024-05-05 20:24:53] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/0f/a2/09142f5a1a16964ec43ef8b1e59c3b00480b32130249b8665bb2693cb702/gammarers.aws-secure-log-bucket-1.6.2.tar.gz
+[2024-05-05 20:24:54] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/72/62/9e9df48b8b4e75958610a7ea49ce8e64da690ea4c6d20faa5e336bac13cf/gammarers.aws-secure-log-bucket-1.6.3.tar.gz
+[2024-05-05 20:24:54] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: executing diffoscope
+[2024-05-05 20:24:54] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-log-bucket-1.6.2.tar.gz tmp/gammarers.aws-secure-log-bucket-1.6.3.tar.gz --markdown 20240505/g/gammarers.aws-secure-log-bucket/1.6.2-1.6.3/README.md --exclude *.pyd
+[2024-05-05 20:24:54] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.2.tar.gz]
+[2024-05-05 20:24:54] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.3.tar.gz]
+[2024-05-05 20:24:54] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
+[2024-05-05 20:24:54] INFO root fetch - main [MainThread]: Store serial: [23067888]
