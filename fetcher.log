@@ -13979,3 +13979,51 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:35:54] INFO root fetch - processPackages [me-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/me_toolbox-0.0.9.tar.gz]
 [2024-05-05 19:35:54] INFO root fetch - main [MainThread]: End processing [me-toolbox]: success
 [2024-05-05 19:35:54] INFO root fetch - main [MainThread]: Store serial: [23067636]
+[2024-05-05 19:37:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067636]
+[2024-05-05 19:38:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 19:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: got-cli
+[2024-05-05 19:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Buke-autoTrade-Pypi
+[2024-05-05 19:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: surfkit
+[2024-05-05 19:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maya-umbrella
+[2024-05-05 19:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ComradeAI
+[2024-05-05 19:38:03] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 19:38:03] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: New version: [4.4.5] Old Version: [4.4.4]
+[2024-05-05 19:38:03] INFO root fetch - processPackages [ComradeAI]: New version: [0.18.9] Old Version: [0.18.8]
+[2024-05-05 19:38:03] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-05 19:38:03] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [maya-umbrella]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-05 19:38:03] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/7d/de/625e6208d7d5233c2bf640ce3da1c7ea3d2582df766dc6d1d0cc35108714/Buke_autoTrade_Pypi-4.4.4.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [ComradeAI]: Downloading https://files.pythonhosted.org/packages/0f/6b/cbb210cdd66fba57a3515ccd9678ed6dab7911788e798fd28cdebb179f95/ComradeAI-0.18.8.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [maya-umbrella]: Downloading https://files.pythonhosted.org/packages/b6/10/36be8529f2ba877cca81cb6100fe399cff908b2d486d99dc968fd7da7b3a/maya_umbrella-0.4.0.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [ComradeAI]: Downloading https://files.pythonhosted.org/packages/57/22/e4aa2177ece664931452ca87630a7ac2a64722c0050b63a0d48c56009de8/ComradeAI-0.18.9.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Downloading https://files.pythonhosted.org/packages/67/2f/6bd0c6218d7d7dc008a0ca0d74b44630a31bcef478c2c702a90bf0d6066c/Buke_autoTrade_Pypi-4.4.5.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-05 19:38:03] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240505/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 19:38:03] INFO root fetch - processPackages [ComradeAI]: executing diffoscope
+[2024-05-05 19:38:03] INFO root fetch - processPackages [ComradeAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ComradeAI-0.18.8.tar.gz tmp/ComradeAI-0.18.9.tar.gz --markdown 20240505/C/ComradeAI/0.18.8-0.18.9/README.md --exclude *.pyd
+[2024-05-05 19:38:03] INFO root fetch - processPackages [maya-umbrella]: Downloading https://files.pythonhosted.org/packages/76/13/14283539e3b392049929a413bbeba398f6dedd9ead2452685827a4ee9c6e/maya_umbrella-0.4.1.tar.gz
+[2024-05-05 19:38:03] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-05 19:38:03] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240505/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-05 19:38:03] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: executing diffoscope
+[2024-05-05 19:38:03] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Buke_autoTrade_Pypi-4.4.4.tar.gz tmp/Buke_autoTrade_Pypi-4.4.5.tar.gz --markdown 20240505/B/Buke-autoTrade-Pypi/4.4.4-4.4.5/README.md --exclude *.pyd
+[2024-05-05 19:38:03] INFO root fetch - processPackages [maya-umbrella]: executing diffoscope
+[2024-05-05 19:38:03] INFO root fetch - processPackages [maya-umbrella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya_umbrella-0.4.0.tar.gz tmp/maya_umbrella-0.4.1.tar.gz --markdown 20240505/m/maya-umbrella/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-05 19:38:04] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-05 19:38:04] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.8.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - processPackages [ComradeAI]: Remove: archive file [/home/abi/fetcher/tmp/ComradeAI-0.18.9.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - main [MainThread]: End processing [ComradeAI]: success
+[2024-05-05 19:38:04] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-05 19:38:04] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.4.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.5.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
+[2024-05-05 19:38:04] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.4.0.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.4.1.tar.gz]
+[2024-05-05 19:38:04] INFO root fetch - main [MainThread]: End processing [maya-umbrella]: success
+[2024-05-05 19:38:04] INFO root fetch - main [MainThread]: Store serial: [23067651]
