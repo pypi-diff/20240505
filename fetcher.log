@@ -12340,3 +12340,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:55:42] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
 [2024-05-05 17:55:42] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2024-05-05 17:55:42] INFO root fetch - main [MainThread]: Store serial: [23066899]
+[2024-05-05 17:57:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066899]
+[2024-05-05 17:57:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openet-geesebal
+[2024-05-05 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ODLabel
+[2024-05-05 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qtconsole
+[2024-05-05 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-kg
+[2024-05-05 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapegraphai
+[2024-05-05 17:57:51] WARNING root fetch - processPackages [openet-geesebal]: Skipping, unable to determine old version
+[2024-05-05 17:57:51] INFO root fetch - main [MainThread]: End processing [openet-geesebal] error
+[2024-05-05 17:57:51] INFO root fetch - processPackages [llama-kg]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 17:57:51] INFO root fetch - processPackages [qtconsole]: New version: [5.5.1] Old Version: [5.5.0]
+[2024-05-05 17:57:51] INFO root fetch - processPackages [scrapegraphai]: New version: [0.9.0b3] Old Version: [0.9.0b2]
+[2024-05-05 17:57:51] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/e6/74/53ebc84ec09d842fdc2b81d705001aa06b6230bd64e685f8701120659351/llama-kg-0.0.2.tar.gz
+[2024-05-05 17:57:51] WARNING root fetch - processPackages [ODLabel]: Skipping, unable to determine old version
+[2024-05-05 17:57:51] INFO root fetch - main [MainThread]: End processing [ODLabel] error
+[2024-05-05 17:57:51] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/a2/df/068ec35f22cee27765c5b12db62775840e63023c60a6353b483c065a86be/scrapegraphai-0.9.0b2.tar.gz
+[2024-05-05 17:57:51] INFO root fetch - processPackages [qtconsole]: Downloading https://files.pythonhosted.org/packages/7b/18/c70872d9d3ffb689ae94a09d84fbb7230d4887e2208b2a1858fc1bbb0cc9/qtconsole-5.5.0.tar.gz
+[2024-05-05 17:57:51] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/08/33/acbffff9267b6ea55cd33c4a1362c98c804cb794b62006d4bf7190594e96/llama-kg-0.0.3.tar.gz
+[2024-05-05 17:57:51] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 17:57:51] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.2.tar.gz tmp/llama-kg-0.0.3.tar.gz --markdown 20240505/l/llama-kg/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 17:57:51] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/1e/5d/c3d78379685a2ba56a2686bf7c8468f859d00d72405b8abdb166fdce433e/scrapegraphai-0.9.0b3.tar.gz
+[2024-05-05 17:57:51] INFO root fetch - processPackages [qtconsole]: Downloading https://files.pythonhosted.org/packages/cb/cd/1af2af15adccb5e3cc48a9052909f9bddda82350c4b345e67441d0747e1b/qtconsole-5.5.1.tar.gz
+[2024-05-05 17:57:52] INFO root fetch - processPackages [qtconsole]: executing diffoscope
+[2024-05-05 17:57:52] INFO root fetch - processPackages [qtconsole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtconsole-5.5.0.tar.gz tmp/qtconsole-5.5.1.tar.gz --markdown 20240505/q/qtconsole/5.5.0-5.5.1/README.md --exclude *.pyd
+[2024-05-05 17:57:52] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-05 17:57:52] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.9.0b2.tar.gz tmp/scrapegraphai-0.9.0b3.tar.gz --markdown 20240505/s/scrapegraphai/0.9.0b2-0.9.0b3/README.md --exclude *.pyd
+[2024-05-05 17:57:52] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.2.tar.gz]
+[2024-05-05 17:57:52] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.3.tar.gz]
+[2024-05-05 17:57:52] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 17:57:52] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b2.tar.gz]
+[2024-05-05 17:57:52] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b3.tar.gz]
+[2024-05-05 17:57:52] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-05 17:57:52] INFO root fetch - processPackages [qtconsole]: Remove: archive file [/home/abi/fetcher/tmp/qtconsole-5.5.0.tar.gz]
+[2024-05-05 17:57:52] INFO root fetch - processPackages [qtconsole]: Remove: archive file [/home/abi/fetcher/tmp/qtconsole-5.5.1.tar.gz]
+[2024-05-05 17:57:52] INFO root fetch - main [MainThread]: End processing [qtconsole]: success
+[2024-05-05 17:57:52] INFO root fetch - main [MainThread]: Store serial: [23066916]
