@@ -6392,3 +6392,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:48:58] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240505-cp39-cp39-win_amd64.whl.zip]
 [2024-05-05 10:48:58] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2024-05-05 10:48:58] INFO root fetch - main [MainThread]: Store serial: [23064213]
+[2024-05-05 10:51:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064213]
+[2024-05-05 10:51:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-fabricspark
+[2024-05-05 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xcloud-clients
+[2024-05-05 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mmo-tools
+[2024-05-05 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ramp-packer
+[2024-05-05 10:51:08] INFO root fetch - processPackages [mmo-tools]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-05 10:51:08] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/1f/39/d94b2c3f7960bb8bd66d5c843d23b5089072dbb20f2a447f308290c4b418/mmo_tools-0.1.3.tar.gz
+[2024-05-05 10:51:08] WARNING root fetch - processPackages [dbt-fabricspark]: Skipping, unable to determine old version
+[2024-05-05 10:51:08] INFO root fetch - main [MainThread]: End processing [dbt-fabricspark] error
+[2024-05-05 10:51:08] WARNING root fetch - processPackages [xcloud-clients]: Skipping, unable to determine old version
+[2024-05-05 10:51:08] INFO root fetch - main [MainThread]: End processing [xcloud-clients] error
+[2024-05-05 10:51:08] INFO root fetch - processPackages [ramp-packer]: New version: [2.5.8] Old Version: [2.5.7]
+[2024-05-05 10:51:08] INFO root fetch - processPackages [ramp-packer]: Downloading https://files.pythonhosted.org/packages/5e/a8/483bb4f953bba503f1001175644c83d53a0710cc12ccc11f3ec30bae0bbf/ramp_packer-2.5.7.tar.gz
+[2024-05-05 10:51:08] INFO root fetch - processPackages [mmo-tools]: Downloading https://files.pythonhosted.org/packages/29/da/c205af6119d6ae79db9f10609dc689eda96c87fe51ba5af16b79ede94635/mmo_tools-0.1.4.tar.gz
+[2024-05-05 10:51:08] INFO root fetch - processPackages [mmo-tools]: executing diffoscope
+[2024-05-05 10:51:08] INFO root fetch - processPackages [mmo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmo_tools-0.1.3.tar.gz tmp/mmo_tools-0.1.4.tar.gz --markdown 20240505/m/mmo-tools/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-05 10:51:09] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.3.tar.gz]
+[2024-05-05 10:51:09] INFO root fetch - processPackages [mmo-tools]: Remove: archive file [/home/abi/fetcher/tmp/mmo_tools-0.1.4.tar.gz]
+[2024-05-05 10:51:09] INFO root fetch - main [MainThread]: End processing [mmo-tools]: success
+[2024-05-05 10:51:10] INFO root fetch - processPackages [ramp-packer]: Downloading https://files.pythonhosted.org/packages/64/96/dac6fe282a5932ed25eb47a2482a2f401ec8a0f3bef9054235c868cb983b/ramp_packer-2.5.8.tar.gz
+[2024-05-05 10:51:10] INFO root fetch - processPackages [ramp-packer]: executing diffoscope
+[2024-05-05 10:51:10] INFO root fetch - processPackages [ramp-packer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramp_packer-2.5.7.tar.gz tmp/ramp_packer-2.5.8.tar.gz --markdown 20240505/r/ramp-packer/2.5.7-2.5.8/README.md --exclude *.pyd
+[2024-05-05 10:51:10] INFO root fetch - processPackages [ramp-packer]: Remove: archive file [/home/abi/fetcher/tmp/ramp_packer-2.5.7.tar.gz]
+[2024-05-05 10:51:10] INFO root fetch - processPackages [ramp-packer]: Remove: archive file [/home/abi/fetcher/tmp/ramp_packer-2.5.8.tar.gz]
+[2024-05-05 10:51:10] INFO root fetch - main [MainThread]: End processing [ramp-packer]: success
+[2024-05-05 10:51:10] INFO root fetch - main [MainThread]: Store serial: [23064228]
