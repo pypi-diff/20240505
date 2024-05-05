@@ -12817,3 +12817,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:26:24] INFO root fetch - processPackages [mixdq-extension]: Remove: archive file [/home/abi/fetcher/tmp/mixdq_extension-0.3-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-05 18:26:24] INFO root fetch - main [MainThread]: End processing [mixdq-extension]: success
 [2024-05-05 18:26:24] INFO root fetch - main [MainThread]: Store serial: [23067155]
+[2024-05-05 18:28:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067155]
+[2024-05-05 18:28:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 18:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-management-command-decorator
+[2024-05-05 18:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: got-cli
+[2024-05-05 18:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litellm-types
+[2024-05-05 18:28:37] WARNING root fetch - processPackages [django-management-command-decorator]: Skipping, unable to determine old version
+[2024-05-05 18:28:37] INFO root fetch - main [MainThread]: End processing [django-management-command-decorator] error
+[2024-05-05 18:28:37] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 18:28:37] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-05 18:28:37] WARNING root fetch - processPackages [litellm-types]: Skipping, unable to determine old version
+[2024-05-05 18:28:37] INFO root fetch - main [MainThread]: End processing [litellm-types] error
+[2024-05-05 18:28:38] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-05 18:28:38] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-05 18:28:38] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240505/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 18:28:38] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-05 18:28:38] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-05 18:28:38] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-05 18:28:38] INFO root fetch - main [MainThread]: Store serial: [23067166]
