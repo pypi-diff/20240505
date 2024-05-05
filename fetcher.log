@@ -8368,3 +8368,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:27:08] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.5-cp39-cp39-manylinux1_x86_64.whl.zip]
 [2024-05-05 13:27:08] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-05-05 13:27:08] INFO root fetch - main [MainThread]: Store serial: [23065030]
+[2024-05-05 13:29:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065030]
+[2024-05-05 13:29:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 13:31:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065034]
+[2024-05-05 13:31:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 13:31:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plutobook
+[2024-05-05 13:31:25] WARNING root fetch - processPackages [plutobook]: Skipping, unable to determine old version
+[2024-05-05 13:31:25] INFO root fetch - main [MainThread]: End processing [plutobook] error
+[2024-05-05 13:31:25] INFO root fetch - main [MainThread]: Store serial: [23065036]
