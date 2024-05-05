@@ -10837,3 +10837,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:10:16] INFO root fetch - processPackages [mkdocstrings]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings-0.9.1.tar.gz]
 [2024-05-05 16:10:16] INFO root fetch - main [MainThread]: End processing [mkdocstrings]: success
 [2024-05-05 16:10:16] INFO root fetch - main [MainThread]: Store serial: [23066253]
+[2024-05-05 16:12:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066253]
+[2024-05-05 16:12:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 16:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tantivy
+[2024-05-05 16:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-ckeditor-5
+[2024-05-05 16:12:24] INFO root fetch - processPackages [tantivy]: New version: [0.22.0] Old Version: [0.21.0]
+[2024-05-05 16:12:24] INFO root fetch - processPackages [django-ckeditor-5]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-05 16:12:25] INFO root fetch - processPackages [tantivy]: Downloading https://files.pythonhosted.org/packages/cc/bb/57cf75af82ee79bd82a0aa0e6fbe7f33b97b8befd6599c023edde3cc37bf/tantivy-0.21.0.tar.gz
+[2024-05-05 16:12:25] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/48/da/5f198a5bd2b2cf6f9e90c85113f8ca500f4bfa4a2d073e078f06c4d80c30/django-ckeditor-5-0.2.8.tar.gz
+[2024-05-05 16:12:25] INFO root fetch - processPackages [tantivy]: Downloading https://files.pythonhosted.org/packages/96/e2/0a7b8ce41e9717544648ce1fa511cd37f5d634cc6daef48c03157ec7462b/tantivy-0.22.0.tar.gz
+[2024-05-05 16:12:25] INFO root fetch - processPackages [tantivy]: executing diffoscope
+[2024-05-05 16:12:25] INFO root fetch - processPackages [tantivy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tantivy-0.21.0.tar.gz tmp/tantivy-0.22.0.tar.gz --markdown 20240505/t/tantivy/0.21.0-0.22.0/README.md --exclude *.pyd
+[2024-05-05 16:12:25] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/c9/15/8dcda837b7154bfa65b0381639d5db07cab24dcefb9a7cb3373943a07664/django-ckeditor-5-0.2.9.tar.gz
+[2024-05-05 16:12:26] INFO root fetch - processPackages [tantivy]: Remove: archive file [/home/abi/fetcher/tmp/tantivy-0.21.0.tar.gz]
+[2024-05-05 16:12:26] INFO root fetch - processPackages [tantivy]: Remove: archive file [/home/abi/fetcher/tmp/tantivy-0.22.0.tar.gz]
+[2024-05-05 16:12:26] INFO root fetch - main [MainThread]: End processing [tantivy]: success
+[2024-05-05 16:12:26] INFO root fetch - processPackages [django-ckeditor-5]: executing diffoscope
+[2024-05-05 16:12:26] INFO root fetch - processPackages [django-ckeditor-5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ckeditor-5-0.2.8.tar.gz tmp/django-ckeditor-5-0.2.9.tar.gz --markdown 20240505/d/django-ckeditor-5/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-05 16:13:33] INFO root fetch - processPackages [django-ckeditor-5]: Remove: archive file [/home/abi/fetcher/tmp/django-ckeditor-5-0.2.8.tar.gz]
+[2024-05-05 16:13:33] INFO root fetch - processPackages [django-ckeditor-5]: Remove: archive file [/home/abi/fetcher/tmp/django-ckeditor-5-0.2.9.tar.gz]
+[2024-05-05 16:13:33] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
+[2024-05-05 16:13:33] INFO root fetch - main [MainThread]: Store serial: [23066283]
