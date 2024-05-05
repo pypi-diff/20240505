@@ -4826,3 +4826,26 @@
 [2024-05-05 08:35:34] INFO root fetch - processPackages [narration]: Remove: archive file [/home/abi/fetcher/tmp/narration-0.2.9-py2.py3-none-any.whl.zip]
 [2024-05-05 08:35:34] INFO root fetch - main [MainThread]: End processing [narration]: success
 [2024-05-05 08:35:34] INFO root fetch - main [MainThread]: Store serial: [23063529]
+[2024-05-05 08:37:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063529]
+[2024-05-05 08:37:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-05 08:39:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063529]
+[2024-05-05 08:39:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 08:39:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SkeKraft
+[2024-05-05 08:39:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: collective.volto.formsupport
+[2024-05-05 08:39:49] INFO root fetch - processPackages [SkeKraft]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 08:39:49] INFO root fetch - processPackages [collective.volto.formsupport]: New version: [3.0.2] Old Version: [3.0.1]
+[2024-05-05 08:39:49] INFO root fetch - processPackages [SkeKraft]: Downloading https://files.pythonhosted.org/packages/fd/0d/01d1e61d7744b26430375155f78faefae6603330100f63a495a10f8ef75b/skekraft-0.0.1.tar.gz
+[2024-05-05 08:39:49] INFO root fetch - processPackages [SkeKraft]: Downloading https://files.pythonhosted.org/packages/64/da/605974f5ee259d9c4f9b61dc296b3f9394b208f01a33b5de22247ff04b53/skekraft-0.0.2.tar.gz
+[2024-05-05 08:39:49] INFO root fetch - processPackages [collective.volto.formsupport]: Downloading https://files.pythonhosted.org/packages/6c/ff/02f156b3d9735688433288120aff2e53c0406076db41f3524199a4094a75/collective.volto.formsupport-3.0.1.tar.gz
+[2024-05-05 08:39:49] INFO root fetch - processPackages [SkeKraft]: executing diffoscope
+[2024-05-05 08:39:49] INFO root fetch - processPackages [SkeKraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skekraft-0.0.1.tar.gz tmp/skekraft-0.0.2.tar.gz --markdown 20240505/S/SkeKraft/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 08:39:49] INFO root fetch - processPackages [collective.volto.formsupport]: Downloading https://files.pythonhosted.org/packages/76/c4/231598d38279100660c5df21de9fb2bf6e906a04a539814358fb0a5e6f77/collective.volto.formsupport-3.0.2.tar.gz
+[2024-05-05 08:39:50] INFO root fetch - processPackages [collective.volto.formsupport]: executing diffoscope
+[2024-05-05 08:39:50] INFO root fetch - processPackages [collective.volto.formsupport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.volto.formsupport-3.0.1.tar.gz tmp/collective.volto.formsupport-3.0.2.tar.gz --markdown 20240505/c/collective.volto.formsupport/3.0.1-3.0.2/README.md --exclude *.pyd
+[2024-05-05 08:39:50] INFO root fetch - processPackages [SkeKraft]: Remove: archive file [/home/abi/fetcher/tmp/skekraft-0.0.1.tar.gz]
+[2024-05-05 08:39:50] INFO root fetch - processPackages [SkeKraft]: Remove: archive file [/home/abi/fetcher/tmp/skekraft-0.0.2.tar.gz]
+[2024-05-05 08:39:50] INFO root fetch - main [MainThread]: End processing [SkeKraft]: success
+[2024-05-05 08:39:50] INFO root fetch - processPackages [collective.volto.formsupport]: Remove: archive file [/home/abi/fetcher/tmp/collective.volto.formsupport-3.0.1.tar.gz]
+[2024-05-05 08:39:50] INFO root fetch - processPackages [collective.volto.formsupport]: Remove: archive file [/home/abi/fetcher/tmp/collective.volto.formsupport-3.0.2.tar.gz]
+[2024-05-05 08:39:50] INFO root fetch - main [MainThread]: End processing [collective.volto.formsupport]: success
+[2024-05-05 08:39:50] INFO root fetch - main [MainThread]: Store serial: [23063535]
