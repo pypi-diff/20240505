@@ -2014,3 +2014,9 @@
 [2024-05-05 03:08:40] INFO root fetch - main [MainThread]: End processing [argufy]: success
 [2024-05-05 03:08:40] INFO root fetch - main [MainThread]: End processing [argufy]: success
 [2024-05-05 03:08:40] INFO root fetch - main [MainThread]: Store serial: [23062342]
+[2024-05-05 03:10:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062342]
+[2024-05-05 03:10:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-05 03:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tg-init-client
+[2024-05-05 03:10:49] WARNING root fetch - processPackages [tg-init-client]: Skipping, unable to determine old version
+[2024-05-05 03:10:49] INFO root fetch - main [MainThread]: End processing [tg-init-client] error
+[2024-05-05 03:10:49] INFO root fetch - main [MainThread]: Store serial: [23062347]
