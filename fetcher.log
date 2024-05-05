@@ -12526,3 +12526,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:08:45] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
 [2024-05-05 18:08:45] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-05-05 18:08:45] INFO root fetch - main [MainThread]: Store serial: [23066999]
+[2024-05-05 18:10:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066999]
+[2024-05-05 18:10:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 18:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gutta
+[2024-05-05 18:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-openid-google
+[2024-05-05 18:10:54] INFO root fetch - processPackages [fastapi-openid-google]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2024-05-05 18:10:54] INFO root fetch - processPackages [gutta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 18:10:54] INFO root fetch - processPackages [gutta]: Downloading https://files.pythonhosted.org/packages/27/f5/54ef86894fd691ec740621406d5aa3bb99910f1e1e7c80b5211d59d1f42a/gutta-0.1.8-py3-none-any.whl
+[2024-05-05 18:10:54] INFO root fetch - processPackages [fastapi-openid-google]: Downloading https://files.pythonhosted.org/packages/8e/ba/60a5371b6f263f8d7782d17fd556ff3bd870b70011e88d50928da9822912/fastapi_openid_google-0.0.1.dev1.tar.gz
+[2024-05-05 18:10:54] INFO root fetch - processPackages [gutta]: Downloading https://files.pythonhosted.org/packages/a1/e1/2466d83bc821ce2e5daba52adb88edb68abe30789b40cac0065a8a3834f9/gutta-0.1.9-py3-none-any.whl
+[2024-05-05 18:10:54] INFO root fetch - processPackages [fastapi-openid-google]: Downloading https://files.pythonhosted.org/packages/0b/d6/df6dea85d1b24b3a6878f9aa1f99825c0e1daecba0ea2ac42b2d734f8709/fastapi_openid_google-0.0.1.dev2.tar.gz
+[2024-05-05 18:10:54] INFO root fetch - processPackages [gutta]: executing diffoscope
+[2024-05-05 18:10:54] INFO root fetch - processPackages [gutta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gutta-0.1.8-py3-none-any.whl.zip tmp/gutta-0.1.9-py3-none-any.whl.zip --markdown 20240505/g/gutta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 18:10:55] INFO root fetch - processPackages [fastapi-openid-google]: executing diffoscope
+[2024-05-05 18:10:55] INFO root fetch - processPackages [fastapi-openid-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_openid_google-0.0.1.dev1.tar.gz tmp/fastapi_openid_google-0.0.1.dev2.tar.gz --markdown 20240505/f/fastapi-openid-google/0.0.1.dev1-0.0.1.dev2/README.md --exclude *.pyd
+[2024-05-05 18:10:55] INFO root fetch - processPackages [fastapi-openid-google]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_openid_google-0.0.1.dev1.tar.gz]
+[2024-05-05 18:10:55] INFO root fetch - processPackages [fastapi-openid-google]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_openid_google-0.0.1.dev2.tar.gz]
+[2024-05-05 18:10:55] INFO root fetch - main [MainThread]: End processing [fastapi-openid-google]: success
+[2024-05-05 18:10:55] INFO root fetch - processPackages [gutta]: Remove: archive file [/home/abi/fetcher/tmp/gutta-0.1.8-py3-none-any.whl.zip]
+[2024-05-05 18:10:55] INFO root fetch - processPackages [gutta]: Remove: archive file [/home/abi/fetcher/tmp/gutta-0.1.9-py3-none-any.whl.zip]
+[2024-05-05 18:10:55] INFO root fetch - main [MainThread]: End processing [gutta]: success
+[2024-05-05 18:10:55] INFO root fetch - main [MainThread]: Store serial: [23067010]
