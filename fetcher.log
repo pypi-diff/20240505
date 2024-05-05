@@ -5133,3 +5133,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 09:04:32] WARNING root fetch - processPackages [SAM-ONNX]: Skipping, unable to determine old version
 [2024-05-05 09:04:32] INFO root fetch - main [MainThread]: End processing [SAM-ONNX] error
 [2024-05-05 09:04:32] INFO root fetch - main [MainThread]: Store serial: [23063702]
+[2024-05-05 09:06:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23063702]
+[2024-05-05 09:06:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 09:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bedrock-bot
+[2024-05-05 09:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-researcher
+[2024-05-05 09:06:40] INFO root fetch - processPackages [bedrock-bot]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-05 09:06:40] INFO root fetch - processPackages [gpt-researcher]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-05 09:06:41] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/e2/39/0933464f69e5cd8241098f006d5bce5d4ea45edcbb52b5b1d1fc971ed5d9/bedrock_bot-1.2.6.tar.gz
+[2024-05-05 09:06:41] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/6a/7d/f38a46390e3ab16135a1f04549448aef85e6d4e86287f5c8f9faa3b7db65/gpt-researcher-0.2.9.tar.gz
+[2024-05-05 09:06:41] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/41/84/3da240a72383b32a5987e7792121e709fde910f37505f7572d6468239f4c/bedrock_bot-1.2.7.tar.gz
+[2024-05-05 09:06:41] INFO root fetch - processPackages [gpt-researcher]: Downloading https://files.pythonhosted.org/packages/27/32/29344ff57c43206c8d019e0a5b820e55cf21a4e787534521efa830b38b9a/gpt-researcher-0.3.0.tar.gz
+[2024-05-05 09:06:41] INFO root fetch - processPackages [bedrock-bot]: executing diffoscope
+[2024-05-05 09:06:41] INFO root fetch - processPackages [bedrock-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bedrock_bot-1.2.6.tar.gz tmp/bedrock_bot-1.2.7.tar.gz --markdown 20240505/b/bedrock-bot/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-05 09:06:42] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.2.6.tar.gz]
+[2024-05-05 09:06:42] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.2.7.tar.gz]
+[2024-05-05 09:06:42] INFO root fetch - main [MainThread]: End processing [bedrock-bot]: success
+[2024-05-05 09:06:42] INFO root fetch - processPackages [gpt-researcher]: executing diffoscope
+[2024-05-05 09:06:42] INFO root fetch - processPackages [gpt-researcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-researcher-0.2.9.tar.gz tmp/gpt-researcher-0.3.0.tar.gz --markdown 20240505/g/gpt-researcher/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-05 09:06:42] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.2.9.tar.gz]
+[2024-05-05 09:06:42] INFO root fetch - processPackages [gpt-researcher]: Remove: archive file [/home/abi/fetcher/tmp/gpt-researcher-0.3.0.tar.gz]
+[2024-05-05 09:06:42] INFO root fetch - main [MainThread]: End processing [gpt-researcher]: success
+[2024-05-05 09:06:42] INFO root fetch - main [MainThread]: Store serial: [23063705]
