@@ -11453,3 +11453,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:55:06] INFO root fetch - processPackages [horde-engine]: Remove: archive file [/home/abi/fetcher/tmp/horde_engine-2.9.2.tar.gz]
 [2024-05-05 16:55:06] INFO root fetch - main [MainThread]: End processing [horde-engine]: success
 [2024-05-05 16:55:06] INFO root fetch - main [MainThread]: Store serial: [23066590]
+[2024-05-05 16:57:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066590]
+[2024-05-05 16:57:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 16:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-activitylog-jwt
+[2024-05-05 16:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: horde-engine
+[2024-05-05 16:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-build-dgcode
+[2024-05-05 16:57:17] WARNING root fetch - processPackages [django-activitylog-jwt]: Skipping, unable to determine old version
+[2024-05-05 16:57:17] INFO root fetch - main [MainThread]: End processing [django-activitylog-jwt] error
+[2024-05-05 16:57:17] INFO root fetch - processPackages [horde-engine]: New version: [2.9.2] Old Version: [2.8.2]
+[2024-05-05 16:57:17] INFO root fetch - processPackages [horde-engine]: Downloading https://files.pythonhosted.org/packages/7c/33/441563cc2f287f63993b459dc10f98b5d0b4a9df8e4a9f561ceb6ed64f32/horde_engine-2.8.2.tar.gz
+[2024-05-05 16:57:17] INFO root fetch - processPackages [simple-build-dgcode]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-05 16:57:17] INFO root fetch - processPackages [simple-build-dgcode]: Downloading https://files.pythonhosted.org/packages/75/ae/5048ef34cd78f769333219a18810ac395b33f0a34e44839d70dc303e14ed/simple_build_dgcode-1.1.4.tar.gz
+[2024-05-05 16:57:17] INFO root fetch - processPackages [horde-engine]: Downloading https://files.pythonhosted.org/packages/d8/f5/663e3a278321b2d79f83cf7bf91963a8ecdb0006ec9465bfc4504c741652/horde_engine-2.9.2.tar.gz
+[2024-05-05 16:57:17] INFO root fetch - processPackages [horde-engine]: executing diffoscope
+[2024-05-05 16:57:17] INFO root fetch - processPackages [horde-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horde_engine-2.8.2.tar.gz tmp/horde_engine-2.9.2.tar.gz --markdown 20240505/h/horde-engine/2.8.2-2.9.2/README.md --exclude *.pyd
+[2024-05-05 16:57:17] INFO root fetch - processPackages [simple-build-dgcode]: Downloading https://files.pythonhosted.org/packages/2c/38/3d1820b7031881d8a30d258c54882b82e8c61678327b689097ef2686da1e/simple_build_dgcode-1.1.5.tar.gz
+[2024-05-05 16:57:17] INFO root fetch - processPackages [simple-build-dgcode]: executing diffoscope
+[2024-05-05 16:57:17] INFO root fetch - processPackages [simple-build-dgcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_build_dgcode-1.1.4.tar.gz tmp/simple_build_dgcode-1.1.5.tar.gz --markdown 20240505/s/simple-build-dgcode/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-05 16:57:20] INFO root fetch - processPackages [simple-build-dgcode]: Remove: archive file [/home/abi/fetcher/tmp/simple_build_dgcode-1.1.4.tar.gz]
+[2024-05-05 16:57:20] INFO root fetch - processPackages [simple-build-dgcode]: Remove: archive file [/home/abi/fetcher/tmp/simple_build_dgcode-1.1.5.tar.gz]
+[2024-05-05 16:57:20] INFO root fetch - main [MainThread]: End processing [simple-build-dgcode]: success
+[2024-05-05 16:57:32] INFO root fetch - processPackages [horde-engine]: Remove: archive file [/home/abi/fetcher/tmp/horde_engine-2.8.2.tar.gz]
+[2024-05-05 16:57:32] INFO root fetch - processPackages [horde-engine]: Remove: archive file [/home/abi/fetcher/tmp/horde_engine-2.9.2.tar.gz]
+[2024-05-05 16:57:32] INFO root fetch - main [MainThread]: End processing [horde-engine]: success
+[2024-05-05 16:57:32] INFO root fetch - main [MainThread]: Store serial: [23066599]
