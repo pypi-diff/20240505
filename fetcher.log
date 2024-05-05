@@ -12430,3 +12430,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 18:02:12] INFO root fetch - processPackages [lego-handlers]: Remove: archive file [/home/abi/fetcher/tmp/lego_handlers-1.1.2.tar.gz]
 [2024-05-05 18:02:12] INFO root fetch - main [MainThread]: End processing [lego-handlers]: success
 [2024-05-05 18:02:12] INFO root fetch - main [MainThread]: Store serial: [23066934]
+[2024-05-05 18:04:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066934]
+[2024-05-05 18:04:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 18:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qstd-core
+[2024-05-05 18:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xbstrap-version-bumper
+[2024-05-05 18:04:21] INFO root fetch - processPackages [qstd-core]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-05 18:04:21] WARNING root fetch - processPackages [xbstrap-version-bumper]: Skipping, unable to determine old version
+[2024-05-05 18:04:21] INFO root fetch - main [MainThread]: End processing [xbstrap-version-bumper] error
+[2024-05-05 18:04:21] INFO root fetch - processPackages [qstd-core]: Downloading https://files.pythonhosted.org/packages/8c/2b/3e800fabd3d5db0e8d842bcac1bc1fb73c3227efe4054597bc3a7c0bbdb7/qstd_core-0.5.0.tar.gz
+[2024-05-05 18:04:21] INFO root fetch - processPackages [qstd-core]: Downloading https://files.pythonhosted.org/packages/72/84/c973cbe617b8821f81cb07d628b53a5f5fa3fb4c79a3cef1db6423de9432/qstd_core-0.5.1.tar.gz
+[2024-05-05 18:04:22] INFO root fetch - processPackages [qstd-core]: executing diffoscope
+[2024-05-05 18:04:22] INFO root fetch - processPackages [qstd-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qstd_core-0.5.0.tar.gz tmp/qstd_core-0.5.1.tar.gz --markdown 20240505/q/qstd-core/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-05 18:04:22] INFO root fetch - processPackages [qstd-core]: Remove: archive file [/home/abi/fetcher/tmp/qstd_core-0.5.0.tar.gz]
+[2024-05-05 18:04:22] INFO root fetch - processPackages [qstd-core]: Remove: archive file [/home/abi/fetcher/tmp/qstd_core-0.5.1.tar.gz]
+[2024-05-05 18:04:22] INFO root fetch - main [MainThread]: End processing [qstd-core]: success
+[2024-05-05 18:04:22] INFO root fetch - main [MainThread]: Store serial: [23066937]
