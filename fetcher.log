@@ -13886,3 +13886,57 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:31:33] INFO root fetch - processPackages [Buke-autoTrade-Pypi]: Remove: archive file [/home/abi/fetcher/tmp/Buke_autoTrade_Pypi-4.4.4.tar.gz]
 [2024-05-05 19:31:33] INFO root fetch - main [MainThread]: End processing [Buke-autoTrade-Pypi]: success
 [2024-05-05 19:31:33] INFO root fetch - main [MainThread]: Store serial: [23067598]
+[2024-05-05 19:33:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067598]
+[2024-05-05 19:33:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: histgram
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octoflow
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: got-cli
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flameEngine
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyvguicom
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: toolfuse
+[2024-05-05 19:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: genomeshader
+[2024-05-05 19:33:42] INFO root fetch - processPackages [toolfuse]: New version: [0.1.21] Old Version: [0.1.20]
+[2024-05-05 19:33:42] INFO root fetch - processPackages [got-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 19:33:42] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-05 19:33:42] INFO root fetch - processPackages [octoflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 19:33:42] WARNING root fetch - processPackages [flameEngine]: Skipping, unable to determine old version
+[2024-05-05 19:33:42] INFO root fetch - main [MainThread]: End processing [flameEngine] error
+[2024-05-05 19:33:42] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ad/36/96dc93e2cf9589ae7ec404cd565245871fad176e727d6faa4f86f6c228cb/got-cli-0.0.8.tar.gz
+[2024-05-05 19:33:42] WARNING root fetch - processPackages [histgram]: Skipping, unable to determine old version
+[2024-05-05 19:33:42] INFO root fetch - main [MainThread]: End processing [histgram] error
+[2024-05-05 19:33:42] INFO root fetch - processPackages [toolfuse]: Downloading https://files.pythonhosted.org/packages/e1/4e/ca6f7375267ced38b8f1824e83bff7788535c67ad493d86d52d15f056876/toolfuse-0.1.20.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [pyvguicom]: New version: [1.1.1] Old Version: [1.0.1]
+[2024-05-05 19:33:42] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [octoflow]: Downloading https://files.pythonhosted.org/packages/c8/b8/8b02533591eba6fe21c3bbb37015e9127b3e41616cf1c0134d81c725e3e8/octoflow-0.0.8.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [pyvguicom]: Downloading https://files.pythonhosted.org/packages/76/33/efc38d80988e76b5c738b818b2aa7b80f2df3aa33003175cd9e39d66870b/pyvguicom-1.0.1.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [toolfuse]: Downloading https://files.pythonhosted.org/packages/1e/40/240f7ce1cd2abd8ab2f5d75a0f3278b541fe8adb063880d9e00865793dab/toolfuse-0.1.21.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [got-cli]: Downloading https://files.pythonhosted.org/packages/ff/71/b812197f03da05996c430c7f17e87e82c77018fd2b7686e747ea5f779c1e/got-cli-0.0.9.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-05-05 19:33:42] INFO root fetch - processPackages [toolfuse]: executing diffoscope
+[2024-05-05 19:33:42] INFO root fetch - processPackages [toolfuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolfuse-0.1.20.tar.gz tmp/toolfuse-0.1.21.tar.gz --markdown 20240505/t/toolfuse/0.1.20-0.1.21/README.md --exclude *.pyd
+[2024-05-05 19:33:42] INFO root fetch - processPackages [got-cli]: executing diffoscope
+[2024-05-05 19:33:42] INFO root fetch - processPackages [got-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/got-cli-0.0.8.tar.gz tmp/got-cli-0.0.9.tar.gz --markdown 20240505/g/got-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 19:33:42] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-05-05 19:33:42] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240505/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-05 19:33:42] INFO root fetch - processPackages [octoflow]: Downloading https://files.pythonhosted.org/packages/8c/7c/0369b88658b21011ce4f133e4e41a8f8eb23e3675a7f6d94183f4d22e587/octoflow-0.0.9.tar.gz
+[2024-05-05 19:33:43] INFO root fetch - processPackages [pyvguicom]: Downloading https://files.pythonhosted.org/packages/38/68/d3ebf2e72777a341a8246427e47fdf21dee1d3f93617c2a638201232e96c/pyvguicom-1.1.1.tar.gz
+[2024-05-05 19:33:43] INFO root fetch - processPackages [octoflow]: executing diffoscope
+[2024-05-05 19:33:43] INFO root fetch - processPackages [octoflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octoflow-0.0.8.tar.gz tmp/octoflow-0.0.9.tar.gz --markdown 20240505/o/octoflow/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 19:33:43] INFO root fetch - processPackages [pyvguicom]: executing diffoscope
+[2024-05-05 19:33:43] INFO root fetch - processPackages [pyvguicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvguicom-1.0.1.tar.gz tmp/pyvguicom-1.1.1.tar.gz --markdown 20240505/p/pyvguicom/1.0.1-1.1.1/README.md --exclude *.pyd
+[2024-05-05 19:33:43] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.8.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - processPackages [got-cli]: Remove: archive file [/home/abi/fetcher/tmp/got-cli-0.0.9.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - main [MainThread]: End processing [got-cli]: success
+[2024-05-05 19:33:43] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-05-05 19:33:43] INFO root fetch - processPackages [toolfuse]: Remove: archive file [/home/abi/fetcher/tmp/toolfuse-0.1.20.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - processPackages [toolfuse]: Remove: archive file [/home/abi/fetcher/tmp/toolfuse-0.1.21.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - main [MainThread]: End processing [toolfuse]: success
+[2024-05-05 19:33:43] INFO root fetch - processPackages [octoflow]: Remove: archive file [/home/abi/fetcher/tmp/octoflow-0.0.8.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - processPackages [octoflow]: Remove: archive file [/home/abi/fetcher/tmp/octoflow-0.0.9.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - main [MainThread]: End processing [octoflow]: success
+[2024-05-05 19:33:43] INFO root fetch - processPackages [pyvguicom]: Remove: archive file [/home/abi/fetcher/tmp/pyvguicom-1.0.1.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - processPackages [pyvguicom]: Remove: archive file [/home/abi/fetcher/tmp/pyvguicom-1.1.1.tar.gz]
+[2024-05-05 19:33:43] INFO root fetch - main [MainThread]: End processing [pyvguicom]: success
+[2024-05-05 19:33:43] INFO root fetch - main [MainThread]: Store serial: [23067625]
