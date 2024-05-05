@@ -12098,3 +12098,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:40:17] INFO root fetch - processPackages [jax-tools]: Remove: archive file [/home/abi/fetcher/tmp/jax-tools-1.0.97.tar.gz]
 [2024-05-05 17:40:17] INFO root fetch - main [MainThread]: End processing [jax-tools]: success
 [2024-05-05 17:40:17] INFO root fetch - main [MainThread]: Store serial: [23066824]
+[2024-05-05 17:42:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066824]
+[2024-05-05 17:42:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 17:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aicli
+[2024-05-05 17:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-kg
+[2024-05-05 17:42:26] INFO root fetch - processPackages [llama-kg]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 17:42:26] INFO root fetch - processPackages [aicli]: New version: [99.0.202405051541] Old Version: [99.0.202404080609]
+[2024-05-05 17:42:26] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/b9/af/789ebcfb1ab9b488fc431b6ca5b8ef85f8cc9680dfb87990c30aa5cc57e1/llama-kg-0.0.1.tar.gz
+[2024-05-05 17:42:26] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/3a/17/a1d03f47ee7acabf74fc22e7db35a11f146c9398335dacf85aa2307e4cdd/aicli-99.0.202404080609-py3-none-any.whl
+[2024-05-05 17:42:27] INFO root fetch - processPackages [llama-kg]: Downloading https://files.pythonhosted.org/packages/e6/74/53ebc84ec09d842fdc2b81d705001aa06b6230bd64e685f8701120659351/llama-kg-0.0.2.tar.gz
+[2024-05-05 17:42:27] INFO root fetch - processPackages [llama-kg]: executing diffoscope
+[2024-05-05 17:42:27] INFO root fetch - processPackages [llama-kg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-kg-0.0.1.tar.gz tmp/llama-kg-0.0.2.tar.gz --markdown 20240505/l/llama-kg/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 17:42:27] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/48/2b/20578d730b71ac6b3eca0e7e90ad41b013eb91fe2a06657ca1d1e0781157/aicli-99.0.202405051541-py3-none-any.whl
+[2024-05-05 17:42:27] INFO root fetch - processPackages [aicli]: executing diffoscope
+[2024-05-05 17:42:27] INFO root fetch - processPackages [aicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicli-99.0.202404080609-py3-none-any.whl.zip tmp/aicli-99.0.202405051541-py3-none-any.whl.zip --markdown 20240505/a/aicli/99.0.202404080609-99.0.202405051541/README.md --exclude *.pyd
+[2024-05-05 17:42:27] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.1.tar.gz]
+[2024-05-05 17:42:27] INFO root fetch - processPackages [llama-kg]: Remove: archive file [/home/abi/fetcher/tmp/llama-kg-0.0.2.tar.gz]
+[2024-05-05 17:42:27] INFO root fetch - main [MainThread]: End processing [llama-kg]: success
+[2024-05-05 17:42:27] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202404080609-py3-none-any.whl.zip]
+[2024-05-05 17:42:27] INFO root fetch - processPackages [aicli]: Remove: archive file [/home/abi/fetcher/tmp/aicli-99.0.202405051541-py3-none-any.whl.zip]
+[2024-05-05 17:42:27] INFO root fetch - main [MainThread]: End processing [aicli]: success
+[2024-05-05 17:42:27] INFO root fetch - main [MainThread]: Store serial: [23066827]
