@@ -14116,3 +14116,24 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 19:47:12] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.757.1.tar.gz]
 [2024-05-05 19:47:12] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2024-05-05 19:47:12] INFO root fetch - main [MainThread]: Store serial: [23067685]
+[2024-05-05 19:49:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23067685]
+[2024-05-05 19:49:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 19:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itunizer
+[2024-05-05 19:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Nuitka
+[2024-05-05 19:49:21] INFO root fetch - processPackages [Nuitka]: New version: [2.2] Old Version: [2.1.6]
+[2024-05-05 19:49:21] INFO root fetch - processPackages [itunizer]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-05 19:49:21] INFO root fetch - processPackages [Nuitka]: Downloading https://files.pythonhosted.org/packages/85/d0/715db68f43d29e8c54033523093f152776f3c9474334c5a0b769a3e748d2/Nuitka-2.1.6.tar.gz
+[2024-05-05 19:49:21] INFO root fetch - processPackages [itunizer]: Downloading https://files.pythonhosted.org/packages/23/1f/6a30a767995e6fec2c47ae2f30ae20a38b764135c6fb5dcead38ea482867/itunizer-1.0.3.tar.gz
+[2024-05-05 19:49:21] INFO root fetch - processPackages [itunizer]: Downloading https://files.pythonhosted.org/packages/53/cf/39fd5f740fac535aec36508ad8f06cfbba31527120288472b7434b2d8ac3/itunizer-1.0.4.tar.gz
+[2024-05-05 19:49:21] INFO root fetch - processPackages [itunizer]: executing diffoscope
+[2024-05-05 19:49:21] INFO root fetch - processPackages [itunizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itunizer-1.0.3.tar.gz tmp/itunizer-1.0.4.tar.gz --markdown 20240505/i/itunizer/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-05 19:49:22] INFO root fetch - processPackages [Nuitka]: Downloading https://files.pythonhosted.org/packages/64/0d/9e6d0c1959bebd9ec0c956cc664905dd6a3ba441563b75f81e790674ba94/Nuitka-2.2.tar.gz
+[2024-05-05 19:49:22] INFO root fetch - processPackages [itunizer]: Remove: archive file [/home/abi/fetcher/tmp/itunizer-1.0.3.tar.gz]
+[2024-05-05 19:49:22] INFO root fetch - processPackages [itunizer]: Remove: archive file [/home/abi/fetcher/tmp/itunizer-1.0.4.tar.gz]
+[2024-05-05 19:49:22] INFO root fetch - main [MainThread]: End processing [itunizer]: success
+[2024-05-05 19:49:22] INFO root fetch - processPackages [Nuitka]: executing diffoscope
+[2024-05-05 19:49:22] INFO root fetch - processPackages [Nuitka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Nuitka-2.1.6.tar.gz tmp/Nuitka-2.2.tar.gz --markdown 20240505/N/Nuitka/2.1.6-2.2/README.md --exclude *.pyd
+[2024-05-05 19:49:34] INFO root fetch - processPackages [Nuitka]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-2.1.6.tar.gz]
+[2024-05-05 19:49:34] INFO root fetch - processPackages [Nuitka]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-2.2.tar.gz]
+[2024-05-05 19:49:34] INFO root fetch - main [MainThread]: End processing [Nuitka]: success
+[2024-05-05 19:49:34] INFO root fetch - main [MainThread]: Store serial: [23067692]
