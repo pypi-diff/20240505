@@ -11921,3 +11921,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 17:27:16] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.9.tar.gz]
 [2024-05-05 17:27:16] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-05-05 17:27:16] INFO root fetch - main [MainThread]: Store serial: [23066760]
+[2024-05-05 17:29:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066760]
+[2024-05-05 17:29:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vodesfunc
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pd-extras
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: btrview
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: league-tools
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ciscoconfaudit
+[2024-05-05 17:29:25] INFO root fetch - processPackages [pd-extras]: New version: [5.0.3] Old Version: [5.0.2]
+[2024-05-05 17:29:25] INFO root fetch - processPackages [league-tools]: New version: [0.2.0.dev2] Old Version: [0.2.0.dev1]
+[2024-05-05 17:29:25] INFO root fetch - processPackages [btrview]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-05 17:29:25] INFO root fetch - processPackages [vodesfunc]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ciscoconfaudit]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-05 17:29:25] INFO root fetch - processPackages [pd-extras]: Downloading https://files.pythonhosted.org/packages/36/02/6e8ee294f61d659fb5c52a97c9bb4294a982445b1ebbc0cf93952c4bc91a/pd_extras-5.0.2.tar.gz
+[2024-05-05 17:29:25] INFO root fetch - processPackages [league-tools]: Downloading https://files.pythonhosted.org/packages/b6/c4/53a23f7938e57d36ffe7a2185646619d21ac0e16a6fe5c6c039598bf8c4d/league_tools-0.2.0.dev1.tar.gz
+[2024-05-05 17:29:25] INFO root fetch - processPackages [btrview]: Downloading https://files.pythonhosted.org/packages/54/f6/112b82413ecfabc3049a1ee0d5e8e26e83a3866fdc27182bd4f4859fb013/btrview-0.6.2.tar.gz
+[2024-05-05 17:29:25] INFO root fetch - processPackages [vodesfunc]: Downloading https://files.pythonhosted.org/packages/fd/33/e1b1f86b233d9397a039a8facc5cf30b243dc244d45e4a4bc3b43d51415a/vodesfunc-1.5.0.tar.gz
+[2024-05-05 17:29:25] INFO root fetch - processPackages [ciscoconfaudit]: Downloading https://files.pythonhosted.org/packages/bb/1d/83b85a434c9b487292d1b1684421a2962a867a89a1724179455875b8b957/ciscoconfaudit-0.1.2.tar.gz
+[2024-05-05 17:29:25] INFO root fetch - processPackages [pd-extras]: Downloading https://files.pythonhosted.org/packages/03/ca/55d955098d0b407d53105a5ebdb815d64be1aee74a023e36936ad3691796/pd_extras-5.0.3.tar.gz
+[2024-05-05 17:29:25] INFO root fetch - processPackages [league-tools]: Downloading https://files.pythonhosted.org/packages/f3/f0/cbc9e96b079dcc83da4fc1d9c45eabe5657cbf8353dd4a4f43e0fb8530e0/league_tools-0.2.0.dev2.tar.gz
+[2024-05-05 17:29:26] INFO root fetch - processPackages [pd-extras]: executing diffoscope
+[2024-05-05 17:29:26] INFO root fetch - processPackages [pd-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pd_extras-5.0.2.tar.gz tmp/pd_extras-5.0.3.tar.gz --markdown 20240505/p/pd-extras/5.0.2-5.0.3/README.md --exclude *.pyd
+[2024-05-05 17:29:26] INFO root fetch - processPackages [league-tools]: executing diffoscope
+[2024-05-05 17:29:26] INFO root fetch - processPackages [league-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league_tools-0.2.0.dev1.tar.gz tmp/league_tools-0.2.0.dev2.tar.gz --markdown 20240505/l/league-tools/0.2.0.dev1-0.2.0.dev2/README.md --exclude *.pyd
+[2024-05-05 17:29:26] INFO root fetch - processPackages [btrview]: Downloading https://files.pythonhosted.org/packages/f9/e4/9d97faa666e2a4fec706b1b1a1cba512f6f4b6ffc54bafa94d9648513934/btrview-0.6.3.tar.gz
+[2024-05-05 17:29:26] INFO root fetch - processPackages [vodesfunc]: Downloading https://files.pythonhosted.org/packages/49/b7/86d4ab66cc88890f33609378079bcef81b268bc25b0f36b3efabed008953/vodesfunc-1.6.0.tar.gz
+[2024-05-05 17:29:26] INFO root fetch - processPackages [ciscoconfaudit]: Downloading https://files.pythonhosted.org/packages/b7/52/92627e0e2c3f96711395f93f78b67d5376373ebaac7b8405d5e818b2d44e/ciscoconfaudit-0.2.0.tar.gz
+[2024-05-05 17:29:26] INFO root fetch - processPackages [btrview]: executing diffoscope
+[2024-05-05 17:29:26] INFO root fetch - processPackages [btrview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btrview-0.6.2.tar.gz tmp/btrview-0.6.3.tar.gz --markdown 20240505/b/btrview/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-05 17:29:26] INFO root fetch - processPackages [vodesfunc]: executing diffoscope
+[2024-05-05 17:29:26] INFO root fetch - processPackages [vodesfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vodesfunc-1.5.0.tar.gz tmp/vodesfunc-1.6.0.tar.gz --markdown 20240505/v/vodesfunc/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-05-05 17:29:26] INFO root fetch - processPackages [ciscoconfaudit]: executing diffoscope
+[2024-05-05 17:29:26] INFO root fetch - processPackages [ciscoconfaudit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciscoconfaudit-0.1.2.tar.gz tmp/ciscoconfaudit-0.2.0.tar.gz --markdown 20240505/c/ciscoconfaudit/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-05 17:29:26] INFO root fetch - processPackages [league-tools]: Remove: archive file [/home/abi/fetcher/tmp/league_tools-0.2.0.dev1.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - processPackages [league-tools]: Remove: archive file [/home/abi/fetcher/tmp/league_tools-0.2.0.dev2.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - main [MainThread]: End processing [league-tools]: success
+[2024-05-05 17:29:26] INFO root fetch - processPackages [pd-extras]: Remove: archive file [/home/abi/fetcher/tmp/pd_extras-5.0.2.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - processPackages [pd-extras]: Remove: archive file [/home/abi/fetcher/tmp/pd_extras-5.0.3.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - main [MainThread]: End processing [pd-extras]: success
+[2024-05-05 17:29:26] INFO root fetch - processPackages [btrview]: Remove: archive file [/home/abi/fetcher/tmp/btrview-0.6.2.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - processPackages [btrview]: Remove: archive file [/home/abi/fetcher/tmp/btrview-0.6.3.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - main [MainThread]: End processing [btrview]: success
+[2024-05-05 17:29:26] INFO root fetch - processPackages [vodesfunc]: Remove: archive file [/home/abi/fetcher/tmp/vodesfunc-1.5.0.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - processPackages [vodesfunc]: Remove: archive file [/home/abi/fetcher/tmp/vodesfunc-1.6.0.tar.gz]
+[2024-05-05 17:29:26] INFO root fetch - main [MainThread]: End processing [vodesfunc]: success
+[2024-05-05 17:29:27] INFO root fetch - processPackages [ciscoconfaudit]: Remove: archive file [/home/abi/fetcher/tmp/ciscoconfaudit-0.1.2.tar.gz]
+[2024-05-05 17:29:27] INFO root fetch - processPackages [ciscoconfaudit]: Remove: archive file [/home/abi/fetcher/tmp/ciscoconfaudit-0.2.0.tar.gz]
+[2024-05-05 17:29:27] INFO root fetch - main [MainThread]: End processing [ciscoconfaudit]: success
+[2024-05-05 17:29:27] INFO root fetch - main [MainThread]: Store serial: [23066774]
