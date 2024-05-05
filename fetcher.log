@@ -8338,3 +8338,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 13:24:53] INFO root fetch - processPackages [ara-tools]: Remove: archive file [/home/abi/fetcher/tmp/ara-tools-0.1.4.9.tar.gz]
 [2024-05-05 13:24:53] INFO root fetch - main [MainThread]: End processing [ara-tools]: success
 [2024-05-05 13:24:53] INFO root fetch - main [MainThread]: Store serial: [23065020]
+[2024-05-05 13:26:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23065020]
+[2024-05-05 13:27:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 13:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchrl-nightly
+[2024-05-05 13:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2024-05-05 13:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p-template-generator
+[2024-05-05 13:27:03] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-05 13:27:03] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-05 13:27:03] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/12/a7/eb3fd40b4f7892dfc83b1d235085f5c901eec1023ed6127a9de7c23c8415/torchx_nightly-2024.5.3-py3-none-any.whl
+[2024-05-05 13:27:03] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.5] Old Version: [2024.5.4]
+[2024-05-05 13:27:04] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-05-05 13:27:04] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/92/9b/cc181f7ad965dc267a588a66c75451a7d7dee43ada22a9e99ff44267941b/torchrl_nightly-2024.5.4-cp39-cp39-win_amd64.whl
+[2024-05-05 13:27:04] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4b/89/a06c1f678debaacf247549e7e1dbe65b8753f1cb8b96ea17c5d9d6394219/torchx_nightly-2024.5.4-py3-none-any.whl
+[2024-05-05 13:27:04] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-05 13:27:04] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.3-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.4-py3-none-any.whl.zip --markdown 20240505/t/torchx-nightly/2024.5.3-2024.5.4/README.md --exclude *.pyd
+[2024-05-05 13:27:04] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/9b/68/102a5b8d13ddf274bbaf7e85e3b97ae0b644608fe577c84e09a3c7b8fbce/torchrl_nightly-2024.5.5-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-05 13:27:04] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-05-05 13:27:05] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.3-py3-none-any.whl.zip]
+[2024-05-05 13:27:05] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.4-py3-none-any.whl.zip]
+[2024-05-05 13:27:05] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-05 13:27:05] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-05 13:27:05] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.4-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.5-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240505/t/torchrl-nightly/2024.5.4-2024.5.5/README.md --exclude *.pyd
+[2024-05-05 13:27:05] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-05-05 13:27:05] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240505/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-05 13:27:06] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-05-05 13:27:06] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-05-05 13:27:06] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-05-05 13:27:08] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.4-cp39-cp39-win_amd64.whl.zip]
+[2024-05-05 13:27:08] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.5-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-05-05 13:27:08] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-05 13:27:08] INFO root fetch - main [MainThread]: Store serial: [23065030]
