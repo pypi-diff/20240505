@@ -14833,3 +14833,27 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 20:38:08] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.4.9.tar.gz]
 [2024-05-05 20:38:08] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
 [2024-05-05 20:38:08] INFO root fetch - main [MainThread]: Store serial: [23068036]
+[2024-05-05 20:40:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068036]
+[2024-05-05 20:40:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 20:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: japanese-address-parser-py
+[2024-05-05 20:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jobspec
+[2024-05-05 20:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywgraph
+[2024-05-05 20:40:17] WARNING root fetch - processPackages [pywgraph]: Skipping, unable to determine old version
+[2024-05-05 20:40:17] INFO root fetch - main [MainThread]: End processing [pywgraph] error
+[2024-05-05 20:40:17] INFO root fetch - processPackages [jobspec]: New version: [0.1.1] Old Version: [0.0.13]
+[2024-05-05 20:40:17] INFO root fetch - processPackages [japanese-address-parser-py]: New version: [0.1.0b18] Old Version: [0.1.0b17]
+[2024-05-05 20:40:17] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/3e/2b/df18ce67803c0ce9f5102d5a16ec88bcca68818aceaf3b068afc2235303f/japanese_address_parser_py-0.1.0b17.tar.gz
+[2024-05-05 20:40:17] INFO root fetch - processPackages [jobspec]: Downloading https://files.pythonhosted.org/packages/c4/47/b252e9019a0f05ad3cfeb60bc7e2373db0f5bf4b32bb54a2001a87c9f655/jobspec-0.0.13.tar.gz
+[2024-05-05 20:40:18] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/03/4e/90cd90533a1103fd341167a533e90ea36a8a642924539c44cb8e8ada2568/japanese_address_parser_py-0.1.0b18.tar.gz
+[2024-05-05 20:40:18] INFO root fetch - processPackages [jobspec]: Downloading https://files.pythonhosted.org/packages/b7/d0/3486b0f2158ef748594c9f45989aa690f2ade8e34e8a6820f9b8d174b2b7/jobspec-0.1.1.tar.gz
+[2024-05-05 20:40:18] INFO root fetch - processPackages [japanese-address-parser-py]: executing diffoscope
+[2024-05-05 20:40:18] INFO root fetch - processPackages [japanese-address-parser-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/japanese_address_parser_py-0.1.0b17.tar.gz tmp/japanese_address_parser_py-0.1.0b18.tar.gz --markdown 20240505/j/japanese-address-parser-py/0.1.0b17-0.1.0b18/README.md --exclude *.pyd
+[2024-05-05 20:40:18] INFO root fetch - processPackages [jobspec]: executing diffoscope
+[2024-05-05 20:40:18] INFO root fetch - processPackages [jobspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobspec-0.0.13.tar.gz tmp/jobspec-0.1.1.tar.gz --markdown 20240505/j/jobspec/0.0.13-0.1.1/README.md --exclude *.pyd
+[2024-05-05 20:40:18] INFO root fetch - processPackages [jobspec]: Remove: archive file [/home/abi/fetcher/tmp/jobspec-0.0.13.tar.gz]
+[2024-05-05 20:40:18] INFO root fetch - processPackages [jobspec]: Remove: archive file [/home/abi/fetcher/tmp/jobspec-0.1.1.tar.gz]
+[2024-05-05 20:40:18] INFO root fetch - main [MainThread]: End processing [jobspec]: success
+[2024-05-05 20:40:18] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b17.tar.gz]
+[2024-05-05 20:40:18] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b18.tar.gz]
+[2024-05-05 20:40:18] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
+[2024-05-05 20:40:18] INFO root fetch - main [MainThread]: Store serial: [23068057]
