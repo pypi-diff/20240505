@@ -17571,3 +17571,18 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 23:56:51] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.87.tar.gz]
 [2024-05-05 23:56:51] INFO root fetch - main [MainThread]: End processing [url-remote]: success
 [2024-05-05 23:56:51] INFO root fetch - main [MainThread]: Store serial: [23069367]
+[2024-05-05 23:58:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23069367]
+[2024-05-05 23:58:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 23:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odlabel
+[2024-05-05 23:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mediumroast-py
+[2024-05-05 23:58:59] WARNING root fetch - processPackages [odlabel]: Skipping, unable to determine old version
+[2024-05-05 23:58:59] INFO root fetch - main [MainThread]: End processing [odlabel] error
+[2024-05-05 23:58:59] INFO root fetch - processPackages [mediumroast-py]: New version: [0.6.0] Old Version: [0.3.9]
+[2024-05-05 23:58:59] INFO root fetch - processPackages [mediumroast-py]: Downloading https://files.pythonhosted.org/packages/d3/ab/92c9b1b090eccdcf74d5099f3de6a219b7f28c90de837241304ad798fff5/mediumroast_py-0.3.9.tar.gz
+[2024-05-05 23:59:00] INFO root fetch - processPackages [mediumroast-py]: Downloading https://files.pythonhosted.org/packages/6b/96/fc30165e123fcfc03b1351c56f8f56def1647ffba88068c0801070f63e84/mediumroast_py-0.6.0.tar.gz
+[2024-05-05 23:59:00] INFO root fetch - processPackages [mediumroast-py]: executing diffoscope
+[2024-05-05 23:59:00] INFO root fetch - processPackages [mediumroast-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediumroast_py-0.3.9.tar.gz tmp/mediumroast_py-0.6.0.tar.gz --markdown 20240505/m/mediumroast-py/0.3.9-0.6.0/README.md --exclude *.pyd
+[2024-05-05 23:59:01] INFO root fetch - processPackages [mediumroast-py]: Remove: archive file [/home/abi/fetcher/tmp/mediumroast_py-0.3.9.tar.gz]
+[2024-05-05 23:59:01] INFO root fetch - processPackages [mediumroast-py]: Remove: archive file [/home/abi/fetcher/tmp/mediumroast_py-0.6.0.tar.gz]
+[2024-05-05 23:59:01] INFO root fetch - main [MainThread]: End processing [mediumroast-py]: success
+[2024-05-05 23:59:01] INFO root fetch - main [MainThread]: Store serial: [23069374]
