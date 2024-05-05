@@ -7813,3 +7813,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 12:39:09] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240504.tar.gz]
 [2024-05-05 12:39:09] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-05-05 12:39:09] INFO root fetch - main [MainThread]: Store serial: [23064794]
+[2024-05-05 12:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064794]
+[2024-05-05 12:41:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 12:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymemgpt-nightly
+[2024-05-05 12:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkt-retv
+[2024-05-05 12:41:18] INFO root fetch - processPackages [mkt-retv]: New version: [1.410] Old Version: [1.409]
+[2024-05-05 12:41:18] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-05 12:41:18] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ee/f5/c2eb1f606463db29f040b1ce09acb64e4f1f2c4a10dc7d16367010f663d2/mkt-retv-1.409.tar.gz
+[2024-05-05 12:41:18] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-05 12:41:18] INFO root fetch - processPackages [mkt-retv]: Downloading https://files.pythonhosted.org/packages/ed/e9/5c3d2996012d5877c6ae8c172ee18c2a798a4413756d721671fce3764fba/mkt-retv-1.410.tar.gz
+[2024-05-05 12:41:18] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-05 12:41:18] INFO root fetch - processPackages [mkt-retv]: executing diffoscope
+[2024-05-05 12:41:18] INFO root fetch - processPackages [mkt-retv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkt-retv-1.409.tar.gz tmp/mkt-retv-1.410.tar.gz --markdown 20240505/m/mkt-retv/1.409-1.410/README.md --exclude *.pyd
+[2024-05-05 12:41:18] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-05 12:41:18] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240505/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-05 12:41:19] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.409.tar.gz]
+[2024-05-05 12:41:19] INFO root fetch - processPackages [mkt-retv]: Remove: archive file [/home/abi/fetcher/tmp/mkt-retv-1.410.tar.gz]
+[2024-05-05 12:41:19] INFO root fetch - main [MainThread]: End processing [mkt-retv]: success
+[2024-05-05 12:41:19] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-05 12:41:19] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-05 12:41:19] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-05 12:41:19] INFO root fetch - main [MainThread]: Store serial: [23064800]
