@@ -16562,3 +16562,42 @@ AssertionError: tmp/got-cli-0.0.8.tar.gz does not exist
 [2024-05-05 22:25:18] INFO root fetch - processPackages [pydantic-aioredis]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_aioredis-1.3.0.tar.gz]
 [2024-05-05 22:25:18] INFO root fetch - main [MainThread]: End processing [pydantic-aioredis]: success
 [2024-05-05 22:25:18] INFO root fetch - main [MainThread]: Store serial: [23068852]
+[2024-05-05 22:27:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23068852]
+[2024-05-05 22:27:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 22:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aec6s
+[2024-05-05 22:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shipyard-api
+[2024-05-05 22:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cae-cli
+[2024-05-05 22:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vodesfunc
+[2024-05-05 22:27:27] INFO root fetch - processPackages [vodesfunc]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-05-05 22:27:27] INFO root fetch - processPackages [cae-cli]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-05 22:27:27] INFO root fetch - processPackages [vodesfunc]: Downloading https://files.pythonhosted.org/packages/fd/33/e1b1f86b233d9397a039a8facc5cf30b243dc244d45e4a4bc3b43d51415a/vodesfunc-1.5.0.tar.gz
+[2024-05-05 22:27:27] INFO root fetch - processPackages [shipyard-api]: New version: [0.1.1a0] Old Version: [0.1.0]
+[2024-05-05 22:27:27] INFO root fetch - processPackages [aec6s]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-05 22:27:27] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/17/78/1c3e6fd871e3a02252e357dcf059e8737cce68a33e6bdbe39d1f31dfe987/cae_cli-0.0.9.tar.gz
+[2024-05-05 22:27:27] INFO root fetch - processPackages [aec6s]: Downloading https://files.pythonhosted.org/packages/08/52/c6527cce803d5cae4a50a3eef5051ea59f0fa758ccea0eb703824d19ac85/aec6s-1.0.0.tar.gz
+[2024-05-05 22:27:27] INFO root fetch - processPackages [shipyard-api]: Downloading https://files.pythonhosted.org/packages/9b/3f/e5cf29e0564f42f8671b8576ffcc59ff072a3a5b975ef12fdd21d011683e/shipyard_api-0.1.0.tar.gz
+[2024-05-05 22:27:28] INFO root fetch - processPackages [vodesfunc]: Downloading https://files.pythonhosted.org/packages/49/b7/86d4ab66cc88890f33609378079bcef81b268bc25b0f36b3efabed008953/vodesfunc-1.6.0.tar.gz
+[2024-05-05 22:27:28] INFO root fetch - processPackages [vodesfunc]: executing diffoscope
+[2024-05-05 22:27:28] INFO root fetch - processPackages [vodesfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vodesfunc-1.5.0.tar.gz tmp/vodesfunc-1.6.0.tar.gz --markdown 20240505/v/vodesfunc/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-05-05 22:27:28] INFO root fetch - processPackages [cae-cli]: Downloading https://files.pythonhosted.org/packages/a0/29/1d95abcda5fa393c22dc8e48d187348548c3a9b1ad7ab931c953b9042a01/cae_cli-0.1.0.tar.gz
+[2024-05-05 22:27:28] INFO root fetch - processPackages [cae-cli]: executing diffoscope
+[2024-05-05 22:27:28] INFO root fetch - processPackages [cae-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cae_cli-0.0.9.tar.gz tmp/cae_cli-0.1.0.tar.gz --markdown 20240505/c/cae-cli/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-05 22:27:28] INFO root fetch - processPackages [shipyard-api]: Downloading https://files.pythonhosted.org/packages/28/8a/3b7c097f3de6dee7f5da3d303f4ef308662dcc8473124657c636e58468c4/shipyard_api-0.1.1a0.tar.gz
+[2024-05-05 22:27:28] INFO root fetch - processPackages [aec6s]: Downloading https://files.pythonhosted.org/packages/57/93/fd58a229f2c754f1b3273fee2a9670ccb337fac4129705e05dd108e2a703/aec6s-1.0.1.tar.gz
+[2024-05-05 22:27:28] INFO root fetch - processPackages [aec6s]: executing diffoscope
+[2024-05-05 22:27:28] INFO root fetch - processPackages [aec6s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aec6s-1.0.0.tar.gz tmp/aec6s-1.0.1.tar.gz --markdown 20240505/a/aec6s/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-05 22:27:28] INFO root fetch - processPackages [shipyard-api]: executing diffoscope
+[2024-05-05 22:27:28] INFO root fetch - processPackages [shipyard-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipyard_api-0.1.0.tar.gz tmp/shipyard_api-0.1.1a0.tar.gz --markdown 20240505/s/shipyard-api/0.1.0-0.1.1a0/README.md --exclude *.pyd
+[2024-05-05 22:27:28] INFO root fetch - processPackages [vodesfunc]: Remove: archive file [/home/abi/fetcher/tmp/vodesfunc-1.5.0.tar.gz]
+[2024-05-05 22:27:28] INFO root fetch - processPackages [vodesfunc]: Remove: archive file [/home/abi/fetcher/tmp/vodesfunc-1.6.0.tar.gz]
+[2024-05-05 22:27:28] INFO root fetch - main [MainThread]: End processing [vodesfunc]: success
+[2024-05-05 22:27:28] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.0.9.tar.gz]
+[2024-05-05 22:27:28] INFO root fetch - processPackages [cae-cli]: Remove: archive file [/home/abi/fetcher/tmp/cae_cli-0.1.0.tar.gz]
+[2024-05-05 22:27:28] INFO root fetch - main [MainThread]: End processing [cae-cli]: success
+[2024-05-05 22:27:29] INFO root fetch - processPackages [aec6s]: Remove: archive file [/home/abi/fetcher/tmp/aec6s-1.0.0.tar.gz]
+[2024-05-05 22:27:29] INFO root fetch - processPackages [aec6s]: Remove: archive file [/home/abi/fetcher/tmp/aec6s-1.0.1.tar.gz]
+[2024-05-05 22:27:29] INFO root fetch - main [MainThread]: End processing [aec6s]: success
+[2024-05-05 22:27:29] INFO root fetch - processPackages [shipyard-api]: Remove: archive file [/home/abi/fetcher/tmp/shipyard_api-0.1.0.tar.gz]
+[2024-05-05 22:27:29] INFO root fetch - processPackages [shipyard-api]: Remove: archive file [/home/abi/fetcher/tmp/shipyard_api-0.1.1a0.tar.gz]
+[2024-05-05 22:27:29] INFO root fetch - main [MainThread]: End processing [shipyard-api]: success
+[2024-05-05 22:27:29] INFO root fetch - main [MainThread]: Store serial: [23068860]
