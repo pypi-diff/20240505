@@ -10946,3 +10946,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:17:57] INFO root fetch - processPackages [pcleaner]: Remove: archive file [/home/abi/fetcher/tmp/pcleaner-2.6.3.tar.gz]
 [2024-05-05 16:17:57] INFO root fetch - main [MainThread]: End processing [pcleaner]: success
 [2024-05-05 16:17:57] INFO root fetch - main [MainThread]: Store serial: [23066314]
+[2024-05-05 16:20:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066314]
+[2024-05-05 16:20:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-05 16:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DawgsML
+[2024-05-05 16:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petrosa
+[2024-05-05 16:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goatools
+[2024-05-05 16:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-transformation-marta-miseke1
+[2024-05-05 16:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: revKimi
+[2024-05-05 16:20:06] INFO root fetch - processPackages [petrosa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-05 16:20:06] WARNING root fetch - processPackages [data-transformation-marta-miseke1]: Skipping, unable to determine old version
+[2024-05-05 16:20:06] INFO root fetch - main [MainThread]: End processing [data-transformation-marta-miseke1] error
+[2024-05-05 16:20:06] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/e6/b9/0d446977c84ba028c6ed2dacf861f0724f3cb58cf628ae8bf9ab062ac258/petrosa-0.0.8.tar.gz
+[2024-05-05 16:20:06] INFO root fetch - processPackages [revKimi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 16:20:06] INFO root fetch - processPackages [DawgsML]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-05 16:20:06] INFO root fetch - processPackages [goatools]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-05-05 16:20:06] INFO root fetch - processPackages [DawgsML]: Downloading https://files.pythonhosted.org/packages/51/43/cde2edb9e59a5bce49e476c41cf1cc323edf02a06c47036b525ebfc914b8/dawgsml-0.0.2.tar.gz
+[2024-05-05 16:20:06] INFO root fetch - processPackages [revKimi]: Downloading https://files.pythonhosted.org/packages/80/d8/88ea8ec3115108c171fbc5e2e287c43ae7c09ee76811da4fc0c567f8fdab/revkimi-0.0.1.tar.gz
+[2024-05-05 16:20:06] INFO root fetch - processPackages [goatools]: Downloading https://files.pythonhosted.org/packages/bf/ae/328650c91f3aa84824f7a3025474faffd6d7c563a4c3edfb740fcb795e45/goatools-1.4.4.tar.gz
+[2024-05-05 16:20:06] INFO root fetch - processPackages [petrosa]: Downloading https://files.pythonhosted.org/packages/44/fe/1f3118a8d146a7e23eec51b4caff69f7fe9aa77052269f8ca078482d6985/petrosa-0.0.9.tar.gz
+[2024-05-05 16:20:06] WARNING root fetch - processPackages [goatools]: Skipping package: exceeds size limit 15092118>=10485760
+[2024-05-05 16:20:06] INFO root fetch - main [MainThread]: End processing [goatools] error
+[2024-05-05 16:20:06] INFO root fetch - processPackages [DawgsML]: Downloading https://files.pythonhosted.org/packages/37/36/24d29ff016a6a7934c6c3e791816c50ff19514995bb1eeeca9781a20bb3c/dawgsml-0.0.3.tar.gz
+[2024-05-05 16:20:06] INFO root fetch - processPackages [revKimi]: Downloading https://files.pythonhosted.org/packages/4b/ff/d725bb390cb2a6933ee3f4be75f0da0f5a169b2fffbaa9e0b944c599144f/revkimi-0.0.2.tar.gz
+[2024-05-05 16:20:06] INFO root fetch - processPackages [petrosa]: executing diffoscope
+[2024-05-05 16:20:06] INFO root fetch - processPackages [petrosa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrosa-0.0.8.tar.gz tmp/petrosa-0.0.9.tar.gz --markdown 20240505/p/petrosa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-05 16:20:06] INFO root fetch - processPackages [DawgsML]: executing diffoscope
+[2024-05-05 16:20:06] INFO root fetch - processPackages [DawgsML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dawgsml-0.0.2.tar.gz tmp/dawgsml-0.0.3.tar.gz --markdown 20240505/D/DawgsML/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-05 16:20:07] INFO root fetch - processPackages [revKimi]: executing diffoscope
+[2024-05-05 16:20:07] INFO root fetch - processPackages [revKimi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revkimi-0.0.1.tar.gz tmp/revkimi-0.0.2.tar.gz --markdown 20240505/r/revKimi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 16:20:07] INFO root fetch - processPackages [DawgsML]: Remove: archive file [/home/abi/fetcher/tmp/dawgsml-0.0.2.tar.gz]
+[2024-05-05 16:20:07] INFO root fetch - processPackages [DawgsML]: Remove: archive file [/home/abi/fetcher/tmp/dawgsml-0.0.3.tar.gz]
+[2024-05-05 16:20:07] INFO root fetch - main [MainThread]: End processing [DawgsML]: success
+[2024-05-05 16:20:07] INFO root fetch - processPackages [revKimi]: Remove: archive file [/home/abi/fetcher/tmp/revkimi-0.0.1.tar.gz]
+[2024-05-05 16:20:07] INFO root fetch - processPackages [revKimi]: Remove: archive file [/home/abi/fetcher/tmp/revkimi-0.0.2.tar.gz]
+[2024-05-05 16:20:07] INFO root fetch - main [MainThread]: End processing [revKimi]: success
+[2024-05-05 16:20:08] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.8.tar.gz]
+[2024-05-05 16:20:08] INFO root fetch - processPackages [petrosa]: Remove: archive file [/home/abi/fetcher/tmp/petrosa-0.0.9.tar.gz]
+[2024-05-05 16:20:08] INFO root fetch - main [MainThread]: End processing [petrosa]: success
+[2024-05-05 16:20:08] INFO root fetch - main [MainThread]: Store serial: [23066332]
