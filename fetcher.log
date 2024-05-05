@@ -11123,3 +11123,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-05 16:30:59] INFO root fetch - processPackages [feincms3-cookiecontrol]: Remove: archive file [/home/abi/fetcher/tmp/feincms3_cookiecontrol-1.5.0.tar.gz]
 [2024-05-05 16:30:59] INFO root fetch - main [MainThread]: End processing [feincms3-cookiecontrol]: success
 [2024-05-05 16:30:59] INFO root fetch - main [MainThread]: Store serial: [23066406]
+[2024-05-05 16:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23066406]
+[2024-05-05 16:33:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-05 16:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterdartkernel
+[2024-05-05 16:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yamllm
+[2024-05-05 16:33:08] INFO root fetch - processPackages [jupyterdartkernel]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 16:33:08] INFO root fetch - processPackages [jupyterdartkernel]: Downloading https://files.pythonhosted.org/packages/2d/c4/ed22ec97f6c6f49261612e7b37ee7134da51c58345a07da3d821a373d207/jupyterdartkernel-0.1.0.tar.gz
+[2024-05-05 16:33:08] WARNING root fetch - processPackages [yamllm]: Skipping, unable to determine old version
+[2024-05-05 16:33:08] INFO root fetch - main [MainThread]: End processing [yamllm] error
+[2024-05-05 16:33:08] INFO root fetch - processPackages [jupyterdartkernel]: Downloading https://files.pythonhosted.org/packages/8f/61/51d468314566ca60253ae0754a6a96ac16d154c374b3c76dbeca64dd5b92/jupyterdartkernel-0.1.1.tar.gz
+[2024-05-05 16:33:08] INFO root fetch - processPackages [jupyterdartkernel]: executing diffoscope
+[2024-05-05 16:33:08] INFO root fetch - processPackages [jupyterdartkernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterdartkernel-0.1.0.tar.gz tmp/jupyterdartkernel-0.1.1.tar.gz --markdown 20240505/j/jupyterdartkernel/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 16:33:09] INFO root fetch - processPackages [jupyterdartkernel]: Remove: archive file [/home/abi/fetcher/tmp/jupyterdartkernel-0.1.0.tar.gz]
+[2024-05-05 16:33:09] INFO root fetch - processPackages [jupyterdartkernel]: Remove: archive file [/home/abi/fetcher/tmp/jupyterdartkernel-0.1.1.tar.gz]
+[2024-05-05 16:33:09] INFO root fetch - main [MainThread]: End processing [jupyterdartkernel]: success
+[2024-05-05 16:33:09] INFO root fetch - main [MainThread]: Store serial: [23066414]
