@@ -6227,3 +6227,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc1 in position 108: invali
 [2024-05-05 10:33:38] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.92.tar.gz]
 [2024-05-05 10:33:38] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
 [2024-05-05 10:33:38] INFO root fetch - main [MainThread]: Store serial: [23064140]
+[2024-05-05 10:35:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23064140]
+[2024-05-05 10:35:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-05 10:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luminesce-sdk-preview
+[2024-05-05 10:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libem
+[2024-05-05 10:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deksound
+[2024-05-05 10:35:48] INFO root fetch - processPackages [libem]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-05 10:35:48] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2024-05-05 10:35:48] INFO root fetch - processPackages [libem]: Downloading https://files.pythonhosted.org/packages/0c/04/6e6b0b6cc0f9795089ad3a37edc39ede4bc0fcca67efe4b40da6d04639c5/libem-0.0.1.tar.gz
+[2024-05-05 10:35:48] INFO root fetch - processPackages [deksound]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-05 10:35:48] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/d3/7b/a9c3e829fb03ae79379224fe34adb99d80c6dbfc5f00ccc44cf429d34f61/luminesce-sdk-preview-1.9.88.tar.gz
+[2024-05-05 10:35:48] INFO root fetch - processPackages [libem]: Downloading https://files.pythonhosted.org/packages/f5/53/63bb1ff4dc4f39b20c0825a560f3a3b82fd9c57b94589c0e6376616d1f05/libem-0.0.2.tar.gz
+[2024-05-05 10:35:48] INFO root fetch - processPackages [deksound]: Downloading https://files.pythonhosted.org/packages/65/ac/37504b772cbcfe975bb739a3fe41fcf3ab4a79c17440cb0918b778d76515/deksound-0.1.0.tar.gz
+[2024-05-05 10:35:48] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/b4/a1/29e30342ad6b0ee5f31f57c9ebeee25c12a4805f3f972e1908bf31abd599/luminesce-sdk-preview-1.9.92.tar.gz
+[2024-05-05 10:35:49] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2024-05-05 10:35:49] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20240505/l/luminesce-sdk-preview/1.9.88-1.9.92/README.md --exclude *.pyd
+[2024-05-05 10:35:49] INFO root fetch - processPackages [libem]: executing diffoscope
+[2024-05-05 10:35:49] INFO root fetch - processPackages [libem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libem-0.0.1.tar.gz tmp/libem-0.0.2.tar.gz --markdown 20240505/l/libem/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-05 10:35:49] INFO root fetch - processPackages [deksound]: Downloading https://files.pythonhosted.org/packages/8b/88/e8fd5137ec156ba2073ad2c6fa859b8b221bcc1a4fff8c4ac3bc3b35f398/deksound-0.1.1.tar.gz
+[2024-05-05 10:35:49] INFO root fetch - processPackages [libem]: Remove: archive file [/home/abi/fetcher/tmp/libem-0.0.1.tar.gz]
+[2024-05-05 10:35:49] INFO root fetch - processPackages [libem]: Remove: archive file [/home/abi/fetcher/tmp/libem-0.0.2.tar.gz]
+[2024-05-05 10:35:49] INFO root fetch - main [MainThread]: End processing [libem]: success
+[2024-05-05 10:35:49] INFO root fetch - processPackages [deksound]: executing diffoscope
+[2024-05-05 10:35:49] INFO root fetch - processPackages [deksound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deksound-0.1.0.tar.gz tmp/deksound-0.1.1.tar.gz --markdown 20240505/d/deksound/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-05 10:35:50] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.88.tar.gz]
+[2024-05-05 10:35:50] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.92.tar.gz]
+[2024-05-05 10:35:50] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2024-05-05 10:35:50] INFO root fetch - processPackages [deksound]: Remove: archive file [/home/abi/fetcher/tmp/deksound-0.1.0.tar.gz]
+[2024-05-05 10:35:50] INFO root fetch - processPackages [deksound]: Remove: archive file [/home/abi/fetcher/tmp/deksound-0.1.1.tar.gz]
+[2024-05-05 10:35:50] INFO root fetch - main [MainThread]: End processing [deksound]: success
+[2024-05-05 10:35:50] INFO root fetch - main [MainThread]: Store serial: [23064146]
