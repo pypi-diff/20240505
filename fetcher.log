@@ -1367,3 +1367,42 @@
 [2024-05-05 02:18:31] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
 [2024-05-05 02:18:31] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
 [2024-05-05 02:18:31] INFO root fetch - main [MainThread]: Store serial: [23062060]
+[2024-05-05 02:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23062060]
+[2024-05-05 02:20:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-05 02:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2024-05-05 02:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.appsync-utils
+[2024-05-05 02:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-budibase
+[2024-05-05 02:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapegraphai
+[2024-05-05 02:20:39] INFO root fetch - processPackages [scrapegraphai]: New version: [0.9.0b2] Old Version: [0.9.0b1]
+[2024-05-05 02:20:39] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 02:20:39] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-05 02:20:39] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-05 02:20:39] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/ec/f8/14f73c7c161672cd2e1f33a0a23d973a82074cad13c2e19d7c7a45a847d2/scrapegraphai-0.9.0b1.tar.gz
+[2024-05-05 02:20:39] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/b6/9921880127918975163ef796466fd100a8f3a6246436ca4993eafae4915d/cdklabs.appsync-utils-0.0.98.tar.gz
+[2024-05-05 02:20:39] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/4f/0a/01c6428b0ea2e78dd2dd9e10aba3ba8252b6cd0992b5a90ea9ba90983551/cdk-budibase-0.0.98.tar.gz
+[2024-05-05 02:20:39] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/fe/2c/3a8605fe934a0a120041c6190f384b00350c8036420ee8d53ac0b0906f74/cdklabs.appsync-utils-0.0.99.tar.gz
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/3d/b1/10d1c8f0601959fd0771f3dc7b94b15e702b81729d74397e80ca3dd66c88/cdk-budibase-0.0.99.tar.gz
+[2024-05-05 02:20:40] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/a2/df/068ec35f22cee27765c5b12db62775840e63023c60a6353b483c065a86be/scrapegraphai-0.9.0b2.tar.gz
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.98.tar.gz tmp/cdklabs.appsync-utils-0.0.99.tar.gz --markdown 20240505/c/cdklabs.appsync-utils/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240505/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-05 02:20:40] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-05-05 02:20:40] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.9.0b1.tar.gz tmp/scrapegraphai-0.9.0b2.tar.gz --markdown 20240505/s/scrapegraphai/0.9.0b1-0.9.0b2/README.md --exclude *.pyd
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240505:/home/abi/fetcher/20240505:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.98.tar.gz tmp/cdk-budibase-0.0.99.tar.gz --markdown 20240505/c/cdk-budibase/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.98.tar.gz]
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.99.tar.gz]
+[2024-05-05 02:20:40] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-05-05 02:20:40] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-05-05 02:20:40] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.98.tar.gz]
+[2024-05-05 02:20:41] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
+[2024-05-05 02:20:41] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b1.tar.gz]
+[2024-05-05 02:20:41] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2024-05-05 02:20:41] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.9.0b2.tar.gz]
+[2024-05-05 02:20:41] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-05-05 02:20:41] INFO root fetch - main [MainThread]: Store serial: [23062073]
